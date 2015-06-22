@@ -1,0 +1,6 @@
+*~
+*.dvi
+*.pdf
+*.log
+*.bbl
+/auto/
