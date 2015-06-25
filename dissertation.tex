@@ -56,8 +56,62 @@
 
 \begin{document}
 
-% Title page
-\include{title}
+\begin{titlepage}
+  \vspace*{\fill}
+
+  \begin{center}
+    {\LARGE \bfseries
+      Three Essays on the Quantitative Analysis of War,
+      with an Emphasis on the American Civil War
+      \par
+    }
+
+    \bigskip%
+    by
+
+    \bigskip%
+    Jeffrey B. Arnold
+
+    %%%%%
+
+    \bigskip\bigskip\bigskip\bigskip%
+    Submitted in Partial Fulfillment of the
+
+    \bigskip%
+    Requirements for the Degree
+
+    \bigskip%
+    Doctor of Philosophy
+
+    %%%%%
+
+    \bigskip\bigskip\bigskip\bigskip%
+    Supervised by Professor Randall Stone
+
+    \bigskip\bigskip%
+    Department of Political Science
+
+    \bigskip%
+    University of Rochester
+
+    %%%%%
+
+    \bigskip\bigskip\bigskip\bigskip%
+    University of Rochester
+
+    \bigskip%
+    Rochester, New York
+
+    %%%%%
+
+    \bigskip\bigskip\bigskip\bigskip%
+    2016
+  \end{center}
+
+  \vspace*{\fill}
+\end{titlepage}
+
+
 
 % All subsequent pages must be numbered, title page is considered page i,
 % front matter is numbered in lowercase Roman numerals
@@ -66,23 +120,69 @@
 \setcounter{page}{2}
 \doublespacing
 
+
 % Dedication (optional)
-\include{dedication}
+\thispagestyle{plain}
+\begin{center}
+  \vspace*{\fill}
+  \it%
+  \input{dedication}
+  \vspace*{\fill}
+\end{center}
+
+\clearpage
+
 
 % Biographical sketch
-\include{bio}
+\chapter*{Biographical Sketch}
+\markboth{\MakeUppercase{Biographical Sketch}}{}
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{Biographical Sketch}
+}{}
+\input{bio}
+
 
 % Acknowledgments
-\include{acknowledgments}
+\chapter*{Acknowledgments}
+\markboth{\MakeUppercase{Acknowledgments}}{}
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{Acknowledgments}
+}{}
+\input{acknowledgments}
 
-% Abstract
-\include{abstract}
+
+% ABSTRACT
+\chapter*{Abstract}
+\markboth{\MakeUppercase{Abstract}}{}
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{Abstract}
+}{}
+\input{abstract}
+
 
 % Contributors and Funding Sources
-\include{contrib}
+\chapter*{Contributors and Funding Sources}
+\markboth{\MakeUppercase{Contributors and Funding Sources}}{}
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{Contributors and Funding Sources}
+}{}
+\input{contrib}
 
 % Table of Contents, List of Tables, List of Figures
-\include{contents}
+% Main TOC
+\tableofcontents
+
+% List of tables, if applicable
+\listoftables
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{List of Tables}
+}{}
+
+% List of figures, if applicable
+\listoffigures
+\iftoggle{fulltoc}{
+  \addcontentsline{toc}{chapter}{List of Figures}
+}{}
 
 %%%%%%%%%%%%%%%%%%%% DISSERTATION CONTENT %%%%%%%%%%%%%%%%%%%%
 
@@ -97,6 +197,11 @@
 
 % References
 \clearpage
-\include{references}
+\addcontentsline{toc}{chapter}{Bibliography}
+\singlespacing
+
+% Bibtex commands go here
+\bibliography{sample}
+\bibliographystyle{apsr}
 
 \end{document}
