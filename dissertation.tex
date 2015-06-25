@@ -9,11 +9,11 @@
 \usepackage{setspace}           % For double-spacing (required)
 \usepackage{titlesec}           % For keeping section/chapter titles
                                 % single-spaced
-\usepackage{etoolbox}           % For the flag determining if front matter
-                                % goes into the TOC
 \usepackage{blindtext}          % For generating dummy text in the sample
                                 % output, can be removed
-\usepackage{natbib}
+
+%\usepackage[style=authoryear]{biblatex}
+%\bibliography{dissertation.bib}
 
 % Header height (to avoid fancyhdr error)
 \setlength{\headheight}{13.6pt}
@@ -50,9 +50,14 @@
 {0.25in}%
 {}
 
-% Flag for whether to add front matter to TOC
-\newtoggle{fulltoc}
-\togglefalse{fulltoc}  % Change to \toggletrue{fulltoc} to include front matter
+\usepackage{fontspec,xltxtra,xunicode}
+\setmainfont[Ligatures=TeX]{Source Serif Pro}
+\setsansfont[Ligatures=TeX, Scale=MatchLowercase]{Source Sans Pro}
+\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+
+\usepackage{placeins}
+
+\frenchspacing
 
 \begin{document}
 
@@ -136,36 +141,28 @@
 % Biographical sketch
 \chapter*{Biographical Sketch}
 \markboth{\MakeUppercase{Biographical Sketch}}{}
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{Biographical Sketch}
-}{}
+\addcontentsline{toc}{chapter}{Biographical Sketch}
 \input{bio}
 
 
 % Acknowledgments
 \chapter*{Acknowledgments}
 \markboth{\MakeUppercase{Acknowledgments}}{}
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{Acknowledgments}
-}{}
-\input{acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\input{acknowledgements}
 
 
 % ABSTRACT
 \chapter*{Abstract}
 \markboth{\MakeUppercase{Abstract}}{}
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{Abstract}
-}{}
+\addcontentsline{toc}{chapter}{Abstract}
 \input{abstract}
 
 
 % Contributors and Funding Sources
 \chapter*{Contributors and Funding Sources}
 \markboth{\MakeUppercase{Contributors and Funding Sources}}{}
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{Contributors and Funding Sources}
-}{}
+\addcontentsline{toc}{chapter}{Contributors and Funding Sources}
 \input{contrib}
 
 % Table of Contents, List of Tables, List of Figures
@@ -174,15 +171,11 @@
 
 % List of tables, if applicable
 \listoftables
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{List of Tables}
-}{}
+\addcontentsline{toc}{chapter}{List of Tables}
 
 % List of figures, if applicable
 \listoffigures
-\iftoggle{fulltoc}{
-  \addcontentsline{toc}{chapter}{List of Figures}
-}{}
+\addcontentsline{toc}{chapter}{List of Figures}
 
 %%%%%%%%%%%%%%%%%%%% DISSERTATION CONTENT %%%%%%%%%%%%%%%%%%%%
 
@@ -201,7 +194,6 @@
 \singlespacing
 
 % Bibtex commands go here
-\bibliography{sample}
-\bibliographystyle{apsr}
+% \printbibliography{}
 
 \end{document}
