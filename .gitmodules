@@ -4,3 +4,6 @@
 [submodule "bonds_and_battles"]
 	path = bonds_and_battles
 	url = git@bitbucket.org:jrnold/bonds_and_battles.git
+[submodule "producing_death"]
+	path = producing_death
+	url = git@bitbucket.org:jrnold/producing_death.git
