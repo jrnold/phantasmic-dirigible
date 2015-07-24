@@ -1,6 +1,3 @@
-[submodule "american_civil_war_onset_in_financial_markets"]
-	path = american_civil_war_onset_in_financial_markets
-	url = git@bitbucket.org:jrnold/american_civil_war_onset_in_financial_markets.git
 [submodule "bonds_and_battles"]
 	path = bonds_and_battles
 	url = git@bitbucket.org:jrnold/bonds_and_battles.git
