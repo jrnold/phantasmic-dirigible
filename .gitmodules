@@ -4,3 +4,6 @@
 [submodule "producing_death"]
 	path = producing_death
 	url = git@bitbucket.org:jrnold/producing_death.git
+[submodule "acw_onset_markets"]
+	path = acw_onset_markets
+	url = git@github.com:jrnold/acw_onset_markets.git
