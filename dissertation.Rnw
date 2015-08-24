@@ -10,6 +10,7 @@
 \usepackage{titlesec}           % For keeping section/chapter titles
                                 % single-spaced
 \usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -149,7 +150,7 @@
 \newcommand{\myadvisordept}{Department of Political Science}
 \newcommand{\myyear}{2016}
 
-\addbibresource{local.bib}
+\addbibresource{bib/jrnold.bib}
 
 \usepackage{placeins}
 
