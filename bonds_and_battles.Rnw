@@ -1,11 +1,8 @@
-<<header,echo=FALSE,results='hide'>>=st
+<<header,echo=FALSE,results='hide'>>=
 paper_path <- file.path(PROJECT_ROOT, "paper")
 tab_path <- file.path(paper_path, "tex")
 fig_path <- file.path(paper_path, "figure")
 load(file.path(paper_path, "analysis.RData"))
-
-print(ls())
-
 format_yields <- function(x, basis = 1) {
   round(x * 100, basis)
 }
