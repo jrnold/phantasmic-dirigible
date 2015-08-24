@@ -1,15 +1,15 @@
-<<header,echo=FALSE,results='markup'>>=
-paper_path <- file.path(PROJECT_ROOT, "paper")
-tab_path <- file.path(paper_path, "tex")
-fig_path <- file.path(paper_path, "figure")
-load(file.path(paper_path, "analysis.RData"))
-
-print(ls())
-
-format_yields <- function(x, basis = 1) {
-  round(x * 100, basis)
-}
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+##  [1] "PROJECT_ROOT"                  "fig_path"                     
+##  [3] "fives1874"                     "fives1874_yield_maxdate"      
+##  [5] "fives1874_yield_post_election" "fives1874_yield_post_sumter"  
+##  [7] "fives1874_yield_post_war"      "fives1874_yield_pre_war"      
+##  [9] "fives1874_yield_war"           "major_battles"                
+## [11] "paper_path"                    "tab_path"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
 
 Carl von Clausewitz famously described war as ``simply a continuation of political intercourse, with the addition of other means \parencite[605]{Clausewitz1989}.'' %
 This statement has traditionally been used to remind the reader that
@@ -252,14 +252,14 @@ As the name suggests, the 5's of 1874 were a coupon bond that paid 5 percent in 
 That the 5's of 1874 paid interest and principal in specie was important because on January 1st, 1862 the U.S. Treasury ceased redeeming notes in gold, and U.S. currency (Greenbacks) floated against gold until the resumption of convertibility on January 1st, 1879 \parencites{Dewey1918}{WillardGuinnaneEtAl1996}.
 
 Firgures \ref{fig:fives1874_price} and \ref{fig:fives1874_yield} plot the price in gold dollars and yield to maturity of the 5's of 1874.
-Prior to the war, the yield of the Fives was was low and had little variation, with its means between \Sexpr{format_yields(fives1874_yield_pre_war[["min"]])} and \Sexpr{format_yields(fives1874_yield_pre_war[["max"]])} percent.%
+Prior to the war, the yield of the Fives was was low and had little variation, with its means between 4.5 and 5 percent.%
 \footnote{
   This is actually below was generally considered risk-free rate in the U.S. for that period, 5 percent \parencite[][calls it the ``natural rate'']{Elder1863}.
   During this period British 3 percent consols had a yield of between of 3.10 and 3.28 \parencite[193]{HomerSylla2005}.
 }
-After Lincoln's election the interest rate rose to \Sexpr{format_yields(fives1874_yield_post_election[["mean"]])} percent, and after Sumter it rose to \Sexpr{format_yields(fives1874_yield_post_sumter)} percent.
-During the war the interest rate fluctated between \Sexpr{format_yields(fives1874_yield_war[["min"]])} percent and \Sexpr{format_yields(fives1874_yield_war[["max"]])} percent, reaching its peak on \Sexpr{fives1874_yield_maxdate}.
-After surrender of Grant, the interest rate returned to stability with a rate higher than before the war, \Sexpr{format_yields(fives1874_yield_post_war[["mean"]])} percent.
+After Lincoln's election the interest rate rose to 6 percent, and after Sumter it rose to 8.2 percent.
+During the war the interest rate fluctated between 5.2 percent and 14.7 percent, reaching its peak on July 30, 1864.
+After surrender of Grant, the interest rate returned to stability with a rate higher than before the war, 6.5 percent.
 These figures also plot the price
 While the price and yields in terms of gold dollars fluctuated throughout the war, the price and yield in terms of currency (after January 1, 1862 when the Greenback floated against the gold dollar, were mostly stable.%
 \footnote{See \textcite{Roll1972} for an analysis of this phenomena.}
@@ -366,12 +366,12 @@ However, it is more likely that they are largely reflecting expectations about t
 \begin{figure}[!]
   \centering
   \begin{subfigure}[b]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_price")}}
+   \includegraphics{../bonds_and_battles//paper/figure/fives1874_price}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{fig:fives1874_price}
 \end{subfigure}
 \begin{subfigure}[b]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_yield")}}
+   \includegraphics{../bonds_and_battles//paper/figure/fives1874_yield}
   \caption{Yield to maturity.}
   \label{fig:fives1874_yield}
 \end{subfigure}
@@ -384,32 +384,32 @@ During the American Civil War, the yields are variable, spiking in the middle of
 
 \begin{figure}[!]
   \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_greenback_price")}}
+    \includegraphics{../bonds_and_battles//paper/figure/fives1874_greenback_price}
   \caption{Price in gold dollars for the 5's of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_union")}}
+    \includegraphics{../bonds_and_battles//paper/figure/fives1874_union}
   \caption{Yield to maturity of the 5's of 1874 compared with other U.S. bonds.}
   \label{fig:fives1874_union}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_north")}}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_north}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Northern states.}
 \label{fig:fives1874_north}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_south")}}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_south}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Southern and border states.}
 \label{fig:fives1874_south}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_graybacks")}}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_graybacks}
 \caption{Price in gold dollars of the 5's of 1874 compared with \$100 Graybacks (Confederate currency).}
 \label{fig:fives1874_grayback}
 
@@ -448,15 +448,15 @@ As a measure of when information about the news reaches the New York market, I u
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_major_battles")}}
+  \includegraphics{../bonds_and_battles//paper/figure/fig_major_battles}
   \caption{Major battles and their outcomes}
   \label{fig:major_battles}
 \end{figure}
 
 \begin{table}
   \centering
-  \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}}
-  \caption{List of the \Sexpr{nrow(major_battles)} major battles of the American Civil War included in this analysis.}
+  \input{../bonds_and_battles//paper/tex/tab_major_battles.tex}}
+  \caption{List of the 44 major battles of the American Civil War included in this analysis.}
   \label{tab:battles}
 \end{table}
 
