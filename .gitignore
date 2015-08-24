@@ -5,3 +5,14 @@
 *.bbl
 /auto/
 *.run.xml
+*.aux
+*.bak
+*.bcf
+*.blg
+*.fdb_latexmk
+*.flx
+*.fls
+*.lof
+*.lot
+*.out
+*.toc

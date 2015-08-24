@@ -61,8 +61,9 @@
 \usepackage{blindtext}
 \usepackage[margin=1in]{geometry}
 
-\usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage{jrnoldStats}
+
+\usepackage{subcaption}
 
 \usepackage[]{xcolor}
 \definecolor{light-gray}{gray}{0.66}
@@ -128,51 +129,8 @@
 \setmathfont{xits-math.otf}
 
 
-\newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
-
-% Programming Languages
-\newcommand{\proglang}[1]{\textsf{#1}}
-\newcommand{\RLang}{\proglang{R}}
-\newcommand{\Stan}{\proglang{Stan}}
-\newcommand{\pkg}[1]{\textbf{#1}}
-
-% Used to typeset distributions
-\newcommand{\dist}[1]{\mathcal{#1}}
-\newcommand{\distsep}[1]{;}
-\newcommand{\paren}[1]{\mathopen{}\left(#1\right)\mathclose{}}
-\newcommand{\disti}[2]{\ensuremath{\dist{#1}\paren{#2}}}
-\newcommand{\distii}[3]{\ensuremath{\dist{#1}\paren{#2 \distsep{} #3}}}
-\newcommand{\distiii}[3]{\ensuremath{\dist{#1}_{#2}\paren{#3}}}
-\newcommand{\distiv}[4]{\ensuremath{\dist{#1}_{#2}\paren{#3 \distsep{} #4}}}
-
-\newcommand{\dnorm}[1]{\disti{N}{#1}}
-\newcommand{\dmvnorm}[2]{\distiii{N}{#1}{#2}}
-\newcommand{\dlnorm}[1]{\disti{LN}{#1}}
-\newcommand{\dt}[2]{\distiii{T}{#1}{#2}}
-\newcommand{\dcauchy}[1]{\disti{C}{#1}}
-\newcommand{\dhalfcauchy}[1]{\disti{C^+}{#1}}
-\newcommand{\dbeta}[1]{\disti{B}{#1}}
-\newcommand{\dinvbeta}[1]{\disti{IB}{#1}}
-\newcommand{\dgamma}[1]{\disti{G}{#1}}
-\newcommand{\dinvgamma}[1]{\disti{IG}{#1}}
-\newcommand{\dwishart}[1]{\disti{W}{#1}}
-\newcommand{\dinvwishart}[1]{\disti{IW}{#1}}
-\newcommand{\dunif}[1]{\disti{U}{#1}}
-\newcommand{\dexp}[1]{\disti{E}{#1}}
-
-% Math operators, misc
-\DeclareMathOperator{\E}{E}
-\DeclareMathOperator{\Median}{Median}
-\DeclareMathOperator{\Var}{Var}
-\DeclareMathOperator{\sd}{Var}
-\DeclareMathOperator{\Cov}{Cov}
-\DeclareMathOperator{\diag}{diag}
-\DeclareMathOperator{\logit}{logit}
-\newcommand{\tran}{^\top}
-
 % Misc
-\newcommand{\Model}[2]{$\mathcal{M}$(#1, #2)}
-
+\newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
 
 % biblatex
 \usepackage[style=authoryear,doi=false,isbn=false,backend=biber,%
@@ -333,11 +291,13 @@
 \addcontentsline{toc}{chapter}{Financial Markets and teh Onset of the American Civil War}
 \label{cha:financ-mark-onset}
 
-\input{Financial_Markets_and_Onset_of_the_American_Civil_War.tex}
+\include{Financial_Markets_and_Onset_of_the_American_Civil_War}
 
 \chapter{Bonds and Battles}
 \addcontentsline{toc}{chapter}{Bonds and Battles}
 \label{cha:bonds-battles}
+
+\include{Bonds_and_Battles}
 
 \chapter{Chapter 3}
 \addcontentsline{toc}{chapter}{Chapter3}

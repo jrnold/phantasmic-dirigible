@@ -1,4 +1,4 @@
-<<header,echo=FALSE,results='markup'>>=
+<<header,echo=FALSE,results='hide'>>=st
 paper_path <- file.path(PROJECT_ROOT, "paper")
 tab_path <- file.path(paper_path, "tex")
 fig_path <- file.path(paper_path, "figure")
@@ -366,12 +366,12 @@ However, it is more likely that they are largely reflecting expectations about t
 \begin{figure}[!]
   \centering
   \begin{subfigure}[b]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_price")}}
+   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_price-1")}}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{fig:fives1874_price}
 \end{subfigure}
 \begin{subfigure}[b]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_yield")}}
+   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_yield-1")}}
   \caption{Yield to maturity.}
   \label{fig:fives1874_yield}
 \end{subfigure}
@@ -384,32 +384,32 @@ During the American Civil War, the yields are variable, spiking in the middle of
 
 \begin{figure}[!]
   \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_greenback_price")}}
+    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_greenback_price-1")}}
   \caption{Price in gold dollars for the 5's of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_union")}}
+    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_union-1")}}
   \caption{Yield to maturity of the 5's of 1874 compared with other U.S. bonds.}
   \label{fig:fives1874_union}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_north")}}
+  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_north-1")}}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Northern states.}
 \label{fig:fives1874_north}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_south")}}
+  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_south-1")}}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Southern and border states.}
 \label{fig:fives1874_south}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_graybacks")}}
+  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_graybacks-1")}}
 \caption{Price in gold dollars of the 5's of 1874 compared with \$100 Graybacks (Confederate currency).}
 \label{fig:fives1874_grayback}
 
@@ -448,14 +448,14 @@ As a measure of when information about the news reaches the New York market, I u
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_major_battles")}}
+  \includegraphics{\Sexpr{file.path(fig_path, "fig_major_battles-1")}}
   \caption{Major battles and their outcomes}
   \label{fig:major_battles}
 \end{figure}
 
 \begin{table}
   \centering
-  \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}}
+  \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}
   \caption{List of the \Sexpr{nrow(major_battles)} major battles of the American Civil War included in this analysis.}
   \label{tab:battles}
 \end{table}
@@ -480,7 +480,7 @@ Thus far, I have only discussed battles in this section, but battles not the onl
 Changes in policy, leadership, foreign policy events, negoatiations and other events may all influenece expectations about the future of the war.
 This paper does not include them in its models for two reasons. 
 The first is that it is difficult to coherently choose a set of events. 
-\footnotes{
+\footnote{
   However, \textcite{McCandless1996} and \textcite{SmithSmith1997} both include lists of indicator variables for \textit{ad hoc} lists of military, fiscal, and political events in the war.
 }
 Perhaps the Emancipation Proclamation should be included, but how many other events of the American Civil War? 

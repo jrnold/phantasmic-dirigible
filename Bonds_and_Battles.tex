@@ -1,15 +1,4 @@
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{verbatim}
-##  [1] "PROJECT_ROOT"                  "fig_path"                     
-##  [3] "fives1874"                     "fives1874_yield_maxdate"      
-##  [5] "fives1874_yield_post_election" "fives1874_yield_post_sumter"  
-##  [7] "fives1874_yield_post_war"      "fives1874_yield_pre_war"      
-##  [9] "fives1874_yield_war"           "major_battles"                
-## [11] "paper_path"                    "tab_path"
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
+
 
 Carl von Clausewitz famously described war as ``simply a continuation of political intercourse, with the addition of other means \parencite[605]{Clausewitz1989}.'' %
 This statement has traditionally been used to remind the reader that
@@ -47,7 +36,7 @@ Financial assuet price data, through its relationship to the expected war result
 
 
 \section{Financial Markets and the Study of War?}
-\label{sec:barg-theory-war}
+\label{bonds_battles:sec:barg-theory-war}
 
 \begin{itemize}
 \item Prices to war
@@ -67,13 +56,13 @@ Financial assuet price data, through its relationship to the expected war result
 
 
 \subsection{How Financial Assets can Relate to War Outcomes?}
-\label{sec:how-financial-assets}
+\label{bonds_battles:sec:how-financial-assets}
 
 Cite ...
 
 
 \subsection{How Financial Assets can be used to study war?}
-\label{sec:how-financial-assets-1}
+\label{bonds_battles:sec:how-financial-assets-1}
 
 Given that war is bargaining process \parencite{Fearon1995}, the fundamental question of war is how the mechanism of military conflict resolves the differences between the belligerents that had prevented an agreement from being struck prior to the war.
 Since \textcite{Fearon1995}, a series of papers developed the theory of how fighting and bargaining interact within war \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}.
@@ -182,7 +171,7 @@ This would not be an issue if the researcher were just interested in the effect 
 
 
 \section{Why The American Civil War?}
-\label{sec:why-american-civil}
+\label{bonds_battles:sec:why-american-civil}
 
 I chose the American Civil War as a case for the quality and quantity of its battle-level data, and the expected close relationship between government issued financial assets and war events.
 In terms of its battle data, the American Civil War is one of the better documented wars, so quality battle-level is available.%
@@ -192,7 +181,7 @@ In terms of its battle data, the American Civil War is one of the better documen
 However, although there are multiple sources of American Civil War battle data, there has previously not been a comprehensive database suitable for quantitative analysis.
 
 There is a long and deep economic history literature that documents the close relationship between war expectations and events and financial market prices during the American Civil War \parencites{Mitchell1903}{Mitchell1908}{Calomiris1988}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{Schwab1901}{Weidenmier2002}{BurdekinLangdana1993}{DavisPecquet1990}{BrownBurdekin2000}{OosterlinckWeidenmier2007}{Roll1972}.
-I discuss why financial assets issued by the belligerents of the American Civil War may be particularly useful for understanding war in section \ref{sec:why-prices-study}.
+I discuss why financial assets issued by the belligerents of the American Civil War may be particularly useful for understanding war in section \ref{bonds_battles:sec:why-prices-study}.
 
 While the generalizability of this case is a function of its similarity to other cases, the American Civil War is more similar to modern civil wars than its 150 year age may suggest.
 First, the American Civil War introduced several of the technologies later used in World War I and later, including rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines.
@@ -232,12 +221,12 @@ In applying international relations theory and quantitative methods to the study
 
 
 \section{U.S. Government Interest Rate Data}
-\label{sec:why-prices-study}
+\label{bonds_battles:sec:why-prices-study}
 
 
 
 \subsection{The Fives of 1874}
-\label{sec:5s-1874}
+\label{bonds_battles:sec:5s-1874}
 
 This paper uses the long-run interest rate on government debt as a measure of expectations about the Civil War outcome.
 The overall war outcome that is proxied by the interest rate of U.S. government debt almost certainly corresponds to expectatations about the cost and duration of the war rather than U.S. victory.
@@ -251,7 +240,7 @@ The 5's of 1874 were a coupon bond issued under the authorization of the Act of 
 As the name suggests, the 5's of 1874 were a coupon bond that paid 5 percent in specie (gold dollars) semi-annually on January and July, and were redeemable in 1874.
 That the 5's of 1874 paid interest and principal in specie was important because on January 1st, 1862 the U.S. Treasury ceased redeeming notes in gold, and U.S. currency (Greenbacks) floated against gold until the resumption of convertibility on January 1st, 1879 \parencites{Dewey1918}{WillardGuinnaneEtAl1996}.
 
-Firgures \ref{fig:fives1874_price} and \ref{fig:fives1874_yield} plot the price in gold dollars and yield to maturity of the 5's of 1874.
+Firgures \ref{bonds_battles:fig:fives1874_price} and \ref{bonds_battles:fig:fives1874_yield} plot the price in gold dollars and yield to maturity of the 5's of 1874.
 Prior to the war, the yield of the Fives was was low and had little variation, with its means between 4.5 and 5 percent.%
 \footnote{
   This is actually below was generally considered risk-free rate in the U.S. for that period, 5 percent \parencite[][calls it the ``natural rate'']{Elder1863}.
@@ -298,7 +287,7 @@ The 5-20's and 10-40's were bonds callable by the government after 5 (10) years 
 The 7-30's were bonds that had coupon rates of 7.30 percent (2 cents per day), were redeemable in 3 years, but included the option to be exchanged for either the 6's of 1881 or 5-20's.
 See \textcites{Bayley1882}{DeKnight1900}[297--309]{HomerSylla2005} for overviews of U.S. debt issues during this period.
 }
-Using the 5's of 1874 relative to other bonds should not make a substantive difference, since as Figure \ref{fig:fives1874_union} shows, the yield to maturity of the 5's of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
+Using the 5's of 1874 relative to other bonds should not make a substantive difference, since as Figure \ref{bonds_battles:fig:fives1874_union} shows, the yield to maturity of the 5's of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
 \footnote{
   While combining the various bond yields into a single issue could be more efficient, but would introduce other modeling complexities that I chose not to introduce in this work.
 }
@@ -307,12 +296,12 @@ The advantage of using interest rates relative to Greenbacks, is that since the 
 Thus while there are yields on the 5's of 1874 from April--December 1861, there no Greenbacks prices available during that period.
 This is the period which should have the highest informational content in an informational theory of war, and includes battles such as the First Battle of Bull Run, and the Battle of Wilson's Creek.%
 \footnote{\textcite{Poast2012} argues that the First Battle of Bull Run was pivotal in avoiding British recognition of the Confederate States.}
-The choice of the U.S. government interest rates vs. greenback prices is unlikely to change the results here since the price of bonds in gold dollars closely follows the price of the Greenbacks in gold dollars, as shown in Figure \ref{fig:fives1874_greenbacks}, and discussed in \textcite{Roll1972}.
+The choice of the U.S. government interest rates vs. greenback prices is unlikely to change the results here since the price of bonds in gold dollars closely follows the price of the Greenbacks in gold dollars, as shown in Figure \ref{bonds_battles:fig:fives1874_greenbacks}, and discussed in \textcite{Roll1972}.
 
 
 
 \subsection{U.S. Government Interest Rates are Primarily a Function of the Expected Cost of the War}
-\label{sec:u.s.-governm-inter}
+\label{bonds_battles:sec:u.s.-governm-inter}
 
 When using prices or yields of a financial asset to proxy for expectations about a war outcome, it is necessary to identify which aspects of the war outcome that could influence the financial market.
 The long-run U.S. government interest rates could be related to both expectations about the victor of the war and the cost of the war.
@@ -339,7 +328,7 @@ the highest average. That must be greater or less in proportion to the
 duration and cost of the war. \parencite[13]{Treasury1863}
 \end{quote}
 
-Comparing the time series of U.S. government interest rates to those of the Confederate currency and Northern and Southern States in Figure \ref{fig:fives1874_compared} suggest that it is primarily driven by expectations of the cost of the war.
+Comparing the time series of U.S. government interest rates to those of the Confederate currency and Northern and Southern States in Figure \ref{bonds_battles:fig:fives1874_compared} suggest that it is primarily driven by expectations of the cost of the war.
 The bond yields of the Northern States which are almost certainly driven by costs of the war and possibly less dependent on victory since taxes would not necessarily go to pay off their debts are similar to that of U.S. government bonds.
 However, the price of the Confederate currency follows a noticeably different pattern, almost decreasing monotonically over the entire course of the war.
 Although some of this was due to an expansion of the monetary supply, the prices of Confederate bonds issued in Amsterdam and redeemable in gold also followed a similar pattern.
@@ -358,7 +347,7 @@ In the Annual Report of the Treasury issued on December 1865, the first after th
 \footnote{There was a surplus of \$132 million for FY 1866 \parencite[2][]{Treasury1866}.}
 The importance of the war on interest rates can also be seen in a comparison of interest rates prior and during the war.
 Thus the variation seen during the war is certaintly entirely due to changes in expectations stemming from events within the war.
-However, that is not to say that the important war events are battles, something which is addressed in Section \ref{sec:battle-data}.
+However, that is not to say that the important war events are battles, something which is addressed in Section \ref{bonds_battles:sec:battle-data}.
 
 In summary, the interest rates of U.S. government bonds reflected some combination of expectations about the cost, duration and victor of the war.
 However, it is more likely that they are largely reflecting expectations about the cost and duration of the war.
@@ -366,72 +355,72 @@ However, it is more likely that they are largely reflecting expectations about t
 \begin{figure}[!]
   \centering
   \begin{subfigure}[b]{\linewidth}
-   \includegraphics{../bonds_and_battles//paper/figure/fives1874_price}
+   \includegraphics{../bonds_and_battles//paper/figure/fives1874_price-1}
   \caption{Price in gold dollars. Par value is \$100.}
-  \label{fig:fives1874_price}
+  \label{bonds_battles:fig:fives1874_price}
 \end{subfigure}
 \begin{subfigure}[b]{\linewidth}
-   \includegraphics{../bonds_and_battles//paper/figure/fives1874_yield}
+   \includegraphics{../bonds_and_battles//paper/figure/fives1874_yield-1}
   \caption{Yield to maturity.}
-  \label{fig:fives1874_yield}
+  \label{bonds_battles:fig:fives1874_yield}
 \end{subfigure}
 \caption[Price and yield of the 5's of 1874, 1858-1865]{Price and yield of the 5's of 1874 from its issue in 1858 until the end of the Civil War in 1865.
 The yield is steady at near 5 percent until the election of Lincoln and the secession of the Southern States in late 1860-early 1861.
 During the American Civil War, the yields are variable, spiking in the middle of 1864.
  }
-\label{fig:fives1874_yield_price}
+\label{bonds_battles:fig:fives1874_yield_price}
 \end{figure}
 
 \begin{figure}[!]
   \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{../bonds_and_battles//paper/figure/fives1874_greenback_price}
+    \includegraphics{../bonds_and_battles//paper/figure/fives1874_greenback_price-1}
   \caption{Price in gold dollars for the 5's of 1874 compared to the price of Greenbacks, 1862-1865.}
-  \label{fig:fives1874_greenbacks}
+  \label{bonds_battles:fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics{../bonds_and_battles//paper/figure/fives1874_union}
+    \includegraphics{../bonds_and_battles//paper/figure/fives1874_union-1}
   \caption{Yield to maturity of the 5's of 1874 compared with other U.S. bonds.}
-  \label{fig:fives1874_union}
+  \label{bonds_battles:fig:fives1874_union}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
   \centering
-  \includegraphics{../bonds_and_battles//paper/figure/fives1874_north}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_north-1}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Northern states.}
-\label{fig:fives1874_north}
+\label{bonds_battles:fig:fives1874_north}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{../bonds_and_battles//paper/figure/fives1874_south}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_south-1}
 \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Southern and border states.}
-\label{fig:fives1874_south}
+\label{bonds_battles:fig:fives1874_south}
 \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{../bonds_and_battles//paper/figure/fives1874_graybacks}
+  \includegraphics{../bonds_and_battles//paper/figure/fives1874_graybacks-1}
 \caption{Price in gold dollars of the 5's of 1874 compared with \$100 Graybacks (Confederate currency).}
-\label{fig:fives1874_grayback}
+\label{bonds_battles:fig:fives1874_grayback}
 
 \end{subfigure}
 \caption[The 5's of 1874 compared with other government and states issued bonds and currency.]{The 5's of 1874 compared with other government and states issued bonds and currency.
   The 5's of 1874 follow a similar pattern as that of other U.S. bonds and those issued by Northern states.
   They diverge and have a different pattern than the Confederate currency and bonds issued by Southern states.
 }
-\label{fig:fives1874_compared}
+\label{bonds_battles:fig:fives1874_compared}
 \end{figure}
 
 
 
 \section{Battle Data and Other War Events}
-\label{sec:battle-data}
+\label{bonds_battles:sec:battle-data}
 
 In order to estimate the effect of combat on the expected war outcome, this work includes individual variables for X \textit{a priori} identified as militarily significant, as well as their outcomes (which side was victorious).
 This approach allows for individual estimates of the effect of each battle.
 It will also allow for estimates of the average effect of Confederate and Union victories on war expectations.
 
 The set of American Civil War battles used in the data are a set of XXXXXX battles selected by \textcite{CWSAC1993} as the most militarily significant battles in the war.
-The set of battles is listed in Table \ref{tab:battles}.
+The set of battles is listed in Table \ref{bonds_battles:tab:battles}.
 The National Park Service in \textcite{CWSAC1993} and \textcite{CWSAC1993b} identified 383 battles as the militarily significant battles from the over 10,000 officially recorded engagements in the war.
 The National Park also categorized the military significance of each of these battles in four-category ordinal scale, A (most) to D (least).
 This work only uses those battles in the highest significance level (``A''), which is defined as ``having a decisive influence on a campaign and a direct impact on the course of the war'' \parencite{CWSAC1993}.
@@ -448,16 +437,16 @@ As a measure of when information about the news reaches the New York market, I u
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics{../bonds_and_battles//paper/figure/fig_major_battles}
+  \includegraphics{../bonds_and_battles//paper/figure/fig_major_battles-1}
   \caption{Major battles and their outcomes}
-  \label{fig:major_battles}
+  \label{bonds_battles:fig:major_battles}
 \end{figure}
 
 \begin{table}
   \centering
-  \input{../bonds_and_battles//paper/tex/tab_major_battles.tex}}
+  \input{../bonds_and_battles//paper/tex/tab_major_battles.tex}
   \caption{List of the 44 major battles of the American Civil War included in this analysis.}
-  \label{tab:battles}
+  \label{bonds_battles:tab:battles}
 \end{table}
 
 This work will estimate the effect of conflict on the war by taking a select set of battles based on a \textit{ex post} expert assessment of their military importance and ; but it is not selecting on the dependent variable.
@@ -480,7 +469,7 @@ Thus far, I have only discussed battles in this section, but battles not the onl
 Changes in policy, leadership, foreign policy events, negoatiations and other events may all influenece expectations about the future of the war.
 This paper does not include them in its models for two reasons. 
 The first is that it is difficult to coherently choose a set of events. 
-\footnotes{
+\footnote{
   However, \textcite{McCandless1996} and \textcite{SmithSmith1997} both include lists of indicator variables for \textit{ad hoc} lists of military, fiscal, and political events in the war.
 }
 Perhaps the Emancipation Proclamation should be included, but how many other events of the American Civil War? 
@@ -523,7 +512,7 @@ The observations of $y$ are indexed by observation rather than time, because som
 $t[i] \in 0, \dots, T$ of observation $i$.
 The model is a regression on the difference of the yields on covariates.
 \begin{equation}
-  \label{eq:1}
+  \label{bonds_battles:eq:1}
   \begin{aligned}[t]
     y_{i} - y_{i - 1} &= \mu_{i} + \epsilon_{i} & \epsilon_{i} & \sim N(0, (t[i] - t[i - 1]) \sigma^{2}) \\
   \end{aligned}
@@ -532,7 +521,7 @@ where $t[i] - t[i - 1]$ is the difference in days and is needed to account for t
 
 The expected value of the difference in log yields, $\mu$, includes a constant respresenting a drift term, and the sum of the battle effects for those battles occuring during that time period,
 \begin{equation}
-  \label{eq:2}
+  \label{bonds_battles:eq:2}
   \begin{aligned}[t]
     \mu_{i} &= \sum_{k = t[i-1] + 1}^{t[i]} \sum_{b \in B} w_{b,k} \beta_{b}
   \end{aligned}
@@ -544,7 +533,7 @@ For example, the end of Gettysburg was reported in the news on XXXX, so XXXXX th
 
 The effects of battles are modeled as coming from two distributions: Union victories, and Confederate victories.
 \begin{equation}
-  \label{eq:4}
+  \label{bonds_battles:eq:4}
   \begin{aligned}[t]
   \beta_{b} &\sim
   \begin{cases}

@@ -19,7 +19,7 @@ RSCRIPT = Rscript
 
 ## Rules
 
-default : doc clean
+default : doc
 
 doc: $(PDF_FILE)
 
@@ -33,19 +33,25 @@ acw_onset: $(CHAP_ACW_ONSET_TEX)
 
 $(CHAP_ACW_ONSET_TEX): $(CHAP_ACW_ONSET_RNW)
 	$(RSCRIPT) -e 'PROJECT_DIR <- "$(PATH_ACW_ONSET)"; knitr::knit("$<", output = "$@")'
+	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{acw_onset:\1:\2/g' $@
 
 bonds_battles: $(CHAP_BONDS_BTL_TEX)
 
 $(CHAP_BONDS_BTL_TEX): $(CHAP_BONDS_BTL_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_BONDS_BTL)"; knitr::knit("$<", output = "$@")'
+	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{bonds_battles:\1:\2/g' $@
 
 updatebib:
 	biber $(RNW_FILE:%.Rnw=%.bcf) --output_format bibtex
 	mv $(RNW_FILE:%.Rnw=%_biber.bib) $(RNW_FILE:%.Rnw=%.bib)
 
-clean :
-	latexmk -c
+clean:
+	latexmk -c $(TEX_FILE)
 	-rm -rf auto
+	-rm $(CHAP_ACW_ONSET_TEX)
+	-rm $(CHAP_BONDS_BTL_TEX)
 
-fullclean :
+fullclen :
 	latexmk -C
+
+.PRECIOUS: %.tex

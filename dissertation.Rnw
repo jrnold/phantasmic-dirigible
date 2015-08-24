@@ -12,7 +12,9 @@
 \usepackage{blindtext}
 \usepackage[margin=1in]{geometry}
 
-\usepackage{jrnoldStats.sty}
+\usepackage{jrnoldStats}
+
+\usepackage{subcaption}
 
 \usepackage[]{xcolor}
 \definecolor{light-gray}{gray}{0.66}
@@ -242,11 +244,13 @@ knitr::opts_chunk[["set"]](echo = FALSE)
 \addcontentsline{toc}{chapter}{Financial Markets and teh Onset of the American Civil War}
 \label{cha:financ-mark-onset}
 
-\input{Financial_Markets_and_Onset_of_the_American_Civil_War.tex}
+\include{Financial_Markets_and_Onset_of_the_American_Civil_War}
 
 \chapter{Bonds and Battles}
 \addcontentsline{toc}{chapter}{Bonds and Battles}
 \label{cha:bonds-battles}
+
+\include{Bonds_and_Battles}
 
 \chapter{Chapter 3}
 \addcontentsline{toc}{chapter}{Chapter3}
