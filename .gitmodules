@@ -7,3 +7,6 @@
 [submodule "acw_onset_markets"]
 	path = acw_onset_markets
 	url = git@github.com:jrnold/acw_onset_markets.git
+[submodule "bib"]
+	path = bib
+	url = git@github.com:jrnold/bib.git

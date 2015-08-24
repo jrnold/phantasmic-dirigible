@@ -58,11 +58,29 @@
 \usepackage{setspace}           % For double-spacing (required)
 \usepackage{titlesec}           % For keeping section/chapter titles
                                 % single-spaced
-\usepackage{blindtext}          % For generating dummy text in the sample
-                                % output, can be removed
+\usepackage{blindtext}
 
-%\usepackage[style=authoryear]{biblatex}
-%\bibliography{dissertation.bib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[]{xcolor}
+\definecolor{light-gray}{gray}{0.66}
+\definecolor{dkred}{rgb}{0.5,0,0}
+\definecolor{dkblue}{rgb}{0,0,0.5}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Did the Financial Market Anticipate the Onset of the American Civil War?},
+  pdfauthor={Jeffrey B. Arnold},
+  pdfkeywords={American Civil War, Bargaining, Combat, Bayesian Inference, Battle, United States Note, Demand Note, Union (American Civil War), Confederate States of America Greyback}
+  %% Colors from jss.cls (Journal of statistical software)
+  colorlinks = true,
+  linkcolor=dkblue,          % color of internal links
+  citecolor=dkblue,        % color of links to bibliography
+  filecolor=dkred,      % color of file links
+  urlcolor=dkred,           % color of external links
+}
+
 
 % Header height (to avoid fancyhdr error)
 \setlength{\headheight}{13.6pt}
@@ -99,10 +117,88 @@
 {0.25in}%
 {}
 
+
 \usepackage{fontspec,xltxtra,xunicode}
-\setmainfont[Ligatures=TeX]{Source Serif Pro}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
 \setsansfont[Ligatures=TeX, Scale=MatchLowercase]{Source Sans Pro}
 \setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\usepackage[math-style=TeX]{unicode-math}
+\setmathfont{xits-math.otf}
+
+
+\newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
+
+% Programming Languages
+\newcommand{\proglang}[1]{\textsf{#1}}
+\newcommand{\RLang}{\proglang{R}}
+\newcommand{\Stan}{\proglang{Stan}}
+\newcommand{\pkg}[1]{\textbf{#1}}
+
+% Used to typeset distributions
+\newcommand{\dist}[1]{\mathcal{#1}}
+\newcommand{\distsep}[1]{;}
+\newcommand{\paren}[1]{\mathopen{}\left(#1\right)\mathclose{}}
+\newcommand{\disti}[2]{\ensuremath{\dist{#1}\paren{#2}}}
+\newcommand{\distii}[3]{\ensuremath{\dist{#1}\paren{#2 \distsep{} #3}}}
+\newcommand{\distiii}[3]{\ensuremath{\dist{#1}_{#2}\paren{#3}}}
+\newcommand{\distiv}[4]{\ensuremath{\dist{#1}_{#2}\paren{#3 \distsep{} #4}}}
+
+\newcommand{\dnorm}[1]{\disti{N}{#1}}
+\newcommand{\dmvnorm}[2]{\distiii{N}{#1}{#2}}
+\newcommand{\dlnorm}[1]{\disti{LN}{#1}}
+\newcommand{\dt}[2]{\distiii{T}{#1}{#2}}
+\newcommand{\dcauchy}[1]{\disti{C}{#1}}
+\newcommand{\dhalfcauchy}[1]{\disti{C^+}{#1}}
+\newcommand{\dbeta}[1]{\disti{B}{#1}}
+\newcommand{\dinvbeta}[1]{\disti{IB}{#1}}
+\newcommand{\dgamma}[1]{\disti{G}{#1}}
+\newcommand{\dinvgamma}[1]{\disti{IG}{#1}}
+\newcommand{\dwishart}[1]{\disti{W}{#1}}
+\newcommand{\dinvwishart}[1]{\disti{IW}{#1}}
+\newcommand{\dunif}[1]{\disti{U}{#1}}
+\newcommand{\dexp}[1]{\disti{E}{#1}}
+
+% Math operators, misc
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\Median}{Median}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\sd}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\logit}{logit}
+\newcommand{\tran}{^\top}
+
+% Misc
+\newcommand{\Model}[2]{$\mathcal{M}$(#1, #2)}
+
+
+% biblatex
+\usepackage[style=authoryear,doi=false,isbn=false,backend=biber,%
+            backref=true,maxbibnames=10,hyperref=true,%
+            dateabbrev=false,uniquename=false]{biblatex}
+\ExecuteBibliographyOptions{url=false}
+\ExecuteBibliographyOptions{doi=false}
+\newbibmacro{string+url}[1]{%
+ \iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
+\DeclareFieldFormat{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
+\DeclareFieldFormat[article]{title}{\usebibmacro{string+url}{\mkbibquote{#1}}}
+\DeclareFieldFormat[misc]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
+\DeclareFieldFormat[book]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
+\AtEveryBibitem{\clearlist{language}}
+
+
+%%%% Local Variables
+\newcommand{\myauthor}{Jeffrey B. Arnold}
+\newcommand{\myinstitution}{University of Rochester}
+\newcommand{\mylocation}{Rochester, New York}
+\newcommand{\mytitle}{Three Essays on the Quantitative Analysis of War, with an Emphasis on the American Civil War}
+\newcommand{\myadvisor}{Professor Randall Stone}
+\newcommand{\myadvisorinstitution}{Unviersity of Rochester}
+\newcommand{\myadvisordept}{Department of Political Science}
+\newcommand{\myyear}{2016}
+
+\addbibresource{local.bib}
 
 \usepackage{placeins}
 
@@ -114,17 +210,13 @@
   \vspace*{\fill}
 
   \begin{center}
-    {\LARGE \bfseries
-      Three Essays on the Quantitative Analysis of War,
-      with an Emphasis on the American Civil War
-      \par
-    }
+    {\LARGE \bfseries \mytitle \par}
 
     \bigskip%
     by
 
     \bigskip%
-    Jeffrey B. Arnold
+    \myauthor
 
     %%%%%
 
@@ -140,26 +232,26 @@
     %%%%%
 
     \bigskip\bigskip\bigskip\bigskip%
-    Supervised by Professor Randall Stone
+    Supervised by \myadvisor{}
 
     \bigskip\bigskip%
-    Department of Political Science
+    \myadvisordept{}
 
     \bigskip%
-    University of Rochester
+    \myadvisorinstitution{}
 
     %%%%%
 
     \bigskip\bigskip\bigskip\bigskip%
-    University of Rochester
+    \myinstitution
 
     \bigskip%
-    Rochester, New York
+    \mylocation{}
 
     %%%%%
 
     \bigskip\bigskip\bigskip\bigskip%
-    2016
+    \myyear{}
   \end{center}
 
   \vspace*{\fill}
@@ -226,16 +318,29 @@
 \listoffigures
 \addcontentsline{toc}{chapter}{List of Figures}
 
+
 %%%%%%%%%%%%%%%%%%%% DISSERTATION CONTENT %%%%%%%%%%%%%%%%%%%%
+
+
 
 % Regular numbering starts now, first page of first chapter is page 1
 \clearpage
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
-% Body
-% \include{chapter-01}
-% \include{chapter-02}
+\chapter{Financial Markets and the Onset of the American Civil War}
+\addcontentsline{toc}{chapter}{Financial Markets and teh Onset of the American Civil War}
+\label{cha:financ-mark-onset}
+
+\input{Financial_Markets_and_Onset_of_the_American_Civil_War.tex}
+
+\chapter{Bonds and Battles}
+\addcontentsline{toc}{chapter}{Bonds and Battles}
+\label{cha:bonds-battles}
+
+\chapter{Chapter 3}
+\addcontentsline{toc}{chapter}{Chapter3}
+
 
 % References
 \clearpage
@@ -243,6 +348,6 @@
 \singlespacing
 
 % Bibtex commands go here
-% \printbibliography{}
+\printbibliography{}
 
 \end{document}
