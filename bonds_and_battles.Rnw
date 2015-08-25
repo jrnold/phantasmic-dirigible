@@ -66,12 +66,6 @@ Financial assuet price data, through its relationship to the expected war result
 \subsection{How Financial Assets can Relate to War Outcomes?}
 \label{sec:how-financial-assets}
 
-Cite ...
-
-
-\subsection{How Financial Assets can be used to study war?}
-\label{sec:how-financial-assets-1}
-
 Given that war is bargaining process \parencite{Fearon1995}, the fundamental question of war is how the mechanism of military conflict resolves the differences between the belligerents that had prevented an agreement from being struck prior to the war.
 Since \textcite{Fearon1995}, a series of papers developed the theory of how fighting and bargaining interact within war \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}.
 However, there has relatively been little empirical work that tests the implications of the bargaining theory of war with intra-war data, exceptions including \textcites{Goemans2000}{Ramsay2008}{Reiter2009}{Weisiger2013}{Weisiger2015}.
@@ -121,6 +115,8 @@ This work will focus on the later in order to understand which events within the
 
 
 \textit{General relationship between asset prices and war outcomes. What sort of assets? How they can relate to war outcomes?}
+
+The prices of financial assets reflect war yields 
 
 
 Four interpretations of prices and why they may be interesting for the study of war:
@@ -175,6 +171,8 @@ The war or events of interest should be the primary influence on changes in the 
 Since prices incorporate expectations about the future and there is a measure of randomness to combat, the issue with non-war related events, is not necessarily one of bias, but one of the variance of the estimate.
 Even if the war events are uncorrelated with other events, and thus no omitted variable bias, if they represent a small proportion of the variation in the price of the financial asset, it will be difficult to use that financial asset as a proxy for the beliefs of interest.
 This would not be an issue if the researcher were just interested in the effect of those events on the price itself, in which case it would mean that the effect sizes of the events of interest are small, but it is an issue if the price is to serve as a proxy for another concept of interest, in which case it means that the signal of the price is relatively low compared to the noise.
+
+
 
 
 
@@ -427,8 +425,9 @@ In order to estimate the effect of combat on the expected war outcome, this work
 This approach allows for individual estimates of the effect of each battle.
 It will also allow for estimates of the average effect of Confederate and Union victories on war expectations.
 
-The set of American Civil War battles used in the data are a set of XXXXXX battles selected by \textcite{CWSAC1993} as the most militarily significant battles in the war.
-The set of battles is listed in Table \ref{tab:battles}.
+
+The set of American Civil War battles used in the analysis is  are a set of the  \textcite{CWSAC1993} as the most militarily significant battles in the war.
+Table \ref{tab:battles} lists these battles.
 The National Park Service in \textcite{CWSAC1993} and \textcite{CWSAC1993b} identified 383 battles as the militarily significant battles from the over 10,000 officially recorded engagements in the war.
 The National Park also categorized the military significance of each of these battles in four-category ordinal scale, A (most) to D (least).
 This work only uses those battles in the highest significance level (``A''), which is defined as ``having a decisive influence on a campaign and a direct impact on the course of the war'' \parencite{CWSAC1993}.
@@ -436,12 +435,6 @@ This work only uses those battles in the highest significance level (``A''), whi
 While \textcite{CWSAC1993} does not describe the methodology used to classify the battle outcomes, the classification appears to primarily reflect the tactical result of the battle.
 \textcite{fox1898regimental} and \textcite{Livermore1900}, which are both sources of and show a high level of agreement with \textcite{CWSAC1993}, define the victorious side of a battle as the side that controls the battlefield at the end of battle.%
 \footnote{\textcite{Bodart1908} and \textcite{cdb90} also code the outcomes of battles and largely agree with the CWSAC classification.} %
-
-Given the set of events, the next question is how to model the timing of these events.
-With respect to battles the time relevant for the analysis is not the date when the battle occurred, but the date when news of the the battle reaches the market.
-In the American Civil War, information about battles reached the New York market within a few days, although that lag varied with distance to New York and idiosyncratic factors.
-Battles in Virginia were reported on the next day, while the Battle of Glorietta Pass in New Mexico was not reported for 2 weeks.
-As a measure of when information about the news reaches the New York market, I use the first mention of the battle in the \textit{New York Times}.
 
 \begin{figure}[htpb]
   \centering
@@ -457,12 +450,21 @@ As a measure of when information about the news reaches the New York market, I u
   \label{tab:battles}
 \end{table}
 
-This work will estimate the effect of conflict on the war by taking a select set of battles based on a \textit{ex post} expert assessment of their military importance and ; but it is not selecting on the dependent variable.
-It is important to note that I am not selecting periods with large changes in the yields of bonds.
-I am selecting explanatory variables, the battles, which based on prior information are expected to have larger effects on the outcome variable.
+Given the set of events, the next question is how to model the timing of these events.
+With respect to battles the time relevant for the analysis is not the date when the battle occurred, but the date when news of the the battle reaches the market.
+In the American Civil War, information about battles reached the New York market within a few days, although that lag varied with distance to New York and idiosyncratic factors.
+While battles in Virginia and the Eastern theater were reported on the next day, news about the Battle of Glorietta Pass in New Mexico did not reach New York city until two weeks later.
+As a measure of when information about the news reaches the New York market, I use the first mention of the battle in the \textit{New York Times}.
+
+
+This work will estimate the effect of conflict on the war by taking a small set of battles based on a \textit{ex post} expert assessment of their military importance.
+It is important to note that this is not selecting on the dependent variable, which in this analysis is the prices.
+I am selecting a set of explanatory variables, in this case, specific battles, which based on prior information are expected to have larg effects on the outcome variable.
 This is no different than any other regression model, in which only a small set of variables relative to all possible variables in the universe are included, because those variables are \textit{a priori} expected to have an effect on the outcome.
-An advantage to this approach is that it takes a dense problem, the effects of all battles and military engagements, and turns it into a sparse problem, a small number of battles which I \textit{a priori} have an expectation of having a non-zero effect), I am able to estimate different effects for all battles.
-With a larger number of battles, it would be necessary to pool estimates in some way, e.g. all battles with the same casualties have the same effect, which may not sufficiently account for the context of the battle.
+This advantage to this approach is that it takes a dense problem, the effects of all possible events and military engagements, and turns it into a sparse problem, with only a small number of battles potentially having a non-zero effect.
+In doing so, I am able to estimate different effects for each battle.
+With a larger number of battles, it would be necessary to pool the effects of battles, for example, all battles with the same casualties have the same effect.
+This may not sufficiently account for the context of battle.
 While this is a subset of the battles, it is still a relatively large number of battles by most war standards and similar in number and composition as the list of battles in other sources: \textcite{Livermore1900}, \textcite{Bodart1908}, \textcite{cdb90}.
 So although this is the may be considered the set of the most military important battle of the American Civil War, that is only due to the completeness of the records and richness of the data.
 In any other data set of battles, the set of battles included here would just be called the ``battles'' of that war.%
@@ -511,6 +513,7 @@ Additionally, the only available source of these interest rates, \textcite{Macau
 Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate.
 This is inappropriate for this analysis because that risk free interest rate was for the London market, and not the New York market.
 
+For example, 
 
 
 \section{Model of War Events on Yields}
@@ -585,3 +588,6 @@ The analysis would consist of extracting events or topics from newspaper article
 This makes the assumption that the newspaper articles sufficiently reflects the information available to the market, which may seem extreme, but seems less problematic than the issues discussed earlier.
 The importance of events relative to other events is identified through their prominence in the newspaper. E.g. if the front page is about a battle, then it is probably the news that is moving the market, whereas if the frontage is about a bill or the economy, then that is probably the more important news.
 
+%%% Local Variables: 
+%%% TeX-master: dissertation.tex
+%%% End:

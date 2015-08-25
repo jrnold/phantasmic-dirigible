@@ -10,3 +10,6 @@
 [submodule "bib"]
 	path = bib
 	url = git@github.com:jrnold/bib.git
+[submodule "dlm-shrinkage"]
+	path = dlm-shrinkage
+	url = git@github.com:jrnold/dlm-shrinkage.git

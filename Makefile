@@ -12,6 +12,11 @@ CHAP_BONDS_BTL_RNW = Bonds_and_Battles.Rnw
 CHAP_BONDS_BTL_TEX = $(CHAP_BONDS_BTL_RNW:%.Rnw=%.tex)
 PATH_BONDS_BTL = ../bonds_and_battles/
 
+CHAP_DLM_RNW = Structural_Breaks.Rnw
+CHAP_DLM_TEX = $(CHAP_DLM_RNW:%.Rnw=%.tex)
+PATH_DLM = ../dlm-shrinkage
+
+
 ## Programs
 
 LATEXMK = latexmk
@@ -26,7 +31,7 @@ doc: $(PDF_FILE)
 $(TEX_FILE): $(RNW_FILE)
 	$(RSCRIPT) -e 'knitr::knit("$<", output = "$@")'
 
-$(PDF_FILE): $(TEX_FILE) acw_onset bonds_battles
+$(PDF_FILE): $(TEX_FILE) acw_onset bonds_battles dlm
 	latexmk -pdf -xelatex -interaction=nonstopmode $(TEX_FILE)
 
 acw_onset: $(CHAP_ACW_ONSET_TEX)
@@ -41,6 +46,13 @@ $(CHAP_BONDS_BTL_TEX): $(CHAP_BONDS_BTL_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_BONDS_BTL)"; knitr::knit("$<", output = "$@")'
 	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{bonds_battles:\1:\2/g' $@
 
+dlm: $(CHAP_DLM_TEX)
+
+$(CHAP_DLM_TEX): $(CHAP_DLM_RNW)
+	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_DLM)"; knitr::knit("$<", output = "$@")'
+	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{dlm:\1:\2/g' $@
+
+
 updatebib:
 	biber $(RNW_FILE:%.Rnw=%.bcf) --output_format bibtex
 	mv $(RNW_FILE:%.Rnw=%_biber.bib) $(RNW_FILE:%.Rnw=%.bib)
@@ -50,6 +62,7 @@ clean:
 	-rm -rf auto
 	-rm $(CHAP_ACW_ONSET_TEX)
 	-rm $(CHAP_BONDS_BTL_TEX)
+	-rm $(CHAP_DLM_TEX)
 
 fullclen :
 	latexmk -C
