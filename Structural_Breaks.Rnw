@@ -524,7 +524,7 @@ The local variance components $\lambda^{2}_{t}$ are able to let individual param
 
 Table \ref{tab:nile-fits} displays model fit statistics for the Nile River flow models.
 The primary criterion that is used to compare the models is the Widely Applicable Information Criterion (WAIC) \parencite{Watanabe2010}.%
-\footnote{See \textcite{GelmanHwangVehtari2013} and \textcite{VehtariOjanen2012} for recent overviews of Bayesian model comparison.}
+\footnote{See \textcite{GelmanHwangVehtari2014a} and \textcite{VehtariOjanen2012} for recent overviews of Bayesian model comparison.}
 The WAIC is an information criterion similar to the commonly used Deviance Information Criterion (DIC) \parencite{spiegelhalter2002bayes}, but unlike the DIC, the WAIC is applicable to singular models such as mixture models.
 Fundamentally, the WAIC is a measure of expected out-of-sample prediction error, and is asymptotically equivalent to Bayesian leave-one-out cross-validation \parencite{Watanabe2010}.
 %\todo[inline]{Add footnote with WAIC derivation}

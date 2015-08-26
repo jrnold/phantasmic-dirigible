@@ -74,6 +74,7 @@ A primary reason for this for this relative absence of work is the difficulty of
 While the secondary implications of the bargaining theory of war have been tested, the direct implications and the mechanisms of the theory require data on the belligerents' estimates of capabilities and resolve, and bargaining offers \parencite[32]{Reiter2003}.
 
 
+
 Due to the lack of detailed data for many wars as well as concerns about the comparability of wars, using within case analysis is an appealing methodology for analyzing the effect of conflict on war termination.
 Financial market data provides a measure related to a political science outcome of interest, the war termination, that varies within war.
 
@@ -421,20 +422,25 @@ During the American Civil War, the yields are variable, spiking in the middle of
 \section{Battle Data and Other War Events}
 \label{sec:battle-data}
 
-In order to estimate the effect of combat on the expected war outcome, this work includes individual variables for X \textit{a priori} identified as militarily significant, as well as their outcomes (which side was victorious).
-This approach allows for individual estimates of the effect of each battle.
-It will also allow for estimates of the average effect of Confederate and Union victories on war expectations.
+A theoretical and practical issue in the quantitative study of war is how to quantify and measure military outcomes within war.
+The first disagreement is over what to use as the unit of obervation.
+Some work uses events, such as battles or campaigns, as the unit of observation \parencites{ReiterStam1998}{ReiterStam2002}{Ramsay2008}{PilsterBoehmelt2011a}{GrauerHorowitz2012}, while other work prefer time aggregated measures, e.g. such as monthly casualties \textcite{Weisiger2015}.
+A second disagreement is over the best measure of military outcomes.
+Some work uses victory or defeat in battle \parencites{ReiterStam1998}{ReiterStam2002}{GrauerHorowitz2012}, while other work uses casualties \parencites{Biddle2004}{BiddleLong2004}{PilsterBoehmelt2011a}.
+In this work, I will use a set of XXXX ``militarily significant'' battles in the American Civil war and their outcomes (Confederate or Union victory). 
+A key advantage of this method, is it allows me to estimate the effects of individual battles, as well as the average effect of Union and Confederate Victory.
 
-
-The set of American Civil War battles used in the analysis is  are a set of the  \textcite{CWSAC1993} as the most militarily significant battles in the war.
+The set of American Civil War battles used in the analysis is the set of the battles that the National Park Service (\footnote{CWSAC}) defines as the militarily significant in the war --- ``having a decisive influence on a campaign and a direct impact on the course of the war'' \parencite{CWSAC1993}.
 Table \ref{tab:battles} lists these battles.
-The National Park Service in \textcite{CWSAC1993} and \textcite{CWSAC1993b} identified 383 battles as the militarily significant battles from the over 10,000 officially recorded engagements in the war.
-The National Park also categorized the military significance of each of these battles in four-category ordinal scale, A (most) to D (least).
-This work only uses those battles in the highest significance level (``A''), which is defined as ``having a decisive influence on a campaign and a direct impact on the course of the war'' \parencite{CWSAC1993}.
-
-While \textcite{CWSAC1993} does not describe the methodology used to classify the battle outcomes, the classification appears to primarily reflect the tactical result of the battle.
-\textcite{fox1898regimental} and \textcite{Livermore1900}, which are both sources of and show a high level of agreement with \textcite{CWSAC1993}, define the victorious side of a battle as the side that controls the battlefield at the end of battle.%
-\footnote{\textcite{Bodart1908} and \textcite{cdb90} also code the outcomes of battles and largely agree with the CWSAC classification.} %
+These data come from a 1993 National Park Service report, ``Civil War Sites Advisory Commission Report on the Nation's Civil War Battlefields'' \parencites{CWSAC1993}{CWSAC1993b}.
+The CWSAC was established by a 1990 law to preserve Civil War battlefields and was ``asked to identify the nation's historically significant Civil War sites; determine their relative importance; determine their condition; assess threats to their integrity; and recommend alternatives for preserving and interpreting them.'' \parencite{CWSAC1993b}
+This report identified 383 battles militarily significant battles from the over 10,000 officially recorded engagements in the war.
+Of the over 10,500 military engagements listed in the \textit{Official Records of the American Civil War}, CWSAC selected 384 battles as the ``principal batltes'' based on ``military significance''. 
+\begin{quote}
+  These sites encompass virtually all of the principal land battles that were of special strategic, tactical, or thematic importance to local operations, campaigns, theaters, or to the war as a whole \dots{} he more than 10,000 conflict sites excluded from our inventory were relatively unimportant as individual military actions. These conflicts were the venues and actions that implemented the war between and beyond the dramatic major engagements. \parencite{CWSAC1993}
+\end{quote}
+These principal battles were further classified into four categories according to their military and historical significance; A (``having a decisive influence on a campaign and a direct impact on the course of the war'') to D (``having a limited influence on the outcome of their campaign or operation but achieving or affecting important local objectives'').
+This work will use the 45 (12\%) battles with the military significance classification of ``A''.
 
 \begin{figure}[htpb]
   \centering
@@ -443,6 +449,18 @@ While \textcite{CWSAC1993} does not describe the methodology used to classify th
   \label{fig:major_battles}
 \end{figure}
 
+The CWSAC report \parencite{CWSAC1993b} also classifies battles into ``Union victory'', ``Confederate victory'', and ``Inconclusive''.%
+\footnote{For some battles it is more descriptive, describing victory or defeat as strategic or tactical.}
+While \textcite{CWSAC1993} does not describe the methodology used to classify the battle outcomes, the classifications largely argee with other sources \textcite{fox1898regimental}, \textcite{Livermore1900}, \textcite{Bodart1908} and \textcite{cdb90}.%
+\footnote{\textcite{fox1898regimental} and \textcite{Livermore1900} are cited as sources for CWSAC.}
+Two of those sources, \textcite{fox1898regimental} and \textcite{Livermore1900}, provide more description of their methodology for assigning victory --- the victorious side of a battle as the side that controls the battlefield at the end of battle.
+Add citations to XXXXX.
+
+I use the work of 
+While \textcite{}. 
+First, once I only include military 
+
+
 \begin{table}
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}
@@ -450,11 +468,18 @@ While \textcite{CWSAC1993} does not describe the methodology used to classify th
   \label{tab:battles}
 \end{table}
 
-Given the set of events, the next question is how to model the timing of these events.
-With respect to battles the time relevant for the analysis is not the date when the battle occurred, but the date when news of the the battle reaches the market.
-In the American Civil War, information about battles reached the New York market within a few days, although that lag varied with distance to New York and idiosyncratic factors.
-While battles in Virginia and the Eastern theater were reported on the next day, news about the Battle of Glorietta Pass in New Mexico did not reach New York city until two weeks later.
-As a measure of when information about the news reaches the New York market, I use the first mention of the battle in the \textit{New York Times}.
+Finally, the dates of each battle are needed. 
+For this analysis, what is important, is not the date at which the battle occurred, but the date at at which the New York market learned of the outcome of the battle.
+In the American Civil War, information reached the New York market relatively quickly, but still with a lag.
+\begin{quote}
+  
+\end{quote}
+As a measure of when information of the battle reaches the New York market, I coded the first mention of the battle outcome in the \textit{New York Times}.%
+This was not necessarily one day. 
+For some battles (LIST) which lasted several days of approximately equal intensity, I coded news reaching the market on several days.
+However, for longer sieges (LIST), I only coded when news of the end of the siege was reported.
+While battles in Virginia and the Eastern theater were reported on the next day, news battles in the Trans-Mississipi  news about the Battle of Glorietta Pass in New Mexico did not reach New York city until two weeks later.
+%In the analysis is is important to get the timing of the events correct, since in a time series, the timing of the effects is the primary factor in identifying them.
 
 
 This work will estimate the effect of conflict on the war by taking a small set of battles based on a \textit{ex post} expert assessment of their military importance.
@@ -470,10 +495,6 @@ So although this is the may be considered the set of the most military important
 In any other data set of battles, the set of battles included here would just be called the ``battles'' of that war.%
 This set of battles is similar to the level of detail offered in most other battle-level datasets of war; so although, this data is only including the ``most influential'' battles, most battle-level datasets also make that decision when including battles.
 
-% Dicusss battle data that is available
-For this project, I created a public database of American Civil War battles, the American Civil War Battle Database \parencite{Arnold2015b}.
-The American Civil War Battle Database combines, cleans, cross-references battle data from multiple primary and secondary sources, including \textcites{Phisterer1883}{Livermore1900}{Bodart1908}{dyer1908_war_rebel}{KennedyConservation1998}{CWSAC1993}{cwsac2012}.
-The database includes data on force sizes, casualties, commanders, and locations for almost 400 battles.
 
 Thus far, I have only discussed battles in this section, but battles not the only relevant events in a war, and this war in particular.
 Changes in policy, leadership, foreign policy events, negoatiations and other events may all influenece expectations about the future of the war.
@@ -513,7 +534,9 @@ Additionally, the only available source of these interest rates, \textcite{Macau
 Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate.
 This is inappropriate for this analysis because that risk free interest rate was for the London market, and not the New York market.
 
-For example, 
+% Dicusss battle data that is available
+For this project, I created a public database of American Civil War battles, the American Civil War Battle Database \parencite{Arnold2015b}.
+The American Civil War Battle Database combines, cleans, cross-references battle data from multiple primary and secondary sources, including \textcites{Phisterer1883}{Livermore1900}{Bodart1908}{dyer1908_war_rebel}{KennedyConservation1998}{CWSAC1993}{cwsac2012}.
 
 
 \section{Model of War Events on Yields}
