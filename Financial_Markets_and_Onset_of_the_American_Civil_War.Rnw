@@ -290,7 +290,7 @@ This may be because the Georiga 6s were illiquid; in the data, there are long se
 }
 
 Although bond yields had risen after the election of Lincoln as the risk of civil war increased, the formal start of the war with the Battle of Fort Sumter was followed by a jump in yield much larger than had been observed after the election or during the Panic of 1857.
-The start of the war resulted in a `` depreciation in Southern State stocks exceeding any decline ever witnessed at the stock board of this city.quantifying uncertainty'' \parencite[919]{BankersMagazine1860}.
+The start of the war resulted in a `` depreciation in Southern State stocks exceeding any decline ever witnessed at the stock board of this city'' \parencite[919]{BankersMagazine1860}.
 Unlike the election of 1860, in which bond yields rose over a period of weeks, prices fell and yields increased immediately after news of Fort Sumter reached the market.
 Figure~\ref{fig:yields_sumter} plots the yields around the Battle of Fort Sumter (March--June 1861).
 Table~\ref{fig:yields_sumter} tabulates yields in the week immediately before and after news of the surrender of Fort Sumter reached the New York market.

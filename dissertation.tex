@@ -147,6 +147,8 @@
 \DeclareFieldFormat[misc]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
 \DeclareFieldFormat[book]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
 \AtEveryBibitem{\clearlist{language}}
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
 
 
 %%%% Local Variables
