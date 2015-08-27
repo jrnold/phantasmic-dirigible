@@ -2,7 +2,6 @@
 *.dvi
 *.pdf
 *.log
-*.bbl
 /auto/
 *.run.xml
 *.aux
