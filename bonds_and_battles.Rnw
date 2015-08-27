@@ -558,7 +558,7 @@ Reincorporating the seceeding states of the Confederacy back into the U.S. would
 INSERT STATISTICS OF SIZE OF THE COFEDERACY.
 
 Statements by government officials and market participants suggest more concern with the cost and duration of the war than with the inclusion of the Confederacy.
-The economist, William Elder, in an 1863 analysis of the ability of the U.S. to repay its debt reprinted in the \textit{Bankers'  Magazine} claimed ``The Rebellion leaves our capital in real and personal property just where it was before the secession. ... So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need'' \parencite[19]{Elder1863}.
+The economist, William Elder, in an 1863 analysis of the ability of the U.S. to repay its debt reprinted in the \textit{Bankers'  Magazine} claimed ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need'' \parencite[19]{Elder1863}.
 The \textit{Annual Report of the Treasury Department} in 1863 noted,
 \begin{quote}
 It will not escape observation that the average [interest] rate is now increasing, and it is obvious that it must continue to increase with the increase of the proportion of the interest-bearing to the non-interest-bearing debt.
