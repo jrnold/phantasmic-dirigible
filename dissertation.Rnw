@@ -16,6 +16,8 @@
 
 \usepackage{subcaption}
 
+\usepackage{tikz}
+
 \usepackage[]{xcolor}
 \definecolor{light-gray}{gray}{0.66}
 \definecolor{dkred}{rgb}{0.5,0,0}

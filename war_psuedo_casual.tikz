@@ -1,0 +1,50 @@
+\usetikzlibrary{shapes,arrows,fit}
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    %Define style for boxes
+    punkt/.style={
+           rectangle,
+           rounded corners,
+           draw,
+           text centered},
+    rectouter/.style={
+      draw,
+      rounded corners
+    },
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick}
+}
+\footnotesize
+\begin{tikzpicture}[node distance=1cm, auto, scale=0.9]
+  % Combat processes
+ \node [] (combattitle) (combattitle) {Combat Processes};
+ \node [punkt, below of=combattitle, node distance=0.5cm] (victory) {Battle Victories};
+ \node [punkt, below of=victory, node distance=0.5cm] (casualties) {Casualties};
+ \node [draw, rounded corners, fit={(combattitle) (victory) (casualties)}] (combat) {};
+
+ % casual mechanisms
+ \node [right of=combat, node distance=4cm] (dummy) {Causal mechanisms};
+ \node [punkt, above of=dummy, node distance=2cm] (pi) {Private information};
+ \node [punkt, below of=dummy, node distance=2cm] (cp) {Commitment
+   Problem};
+ \node [draw, rectouter, fit={(dummy) (pi) (cp)}] (causal) {};
+
+ % war termination
+ \node [punkt, right of=dummy, node distance=4cm] (wvictor)
+ {Victor};
+ \node [punkt, below of=wvictor, node distance=0.5cm] (wduration)
+ {Duration};
+ \node [punkt, below of=wduration, node distance=0.5cm] (wcost)
+ {Cost};
+ \node [above of=wvictor, node distance=0.5cm] (wterm)  {War Termination};
+ \node[draw, rectouter, fit={(wterm) (wvictor) (wduration) (wcost)}] (end) {};
+
+ % paths
+ \draw [pil] (combat.north) to [bend left] (pi.west);
+ \draw[pil] (combat.south) to [bend right] (cp.west);
+ \draw[pil] (pi.east) to [bend left] (end.north);
+ \draw[pil] (cp.east) to [bend right] (end.south);
+\end{tikzpicture}

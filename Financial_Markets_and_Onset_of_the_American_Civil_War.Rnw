@@ -535,7 +535,7 @@ Not only that, the private information model of war implies that many wars shoul
 In general, the prevalance of unanticipated wars would provide evidence for the prevalence of some sort of private information model.
 Other more specific theories of war may offer different implications as to what the \textit{ex ante} probability of war would be.
 However, the point remains that market predictions of war probability are both something to be explained by models of war, and a means to assess those models.
-In the specific case here, the low probability of war implied by financial markets for the American Civil War is surprising given that several political science  explanations of the American Civil War emphasize commitment problems \parencite{Reiter2009}{Weingast1998}.
+In the specific case here, the low probability of war implied by financial markets for the American Civil War is surprising given that several political science  explanations of the American Civil War emphasize commitment problems \parencites{Reiter2009}{Weingast1998}.
 
 The second possibility is that financial markets maybe doing a poor job assessing and signaling the risk of war.
 This would pose serious problems for the mechanism in the \textit{capitalist peace}.
