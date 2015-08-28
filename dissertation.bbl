@@ -3518,6 +3518,37 @@
       \verb http://books.google.com/books?id=8yzs3V8EXXwC
       \endverb
     \endentry
+    \entry{RhodeStrumpf2004a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=de0131daaa98f25199add0406d49102e}{Rhode}{R\bibinitperiod}{Paul\bibnamedelima W.}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=529e88656f8062dfe005738ab5949a54}{Strumpf}{S\bibinitperiod}{Koleman\bibnamedelima S.}{K\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{c81e0a7c3786236c0cf9d57db330ba21}
+      \strng{fullhash}{c81e0a7c3786236c0cf9d57db330ba21}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{08953309}
+      \field{journaltitle}{The Journal of Economic Perspectives}
+      \field{number}{2}
+      \field{title}{Historical Presidential Betting Markets}
+      \field{volume}{18}
+      \field{year}{2004}
+      \field{pages}{127\bibrangedash 141}
+      \range{pages}{15}
+      \verb{url}
+      \verb http://www.jstor.org/stable/3216894
+      \endverb
+    \endentry
     \entry{RigobonSack2005}{article}{}
       \name{author}{2}{}{%
         {{hash=5b740473a6551bdcef519ff2919ec27f}{Rigobon}{R\bibinitperiod}{Roberto}{R\bibinitperiod}{}{}{}{}}%

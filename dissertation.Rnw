@@ -84,6 +84,8 @@
 
 % Misc
 \newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\ie}{\textit{i.e.}}
 
 % biblatex
 \usepackage[style=authoryear,doi=false,isbn=false,backend=biber,%
