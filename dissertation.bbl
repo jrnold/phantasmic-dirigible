@@ -962,6 +962,37 @@
       \verb http://books.google.com/books?id=55tAAAAAIAAJ
       \endverb
     \endentry
+    \entry{DafoeKelsey2014a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f8465387f1aef0e52a00f2712e5f31a1}{Dafoe}{D\bibinitperiod}{Allan}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=12c5f8057618ea73f9311e6a37a22c9b}{Kelsey}{K\bibinitperiod}{Nina}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7634c5e9e4acd24613338f9836054dbb}
+      \strng{fullhash}{7634c5e9e4acd24613338f9836054dbb}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Countries with open capital markets tend to have fewer militarized disputes and wars. Gartzke, Li & Boehmer propose that this association arises from the enhanced ability of states with open capital markets to credibly signal resolve through the bearing of economic costs ex ante to militarized escalation. We test this causal mechanism by qualitatively examining six crucial cases in which the mechanism is most likely to be operative and observable. We employ a formal case selection strategy designed to yield cases with high inferential leverage for our confirmatory test and to select cases for an exploratory analysis of scope conditions. Through analysis of media reports, government documents, and other sources, we evaluate the extent to which relevant individuals drew the appropriate inferences about market-mediated costs and resolve. We conclude that while market-mediated signaling may operate in major conflicts, it is unlikely to account for much of the association between capital openness and peace. Exploratory analysis of our cases identifies potential scope conditions, clarifies the role of different signaling mechanisms, and suggests other explanations for the peaceful behavior of countries with open capital markets.}
+      \field{journaltitle}{Journal of Peace Research}
+      \field{number}{5}
+      \field{title}{Observing the capitalist peace: Examining market-mediated signaling and other mechanisms}
+      \field{volume}{51}
+      \field{year}{2014}
+      \field{pages}{619\bibrangedash 633}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1177/0022343314536423
+      \endverb
+      \verb{eprint}
+      \verb http://jpr.sagepub.com/content/51/5/619.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://jpr.sagepub.com/content/51/5/619.abstract
+      \endverb
+    \endentry
     \entry{DattaGhosh2012}{article}{}
       \name{author}{2}{}{%
         {{hash=c7ee133e4144e23e130ce234247c0b64}{Datta}{D\bibinitperiod}{Jyotishka}{J\bibinitperiod}{}{}{}{}}%
@@ -1605,6 +1636,33 @@
       \range{pages}{21}
       \verb{url}
       \verb http://www.jstor.org/stable/2601290
+      \endverb
+    \endentry
+    \entry{Gartzke2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{fullhash}{6daa92a78fce568a80227a48f72ced00}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is widely accepted that democracies are less conflict prone, if only with other democracies. Debate persists, however, about the causes underlying liberal peace. This article offers a contrarian account based on liberal political economy. Economic development, free markets, and similar interstate interests all anticipate a lessening of militarized disputes or wars. This "capitalist peace" also accounts for the effect commonly attributed to regime type in standard statistical tests of the democratic peace.}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{1}
+      \field{title}{The Capitalist Peace}
+      \field{volume}{51}
+      \field{year}{2007}
+      \field{pages}{166\bibrangedash 191}
+      \range{pages}{26}
+      \verb{file}
+      \verb Gartzke2007.pdf:Gartzke2007.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1540-5907.2007.00244.x
       \endverb
     \endentry
     \entry{GartzkeLi2003}{article}{}
@@ -3678,6 +3736,36 @@
       \verb http://dx.doi.org/10.1017/S0003055403000911
       \endverb
       \keyw{bargaining,psc572,uncertainty,war}
+    \endentry
+    \entry{Slantchev2012a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6ab0141294e4f7ac14489ef5599852d5}{Slantchev}{S\bibinitperiod}{Branislav\bibnamedelima L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6ab0141294e4f7ac14489ef5599852d5}
+      \strng{fullhash}{6ab0141294e4f7ac14489ef5599852d5}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2012}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Military expenditures are often funded by debt, and sovereign borrowers are more likely to renege on debt-service obligations if they lose a war than if they win one or if peace prevails. This makes expected debt service costlier in peace, which can affect both crisis bargaining and war termination. I analyze a complete-information model where players negotiate in the shadow of power, whose distribution depends on their mobilization levels, which can be funded partially by borrowing. I show that players can incur debts that are unsustainable in peace because the opponent is unwilling to grant the concessions necessary to service them without fighting. This explanation for war is not driven by commitment problems or informational asymmetries but by the debt-induced inefficiency of peace relative to war. War results from actions that eliminate the bargaining range rather than from inability to locate mutually acceptable deals in that range.}
+      \field{issn}{1537-5943}
+      \field{issue}{04}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{11}
+      \field{title}{Borrowed Power: Debt Finance and the Resort to Arms}
+      \field{volume}{106}
+      \field{year}{2012}
+      \field{pages}{787\bibrangedash 809}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1017/S0003055412000378
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0003055412000378
+      \endverb
     \endentry
     \entry{SmithStam2004}{article}{}
       \name{author}{2}{}{%

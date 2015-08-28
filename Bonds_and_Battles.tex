@@ -34,8 +34,7 @@ Thus, events associated with large changes in the price of Union bonds can be us
 Financial assuet price data, through its relationship to the expected war result, a provides a proxy for war results with within-war variation that can be used to estimate the effect of events on the expected war result.
 
 
-The prices of The prices of the financial are a summary (weighted
-expectation, cite?) of the beliefs of the investors in that market
+The prices of The prices of the financial are a summary (weighted expectation, cite?) of the beliefs of the investors in that market
 conditional on the data avaiable at the time. It is important to
 reiterate that prices reflect the beliefs of investors, and not
 necessarily the beliefs of the belligerents' governments. The
@@ -82,8 +81,61 @@ receive), market prices may be a more appropriate measure of duration
 and outcome of the war than estimates derived from statistical models.
 
 
-\section{Financial Markets and the Study of War?}
+\section{Financial Markets and the Study of War}
 \label{bonds_battles:sec:barg-theory-war}
+
+Financial markets, through the prices of financial assets, are useful in the study of war in at least three ways.
+First, they can provide a direct measure the costs of war \parencite{GuidolinLaFerrara2010}.
+Second, financial markets are directly involved in theories of war, such as the ``Capitalist Peace'' \parencites{Gartzke2007}{DafoeKelsey2014a} or the effect of debt financing on war \parencite{Slantchev2012a}.
+Third, in some cases, the prices of financial assets can serve as a pseudo-prediction market of the expected outcome of war, and be used to assess theories of war termination.
+
+\subsection{How the Prices of Financial Assets Relate to War Outcomes}
+\label{bonds_battles:sec:how-prices-financial}
+
+A generic financial asset is a stream of future, and possibly uncertain, cashflows.%
+\footnote{
+  This largely follows the discussion in \textcite[673]{GuidolinLaFerrara2010}.
+  See also \textcite{HaberMitchenerOosterlinckEtAl2015}. 
+  See any introductory finance textbook or course notes for more information.
+  See \textcite{Chan-Lau2006} for an overview of market-based measures of sovereign risk
+}
+For example, a coupon bond pays a set number of coupons at specified times and its face value on maturity, 
+and stocks pay out dividends over time.
+Since these cashflows are in the future and because their payment may be uncertain, these cashflows are discounted.
+And the current price of a financial asset is the value of those discounted cashflows.
+Slightly more formally, the current price ($P_{t}$) of a financial asset is 
+\begin{equation}
+  \label{bonds_battles:eq:3}
+  P_{t} = \frac{j = 1}{H} \frac{\E_{t + j}(C_{t + j} | \omega_{t})}{1 + \E_{t}(d_{t+j} | \omega_{t}}
+\end{equation}
+where $H$ is the number of cashflows, $C_{t + j}$ is the cashflow at time $t + j$, and $r_{d + j}$ is the discount rate for time $t + j$. 
+The discount rate will often consist of a ``risk free'' rate and risk premia specific to the bond.
+The most important thing to note about the price in Equation (\ref{bonds_battles:eq:3}) since all of its inputs are in the future, it is an expectation given current information.
+Except when a payment occurs, changes in prices are due to changes in the  \textit{information} set of the investor which influences their expectations about the future.
+So it is not events themselves which influence the price of an asset, but the part of the event which is updates the information of investors concerning the future cashflows of the asset.
+
+In this paper, I will use the yields to maturity of coupon bond which are found by taking a known price and cashflow schedule in Equation (\ref{bonds_battles:eq:3}) as solving for a single discount rate.
+For example, assuming continuous compounding (for simplicity), the yield to maturity, $y$, is the $y$ that solves,
+\begin{equation}
+  \label{bonds_battles:eq:5}
+  P_{t} = \frac{j = 1}{H} \frac{C_{t + j}} e^{-y j} \text{.}
+\end{equation}
+The interest rate is moves inversely to the price: higher yield means a lower price, and a yield rate means a higher price.
+In other words, a riskier asset has a lower price and a higher yield.
+
+Which assets have expected cashflows related to war outcomes? 
+The ideal asset
+
+How are they related? 
+
+- Via outcome (victory or defeat)
+- Via costs and duration of the war
+
+Finally, the cashflows and expectations of the asset should be largely driven by the events of the 
+
+
+\subsection{How the Prices of Financial Assets Can Help Our Understanding of War}
+\label{bonds_battles:sec:how-prices-financial-1}
 
 Given that war is bargaining process \parencite{Fearon1995}, the fundamental question of war is how the mechanism of military conflict resolves the differences between the belligerents that had prevented an agreement from being struck prior to the war.
 Since \textcite{Fearon1995}, a series of papers developed the theory of how fighting and bargaining interact within war \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}.
@@ -136,7 +188,6 @@ This work will focus on the later in order to understand which events within the
 
 The prices of financial assets reflect war yields 
 
-
 Four interpretations of prices and why they may be interesting for the study of war:
 
 \begin{enumerate}
@@ -172,14 +223,13 @@ These bonds can be related to war outcomes through both the cost and duration of
 \textcite{HaberMitchenerOosterlinckEtAl2015} focus on sovereign debt of parties in civil war.
 Since if the civil war ends in the defeat of the rebel side, it is almost certain that it will default since in almost all cases governments do not honor rebel debt.
 However, the effect outcome of war on the probability of the repayment of sovereign debt incorporates more factors than that, as it also incorporates the cost of the war and its duration.
-This means that it may be difficult to separate out the effects of the result (victory, defeat), and the cost and duration of the war.\footnote{
+This means that it may be difficult to separate out the effects of the result (victory, defeat), and the cost and duration of the war.%
+\footnote{
   Though not impossible: multiple assets from different parties to the war may make this feasible.
   Alternatively, a strong model of the effects of these on the price may also allow for identification of different effects.
 }
 Although this may seem a downside to the use of many financial assets as measures of the expected outcome of wars, it can also be seen as a benefit.
-The financial market effectively acts as a single measure which weights both the financial costs and benefits of the war discounted over time.\footnote{
-  Consider, is it a victory if a country destroys its economy and a generation to gain a small piece of territory?
-}
+The financial market effectively acts as a single measure which weights both the financial costs and benefits of the war discounted over time.
 This is not the only way to measure war outcomes, but is useful in that it able to combine costs and benefits on the same scale, and consider both, something which measures od war outcomes in common datasets, e.g. COW, do not.
 
 The war or events of interest should be the primary influence on changes in the price of the asset.
@@ -187,9 +237,7 @@ Since prices incorporate expectations about the future and there is a measure of
 Even if the war events are uncorrelated with other events, and thus no omitted variable bias, if they represent a small proportion of the variation in the price of the financial asset, it will be difficult to use that financial asset as a proxy for the beliefs of interest.
 This would not be an issue if the researcher were just interested in the effect of those events on the price itself, in which case it would mean that the effect sizes of the events of interest are small, but it is an issue if the price is to serve as a proxy for another concept of interest, in which case it means that the signal of the price is relatively low compared to the noise.
 
-
-Prices are particularly useful for analyzing intra-war events for
-several reasons.%
+Prices have several other characteristics that make them a useful addition to the political scientist's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
 First, they incorporate only ex ante information. This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}.
 Second, investors have strong incentives to be truthful in their assessments because their payoffs are tied to being correct.
@@ -245,13 +293,6 @@ In many areas in which researchers are most interested in understanding conflict
 Also, even for states with liquid and well-developed markets in normal periods, states often intervene in their own markets during war, distorting the price signals \parencite[12]{HaberMitchenerOosterlinckEtAl2015}. Finally, in any case in which prices are used, the researcher will need to apply substantive knowledge of the assets, investors, and conflict in order to map the prices into estimates of the political science quantities of interest.
 
 
-\begin{figure}[htpb]
-  \centering
-  \input{war_psuedo_casual.tikz}
-  \caption{Combat and War Termination}
-  \label{bonds_battles:fig:combat-causal-diagram}
-\end{figure}
-
 
 
 \subsection{The Means and Mechanisms of War}
@@ -293,6 +334,15 @@ The immediate goals of combat are the destruction of military forces, the destru
 The second is the causal mechanisms by which those means influence the bargaining process and war termination. %
 Since a complete and coherent theory requires that combat solve the frictions that prevented a negotiated settlement without war \parencite{LeventogluSlantchev2007}, these causal mechanisms are the three rataionalist theories of war identified in \textcite{Fearon1995}: private information, commitment, and indivisibility. %
 Thus there exist multiple possible means of combat and multiple channels by which each of those means may influence war termination.
+Figure \ref{bonds_battles:fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.
+
+\begin{figure}[htpb]
+  \centering
+  \input{war_psuedo_casual.tikz}
+  \caption{Combat and War Termination}
+  \label{bonds_battles:fig:combat-causal-diagram}
+\end{figure}
+
 
 Formal models can be classified by the casual mechanism by which combat influences war termination and by the means of combat. %
 The formal models differ not only alter the mechanism in which they are interested (private information or commitment), but also the role of battles in the war, and the nature of the combat process: whether battles are important primarily because they impose costs (resolve), or because they can create war victory (probability of victory). %
@@ -509,9 +559,7 @@ percent, the majority of which had been incurred to pay for the war.%
 single most important indicator of future government expenditures is
 the process of the war itself.''%
 
-Second, there is extensive historical and economic literature
-establishing that war events are the single best determinant of bond
-and currency prices during the American Civil War:
+Second, there is extensive historical and economic literature establishing that war events are the single best determinant of bond and currency prices during the American Civil War:
 \parencites{Mitchell1903}{Mitchell1908}{Calomiris1988}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997},
 graybacks \parencites{Schwab1901}{Weidenmier2002}, southern prices
 \parencite{BurdekinLangdana1993}, Confederate bonds
