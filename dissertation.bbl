@@ -87,56 +87,6 @@
       \verb http://dx.doi.org/10.6084/m9.figshare.1513853
       \endverb
     \endentry
-    \entry{ArrowForsytheGorhamEtAl2008}{article}{}
-      \name{author}{22}{}{%
-        {{hash=e8e40285e9d1f55181de138f7abba482}{Arrow}{A\bibinitperiod}{Kenneth\bibnamedelima J.}{K\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=5f7e376fc0703f34e10c2274e6c46940}{Forsythe}{F\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=f1618225155dc436c3f4f8ce3b06da43}{Gorham}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=29f33783972e538baa57698ef5dee93c}{Hahn}{H\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=59865618950cdda143b545d178ad5832}{Hanson}{H\bibinitperiod}{Robin}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=10873d90e4dd054761db2d08bfd7d164}{Ledyard}{L\bibinitperiod}{John\bibnamedelima O.}{J\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-        {{hash=7097c723629e6e63be3f1eff0a604774}{Levmore}{L\bibinitperiod}{Saul}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=84309ef3fc07a521579e65c4daeb7907}{Litan}{L\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=4a72201f09391b2eccac2ca94d4a921b}{Milgrom}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
-        {{hash=e569337fdf66abb04f7afffda43c45fa}{Nelson}{N\bibinitperiod}{Forrest\bibnamedelima D.}{F\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=6cef5ac85256f1ef6cdd314fc6fe2431}{Neumann}{N\bibinitperiod}{George\bibnamedelima R.}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{hash=9923e91fb3b18fe846f526ad653267cd}{Ottaviani}{O\bibinitperiod}{Marco}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=6886832a620d0aac473bf4fa663c8d2b}{Schelling}{S\bibinitperiod}{Thomas\bibnamedelima C.}{T\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{hash=73ae6851ace6387120534c0614326d4f}{Shiller}{S\bibinitperiod}{Robert\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=4119928095d752a1b50d6d7fef60b90c}{Smith}{S\bibinitperiod}{Vernon\bibnamedelima L.}{V\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{hash=bdf21de95ab3dc4a90b8193c86d7f74e}{Snowberg}{S\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=a54191f8837932a53925647560432312}{Sunstein}{S\bibinitperiod}{Cass\bibnamedelima R.}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{hash=43e620292c04ccd0b1bb834cc476d39f}{Tetlock}{T\bibinitperiod}{Paul\bibnamedelima C.}{P\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{hash=75f3842f66b25b36b3372a847f5c2016}{Tetlock}{T\bibinitperiod}{Philip\bibnamedelima E.}{P\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{hash=cb36ebbb1c30434c890df331faa61953}{Varian}{V\bibinitperiod}{Hal\bibnamedelima R.}{H\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{hash=22e89001d0a128a8b110c57c90e2c403}{Wolfers}{W\bibinitperiod}{Justin}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=0f1c14c51805234cfffd43e45d1db562}{Zitzewitz}{Z\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{e21bc9189dfea88556ce926b7ec07cfb}
-      \strng{fullhash}{76a59453df16cb9b129670549490bf92}
-      \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
-      \field{labelyear}{2008}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{number}{5878}
-      \field{title}{The Promise of Prediction Markets}
-      \field{volume}{320}
-      \field{year}{2008}
-      \field{pages}{877\bibrangedash 878}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1126/science.1157679
-      \endverb
-      \verb{eprint}
-      \verb http://www.sciencemag.org/content/320/5878/877.full.pdf
-      \endverb
-      \verb{url}
-      \verb http://www.sciencemag.org/content/320/5878/877.short
-      \endverb
-    \endentry
     \entry{Balke1993}{article}{}
       \name{author}{1}{}{%
         {{hash=eec4692e1f5f84d7fc3bed2a1f6239ed}{Balke}{B\bibinitperiod}{Nathan\bibnamedelima S.}{N\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
@@ -166,31 +116,6 @@
       \range{pages}{12}
       \verb{url}
       \verb http://www.jstor.org/stable/1391308
-      \endverb
-    \endentry
-    \entry{Ball1991}{book}{}
-      \name{author}{1}{}{%
-        {{hash=278341be809ae0b033ffb5f1d5ff54ec}{Ball}{B\bibinitperiod}{Douglas\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {University of Illinois Press}%
-      }
-      \strng{namehash}{278341be809ae0b033ffb5f1d5ff54ec}
-      \strng{fullhash}{278341be809ae0b033ffb5f1d5ff54ec}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{1991}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780252017551}
-      \field{title}{Financial failure and Confederate defeat}
-      \field{year}{1991}
-      \verb{file}
-      \verb Ball1991.pdf:Ball1991.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://books.google.com/books?id=lq92AAAAMAAJ
       \endverb
     \endentry
     \entry{Biddle2004}{book}{}
@@ -776,38 +701,6 @@
       \endverb
       \keyw{Bayesian inference}
     \endentry
-    \entry{Clausewitz1989}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1f2f230e8987ea7b52f1895aa47c9993}{Clausewitz}{C\bibinitperiod}{Carl\bibnamedelima von}{C\bibinitperiod\bibinitdelim v\bibinitperiod}{}{}{}{}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=5f55d3ffda12ae10d61f865a80c66baa}{Howard}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=b635a4b2a460d022e42150779d645b0e}{Paret}{P\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{translator}{2}{}{%
-        {{hash=5f55d3ffda12ae10d61f865a80c66baa}{Howard}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=b635a4b2a460d022e42150779d645b0e}{Paret}{P\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Princeton University Press}%
-      }
-      \strng{namehash}{1f2f230e8987ea7b52f1895aa47c9993}
-      \strng{fullhash}{1f2f230e8987ea7b52f1895aa47c9993}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{1989}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{Indexed edition}
-      \field{isbn}{9780691018546}
-      \field{origyear}{1883}
-      \field{title}{On war}
-      \field{year}{1989}
-      \verb{url}
-      \verb http://books.google.com/books?id=ygPEQgAACAAJ
-      \endverb
-    \endentry
     \entry{Clodfelter2008}{book}{}
       \name{author}{1}{}{%
         {{hash=1a85717951aefa66b0a8f41dcf9f38f5}{Clodfelter}{C\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
@@ -935,6 +828,61 @@
       \endverb
       \verb{url}
       \verb http://books.google.com/books?id=OCmljPYfgkUC
+      \endverb
+    \endentry
+    \entry{CBO2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f5501b3ae5a258dbc25e238c504980c8}{{Congressional\bibnamedelimb Budget\bibnamedelimb Office}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=848793529ffcbc6b5f2423602c4bd5be}{CBO}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{848793529ffcbc6b5f2423602c4bd5be}
+      \strng{fullhash}{f5501b3ae5a258dbc25e238c504980c8}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{extrayear}{1}
+      \field{labelyear}{2012}
+      \field{labelmonth}{06}
+      \field{labelday}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{month}{06}
+      \field{title}{The 2012 Long-Term Budget Outlook}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.cbo.gov/publication/43288
+      \endverb
+    \endentry
+    \entry{CBO2012a}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f5501b3ae5a258dbc25e238c504980c8}{{Congressional\bibnamedelimb Budget\bibnamedelimb Office}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=848793529ffcbc6b5f2423602c4bd5be}{CBO}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{848793529ffcbc6b5f2423602c4bd5be}
+      \strng{fullhash}{f5501b3ae5a258dbc25e238c504980c8}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{extrayear}{2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{06}
+      \field{labelday}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{month}{06}
+      \field{title}{The 2012 Long-Term Budget Outlook: Supplemental Data}
+      \field{urlday}{25}
+      \field{urlmonth}{01}
+      \field{urlyear}{2013}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.cbo.gov/sites/default/files/cbofiles/attachments/43288-LTBOSuppTables_0.xls
       \endverb
     \endentry
     \entry{Cornwallis1879}{book}{}
@@ -1258,29 +1206,6 @@
       \verb http://books.google.com/books?id=gRgsAAAAYAAJ
       \endverb
     \endentry
-    \entry{eldor2004finan}{unpublished}{}
-      \name{author}{2}{}{%
-        {{hash=a2bcf8236de50db7b47d0d7ecd24c8e5}{Eldor}{E\bibinitperiod}{Rafi}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=01c0042b7132db778f94c5dd083e1b75}{Melnick}{M\bibinitperiod}{Rafi}{R\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Arison Business School, The Interdisciplinary Center}%
-      }
-      \strng{namehash}{a961901c12fc096ab4352e9a3030a4ee}
-      \strng{fullhash}{a961901c12fc096ab4352e9a3030a4ee}
-      \field{sortinit}{E}
-      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
-      \field{labelyear}{2004}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{working papers}
-      \field{title}{Financial Markets and Terrorism}
-      \field{year}{2004}
-      \verb{url}
-      \verb www.idc.ac.il/publications/files/111.pdf
-      \endverb
-    \endentry
     \entry{English1996}{article}{}
       \name{author}{1}{}{%
         {{hash=1ec441eecc5ecddb4b32d4b1e44a1271}{English}{E\bibinitperiod}{William\bibnamedelima B.}{W\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
@@ -1574,39 +1499,6 @@
       \verb http://books.google.com/books?id=nizTAAAAMAAJ
       \endverb
     \endentry
-    \entry{Gartner1998}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3daa4cfe6407cc4de2dce077e6154127}{Gartner}{G\bibinitperiod}{Scott\bibnamedelima Sigmund}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {English}%
-      }
-      \list{publisher}{1}{%
-        {Sage Publications, Inc.}%
-      }
-      \strng{namehash}{3daa4cfe6407cc4de2dce077e6154127}
-      \strng{fullhash}{3daa4cfe6407cc4de2dce077e6154127}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelyear}{1998}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00220027}
-      \field{journaltitle}{The Journal of Conflict Resolution}
-      \field{number}{3}
-      \field{title}{Opening up the Black Box of War}
-      \field{volume}{42}
-      \field{year}{1998}
-      \field{pages}{252\bibrangedash 258}
-      \range{pages}{7}
-      \verb{file}
-      \verb Gartner1998.pdf:Gartner1998.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://www.jstor.org/stable/174513
-      \endverb
-    \endentry
     \entry{Gartzke1999}{article}{}
       \name{author}{1}{}{%
         {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
@@ -1869,34 +1761,6 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1080/09636412.2012.650594
-      \endverb
-    \endentry
-    \entry{Greenstone2007}{report}{}
-      \name{author}{1}{}{%
-        {{hash=23e2201fd0a08bee5f8f929d238f6472}{Greenstone}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {MIT}%
-      }
-      \strng{namehash}{23e2201fd0a08bee5f8f929d238f6472}
-      \strng{fullhash}{23e2201fd0a08bee5f8f929d238f6472}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelyear}{2007}
-      \field{labelmonth}{09}
-      \field{labelday}{14}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{There is a paucity of facts about the effects of the recent military Surge on conditions in Iraq and whether it is paving the way for a stable Iraq. Selective, anecdotal and incomplete analyses abound. Policy makers and defense planners must decide which measures of success or failure are most important, but until now few, if any, systematic analyses were available on which to base those decisions. This paper applies modern statistical techniques to a new data file derived from more than a dozen of the most reliable and widely-cited sources to assess the Surge's impact on three key dimensions: the functioning of the Iraqi state (including civilian casualties); military casualties; and financial markets' assessment of Iraq's future. The new and unusually rigorous findings presented here should help inform current evaluations of the Surge and provide a basis for better decision making about future strategy. The analysis reveals mixed evidence on the Surge's effect on key trends in Iraq. The security situation has improved insofar as civilian fatalities have declined without any concurrent increase in casualties among coalition and Iraqi troops. However, other areas, such as oil production and the number of trained Iraqi Security Forces have shown no improvement or declined. Evaluating such conflicting indicators is challenging. There is, however, another way to assess the Surge. This paper shows how data from world financial markets can be used to shed light on the central question of whether the Surge has increased or diminished the prospect of today's Iraq surviving into the future. In particular, I examine the price of Iraqi state bonds, which the Iraqi government is currently servicing, on world financial markets. After the Surge, there is a sharp decline in the price of those bonds, relative to alternative bonds. The decline signaled a 40\% increase in the market's expectation that Iraq will default. This finding suggests that to date the Surge is failing to pave the way toward a stable Iraq and may in fact be undermining it.}
-      \field{day}{14}
-      \field{month}{09}
-      \field{number}{07-24}
-      \field{title}{Is The 'Surge' Working? Some New Facts}
-      \field{type}{Department of Economics Working Paper}
-      \field{year}{2007}
-      \verb{url}
-      \verb http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1014427
       \endverb
     \endentry
     \entry{GuidolinLaFerrara2010}{article}{}
@@ -2734,40 +2598,6 @@
       \endverb
       \verb{url}
       \verb http://books.google.com/books?id=d3crAAAAYAAJ
-      \endverb
-    \endentry
-    \entry{NorthWeingast1989}{article}{}
-      \name{author}{2}{}{%
-        {{hash=80ab989ed4ba15587da6beb379ad0ae9}{North}{N\bibinitperiod}{Douglass\bibnamedelima C.}{D\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{hash=0b1a9384efcbd2ccf618d4ce2a648231}{Weingast}{W\bibinitperiod}{Barry\bibnamedelima R.}{B\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{922030e9215d1f76ec6ef45d11704e51}
-      \strng{fullhash}{922030e9215d1f76ec6ef45d11704e51}
-      \field{sortinit}{N}
-      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
-      \field{labelyear}{1989}
-      \field{labelmonth}{11}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{ABSTRACT The article studies the evolution of the constitutional arrangements in seventeenth-century England following the Glorious Revolution of 1688. It focuses on the relationship between institutions and the behavior of the government and interprets the institutional changes on the basis of the goals of the winnersâsecure property rights, protection of their wealth, and the elimination of confiscatory government. We argue that the new institutions allowed the government to commit credibly to upholding property rights. Their success was remarkable, as the evidence from capital markets shows.}
-      \field{issn}{1471-6372}
-      \field{issue}{04}
-      \field{journaltitle}{The Journal of Economic History}
-      \field{month}{11}
-      \field{title}{Constitutions and Commitment: The Evolution of Institutions Governing Public Choice in Seventeenth-Century England}
-      \field{volume}{49}
-      \field{year}{1989}
-      \field{pages}{803\bibrangedash 832}
-      \range{pages}{30}
-      \verb{doi}
-      \verb 10.1017/S0022050700009451
-      \endverb
-      \verb{eprint}
-      \verb http://journals.cambridge.org/article_S0022050700009451
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1017/S0022050700009451
       \endverb
     \endentry
     \entry{north2000introd}{article}{}
@@ -4073,6 +3903,24 @@
       \verb http://mc-stan.org/
       \endverb
     \endentry
+    \entry{Stan2015a}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2418ee02a26ab01ead911ec86c507892}{{Stan\bibnamedelimb Development\bibnamedelimb Team}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2418ee02a26ab01ead911ec86c507892}
+      \strng{fullhash}{2418ee02a26ab01ead911ec86c507892}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stan Modeling Language Users Guide and Reference Manual, Version 2.7.0}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://mc-stan.org/
+      \endverb
+    \endentry
     \entry{StricklandTurnerDenhamEtAl2009}{article}{}
       \name{author}{4}{}{%
         {{hash=03e0ef39e221edae5357ac21af4672e5}{Strickland}{S\bibinitperiod}{Chris\bibnamedelima M.}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
@@ -4102,37 +3950,6 @@
       \endverb
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/S0167947309001698
-      \endverb
-    \endentry
-    \entry{sussman2000instit}{article}{}
-      \name{author}{2}{}{%
-        {{hash=27f16b4cc8705144735209968335d86b}{Sussman}{S\bibinitperiod}{Nathan}{N\bibinitperiod}{}{}{}{}}%
-        {{hash=6c84ef2893cdecd6c9f29c179ac6c586}{Yafeh}{Y\bibinitperiod}{Yishay}{Y\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{25e9673571b3d3667c6e98f036cfdfbb}
-      \strng{fullhash}{25e9673571b3d3667c6e98f036cfdfbb}
-      \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
-      \field{labelyear}{2000}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We investigate the effect of the establishment of modern institutions on the risk premium associated with Japanese government bonds traded in London between 1870 and 1914. While most institutional innovations failed to elicit an immediate market response, the adoption of the gold standard did significantly reduce the perceived risk associated with Japanese bonds. In addition, some geopolitical events, especially the military victory over Russia, improved Japan&apos;s debt capacity. We conclude that well-understood monetary rules and military achievements matter more for foreign investors&apos; perception of a country than do modern state institutions, at least in the short run.}
-      \field{journaltitle}{The Journal of Economic History}
-      \field{number}{02}
-      \field{title}{Institutions, Reforms, and Country Risk: Lessons from Japanese Government Debt in the Meiji Era}
-      \field{volume}{60}
-      \field{year}{2000}
-      \field{pages}{442\bibrangedash 467}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1017/S0022050700000218
-      \endverb
-      \verb{eprint}
-      \verb http://journals.cambridge.org/article_S0022050700000218
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1017/S0022050700000218
       \endverb
     \endentry
     \entry{BankersMagazine1857}{book}{}
@@ -4857,26 +4674,6 @@
       \verb Weingast1998.djvu:Weingast1998.djvu:Djvu
       \endverb
     \endentry
-    \entry{Weisiger2013}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e289b41cff248738987f6118a2516111}{Weisiger}{W\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Cornell University Press}%
-      }
-      \strng{namehash}{e289b41cff248738987f6118a2516111}
-      \strng{fullhash}{e289b41cff248738987f6118a2516111}
-      \field{sortinit}{W}
-      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
-      \field{labelyear}{2013}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-0801451867}
-      \field{series}{Cornell Studies in Security Affairs}
-      \field{title}{Logics of War: Explanations for Limited and Unlimited Conflicts}
-      \field{year}{2013}
-    \endentry
     \entry{Weisiger2015}{unpublished}{}
       \name{author}{1}{}{%
         {{hash=e289b41cff248738987f6118a2516111}{Weisiger}{W\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
@@ -4928,37 +4725,6 @@
       \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/168777
-      \endverb
-    \endentry
-    \entry{wells2000revol}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f7d8bfb3e97c834547d1fa5ebd5abcff}{Wells}{W\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=d3f79e44c1be87ad04c1cd8f4c10f12a}{Wills}{W\bibinitperiod}{Douglas}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{ef7f9db173fd3170635e69856de4266e}
-      \strng{fullhash}{ef7f9db173fd3170635e69856de4266e}
-      \field{sortinit}{W}
-      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
-      \field{labelyear}{2000}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This study provides an empirical test of North and Weingast&apos;s theory of British capital-market development after the Glorious Revolution. The evidence is consistent with the hypotheses that institutional innovation in the 1690s led to the dramatic growth in London capital markets, and that threats to these institutions caused financial turmoil. We also find the economic motivation for these innovations to be consistent with the work of Ekelund and Tollison.The first visible eruption, or even immediate dange, of public disorders must alarm all the stockholders, whose property is the most precarious of anyâ¦ whether menaced by Jacobitish violence or democratical frenzy.David Hume, 1752}
-      \field{journaltitle}{The Journal of Economic History}
-      \field{number}{02}
-      \field{title}{Revolution, Restoration, and Debt Repudiation: The Jacobite Threat to England's Institutions and Economic Growth}
-      \field{volume}{60}
-      \field{year}{2000}
-      \field{pages}{418\bibrangedash 441}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1017/S0022050700000206
-      \endverb
-      \verb{eprint}
-      \verb http://journals.cambridge.org/article_S0022050700000206
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1017/S0022050700000206
       \endverb
     \endentry
     \entry{WestHarrison1997}{book}{}

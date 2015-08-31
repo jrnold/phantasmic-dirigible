@@ -84,8 +84,8 @@
 
 % Misc
 \newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
-\newcommand{\eg}{\textit{e.g.}}
-\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}\ }
+\newcommand{\ie}{\textit{i.e.}\ }
 
 % biblatex
 \usepackage[style=authoryear,doi=false,isbn=false,backend=biber,%
@@ -246,17 +246,18 @@ knitr::opts_chunk[["set"]](echo = FALSE)
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
-\chapter{Financial Markets and the Onset of the American Civil War}
-\addcontentsline{toc}{chapter}{Financial Markets and the Onset of the American Civil War}
-\label{cha:financ-mark-onset}
-
-\include{Financial_Markets_and_Onset_of_the_American_Civil_War}
 
 \chapter{Bonds and Battles: Financial Market Reactions to Battlefield Events in the American Civil War}
 \addcontentsline{toc}{chapter}{Bonds and Battles: Financial Market Reactions to Battlefield Events in the American Civil War}
 \label{cha:bonds-battles}
 
 \include{Bonds_and_Battles}
+
+\chapter{Financial Markets and the Onset of the American Civil War}
+\addcontentsline{toc}{chapter}{Financial Markets and the Onset of the American Civil War}
+\label{cha:financ-mark-onset}
+
+\include{Financial_Markets_and_Onset_of_the_American_Civil_War}
 
 \chapter{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
 \addcontentsline{toc}{chapter}{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
