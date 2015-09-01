@@ -2676,29 +2676,6 @@
       \verb http://www.nber.org/papers/w13567.pdf
       \endverb
     \endentry
-    \entry{Owen2000}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e8d46e4fa50b3a091d5e95bb4f5b36d9}{Owen}{O\bibinitperiod}{J.M.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Cornell University Press}%
-      }
-      \strng{namehash}{e8d46e4fa50b3a091d5e95bb4f5b36d9}
-      \strng{fullhash}{e8d46e4fa50b3a091d5e95bb4f5b36d9}
-      \field{sortinit}{O}
-      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
-      \field{labelyear}{2000}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780801486906}
-      \field{series}{Cornell Studies in Security Affairs}
-      \field{title}{Liberal Peace, Liberal War: American Politics and International Security}
-      \field{year}{2000}
-      \verb{url}
-      \verb http://books.google.com/books?id=F%5C_23TgIpJJMC
-      \endverb
-    \endentry
     \entry{Park2010}{article}{}
       \name{author}{1}{}{%
         {{hash=b7395bd772d3cd5368ce5048e8211288}{Park}{P\bibinitperiod}{Jong\bibnamedelima Hee}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
