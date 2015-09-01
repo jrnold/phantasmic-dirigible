@@ -108,8 +108,8 @@ For example, assuming continuous compounding for simplicity, the yield to maturi
   \label{eq:5}
   P_{t} = \sum_{j = 1}^{H} C_{t + j} e^{-y j} \text{.}
 \end{equation}
-The interest rate moves inversely to the price: a higher yield corresponds to a lower price, and vice-versa.
-The riskier a bond is, the lower the price and the higher the yield.
+Equation (\ref{eq:5}) shows that the interest rate moves inversely to the price: a higher yield corresponds to a lower price, and vice-versa.
+In other words, the riskier a bond is, the lower the price and the higher the yield.
 %I use the yield to maturity of the bonds rather than their prices,  because prices deterministically drift towards par with time and because they are more interpretable.
 % interpretation of risk in terms of default
 
