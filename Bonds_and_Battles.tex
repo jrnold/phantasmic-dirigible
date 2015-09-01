@@ -323,30 +323,20 @@ distinguish when or if they are present.%
 \section{Why The American Civil War?}
 \label{bonds_battles:sec:why-american-civil}
 
-I chose the American Civil War as a case for the quality and quantity of its battle-level data, and the expected close relationship between government issued financial assets and war events.
-In terms of its battle data, the American Civil War is one of the better documented wars, so quality battle-level is available.%
+The American Civil War is a war with prentiful, and high quality battle-level data, and in which there are financial assets which proxy expected war outcomes well.
+In terms of its battle data, the American Civil War is one of the best documented wars, so quality battle-level is available.%
 \footnote{%
-  For example, \textit{The Official Records of the Union and  Confederate Armies} \parencites{US1901}, published between 1880 and 1901, consists of 128 books in 70 volumes totaling 139 thousand pages. %
+  For example, \textit{The Official Records of the Union and  Confederate Armies} \parencites{US1901}, published between 1880 and 1901, consists of 128 books in 70 volumes totaling 139 thousand pages.
+  
 } %
-However, although there are multiple sources of American Civil War battle data, there has previously not been a comprehensive database suitable for quantitative analysis.
-
-There is a long and deep economic history literature that documents the close relationship between war expectations and events and financial market prices during the American Civil War \parencites{Mitchell1903}{Mitchell1908}{Calomiris1988}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{Schwab1901}{Weidenmier2002}{BurdekinLangdana1993}{DavisPecquet1990}{BrownBurdekin2000}{OosterlinckWeidenmier2007}{Roll1972}.
 I discuss why financial assets issued by the belligerents of the American Civil War may be particularly useful for understanding war in section \ref{bonds_battles:sec:why-prices-study}.
 
-While the generalizability of this case is a function of its similarity to other cases, the American Civil War is more similar to modern civil wars than its 150 year age may suggest.
-First, the American Civil War introduced several of the technologies later used in World War I and later, including rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines.
-The American Civil War is on the threshold of the era of modern warfare, if not the first modern war\parencites[89][]{Fuller1956a}[760]{Weiss1966}.%
-\footnote{
-  \begin{quotation}
-    The Civil War was the first in which railroads were extensively used for the transportation of troops, aerial reconnaissance was effectively used, command and control was exercised through the electric telegraph, ironclad naval vessels engaged in combat, a multimanned submarine sank a naval vessel, rifled artillery came into general use, wire entanglements were used in field fortifications, and the repeating rifle was used by large troop units. \parencite[760]{Weiss1966}
-  \end{quotation}
-}
-Second, the American Civil War was primarily a conventional war.
-This places it in the plurality of post-Cold War civil wars, half of which are conventional war\parencite[423]{kalyvas2010inter}.%
-\footnote{
-  \textcite{kalyvas2010inter} notes that there is a ``striking decline [in] irregular wars following the end of the Cold War''.
-}
-Finally, the income levels of the Union and Confederacy in 1860 would place them as lower-middle income countries today---approximately the income levels of Pakistan and Iraq respectively.%
+Like any case, its generalizability is limited by its similarity to other observations. 
+But despite its age, the American Civil War is not dissimilar to contemporary civil wars.
+First, the American Civil War is, if not the first modern war, one of the wars during the transition to modern warfare.
+In the american  introduced several of the technologies later used in World War I and later: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89][]{Fuller1956a}[760]{Weiss1966}.
+Second, the American Civil War was primarily a conventional war, which places it in the plurality of post-Cold War civil wars \parencite[423]{kalyvas2010inter}.%
+Finally, by the Civil War was industrializing and the purchasing power parity adjusted GDP per capita of the U.S. and Confederate States in 1860 would classify them them as lower-middle income countries today.%
 \footnote{%
   The GDP per capita of the US in 1860 was \$2,241 in 1990 GK international dollars. %
   In 2010, Cambodia had a GDP per capita of \$2,450, Pakistan \$2,494, and Ghana \$1,922 \parencite{BoltZanden2013}. %
@@ -359,16 +349,13 @@ Finally, the income levels of the Union and Confederacy in 1860 would place them
 The American Civil War is also an interesting case for study in its own right.
 Its importance to American history is obvious, and need not be stated.%
 \footnote{See \textcite{McPherson2003} among too many to list.}
-But, given the voluminous literature on the subject, it is surprisingly understudied in two regards. %
-First, the international relations literature has largely ignored the conflict.
-Inter-state war scholars consider it a civil war, and intra-state war scholars focus on the post-1945 era \parencites[140-141]{Reiter2009}[2]{Poast2012}. %
+But, given the voluminous literature on the subject, it is surprisingly understudied in at least two regards. %
+First, the international relations literature has largely ignored this conflict.
+While the inter-state war literature considers it a civil war, and the civil war literature focuses on the post-1945 era \parencites[140-141]{Reiter2009}[2]{Poast2012}. %
 Exceptions to this are \textcite{Reiter2009} and \textcite{Poast2012}.
-Second, almost none of the existing work on the American Civil War, including the few examples in international relations, use any form of quantitative analysis. %
-Consider, for example, that until \textcite{hacker2011census}, no historian had reanalyzed the total number killed in the American Civil War since \textcite{Livermore1900}.
-There are a few previous examples of the analysis of American Civil battles from operations research, \textcite{Weiss1966} and
+Second, almost none of the existing work on the American Civil War conflict, including the few examples in international relations, use quantitative methodologies. %
+\footnote{\textcite{Weiss1966} for an example from operations research.}
 In applying international relations theory and quantitative methods to the study of this war, this work contributes a droplet to the ocean that is the literature on the American Civil War.
-
-
 
 
 \section{U.S. Government Bond Yield Data}
@@ -501,11 +488,21 @@ Thus, both expectations of the government military expenditures and the length o
 And since increased debt would increase the possibility of default, it would make the bonds riskier, and the yields higher.
 However, the future resources of the U.S. to pay that debt also depended on victory or defeat in the war.
 If the U.S. reincorporating the states which seceded, then it would have a larger tax base with which to pay down the debt.
+In 1860, the Southern states accounted for 29 percent of the overall U.S. population,%
+\footnote{
+  Southern states included VA, TN, GA, NC, AL, MS, LA, SC, TX, AR, FL \textcite[5]{Eicher2001}.
+  Wealth is used instead of 
+}
+and 25 percent of the total wealth.%
+\footnote{
+  \textcite[12]{Elder1865}. Wealth is defined as the value personal property excluding slaves, which was asked on the 1860 Census.
+  It may be a better measure of how contemporaries would have viewed the value of the South than GDP because GDP had not yet been invented.
+  The closest contemporaries had to GDP was an approximation that the value of yearly production was about 25-27 percent of total wealth \parencite[7]{Elder1865}[24]{Treasury1865}.
+}
 
-% TODO: size of the confederacy in pop, wealth and GDP
-% TODO: longer war reduced the pie. Confederacy in worse shape to repay the debt. E.g. ability to extract a direct tax.
+% TODO: What was the Confederacy GDP?
 
-Statements by government officials and market participants suggest more concern with the cost and duration of the war than with the inclusion of the Confederacy.
+Some statements by government officials and market participants suggest that they are more concerned with the cost and duration of the war than with the the reincorporation of the seceding states.
 The economist, William Elder, in an 1863 analysis of the ability of the U.S. to repay its debt reprinted in the \textit{Bankers'  Magazine} claimed ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need'' \parencite[19]{Elder1863}.
 The \textit{Annual Report of the Treasury Department} in 1863 highlighted this relationship between cost of the war and the 
 \begin{quote}
@@ -514,12 +511,21 @@ And as the amount of the latter, consisting of United States notes and fractiona
 That must be greater or less in proportion to the duration and cost of the war. \parencite[13]{Treasury1863}
 \end{quote}
 
-Comparing the time series of U.S. government interest rates to those of the Confederate currency and Northern and Southern States in Figure \ref{bonds_battles:fig:fives1874_compared} suggest that it is primarily driven by expectations of the cost of the war.
-The bond yields of the Northern States which are almost certainly driven by costs of the war and possibly less dependent on victory since taxes would not necessarily go to pay off their debts are similar to that of U.S. government bonds.
+The difference in the patterns of the price of U.S. bonds and the Confederate currency in Figure \ref{bonds_battles:fig:fives1874_compared} is evidence that U.S. bond yields were not driven by expectations of U.S. victory, and, by elimination, likely represent the cost of war to the U.S.
 However, the price of the Confederate currency follows a noticeably different pattern, almost decreasing monotonically over the entire course of the war.
-Although some of this was due to an expansion of the monetary supply, the prices of Confederate bonds issued in Amsterdam and redeemable in gold also followed a similar pattern.
-The prices of the Confederate currency and bonds almost certainly was primarily driven by expectations about whether the Confederacy would retain sovereignty.
-Thus, since the U.S. government interest rates do not follow an inverse pattern, means that they must be reflecting other factors, namely the cost of the war.
+Although the prices of Graybacks are partially influenced by money supply \parencite{BurdekinWeidenmier2001}, the price of Confederate bonds issued in Amsterdam and payable in gold are also decreasing from mid-1863 onward.
+Since those assets suggest that the probability of Confederate victory was decreasing over the course of the war, if the U.S. bonds reflected the probability of U.S. victory, then the pattern we would expect to see is for yields to increase after the start of the war, and then by at least mid-1863 start decreasing almost monotonically for the remainder of the war. 
+However, Figure \ref{bonds_battles:fig:fives1874_yield} shows that the yields of bond prices fluctuate early in the war, and then spike in mid-1864 at a point which U.S. victory should have been highly probable.
+This suggests that U.S. government interest rates are not primarily reflecting expectations of the war result, and are instead reflecing some other factor.
+
+Finally, the financial benefit of victory and the costs and duration of war are inversely related.
+The longer and more destructive, the less the ability of the Southern states to provide for the repayment of the debt incurred by the U.S. in fighting the war.
+Immediately after the war, the U.S. government tried to collect direct taxes from the Southern states, but soon suspended this attempt.
+In 1865, Treasury Secretary Hugh McCullough justified this suspension by noting that the inhabitants of the Southern states ``had been subject to heavy taxation by the government which was attempted to be established in opposition to that of the United States, ana had been greatly exhausted by the ravages of war.'' \parencite[29]{Treasury1865}.
+In analyses of the repayment of debt after the war by the Treasury Department and others \parencites{Elder1865}{Treasury1865}{Walker1865a}, the wealth of the Confederate states was assumed to remain constant between 1860 and 1870, and not contribute to the repayment of the debt until after 1870.
+The analysis of \textcite{GoldinLewis1975} shows that the income per capita of the Southern states did not return to the level expected by its ante-bellum trend until after 1900.
+
+% todo: longer war reduced the pie. Confederacy in worse shape to repay the debt. E.g. ability to extract a direct tax.
 
 One issue that is not a concern in this case, is the extent to which non-war events are influencing the yields of these bonds.
 As noted earlier in this section, military expenses accounted for the overwhelming majority of U.S. government expenditures between 1861 and 1865.
@@ -566,18 +572,18 @@ twit  \caption{Yield to maturity of the 5's of 1874 compared with other U.S. bon
   \label{bonds_battles:fig:fives1874_union}
 \end{subfigure}
 
-\begin{subfigure}[b]{0.45\linewidth}
-  \centering
-  \includegraphics{../bonds_and_battles//paper/figure/fives1874_north-1}
-\caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Northern states.}
-\label{bonds_battles:fig:fives1874_north}
-\end{subfigure}%
-\hspace{0.1\linewidth}%
-\begin{subfigure}[b]{0.45\linewidth}
-  \includegraphics{../bonds_and_battles//paper/figure/fives1874_south-1}
-\caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Southern and border states.}
-\label{bonds_battles:fig:fives1874_south}
-\end{subfigure}
+%% \begin{subfigure}[b]{0.45\linewidth}
+%%   \centering
+%%   \includegraphics{file.path(fig_path, "fives1874_north-1")}
+%% \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Northern states.}
+%% \label{bonds_battles:fig:fives1874_north}
+%% \end{subfigure}%
+%% \hspace{0.1\linewidth}%
+%% \begin{subfigure}[b]{0.45\linewidth}
+%%   \includegraphics{file.path(fig_path, "fives1874_south-1")}
+%% \caption{Yield to maturity of the 5's of 1874 compared with bonds issued by Southern and border states.}
+%% \label{bonds_battles:fig:fives1874_south}
+%% \end{subfigure}
 
 \begin{subfigure}[b]{0.45\linewidth}
   \includegraphics{../bonds_and_battles//paper/figure/fives1874_graybacks-1}

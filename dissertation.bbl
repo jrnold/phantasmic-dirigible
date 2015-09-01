@@ -1162,6 +1162,31 @@
       \verb http://books.google.com/books?id=OBkNAQAAMAAJ
       \endverb
     \endentry
+    \entry{Eicher2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d7276e52759af1782edf4f34d4b57dee}{Eicher}{E\bibinitperiod}{David\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=69ca839dd0a304a95bdf6db6521f6bcb}{McPherson}{M\bibinitperiod}{James\bibnamedelima M.}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster}%
+      }
+      \strng{namehash}{d7276e52759af1782edf4f34d4b57dee}
+      \strng{fullhash}{d7276e52759af1782edf4f34d4b57dee}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780743218467}
+      \field{title}{{The Longest Night: A Military History of the Civil War}}
+      \field{year}{2001}
+      \verb{url}
+      \verb http://books.google.com/books?id=1p94XzYASDAC
+      \endverb
+    \endentry
     \entry{Elder1863}{book}{}
       \name{author}{1}{}{%
         {{hash=412b381cdd104d75d768ecfbe3c01004}{Elder}{E\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
@@ -1821,36 +1846,6 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0378426615002034
       \endverb
       \keyw{Civil wars}
-    \endentry
-    \entry{hacker2011census}{article}{}
-      \name{author}{1}{}{%
-        {{hash=674580671b827e3c869dd0bcef200948}{Hacker}{H\bibinitperiod}{J.\bibnamedelimi D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {English}%
-      }
-      \strng{namehash}{674580671b827e3c869dd0bcef200948}
-      \strng{fullhash}{674580671b827e3c869dd0bcef200948}
-      \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
-      \field{labelyear}{2011}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{00098078}
-      \field{journaltitle}{Civil War History}
-      \field{number}{4}
-      \field{title}{A Census-Based Count of the Civil War Dead}
-      \field{volume}{57}
-      \field{year}{2011}
-      \field{pages}{307\bibrangedash 348\bibrangessep 304}
-      \range{pages}{43}
-      \verb{file}
-      \verb hacker2011census.pdf:hacker2011census.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://search.proquest.com/docview/908882168?accountid=13567
-      \endverb
     \endentry
     \entry{Hall2004}{article}{}
       \name{author}{1}{}{%
@@ -4551,6 +4546,27 @@
       \verb http://www.sciencedirect.com/science/article/B6WFJ-4PT1SF6-1/2/e05dbbdbe9c9bde3d879652ac9344188
       \endverb
       \keyw{Structural breaks}
+    \endentry
+    \entry{Walker1865a}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6d415a57c6b4c18b09f51470e00afe01}{Walker}{W\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {E. Couchman}%
+      }
+      \strng{namehash}{6d415a57c6b4c18b09f51470e00afe01}
+      \strng{fullhash}{6d415a57c6b4c18b09f51470e00afe01}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1865}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Wealth, Resources, and Public Debt of the United States}
+      \field{year}{1865}
+      \verb{url}
+      \verb https://books.google.com/books?id=rAgZAAAAYAAJ
+      \endverb
     \endentry
     \entry{Walter2009}{article}{}
       \name{author}{1}{}{%
