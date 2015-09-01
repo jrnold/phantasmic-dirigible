@@ -60,6 +60,8 @@
                                 % single-spaced
 \usepackage{blindtext}
 \usepackage[margin=1in]{geometry}
+\usepackage{url}
+\urlstyle{sf}
 
 \usepackage{jrnoldStats}
 
@@ -126,7 +128,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Ligatures=TeX]{Linux Libertine O}
 \setsansfont[Ligatures=TeX, Scale=MatchLowercase]{Source Sans Pro}
-\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\setmonofont[]{DejaVu Sans Mono}
 \usepackage[math-style=TeX]{unicode-math}
 \setmathfont{xits-math.otf}
 
@@ -137,18 +139,26 @@
 \newcommand{\ie}{\textit{i.e.}\ }
 
 % biblatex
-\usepackage[style=authoryear,doi=false,isbn=false,backend=biber,%
+\usepackage[style=authoryear,backend=biber,%
             backref=true,maxbibnames=10,hyperref=true,%
             dateabbrev=false,uniquename=false]{biblatex}
-\ExecuteBibliographyOptions{url=false}
-\ExecuteBibliographyOptions{doi=false}
-\newbibmacro{string+url}[1]{%
- \iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
-\DeclareFieldFormat{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
-\DeclareFieldFormat[article]{title}{\usebibmacro{string+url}{\mkbibquote{#1}}}
-\DeclareFieldFormat[misc]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
-\DeclareFieldFormat[book]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
 \AtEveryBibitem{\clearlist{language}}
+\AtEveryBibitem{\clearlist{eprint}}
+
+%% \DeclareFieldFormat{linked}{%
+%%   \ifboolexpr{ test {\ifhyperref} and not test {\ifentrytype{online}} }
+%%     {\iffieldundef{doi}
+%%        {\iffieldundef{url}
+%%           {\iffieldundef{isbn}
+%%              {\iffieldundef{issn}
+%%                 {#1}
+%%                 {\href{\worldcatsearch\thefield{issn}}{#1}}}
+%%              {\href{\worldcatsearch\thefield{isbn}}{#1}}}
+%%           {\href{\thefieldfirstword{url}}{#1}}}
+%%        {\href{http://dx.doi.org/\thefield{doi}}{#1}}}
+%%     {#1}}
+%% \newbibmacro{string+url}[1]{%
+%%  \iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
 \renewbibmacro{in:}{%
   \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
 
