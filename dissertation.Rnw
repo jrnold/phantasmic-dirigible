@@ -79,7 +79,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Ligatures=TeX]{Linux Libertine O}
 \setsansfont[Ligatures=TeX, Scale=MatchLowercase]{Source Sans Pro}
-\setmonofont[Scale=MatchLowercase]{Source Sans Mono}
+\setmonofont[Scale=MatchLowercase]{Source Code Pro}
 \usepackage[math-style=TeX]{unicode-math}
 \setmathfont{xits-math.otf}
 
@@ -269,7 +269,7 @@ knitr::opts_chunk[["set"]](echo = FALSE)
 \chapter{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
 \label{cha:structural-breaks}
 
-\input{Structural_Breaks}
+%\input{Structural_Breaks}
 
 % References
 \clearpage

@@ -32,7 +32,7 @@ $(TEX_FILE): $(RNW_FILE)
 	$(RSCRIPT) -e 'knitr::knit("$<", output = "$@")'
 
 $(PDF_FILE): $(TEX_FILE) acw_onset bonds_battles dlm
-	latexmk -pdf -xelatex -interaction=nonstopmode $(TEX_FILE)
+	latexmk -pdf -pdflatex='xelatex -interaction=nonstopmode -file-line-error -synctex=1 -shell-escape %O %S' $(TEX_FILE)
 
 acw_onset: $(CHAP_ACW_ONSET_TEX)
 
