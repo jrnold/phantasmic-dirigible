@@ -167,51 +167,46 @@ This work will focus on the later in order to understand which events within the
 Although they cannot necessarily distinguish between theories of private information and commitment, it does provide information about which events within a war influence the beliefs of the market (and perhaps all contemporaries) about the aspects of the outcome of the war.
 This information may be useful to either build more specific theories, or to test new theories that may distinguish between those theories.
 
-Prices have several other characteristics that make them a useful addition to the political scientist's toolbox for analyzing war.
+The prices of financial assets have several other characteristics that make them a useful addition to the conflict researcher's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
-First, they incorporate only ex ante information. This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}.
-Second, investors have strong incentives to be truthful in their assessments because their payoffs are tied to being correct.
-This distinguishes prices from sources such as surveys or diaries of decision makers, which like prices have only the information available at the time, but which the decision maker may not reveal the truth for strategic or emotional reasons \parencite[57]{Reiter2009}.%
-\footnote{Although the investors had their own preferences on the war,
-  their investments seemed motivated by their preference for profits,
-  \begin{quote}
+First, they incorporate only \textit{ex ante} information.
+This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}, both of which can incoporate later information.
+Second, investors have strong incentives to be truthful in their assessments because their payoffs are directly tied to being correct.
+This distinguishes prices from other sources such as the surveys or diaries of decision makers, which like prices have only the information available at the time, but in which the author may have incentives to deceive \parencite[57]{Reiter2009}.%
+\footnote{
+  Although the investors in the American Civil War had their own preferences on the war, their investments seemed motivated by their preference for profits,
+  begin{quote}
     Sectional feeling often entered largely into the bull and bear  contests in the Gold Room, and Union men and rebel sympathizers fought their battles sometimes, as much to gratify this as to make money.
     \textcite[7]{Cornwallis1879}
-  \end{quote}
-  \begin{quote}
+    
     The heaviest speculative orders were sent from Washington and Baltimore, and next to these, from Louisville, Kentucky, owing to these cities being in close communication to the seat of war and the rebel lines; and the operators there, almost to a man, were "bulls" in feeling, and strong Secessionists.
     But though seldom or never found selling "short" they were quick to sell out their "long" gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to "touch bottom" \textcite[5]{Cornwallis1879}.
   \end{quote}
   \textcite[210]{Mitchell1903} writes,
   \begin{quote}
-    Viewed in a broad way, it is therefore a serious
-    mistake to look on the gold market as a place where a few gamblers
-    were tossing the premium about to suit their selfish schemes; a much
-    saner view is that it was the place where the community's estimate
-    of the government's credit was visibly recorded. Here, as in other
-    markets, those operators succeeded who forecast the future
-    correctly, and men who tried to advance the price of gold when
-    public confidence was increasing, or to depress it when confidence
-    was on the wane, learned to their cost that they were not masters of
-    the situation.
+    Viewed in a broad way, it is therefore a serious mistake to look on the gold market as a place where a few gamblers were tossing the premium about to suit their selfish schemes; a much saner view is that it was the place where the community's estimate of the government's credit was visibly recorded.
+    Here, as in other markets, those operators succeeded who forecast the future correctly, and men who tried to advance the price of gold when public confidence was increasing, or to depress it when confidence was on the wane, learned to their cost that they were not masters of the situation.
   \end{quote}
 } %
-Third, war can have a large influence on the payoffs of financial assets, so prices are likely to be highly responsive to war events.
-Fourth, price data can be available at high frequencies, \eg{}daily.
-This is in contrast with documentary evidence which may be produced at lower frequency, or be missing for large sections of time \parencite[][57]{Reiter2009}. For example, in this data, the highest price series has daily data.
-The high frequency of price data makes it possible to analyze the effects of individual events in conflicts.
-Fifth, price data are a quantitative summary of the investors' expectations, and thus more robust to the subjective interpretation of researchers.
-This distinguishes price data from documentary evidence which must be interpreted by researchers \parencite[][58]{Reiter2009}.
-The quantitative nature of the data makes it easier to analyze not only what events mattered in conflict, but the magnitude of those effects \parencite{north2000introd}.
+Finally, price data is often available at high frequencies, often daily.
+This is in contrast with documentary evidence which is often produced at lower frequency, or missing for large periods of time \parencite[][57]{Reiter2009}.
+The high frequency of price data makes expands the set of analyses available to the researcher, making it possible to analyze the effects of individual events in conflicts.
+%% Fourth, the prices of financial assets are a quantitative summary of investors' expectations, and less susceptible to the  subjective interpretation of researchers.
+%% This distinguishes price data from documentary evidence which must be interpreted by researchers \parencite[][58]{Reiter2009}.
+%% The quantitative nature of the data makes it easier to analyze not only what events mattered in conflict, but the magnitude of those effects \parencite{north2000introd}.
 
-None of this is to say that price data dominates other data sources.
-Price data is simply another tool for researchers to use when analyzing conflict. It has several weaknesses, and is not appropriate in all cases.
-First, prices do not directly measure the beliefs of the belligerents. Prices only incorporate public information, and do not incorporate the private information available to decision makers.
-This means that prices cannot be used to directly answer questions about the convergence in beliefs between belligerents.
-However, it may be possible that many informational bargaining models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information.
-Second, in many conflicts appropriate price data may not be available.
-In many areas in which researchers are most interested in understanding conflict, \eg{}civil wars in developing countries, there may not exist an asset that is liquid enough to provide reliable estimates.
-Also, even for states with liquid and well-developed markets in normal periods, states often intervene in their own markets during war, distorting the price signals \parencite[12]{HaberMitchenerOosterlinckEtAl2015}. Finally, in any case in which prices are used, the researcher will need to apply substantive knowledge of the assets, investors, and conflict in order to map the prices into estimates of the political science quantities of interest.
+This is not to claim that prices of finanical assets dominate other data sources.
+They simply provide another tool for conflict researchers.
+Financial asset prices have several shortcomings when studying conflict, and are not appropriate in all cases.
+First, these prices do not directly measure the beliefs of the belligerents.
+Prices of financial data generally incorporate public information, and do not incorporate the private information available to decision makers.
+But the beliefs of the decision makers is what is expected to convergerge in informational theories of war. 
+However, it may be possible that many private information models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information, which these prices can measure.
+Second, in many conflicts an appropriate priced financial asset is not available.
+In many areas in which researchers are most interested in understanding conflict, \eg{} civil wars in developing countries, countries may there may not exist a financial asset  that is closely tied to the war outcome, \eg{} the belligerents do not issue sovereign bonds, and even if there are the market may not be liquid enough to provide reliable estimates.
+Even states with liquid and well-developed markets in peace-time, states often intervene in their own markets during war, distorting the price signals \parencite[12]{HaberMitchenerOosterlinckEtAl2015}.
+Finally, in any case in which prices are used, they cannot be used without thought.
+The researcher will need to apply substantive knowledge of the assets, market, and the conflict in order to find a financial asset that is related to expected war outcomes, and understand that particular asset relates to the war outcomes  the researcher is interested in studying.
 
 
 
@@ -365,6 +360,7 @@ Exceptions to this are \textcite{Reiter2009} and \textcite{Poast2012}.
 Second, almost none of the existing work on the American Civil War conflict, including the few examples in international relations, use quantitative methodologies. %
 \footnote{\textcite{Weiss1966} for an example from operations research.}
 In applying international relations theory and quantitative methods to the study of this war, this work contributes a droplet to the ocean that is the literature on the American Civil War.
+
 
 
 \section{U.S. Government Bond Yield Data}
@@ -625,7 +621,7 @@ A theoretical and practical issue in the empirical study of war is how to operat
 } 
 There are two major issues in the operationalization of military combat.
 The first is ``what the unit of observation?''.
-Some work uses events, such as battles or campaigns, as the unit of observation \parencites{ReiterStam1998}{ReiterStam2002}{Ramsay2008}{PilsterBoehmelt2011a}{GrauerHorowitz2012}, while other work uses time-period aggregated values, \eg{} monthly casualties \textcite{Weisiger2015}.
+Some work uses events, such as battles or campaigns, as the unit of observation \parencites{ReiterStam1998}{ReiterStam2002}{Ramsay2008}[59-60]{Reiter2009}{PilsterBoehmelt2011a}{GrauerHorowitz2012}, while other work uses time-period aggregated values, \eg{} monthly casualties \textcite{Weisiger2015}.
 The second is ``how to measure military success?''.
 Some work uses the categorical measures of victory or defeat in battle \parencites{ReiterStam1998}{ReiterStam2002}{GrauerHorowitz2012}, while other work uses casualty based measures, such as the loss-exchange ratio  \parencites{Biddle2004}{BiddleLong2004}{PilsterBoehmelt2011a}.
 In this work, quantify military combat in the American Civil War by focusing my analysis on a set of ``militarily significant'' battles, and define success in combat by a categorical coding of their result: Union or Confederate victory.
