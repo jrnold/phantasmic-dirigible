@@ -723,7 +723,7 @@ The effects of battles and other events are included in the equation which model
 The first difference of the log yields is a function of a time-varying trend $\alpha_{t}$, and the effects of battles $W_{t} \beta$, and other events $X_{t} \gamma$ 
 \begin{align}
   \label{eq:7}
-  \mu_{t} &= \mu_{t - 1} + \alpha_{t} + W_{t} \beta + X_{t} \gamma + \omega_{\mu,t}
+  \mu_{t} &= \mu_{t - 1} + \alpha_{t} + W_{C,t} \kappa + W_{U,t} \upsilon + \omega_{\mu,t}
 \end{align}
 
 The matrix $W$ contains a daily weight term for each battle which is non-zero if the news of the battle ``reached the market'' on that day, and zero otherwise.
@@ -742,8 +742,7 @@ The effects of battles are modeled as coming from two distributions: Union victo
   \begin{aligned}[t]
   \beta_{b} &\sim
   \begin{cases}
-    N(\gamma_{\mathtt{U}}, \zeta^{2}) & \text{if $b$ is a Union victory} \\
-    N(\gamma_{\mathtt{C}}, \zeta^{2}) & \text{if $b$ is a Confederate victory}
+    \dnorm
   \end{cases}
   \end{aligned}
 \end{equation}
@@ -754,8 +753,8 @@ The error in Equation (\ref{eq:7}) is modeled as a stochastic volatility process
 \begin{equation*}
   \label{eq:9}
   \begin{aligned}[t]
-    \omega_{\mu,t} & \sim \dnorm(0, \sigma_{\omega, t}) \\
-    \log \sigma_{\omega} &\sim \dnorm(\bar{\omega} + \rho_{\omega} \log \sigma_{\omega, t - 1}, \xi)
+    \omega_{\mu,t} & \sim \dnorm{0, \sigma_{\omega, t}} \\
+    \log \sigma_{\omega} &\sim \dnorm{\bar{\omega} + \rho_{\omega} \log \sigma_{\omega, t - 1}, \xi}
   \end{aligned}
 \end{equation*}
 The trend follows an AR(1) process.
@@ -765,8 +764,12 @@ This is meant to account for unobserved trends in the conduct of the war that ar
   \alpha_{t} &\sim \dnorm(\rho_{\alpha} \alpha_{t - 1}, \sigma_{\alpha}^{2})
 \end{align}
 
-The posterior distribution of the was sampled with MCMC using the NUTS-HMC algorithm as implemented in Stan.%
-\footnote{See \parencites{Stan2015a}.}
+Equations XXXX constitute the model with I will be estimating.
+I sample from posterior distribution of this model using an NUTS-HMC algorithm as implemented in the probabilistic programming language \Stan{} \parencites{\parencites{Stan2015a}.}
+4 chains were run and convergence assessed by multiple-chain R hat statistics.
+
+
+
 Thus far, in this section, I have only discussed battle data but battles not the only relevant events in a war, and this war in particular.
 Changes in policy, leadership, foreign policy events, negotiations and other events may all influence expectations about the future of the war.
 The first is that it is difficult to coherently choose a set of events.
@@ -784,24 +787,22 @@ Thus, the effects of the non-battle events on the prices and yields of financial
 Since I do not include data on non-war events in the war, in the models of Section \ref{sec:model-war-events} I will account for these events using fat-tailed distributions (Student's $t$) in the error term to allow for the effects of large events, although they are not included explicitly.
 In Section \ref{sec:conclusion}, I propose a more coherent method for identifying war and non-war events.
 
+Two things are missing from this model that are common in models involving interest rates: inflation and a risk-free interest rate.
+Inflation is not included for several reasons.
+First, while inflation measured in Greenbacks rose during this period, since the price of gold tracked the price of commodities during this period, inflation in terms of gold dollars was low\parencites{Mitchell1903}{Mitchell1908}.
+Second, even if that were not the case, the influence of the war was such that inflation would likely be considered a post-treatment variable that was responding to war events.
+Third, the best measure of inflation, the Warren-Pearson Wholesale Price Index, is only available at the monthly level.
+The risk free interest rate during this period is not used because it is hard to define one during this time \parencites{HomerSylla2005}.
+In later periods, U.S. government bonds would be considered a risk free interest rate.
+But this work uses U.S. government bonds precisely because they are risky with that risk varying with expectations of the war outcome.
+\textcites{Macaulay1938}{HomerSylla2005} consider two other bond indexes as risk free interest rates: railroad bonds and New England municipal and state bonds.
+During this period, railroad bonds were still relatively risky during this period, and had higher yields than U.S. government bonds.
+Municipal bonds, when their yields are calculated in gold dollars, have yields similar to those of U.S. government bonds, and thus were not much less risky.
+Additionally, the only available source of these interest rates, \textcite{Macaulay1938}, provides these interest rates at a monthly (railroad) and quarterly (New England municipals) frequency.
+Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate, but that is the 
+This is inappropriate for this analysis because that risk free interest rate was for the London market, and not the New York market.
 
-\footnote{
-  Two things are missing from this model that are common in models involving interest rates: inflation and a risk-free interest rate.
-  Inflation is not included for several reasons.
-  First, while inflation measured in Greenbacks rose during this period, since the price of gold tracked the price of commodities during this period, inflation in terms of gold dollars was low\parencites{Mitchell1903}{Mitchell1908}.
-  Second, even if that were not the case, the influence of the war was such that inflation would likely be considered a post-treatment variable that was responding to war events.
-  Third, the best measure of inflation, the Warren-Pearson Wholesale Price Index, is only available at the monthly level.
-  The risk free interest rate during this period is not used because it is hard to define one during this time \parencites{HomerSylla2005}.
-  In later periods, U.S. government bonds would be considered a risk free interest rate.
-  But this work uses U.S. government bonds precisely because they are risky with that risk varying with expectations of the war outcome.
-  \textcites{Macaulay1938}{HomerSylla2005} consider two other bond indexes as risk free interest rates: railroad bonds and New England municipal and state bonds.
-  During this period, railroad bonds were still relatively risky during this period, and had higher yields than U.S. government bonds.
-  Municipal bonds, when their yields are calculated in gold dollars, have yields similar to those of U.S. government bonds, and thus were not much less risky.
-  Additionally, the only available source of these interest rates, \textcite{Macaulay1938}, provides these interest rates at a monthly (railroad) and quarterly (New England municipals) frequency.
-  Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate, but that is the 
-  This is inappropriate for this analysis because that risk free interest rate was for the London market, and not the New York market.
 
-}
 
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
