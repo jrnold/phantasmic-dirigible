@@ -136,43 +136,6 @@ But this leads to a second puzzle, given that these frictions can lead to confli
 \textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
 
 
-Among these, data on intra-war combat events, namely battles, would appear to be the most readily available.
-Yet, the existing data on battles is generally both poor quality and quantity.
-As of yet, there exists no battle-level equivalent with the comprehensive datasets such as the Correlates of War \parencite{SarkeesWayman2010} or the Uppsala Conflict Data Program.
-The only existing dataset of intra-war battles covering a large number of wars is CDB90 \parencite{cdb90}.%
-\footnote{This is a revision of the HERO battle database.}
-However, the quality of CDB90 is often criticized, major issues being its sampling strategy and inconsistent definitions of what constitutes a battle.
-The later of these is as much a unresolved conceptual issue as it is the fault of the data collection effort.%
-\footnote{See \textcite{BiddleLong2004} for a fair discussion of these critiques.}
-Other political science papers using battle level data either extend CDB90 or use data from other sources, usually \textcite{Clodfelter2008}.
-But these datasets are generally gathered for the specific research question of interest rather than a general purpose, maintained dataset of battles.
-More recently, Long and Biddle have collected data on casualties and strengths of belligerents in major multi-party wars \parencite{CochranLong2014}.
-More recently There has has been some major efforts at collecting event data for conflicts:
-such as ACLED \parencites{RaleighLinkeHegreEtAl2010}, Empirical Studies of Conflict (\href{http://esoc.princeton.edu/}{ESOC}), and the Open Event Data Alliance.%
-\footnote{\url{http://openeventdata.org}}
-
-However, due to the lack of multi-war intra-war data, the preferred approach to the empirical study of the bargaining theory of war with intra-war data has been qualitative case studies\parencites{Reiter2003}[][Chapter 9]{Reiter2009}.
-Examples of such qualitative case studies include  \textcite{Goemans2000} (WWI) and \textcite{Reiter2009} (multiple wars).
-While there are some implications of the bargaining model of war that can be tested with within-case data, such as those regarding the offers made throughout the war, the use of within-case data prohibits the use of several key dependent variables of interest in these models---the cost, duration, and outcome of a war---since there is no variation in these variables within a single war.
-Both \textcite{Reiter2009} and \textcite{Goemans2000} use changes in beliefs and changes in offers as their dependent variables in their cases.
-
-Financial market data provides an alternative method with which to analyze how intra-war events influence war termination.
-This work gains some insights about the American Civil War through the interest rates on U.S. government bonds but these can be applied in a variety of contexts.
-First, financial markets incorporate public, and perhaps private, information.
-Thus financial markets are a measure of beliefs based on public information and can be used to understand how events in the war influence these beliefs.
-For bargaining models of war, the beliefs of the decision-makers are of primary importance.
-But financial markets may provide a baseline of the what beliefs can be formed based on public information.
-Second, the financial markets are also pseudo-prediction market.
-Where these predictions are reasonably accurate, estimating the effects of events on the changes in the predictions are a proxy for how these events would influence war outcomes.
-
-The relationship between financial assets are of interest to the study of war for at least several reasons.
-First, it is intrinsically interesting because it represents a cost of the conflict as well as a means of supporting the conflict.
-Second, since some assets have payoffs contingent on war outcomes, and prices of assets represent an expectation about future payoffs, in some cases the prices of financial assets can act like a prediction market of war outcomes.
-This work will focus on the later in order to understand which events within the war influence expectations about how the war will end.
-
-Although they cannot necessarily distinguish between theories of private information and commitment, it does provide information about which events within a war influence the beliefs of the market (and perhaps all contemporaries) about the aspects of the outcome of the war.
-This information may be useful to either build more specific theories, or to test new theories that may distinguish between those theories.
-
 The prices of financial assets have several other characteristics that make them a useful addition to the conflict researcher's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
 First, they incorporate only \textit{ex ante} information.
