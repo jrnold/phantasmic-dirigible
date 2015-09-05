@@ -119,16 +119,22 @@ In other words, the riskier a bond is, the lower the price and the higher the yi
 \subsection{How the Financial Markets Can Improve Our Understanding of War}
 \label{sec:how-prices-financial-1}
 
-Since \parencite{Fearon1995}, the bargaining theory of war has been the dominant theory of war \parencite{Reiter2003}.%
-\footnote{See CITES.}
-Since \textcite{Fearon1995}, a series of papers developed the theory of how fighting and bargaining interact within war \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}.
-While there has been extensive work in modeling this war (CITES), the the core mechanisms of the theory has not been amenable to empirical, and especially quantitative, analysis.
-The prices of financial assets can improve our understanding of theories of war in two ways: expanding the number of cases in which the analysis can be performed, and providing a measure of surprising events.
+Since \parencite{Fearon1995}, the the dominant theory of war has been the bargaining theory of war; see \textcites{Reiter2003}{Powell2009}{Reiter2009} for discussions.%
+While there is a large theoretical literature that has formalized much of the theory, \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}, direct empirical tests of the theory is not as advanced \parencite{Reiter2009}.
+The prices of financial assets can improve our understanding of theories of war in two ways: expanding the number of cases in which the analysis can be performed by allowing for intra-case quantitative analysis, and providing a measure of surprising events.
 
-A primary reason for this for this relative absence of work is the difficulty of obtaining the necessary data to evaluate the implications of the bargaining theory of war.
-While the secondary implications of the bargaining theory of war have been tested, the direct implications and the mechanisms of the theory require data on the belligerents' estimates of capabilities and resolve, and bargaining offers \parencite[32]{Reiter2003}.
-Due to the lack of detailed data for many wars as well as concerns about the comparability of wars, using within case analysis is an appealing methodology for analyzing the effect of conflict on war termination.
-Financial market data provides a measure related to a political science outcome of interest, the war termination, that varies within war.
+The bargaining theory of war essentially formalizes the insights of Clausewitz and Schelling.
+The central puzzle of war is, given that war is costly, there would seem to exist a better agreement:
+The two sides should have been able to come to the same agreement that the war eventually ends with, but without bearing the costs of war.
+So why did they not come to that agreement and instead fight the war? 
+\parencite{Fearon1995} and \parencite{Powell2006} proposed two frictions that would prevent an \textit{ex ante agreement}: private information and commitment problems.%
+\footnote{
+  War can also occur due to the sides the being risk loving, which \textcite{Fearo1995} dismisses as implausible, and due to domestic politics.
+  With respect to the later, many of the domestic politics explanations are explanations that generate a private information or commitment problem that allows for conflict as a solution to the bargaining problem.
+}
+But this leads to a second puzzle, given that these frictions can lead to conflict instead of a peaceful bargain, how does the conflict resolve that friction so that the sides can come to an agreement and return to peace.
+\textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
+
 
 Among these, data on intra-war combat events, namely battles, would appear to be the most readily available.
 Yet, the existing data on battles is generally both poor quality and quantity.
@@ -175,12 +181,12 @@ Second, investors have strong incentives to be truthful in their assessments bec
 This distinguishes prices from other sources such as the surveys or diaries of decision makers, which like prices have only the information available at the time, but in which the author may have incentives to deceive \parencite[57]{Reiter2009}.%
 \footnote{
   Although the investors in the American Civil War had their own preferences on the war, their investments seemed motivated by their preference for profits,
-  begin{quote}
+  \begin{quote}
     Sectional feeling often entered largely into the bull and bear  contests in the Gold Room, and Union men and rebel sympathizers fought their battles sometimes, as much to gratify this as to make money.
     \textcite[7]{Cornwallis1879}
     
-    The heaviest speculative orders were sent from Washington and Baltimore, and next to these, from Louisville, Kentucky, owing to these cities being in close communication to the seat of war and the rebel lines; and the operators there, almost to a man, were "bulls" in feeling, and strong Secessionists.
-    But though seldom or never found selling "short" they were quick to sell out their "long" gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to "touch bottom" \textcite[5]{Cornwallis1879}.
+    The heaviest speculative orders were sent from Washington and Baltimore, and next to these, from Louisville, Kentucky, owing to these cities being in close communication to the seat of war and the rebel lines; and the operators there, almost to a man, were ``bulls'' in feeling, and strong Secessionists.
+    But though seldom or never found selling ``short'' they were quick to sell out their ``long'' gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to ``touch bottom'' \textcite[5]{Cornwallis1879}.
   \end{quote}
   \textcite[210]{Mitchell1903} writes,
   \begin{quote}
@@ -717,58 +723,73 @@ I suppose that the observed log yields are observed with measurement error,%
 \footnote{Equation (\ref{eq:1}) is simplified for presentation. Since two sources are used, and in some cases there are multiple observations, $y_{t}$ is the mean of the observations, and $\tau_{t} = \tau / \sqrt{n_{t}}$ where $n_{t} \in \{1, 2\}$ is the number of observations on that day.}
 \begin{align}
   \label{eq:6}
-  y_{t} &= \mu_{t} + \epsilon_{t} & \epsilon_{t} \sim \dnorm{0, \tau^{2}}
+  y_{t} &= y^{*}_{t} + \epsilon_{t} & \epsilon_{t} \sim \dnorm{0, \tau^{2}}
 \end{align}
 The effects of battles and other events are included in the equation which models the latent log-yields.
 The first difference of the log yields is a function of a time-varying trend $\alpha_{t}$, and the effects of battles $W_{t} \beta$, and other events $X_{t} \gamma$ 
 \begin{align}
   \label{eq:7}
-  \mu_{t} &= \mu_{t - 1} + \alpha_{t} + W_{C,t} \kappa + W_{U,t} \upsilon + \omega_{\mu,t}
+  y^{*}_{t} &= y^{*}_{t - 1} + \alpha_{t} + W_{t} \beta + \upsilon + \omega_{y^{*},t}
 \end{align}
+If $\tau^{2} = 0$, then Equations (\ref{eq:6}) and (\ref{eq:7}) would be equivalent to simply estimating the a model with the first difference of $y$ as the dependent variable.
+With a non-zero $\tau$, this is equivalent to a constrained ARIMAX(0, 1, 1).
 
-The matrix $W$ contains a daily weight term for each battle which is non-zero if the news of the battle ``reached the market'' on that day, and zero otherwise.
-Each column of $W$ sums to one, so the $\beta_{b}$ is the total effect of battle $b$,
-\begin{align}
-  \label{eq:1}
-  \mu_{i} &= \sum_{k = t[i-1] + 1}^{t[i]} \sum_{b \in B} w_{b,k} \beta_{b}
-\end{align}
-The effect of a battle in a period is the sum of the product of a daily weight term $w_{b,k}$ ($\sum_{t \in 1:T} w_{b,t} = 1$) and its overall effect $\beta_{b}$.
-The weight terms are equally weighted for each battle and non-zero on the 1st day(s) in which news of the battle was reported and a lag of XXXX days.
-For example, the end of Gettysburg was reported in the news on XXXX, so XXXXX through XXXX (XXXX days later) have a weight of XXXX, and all other days have a weight of 0.
-
-The effects of battles are modeled as coming from two distributions: Union victories, and Confederate victories.
+The parameter $\beta$ is a vector containing the effect of each battles.
+These parameters are modeled as coming from two distributions: Union victories, and Confederate victories:
 \begin{equation}
   \label{eq:4}
   \begin{aligned}[t]
   \beta_{b} &\sim
   \begin{cases}
-    \dnorm
+  \dnorm{\upsilon, \zeta} & \text{if $b$ is a Union victory} \\
+  \dnorm{\kappa, \zeta} & \text{if $b$ is a Confederate victory} \\
   \end{cases}
   \end{aligned}
 \end{equation}
-This model allows for the estimation of the average effect of Union and Confederate victories ($\gamma$) while allowing for the effects to vary between battles and by extension over time.
-The distributions share a common scale, $\zeta^{2}$, since there is not enough data to estimate separate scales well.
+where $\upsilon$ is average effect of a Union victory and $\kappa$ is the average effect of a Confederate victories.
+Note that as $\zeta \to 0$, this model approaches simply including indicator variables for Confederate and Union victories.
+Modeling the effects of battles in this way allows for the estimation of the average effects of Union and Confederate victories, while allowing 
 
-The error in Equation (\ref{eq:7}) is modeled as a stochastic volatility process,
-\begin{equation*}
-  \label{eq:9}
-  \begin{aligned}[t]
-    \omega_{\mu,t} & \sim \dnorm{0, \sigma_{\omega, t}} \\
-    \log \sigma_{\omega} &\sim \dnorm{\bar{\omega} + \rho_{\omega} \log \sigma_{\omega, t - 1}, \xi}
-  \end{aligned}
-\end{equation*}
-The trend follows an AR(1) process.
-This is meant to account for unobserved trends in the conduct of the war that are not picked up by the observed variables.
+The effect of a battle at time $t$ is the sum of the product of a daily weight term $w_{b,k}$ ($\sum_{t \in 1:T} w_{b,t} = 1$) and its overall effect $\beta_{b}$.
+The matrix $W$ contains a daily weight term for each battle which is non-zero if the news of the battle is coded as reached the market on that day, and zero otherwise, as discussed in Section \ref{sec:battle-data}.
+Each column of $W$ sums to one, so that each $\beta_{b}$ represents the total effect of battle $b$ on the bond yield,
+The weight terms are equally weighted for each battle and non-zero on the 1st day(s) in which news of the battle was reported and a lag of XXXX days.
+For example, the end of Gettysburg was reported in the news on XXXX, so XXXXX through XXXX (XXXX days later) have a weight of XXXX, and all other days have a weight of 0.
+
+The trend term has a constant account for unobserved trends in the conduct of the war that are not picked up by the observed variables.
 \begin{align}
   \label{eq:8}
-  \alpha_{t} &\sim \dnorm(\rho_{\alpha} \alpha_{t - 1}, \sigma_{\alpha}^{2})
+  \alpha_{t} &\sim \dnorm{\rho_{\alpha} \alpha_{t - 1}, \sigma_{\alpha}^{2}}
 \end{align}
 
-Equations XXXX constitute the model with I will be estimating.
-I sample from posterior distribution of this model using an NUTS-HMC algorithm as implemented in the probabilistic programming language \Stan{} \parencites{\parencites{Stan2015a}.}
+The trend and level errors are correlated as suggested in \textcite{WestHarrison1997},
+\begin{equation}
+  \begin{bmatrix}
+    \omega_{y^{*}} \\
+    \omega_{\alpha^{*}}
+  \end{bmatrix}
+  \sim
+  \dnorm{
+    0,
+    \begin{bmatrix}
+      \sigma^{2}_{y^{*}, t} + \sigma_{\alpha}^{2} & \sigma_{\alpha}^{2} \\
+      \sigma_{\alpha}^{2} & \sigma_{\alpha}^{2}
+    \end{bmatrix}
+  }
+\end{equation}
+Since Figure \ref{fig:fives1874_price} suggests pretty strongly that the variance of the yields over time is not constant, the variance  $\sigma_{y^{*},t}$ is modeled as varying over time using a stochastic volatility process,
+\begin{equation}
+  \label{eq:9}
+  \begin{aligned}[t]
+    \log \sigma_{y^{*}} &\sim \dnorm{\bar{\sigma}_{y^{*}} + \rho_{\sigma_{y^{*}}} \log \sigma_{y^{*}, t - 1}, \xi^{2}}
+  \end{aligned}
+\end{equation}
+
+The model is estimated using MCMC methods to sample from the posterior distribution.
+The MCMC sampling methodology employed is a NUTS-HMC algorithm as implemented in the probabilistic programming language \Stan{} \parencites{Stan2015a}.
+I found that even in the HMC context, when estimating state space models, it is useful for both efficiency and speed to sample in two steps: (1) marginalize over the latent states using a Kalman filter and sample the other parameters using HMC, and (2) given the parameters in step 1, sample the latent spaces using a backward sampler.
+This constitutes a partially collapsed Gibbs sampler (CITE).
 4 chains were run and convergence assessed by multiple-chain R hat statistics.
-
-
 
 Thus far, in this section, I have only discussed battle data but battles not the only relevant events in a war, and this war in particular.
 Changes in policy, leadership, foreign policy events, negotiations and other events may all influence expectations about the future of the war.
