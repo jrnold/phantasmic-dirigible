@@ -134,7 +134,33 @@ So why did they not come to that agreement and instead fight the war?
 }
 But this leads to a second puzzle, given that these frictions can lead to conflict instead of a peaceful bargain, how does the conflict resolve that friction so that the sides can come to an agreement and return to peace.
 \textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
+So while empirical evidence for the bargaining theory of war can come from studying war onset, testing the ``core of the theory'' parencite requires intrawar data and as such has demanding data requirements, as such has been subject to few empirical studies \parencites{Reiter2003}{Ramsay2008}{Reiter2008}{Weisiger2015}.
+Empirical evaluations the bargaining model of war requires estimates of capabilities, estimates of resolve, exchange of offers, and combat data \parencite{Reiter2003}.
+All of these data are generally difficult to acquire, let alone for multiple cases. 
+Using financial asset price data can extend the data available to researchers in this area.
 
+First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets as time-varying expecations or predictions of the war termination.
+The data demands of the bargaining theory of war means that it is hard to find many cases with the requisite data.
+While data on the sides' estimates of resolve and capabilities and (often secret) bargaining offers are unsurpisingly scarce, data on battles is of surpisingly poor quaility and quantity.
+There does not exist a Correlates of War for battles, and data on battles is limited in quantity and quality.
+The most commmonly used datasets of military combat (battle) data for inter-state wars is the CDB90 or HERO dataset \parencites{HistoricalResearchEtAl1984}{cdb90}, but that data is both dated and of questionable quality \parencites[32]{Reiter2003}{BiddleLong2004}.
+One motivation for the choice of the American Civil War in this work was that the data on battles was of higher quaility and more comprehensive than other wars.
+\footnote{
+More recently work by \textcite{Weisiger2015} and \textcite{CochranLong2014} have offered data on combat across wars.
+See \textcites{cdb90}{Helmbold1995} for discussions of the difficulties in compiling battle data.
+}
+And even if battle data were more plentiful, the ability to compare military combat may be difficult due to the heterogeneity of combat across time and space \parencite{Reiter2009}.
+As such, \textcites{Reiter2003}{Reiter2009} suggest that the best way forward in empirical analysis of the bargaining theory of war is qualitative analysis on limited cases.
+In studies, the within-case nature of the analysis means that they cannot have the war duration or outcome as a dependent variables.
+But, as discussed in Section \ref{sec:how-prices-financial}, the prices of some financial assets may act as measures of expected war termination.
+This allows esearchers to conduct within-case quantitative analysis using cases with the requisite battle data, and use the prices of carefully-chosen financial assets as an outcome variable that proxies for war outcomes, such as the duration, cost or victor.
+Instead of using cross-sectional variation in the observed outcomes of wars, this type of analysis will exploit within-case time-variation of predictions or expectations about the outcome. 
+
+Second, financial asset price changes naturally provide a measure of surprising events or new information.
+Surprising events are particularly important in informational theories of war in which only new information will affect beliefs.
+However,  it is difficult to necessarily know what is surprising to contemporaries, see \textcite{Shirkey2009} for an attempt to code surprising events.
+Since prices are formed from expectations about future events, and changes in prices correspond to changes in the news available to the market, as discussed in section \ref{sec:how-prices-financial}.
+Thus, a price change is a natural measure of new information, although it may be more challenging for the researcher to figure out what new information that was.
 
 The prices of financial assets have several other characteristics that make them a useful addition to the conflict researcher's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
@@ -158,7 +184,7 @@ This distinguishes prices from other sources such as the surveys or diaries of d
   \end{quote}
 } %
 Finally, price data is often available at high frequencies, often daily.
-This is in contrast with documentary evidence which is often produced at lower frequency, or missing for large periods of time \parencite[][57]{Reiter2009}.
+This is in contrast with documentary evidence, which is often either produced at lower frequency or missing for large periods of time \parencite[][57]{Reiter2009}.
 The high frequency of price data makes expands the set of analyses available to the researcher, making it possible to analyze the effects of individual events in conflicts.
 %% Fourth, the prices of financial assets are a quantitative summary of investors' expectations, and less susceptible to the  subjective interpretation of researchers.
 %% This distinguishes price data from documentary evidence which must be interpreted by researchers \parencite[][58]{Reiter2009}.
@@ -183,9 +209,10 @@ The researcher will need to apply substantive knowledge of the assets, market, a
 \subsection{The Means and Mechanisms of War}
 \label{sec:means-mechanisms-war}
 
-While I motivate the use of prices to study war from the perspective of the bargaining theory of war, I do not attempt to directly test or distinguish between the private information and commitment theories of war in this paper.%
+While I motivate the use of financial asset prices to study war from the perspective of the bargaining theory of war, in this work, I do not attempt to directly test or distinguish between the private information and commitment theories of war in this paper.%
 \footnote{See \textcite{Ramsay2008}, \textcite{Weisiger2015}, and \textcite{Reiter2009} for works which attempt to do so.}
-Instead, I focus on the effect of military combat, victories and defeats in major battles, on the expected cost of the war, without attempting to distinguish between which mechanism, the revelation of private information or destruction to reduce the commitment problem, is the mediator.
+Instead, I focus on the effect of military combat, in particular, victories and defeats in major battles, on the expected cost of the war.
+I do attempt to distinguish whether these victories and defeats influence the expected war termination through the revelation of private information or destruction or by resolving commitment problems.
 I do this because distinguishing between private information and commitment theories of war using intra-war data is harder than previously appreciated.
 Observing only battle results, such as victories or casualties, is insufficient to identify the casual mechanism of the war without relying on a well-specified model of the war process.%
 \footnote{This difficulty in identifying the effects of private information or commitment problems on war termination is an example of the general difficulty of identifying the causal effects of mediators \parencite{Keele2015a}.}
@@ -207,7 +234,7 @@ These processes are distinct yet interconnected.%
   depends on both. %
 } %
 It is the presence military combat that makes war distinct from other bargaining processes, and the bargaining that precedes or succeeds it. %
-Which leads to the primary puzzle in the study of war: What is the nature of the relationship between bargaining and the military combat?
+Which leads to the primary puzzle in the study of war: what is the nature of the relationship between bargaining and the military combat?
 This raises the questions:
 What are the frictions that prevented a negotiated agreement before war?
 How did the actual fighting within war remove those frictions?
@@ -217,9 +244,15 @@ The first is the means of combat. %
 The immediate goals of combat are the destruction of military forces, the destruction of civilian assets, or the control of territory.
 \parencite[30]{Reiter2003}. %
 The second is the causal mechanisms by which those means influence the bargaining process and war termination. %
-Since a complete and coherent theory requires that combat solve the frictions that prevented a negotiated settlement without war \parencite{LeventogluSlantchev2007}, these causal mechanisms are the three rationalist theories of war identified in \textcite{Fearon1995}: private information, commitment, and indivisibility. %
+Since a complete and coherent theory requires that combat solve the frictions that prevented a negotiated settlement without war \parencite{LeventogluSlantchev2007}, these causal mechanisms are the two identified in \textcite{Fearon1995} and \textcite{Powell2007}: private information and commitment.%
+\footnote{Indivisibility, identified as a third mechanism in \textcite{Fearon1995}, is considered a special case of the commitment problem in \textcite{Powell2007}.}
 Thus there exist multiple possible means of combat and multiple channels by which each of those means may influence war termination.
-Figure \ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.
+Figure \ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.%
+\footnote{
+While formal models of war can be categorized by whether they are models of the private information mechanism, comitment problem, or both, they can also be categorized by how they model military combat within the war.
+In some models battles are important primarily because they influence the probability of war victory, \parencites{Powell2004}{Wagner2000}{LeventogluSlantchev2007}{Slantchev2003}{SmithStam2004}.
+In other models, battles are important because they impose costs on the sides \parencites{FilsonWerner2002}{Powell2004}{LeventogluSlantchev2007}. %
+}
 
 \begin{figure}[htpb]
   \centering
@@ -228,24 +261,6 @@ Figure \ref{fig:combat-causal-diagram} illustrates the relationship between mean
   \label{fig:combat-causal-diagram}
 \end{figure}
 
-Formal models can be classified by the casual mechanism by which combat influences war termination and by the means of combat. %
-The formal models differ not only alter the mechanism in which they are interested (private information or commitment), but also the role of battles in the war, and the nature of the combat process: whether battles are important primarily because they impose costs (resolve), or because they can create war victory (probability of victory). %
-Battle victory can bring total victory or collapse in war, either suddenly \parencites{Powell2004}{Wagner2000}{LeventogluSlantchev2007}, or over time \parencites{Slantchev2003}{SmithStam2004}.
-Battles also impose costs \parencites{FilsonWerner2002}{Powell2004}{LeventogluSlantchev2007}. %
-
-The second approach, which is adopted in this paper, is to focus on which observable features of battles effect war termination, regardless of whether those effects occur through the private information or commitment problem channels. This appears in formal models as well. %
-Bargaining is conditioned on the military combat process of war, and what would happen if that process continues to completion.
-
-This bargaining is conditional on the state of that process or
-expectations about the future state of that combat process.
-\textcite[135]{Wagner2000} writes,
-\begin{quotation}
-  while states that are fighting may not actually try to disarm each
-  other, they must bear in mind the fact that they could, and absolute
-  way, even though it never occurs, must be the ``measure of all their
-  hopes and fears.''
-\end{quotation}
-
 This approach is closer to earlier pre-bargaining empirical work on war (initiation) except in that it involves within war variables. %
 The reason is that identifying the channel through which war events influences the end of war is empirically quite difficult. %
 For almost any observable data of war outcomes, it both alters the actual state of the war and the beliefs of the participants about the combat process in which they are involved. %
@@ -253,28 +268,19 @@ And as of yet, there are no general results with empirical implications that dif
 
 There are a couple ways in which this effects might be identified. %
 First, if the beliefs of the participants were observed, then the effects of war events on the beliefs of the participants could be measured. %
-One problem with this is that it is hard to observe the beliefs of the participants, even if diaries or reports are available, it is not clear whether these are accurate indicators of those beliefs. %
+A problem with this approach is that it is hard to observe the beliefs of the participants.
+Even if first-hand accounts are available, it is not clear whether these are accurate indicators of those beliefs. %
 Another problem, is that it is insufficient to simply observe changes in the beliefs of one participant over time, as in \textcite{Reiter2009}. %
 The causal mechanism in informational theories of war is the \textit{convergence} of beliefs of the belligerents to a common distribution. %
 This requires knowing the beliefs of both sides, both the mean and variance of those beliefs, or at the very least, the variance of prior distribution based on public information. %
 By using documentary data, \textcite{Goemans2000} and \textcite{Reiter2009} are able to do this.
-Second, identification would have to rely on a much more detailed model of military combat and war than exists now.
+
+Second, identification would have to be model based, and in doing so would require a detailed model of how military combat influences war outcomes.
 However, this would require more work along the lines of \textcite{Biddle2004}, which focus on generating models of military combat correct, even if these models are not directly tied to political variables.
 
 This is not to abandon the bargaining theory of war or to claim it is useless.
 It is to argue that the current incarnation of the theory require a deeper understanding of the specifics of the bargaining process and the combat process in order to develop models with empirical implications.
 And that understanding of the specifics of those processes does not spring like Athena fully formed from the head of Zeus, but will come from the study of wars, and developing stylized facts and empirical patterns which will serve as the assumptions of models.
-
-Nor are the extant formal models of war particularly useful, or designed for empirical testing. %
-The models are written at a high level, and the causal mechanisms are generally unobservable variables. %
-They establish what sorts of explanations of war are complete, and what sorts of explanations and models are not (anarchy, balance of power, offense-defensive balance).
-This is nontrivial, as \textcite{Fearon1995} ruled out a number of classes of explanations as having insufficient argument, and also established that war can explained within a rational framework, without relying on ex post irrationality or misperceptions of the participants.
-However, the parameters is the models have only a tenuous mapping to the real world. %
-The comparative statics in the models are generally determined by specific features of the bargaining framework and it is unclear whether these are general conditions. %
-For example, there are claims that wars of information must be short based on \textcite{Slantchev2003} because in that model war can only last 3 rounds. %
-However, that result is a direct result of the assumption that there are three types; increase the number of types (or the variance in the power of those types) and the duration of the war increases. %
-\textcite{Powell2004} empirical implication is that wars of uncertainty about resolve are shorter than those of uncertainty about fighting. %
-That result follows from the feature that costs are incurred between battles; but if costs can be incurred without fighting, and that is enough to allow for the resolution of combat, then why fight at all?
 
 Much of the discussion of models of war has discussed whether war is bargaining or commitment.
 However, also important is the nature of the combat process that underlies the bargaining model. %
@@ -433,7 +439,7 @@ Members of the government, military, and reporters all engaged in investment spe
 Investment firms even had their own correspondents stationed in cities close to the war fronts to relay the latest news \parencites[5-7]{Cornwallis1879}. %
 Finally, magazines and newspapers often cited war events as the cause of recent price movements. %
 For example, the issue of \textit{Bankers' Magazine} after Gettysburg and Vicksburg (Jul 23, 1863), cites these battles as the cause of the recent changes in market prices,
-\begin{quote}
+=\begin{quote}
   The month of July has been a very active one with numerous fluctuations, almost daily, in the market values of gold, with unusual changes in the current values of stocks. %
   The advices as to the war movements are of a most satisfactory kind, leading to a fall in gold from 146 1/2 at the close of June, to 123 1/2, the 20th inst., at which dates the public had learned the  capitulation of Vicksburgh and of Port Hudson, the defeat of Lee in  Maryland and Pennsylvania, and of successful results at other points  for the Union forces. %
 \parencite[159]{BankersMagazine1864}
