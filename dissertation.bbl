@@ -2069,6 +2069,34 @@
       \verb http://amstat.tandfonline.com/doi/abs/10.1198/016214508000000337
       \endverb
     \endentry
+    \entry{PetrisPetroneEtAl2009}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ede0286b2a8d3529781aee6c1987f523}{Petris}{P\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=7db2fe1edf71b75324f7c171cb590d84}{Petrone}{P\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=5545e91f16024a24785fa2f9df0fb354}{Campagnoli}{C\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9ce036ca958071cc3e3142a58a7a6be8}
+      \strng{fullhash}{9ce036ca958071cc3e3142a58a7a6be8}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780387772370}
+      \field{series}{Use R!}
+      \field{title}{Dynamic Linear Models with {R}}
+      \field{year}{2009}
+      \verb{file}
+      \verb PetrisPetroneEtAl2009.pdf:PetrisPetroneEtAl2009.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://books.google.com/books?id=VCt3zVq8TO8C
+      \endverb
+    \endentry
     \entry{Phisterer1883}{book}{}
       \name{author}{1}{}{%
         {{hash=4bf9fcee8b42fcebceb5788f3be983ec}{Phisterer}{P\bibinitperiod}{Frederick}{F\bibinitperiod}{}{}{}{}}%
