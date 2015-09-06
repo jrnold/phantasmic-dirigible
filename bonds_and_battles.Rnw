@@ -137,12 +137,12 @@ Empirical evaluations the bargaining model of war requires estimates of capabili
 All of these data are generally difficult to acquire, let alone for multiple cases.
 Using financial asset price data can extend the data available to researchers in this area.
 
-First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets as time-varying expecations or predictions of the war termination.
+First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets as time-varying expectations or predictions of the war termination.
 The data demands of the bargaining theory of war means that it is hard to find many cases with the requisite data.
-While data on the sides' estimates of resolve and capabilities and (often secret) bargaining offers are unsurpisingly scarce, data on battles is of surpisingly poor quaility and quantity.
+While data on the sides' estimates of resolve and capabilities and (often secret) bargaining offers are unsurprisingly scarce, data on battles is of surprisingly poor quality and quantity.
 There does not exist a Correlates of War for battles, and data on battles is limited in quantity and quality.
-The most commmonly used datasets of military combat (battle) data for inter-state wars is the CDB90 or HERO dataset \parencites{HistoricalResearchEtAl1984}{cdb90}, but that data is both dated and of questionable quality \parencites[32]{Reiter2003}{BiddleLong2004}.
-One motivation for the choice of the American Civil War in this work was that the data on battles was of higher quaility and more comprehensive than other wars.
+The most commonly used datasets of military combat (battle) data for inter-state wars is the CDB90 or HERO dataset \parencites{HistoricalResearchEtAl1984}{cdb90}, but that data is both dated and of questionable quality \parencites[32]{Reiter2003}{BiddleLong2004}.
+One motivation for the choice of the American Civil War in this work was that the data on battles was of higher quality and more comprehensive than other wars.
 \footnote{
 More recently work by \textcite{Weisiger2015} and \textcite{CochranLong2014} have offered data on combat across wars.
 See \textcites{cdb90}{Helmbold1995} for discussions of the difficulties in compiling battle data.
@@ -151,7 +151,7 @@ And even if battle data were more plentiful, the ability to compare military com
 As such, \textcites{Reiter2003}{Reiter2009} suggest that the best way forward in empirical analysis of the bargaining theory of war is qualitative analysis on limited cases.
 In studies, the within-case nature of the analysis means that they cannot have the war duration or outcome as a dependent variables.
 But, as discussed in Section~\ref{sec:how-prices-financial}, the prices of some financial assets may act as measures of expected war termination.
-This allows esearchers to conduct within-case quantitative analysis using cases with the requisite battle data, and use the prices of carefully-chosen financial assets as an outcome variable that proxies for war outcomes, such as the duration, cost or victor.
+This allows researchers to conduct within-case quantitative analysis using cases with the requisite battle data, and use the prices of carefully-chosen financial assets as an outcome variable that proxies for war outcomes, such as the duration, cost or victor.
 Instead of using cross-sectional variation in the observed outcomes of wars, this type of analysis will exploit within-case time-variation of predictions or expectations about the outcome.
 
 Second, financial asset price changes naturally provide a measure of surprising events or new information.
@@ -163,7 +163,7 @@ Thus, a price change is a natural measure of new information, although it may be
 The prices of financial assets have several other characteristics that make them a useful addition to the conflict researcher's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
 First, they incorporate only \textit{ex ante} information.
-This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}, both of which can incoporate later information.
+This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}, both of which can incorporate later information.
 Second, investors have strong incentives to be truthful in their assessments because their payoffs are directly tied to being correct.
 This distinguishes prices from other sources such as the surveys or diaries of decision makers, which like prices have only the information available at the time, but in which the author may have incentives to deceive \parencite[57]{Reiter2009}.%
 \footnote{
@@ -188,12 +188,12 @@ The high frequency of price data makes expands the set of analyses available to 
 %% This distinguishes price data from documentary evidence which must be interpreted by researchers \parencite[][58]{Reiter2009}.
 %% The quantitative nature of the data makes it easier to analyze not only what events mattered in conflict, but the magnitude of those effects \parencite{north2000introd}.
 
-This is not to claim that prices of finanical assets dominate other data sources.
+This is not to claim that prices of financial assets dominate other data sources.
 They simply provide another tool for conflict researchers.
 Financial asset prices have several shortcomings when studying conflict, and are not appropriate in all cases.
 First, these prices do not directly measure the beliefs of the belligerents.
 Prices of financial data generally incorporate public information, and do not incorporate the private information available to decision makers.
-But the beliefs of the decision makers is what is expected to convergerge in informational theories of war.
+But the beliefs of the decision makers is what is expected to convergence in informational theories of war.
 However, it may be possible that many private information models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information, which these prices can measure.
 Second, in many conflicts an appropriate priced financial asset is not available.
 In many areas in which researchers are most interested in understanding conflict, \eg{} civil wars in developing countries, countries may there may not exist a financial asset  that is closely tied to the war outcome, \eg{} the belligerents do not issue sovereign bonds, and even if there are the market may not be liquid enough to provide reliable estimates.
@@ -247,7 +247,7 @@ Since a complete and coherent theory requires that combat solve the frictions th
 Thus there exist multiple possible means of combat and multiple channels by which each of those means may influence war termination.
 Figure~\ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.%
 \footnote{
-While formal models of war can be categorized by whether they are models of the private information mechanism, comitment problem, or both, they can also be categorized by how they model military combat within the war.
+While formal models of war can be categorized by whether they are models of the private information mechanism, commitment problem, or both, they can also be categorized by how they model military combat within the war.
 In some models battles are important primarily because they influence the probability of war victory, \parencites{Powell2004}{Wagner2000}{LeventogluSlantchev2007}{Slantchev2003}{SmithStam2004}.
 In other models, battles are important because they impose costs on the sides \parencites{FilsonWerner2002}{Powell2004}{LeventogluSlantchev2007}. %
 }
@@ -701,7 +701,7 @@ The general model to be estimated is,
 If $\tau^{2} = 0$, then Equations~(\ref{eq:6}) and~g(\ref{eq:1}) would be equivalent to simply estimating the a model with the first difference of $y$ as the dependent variable.
 With a non-zero $\tau$, and supposing $\omega$ was distributed normal, this would be equivalent to a constrained ARIMAX(0, 1, 1) model CITE.
 
-\footnote{A Student's $t$ distribution with degrees of freedom 4--6 are commondly used for robust inference CITE Gelman.}
+\footnote{A Student's $t$ distribution with degrees of freedom 4--6 are commonly used for robust inference CITE Gelman.}
 
 The models will differ in $\delta_{t}$.
 In $\Model{1}$, there are no battle effects, and $\delta_{t} = 0$ for all $t$.
@@ -717,7 +717,7 @@ In $\Model{2}$,
   \label{eq:2}
   \delta = \alpha + X_{t} \beta
 \end{align}
-where $\alpha$ is a constant intercept, $X_{t}$ is an $n \times 2$ matrix containing the sum of the weighted indicators for all Confederate and Union victories occuring on day $t$,
+where $\alpha$ is a constant intercept, $X_{t}$ is an $n \times 2$ matrix containing the sum of the weighted indicators for all Confederate and Union victories occurring on day $t$,
 and $\beta$ is a length 2 row vector parameter for the average effects of Confederate and Union victories.
 
 In $\Model{3}$, $\delta$ is a function of random effects of battles in addition to the average effects for Union and Confederate battles,
@@ -727,8 +727,8 @@ In $\Model{3}$, $\delta$ is a function of random effects of battles in addition 
   \label{eq:12}
   \gamma_{b} &\sim \dt{7}{0, \zeta^{2}}
 \end{align}
-where $\alpha$, $\gamma$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a vector with a rarndom effects for each
-The values of $\gamma$ are given a Student's $t$ distribution rather than a normal distribution since it is expeced that a few battles, e.g. Gettysburg, may have large effects on the price.
+where $\alpha$, $\gamma$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a vector with a random effects for each
+The values of $\gamma$ are given a Student's $t$ distribution rather than a normal distribution since it is expected that a few battles, e.g. Gettysburg, may have large effects on the price.
 The total effect of an individual battle is
 \begin{align}
   \omega_{b} =
@@ -767,7 +767,7 @@ This is an example of a partially collapsed Gibbs sampler, and I describe this i
 For all the models, four chains were run and convergence assessed using multiple-chain R hat statistics and the number of effective samples.
 
 
-What are the average efects of battles?
+What are the average defects of battles?
 
 What is the individual effects of battles?
 
@@ -815,7 +815,7 @@ This is inappropriate for this analysis because that risk free interest rate was
 SUMMARY
 
 I conclude with some thoughts on future directions of this research.
-There are several methdodological issues that this analysis had to confront: (1) ``When did the market receive information about battles?'', (2) ``What information about battles did it receive?'', and (3) ``What other non-battle information did it receive?''.
+There are several methodological issues that this analysis had to confront: (1) ``When did the market receive information about battles?'', (2) ``What information about battles did it receive?'', and (3) ``What other non-battle information did it receive?''.
 In this analysis, I handled the information about battles by choosing a set of important battles and their results, both of which were coded \textit{ex post} by historians,  with the assumption that these would be a noisy measure of the the market had observe.
 I handled when the market received information about battles with data, the day on which the battle was first reported in newspapers, and modeling choices, by including lagged terms.
 I handled other non-battle information only by using robust fat-tailed distributions in the analysis, and not through gathering other data.
@@ -823,7 +823,7 @@ The reason for this was that coding indicators for alternative events is difficu
 The models presented in this paper could all be improved to better account for these, but that would increase model complexity.
 Rather than complicate the model, it is better to get better data.
 
-Directly using the text of contemporary newspapers as data would simultaneoulsy address all of the methodological issues raised in the previous paragraph.
+Directly using the text of contemporary newspapers as data would simultaneously address all of the methodological issues raised in the previous paragraph.
 A rough sketch of the analysis would be to estimate topics from the text and regress those topics on market movements.
 What information the market received about battles would correspond to battle-related topics inferred from the articles themselves.
 When the market received information is simply the days on which those topics appeared in newspapers.
@@ -874,5 +874,7 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  Arnold2015b Phisterer1883 dyer1908 cwsac2012 XXXX sui
 %  LocalWords:  KennedyConservation1998 XXXXX MCMC Stan2015a generis
 %  LocalWords:  bellum CBO2012 CBO2012a 5's 6's 20's 40's 30's bodart
-%%  LocalWords:  Eicher2001 Elder1865 Weingast1998 Walker1865a
-%%  LocalWords:  livermore
+%%  LocalWords:  Eicher2001 Elder1865 Weingast1998 Walker1865a sides'
+%%  LocalWords:  livermore Powell2006 HistoricalResearchEtAl1984 5's
+%  LocalWords:  Helmbold1995 Shirkey2009a 6's 20's 40's 30's ACWBD
+%  LocalWords:  ARIMAX Gelman Donelson
