@@ -16,6 +16,9 @@ CHAP_DLM_RNW = Structural_Breaks.Rnw
 CHAP_DLM_TEX = $(CHAP_DLM_RNW:%.Rnw=%.tex)
 PATH_DLM = ../dlm-shrinkage
 
+# Need to set environment locale for knitr to work
+export LC_ALL = en_US.UTF-8
+export LC_CTYPE = en_US.UTF-8
 
 ## Programs
 
@@ -38,20 +41,19 @@ acw_onset: $(CHAP_ACW_ONSET_TEX)
 
 $(CHAP_ACW_ONSET_TEX): $(CHAP_ACW_ONSET_RNW)
 	$(RSCRIPT) -e 'PROJECT_DIR <- "$(PATH_ACW_ONSET)"; knitr::knit("$<", output = "$@")'
-	#sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{acw_onset:\2:\3}/g' $@
+	sed -E -i .bak -e 's/\\(ref|label)\{(sec|fig|eq|tab):([^}]+)\}/\\\1{acw_onset:\2:\3}/g' $@
 
 bonds_battles: $(CHAP_BONDS_BTL_TEX)
 
 $(CHAP_BONDS_BTL_TEX): $(CHAP_BONDS_BTL_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_BONDS_BTL)"; knitr::knit("$<", output = "$@")'
-	sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{bonds_battles:\2:\3}/g' $@
-
+	sed -E -i .bak -e 's/\\(ref|label)\{(seq|fig|eq|tab):([^}]+)\}/\\\1{bonds:\2:\3}/g' $@
 
 dlm: $(CHAP_DLM_TEX)
 
 $(CHAP_DLM_TEX): $(CHAP_DLM_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_DLM)"; knitr::knit("$<", output = "$@")'
-	#sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{dlm:\2:\3}/g' $@
+	sed -E -i .bak -e 's/\\(ref|label)\{(sec|fig|eq|tab):([^}]+)\}/\\\1{dlm:\2:\3}/g' $@
 
 updatebib:
 	biber $(RNW_FILE:%.Rnw=%.bcf) --output_format bibtex
@@ -64,7 +66,7 @@ clean:
 	-rm $(CHAP_BONDS_BTL_TEX)
 	-rm $(CHAP_DLM_TEX)
 
-fullclen :
+fullclean :
 	latexmk -C
 
 .PRECIOUS: %.tex

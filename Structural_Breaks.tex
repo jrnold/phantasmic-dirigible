@@ -83,7 +83,7 @@ The discrete-mixture approach models $\theta_{i}$ with a prior consisting of a m
   \theta_{i} = w \delta_{0} +  (1 - w) g(\theta_{i}) \text{,}
 \end{equation}
 where $w \in [0, 1]$, $\delta_{0}$ is the degenerate distribution at 0, and $g(\theta_{i})$ is the distribution of $\theta_{i} | \theta_{i} \neq 0$.
-The mixture distribution in equation \eqref{dlm:eq:1} is often called a spike-and-slab prior.
+The mixture distribution in equation \eqref{eq:1} is often called a spike-and-slab prior.
 If $g$ is sufficiently heavy-tailed, then $\E(\theta_{i} | w, y_{i}) \approx w(y_{i}) y_{i}$ \parencite{PolsonScott2010}, where 
 \begin{equation}
   \label{dlm:eq:7}
@@ -155,7 +155,7 @@ The horseshoe prior distribution is one of the few shrinkage priors that possess
 It may not be the optimal distribution, and this is an area which is rapidly developing.
 However, it seems to be a good ``default'' shrinkage prior that will likely work well in most circumstances.
 
-While the Horseshoe distribution has no analytical form, it can be represented as a scale-mixture of normal distributions (equation \eqref{dlm:eq:3}( in which the local scale components $\lambda$ are distributed half-Cauchy,%
+While the Horseshoe distribution has no analytical form, it can be represented as a scale-mixture of normal distributions (equation \eqref{eq:3}( in which the local scale components $\lambda$ are distributed half-Cauchy,%
 \footnote{
 The half-Cauchy prior on the scale components $\lambda_{t}$ implies an inverse-Bomega (Bomega prime) distribution on the variance components $\lambda_{t}^{2} = \dinvbeta{\frac{1}{2}, \frac{1}{2}}$, where $\dinvbeta{x; a, b} = \frac{x^{a - 1} (1 + x)^{-a - b}}{B(a, b)}$, where $B$ is the Beta function.
 The inverse beta distribution is related to the Beta distribution.
@@ -193,7 +193,7 @@ The simplest case of this is the local-level model in which the parameters evolv
   \end{aligned}
 \end{equation}
 
-Since all the component equations in equation \eqref{dlm:eq:5} are (multivariate) normal, the joint distribution of $\theta$ and $y$ is also multivariate normal.
+Since all the component equations in equation \eqref{eq:5} are (multivariate) normal, the joint distribution of $\theta$ and $y$ is also multivariate normal.
 For each time period $t$, estimate of $\theta_{t}$ can be updated using the following equations.
 The prior distribution of the state $\theta_{t}$, given observations $y_{1:(t-1)}$, is
 \begin{equation}
@@ -225,16 +225,16 @@ where $A_{t} \in [0, 1]$ is the adaptation coefficient and $e_{t}$ is the foreca
   A_{t} = R_{t} / Q_{t} = \frac{C_{t-1} + W_{t}}{C_{t-1} + W + V} \\
   e_{t} = y_{t} - f_{t-1} = y_{t} - m_{t-1}
 \end{align}
-Together equations \eqref{dlm:eq:23}-\eqref{dlm:eq:26} are known as the \textit{filtering equations} or the Kalman filter.
+Together equations \eqref{eq:23}-\eqref{eq:26} are known as the \textit{filtering equations} or the Kalman filter.
 After filtering, the values of $p(\theta_{t} | y_{1:T})$ can be sampled by forward filtering backward sample.
-However, only the filtering equations are needed to calculate the likelihood of equation \eqref{dlm:eq:5},
+However, only the filtering equations are needed to calculate the likelihood of equation \eqref{eq:5},
 \begin{equation}
   \label{dlm:eq:27}
   p(y_{1:t} | V, W_{t}) \propto -\frac{1}{2} \sum_{i = 1}^{t}  \left( \log | Q_{t} |  + e_{t}^{2} / Q_{t} \right)
 \end{equation}
 
 An important feature of the filtering equations is that the filtered estimate of the mean, $m_{t} = E p(\theta_{t} | y_{t})$, is a weighted sum of the mean of the prior,  $m_{t - 1}$, and the forecast error $e_{t} = y_{t} - m_{t - 1}$.
-Equation \eqref{dlm:eq:26} can also be rewritten as a weighted sum of the new observation $y_{t}$ and the prior mean $m_{t-1}$,
+Equation \eqref{eq:26} can also be rewritten as a weighted sum of the new observation $y_{t}$ and the prior mean $m_{t-1}$,
 \begin{equation}
   \label{dlm:eq:18}
   \theta_{t} | y_{1:t} = (1 - A_{t}) m_{t-1} + A_{t} y_{t}
@@ -273,9 +273,9 @@ For $t = 1:n$,
   \label{dlm:eq:2}
   \theta_{1} & \sim \dmvnorm{m_{0}, C_{0}}{n}
 \end{align}
-Equation \eqref{dlm:eq:8} is the \textit{observation equation} which relates the \textit{observation vector} $y_{t}$ to the \textit{state vector} $\theta_{t}$.
-Equation \eqref{dlm:eq:14} is the \textit{state equation} which describes the evolution of the states over time.
-Equation \eqref{dlm:eq:2} is the \textit{initial state equation}.
+Equation \eqref{eq:8} is the \textit{observation equation} which relates the \textit{observation vector} $y_{t}$ to the \textit{state vector} $\theta_{t}$.
+Equation \eqref{eq:14} is the \textit{state equation} which describes the evolution of the states over time.
+Equation \eqref{eq:2} is the \textit{initial state equation}.
 The vectors $\nu_{t}$ and $\omega_{t}$ are referred to as the \textit{observation} and \textit{state disturbances}, respectively.
 The matrices $F_{t}$, $G_{t}$, $V_{t}$, and $W_{t}$ are referred to as the \textit{system matrices}.
 Let $\mathcal{S}_{t}$ refer to the set of system matrices.
@@ -285,7 +285,7 @@ The range of models which can be represented as DLMs means that the methods pres
 Any model in which the parameter of interest can be represented as a state in a DLM, can be estimated using the following method to detect structural breaks.
 %\todo[inline]{Should I be talking about ``detecting'' structural  breaks or dealing with large changes (heavy tailed distributions)?}
 
-As in the local level model, since all equations in \eqref{dlm:eq:8} through \eqref{dlm:eq:14} are multivariate normal, they can be updated sequentially with conjugate forms.%
+As in the local level model, since all equations in \eqref{eq:8} through \eqref{eq:14} are multivariate normal, they can be updated sequentially with conjugate forms.%
 \footnote{See \textcite[Section 4.3][]{WestHarrison1997} for proofs.}
 The prior for the state vector at time $t$ is $\theta_{t} \sim N(a_{t}, R_{t})$ where
 \begin{align}
@@ -337,7 +337,7 @@ where $\lambda$ is a $n \times r$ matrix, and $\tau$ is a $r \times 1$ vector.
 
 Next, consider the case in which the state disturbances, $\omega_{t}$ are correlated.
 In that case, the state disturbances are distributed as a scale mixture of multivariate normal distributions.
-The multivariate equivalent of equation \eqref{dlm:eq:3} is,
+The multivariate equivalent of equation \eqref{eq:3} is,
 %\todo{This derivation of the scale mixture of MVN seems intuitive, but I haven't seen it done}
 \begin{equation}
   \begin{aligned}[t]
@@ -659,7 +659,7 @@ a Kalman filter.
 \clearpage{}
 
 \section{Appendix}
-\label{dlm:sec:appendix
+\label{sec:appendix
 }
 \subsection{code}
 \label{dlm:sec:code}
@@ -685,7 +685,7 @@ Instead of keeping $W_{t}$ fixed, represent $W_{t}$ as a proportion of the poste
 }
 Let $W_{t} = \frac{\delta}{1 - \delta} C_{t - 1}$ where $\delta \in [0, 1]$. 
 This implies that $R_{t} = C_{t - 1} / \delta$.
-Thus the filtered model with discount factors consists of equations \eqref{dlm:eq:23}, \eqref{dlm:eq:30}, and
+Thus the filtered model with discount factors consists of equations \eqref{eq:23}, \eqref{eq:30}, and
 \begin{equation}
   \label{dlm:eq:10}
   \theta_{t} | y_{1:t-1} \sim N(m_{t-1}, R_{t} = \delta C_{t - 1})

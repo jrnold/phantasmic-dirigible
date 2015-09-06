@@ -321,7 +321,7 @@ The reaction of the market to the Battle of Fort Sumter also implies that the ma
 For the case of the American Civil War, the spread (difference) between the average yield of the Southern and Northern state bonds is a measure of the market's expectation of war.%
 \footnote{
   The spread between Southern and Northern bonds is approximately the difference in default risk between the bonds, when the recovery rate is 0.
-  This follows from Equation~\eqref{acw_onset:eq:4}.
+  This follows from Equation~\eqref{eq:4}.
 }
 An increased risk of war increases the spread between Southern and Northern bond yields, because war would make Southern state bonds relatively more risky than Northern state bonds.
 Although war could increase the riskiness of all state bonds, there are at least two ways in which war would increase the risk of Southern bonds relative to Northern state bonds.
@@ -395,7 +395,7 @@ where $y$ is the yield of the risky bond, $r$ is the yield of a risk-free bond w
   That method is not directly derived from a cash flow model and produces higher estimates of the probability of war.
   \textcite{HaberMitchenerOosterlinckEtAl2015} use a cash flow method to calculate the probability of victory in wars (Confederate victory in the American Civil War, and government victory in the Chinese Civil War) using a cash flow pricing model of bonds, but assuming a recovery rate of 0.
 }
-Equation~\eqref{acw_onset:eq:4} can be used to estimate the probability of war if $r$ and $R$ are properly defined.
+Equation~\eqref{eq:4} can be used to estimate the probability of war if $r$ and $R$ are properly defined.
 
 When estimating the probability of war, the risk-free interest rate $r$ should be defined to be the yield of a comparable bond with no risk of war.
 In this case, $r$ will not necessarily be risk-free --- it should include any risk not due to war, but exclude risk due to war.
@@ -428,19 +428,19 @@ The value of $R$ incorporates expectations about the financial risk posed by exp
   In the case of the American Civil War, this seems like a reasonable assumption.
 }
 
-Figure~\ref{acw_onset:fig:prwar1} displays the implied probabilities of war for each bond calculated with Equation~\eqref{acw_onset:eq:4}.
+Figure~\ref{acw_onset:fig:prwar1} displays the implied probabilities of war for each bond calculated with Equation~\eqref{eq:4}.
 There are three things to note about the implied probabilities in that figure.
 First, the implied probability of war is approximately 0 for all bonds prior to the election of Lincoln in 1860.
 Second, although the implied probabilities increase to between 3 and 5 percent.
 Third, the implied probabilities largely agree, but there are differences in the probability of war implied by each bond.
 
-By noting that all the implied probability of war should be the same for all bonds, rearranging \eqref{acw_onset:eq:4} and adding uncertainty, the probability of war in each time period can be estimated as,
+By noting that all the implied probability of war should be the same for all bonds, rearranging \eqref{eq:4} and adding uncertainty, the probability of war in each time period can be estimated as,
 \begin{align}
   \label{acw_onset:eq:1}
   \log y_{j,t} & \sim \dnorm{(1 - R_{j}) \pi_{t} + r_{j}, \sigma^{2}}
 \end{align}
 where $\pi_{t}$ is the probability of war at time $t$,
-Equation~\eqref{acw_onset:eq:1} is a regression model with time-varying coefficients ($\pi_{t}$).
+Equation~\eqref{eq:1} is a regression model with time-varying coefficients ($\pi_{t}$).
 The inverse logit transformation of $\pi$ evolves as a random walk with a horseshoe prior on the innovations to allow for change-points, as described  in section~\ref{acw_onset:sec:south-north-yield}:
 \begin{align}
   \pi_{t} &= \logit^{-1}(\theta_{t}) \\
@@ -463,7 +463,7 @@ The market estimated that war was almost certainly not likely prior to the elect
 Only after the election did the market adjust its estimates of the risk of war.
 However, even immediately before the war, the probability of war was estimated to be highly unlikely; while the measures of the previous section did not provide a direct estimate of that probability, this measure in this section does.
 The results differ in that although both measures show little risk of war prior to the election of Lincoln, the estimates south-north yield spread show an increasing risk of war over time, while the implied probability of war from this section show that risk constant at 0.
-This difference likely arises from the use of a constant war-risk free rate in equation~\eqref{acw_onset:eq:1}.%
+This difference likely arises from the use of a constant war-risk free rate in equation~\eqref{eq:1}.%
 \footnote{This could be avoided if a good time-varying estimate of the war-risk free interest rate were available.
   Currently available data of the risk free interest rate of the era are only available at low frequencies: prior to 1857, the yields of Massachusetts 5's and Boston City bonds are only available at a yearly frequency prior; after 1857, an index of New England state and municipal bonds is available at a quarterly frequency \parencite{Officer2003}.
   Using the average of Northern state bonds, as in section~\ref{acw_onset:sec:south-north-yield}, is likely inappropriate because they also include some risk of war.

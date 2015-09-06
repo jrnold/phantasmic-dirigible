@@ -8,7 +8,6 @@ format_yields <- function(x, basis = 1) {
 }
 @
 
-
 \section{Financial Markets and the Study of War}
 \label{sec:barg-theory-war}
 
@@ -48,7 +47,7 @@ Thus events can change the price so much as so much as they update the expectati
 Since the prices of financial assets are a function of expectations about future cash flows and risk premia, assets in which the those future cash flows or risk premium are largely contingent on some outcome of a war are a proxy of expectations about that war outcome.
 The ideal asset would be a binary option, which pays out a non-zero amount if the war outcome of interest occurs and zero otherwise.
 Then, with assumptions about the risk-preferences of the market, the probability of the war outcome can be easily extracted from the price.
-Binary options are often associated with prediction markets, there are several examples of prediction markets of political events. 
+Binary options are often associated with prediction markets, there are several examples of prediction markets of political events.
 The Iowa Electronic Market for U.S. presidential elections.%
 \footnote{
   See \textcite{WolfersZitzewitz2004} for an overview of prediction markets.
@@ -70,7 +69,7 @@ In general, the sovereign bonds issued by belligerents is sensitive will be sens
 First, the riskiness of a belligerent's sovereign bond is a function of the expected cost of the war.
 Wars are costly and wars are generally paid by debt \parencite{Slantchev2012a}.
 A more costly war almost directly implies a higher debt burden and either higher risk premia or a higher probability of default for the bond (lower price).
-This cost is also more than just the expenditures of the government. 
+This cost is also more than just the expenditures of the government.
 The destruction of human capital (military and civilian casualties) and physical capital has influences on the expected economic growth of that country, and thus its future resources with which to pay off the debt.
 These expectations of cost incorporate both expectations about the intensity of the war, and expectations about its duration.
 Second, the riskiness of a belligerent's sovereign bond is a function of whether the belligerent is expected to win or lose the war.
@@ -82,7 +81,7 @@ In general, the price of a bond is some weighted function of all of these expect
 For some bonds, it may even be possible to back out the probability of a specific outcome.
 \textcite{HaberMitchenerOosterlinckEtAl2015} focus on cases in which rebels issued bonds in civil wars (American Civil War, Chinese Civil War, and the Spanish Civil War) and estimate the probability that the rebel side will win.
 Another method is by using the prices of several assets from different sides, it may also be possible estimate expectations of victory and defeat; see \textcite{Hall2004} and \textcite{McCandless1996}.
-However, in general, it may not be possible to disentangle expectations about the cost and outcomes of the war for the belligerents. 
+However, in general, it may not be possible to disentangle expectations about the cost and outcomes of the war for the belligerents.
 And that is not necessarily a bad thing.
 By putting all outcomes on the same scale, their effect on the long run fiscal outlook of the belligerent, the prices of sovereign bonds are able to provide a single, if incomplete, measure of the war outcome for each belligerent that incorporates both the costs and benefits of the war.
 Because interest rates are expectations and are generally available at a high frequency, they provide a measure of real-time expectations about the war.
@@ -97,10 +96,10 @@ For example, when studying the Iraq War, it would be implausible to use the inte
 But it is plausible to use bonds issued by Iraq, if they had issued in 2003, because the war outcome plausibly would be the most important factor influencing them.
 This is not out of concern of confounding variable and factors that are not correlated with the war outcome can be a problem.
 The concern is that the signal (war outcome) to noise (other factors that cannot be controlled for) ratio of the price is high enough that it is plausible to use the price as a proxy for the war outcome.
-One shortcoming of the use of the sovereign bonds, or most financial assets, as proxies for expectations of war outcomes is that they will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia. 
+One shortcoming of the use of the sovereign bonds, or most financial assets, as proxies for expectations of war outcomes is that they will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
 Some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then the prices of financial assets have little to say about them.
 
-In this paper, instead of prices, I use the yields to maturity of coupon bonds. 
+In this paper, instead of prices, I use the yields to maturity of coupon bonds.
 The yield to maturity of a coupon bond can be found by taking a known price and cash flow schedule in Equation (\ref{eq:3}) as solving for a single discount rate.
 For example, assuming continuous compounding for simplicity, the yield to maturity, $y$, of a bond is the solution to
 \begin{equation}
@@ -125,7 +124,7 @@ The prices of financial assets can improve our understanding of theories of war 
 The bargaining theory of war essentially formalizes the insights of Clausewitz and Schelling.
 The central puzzle of war is, given that war is costly, there would seem to exist a better agreement:
 The two sides should have been able to come to the same agreement that the war eventually ends with, but without bearing the costs of war.
-So why did they not come to that agreement and instead fight the war? 
+So why did they not come to that agreement and instead fight the war?
 \parencite{Fearon1995} and \parencite{Powell2006} proposed two frictions that would prevent an \textit{ex ante agreement}: private information and commitment problems.%
 \footnote{
   War can also occur due to the sides the being risk loving, which \textcite{Fearon1995} dismisses as implausible, and due to domestic politics.
@@ -135,7 +134,7 @@ But this leads to a second puzzle, given that these frictions can lead to confli
 \textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
 So while empirical evidence for the bargaining theory of war can come from studying war onset, testing the ``core of the theory'' parencite requires intrawar data and as such has demanding data requirements, as such has been subject to few empirical studies \parencites{Reiter2003}{Ramsay2008}{Reiter2009}{Weisiger2015}.
 Empirical evaluations the bargaining model of war requires estimates of capabilities, estimates of resolve, exchange of offers, and combat data \parencite{Reiter2003}.
-All of these data are generally difficult to acquire, let alone for multiple cases. 
+All of these data are generally difficult to acquire, let alone for multiple cases.
 Using financial asset price data can extend the data available to researchers in this area.
 
 First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets as time-varying expecations or predictions of the war termination.
@@ -153,7 +152,7 @@ As such, \textcites{Reiter2003}{Reiter2009} suggest that the best way forward in
 In studies, the within-case nature of the analysis means that they cannot have the war duration or outcome as a dependent variables.
 But, as discussed in Section~\ref{sec:how-prices-financial}, the prices of some financial assets may act as measures of expected war termination.
 This allows esearchers to conduct within-case quantitative analysis using cases with the requisite battle data, and use the prices of carefully-chosen financial assets as an outcome variable that proxies for war outcomes, such as the duration, cost or victor.
-Instead of using cross-sectional variation in the observed outcomes of wars, this type of analysis will exploit within-case time-variation of predictions or expectations about the outcome. 
+Instead of using cross-sectional variation in the observed outcomes of wars, this type of analysis will exploit within-case time-variation of predictions or expectations about the outcome.
 
 Second, financial asset price changes naturally provide a measure of surprising events or new information.
 Surprising events are particularly important in informational theories of war in which only new information will affect beliefs.
@@ -172,7 +171,7 @@ This distinguishes prices from other sources such as the surveys or diaries of d
   \begin{quote}
     Sectional feeling often entered largely into the bull and bear  contests in the Gold Room, and Union men and rebel sympathizers fought their battles sometimes, as much to gratify this as to make money.
     \textcite[7]{Cornwallis1879}
-    
+
     The heaviest speculative orders were sent from Washington and Baltimore, and next to these, from Louisville, Kentucky, owing to these cities being in close communication to the seat of war and the rebel lines; and the operators there, almost to a man, were ``bulls'' in feeling, and strong Secessionists.
     But though seldom or never found selling ``short'' they were quick to sell out their ``long'' gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to ``touch bottom'' \textcite[5]{Cornwallis1879}.
   \end{quote}
@@ -194,7 +193,7 @@ They simply provide another tool for conflict researchers.
 Financial asset prices have several shortcomings when studying conflict, and are not appropriate in all cases.
 First, these prices do not directly measure the beliefs of the belligerents.
 Prices of financial data generally incorporate public information, and do not incorporate the private information available to decision makers.
-But the beliefs of the decision makers is what is expected to convergerge in informational theories of war. 
+But the beliefs of the decision makers is what is expected to convergerge in informational theories of war.
 However, it may be possible that many private information models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information, which these prices can measure.
 Second, in many conflicts an appropriate priced financial asset is not available.
 In many areas in which researchers are most interested in understanding conflict, \eg{} civil wars in developing countries, countries may there may not exist a financial asset  that is closely tied to the war outcome, \eg{} the belligerents do not issue sovereign bonds, and even if there are the market may not be liquid enough to provide reliable estimates.
@@ -304,11 +303,11 @@ The American Civil War is a war with plentiful, and high quality battle-level da
 In terms of its battle data, the American Civil War is one of the best documented wars, so quality battle-level is available.%
 \footnote{%
   For example, \textit{The Official Records of the Union and  Confederate Armies} \parencites{US1901}, published between 1880 and 1901, consists of 128 books in 70 volumes totaling 139 thousand pages.
-  
+
 } %
 I discuss why financial assets issued by the belligerents of the American Civil War may be particularly useful for understanding war in section~\ref{sec:why-prices-study}.
 
-Like any case, its generalizability is limited by its similarity to other observations. 
+Like any case, its generalizability is limited by its similarity to other observations.
 But despite its age, the American Civil War is not dissimilar to contemporary civil wars.
 First, the American Civil War is, if not the first modern war, one of the wars during the transition to modern warfare.
 This war introduced several of the technologies which later came to prominence in World War I and later wars: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89][]{Fuller1956a}[760]{Weiss1966}.
@@ -420,7 +419,7 @@ This is the period which should have the highest informational content in an inf
 However, as with the 5's of 1874 versus other bonds,  Figure~\ref{fig:fives1874_greenbacks} shows that the prices of the 5's of 1874 in gold dollars is similar in both level and trend as the the price of Greenbacks in gold dollars, so the choice is unlikely to change the results.
 
 The American Civil War is an ideal case in which to use prices to infer expectations of war termination for three reasons.
-First, The war was of such severity that the nearly the entire budget of the U.S. government was war-related military spending, and thus fiscal expectations corresponded to military spending expectations. % 
+First, The war was of such severity that the nearly the entire budget of the U.S. government was war-related military spending, and thus fiscal expectations corresponded to military spending expectations. %
 For the U.S., the War and Navy Departments accounted for 76 percent (in 1862) to 61 percent (in 1865) of the expenditures.
 The fraction of the budget spent directly on the military by the Union fell over the course the war as the fraction spent on paying the principal and interest on its debt, increased from 20 (1862) to 36 (1865) percent of the budget.
 But, the overwhelming the majority of that debt had been issued to fund the war \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}.
@@ -457,7 +456,7 @@ However, it is likely that U.S.\ government bond yields mostly responded to expe
 
 The riskiness of U.S. government bonds depended on expectations about the cost of the war to the U.S. since the war was funded primarily through debt.
 Thus, expectations of a longer or more vigorously fought war almost directly imply and increase in government debt.
-The U.S. primarily paid for the war using the debt. 
+The U.S. primarily paid for the war using the debt.
 The proportions of the U.S. government revenues for each source of funding as follows: taxes \Sexpr{round(budget_min_pct["deficit"] * 100)}--\Sexpr{round(budget_max_pct["deficit"] * 100)}\% from loans, \Sexpr{round(budget_min_pct["receipts_taxes"] * 100)}--\Sexpr{round(budget_max_pct["receipts_taxes"] * 100)}\% from taxes, and \Sexpr{round(budget_min_pct["receipts_misc"] * 100)}--\Sexpr{round(budget_max_pct["receipts_misc"] * 100)}\% from miscellaneous sources (tariffs, land sales).
 In its analysis of the future fiscal situation, the 1863 \textit{Annual Report of the Treasury} notes that taxes and other revenue sources were covering the non-war expenses and debt payments in its budget, but new debt was being issued to pay for the military expenditures needed to wage the war \parencite[10-13]{Treasury1863}.
 \footnote{See also \textcite[][14]{Godfrey1976}.}
@@ -473,7 +472,7 @@ The size and wealth of the seceding Southern states was non-trivial, but still m
 In 1860, the states that would make up the Confederacy accounted for \Sexpr{round((9103333 / 31443316) * 100, 0)} percent of the overall U.S. population,%
 \footnote{
   Southern states included VA, TN, GA, NC, AL, MS, LA, SC, TX, AR, FL \textcite[5]{Eicher2001}.
-  Wealth is used instead of 
+  Wealth is used instead of
 }
 and 25 percent of the total wealth.%
 \footnote{
@@ -490,7 +489,7 @@ William Elder, a leading economist of the era, in an 1863 analysis of the abilit
 }
 The \textit{Annual Report of the Treasury Department} in 1863 highlighted this relationship between cost of the war and the interest rate it paid on its bonds:
 \begin{quote}
-It will not escape observation that the average [interest] rate is now increasing, and it is obvious that it must continue to increase with the increase of the proportion of the interest-bearing to the non-interest-bearing debt. 
+It will not escape observation that the average [interest] rate is now increasing, and it is obvious that it must continue to increase with the increase of the proportion of the interest-bearing to the non-interest-bearing debt.
 And as the amount of the latter, consisting of United States notes and fractional currency, cannot be materially augmented without evil consequences of the most serious character, the rate of interest must increase with the debt, and approach continually the highest average.
 That must be greater or less in proportion to the duration and cost of the war. \parencite[13]{Treasury1863}
 \end{quote}
@@ -501,7 +500,7 @@ Although the price of Graybacks is partially determined by the money supply \par
 The prices of the Confederate assets were likely primarily determined by whether the U.S. would win the war and repudiate their debt \parencite{HaberMitchenerOosterlinckEtAl2015}.
 If the U.S. bonds reflected the probability of U.S. victory, then the expected trend of its prices (yields) would increase (decrease) immediately after the start of the war, and almost monotonically increase (decrease) throughout the war, or at least from mid-1863 onward.
 However, Figure~\ref{fig:fives1874_yield} shows that while the yields of U.S. government bonds fluctuates early in the war, they do not decrease over the course of the war.
-Instead, they spike in mid-1864 at a point which U.S. victory should have been highly probable if not almost certain. 
+Instead, they spike in mid-1864 at a point which U.S. victory should have been highly probable if not almost certain.
 This suggests that U.S. government interest rates are not primarily reflecting expectations of the war result, and are, instead, reflecting some other factor, which is likely the cost of the war.
 
 Finally, the financial benefit of victory and the costs and duration of war are inversely related.
@@ -583,7 +582,7 @@ During the American Civil War, the yields are variable, spiking in the middle of
 \label{fig:fives1874_compared}
 \end{figure}
 
-% TODO: this needs qualitative overview of the 
+% TODO: this needs qualitative overview of the
 
 
 \section{Battle Data}
@@ -592,7 +591,7 @@ During the American Civil War, the yields are variable, spiking in the middle of
 A theoretical and practical issue in the empirical study of war is how to operationalize military combat within wars.%
 \footnote{
   See the discussions in \textcites{ReiterStam1998}{BiddleLong2004}{Reiter2003}{GrauerHorowitz2012}{Weisiger2015}.
-} 
+}
 There are two major issues in the operationalization of military combat.
 The first is ``what the unit of observation?''.
 Some work uses events, such as battles or campaigns, as the unit of observation \parencites{ReiterStam1998}{ReiterStam2002}{Ramsay2008}[59-60]{Reiter2009}{PilsterBoehmelt2011a}{GrauerHorowitz2012}, while other work uses time-period aggregated values, \eg{} monthly casualties \textcite{Weisiger2015}.
@@ -605,12 +604,12 @@ The battles used in the analysis are listed in Table~\ref{tab:battles}.
 This is the set of the battles which the National Park Service's Civil War Sites Advisory Commission (CWSAC) defined as the most militarily significant in the war, which they defined as ``having a decisive influence on a campaign and a direct impact on the course of the war'' \parencite{CWSAC1993}.
 These data come from the 1993 CWSAC report, Civil War Sites Advisory Commission Report on the Nation's Civil War Battlefields \parencites{CWSAC1993}{CWSAC1993b}.
 The CWSAC was established in accordance with a 1990 law to preserve Civil War battlefields and was ``asked to identify the nation's historically significant Civil War sites; determine their relative importance; determine their condition; assess threats to their integrity; and recommend alternatives for preserving and interpreting them.'' \parencite{CWSAC1993b}
-As part of that process they identified 383 battles, of the over 10,500 military engagements listed in the \textit{Official Records of the American Civil War}, as the ``principal battles'' of the war based on a ``military significance'' criteria. 
+As part of that process they identified 383 battles, of the over 10,500 military engagements listed in the \textit{Official Records of the American Civil War}, as the ``principal battles'' of the war based on a ``military significance'' criteria.
 As to the comprehensiveness of their list, \parencite{CWSAC1993} states,
 \begin{quote}
-  These [battle] sites encompass virtually all of the principal land battles that were of special strategic, tactical, or thematic importance to local operations, campaigns, theaters, or to the war as a whole \dots{} 
+  These [battle] sites encompass virtually all of the principal land battles that were of special strategic, tactical, or thematic importance to local operations, campaigns, theaters, or to the war as a whole \dots{}
   The more than 10,500 conflict sites excluded from our inventory were relatively unimportant as individual military actions.
-  These conflicts were the venues and actions that implemented the war between and beyond the dramatic major engagements. 
+  These conflicts were the venues and actions that implemented the war between and beyond the dramatic major engagements.
 \end{quote}
 These principal battles were further classified into four categories of military significance: A (``having a decisive influence on a campaign and a direct impact on the course of the war'') to D (``having a limited influence on the outcome of their campaign or operation but achieving or affecting important local objectives'').
 This work will use  \Sexpr{nrow(major_battles)} battles with the ``A'' military significance classification.%
@@ -697,7 +696,7 @@ The general model to be estimated is,
   \label{eq:6}
   \log y_{t} &= y^{*}_{t} + \epsilon_{t} & \epsilon_{t} \sim \dnorm{0, \tau^{2}} \\
   \label{eq:1}
-  y^{*}_{t} &= y^{*}_{t - 1} + \delta_{t} + \eta_{t} & \eta_{t} &\sim \dt{5}{}
+  y^{*}_{t} &= y^{*}_{t - 1} + \delta_{t} + \eta_{t} & \eta_{t} &\sim \dt{5}{0, \sigma}
 \end{align}
 If $\tau^{2} = 0$, then Equations~(\ref{eq:6}) and~g(\ref{eq:1}) would be equivalent to simply estimating the a model with the first difference of $y$ as the dependent variable.
 With a non-zero $\tau$, and supposing $\omega$ was distributed normal, this would be equivalent to a constrained ARIMAX(0, 1, 1) model CITE.
@@ -713,12 +712,12 @@ Each column of $W$ sums to one, so that each $\beta_{b}$ represents the total ef
 The weight terms are equally weighted for each battle and non-zero on the 1st day(s) in which news of the battle was reported and a lag of XXXX days.
 For example, the end of Gettysburg was reported in the news on XXXX, so XXXXX through XXXX (XXXX days later) have a weight of XXXX, and all other days have a weight of 0.
 
-In $\Model{2}$, 
+In $\Model{2}$,
 \begin{align}
   \label{eq:2}
   \delta = \alpha + X_{t} \beta
 \end{align}
-where $\alpha$ is a constant intercept, $X_{t}$ is an $n \times 2$ matrix containing the sum of the weighted indicators for all Confederate and Union victories occuring on day $t$, 
+where $\alpha$ is a constant intercept, $X_{t}$ is an $n \times 2$ matrix containing the sum of the weighted indicators for all Confederate and Union victories occuring on day $t$,
 and $\beta$ is a length 2 row vector parameter for the average effects of Confederate and Union victories.
 
 In $\Model{3}$, $\delta$ is a function of random effects of battles in addition to the average effects for Union and Confederate battles,
@@ -728,11 +727,11 @@ In $\Model{3}$, $\delta$ is a function of random effects of battles in addition 
   \label{eq:12}
   \gamma_{b} &\sim \dt{7}{0, \zeta^{2}}
 \end{align}
-where $\alpha$, $\gamma$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a vector with a rarndom effects for each 
+where $\alpha$, $\gamma$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a vector with a rarndom effects for each
 The values of $\gamma$ are given a Student's $t$ distribution rather than a normal distribution since it is expeced that a few battles, e.g. Gettysburg, may have large effects on the price.
 The total effect of an individual battle is
 \begin{align}
-  \omega_{b} = 
+  \omega_{b} =
   \begin{cases}
     \beta_{C} + \gamma_{b} & \text{if Confederate victory} \\
     \beta_{U} + \gamma_{b} & \text{if Union victory}
@@ -744,22 +743,20 @@ Alternatively, $\Model{4}$ could be considered an $AR(1)$ model of the effects o
 \begin{align}
   \label{eq:11}
   \delta &= \alpha + W_{C,t} \omega_{C} + W_{U,t} \omega_{U} \\
-  \label{eq:13}
-  \omega_{C,b} & \sim \dnorm{(1 - \rho) \beta_{C} + \rho \omega_{C,b-1}, \rho \zeta^{2}} & for $b \in \{2, \dots, C\}$ \\
+  \omega_{C,b} & \sim \dnorm{(1 - \rho) \beta_{C} + \rho \omega_{C,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, C\}$} \\
   \omega_{C,1} & \sim \dnorm{ \beta_{C}, \zeta^{2}} \\
-  \label{eq:14}
-  \omega_{U,b} & \sim \dnorm{(1 - \rho) \beta_{U} + \rho \omega_{U,b-1}, \rho \zeta^{2}} & for $b \in \{2, \dots, U\}$ \\
+  \omega_{U,b} & \sim \dnorm{(1 - \rho) \beta_{U} + \rho \omega_{U,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, U \}$} \\
   \omega_{U,1} & \sim \dnorm{ \beta_{U}, \zeta^{2}}
 \end{align}
 Where $C$ is the number of Confederate victories, $U$ is the number of Union victories.
-The Confederate and Union victories are ordered by their dates. 
+The Confederate and Union victories are ordered by their dates.
 For Confederate victories, the first battle was First Bull Run (July 21, 1861), and the last was the Crater (July 30, 1864).
 For Union victories, the first battle was Fort Donelson (February 11--16, 182), and the last was Appomattox Court House (April 9, 1865).
 In this model, $\beta_{C}$ and $\beta_{U}$ are the average effects of Confederate and Union victories.
 
 These models are estimated using MCMC methods to sample from the posterior distribution.
 Samples are drawn using the NUTS-HMC algorithm as implemented in the probabilistic programming language \Stan{} \parencites{Stan2015a}.
-I found that further efficiency could be gained in estimating these, and other space models, in \Stan{} by using a two step method. 
+I found that further efficiency could be gained in estimating these, and other space models, in \Stan{} by using a two step method.
 In the first step, I marginalize over the latent states ($y^{*2}$) and HMC to sample the other parameters.
 In the second step, given the values of the parameters, I use the forward-filter backwards-sample algorithm to sample the latent states.
 This is an example of a partially collapsed Gibbs sampler, and I describe this in more detail in Chapter~\ref{cha:structural-breaks} of this dissertation.
@@ -768,9 +765,9 @@ For all the models, four chains were run and convergence assessed using multiple
 
 What are the average efects of battles?
 
-What is the individual effects of battles? 
+What is the individual effects of battles?
 
-What is the overall effect of battles? 
+What is the overall effect of battles?
 
 Thus far, in this section, I have only discussed battle data but battles not the only relevant events in a war, and this war in particular.
 Changes in policy, leadership, foreign policy events, negotiations and other events may all influence expectations about the future of the war.
@@ -801,7 +798,7 @@ But this work uses U.S. government bonds precisely because they are risky with t
 During this period, railroad bonds were still relatively risky during this period, and had higher yields than U.S. government bonds.
 Municipal bonds, when their yields are calculated in gold dollars, have yields similar to those of U.S. government bonds, and thus were not much less risky.
 Additionally, the only available source of these interest rates, \textcite{Macaulay1938}, provides these interest rates at a monthly (railroad) and quarterly (New England municipals) frequency.
-Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate, but that is the 
+Other work in 19th century economic history use the interest rate of British consols is used as a risk free interest rate, but that is the
 This is inappropriate for this analysis because that risk free interest rate was for the London market, and not the New York market.
 
 
@@ -809,12 +806,12 @@ This is inappropriate for this analysis because that risk free interest rate was
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-SUMMARY 
+SUMMARY
 
 
 I will conclude with some thoughts on future directions of this research.
 There are some issues that I find problematic with the methodology employed in this paper, but which could be addressed by using text data such as newspapers from the period instead of or in addition to \textit{ex post} coded events.
-These issues all revolve around identifying what information reaches markets and when. 
+These issues all revolve around identifying what information reaches markets and when.
 Events do not have direct effects on the prices, but are mediated by the signals that the market observes of the events themselves.
 These should be related to the actual characteristics of those events, but there will be measurement error.
 What is needed are better measures of what the market knew, and when.
@@ -835,8 +832,8 @@ The second issue is in confounding variables.
 Using contemporary text data from newspaper articles provide a means to address all of these concerns.
 The rough sketch of the analysis would be to estimate topics from the text and regress those topics on market movements.
 The timing and content of the information reaching the market could be inferred in a data-driven manner from the newspaper texts.
-Prior information about important events and characteristics of those events need not be completely thrown away; 
-semi-supervised and 
+Prior information about important events and characteristics of those events need not be completely thrown away;
+semi-supervised and
 This makes the assumption that the newspaper articles sufficiently reflects the information available to the market, which may seem extreme, but seems less problematic than the issues discussed earlier.
 The importance of events relative to other events is identified through their prominence in the newspapers, \eg{}if the front page is about a battle, then it is probably the news that is moving the market, whereas if the frontage is about the passage of a law or the economy, then that is probably the more important news.
 
@@ -846,8 +843,8 @@ The importance of events relative to other events is identified through their pr
 %%% End:
 
 %  LocalWords:  Gartzke2007 DafoeKelsey2014a Slantchev2012a 'hide' se
-LocalWords:  tex RData barg parencites Peace'' textcite cha financ
-LocalWords:  outcome'' result'' GuidolinLaFerrara2010 Lau2006 premia
+%  LocalWords:  tex RData barg parencites Peace'' textcite cha financ
+%  LocalWords:  outcome'' result'' GuidolinLaFerrara2010 Lau2006 premia
 %  LocalWords:  HaberMitchenerOosterlinckEtAl2015 RhodeStrumpf2004a
 %  LocalWords:  WolfersZitzewitz2004 Intrade Tradesports Osama CDB90
 %  LocalWords:  LeighWolfersEtAl2003 Slantcheve2012a Hall2004 Uppsala
