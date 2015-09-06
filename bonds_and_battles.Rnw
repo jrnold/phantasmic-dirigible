@@ -738,7 +738,11 @@ The total effect of an individual battle is
   \end{cases}
 \end{align}
 
-In $\Model{4}$, the random effects of the battles are shrunk towards the effect of the previous previous battle.
+In $\Model{4}$, the random effects of the battles are shrunk towards the effect of the previous previous battle.%
+\footnote{
+  This is equivalent to a model in which the parameters is shrunk both towards an overall mean and the previous value: $\omega_{C,t} \sim N(\beta_{t,C}, \zeta^{2}) N(\omega_{C,t-1}, \xi^{2})$.
+  Then  $\rho = \frac{\xi^{2}}{\xi^{2} + \zeta^{2}}$.
+}
 Alternatively, $\Model{4}$ could be considered an $AR(1)$ model of the effects of battles.
 \begin{align}
   \label{eq:11}
@@ -769,6 +773,8 @@ What is the individual effects of battles?
 
 What is the overall effect of battles?
 
+
+There are two things to note about the models that I have presented and estimated in this section.
 Thus far, in this section, I have only discussed battle data but battles not the only relevant events in a war, and this war in particular.
 Changes in policy, leadership, foreign policy events, negotiations and other events may all influence expectations about the future of the war.
 The first is that it is difficult to coherently choose a set of events.
@@ -808,34 +814,24 @@ This is inappropriate for this analysis because that risk free interest rate was
 
 SUMMARY
 
+I conclude with some thoughts on future directions of this research.
+There are several methdodological issues that this analysis had to confront: (1) ``When did the market receive information about battles?'', (2) ``What information about battles did it receive?'', and (3) ``What other non-battle information did it receive?''.
+In this analysis, I handled the information about battles by choosing a set of important battles and their results, both of which were coded \textit{ex post} by historians,  with the assumption that these would be a noisy measure of the the market had observe.
+I handled when the market received information about battles with data, the day on which the battle was first reported in newspapers, and modeling choices, by including lagged terms.
+I handled other non-battle information only by using robust fat-tailed distributions in the analysis, and not through gathering other data.
+The reason for this was that coding indicators for alternative events is difficult to do in a non-arbitrary manner.
+The models presented in this paper could all be improved to better account for these, but that would increase model complexity.
+Rather than complicate the model, it is better to get better data.
 
-I will conclude with some thoughts on future directions of this research.
-There are some issues that I find problematic with the methodology employed in this paper, but which could be addressed by using text data such as newspapers from the period instead of or in addition to \textit{ex post} coded events.
-These issues all revolve around identifying what information reaches markets and when.
-Events do not have direct effects on the prices, but are mediated by the signals that the market observes of the events themselves.
-These should be related to the actual characteristics of those events, but there will be measurement error.
-What is needed are better measures of what the market knew, and when.
-This paper handles the what by identifying a set of important battles and their classification as victories or defeats, both of which are determined by historians with the benefit of hindsight.
-I could include other factors of the battles --- casualties, attacker, etc. --- but it is not clear how many and how close these measurements were to what the market observed.
-
-The first issue is the lag of events.
-  When considering the effect of events on markets, it is not the time of the event \textit{per se} that is important, but the time at which \textit{information} about the event reaches the market.
-  This can be handled through modeling --- \eg{}estimating the lag structure, allowing for different different lags around events.
-  However, these modeling strategies often implicitly rely on homogeneity of the lag across events to identify the effect.
-  It can become difficult when there is heterogeneity in events.
-  As noted in Section~\ref{sec:battle-data}, battles Virginia were known the next day, but information from battles in the West would take longer to reach the market.
-
-The second issue is in confounding variables.
-  This can be handled by including other variables and dummy variables for events in the analysis.
-  But how does one handle the inclusion of these in a principled manner, especially when there are \textit{sui generis} events like the Emancipation Proclamation in the data?
-
-Using contemporary text data from newspaper articles provide a means to address all of these concerns.
-The rough sketch of the analysis would be to estimate topics from the text and regress those topics on market movements.
-The timing and content of the information reaching the market could be inferred in a data-driven manner from the newspaper texts.
-Prior information about important events and characteristics of those events need not be completely thrown away;
-semi-supervised and
-This makes the assumption that the newspaper articles sufficiently reflects the information available to the market, which may seem extreme, but seems less problematic than the issues discussed earlier.
+Directly using the text of contemporary newspapers as data would simultaneoulsy address all of the methodological issues raised in the previous paragraph.
+A rough sketch of the analysis would be to estimate topics from the text and regress those topics on market movements.
+What information the market received about battles would correspond to battle-related topics inferred from the articles themselves.
+When the market received information is simply the days on which those topics appeared in newspapers.
+Finally, the non-war related topics provide control variables without having to explicitly specify a set of variables.
 The importance of events relative to other events is identified through their prominence in the newspapers, \eg{}if the front page is about a battle, then it is probably the news that is moving the market, whereas if the frontage is about the passage of a law or the economy, then that is probably the more important news.
+Nor is this approach completely at odds with the type of analysis conducted in this paper which uses expert-coded events; that additional information could be included in semi-supervised methods, e.g. structured topic modeling CITE.
+One important caveat, is that this makes the assumption that the newspaper articles sufficiently reflects the information available to the market.
+However, it seems less less problematic than the issues discussed earlier.
 
 
 %%% Local Variables:
