@@ -699,9 +699,7 @@ The general model to be estimated is,
   y^{*}_{t} &= y^{*}_{t - 1} + \delta_{t} + \eta_{t} & \eta_{t} &\sim \dt{5}{0, \sigma}
 \end{align}
 If $\tau^{2} = 0$, then Equations~(\ref{eq:6}) and~g(\ref{eq:1}) would be equivalent to simply estimating the a model with the first difference of $y$ as the dependent variable.
-With a non-zero $\tau$, and supposing $\omega$ was distributed normal, this would be equivalent to a constrained ARIMAX(0, 1, 1) model CITE.
-
-\footnote{A Student's $t$ distribution with degrees of freedom 4--6 are commonly used for robust inference CITE Gelman.}
+With a non-zero $\tau$, and supposing $\omega$ was distributed normal, this would be equivalent to a constrained ARIMA(0, 1, 1) model \parencite[91]{PetrisPetroneCampagnoli2009}.
 
 The models will differ in $\delta_{t}$.
 In $\Model{1}$, there are no battle effects, and $\delta_{t} = 0$ for all $t$.
