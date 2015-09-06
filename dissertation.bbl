@@ -397,26 +397,6 @@
       \endverb
       \keyw{Global capital markets}
     \endentry
-    \entry{Clodfelter2008}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1a85717951aefa66b0a8f41dcf9f38f5}{Clodfelter}{C\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {McFarland \& Company}%
-      }
-      \strng{namehash}{1a85717951aefa66b0a8f41dcf9f38f5}
-      \strng{fullhash}{1a85717951aefa66b0a8f41dcf9f38f5}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{2008}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{isbn}{978-0786433193}
-      \field{title}{Warfare And Armed Conflicts: A Statistical Encyclopedia of Casualty and Other Figures, 1494- 2007}
-      \field{year}{2008}
-    \endentry
     \entry{CochranLong2014}{unpublished}{}
       \name{author}{2}{}{%
         {{hash=f47d0aaa78217461c0a7de0bcd0a3593}{Cochran}{C\bibinitperiod}{Kathryn}{K\bibinitperiod}{}{}{}{}}%
@@ -1311,6 +1291,35 @@
       \endverb
       \keyw{Factor models}
     \endentry
+    \entry{Helmbold1995}{report}{}
+      \name{author}{1}{}{%
+        {{hash=140514b13a303bb720ebc0a2dce98c1d}{Helmbold}{H\bibinitperiod}{Robert\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Army Concepts Analysis Agency}%
+      }
+      \strng{namehash}{140514b13a303bb720ebc0a2dce98c1d}
+      \strng{fullhash}{140514b13a303bb720ebc0a2dce98c1d}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1995}
+      \field{labelmonth}{3}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper uses historical data to develop some of the empirical relationships connecting the number of total battle casualties (TBC) to force sizes and battle durations. Here TBC is defined to be the sum of the killed in action (KIA), wounded in action (WIA), and captured or missing in action (CMIA). Because these relations may be affected by battle date, long-term trends with respect to battle date are also included.}
+      \field{month}{3}
+      \field{number}{CAA-RP-1995-1}
+      \field{title}{Personnel Attrition Rates in Historical Land Combat Operations. Some Empirical Relations among Force Sizes, Battle Durations}
+      \field{type}{Research Paper}
+      \field{year}{1995}
+      \verb{file}
+      \verb helmbold1995a.pdf:helmbold1995a.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://handle.dtic.mil/100.2/ADA298124
+      \endverb
+    \endentry
     \entry{Herron2000}{article}{}
       \name{author}{1}{}{%
         {{hash=47be230c0dfe2f2fcebaf429571c42d7}{Herron}{H\bibinitperiod}{Michael\bibnamedelima C.}{M\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
@@ -1341,6 +1350,48 @@
       \verb{url}
       \verb http://www.jstor.org/stable/2669314
       \endverb
+    \endentry
+    \entry{HistoricalResearchEtAl1984}{report}{}
+      \name{author}{6}{}{%
+        {{hash=2c2e9cd29fed407cfbcdde5abd85f154}{{Historical\bibnamedelimb Evaulation\bibnamedelimb and\bibnamedelimb Research\bibnamedelimb Organization}}{H\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=8a58071cb3047797937d0a051a100b1b}{Dupuy}{D\bibinitperiod}{T.\bibnamedelimi N.}{T\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=befe0bda6b70af0b9c861ee4b9bf58e6}{Hayes}{H\bibinitperiod}{G.\bibnamedelimi P.}{G\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=e2124abd410d8e3534fa1e245ad02ed8}{Johnson}{J\bibinitperiod}{C.\bibnamedelimi C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=c2999a2e1c6a659861b2d3ae7612424c}{Smith}{S\bibinitperiod}{C.\bibnamedelimi R.}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=bb191897ce0d122909712f9e1533105c}{Bader}{B\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{shortauthor}{6}{}{%
+        {{hash=94d8cb5ddfb70936c8b59cc77d12fb36}{HERO}{H\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=8a58071cb3047797937d0a051a100b1b}{Dupuy}{D\bibinitperiod}{T.\bibnamedelimi N.}{T\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=befe0bda6b70af0b9c861ee4b9bf58e6}{Hayes}{H\bibinitperiod}{G.\bibnamedelimi P.}{G\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=e2124abd410d8e3534fa1e245ad02ed8}{Johnson}{J\bibinitperiod}{C.\bibnamedelimi C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=c2999a2e1c6a659861b2d3ae7612424c}{Smith}{S\bibinitperiod}{C.\bibnamedelimi R.}{C\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=bb191897ce0d122909712f9e1533105c}{Bader}{B\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {U. S. Army Concepts}%
+      }
+      \strng{namehash}{268afc53c7d57c8a24a13e5263757ba6}
+      \strng{fullhash}{43cd37d12d51c4476c07b78a7f825a86}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1984}
+      \field{labelmonth}{9}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A comprehensive analysis in six volumes of the factors that have significantly influenced the outcomes of 600 major battles of modern history, commencing with the Netherlands' War of Independence and the Thirty Years' War, and continuing through the 1973 Arab-Israeli War. Volume I includes the summary and introductory materials. Volumes II-VI present matrices and narrative summaries for the engagements, which are grouped chronologically by wars and campaigns within wars. The matrices summarize all important elements of data and qualitative information concerning each engagement, plus a historical assessment of the factors that were important to the course of the engagement and its outcome. Following each group of matrices are narrative summaries of engagements listed in the matrices. These narrative summaries succintly describe the background, course, and outcome of each engagement, include a brief assessment of its significance, and list the sources consulted with respect to the presentation for each. Appended to each volume are bibliographies listing the major sources consulted during the research for each.}
+      \field{month}{9}
+      \field{title}{Analysis of Factors That Have Influenced Outcomes of Battles and Wars: A Data Base of Battles and Engagements. Volume 1. Main Report. Selected Battles 1600 - 1973}
+      \field{type}{techreport}
+      \field{year}{1984}
+      \verb{file}
+      \verb HistoricalResearchEtAl1984.pdf:HistoricalResearchEtAl1984.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://handle.dtic.mil/100.2/ADB086797
+      \endverb
+      \keyw{*MILITARY OPERATIONS,*HISTORY,*BATTLES,*TACTICAL WARFARE,*FACTOR ANALYSIS,COMBAT EFFECTIVENESS,MILITARY REQUIREMENTS,MATERIALS,MILITARY RESEARCH,CASUALTIES,MILITARY FORCE LEVELS,TACTICAL DATA SYSTEMS.}
     \endentry
     \entry{HoffmanGelman2013}{article}{}
       \name{author}{2}{}{%
@@ -2153,39 +2204,6 @@
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=365095&fulltextType=RA&fileId=S0020818306060061
       \endverb
     \endentry
-    \entry{RaleighLinkeHegreEtAl2010}{article}{}
-      \name{author}{4}{}{%
-        {{hash=cd08990c8701bf760c9d331d94fe5936}{Raleigh}{R\bibinitperiod}{Clionadh}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=6c113d18f22c2a2738c069f880fcec24}{Linke}{L\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=69d723440c01990377be3a5dc9bbc35c}{Hegre}{H\bibinitperiod}{Håvard}{H\bibinitperiod}{}{}{}{}}%
-        {{hash=6b8252ecbe2d14f0d4ec3fef627494b7}{Karlsen}{K\bibinitperiod}{Joakim}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{3aa951541c352435f31b4c0d7e42d09c}
-      \strng{fullhash}{f3f99d4c376ff0b3a1a2494048b08f7c}
-      \field{sortinit}{R}
-      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This article presents ACLED, an Armed Conflict Location and Event Dataset. ACLED codes the actions of rebels, governments, and militias within unstable states, specifying the exact location and date of battle events, transfers of military control, headquarter establishment, civilian violence, and rioting. In the current version, the dataset covers 50 unstable countries from 1997 through 2010. ACLED's disaggregation of civil war and transnational violent events allow for research on local level factors and the dynamics of civil and communal conflict. Findings from subnational conflict research challenges conclusions from larger national-level studies. In a brief descriptive analysis, the authors find that, on average, conflict covers 15\% of a state's territory, but almost half of a state can be directly affected by internal wars.}
-      \field{journaltitle}{Journal of Peace Research}
-      \field{number}{5}
-      \field{title}{Introducing ACLED: An Armed Conflict Location and Event Dataset: Special Data Feature}
-      \field{volume}{47}
-      \field{year}{2010}
-      \field{pages}{651\bibrangedash 660}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1177/0022343310378914
-      \endverb
-      \verb{eprint}
-      \verb http://jpr.sagepub.com/content/47/5/651.full.pdf+html
-      \endverb
-      \verb{url}
-      \verb http://jpr.sagepub.com/content/47/5/651.abstract
-      \endverb
-    \endentry
     \entry{Ramsay2008}{article}{}
       \name{author}{1}{}{%
         {{hash=41e4a3f06fa5fba054655df887f7e870}{Ramsay}{R\bibinitperiod}{Kristopher\bibnamedelima W.}{K\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
@@ -2478,30 +2496,6 @@
       \verb http://www.jstor.org/stable/2116826
       \endverb
     \endentry
-    \entry{SarkeesWayman2010}{book}{}
-      \name{author}{2}{}{%
-        {{hash=ce4eaa77626d2b66afa93c72ec71d8f1}{Sarkees}{S\bibinitperiod}{M.R.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=34110fc781287015de54b102535941d7}{Wayman}{W\bibinitperiod}{F.W.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {CQ Press}%
-      }
-      \strng{namehash}{071753f4e16e2e0a0907a1ff57b58307}
-      \strng{fullhash}{071753f4e16e2e0a0907a1ff57b58307}
-      \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780872894341}
-      \field{series}{Correlates of war series}
-      \field{title}{Resort to war: a data guide to inter-state, extra-state, intra-state, and non-state wars, 1816-2007}
-      \field{year}{2010}
-      \verb{url}
-      \verb http://books.google.com/books?id=jjIxOAAACAAJ
-      \endverb
-    \endentry
     \entry{SchneiderTroeger2006}{article}{}
       \name{author}{2}{}{%
         {{hash=31a46dd144ad1c17e8f39400c79b8a16}{Schneider}{S\bibinitperiod}{Gerald}{G\bibinitperiod}{}{}{}{}}%
@@ -2578,6 +2572,32 @@
       \verb{url}
       \verb http://www.nps.gov/hps/abpp/CWSII/CWSII.htm
       \endverb
+    \endentry
+    \entry{Shirkey2009a}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f288c1942a2600704a4c2947efb22595}{Shirkey}{S\bibinitperiod}{Zachary\bibnamedelima C.}{Z\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Farnham, Surrey, GBR}%
+      }
+      \list{publisher}{1}{%
+        {Ashgate Publishing Group}%
+      }
+      \strng{namehash}{f288c1942a2600704a4c2947efb22595}
+      \strng{fullhash}{f288c1942a2600704a4c2947efb22595}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{9780754696902}
+      \field{title}{Is This a Private Fight or Can Anybody Join?}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://site.ebrary.com/lib/uwash/docDetail.action?docID=10325898
+      \endverb
+      \keyw{Intervention (International law),Intervention (International law) -- Case studies.}
     \endentry
     \entry{Slantchev2003}{article}{}
       \name{author}{1}{}{%
@@ -3472,33 +3492,6 @@
       \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/168777
-      \endverb
-    \endentry
-    \entry{WestHarrison1997}{book}{}
-      \name{author}{2}{}{%
-        {{hash=c6b1f518734bc0a38e6c8d89fabde946}{West}{W\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=c6374a40de48e3a9b37f6ce962f9891d}{Harrison}{H\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{66cebabe9ddf35ade3986c7a7faab4d3}
-      \strng{fullhash}{66cebabe9ddf35ade3986c7a7faab4d3}
-      \field{sortinit}{W}
-      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
-      \field{labelyear}{1997}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780387947259}
-      \field{series}{Springer series in statistics}
-      \field{title}{{Bayesian} forecasting and dynamic models}
-      \field{year}{1997}
-      \verb{file}
-      \verb west1997bayesian.pdf:west1997bayesian.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://books.google.com/books?id=jcl8lD75fkYC
       \endverb
     \endentry
     \entry{WillardGuinnaneEtAl1996}{article}{}

@@ -16,3 +16,4 @@
 *.out
 *.toc
 *.synctex.gz
+.Rproj.user

@@ -38,20 +38,20 @@ acw_onset: $(CHAP_ACW_ONSET_TEX)
 
 $(CHAP_ACW_ONSET_TEX): $(CHAP_ACW_ONSET_RNW)
 	$(RSCRIPT) -e 'PROJECT_DIR <- "$(PATH_ACW_ONSET)"; knitr::knit("$<", output = "$@")'
-	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{acw_onset:\1:\2/g' $@
+	#sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{acw_onset:\2:\3}/g' $@
 
 bonds_battles: $(CHAP_BONDS_BTL_TEX)
 
 $(CHAP_BONDS_BTL_TEX): $(CHAP_BONDS_BTL_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_BONDS_BTL)"; knitr::knit("$<", output = "$@")'
-	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{bonds_battles:\1:\2/g' $@
+	sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{bonds_battles:\2:\3}/g' $@
+
 
 dlm: $(CHAP_DLM_TEX)
 
 $(CHAP_DLM_TEX): $(CHAP_DLM_RNW)
 	$(RSCRIPT) -e 'PROJECT_ROOT <- "$(PATH_DLM)"; knitr::knit("$<", output = "$@")'
-	sed -E -i .bak -e 's/\{(sec|eq|fig|tab):([^}]+)/{dlm:\1:\2/g' $@
-
+	#sed -E -i .bak -e 's/\\(ref|label)\{(sec|eq|fig|tab):([^}]+)\}/\\\1{dlm:\2:\3}/g' $@
 
 updatebib:
 	biber $(RNW_FILE:%.Rnw=%.bcf) --output_format bibtex
