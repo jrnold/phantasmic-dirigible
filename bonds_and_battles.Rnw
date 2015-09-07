@@ -107,7 +107,7 @@ The concern is that the signal (war outcome) to noise (other factors that cannot
 One shortcoming of the use of the sovereign bonds, or most financial assets, as proxies for expectations of war outcomes is that they will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
 Some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then the prices of financial assets have little to say about them.
 
-In this paper, instead of prices, I use the yields to maturity of coupon bonds.
+In this work, instead of prices, I use the yields to maturity of coupon bonds.
 The yield to maturity of a coupon bond can be found by taking a known price and cash flow schedule in Equation (\ref{eq:3}) as solving for a single discount rate.
 For example, assuming continuous compounding for simplicity, the yield to maturity, $y$, of a bond is the solution to
 \begin{equation}
@@ -215,7 +215,7 @@ The researcher will need to apply substantive knowledge of the assets, market, a
 \subsection{The Means and Mechanisms of War}
 \label{sec:means-mechanisms-war}
 
-While I motivate the use of financial asset prices to study war from the perspective of the bargaining theory of war, in this work, I do not attempt to directly test or distinguish between the private information and commitment theories of war in this paper.%
+While I motivate the use of financial asset prices to study war from the perspective of the bargaining theory of war, in this work, I do not attempt to directly test or distinguish between the private information and commitment theories of war in this work.%
 \footnote{See \textcite{Ramsay2008}, \textcite{Weisiger2015}, and \textcite{Reiter2009} for works which attempt to do so.}
 Instead, I focus on the effect of military combat, in particular, victories and defeats in major battles, on the expected cost of the war.
 I do attempt to distinguish whether these victories and defeats influence the expected war termination through the revelation of private information or destruction or by resolving commitment problems.
@@ -223,7 +223,7 @@ I do this because distinguishing between private information and commitment theo
 Observing only battle results, such as victories or casualties, is insufficient to identify the casual mechanism of the war without relying on a well-specified model of the war process.%
 \footnote{This difficulty in identifying the effects of private information or commitment problems on war termination is an example of the general difficulty of identifying the causal effects of mediators \parencite{Keele2015a}.}
 These models do not exist at the moment.
-Models of that kind would require a deeper study of military processes, which by estimating the effects of battles on war termination, and identifying which battles seemed to have the largest effect, this paper may in small part contribute.
+Models of that kind would require a deeper study of military processes, which by estimating the effects of battles on war termination, and identifying which battles seemed to have the largest effect, this work may in small part contribute.
 This section explains the reasoning behind this claim.
 
 I start with the observation that war is the combination of a political bargaining process and a military combat process. %
@@ -360,7 +360,7 @@ However, using the yield of U.S. government bonds is difficult since while the U
   After paying off the debt issued during the War of 1812, the U.S. government had no outstanding debt between 1835 and 1842 \parencite[297]{HomerSylla2005}.
   The debt as a percentage of GDP rose from 1.9 percent in 1860, before the war, to 31.4 percent in 1866, its peak just after the war \parencites{CBO2012}{CBO2012a}.
 }
-In this paper, I use the the yields of the U.S. Fives of 1874, because it is the only government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only complete time series from a single asset that spans the war.
+In this work, I use the the yields of the U.S. Fives of 1874, because it is the only government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only complete time series from a single asset that spans the war.
 
 The Fives of 1874 were a coupon bond issued under the authorization of the Act of June 14, 1858 to pay for a budget shortfall due to the Panic of 1857, a financial panic and recession.%
 \footnote{
@@ -373,7 +373,7 @@ For this analysis the prices of the bonds will be converted to gold dollars at t
 \footnote{
   Since the price of bonds was quoted in currency but it paid interest and principal in currency, calculating the yields is difficult since they also incorporated beliefs about the future prices of gold dollars \parencites[Appendix A]{Macaulay1938}{Roll1972}{Calomiris1988}[302-303]{HomerSylla2005}.
   Most bonds, including the Fives of 1874, were priced in U.S. currency but paid specie and often principal in gold dollars.
-  This paper accounts for this using a simple method to calculate the future price path of the dollar; it assumes that currency with appreciate at the risk free interest rate of 5 percent until it reaches parity with a gold dollar.
+  This work accounts for this using a simple method to calculate the future price path of the dollar; it assumes that currency with appreciate at the risk free interest rate of 5 percent until it reaches parity with a gold dollar.
   This follows from an assumption that the risk free rate is constant over the period, and the gold dollar is priced as a risk-free zero-coupon bond with an unknown redemption date \cite{McCandless1996}.
   \textcite{Roll1972} and \textcite{Calomiris1988} estimate the expected depreciation of gold dollars in Greenbacks using differentials in bonds, however those methods cannot be applied to the period considered here.
 }
@@ -438,7 +438,7 @@ Second, there is extensive economic history literature establishing that war eve
 \parencites{Mitchell1903}{Mitchell1908}{Calomiris1988}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}, graybacks \parencites{Schwab1901}{Weidenmier2002}, southern prices
 \parencite{BurdekinLangdana1993}, Confederate bonds \parencites{DavisPecquet1990}{BrownBurdekin2000}{OosterlinckWeidenmier2007}, and Union bonds \parencite{Roll1972}.%
 \footnote{One notable exception is \textcite{BurdekinWeidenmier2001}, which shows that the prices of graybacks in Richmond and Houston diverged due to differential application of monetary reform in late 1864.}
-%These are largely interested in showing that the markets efficiently responded to new information in the war; this paper is inverting that, and starting with the assumption that the markets are efficiently processing new information to understand imporant
+%These are largely interested in showing that the markets efficiently responded to new information in the war; this work is inverting that, and starting with the assumption that the markets are efficiently processing new information to understand imporant
 
 Third, statements by and the actions of contemporary investors indicated the importance that war events had on the prices. %
 Members of the government, military, and reporters all engaged in investment speculation based on their knowledge of war events \parencites[5-7]{Cornwallis1879}{Mitchell1903}[][1004]{WillardGuinnaneEtAl1996}.
@@ -642,7 +642,7 @@ The CWSAC report \parencite{CWSAC1993b} gives each battle a result, which is one
 While \textcite{CWSAC1993} does not explicitly describe the methodology used to classify the battle outcomes, the classifications largely agree with other sources \parencites{fox1898regimental}{Livermore1900}{Bodart1908}{cdb90}, several of which are themselves cited as sources in the report.
 Two of those sources, \textcite{fox1898regimental} and \textcite{Livermore1900}, provide more description of how they assigning victory.
 Generally, the victorious side of a battle is considered to be the side that controls the battlefield at the end of battle.
-The data used in this paper includes \Sexpr{union_victories} Union victories, \Sexpr{confederate_victories} Confederate victories, and two ``Inconclusive'' battles.
+The data used in this work includes \Sexpr{union_victories} Union victories, \Sexpr{confederate_victories} Confederate victories, and two ``Inconclusive'' battles.
 For the analysis, the two ``Inconclusive'' battles,  The Wilderness, and Spotsylvania Court House, will be recoded since with only two battles, I cannot estimate an average effect of ``Inconclusive'' battles.
 The Wilderness was reclassified as a Union victory, and Spotsylvania Court House as a Confederate victory based on how the results were reported in the news.
 Figure~\ref{fig:major_battles} plots the date and outcomes of these battles over time.%
@@ -826,7 +826,7 @@ In this analysis, I handled the information about battles by choosing a set of i
 I handled when the market received information about battles with data, the day on which the battle was first reported in newspapers, and modeling choices, by including lagged terms.
 I handled other non-battle information only by using robust fat-tailed distributions in the analysis, and not through gathering other data.
 The reason for this was that coding indicators for alternative events is difficult to do in a non-arbitrary manner.
-The models presented in this paper could all be improved to better account for these, but that would increase model complexity.
+The models presented in this work could all be improved to better account for these, but that would increase model complexity.
 Rather than complicate the model, it is better to get better data.
 
 Directly using the text of contemporary newspapers as data would simultaneously address all of the methodological issues raised in the previous paragraph.
@@ -835,7 +835,7 @@ What information the market received about battles would correspond to battle-re
 When the market received information is simply the days on which those topics appeared in newspapers.
 Finally, the non-war related topics provide control variables without having to explicitly specify a set of variables.
 The importance of events relative to other events is identified through their prominence in the newspapers, \eg{}if the front page is about a battle, then it is probably the news that is moving the market, whereas if the frontage is about the passage of a law or the economy, then that is probably the more important news.
-Nor is this approach completely at odds with the type of analysis conducted in this paper which uses expert-coded events; that additional information could be included in semi-supervised methods, e.g. structured topic modeling CITE.
+Nor is this approach completely at odds with the type of analysis conducted in this work which uses expert-coded events; that additional information could be included in semi-supervised methods, e.g. structured topic modeling CITE.
 One important caveat, is that this makes the assumption that the newspaper articles sufficiently reflects the information available to the market.
 However, it seems less less problematic than the issues discussed earlier.
 
