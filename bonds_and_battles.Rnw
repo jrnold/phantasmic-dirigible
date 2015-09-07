@@ -31,84 +31,85 @@ In this work, I focus on the third case, and use the yields of U.S. government b
 \subsection{How the Prices of Financial Assets Relate to War Outcomes}
 \label{sec:how-prices-financial}
 
-At its most basic level, a financial asset is a claim on a stream of future, possibly uncertain, cash flows.%
+A financial asset is a claim on a stream of future, possibly uncertain, cash flows.%
 \footnote{
   This discussion largely follows the discussion in \textcite[673]{GuidolinLaFerrara2010}; refer to them for more detail.
   See also \textcite{HaberMitchenerOosterlinckEtAl2015}.
   See any introductory finance textbook or course notes for more information.
   See \textcite{Chan-Lau2006} for an overview of market-based measures of sovereign risk.
 }
-For example, a coupon bond pays a set number of coupons at specified times and its face value on maturity, and a stock pays out dividends.
+For example, a coupon bond pays a set number of coupons at specified times and its face value on maturity.
+A stock pays dividends at potentially uncertain times.
 Both because these cash flows are in the future and because their payment may be uncertain, these cash flows are discounted.
-And the current price of a financial asset is the value of those discounted cash flows.
-Slightly more formally, the current price ($P_{t}$) of a financial asset is
+The current price of a financial asset ($P_{t}$) is the value of those discounted cash flows,
 \begin{equation}
   \label{eq:3}
-  P_{t} = \sum{j = 1}^{H} \frac{\E_{t + j}\left(C_{t + j} | \mathcal{I}_{t}\right)}{1 + \E_{t}\left(\delta_{t+j} | \mathcal{I}_{t}\right)}
+  P_{t} = \sum_{j = 1}^{H} \frac{\E_{t + j}\left(C_{t + j} | \mathcal{I}_{t}\right)}{1 + \E_{t}\left(\delta_{t+j} | \mathcal{I}_{t}\right)}
 \end{equation}
 where $H$ is the number of cash flows, $C_{t + j}$ is the cash flow at time $t + j$, and $\delta_{t + j}$ is the discount rate for time $t + j$, and $\mathcal{I}_{t}$ is the information available to the market at the current time $t$.
-The discount rate often consist of a risk free rate and some premium specific to asset, both of which may be time-varying.
-Riskiness of the asset can also be incorporated in $\E(C_{t}| \mathcal{I}_{t})$ if the expectation incorporates some probability of default.
-The key feature of Equation (\ref{eq:3}) is that since all of the inputs of the price are in the expectations of the future conditioned on current information.
-Thus events can change the price so much as so much as they update the expectations of the market about future cash flows and future risk premia.
+The discount rate often consists of a risk free interest rate and a premium specific to that asset, both of which may be time-varying.
+The riskiness of the asset can also be incorporated in $\E(C_{t}| \mathcal{I}_{t})$.
+For example, if the if there is a non-zero probability of default $\E(C_{t})$ would be a function of the probability of default and the amounts received in default or non-default states.
+The key feature of Equation (\ref{eq:3}) is that all of the price inputs are expectations conditioned on current information.
+Thus, events can change the price through changing the market's information set used to formulate expectations about future events. 
 
-Since the prices of financial assets are a function of expectations about future cash flows and risk premia, assets in which the those future cash flows or risk premium are largely contingent on some outcome of a war are a proxy of expectations about that war outcome.
-The ideal asset would be a binary option, which pays out a non-zero amount if the war outcome of interest occurs and zero otherwise.
-Then, with assumptions about the risk-preferences of the market, the probability of the war outcome can be easily extracted from the price.
-Binary options are often associated with prediction markets, there are several examples of prediction markets of political events.
-The Iowa Electronic Market for U.S. presidential elections.%
+Since the prices of financial assets are a function of expectations about future cash flows and risk premia, assets in which the those cash flows or risk premia are largely contingent on some outcome of a war are themselves a proxy for expectations about that war outcome.
+For this purpose, the ideal asset would be a binary option, which pays out a non-zero amount if the war outcome of interest occurs and zero otherwise.
+Then, with only some assumptions about the risk-preferences of the market, the probability of the war outcome is easily calculated from the price of the asset.
+Prediction markets often use binary options, and there have been several examples of prediction markets for political events which have used binary options.
+The Iowa Electronic Market is a prediction market for U.S. presidential and Congressional elections.%
 \footnote{
   See \textcite{WolfersZitzewitz2004} for an overview of prediction markets.
   \textcite{RhodeStrumpf2004a} discusses historical betting markets on U.S. presidential elections in the late nineteenth-early twentieth century, which unfortunately for me were not formalized until 1884.
+  See \url{http://tippie.uiowa.edu/iem/} for the Iowa Electronic Market.
 }
-Other examples include contracts by Intrade and Tradesports which in addition to presidential elections, offered contracts for when Saddam Hussein would be removed as the president of Iraq, when Osama Bin Laden would be either killed or captured, and when a there would be a U.S. or Israeli airstrike against Iran.%
+Intrade, until its closure in 2013, had prediction markets for multiple political and foreign policy events.
+These prediction markets included U.S. and other election, whether Saddam Hussein would be removed as the president of Iraq, when Osama Bin Laden would be either killed or captured, and when a there would be a U.S. or Israeli airstrike against Iran.%
 \footnote{
   The Saddam contract issued by Tradesports is used in \textcite{LeighWolfersEtAl2003}.
-  See \url{http://intrade-archive.appspot.com/event.jsp?event=4272}, \url{http://intrade-archive.appspot.com/event.jsp?event=37985} for the Intrade contracts.
+  See \url{http://intrade-archive.appspot.com/event.jsp?event=4272}, \url{http://intrade-archive.appspot.com/event.jsp?event=37985} Intrade contracts on Osama bin Laden and an airstrike against Iran, respectively.
 }
-Unfortunately for the researcher, these prediction markets in political events are not widespread in the present, and not available historically for wars.
-However, financial assets in which the cash flows or risk premia are contingent on a war outcome are effectively prediction markets for that war outcome.%
-\footnote{
-  Although it may not always be the war outcome that the researcher is most interested in.
-  Even if it is clear that the asset is a function of the war outcome, it may not be transparent to the researcher exactly what outcome(s) the asset is a function of.
-}
-One asset in particular is likely to be highly sensitive to war outcomes: sovereign bonds issued by the belligerents.
-In general, the sovereign bonds issued by belligerents is sensitive will be sensitive to two aspects of the war outcome.
-First, the riskiness of a belligerent's sovereign bond is a function of the expected cost of the war.
-Wars are costly and wars are generally paid by debt \parencite{Slantchev2012a}.
-A more costly war almost directly implies a higher debt burden and either higher risk premia or a higher probability of default for the bond (lower price).
-This cost is also more than just the expenditures of the government.
-The destruction of human capital (military and civilian casualties) and physical capital has influences on the expected economic growth of that country, and thus its future resources with which to pay off the debt.
-These expectations of cost incorporate both expectations about the intensity of the war, and expectations about its duration.
+Unfortunately for the researcher of conflict, these prediction markets in political events are not widespread at present, and not available historically for wars.
+However, financial assets in which the cash flows or risk premia are contingent on a war outcome are effectively prediction markets for that war outcome.
+In particular, the sovereign bonds issued by the belligerents in a war are likely to be highly sensitive to war outcomes.
+These bonds will in general respond to two features of the war outcome.
+First, the riskiness of a belligerent's sovereign bond is a function of the expected cost of the war, since a more costly war implies a higher cost of war.
+A more costly war almost directly implies a higher debt or higher taxes that cannot be used to service existing debt leading to either a higher tax  a higher probability of default for the bond (lower price).
+Wars are also costly in more ways than just the direct government expenditures.
+The destruction of human capital, military and civilian casualties, and physical capital effects on the expected economic growth of that country, and its future resources with which to pay off the debt.%
+\footnote{See \textcite{GoldinLewis1975} for a calculation of the costs of the American Civil War.}
+Note that these expectations of the cost of war will incorporate both expectations about both the intensity of the war and its duration.
 Second, the riskiness of a belligerent's sovereign bond is a function of whether the belligerent is expected to win or lose the war.
-Victory in war can mean more territory and greater resources to pay off debt; a loss can mean the converse.
-In some cases, especially rebel sides in civil wars, a defeat can mean a loss of sovereignty and a default on their debt, as was the case with the Confederate States.%
-\footnote{See One of the clauses of the Fourteenth Amendment of the constitution makes this repudiation explicit.}
+Victory in war can gain the belligerent more territory and greater resources to pay off debt; a loss can mean the converse.
+In some cases, a defeat can lead to a loss of sovereignty and a default on their debt.
+This is relatively rare in inter-state wars, but more common in civil wars in which the rebel side issued debt \parencite{HaberMitchenerOosterlinckEtAl2015}.
+This was the case with the Confederate States.% TODO: cite something on loss of so
+\footnote{Section 4 of the Fourteenth Amendment, passed after the American Civil War, explicitly repudiates Confederate debt.}
 More generally, losing states may tend to default on their debt with a higher probability \parencite{Slantchev2012a}.
-In general, the price of a bond is some weighted function of all of these expectations about what the outcome of the war will be and how those outcomes will effect the ability of the belligerent to repay.
-For some bonds, it may even be possible to back out the probability of a specific outcome.
-\textcite{HaberMitchenerOosterlinckEtAl2015} focus on cases in which rebels issued bonds in civil wars (American Civil War, Chinese Civil War, and the Spanish Civil War) and estimate the probability that the rebel side will win.
-Another method is by using the prices of several assets from different sides, it may also be possible estimate expectations of victory and defeat; see \textcite{Hall2004} and \textcite{McCandless1996}.
-However, in general, it may not be possible to disentangle expectations about the cost and outcomes of the war for the belligerents.
-And that is not necessarily a bad thing.
-By putting all outcomes on the same scale, their effect on the long run fiscal outlook of the belligerent, the prices of sovereign bonds are able to provide a single, if incomplete, measure of the war outcome for each belligerent that incorporates both the costs and benefits of the war.
-Because interest rates are expectations and are generally available at a high frequency, they provide a measure of real-time expectations about the war.
-Sovereign bonds are not the only financial assets which could be used as a proxy for war outcomes, stock market indices or specific sectors thereof \textcites{ChenSiems2004}{SchneiderTroeger2006}{WolfersZitzewitz2009}, exchange rates \textcites{Hall2004}, and commodities \textcites{WolfersZitzewitz2009}, respond to conflict in some cases and may be able to be used as proxies for expectations about war outcomes.
-However, The specifics of how different assets relate to expected war outcomes is not universal, and in each case the researcher should think through how the specific financial asset relates to the war outcome of interest.%
-when using the price of a financial asset as a proxy for an expected war outcome, it is also necessary that its price is primarily influenced by that war outcome and not other factors.
+The price of a bond is some weighted function of all of these expectations about what the outcome of the war will be and how those outcomes will effect the ability of the belligerent to repay their debt.
+For some bonds, it may easy to back out the probability of a specific war outcome.
+\textcite{HaberMitchenerOosterlinckEtAl2015} focus on cases in which rebels issued bonds in civil wars (American Civil War, Chinese Civil War, and Spanish Civil War) and estimate the probability that the rebel side will win.
+% Another method is by using the prices of several assets from different sides, it may also be possible estimate expectations of victory and defeat; see \textcite{Hall2004} and \textcite{McCandless1996}.
+But it may not be possible to disentangle expectations about the cost and outcomes of the war for the belligerents.
+However, there is some advantage to the way in which financial assets weight these war outcomes.
+By putting all war outcomes on the same scale, namely, their fiscal effect on the belligerent(s), the prices of sovereign bonds are able to provide a single, if incomplete, measure of the war outcome for each belligerent that incorporates both the costs and benefits of the war to that belligerent.
+Additionally, because interest rates are expectations and are generally available at a high frequency, they provide a real-time measure of expectations about the war.
+Sovereign bonds are not the only financial assets which could be used as a proxy for war outcomes, stock market indices or specific sectors thereof \textcites{ChenSiems2004}{SchneiderTroeger2006}{WolfersZitzewitz2009}, exchange rates \textcites{Hall2004}, and commodities \textcites{WolfersZitzewitz2009}, may respond to conflict in some cases and may be able to be used as proxies for expectations about war outcomes.
+However, while there are commonalities, the specifics of how a financial asset relates to war outcomes is not universal, and in each case the researcher should carefully consider how the financial asset relates to the war outcome of interest.
+When using a financial asset price fas a proxy for an expected war outcome, it is also necessary that its price be primarily influenced by that war outcome and not other factors.
 For example, when studying the Iraq War, it would be implausible to use the interest rates of U.S. Treasury bonds or the S\&P 500 index since the effect of the war one way or another is likely a small influence on them.%
 \footnote{
   It is still possible to ask questions such as how much influence did events related to the Iraq War have on the stock market, as in \text{WolfersZitzewitz2009}.
   It would just be difficult to ask the inverse question which may be of more interest to political science research; given that the stock market is proxying expectations of the Iraq War, what events had the largest influence on it.
  }
-But it is plausible to use bonds issued by Iraq, if they had issued in 2003, because the war outcome plausibly would be the most important factor influencing them.
-This is not out of concern of confounding variable and factors that are not correlated with the war outcome can be a problem.
-The concern is that the signal (war outcome) to noise (other factors that cannot be controlled for) ratio of the price is high enough that it is plausible to use the price as a proxy for the war outcome.
-One shortcoming of the use of the sovereign bonds, or most financial assets, as proxies for expectations of war outcomes is that they will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
-Some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then the prices of financial assets have little to say about them.
+It is plausible to use bonds issued by Iraq, if they had issued in 2003, because the outcome or initiation of a war with the U.S. would plausibly be the most important factor influencing them.
+This is not out of concern of confounding per se, because factors that are not correlated with the war outcome can also be a problem.
+The concern is that the signal (war outcome) to noise (other factors that cannot be controlled for) ratio of the price needs to be large for it to be plausible to use the price as a proxy for a war outcome.
+Using sovereign bonds, or most financial assets, as proxies for expectations of war outcomes will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
+This means that some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then the prices of financial assets have little to say about them.
 
 In this work, instead of prices, I use the yields to maturity of coupon bonds.
-The yield to maturity of a coupon bond can be found by taking a known price and cash flow schedule in Equation (\ref{eq:3}) as solving for a single discount rate.
+The yield to maturity of a coupon bond can be found by taking a known price and cash flow schedule in Equation (\ref{eq:3}) as solving for a constant discount rate.
 For example, assuming continuous compounding for simplicity, the yield to maturity, $y$, of a bond is the solution to
 \begin{equation}
   \label{eq:5}
@@ -409,14 +410,14 @@ This data collection contains bond prices and exchange rates published in the \t
 
 The Fives of 1874 were one of several bonds issued by the U.S. government during this period, but it has several advantages over other bond yield series.
 The Fives of 1874 was the only coupon bond regularly quoted in the sources considered here for the entire war, April 1861 to May 1865.
-Only one other bond was widely traded at the start of the war, the 6's of 1848--1868.
-However, \textit{Bankers' Magazine} stops quoting the 6's of 1868 in September 1861.
-Another bond, the  6's of 1861--1881 were issued under acts in February and July 1861, but they are not regularly quoted in the \textit{Bankers' Magazine} until September 1861.
+Only one other bond was widely traded at the start of the war, the Sixes of 1848--1868.
+However, \textit{Bankers' Magazine} stops quoting the Sixes of 1868 in September 1861.
+Another bond, the  Sixes of 1861--1881 were issued under acts in February and July 1861, but they are not regularly quoted in the \textit{Bankers' Magazine} until September 1861.
 The U.S. issued several other bonds of various durations and coupon rates throughout the war, but they provide even shorter time series.
 Additionally, in most cases these loans had relatively exotic features, such as an option to exchange for another bond series or being callable by the government, which make it difficult to calculate the yields for them.
 \footnote{
   The 5-20's and 10-40's were bonds callable by the government after 5 (10) years and redeemable in 20 (40) years.
-  The 7-30's were bonds that had coupon rates of 7.30 percent (2 cents per day), were redeemable in 3 years, but included the option to be exchanged for either the 6's of 1881 or 5-20's.
+  The 7-30's were bonds that had coupon rates of 7.30 percent (2 cents per day), were redeemable in 3 years, but included the option to be exchanged for either the Sixes of 1881 or 5-20's.
   See \textcites{Bayley1882}{DeKnight1900}[297--309]{HomerSylla2005} for overviews of U.S. debt issues during this period.
 }
 Using the Fives of 1874 relative to other bonds should not make a substantive difference, since as Figure~\ref{fig:fives1874_union} shows, the yield to maturity of the Fives of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
@@ -523,7 +524,7 @@ While the precise meaning of the bond yields in terms of a war outcome is unclea
 As noted earlier in this section, military expenses accounted for the overwhelming majority of U.S. government expenditures between 1861 and 1865, so there are no other budgetary concerns that could plausibly affecting investor's expectations.
 The importance of the war can also be seen by comparing the level and variance of U.S. government bond yields during the war with the preceding period.
 During 1856--1860 yields on U.S. government bonds were stable at below 5 percent.
-At the height of the the Panic of 1857, the yield of U.S. government bonds, the 6's of 1868, only reached \Sexpr{format_yields(yield_panic_1857)} percent.%
+At the height of the the Panic of 1857, the yield of U.S. government bonds, the Sixes of 1868, only reached \Sexpr{format_yields(yield_panic_1857)} percent.%
 \footnote{Source: Data from the \textit{Bankers' Magazine} and the author's calculations. Also see \textcite{HomerSylla2005}.}
 Since a major financial crisis had little effect on bond yields prior to the war, there are certainly no non-war omitted factors affecting the yields.
 This is not to say that the battles in the war are the only factor affecting the bond yields.
@@ -852,7 +853,7 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  LeighWolfersEtAl2003 Slantcheve2012a Hall2004 Uppsala
 %  LocalWords:  McCandless1996 ChenSiems2004 SchneiderTroeger2006 pre
 %  LocalWords:  WolfersZitzewitz2009 Fearon1995 Reiter2003 Powell2004
-%  LocalWords:  FilsonWerner2002 Slantchev2003 SmithStam2004 cdb90
+%  LocalWords:  FilsonWerner2002 Slantchev2003 SmithStam2004 cdb90 eq
 %  LocalWords:  LeventogluSlantchev2007 LangloisLanglois2009 ACLED
 %  LocalWords:  WolfordReiterCarrubba2011 belligerents' ESOC US1901
 %  LocalWords:  SarkeesWayman2010 BiddleLong2004 Clodfelter2008 Fives
@@ -868,7 +869,7 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  Fuller1956a multimanned kalyvas2010inter Bayley1882
 %  LocalWords:  BoltZanden2013 GoldinLewis1975 McPherson2003 maxdate
 %  LocalWords:  hacker2011census Livermore1900 DeKnight1900 Dewey1918
-%  LocalWords:  Treasury1863 HomerSylla2005 fives1874 Elder1863 6's
+%  LocalWords:  Treasury1863 HomerSylla2005 fives1874 Elder1863 Sixes
 %  LocalWords:  Bankers' Merchants' Macaulay1938 Arnold2015a 20's HMC
 %  LocalWords:  40's 30's Ball1991 Treasury1861a Treasury1861b uring
 %  LocalWords:  Treasury1862 Treasury1864 Treasury1865 graybacks nrow
@@ -879,8 +880,9 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  fox1898regimental Spotsylvania Medbery1870a Glorietta
 %  LocalWords:  Arnold2015b Phisterer1883 dyer1908 cwsac2012 XXXX sui
 %  LocalWords:  KennedyConservation1998 XXXXX MCMC Stan2015a generis
-%  LocalWords:  bellum CBO2012 CBO2012a Fives 6's 20's 40's 30's bodart
+%  LocalWords:  bellum CBO2012 CBO2012a Fives Sixes 20's 40's 30's bodart
 %%  LocalWords:  Eicher2001 Elder1865 Weingast1998 Walker1865a sides'
 %%  LocalWords:  livermore Powell2006 HistoricalResearchEtAl1984 Fives
-%  LocalWords:  Helmbold1995 Shirkey2009a 6's 20's 40's 30's ACWBD
-%  LocalWords:  ARIMAX Gelman Donelson
+%  LocalWords:  Helmbold1995 Shirkey2009a  20's 40's 30's ACWBD won''
+%  LocalWords:  ARIMAX Gelman Donelson 'hide' lost'' frac mathcal url
+LocalWords:  parencite 20's 40's 30's ARIMA PetrisPetroneEtAl2009
