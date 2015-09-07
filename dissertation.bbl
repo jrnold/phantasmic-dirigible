@@ -129,9 +129,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Militär-historisches kreigs-lexikon, (1618-1905)}
       \field{year}{1908}
-      \verb{file}
-      \verb Bodart1908.pdf:Bodart1908.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=Eo4DAAAAYAAJ
       \endverb
@@ -188,9 +185,6 @@
       \field{year}{2000}
       \field{pages}{216\bibrangedash 231}
       \range{pages}{16}
-      \verb{file}
-      \verb BrownBurdekin2000.pdf:BrownBurdekin2000.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2566803
       \endverb
@@ -216,9 +210,6 @@
       \field{year}{1990}
       \field{pages}{28\bibrangedash 52}
       \range{pages}{25}
-      \verb{file}
-      \verb Bueno1990.pdf:Bueno1990.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2010550
       \endverb
@@ -247,9 +238,6 @@
       \range{pages}{25}
       \verb{doi}
       \verb 10.1006/exeh.1993.1015
-      \endverb
-      \verb{file}
-      \verb BurdekinLangdana1993.pdf:BurdekinLangdana1993.pdf:PDF
       \endverb
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/B6WFJ-45PMM8X-D/2/0332a9f88be4f3e45940cc43f8263a42
@@ -282,9 +270,6 @@
       \field{year}{2001}
       \field{pages}{1621\bibrangedash 1630}
       \range{pages}{10}
-      \verb{file}
-      \verb BurdekinWeidenmier2001.pdf:BurdekinWeidenmier2001.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2677945
       \endverb
@@ -316,9 +301,6 @@
       \field{year}{1988}
       \field{pages}{719\bibrangedash 750}
       \range{pages}{32}
-      \verb{file}
-      \verb Calomiris1988.pdf:Calomiris1988.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2663038
       \endverb
@@ -491,9 +473,6 @@
       \field{series}{Atlas series}
       \field{title}{{The Gold Room and the New York Stock Exchange and Clearing House}}
       \field{year}{1879}
-      \verb{file}
-      \verb Cornwallis1879.pdf:Cornwallis1879.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=55tAAAAAIAAJ
       \endverb
@@ -557,9 +536,6 @@
       \field{year}{1990}
       \field{pages}{133\bibrangedash 148}
       \range{pages}{16}
-      \verb{file}
-      \verb DavisPecquet1990.pdf:DavisPecquet1990.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2123441
       \endverb
@@ -765,9 +741,6 @@
       \verb{doi}
       \verb 10.1017/S0020818300033324
       \endverb
-      \verb{file}
-      \verb Fearon1995-notes.tex:Fearon1995-notes.tex:LaTeX;Fearon1995-notes.pdf:Fearon1995-notes.pdf:PDF;Fearon1995.pdf:Fearon1995.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1017/S0020818300033324
       \endverb
@@ -832,9 +805,6 @@
       \field{year}{2002}
       \field{pages}{819\bibrangedash 837}
       \range{pages}{19}
-      \verb{file}
-      \verb FilsonWerner2002.pdf:FilsonWerner2002.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/3088436
       \endverb
@@ -945,9 +915,6 @@
       \field{year}{2000}
       \field{pages}{187\bibrangedash 191}
       \range{pages}{5}
-      \verb{file}
-      \verb FreyKucher2000a.pdf:FreyKucher2000a.pdf:PDF
-      \endverb
     \endentry
     \entry{Fuller1956a}{book}{}
       \name{author}{1}{}{%
@@ -1023,9 +990,6 @@
       \field{year}{2007}
       \field{pages}{166\bibrangedash 191}
       \range{pages}{26}
-      \verb{file}
-      \verb Gartzke2007.pdf:Gartzke2007.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1111/j.1540-5907.2007.00244.x
       \endverb
@@ -1132,9 +1096,6 @@
       \field{month}{10}
       \field{title}{War and Punishment}
       \field{year}{2000}
-      \verb{file}
-      \verb Goemans2000.pdf:Goemans2000.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20%5C&amp;path=ASIN/0691049440
       \endverb
@@ -1162,9 +1123,6 @@
       \field{year}{1975}
       \field{pages}{299\bibrangedash 326}
       \range{pages}{28}
-      \verb{file}
-      \verb GoldinLewis1975.pdf:GoldinLewis1975.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2119410
       \endverb
@@ -1283,9 +1241,6 @@
       \verb{doi}
       \verb DOI: 10.1016/j.jmoneco.2004.02.001
       \endverb
-      \verb{file}
-      \verb Hall2004.pdf:Hall2004.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/B6VBW-4DSB10S-2/2/3bc7658152bcc006a7df02095246d23a
       \endverb
@@ -1313,9 +1268,6 @@
       \field{title}{Personnel Attrition Rates in Historical Land Combat Operations. Some Empirical Relations among Force Sizes, Battle Durations}
       \field{type}{Research Paper}
       \field{year}{1995}
-      \verb{file}
-      \verb helmbold1995a.pdf:helmbold1995a.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://handle.dtic.mil/100.2/ADA298124
       \endverb
@@ -1385,9 +1337,6 @@
       \field{title}{Analysis of Factors That Have Influenced Outcomes of Battles and Wars: A Data Base of Battles and Engagements. Volume 1. Main Report. Selected Battles 1600 - 1973}
       \field{type}{techreport}
       \field{year}{1984}
-      \verb{file}
-      \verb HistoricalResearchEtAl1984.pdf:HistoricalResearchEtAl1984.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://handle.dtic.mil/100.2/ADB086797
       \endverb
@@ -1454,9 +1403,6 @@
       \field{series}{Wiley finance series}
       \field{title}{{A history of interest rates}}
       \field{year}{2005}
-      \verb{file}
-      \verb HomerSylla2005.pdf:HomerSylla2005.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=OOQKf4asZ9EC
       \endverb
@@ -1578,9 +1524,6 @@
       \verb{eprint}
       \verb http://journals.cambridge.org/article_S0003055410000286
       \endverb
-      \verb{file}
-      \verb kalyvas2010inter.pdf:kalyvas2010inter.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1017/S0003055410000286
       \endverb
@@ -1697,9 +1640,6 @@
       \field{title}{What do Financial Markets Think of War in Iraq?}
       \field{type}{Working Paper}
       \field{year}{2003}
-      \verb{file}
-      \verb LeighWolfersEtAl2003.pdf:LeighWolfersEtAl2003.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.nber.org/papers/w9587
       \endverb
@@ -1729,9 +1669,6 @@
       \field{year}{2007}
       \field{pages}{755\bibrangedash 771}
       \range{pages}{17}
-      \verb{file}
-      \verb LeventogluSlantchev2007.pdf:LeventogluSlantchev2007.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1111/j.1540-5907.2007.00279.x
       \endverb
@@ -1754,9 +1691,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Number and Losses in the {Civil War in America}, 1861-65}
       \field{year}{1900}
-      \verb{file}
-      \verb Livermore1900.pdf:Livermore1900.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=Qw8pAAAAYAAJ
       \endverb
@@ -1800,9 +1734,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Seventy-three Years' History of the Boston Stock Market, from Januay 1, 1798, to January 1, 1871}
       \field{year}{1871}
-      \verb{file}
-      \verb Martin1871.pdf:Martin1871.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=g5jyU-B-nikC
       \endverb
@@ -1830,9 +1761,6 @@
       \field{year}{1996}
       \field{pages}{661\bibrangedash 671}
       \range{pages}{11}
-      \verb{file}
-      \verb McCandless1996.pdf:McCandless1996.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2118219
       \endverb
@@ -1926,9 +1854,6 @@
       \field{title}{A History of the Greenbacks}
       \field{volume}{9}
       \field{year}{1903}
-      \verb{file}
-      \verb Mitchell1903.pdf:Mitchell1903.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=EnUXAQAAIAAJ
       \endverb
@@ -1950,9 +1875,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Gold, Prices, and Wages Under the Greenback Standard}
       \field{year}{1908}
-      \verb{file}
-      \verb Mitchell1908.pdf:Mitchell1908.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=d3crAAAAYAAJ
       \endverb
@@ -2003,9 +1925,6 @@
       \field{note}{unpublished}
       \field{title}{What was the Interest Rate Then? A Data Study}
       \field{year}{2003}
-      \verb{file}
-      \verb officer2003what.pdf:officer2003what.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.measuringworth.com/interestrates/intstudy.pdf
       \endverb
@@ -2031,9 +1950,6 @@
       \field{title}{Victory or Repudiation? The Probability of the Southern Confederacy Winning the Civil War}
       \field{type}{Working Paper}
       \field{year}{2007}
-      \verb{file}
-      \verb OosterlinckWeidenmier2007.pdf:OosterlinckWeidenmier2007.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.nber.org/papers/w13567.pdf
       \endverb
@@ -2090,9 +2006,6 @@
       \field{series}{Use R!}
       \field{title}{Dynamic Linear Models with {R}}
       \field{year}{2009}
-      \verb{file}
-      \verb PetrisPetroneEtAl2009.pdf:PetrisPetroneEtAl2009.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=VCt3zVq8TO8C
       \endverb
@@ -2114,9 +2027,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Statistical Records of the Armies of the United States}
       \field{year}{1883}
-      \verb{file}
-      \verb Phister1883-Losses.pdf:Phister1883-Losses.pdf:PDF;Phister1883.pdf:Phister1883.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=cVNHr_nnLlYC
       \endverb
@@ -2192,9 +2102,6 @@
       \field{year}{2004}
       \field{pages}{344\bibrangedash 361}
       \range{pages}{18}
-      \verb{file}
-      \verb Powell2004.pdf:Powell2004.pdf:PDF;Powell2004-notes.pdf:Powell2004-notes.pdf:PDF;Powell2004-notes.tex:Powell2004-notes.tex:LaTeX
-      \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1111/j.0092-5853.2004.00074.x
       \endverb
@@ -2225,9 +2132,6 @@
       \verb{eprint}
       \verb http://journals.cambridge.org/article_S0020818306060061
       \endverb
-      \verb{file}
-      \verb Powell2006.pdf:Powell2006.pdf:PDF;Powell2006-notes.tex:Powell2006-notes.tex:LaTeX;Powell2006-notes.pdf:Powell2006-notes.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=365095&fulltextType=RA&fileId=S0020818306060061
       \endverb
@@ -2257,9 +2161,6 @@
       \endverb
       \verb{eprint}
       \verb http://jcr.sagepub.com/content/52/6/850.full.pdf+html
-      \endverb
-      \verb{file}
-      \verb Ramsay2008.pdf:Ramsay2008.pdf:PDF
       \endverb
       \verb{url}
       \verb http://jcr.sagepub.com/content/52/6/850.abstract
@@ -2343,9 +2244,6 @@
       \verb{eprint}
       \verb http://journals.cambridge.org/article_S1537592703000033
       \endverb
-      \verb{file}
-      \verb Reiter2003.pdf:Reiter2003.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=145049&fulltextType=RA&fileId=S1537592703000033
       \endverb
@@ -2368,9 +2266,6 @@
       \field{isbn}{9780691140605}
       \field{title}{{How wars end}}
       \field{year}{2009}
-      \verb{file}
-      \verb Reiter2009.pdf:Reiter2009.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=-_Avp1TNYjMC
       \endverb
@@ -2400,9 +2295,6 @@
       \field{year}{1998}
       \field{pages}{377\bibrangedash 389}
       \range{pages}{13}
-      \verb{file}
-      \verb ReiterStam1998.pdf:ReiterStam1998.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2585670
       \endverb
@@ -2517,9 +2409,6 @@
       \field{year}{1972}
       \field{pages}{476\bibrangedash 498}
       \range{pages}{23}
-      \verb{file}
-      \verb Roll1972.pdf:Roll1972.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2116826
       \endverb
@@ -2573,9 +2462,6 @@
       \field{series}{Yale bicentennial publications}
       \field{title}{{The Confederate States of America, 1861-1865: a financial and industrial history of the South during the Civil War}}
       \field{year}{1901}
-      \verb{file}
-      \verb Schwab1901.pdf:Schwab1901.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://books.google.com/books?id=4TEOAAAAIAAJ
       \endverb
@@ -2649,9 +2535,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb http://dx.doi.org/10.1017/S0003055403000911
-      \endverb
-      \verb{file}
-      \verb Slantchev2003a.pdf:Slantchev2003a.pdf:PDF;Slantchev2003-notes.pdf:Slantchev2003-notes.pdf:PDF;Slantchev2003.pdf:Slantchev2003.pdf:PDF;Slantchev2003-notes.tex:Slantchev2003-notes.tex:LaTeX
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1017/S0003055403000911
@@ -2746,9 +2629,6 @@
       \endverb
       \verb{eprint}
       \verb http://journals.cambridge.org/article_S0022050700019100
-      \endverb
-      \verb{file}
-      \verb SmithSmith1997.pdf:SmithSmith1997.pdf:PDF
       \endverb
       \verb{url}
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=4125280&fulltextType=RA&fileId=S0022050700019100
@@ -3311,9 +3191,6 @@
       \field{year}{2000}
       \field{pages}{469\bibrangedash 484}
       \range{pages}{16}
-      \verb{file}
-      \verb Wagner2000.pdf:Wagner2000.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2669259
       \endverb
@@ -3342,9 +3219,6 @@
       \range{pages}{20}
       \verb{doi}
       \verb DOI: 10.1016/j.eeh.2007.09.004
-      \endverb
-      \verb{file}
-      \verb WaldenstroemFrey2008.pdf:WaldenstroemFrey2008.pdf:PDF
       \endverb
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/B6WFJ-4PT1SF6-1/2/e05dbbdbe9c9bde3d879652ac9344188
@@ -3398,9 +3272,6 @@
       \verb{eprint}
       \verb http://www.annualreviews.org/doi/pdf/10.1146/annurev.polisci.10.101405.135301
       \endverb
-      \verb{file}
-      \verb Walter2009.pdf:Walter2009.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.annualreviews.org/doi/abs/10.1146/annurev.polisci.10.101405.135301
       \endverb
@@ -3432,9 +3303,6 @@
       \field{year}{2002}
       \field{pages}{875\bibrangedash 890}
       \range{pages}{16}
-      \verb{file}
-      \verb Weidenmier2002.pdf:Weidenmier2002.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/1061497
       \endverb
@@ -3465,9 +3333,6 @@
       \field{chapter}{4}
       \field{title}{Political Stability and Civil War: Instiutions, Commitment, and American Democracy}
       \field{year}{1998}
-      \verb{file}
-      \verb Weingast1998.djvu:Weingast1998.djvu:Djvu
-      \endverb
     \endentry
     \entry{Weisiger2015}{unpublished}{}
       \name{author}{1}{}{%
@@ -3515,9 +3380,6 @@
       \field{year}{1966}
       \field{pages}{759\bibrangedash 790}
       \range{pages}{32}
-      \verb{file}
-      \verb Weiss1966.pdf:Weiss1966.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/168777
       \endverb
@@ -3550,9 +3412,6 @@
       \field{year}{1996}
       \field{pages}{1001\bibrangedash 1018}
       \range{pages}{18}
-      \verb{file}
-      \verb WillardGuinnaneEtAl1996.pdf:WillardGuinnaneEtAl1996.pdf:PDF
-      \endverb
       \verb{url}
       \verb http://www.jstor.org/stable/2118316
       \endverb
