@@ -157,6 +157,37 @@
       \field{type}{Working Paper}
       \field{year}{2013}
     \endentry
+    \entry{BordoRockoff1996a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=de2076f49392e26879219a86875919a6}{Bordo}{B\bibinitperiod}{Michael\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=48d2f21a429b5f23597fcfcf409d1ba7}{Rockoff}{R\bibinitperiod}{Hugh}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cd217d62d3b7ea4adbdcc47af8c55bd9}
+      \strng{fullhash}{cd217d62d3b7ea4adbdcc47af8c55bd9}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1996}
+      \field{labelmonth}{6}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT In this article we argue that during the period from 1870 to 1914 adherence to the gold standard was a signal of financial rectitude, a âgood housekeeping seal of approvalâ, that facilitated access by peripheral countries to capital from the core countries of western Europe. Examination of data from nine widely different capital-importing countries, using a model inspired by the Capital Asset Pricing Model, reveals that countries with poor records of adherence were charged considerably more than those with good records, enough to explain the determined effort to stay on gold made by a number of capital-importing countries.}
+      \field{issn}{1471-6372}
+      \field{issue}{02}
+      \field{journaltitle}{The Journal of Economic History}
+      \field{month}{6}
+      \field{title}{The Gold Standard as a ``Good Housekeeping Seal of Apova}
+      \field{volume}{56}
+      \field{year}{1996}
+      \field{pages}{389\bibrangedash 428}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1017/S0022050700016491
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0022050700016491
+      \endverb
+    \endentry
     \entry{BrownBurdekin2000}{article}{}
       \name{author}{2}{}{%
         {{hash=209b9f426dd0cf78d26519e1dfd1effb}{Brown}{B\bibinitperiod}{Jr.}{J\bibinitperiod}{}{}{William\bibnamedelima O.}{W\bibinitperiod\bibinitdelim O\bibinitperiod}}%
@@ -3164,6 +3195,37 @@
       \verb http://www.dtic.mil/docs/citations/ADM000121
       \endverb
     \endentry
+    \entry{VanDykPark2008a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=03f837745128cf7ed80c1d7cf0eebee7}{{van\bibnamedelimb Dyk}}{v\bibinitperiod}{David\bibnamedelima A}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=5275f6230605af5a852a630d2083a376}{Park}{P\bibinitperiod}{Taeyoung}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bfdfc98c375a1bf828d336390bd9c4e0}
+      \strng{fullhash}{bfdfc98c375a1bf828d336390bd9c4e0}
+      \field{sortinit}{v}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ever-increasing computational power, along with everâmore sophisticated statistical computing techniques, is making it possible to fit everâmore complex statistical models. Among the more computationally intensive methods, the Gibbs sampler is popular because of its simplicity and power to effectively generate samples from a high-dimensional probability distribution. Despite its simple implementation and description, however, the Gibbs sampler is criticized for its sometimes slow convergence, especially when it is used to fit highly structured complex models. Here we present partially collapsed Gibbs sampling strategies that improve the convergence by capitalizing on a set of functionally incompatible conditional distributions. Such incompatibility generally is avoided in the construction of a Gibbs sampler, because the resulting convergence properties are not well understood. We introduce three basic tools (marginalization, permutation, and trimming) that allow us to transform a Gibbs sampler into a partially collapsed Gibbs sampler with known stationary distribution and faster convergence.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{482}
+      \field{title}{Partially Collapsed {Gibbs} Samplers}
+      \field{volume}{103}
+      \field{year}{2008}
+      \field{pages}{790\bibrangedash 796}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1198/016214508000000409
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1198/016214508000000409
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1198/016214508000000409
+      \endverb
+    \endentry
     \entry{Wagner2000}{article}{}
       \name{author}{1}{}{%
         {{hash=e9bad90a66d6f3836b856862a3e7165d}{Wagner}{W\bibinitperiod}{R.\bibnamedelimi Harrison}{R\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
@@ -3507,6 +3569,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{WarrenPearson1933a}
 \endrefsection
 \endinput
 
