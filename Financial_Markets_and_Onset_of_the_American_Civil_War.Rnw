@@ -33,7 +33,7 @@ Other models may imply different ex ante public information probabilities of con
 However, the point is that many models of conflict imply an \textit{ex ante} probability of war, prices of some assets can be used to as a measure of this \textit{ex ante} probability, and thus financial markets may provide a way to test some theories of war.
 
 mpilThis paper contributes to an economic history literature on the reactions of financial markets to events within the American Civil War.
-This includes multiple papers on reactions of the financial markets on both sides and Europe to the American Civil War \textcites{Schwab1901}{Mitchell1903}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2002}.
+This includes multiple papers on reactions of the financial markets on both sides and Europe to the American Civil War \parencites{Schwab1901}{Mitchell1903}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2002}.
 This paper adds to that literature by analyzing the initiation of the war and by using Northern and Southern state bond data.
 This paper also adds to the growing international relations literature \textcite{Poast2012}, and \textcite{Reiter2009} on the American Civil War, which has often been overlooked in the international relations literature as most work on civil wars focuses on civil wars after 1945.
 
@@ -524,7 +524,7 @@ Alternatively, markets do a poor job of assessing the \textit{ex ante} theory of
 Either of these scenarios have important implications for prominent theories of war.
 
 The \textit{ex ante} public information assessments of the probability of war are important because they may provide methods for distinguishing between theories and mechanisms of war.
-The two rationalist theories of war: commitment problems and private information \parencites{Fearon1995,Powell2006}, have different implications as to what the \textit{ex ante} probability of war occurring will be.
+The two rationalist theories of war, commitment problems and private information \parencites{Fearon1995,Powell2006}, have different implications as to what the \textit{ex ante} probability of war occurring will be.
 In the simplest version of war due to a commitment problem, given the conditions, war will either occur or not occur with certainty depending on the parameters of the model.
 However, in a private information model of war, if is is possible for war to occur, it can occur with a probability of less than one.
 Not only that, the private information model of war implies that many wars should be unanticipated \parencite{Gartzke1999}.

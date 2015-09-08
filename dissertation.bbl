@@ -410,6 +410,38 @@
       \endverb
       \keyw{Global capital markets}
     \endentry
+    \entry{Clausewitz1989}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1f2f230e8987ea7b52f1895aa47c9993}{Clausewitz}{C\bibinitperiod}{Carl\bibnamedelima von}{C\bibinitperiod\bibinitdelim v\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=5f55d3ffda12ae10d61f865a80c66baa}{Howard}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b635a4b2a460d022e42150779d645b0e}{Paret}{P\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=5f55d3ffda12ae10d61f865a80c66baa}{Howard}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b635a4b2a460d022e42150779d645b0e}{Paret}{P\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{1f2f230e8987ea7b52f1895aa47c9993}
+      \strng{fullhash}{1f2f230e8987ea7b52f1895aa47c9993}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Indexed edition}
+      \field{isbn}{9780691018546}
+      \field{origyear}{1883}
+      \field{title}{On war}
+      \field{year}{1989}
+      \verb{url}
+      \verb http://books.google.com/books?id=ygPEQgAACAAJ
+      \endverb
+    \endentry
     \entry{CochranLong2014}{unpublished}{}
       \name{author}{2}{}{%
         {{hash=f47d0aaa78217461c0a7de0bcd0a3593}{Cochran}{C\bibinitperiod}{Kathryn}{K\bibinitperiod}{}{}{}{}}%

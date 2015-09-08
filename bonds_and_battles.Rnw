@@ -130,63 +130,67 @@ In other words, the riskier a bond is, the lower the price and the higher the yi
 \subsection{How Financial Markets Can Improve the Study of War}
 \label{sec:how-prices-financial-1}
 
-Since \parencite{Fearon1995}, the the dominant theory of war has been the bargaining theory of war; see \textcites{Reiter2003}{Powell2006}{Reiter2009} for discussions.%
-While there is a large theoretical literature that has formalized much of the theory, \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}, direct empirical tests of the theory is not as advanced \parencite{Reiter2009}.
-The prices of financial assets can improve our understanding of theories of war in two ways: expanding the number of cases in which the analysis can be performed by allowing for intra-case quantitative analysis, and providing a measure of surprising events.
+Since \textcite{Fearon1995}, the the dominant theory of war has been the bargaining theory of war.%
+\footnote{See \textcites{Reiter2003}{Powell2006}{Reiter2009} for discussions.}
+While there is a large theoretical literature that has formalized much of the theory, \parencites{FilsonWerner2002}{Slantchev2003}{SmithStam2004}{Powell2004}{LeventogluSlantchev2007}{LangloisLanglois2009}{WolfordReiterCarrubba2011}, direct empirical evidence of the theory are still limited \parencite{Reiter2009}.
+The prices of financial assets can improve the discpline's understanding of war in two ways: expanding the number of cases which can be used for analysis by allowing for intra-case quantitative analysis, and providing a measure of surprising events.
 
-The bargaining theory of war essentially formalizes the insights of Clausewitz and Schelling.
-The central puzzle of war is, given that war is costly, there would seem to exist a better agreement:
-The two sides should have been able to come to the same agreement that the war eventually ends with, but without bearing the costs of war.
-So why did they not come to that agreement and instead fight the war?
-\parencite{Fearon1995} and \parencite{Powell2006} proposed two frictions that would prevent an \textit{ex ante agreement}: private information and commitment problems.%
+The bargaining theory of war is essentially a formalization of Clausewitz's famous dictum: ``War is merely the continuation of policy by other means.'' \parencite[87]{Clausewitz1989}
+The bargaining theory of war sees war as part of a bargaining process.
+The central puzzle of war is, given that war is costly, why did the sides not reach an agreement without incurring the costs of war.
+In particular, at the end of a war, some agreement is reached, even if that involves the complete capitulation of one of the sides.
+So why was that agreement not reached prior to the war and without incurring the costs of the war.
+\parencite{Fearon1995} and \parencite{Powell2006} propose two frictions that would prevent an \textit{ex ante agreement}: private information and commitment problems.%
 \footnote{
-  War can also occur due to the sides the being risk loving, which \textcite{Fearon1995} dismisses as implausible, and due to domestic politics.
-  With respect to the later, many of the domestic politics explanations are explanations that generate a private information or commitment problem that allows for conflict as a solution to the bargaining problem.
+  War can also occur due to the sides the being risk loving or due to domestic politics.
+  \textcite{Fearon1995} dismisses risk lovingness as implausible.
+  Many of the domestic politics explanations are explanations that generate a private information or commitment problem that allows for conflict as a solution to the bargaining problem.
 }
-But this leads to a second puzzle, given that these frictions can lead to conflict instead of a peaceful bargain, how does the conflict resolve that friction so that the sides can come to an agreement and return to peace.
-\textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
-So while empirical evidence for the bargaining theory of war can come from studying war onset, testing the ``core of the theory'' parencite requires intrawar data and as such has demanding data requirements, as such has been subject to few empirical studies \parencites{Reiter2003}{Ramsay2008}{Reiter2009}{Weisiger2015}.
+But this leads to a second puzzle, given that these frictions can lead to conflict instead of a peaceful bargain, how does the actual figthing in the conflict resolve that friction so that the sides can come to an agreement and return to peace.
+\textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory of war] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
+So while some evidence for the bargaining theory of war can come from studying war onset, testing the ``core of the theory'' requires intrawar data and as such has demanding data requirements, as such has been subject to few empirical studies \parencites{Reiter2003}{Ramsay2008}{Reiter2009}{Weisiger2015}.
 Empirical evaluations the bargaining model of war requires estimates of capabilities, estimates of resolve, exchange of offers, and combat data \parencite{Reiter2003}.
-All of these data are generally difficult to acquire, let alone for multiple cases.
-Using financial asset price data can extend the data available to researchers in this area.
+All of these data are generally difficult to acquire for one case, let alone for multiple cases.
+Financial asset price data is useful in that it can allow researchers to make the most out of the limited data that is available.
 
-First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets as time-varying expectations or predictions of the war termination.
-The data demands of the bargaining theory of war means that it is hard to find many cases with the requisite data.
-While data on the sides' estimates of resolve and capabilities and (often secret) bargaining offers are unsurprisingly scarce, data on battles is of surprisingly poor quality and quantity.
-There does not exist a Correlates of War for battles, and data on battles is limited in quantity and quality.
-The most commonly used datasets of military combat (battle) data for inter-state wars is the CDB90 or HERO dataset \parencites{HistoricalResearchEtAl1984}{cdb90}, but that data is both dated and of questionable quality \parencites[32]{Reiter2003}{BiddleLong2004}.
-One motivation for the choice of the American Civil War in this work was that the data on battles was of higher quality and more comprehensive than other wars.
+First, financial asset price data allows for within-case quantitative analysis of war termination by using the price of financial assets.
+Instead of using inter-case variation in war outcomes in the analysis, financial asset prices provide measures of expected war outcomes with intra-case variation.
+Being able to use intra-case variation is useful to researchers, because, apart from controlling for case specific attributes, the data demands of the bargaining theory of war means means that there are few cases with the requisite data.
+While data on the sides' estimates of resolve and capabilities and (often secret) bargaining offers are unsurprisingly scarce, data on battles is also of surprisingly poor quality and quantity.
+While there exists a Correlates of War for wars, there does not exist a similar dataset for battles, and the available data on battles is limited in both quantity and quality.
+The most commonly used and comprehensive battle dataset for inter-state wars is the CDB90 or HERO dataset \parencites{HistoricalResearchEtAl1984}{cdb90}, but that data is both dated and of questionable quality \parencites[32]{Reiter2003}{BiddleLong2004}.
+This lack of available data was one motivation for the use of the American Civil War in this work, since it is a war for which data on battles is available of relatively high quality and comprehensiveness.
 \footnote{
-More recently work by \textcite{Weisiger2015} and \textcite{CochranLong2014} have offered data on combat across wars.
-See \textcites{cdb90}{Helmbold1995} for discussions of the difficulties in compiling battle data.
+More recently work by \textcite{Weisiger2015} and \textcite{CochranLong2014} have offered multi-war data.
+See \textcites{cdb90}{Helmbold1995} for a discussion of the difficulties in compiling battle data.
 }
-And even if battle data were more plentiful, the ability to compare military combat may be difficult due to the heterogeneity of combat across time and space \parencite{Reiter2009}.
-As such, \textcites{Reiter2003}{Reiter2009} suggest that the best way forward in empirical analysis of the bargaining theory of war is qualitative analysis on limited cases.
-In studies, the within-case nature of the analysis means that they cannot have the war duration or outcome as a dependent variables.
-But, as discussed in Section~\ref{sec:how-prices-financial}, the prices of some financial assets may act as measures of expected war termination.
+Even if battle data were more plentiful, the ability to compare features of battles across wars may be fundamentally limited due to the heterogeneity of combat across time and space \parencite{Reiter2009}.
+As such, \textcites{Reiter2003}{Reiter2009} suggest that the best methodology for the empirical analysis of the bargaining theory of war is qualitative analysis on limited cases.
+But in within-case analysis, some important dependent variables it cannot be used to test any implications on the war outcome, \eg{}duration, since only one war outcome is observed for each war.
+But, as discussed in Section~\ref{sec:how-prices-financial}, the prices of some financial assets may act as measures of the expected war termination.
 This allows researchers to conduct within-case quantitative analysis using cases with the requisite battle data, and use the prices of carefully-chosen financial assets as an outcome variable that proxies for war outcomes, such as the duration, cost or victor.
-Instead of using cross-sectional variation in the observed outcomes of wars, this type of analysis will exploit within-case time-variation of predictions or expectations about the outcome.
+This methodology exploits within-case variation in the expected war outcome rather than between-case variation in the observed war otucomes.
 
-Second, financial asset price changes naturally provide a measure of surprising events or new information.
-Surprising events are particularly important in informational theories of war in which only new information will affect beliefs.
-However,  it is difficult to necessarily know what is surprising to contemporaries, see \textcite{Shirkey2009a} for an attempt to code surprising events.
-Since prices are formed from expectations about future events, and changes in prices correspond to changes in the news available to the market, as discussed in section~\ref{sec:how-prices-financial}.
-Thus, a price change is a natural measure of new information, although it may be more challenging for the researcher to figure out what new information that was.
+Second, financial asset price changes naturally provide a measure of surprising events and new information.
+Surprising events are particularly important in informational theories of war, as only new information will affect beliefs.
+However,  it is difficult \textit{ex ante} to know what was surprising to contemporaries, see \textcite{Shirkey2009a} for an attempt to code surprising events.
+Prices provide a natural measure of new information, since as discussed in Section~\ref{sec:how-prices-financial}, prices are  expectations of future events given the current information avaiable to the market, and changes in prices correspond to changes in the news available to the market, 
 
 The prices of financial assets have several other characteristics that make them a useful addition to the conflict researcher's toolbox for analyzing war.
 \footnote{See \textcite{WillardGuinnaneEtAl1996}, \textcite{north2000introd}, and \textcite{FreyKucher2000} for other  discussions on the use of price data to analyze historical events.} %
 First, they incorporate only \textit{ex ante} information.
-This distinguishes price data from sources such as participant accounts written after the fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}, both of which can incorporate later information.
-Second, investors have strong incentives to be truthful in their assessments because their payoffs are directly tied to being correct.
-This distinguishes prices from other sources such as the surveys or diaries of decision makers, which like prices have only the information available at the time, but in which the author may have incentives to deceive \parencite[57]{Reiter2009}.%
+This distinguishes price data from sources written after the fact, including participant memoirs fact or secondary sources \parencites[1001]{WillardGuinnaneEtAl1996}[][188]{FreyKucher2000a}.
+Those sources can suffer from hindsight bias because the author is aware of future events.
+Second, investors have strong incentives to be truthful in their assessments because their payoffs are contingent on the accuracy of their assessments.
+This distinguishes prices from other sources such as the surveys or diaries of decision makers, which like prices have only the information available at the time, but in which the author may have strategic incentives to deceive \parencite[57]{Reiter2009}.%
 \footnote{
-  Although the investors in the American Civil War had their own preferences on the war, their investments seemed motivated by their preference for profits,
-  \begin{quote}
+  Although the investors in the American Civil War had their own preferences on the war, their investments seemed motivated by their preference for profits.
+  \textcite[5,7]{Cornwallis1879} writes,
+  \begin{quote} 
     Sectional feeling often entered largely into the bull and bear  contests in the Gold Room, and Union men and rebel sympathizers fought their battles sometimes, as much to gratify this as to make money.
-    \textcite[7]{Cornwallis1879}
 
     The heaviest speculative orders were sent from Washington and Baltimore, and next to these, from Louisville, Kentucky, owing to these cities being in close communication to the seat of war and the rebel lines; and the operators there, almost to a man, were ``bulls'' in feeling, and strong Secessionists.
-    But though seldom or never found selling ``short'' they were quick to sell out their ``long'' gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to ``touch bottom'' \textcite[5]{Cornwallis1879}.
+    But though seldom or never found selling ``short'' they were quick to sell out their ``long'' gold --- that is the gold they were carrying --- whenever the Confederate arms met with a reverse, and as quick to buy it back again when the market seemed to ``touch bottom''.
   \end{quote}
   \textcite[210]{Mitchell1903} writes,
   \begin{quote}
@@ -196,7 +200,7 @@ This distinguishes prices from other sources such as the surveys or diaries of d
 } %
 Finally, price data is often available at high frequencies, often daily.
 This is in contrast with documentary evidence, which is often either produced at lower frequency or missing for large periods of time \parencite[][57]{Reiter2009}.
-The high frequency of price data makes expands the set of analyses available to the researcher, making it possible to analyze the effects of individual events in conflicts.
+The high frequency of price data provides more data points to the researcher, and expands the set of questions that can be answered.
 %% Fourth, the prices of financial assets are a quantitative summary of investors' expectations, and less susceptible to the  subjective interpretation of researchers.
 %% This distinguishes price data from documentary evidence which must be interpreted by researchers \parencite[][58]{Reiter2009}.
 %% The quantitative nature of the data makes it easier to analyze not only what events mattered in conflict, but the magnitude of those effects \parencite{north2000introd}.
@@ -206,14 +210,16 @@ They simply provide another tool for conflict researchers.
 Financial asset prices have several shortcomings when studying conflict, and are not appropriate in all cases.
 First, these prices do not directly measure the beliefs of the belligerents.
 Prices of financial data generally incorporate public information, and do not incorporate the private information available to decision makers.
-But the beliefs of the decision makers is what is expected to convergence in informational theories of war.
-However, it may be possible that many private information models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information, which these prices can measure.
-Second, in many conflicts an appropriate priced financial asset is not available.
-In many areas in which researchers are most interested in understanding conflict, \eg{} civil wars in developing countries, countries may there may not exist a financial asset  that is closely tied to the war outcome, \eg{} the belligerents do not issue sovereign bonds, and even if there are the market may not be liquid enough to provide reliable estimates.
-Even states with liquid and well-developed markets in peace-time, states often intervene in their own markets during war, distorting the price signals \parencite[12]{HaberMitchenerOosterlinckEtAl2015}.
-Finally, in any case in which prices are used, they cannot be used without thought.
-The researcher will need to apply substantive knowledge of the assets, market, and the conflict in order to find a financial asset that is related to expected war outcomes, and understand that particular asset relates to the war outcomes  the researcher is interested in studying.
-
+However, the causal mechanism in informational theories of war are is the beliefs of the decision makers.
+Yet, these means by which those beliefs converge is that conflict reveals private information, making that private information public.
+So it may be possible that many private information models of war could restated so that they have implications on changes in the expected outcome of the war conditional on public information, for which these prices are a measure.
+Second, an appropriate financial asset may not be available in many conflicts.
+In many areas in which researchers are most interested in understanding conflict, \eg{} civil wars in developing countries, a financial asset  that is closely tied to the war outcome may not exist.
+Even now, not all developing countries issue sovereign bonds.
+Additionally, those countries prone to war may not have liquid markets, so the prices of available assets may not be accurate assessments of expectations.
+Even states with liquid and well-developed markets in peace-time, states often intervene in their own markets during war which distorts the price signals of those assets \parencite[12]{HaberMitchenerOosterlinckEtAl2015}.
+Finally, in any case in which prices are used, they cannot be used without domain specific knowledge.
+The researcher will need to apply their substantive knowledge of the assets, market, and conflict in order to find a financial asset that is related to expected war outcomes, and to understand how that asset relates to the war outcomes which are of interest to the researcher.
 
 
 
@@ -862,11 +868,7 @@ That Confederate victories increased the expected cost of the war is consistent 
 Models $\Model{3}$ and $\Model{4}$ estimate effects for individual battles in addition to the average effects of Confederate victories, although they use different prior distributions to regularize these estimates.
 Model $\Model{2}$ assumes that all Confederate and Union victories have the same effect.
 
-Figure \label{fig:btl_effects} 
-
-
 Figures \ref{fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, for only
-
 
 \begin{figure}[!htpb]
   \centering
@@ -891,7 +893,7 @@ Figures \ref{fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, fo
 
 
 \subsection{Overall Effects of Battles on Yields}
-\label{sec:indiv-effects-battl}
+\label{sec:over-effects-battl}
 
 
 
