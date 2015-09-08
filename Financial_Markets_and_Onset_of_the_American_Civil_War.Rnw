@@ -114,8 +114,8 @@ Thus, holders of Southern state bonds were particularly exposed to war risk, and
 In order to be able to confidently make inferences about the risk of war given bond prices, alternative confounding effects need to be controlled for.
 This work accounts for these confounding effects in several ways.
 First, it focuses on the period close to the start of the war.
-In prior probability that effects are due to war risk factors is higher in the period close to the start of the American Civil War, than in periods further removed from it.
-For example, a large price change in the week before before Sumter is more likely to be related to changes in the expectation of war than a price movement in 1849, for example.
+That the effects effects are due to changes in war risk factors is likely higher in the period closer to the start of war, than in periods further removed from it.
+For example, a large price change in the week before before the Battle of Fort Sumter is more likely to be related to changes in the expectation of war than a price movement in 1849, for example.
 Second, multiple measures are used: the yield spread between Southern and Northern state bonds and the implied probability of war from the bond prices.
 Third, within each of those measures multiple bonds prices are used to average over idiosyncratic shocks to bonds.
 Additionally, the south-north yield spread also controls for shocks which effect all bonds.
