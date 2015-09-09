@@ -877,14 +877,26 @@ Figures \ref{fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, fo
 \begin{table}[!htpb]
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_waic.tex")}}
-  \caption{Widely Applicable Inforation Criterion (WAIC) for each model.
-    $RMSE$ is the root mean squared error of each model.
-    $elpd_{waic}$ is the expected log probability density implied by the WAIC.
-    $p_{waic}$ is the effective number of parameters.
+  \caption{
+    Predictive criteria for each Widely Applicable Inforation Criterion (WAIC).
+    RMSE is the root mean squared error of each model.
+    $\text{elpd}_{\text{WAIC}}$ is the expected log posterior predictive density implied by the Widely Applicable Inforation Criterion (WAIC).
   }
   \label{tab:waic}
 \end{table}
 
+\begin{table}[!htpb]
+  \centering
+  \input{\Sexpr{file.path(tab_path, "tab_btl_effects_size.tex")}}
+  \caption{Size of average battle effect compared to the average innovation}
+\end{table}
+
+
+\begin{figure}
+  \centering
+  \includegraphics{\Sexpr{file.path(fig_path, "cum_btl_effects-1")}}
+  \caption{Cumulative effects of battles on the yield.}
+\end{figure}
 
 
 

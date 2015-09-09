@@ -298,7 +298,7 @@ But despite its age, the American Civil War has several similarities to contempo
 First, the American Civil War is, if not the first modern war, a wars in the transition to modern warfare.
 This war introduced several of the technologies which came to prominence in World War I and later wars: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89][]{Fuller1956a}[760]{Weiss1966}.
 Second, the American Civil War was primarily a conventional war.
-This places it in the plurality of post-Cold War civil wars, which are more often conventional wars than insurgencies \parencite[423]{kalyvas2010inter}.%
+This places it in the plurality of post-Cold War civil wars, which are more often conventional wars than insurgencies \parencite[423]{kalyvas2010inter}. %
 Finally, by the Civil War was U.S. was industrializing and the purchasing power parity adjusted GDP per capita of the U.S. and Confederate States in 1860 would classify them them as lower-middle income countries today.%
 \footnote{%
   The GDP per capita of the US in 1860 was \$2,241 in 1990 GK international dollars. %
@@ -866,14 +866,26 @@ Figures \ref{bonds:fig:btl_effects_ordered} plots the battle effects, $\omega_{b
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_waic.tex}
-  \caption{Widely Applicable Inforation Criterion (WAIC) for each model.
-    $RMSE$ is the root mean squared error of each model.
-    $elpd_{waic}$ is the expected log probability density implied by the WAIC.
-    $p_{waic}$ is the effective number of parameters.
+  \caption{
+    Predictive criteria for each Widely Applicable Inforation Criterion (WAIC).
+    RMSE is the root mean squared error of each model.
+    $\text{elpd}_{\text{WAIC}}$ is the expected log posterior predictive density implied by the Widely Applicable Inforation Criterion (WAIC).
   }
   \label{bonds:tab:waic}
 \end{table}
 
+\begin{table}[!htpb]
+  \centering
+  \input{../bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
+  \caption{Size of average battle effect compared to the average innovation}
+\end{table}
+
+
+\begin{figure}
+  \centering
+  \includegraphics{../bonds_and_battles//paper/figure/cum_btl_effects-1}
+  \caption{Cumulative effects of battles on the yield.}
+\end{figure}
 
 
 
