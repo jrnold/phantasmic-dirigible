@@ -470,7 +470,7 @@ In \textit{The Annual Report of the  Treasury} issued on December 6, 1864 the fo
 In the following year's \textit{Annual Report}, issued in December, 1865, after the conclusion of the war, the Treasury estimated a surplus of \$112 million, with expenditures of only \$396 million dollars \parencite{Treasury1865}.
 This forecast was close to what would be the actual surplus, \$132 million \parencite[2]{Treasury1866}.
 Thus, both expectations of the government military expenditures and the length of the war should have had a direct impacts on investors' expectations of the eventual debt level of the U.S. government.
-This ncreased debt would increase the possibility of default or the temptation of the government to repay its debt in currency rather than specie.
+This increased debt would increase the possibility of default or the temptation of the government to repay its debt in currency rather than specie.
 
 The future resources of the U.S. to pay off that debt also depended on the result of the war, namely, whether the seceding states would be reincorporated into the U.S. and potentially help pay for the costs incurred in the war.
 The size and wealth of the seceding Southern states was much smaller than those of the Northern and Western states.
@@ -506,7 +506,7 @@ The prices of the Confederate assets were likely primarily determined by whether
 If the U.S. bonds primarily reflected the probability of U.S. victory, then the expected trend of its prices (yields) would increase (decrease) immediately after the start of the war, and almost monotonically increase (decrease) throughout the war, or at least from mid-1863 onward.
 However, Figure~\ref{fig:fives1874_yield} shows that while the yields of U.S. government bonds fluctuate early in the war, they do not decrease over the course of the war.
 Instead, they spike in mid-1864 at a point at which U.S. victory should have been highly probable if not almost certain.
-This suggests that U.S. governmen bond yields do not primarily reflecting expectations of U.S. victory, and are, instead, reflecting some other factor, which is likely war costs.
+This suggests that U.S. government bond yields do not primarily reflecting expectations of U.S. victory, and are, instead, reflecting some other factor, which is likely war costs.
 
 Finally, the financial benefit of victory to the U.S. and the war costs are inversely related.
 The longer and more destructive the war, the less the ability of the Southern states to provide for the repayment of the debt incurred by the U.S. in fighting the war.
