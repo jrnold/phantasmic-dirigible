@@ -892,11 +892,17 @@ Figures \ref{fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, fo
 \end{table}
 
 
-\begin{figure}
-  \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "cum_btl_effects-1")}}
-  \caption{Cumulative effects of battles on the yield.}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics{\Sexpr{file.path(fig_path, "cum_btl_effects-1")}}
+%   \caption{Cumulative effects of battles on the yield.}
+% \end{figure}
+
+% \begin{figure}
+%   \centering
+%   \includegraphics{\Sexpr{file.path(fig_path, "theta_star-1")}}
+%   \caption{Estimated yields after removing the effects of battles.}
+% \end{figure}
 
 
 

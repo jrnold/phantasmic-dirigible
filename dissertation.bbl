@@ -3343,6 +3343,28 @@
       \verb http://www.annualreviews.org/doi/abs/10.1146/annurev.polisci.10.101405.135301
       \endverb
     \endentry
+    \entry{WarrenPearson1933a}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fce5f47b3be51ddfaa6442373f7a4207}{Warren}{W\bibinitperiod}{George\bibnamedelima F.}{G\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=7cd942dacf91160145c13a3c0c045067}{Pearson}{P\bibinitperiod}{Frank\bibnamedelima A.}{F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{0baed01ccd49b0b04217f118c3b139d2}
+      \strng{fullhash}{0baed01ccd49b0b04217f118c3b139d2}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1933}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Prices}
+      \field{year}{1933}
+    \endentry
     \entry{Weidenmier2002}{article}{}
       \name{author}{1}{}{%
         {{hash=bdf1619b9d494233e164d17c95671ac1}{Weidenmier}{W\bibinitperiod}{Marc\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -3574,7 +3596,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{WarrenPearson1933a}
 \endrefsection
 \endinput
 
