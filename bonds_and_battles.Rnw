@@ -79,13 +79,13 @@ These prediction markets included U.S. and other election, whether Saddam Hussei
 Unfortunately for the researcher of conflict, these prediction markets in political events are not widespread at present, and not available historically for wars.
 However, financial assets in which the cash flows or risk premia are contingent on a war outcome are effectively prediction markets for that war outcome.
 In particular, the sovereign bonds issued by the belligerents in a war are likely to be highly sensitive to war outcomes.
-These bonds will in general respond to two features of the war outcome.
+These bonds respond to two features of the war outcome.
 First, the riskiness of a belligerent's sovereign bond is a function of the expected cost of the war, since a more costly war implies a higher cost of war.
 A more costly war almost directly implies a higher debt or higher taxes that cannot be used to service existing debt leading to either a higher tax  a higher probability of default for the bond (lower price).
 Wars are also costly in more ways than just the direct government expenditures.
 The destruction of human capital, military and civilian casualties, and physical capital effects on the expected economic growth of that country, and its future resources with which to pay off the debt.%
 \footnote{See \textcite{GoldinLewis1975} for a calculation of the costs of the American Civil War.}
-Note that these expectations of the cost of war will incorporate both expectations about both the intensity of the war and its duration.
+Note that these expectations of the cost of war incorporate both expectations about both the intensity of the war and its duration.
 Second, the riskiness of a belligerent's sovereign bond is a function of whether the belligerent is expected to win or lose the war.
 Victory in war can gain the belligerent more territory and greater resources to pay off debt; a loss can mean the converse.
 In some cases, a defeat can lead to a loss of sovereignty and a default on their debt.
@@ -95,7 +95,7 @@ This was the case with the Confederate States.% TODO: cite something on loss of 
 More generally, losing states may tend to default on their debt with a higher probability \parencite{Slantchev2012a}.
 The price of a bond is some weighted function of all of these expectations about what the outcome of the war will be and how those outcomes will effect the ability of the belligerent to repay their debt.
 For some bonds, it may easy to back out the probability of a specific war outcome.
-\textcite{HaberMitchenerOosterlinckEtAl2015} focus on cases in which rebels issued bonds in civil wars (American Civil War, Chinese Civil War, and Spanish Civil War) and estimate the probability that the rebel side will win.
+\textcite{HaberMitchenerOosterlinckEtAl2015} focus on cases in which rebels issued bonds in civil wars (American Civil War, Chinese Civil War, and Spanish Civil War) and estimate the probability that the rebel side is victorious.
 % Another method is by using the prices of several assets from different sides, it may also be possible estimate expectations of victory and defeat; see \textcite{Hall2004} and \textcite{McCandless1996}.
 But it may not be possible to disentangle expectations about the cost and outcomes of the war for the belligerents.
 However, there is some advantage to the way in which financial assets weight these war outcomes.
@@ -112,7 +112,7 @@ For example, when studying the Iraq War, it would be implausible to use the inte
 It is plausible to use bonds issued by Iraq, if they had issued in 2003, because the outcome or initiation of a war with the U.S. would plausibly be the most important factor influencing them.
 This is not out of concern of confounding per se, because factors that are not correlated with the war outcome can also be a problem.
 The concern is that the signal (war outcome) to noise (other factors that cannot be controlled for) ratio of the price needs to be large for it to be plausible to use the price as a proxy for a war outcome.
-Using sovereign bonds, or most financial assets, as proxies for expectations of war outcomes will only be able to proxy for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
+Using sovereign bonds, or most financial assets, to proxy for war outcomes expectations only works for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
 This means that some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then the prices of financial assets have little to say about them.
 
 In this work, instead of prices, I use the yields to maturity of coupon bonds.
@@ -175,7 +175,7 @@ This allows researchers to conduct within-case quantitative analysis using cases
 This methodology exploits within-case variation in the expected war outcome rather than between-case variation in the observed war outcomes.
 
 Second, financial asset price changes naturally provide a measure of surprising events and new information.
-Surprising events are particularly important in informational theories of war, as only new information will affect beliefs.
+Surprising events are particularly important in informational theories of war, as only new information affects beliefs.
 However,  it is difficult \textit{ex ante} to know what was surprising to contemporaries, see \textcite{Shirkey2009a} for an attempt to code surprising events.
 Prices provide a natural measure of new information, since as discussed in Section~\ref{sec:how-prices-financial}, prices are  expectations of future events given the current information available to the market, and changes in prices correspond to changes in the news available to the market, 
 
@@ -261,7 +261,7 @@ But there may exist immediate means of combat and multiple channels by which eac
 Figure~\ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.
 In one view, resolution of private information or the commitment problem are causes of war termination.
 In another view, military combat is a cause of war termination and resolution of private information and commitment problems are mediators.
-In general, it is dificult to identify the causal effects of mediators \parencite{Keele2015a}.
+In general, it is difficult to identify the causal effects of mediators \parencite{Keele2015a}.
 
 \begin{figure}[!htpb]
   \centering
@@ -341,24 +341,32 @@ In applying international relations theory and quantitative methods to the study
 \subsection{The Fives of 1874}
 \label{sec:5s-1874}
 
-I will use the yields of long-run U.S. government bonds as a measure of the expected outcome of the American Civil War.
-While the yields of bonds of the U.S. government are almost certain to have been primarily driven by expectations of the war, they could plausibly be influenced by both expectations of U.S. victory and expectations of the cost of the war.
-However, it is likely that the cost and duration of the war is the more important of those factors.
-However, using the yield of U.S. government bonds is difficult since while the U.S. issued a large amount of debt during the American Civil War, the U.S. issued relatively little debt in the ante-bellum period.%
-\footnote{
-  After paying off the debt issued during the War of 1812, the U.S. government had no outstanding debt between 1835 and 1842 \parencite[297]{HomerSylla2005}.
-  The debt as a percentage of GDP rose from 1.9 percent in 1860, before the war, to 31.4 percent in 1866, its peak just after the war \parencites{CBO2012}{CBO2012a}.
-}
-In this work, I use the the yields of the U.S. Fives of 1874, because it is the only government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only complete time series from a single asset that spans the war.
+I use the yields of long-run U.S. government bonds as a measure of the expected outcome of the American Civil War.
+While the yields U.S. government bonds almost certainly were primarily driven by war expectations, they were plausibly influenced by both expectations of U.S. victory and expectations of war costs.
+However, it is likely that the expectations of war costs is the more prominent of those factors.
+In this work, I use the the yields of the Fives of 1874, a U.S. government coupon bond.
+It is the only U.S. government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only time series of a single asset that spans the war.
 
-The Fives of 1874 were a coupon bond issued under the authorization of the Act of June 14, 1858 to pay for a budget shortfall due to the Panic of 1857, a financial panic and recession.%
+The Fives of 1874 were a coupon bond authorized by the Act of June 14, 1858 to pay for a budget deficit due to the Panic of 1857, a financial panic and recession.%
 \footnote{
-  See \textcites[p. 76]{Bayley1882}[78--79]{DeKnight1900}[42-43]{Treasury1863}[300-301, 305]{HomerSylla2005}
+  See \textcites[p. 76]{Bayley1882}[78--79]{DeKnight1900}[42-43]{Treasury1863}[300-301, 305]{HomerSylla2005}.
 }
-As their name suggests, the Fives of 1874 were a coupon bond that paid 5 percent semi-annually on January and July, and were redeemable in 1874, meaning it had a maturity of 13--9 years during the period considered here.
-Like most U.S. government bonds, the Fives of 1874 paid interest and principal in specie (gold dollars), even after the U.S. Treasury ceased the redemption Greenbacks (U.S. non-interest bearing notes used as currency issued during the war) in gold.
-The U.S. currency floated against the gold dollar until the resumption of convertibility on January 1st, 1879 \parencites{Dewey1918}{WillardGuinnaneEtAl1996}.
-For this analysis the prices of the bonds will be converted to gold dollars at the current exchange, and the yields of the bonds calculated with the cash flows converted to gold dollars accounting for the current exchange rate and the expected depreciation of the gold dollar.%
+As their name suggests, the Fives of 1874 were a coupon bond with a coupon rate of 5 percent per-annum paid semi-annually, and redeemable in 1874.
+Thus, during the period considered here, 1861--1865, the Fives had a maturity of 13--9 years.
+Like most U.S. government bonds in this period, the Fives of 1874 paid interest and principal in specie (gold dollars).
+They continued to pay interest in specie even after the U.S. Treasury ceased the redemption of Greenbacks, U.S. non-interest bearing notes used as currency issued during the war, in gold.\footnote{
+  U.S. currency floated against the gold dollar from January 1st, 1862 until the resumption of convertibility on January 1st, 1879 \parencites{Mitchell1908}{Dewey1918}{WillardGuinnaneEtAl1996}.
+}
+
+Data on the prices of the Fives of 1874 come from tables in the two leading monthly financial magazines of the era, the \textit{Bankers' Magazine and Statistical Register} and the \textit{The Merchants' Magazine and Commercial Chronicle} \parencites[186]{Mitchell1903}.
+In these publications, and in this era, the prices, not the yields, of bonds were quoted.
+The prices were quoted in currency, and not in gold dollars, even though they paid interest in gold dollars.
+I converted the prices to gold dollars using the current exchange rate of Greenbacks to gold dollars in New York, using the \textcite{Mitchell1908} data.%
+\footnote{
+  Available in digital form at \url{http://eh.net/wp-content/uploads/2013/11/greenback.txt} from \textcite{WillardGuinnaneEtAl1996}.
+  I made some corrections to it where there were incorrect transcriptions from the original source.
+}
+The yields of the bonds were calculated by converting prices to gold dollars accounting for the current exchange rate and the expected depreciation of the gold dollar.%
 \footnote{
   Since the price of bonds was quoted in currency but it paid interest and principal in currency, calculating the yields is difficult since they also incorporated beliefs about the future prices of gold dollars \parencites[Appendix A]{Macaulay1938}{Roll1972}{Calomiris1988}[302-303]{HomerSylla2005}.
   Most bonds, including the Fives of 1874, were priced in U.S. currency but paid specie and often principal in gold dollars.
@@ -366,10 +374,16 @@ For this analysis the prices of the bonds will be converted to gold dollars at t
   This follows from an assumption that the risk free rate is constant over the period, and the gold dollar is priced as a risk-free zero-coupon bond with an unknown redemption date \cite{McCandless1996}.
   \textcite{Roll1972} and \textcite{Calomiris1988} estimate the expected depreciation of gold dollars in Greenbacks using differentials in bonds, however those methods cannot be applied to the period considered here.
 }
-As will be shown, the price and yields calculated in terms of gold dollars fluctuated dramatically throughout the war.
-Yet, the price and yield in terms of currency (after January 1, 1862 when the Greenback floated against the gold dollar, were mostly stable.%
+Calculating the price and yield in gold dollars rather than currency is a meaningful decision, because while the price and yield in gold dollars fluctuated throughout the war, the price and yield in currency were stable.%
 \footnote{See \textcite{Roll1972} for an analysis of this phenomena.}
-This suggests that investors were less worried about a complete default on payments of the bonds than that the government would redeem interest or principal payments in depreciated currency rather than in specie.
+This suggests that investors were less worried about a complete default than an implicit default in which government would redeem interest or principal payments in depreciated currency rather than specie.
+Both sources quote the bonds at irregular, but approximately weekly frequencies.
+\footnote{\textit{Bankers' Magazine}: 3--15 days, with a median of 10 days; \textit{Merchants' Magazine}: 4--23 days, with a median of 7 days.}
+For the analysis, data from these two sources are combined to form a single series.
+
+I collected and provide the raw financial data used in this work, as well as additional financial and economic from the American Civil War period in the American Civil War Era Financial Data Collection (ACWFD) \parencite{Arnold2015a}.%
+\footnote{Also available at The dataset is at \url{http://github.com/jrnold/civil_war_era_findata}.}
+This data collection contains bond prices and exchange rates published in the \textit{Bankers' Magazine} and \textit{Merchants' Magazine}, bid-level auction data for U.S. government bond auctions, and miscellaneous financial and economic data for this period from a variety of primary and secondary sources.
 
 Figures~\ref{fig:fives1874_price} and~\ref{fig:fives1874_yield} plot the price in gold dollars and the yield to maturity of the Fives of 1874.
 Prior to mid-1860, the yield of the Fives was low with little variation, fluctuating between \Sexpr{format_yields(fives1874_yield_pre_war[["min"]])} and \Sexpr{format_yields(fives1874_yield_pre_war[["max"]])} percent.%
@@ -382,44 +396,38 @@ After the initiation of the war with the Battle of Sumter (April 12--14, 1861), 
 During the war, between April 1861 and April 1865, the yield fluctuated between \Sexpr{format_yields(fives1874_yield_war[["min"]])} and \Sexpr{format_yields(fives1874_yield_war[["max"]])} percent, reaching its peak on \Sexpr{fives1874_yield_maxdate}.
 After the end of conflict in April 1865, the interest rate returned to stability at \Sexpr{format_yields(fives1874_yield_post_war[["mean"]])} percent, a rate higher than its pre-war level.
 
-Data on the prices of the Fives of 1874 come from tables in the two leading monthly financial magazines of the era, the \textit{Bankers' Magazine and Statistical Register} and the \textit{The Merchants' Magazine and Commercial Chronicle} \parencites[186]{Mitchell1903}.
-In both sources, the quoted prices were for the New York market, and prices were in currency.
-I converted Greenbacks to gold dollars using the current exchange rate in New York, using the data of \textcite{Mitchell1908}.%
+
+The Fives of 1874 were one of several bonds issued by the U.S. government during this period, but it has several advantages over other bonds for the purpose of this analysis.
+The Fives of 1874 were the only coupon bond regularly quoted for the entire war, April 1861--May 1865, in the sources considered here.
+The reason it is the only such bond, is that while the U.S. issued much debt during the Civil War, it had little debt in the antebellum period, and thus there were few outstanding bond issues at the start of the war.
 \footnote{
-  Available in digital form at \url{http://eh.net/wp-content/uploads/2013/11/greenback.txt} from \textcite{WillardGuinnaneEtAl1996}.
-  I made some corrections to it where there were incorrect transcriptions from the original source.
+  After paying off the debt issued during the War of 1812, the U.S. government had no outstanding debt between 1835 and 1842 \parencite[297]{HomerSylla2005}.
+  The debt as a percentage of GDP rose from 1.9 percent in 1860, before the war, to 31.4 percent in 1866, its peak just after the war \parencites{CBO2012}{CBO2012a}.
 }
-Both sources quote the bonds at irregular, but approximately weekly frequencies: \textit{Bankers' Magazine} (3--15 days, median of 10 days), \textit{Merchants' Magazine} (4--23 days, wit a median of 7 days).
-For the analysis, the quotes of these two series are combined into a single series.
-
-I collected and provide the raw financial data used in this work, as well as additional financial and economic from the American Civil War period in the American Civil War Era Financial Data Collection (ACWFD) \parencite{Arnold2015a}.%
-\footnote{Also available at The dataset is at \url{http://github.com/jrnold/civil_war_era_findata}.}
-This data collection contains bond prices and exchange rates published in the \textit{Bankers' Magazine} and \textit{Merchants' Magazine}, bid-level auction data for U.S. government bond auctions, and miscellaneous financial and economic data for this period from a variety of primary and secondary sources.
-
-The Fives of 1874 were one of several bonds issued by the U.S. government during this period, but it has several advantages over other bond yield series.
-The Fives of 1874 was the only coupon bond regularly quoted in the sources considered here for the entire war, April 1861 to May 1865.
-Only one other bond was widely traded at the start of the war, the Sixes of 1848--1868.
+The only other bond was widely traded at the start of the war, was the Sixes of 1868.
 However, \textit{Bankers' Magazine} stops quoting the Sixes of 1868 in September 1861.
-Another bond, the  Sixes of 1861--1881 were issued under acts in February and July 1861, but they are not regularly quoted in the \textit{Bankers' Magazine} until September 1861.
-The U.S. issued several other bonds of various durations and coupon rates throughout the war, but they provide even shorter time series.
-Additionally, in most cases these loans had relatively exotic features, such as an option to exchange for another bond series or being callable by the government, which make it difficult to calculate the yields for them.
+Another bond, the  Sixes of 1881 were issued under acts in February and July 1861, just prior to and just after the start of the war, but they are not regularly quoted in the \textit{Bankers' Magazine} until September 1861, five months after the start of the war.
+The U.S. issued several other bonds of various maturities and rates throughout the war, but they provide even shorter time series.
+In many cases these loans are exotic relative to government debt issues today.
+Some contained options to exchange the bond for other bond issues or were callable by the government. 
+Both of these make it difficult to calculate the yields for these bonds.
 \footnote{
   The 5-20's and 10-40's were bonds callable by the government after 5 (10) years and redeemable in 20 (40) years.
   The 7-30's were bonds that had coupon rates of 7.30 percent (2 cents per day), were redeemable in 3 years, but included the option to be exchanged for either the Sixes of 1881 or 5-20's.
   See \textcites{Bayley1882}{DeKnight1900}[297--309]{HomerSylla2005} for overviews of U.S. debt issues during this period.
 }
-Using the Fives of 1874 relative to other bonds should not make a substantive difference, since as Figure~\ref{fig:fives1874_union} shows, the yield to maturity of the Fives of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
-\textcites{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997} use the exchange rate between Greenbacks and gold dollars in their analyses.
-However, since the U.S. did not issue currency until after the start of the war, and did not suspend the redemption of that currency for gold until January 1, 1862, any analysis using only Greenback prices cannot cover the first eight months of the war, April--December 1861.
+Using the Fives of 1874 instead of these other bonds does not make a substantive difference, since as Figure~\ref{fig:fives1874_union} shows, the patterns of the yield to maturity of the Fives of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
+\textcites{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997} use the exchange rate of Greenbacks to gold dollars in their analyses.
+However, since the U.S. did not issue Greenbacks until after the start of the war, and did not suspend the redemption of that currency for gold until January 1, 1862, any analysis using only Greenback prices cannot cover the first eight months of the war, April--December 1861.
 This is the period which should have the highest informational content in an informational theory of war, and includes battles such as the First Battle of Bull Run, and the Battle of Wilson's Creek.%
 \footnote{\textcite{Poast2012} argues that the First Battle of Bull Run was pivotal in avoiding British recognition of the Confederate States.}
-However, as with the Fives of 1874 versus other bonds,  Figure~\ref{fig:fives1874_greenbacks} shows that the prices of the Fives of 1874 in gold dollars is similar in both level and trend as the the price of Greenbacks in gold dollars, so the choice is unlikely to change the results.
+Apart from the loss of observations, using Greenbacks instead of the Fives of 1874 would not make a substantive difference, since as Figure~\ref{fig:fives1874_greenbacks} shows, the price of Fives of 1874 in gold dollars is similar in both level and trend as the the price of Greenbacks in gold dollars.
 
 The American Civil War is an ideal case in which to use prices to infer expectations of war termination for three reasons.
 First, The war was of such severity that the nearly the entire budget of the U.S. government was war-related military spending, and thus fiscal expectations corresponded to military spending expectations. %
 For the U.S., the War and Navy Departments accounted for 76 percent (in 1862) to 61 percent (in 1865) of the expenditures.
 The fraction of the budget spent directly on the military by the Union fell over the course the war as the fraction spent on paying the principal and interest on its debt, increased from 20 (1862) to 36 (1865) percent of the budget.
-But, the overwhelming the majority of that debt had been issued to fund the war \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}.
+The overwhelming the majority of that debt had been issued to fund the war \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}, so payments on debt serving were themselves simply delayed military spending.
 As \textcite[][668]{McCandless1996} states, ``[d]uring the war, the single most important indicator of future government expenditures is the process of the war itself.''
 % INSERT FIGURE OF THE BUDGET
 
@@ -681,10 +689,10 @@ In this section, I present several models of the effects of battles on U.S. gove
 As noted in Section~\ref{sec:5s-1874}, the yields of Fives of 1874 will be used as the government bond.
 In this section I estimate four models of bond yields:
 \begin{itemize}
-\item Model 1 ($\Model{1}$): A benchmark model of the yields not including any battles.
-\item Model 2 ($\Model{2}$: Includes variables for Confederate and Union victories, but no individual battle effects.
-\item Model 3 ($\Model{3}$): In addition to variables for Confederate and Union victories, it includes random effects for individual battles.
-\item Model 4 ($\Model{4}$): Similar to $\Model{2}$, but the effect of Confederate and Union victories is smoothly varying over time.
+\item $\Model{1}$: A benchmark model of the yields not including any battles.
+\item $\Model{2}$: Includes variables for Confederate and Union victories, but no individual battle effects.
+\item $\Model{3}$: In addition to variables for Confederate and Union victories, it includes random effects for individual battles.
+\item $\Model{4}$: Similar to $\Model{2}$, but the effect of Confederate and Union victories is smoothly varying over time.
 \end{itemize}
 For these models, I compare the estimated average effects of Confederate and Union victories, the effects of individual battles, and the effect of battles on yields.
 
@@ -829,7 +837,7 @@ For models $\Model{3}$ and $\Model{4}$, I use the average of the total battle ef
 For these models, the average effect of a Union victory is $\tilde{\beta} = \frac{1}{U}\sum_{b \in U} \omega_{b}$ and the average effect of a Confederate victory is $\frac{1}{C}\sum_{b \in U} \omega_{b}$. 
 
 Table \ref{tab:avg_battle_effects} shows summary statistics for the average effects for the models including battle-effects.
-The estimated avarege effect Confederate victory on yields was positive, and the estimated average effect of Union victories was at best small.
+The estimated average effect Confederate victory on yields was positive, and the estimated average effect of Union victories was at best small.
 A Confederate victory on average is estimated to increase the yield approximately 3.6--5.3 percent, with the 95\% central credible intervals ranging between 0.036 and 0.086.
 A Union victory on average is estimated on average no or little effect on yields, decreasing the yield 0.7--1.5\%, although the 95\% central credible intervals all contain 0.
 There are two explanations for this asymmetry in effects of victories on the expected cost of the war.
@@ -878,9 +886,9 @@ Figures \ref{fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, fo
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_waic.tex")}}
   \caption{
-    Predictive criteria for each Widely Applicable Inforation Criterion (WAIC).
+    Predictive criteria for each Widely Applicable Information Criterion (WAIC).
     RMSE is the root mean squared error of each model.
-    $\text{elpd}_{\text{WAIC}}$ is the expected log posterior predictive density implied by the Widely Applicable Inforation Criterion (WAIC).
+    $\text{elpd}_{\text{WAIC}}$ is the expected log posterior predictive density implied by the Widely Applicable Information Criterion (WAIC).
   }
   \label{tab:waic}
 \end{table}
@@ -944,7 +952,7 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  WolfersZitzewitz2009 Fearon1995 Reiter2003 Powell2004
 %  LocalWords:  FilsonWerner2002 Slantchev2003 SmithStam2004 cdb90 eq
 %  LocalWords:  LeventogluSlantchev2007 LangloisLanglois2009 ACLED m1
-%  LocalWords:  WolfordReiterCarrubba2011 belligerents' ESOC US1901
+%  LocalWords:  WolfordReiterCarrubba2011 belligerents' ESOC US1901 '
 %  LocalWords:  SarkeesWayman2010 BiddleLong2004 Clodfelter2008 Fives
 %  LocalWords:  CochranLong2014 RaleighLinkeHegreEtAl2010 Reiter2009
 %  LocalWords:  Goemans2000 WillardGuinnaneEtAl1996 north2000introd
@@ -975,4 +983,6 @@ However, it seems less less problematic than the issues discussed earlier.
 %  LocalWords:  Helmbold1995 Shirkey2009a  20's 40's 30's ACWBD won''
 %  LocalWords:  ARIMAX Gelman Donelson 'hide' lost'' frac mathcal url
 %  LocalWords:  parencite 20's 40's 30's ARIMA PetrisPetroneEtAl2009
-%  LocalWords:  diff HoffmanGelman2013 VanDykPark2008a
+%  LocalWords:  diff HoffmanGelman2013 VanDykPark2008a 20's 40's 30's
+%  LocalWords:  gettysburg WarrenPearson1933a BordoRockoff1996a WAIC
+%  LocalWords:  RMSE
