@@ -1137,33 +1137,6 @@
       \verb http://books.google.com/books?id=xIRGwgW3OYUC
       \endverb
     \endentry
-    \entry{Goemans2000}{book}{}
-      \name{author}{1}{}{%
-        {{hash=d499b64b495601afba3d8879ff5f28a1}{Goemans}{G\bibinitperiod}{Hein\bibnamedelima Erich}{H\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Princeton University Press}%
-      }
-      \strng{namehash}{d499b64b495601afba3d8879ff5f28a1}
-      \strng{fullhash}{d499b64b495601afba3d8879ff5f28a1}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelyear}{2000}
-      \field{labelmonth}{10}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{What makes wars drag on and why do they end when they do? Here H. E. Goemans brings theoretical rigor and empirical depth to a long-standing question of securities studies. He explores how various government leaders assess the cost of war in terms of domestic politics and their own postwar fates. Goemans first develops the argument that two sides will wage war until both gain sufficient knowledge of the other's strengths and weaknesses so as to agree on the probable outcome of continued war. Yet the incentives that motivate leaders to then terminate war, Goemans maintains, can vary greatly depending on the type of government they represent. The author looks at democracies, dictatorships, and mixed regimes and compares the willingness among leaders to back out of wars or risk the costs of continued warfare. Democracies, according to Goemans, will prefer to withdraw quickly from a war they are not winning in order to appease the populace. Autocracies will do likewise so as not to be overthrown by their internal enemies. Mixed regimes, which are made up of several competing groups and which exclude a substantial proportion of the people from access to power, will likely see little risk in continuing a losing war in the hope of turning the tide. Goemans explores the conditions and the reasoning behind this "gamble for resurrection" as well as other strategies, using rational choice theory, statistical analysis, and detailed case studies of Germany, Britain, France, and Russia during World War I. In so doing, he offers a new perspective of the Great War that integrates domestic politics, international politics, and battlefield developments.}
-      \field{howpublished}{Paperback}
-      \field{isbn}{0691049440}
-      \field{month}{10}
-      \field{title}{War and Punishment}
-      \field{year}{2000}
-      \verb{url}
-      \verb http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20%5C&amp;path=ASIN/0691049440
-      \endverb
-      \keyw{leaders,psc572,war,wwi}
-    \endentry
     \entry{GoldinLewis1975}{article}{}
       \name{author}{2}{}{%
         {{hash=a18c02f3c78d81d8178faf1ae63981ee}{Goldin}{G\bibinitperiod}{Claudia}{C\bibinitperiod}{}{}{}{}}%
