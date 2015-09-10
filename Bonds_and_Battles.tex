@@ -9,6 +9,10 @@
 
 
 
+This paper is crap. I hate it and just want it to be done. 
+
+
+
 \section{Financial Markets and the Study of War}
 \label{sec:barg-theory-war}
 
@@ -823,6 +827,7 @@ I describe this method and its implementation in \Stan{} in more detail in Chapt
 For all models, four chains were run, and convergence assessed using multiple-chain R hat statistics and the number of effective samples, as recommended in \parencites{Stan2015a} and \textcite{GelmanCarlinSternEtAl2013a}.
 
 
+
 \subsection{Average Effects of Union and Confederate Victories}
 \label{sec:future-battles}
 
@@ -849,6 +854,7 @@ Second, the market was already expecting Union victories, so they were less surp
 That Confederate victories increased the expected cost of the war is consistent with the market expecting a Union victory in the war and discounting the possibility of Confederate victories leading to a quick peaceful resolution.
 
 
+
 \subsection{Effects of Individual Battles}
 \label{sec:indiv-effects-battl}
 
@@ -858,8 +864,10 @@ How much variation was there in the effects of battles?
 How did the  effects of Union and Confederate victories change over time?
 Which battles had the largest effect? 
 
+Figures \ref{bonds:fig:btl_effects} plots the battle effects, $\omega_{b}$, for each battle, for each model.
+Figures \ref{bonds:fig:btl_effects_ordered} plots the battle effects for model $\Model{3}$, for each battle.
+Since the battle effects in model $\Model{3}$ can be considered time-varying values of effect of Confederate and Union victories, Figures \ref{bonds:fig:btl_effects_time} plots the battle effects for Confederate and Union victories over time. 
 
-Figures \ref{bonds:fig:btl_effects_ordered} plots the battle effects, $\omega_{b}$, for only 
 
 \begin{figure}[!htpb]
   \centering
@@ -869,9 +877,6 @@ Figures \ref{bonds:fig:btl_effects_ordered} plots the battle effects, $\omega_{b
   }
   \label{bonds:fig:btl_effects}
 \end{figure}
-
-
-
 
 \begin{figure}[!htpb]
   \centering
@@ -889,7 +894,7 @@ Figures \ref{bonds:fig:btl_effects_ordered} plots the battle effects, $\omega_{b
   \caption[Battle effects for model $\Model{3}$, ordered by time]{
     Battle effects, $\omega_{b}$ for all battles for model $\Model{3}$, by battle result, and ordered by date of the battle.
   }
-  \label{bonds:fig:btl_effects_ordered}
+  \label{bonds:fig:btl_effects_time}
 \end{figure}
 
 
@@ -919,6 +924,23 @@ The average log-likelihood of points within the sample will be an optimistic est
 WAIC and other information criteria approximate the elpd by adjusting the within-sample log-likelihood with a penalty for the complexity of the model.
 See \textcites[Ch. 7]{GelmanCarlinSternEtAl2013a}{GelmanHwangVehtari2014a}{GelmanVehtari2014a} for more on Bayesian information criteria for model comparison.
 
+The within-sample RMSE of the models that include battle effects is lower than that of the benchmark model $\Model{1}$. 
+However, the decrease in within-sample RMSE is relatively small. 
+The WAIC values and elpd also show that the models with battles improve the predictive ability of the models, but that the improvement is small.
+Although models $\Model{2}$--$\Model{3}$ all improve the WAIC (lower) and elpd (higher), but the improvement is less than the standard errors in model $\Model{1}$.
+As operationalized, battles appear to improve the predictive power of the models, but that improvement is small.
+
+The relatively small magnitude of the effects of individual battles is seen in Table \ref{bonds:tab:blt_effects_size}.
+The average effect of a single Union victiory is much less than 1 standard deviation of the standard deviation of the system error $\eta$; Confederate victories are larger than than 1 sd of $\eta$, but less than 2 standard deviations.
+Consdering that there are only 43 battles, but 1469 values of $\eta_{t}$, neither of those seems particularly large.
+
+There are several interpretations for the limited explanatory power of battles in this analysis.
+First, major battles may be the key factor in war, but information diffuses slowly over time.
+Second, smaller battles and non-battle events may not be as influential as large battles, but cumulatively they may have a large influence on the war outcome.
+Finally, perhaps improvements in the models employed in this analysis would produce different results.
+Perhaps I could better model the time-series processes, or lag structure of battles, or operationalize combat differently.
+While I could make the models in this analysis more complicated, a better approach to distinguish between these interpretations is not more better models, but better data.
+I conclude by discussing one such approach in Section \ref{sec:conclusion}.
 
 \begin{table}[!htpb]
   \centering
@@ -927,20 +949,18 @@ See \textcites[Ch. 7]{GelmanCarlinSternEtAl2013a}{GelmanHwangVehtari2014a}{Gelma
     Model comparisons for each model.
     RMSE is the root mean squared error of each model.
     $\text{elpd}_{\text{WAIC}}$ is the expected log predictive density implied by the Widely Applicable Information Criterion (WAIC).
+    The standard errors for WAIC and $\text{elpd}_{\text{WAIC}}$ are calculated as in \textcite{GelmanVehtari2014a}.
   }
   \label{bonds:tab:waic}
 \end{table}
 
-Another way 
-
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
-  \caption{Size of average battle effect compared to the average innovation}
+  \caption{Size of average battle effect compared to the average innovation.}
+  \label{bonds:tab:blt_effects_size}
 \end{table}
 
-
-The takeaway from 
 
 % \begin{figure}
 %   \centering
@@ -955,29 +975,25 @@ The takeaway from
 % \end{figure}
 
 
-
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-
 I conclude with some thoughts on future directions of this research.
-There are several methodological issues that this analysis had to confront: (1) ``When did the market receive information about battles?'', (2) ``What information about battles did it receive?'', and (3) ``What other non-battle information did it receive?''.
-In this analysis, I handled the information about battles by choosing a set of important battles and their results, both of which were coded \textit{ex post} by historians,  with the assumption that these would be a noisy measure of the the market had observe.
-I handled when the market received information about battles with data, the day on which the battle was first reported in newspapers, and modeling choices, by including lagged terms.
-I handled other non-battle information only by using robust fat-tailed distributions in the analysis, and not through gathering other data.
-The reason for this was that coding indicators for alternative events is difficult to do in a non-arbitrary manner.
-The models presented in this work could all be improved to better account for these, but that would increase model complexity.
-Rather than complicate the model, it is better to get better data.
-
-Directly using the text of contemporary newspapers as data would simultaneously address all of the methodological issues raised in the previous paragraph.
-A rough sketch of the analysis would be to estimate topics from the text and regress those topics on market movements.
-What information the market received about battles would correspond to battle-related topics inferred from the articles themselves.
-When the market received information is simply the days on which those topics appeared in newspapers.
-Finally, the non-war related topics provide control variables without having to explicitly specify a set of variables.
-The importance of events relative to other events is identified through their prominence in the newspapers, \eg{}if the front page is about a battle, then it is probably the news that is moving the market, whereas if the frontage is about the passage of a law or the economy, then that is probably the more important news.
-Nor is this approach completely at odds with the type of analysis conducted in this work which uses expert-coded events; that additional information could be included in semi-supervised methods, \eg{}structured topic modeling CITE.
-One important caveat, is that this makes the assumption that the newspaper articles sufficiently reflects the information available to the market.
-However, it seems less less problematic than the issues discussed earlier.
+There are several methodological issues that this analysis had to confront and are still problematic.
+They are ``What information about battles did it receive?'', ``When did the market receive information about battles?'', and ``What other non-battle information did it receive?''
+In this analysis, I handled the information about battles by choosing a set of important battles and their results, both of which were coded \textit{ex post}.
+The assumption was that contemporaries would have also seen these as the most important battles, and that they would classify the results of the battles similarly to how it was coded in the data.
+As a measure of when the market received information about battles with data I used the day on which the battle was first reported in newspapers and an arbitrary number of days as an additional lag.
+As for non-battle information that would be important to the market, I had no data on this, and modeled it with robust fat-tailed distributions in the analysis.
+A means to improve on this methodology was previewed by the way in which I handled when news reached the market: I consulted newspapers to determine when information was known.
+But newspapers can also be used to determine what other events were of importance, and what features of the battles were known to contemporaries.
+A rough sketch of the analysis would be to use compuational natural language processing tools to extract topics from contemporary newspapers and regress those topics on market movements.
+What information the market received about battles would correspond to battle-related topics inferred from the newspaper articles.
+When the market received information woudl be the days on which those topics appeared in newspapers.
+The non-war events of importance would correspond to non-battles topics appearing in the newspapers.
+This would provide a set of control variables without me needing to make arbitrary decisions about which events were important.
+But this approach completely at odds with the type of analysis conducted in this work which uses expert-coded events; that additional information could be included in semi-supervised methods.
+This sort of analysis, which combines natural language processing to understand market movements seems a promising approach to understanding the effects of combat on war outcomes where the events are not always either clearly identified or discrete. 
 
 
 %%% Local Variables:
