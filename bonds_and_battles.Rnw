@@ -829,7 +829,7 @@ The rate of consols is inappropriate for this analysis because that risk free in
 Additionally, during the war there was the possibility that the United Kingdom would enter the war, so the rate of consols may have also incorporated war expectations.
 
 All models are estimated using MCMC methods to sample from the posterior distribution.
-Samples are drawn using the NUTS-HMC algorithm \parencite{HoffmanGelman2013} as implemented in the probabilistic programming language, \Stan{} \parencites{Stan2015a}.
+Samples are drawn using the NUTS-HMC algorithm \parencite{HoffmanGelman2014a} as implemented in the probabilistic programming language, \Stan{} \parencites{Stan2015a}.
 I found that the sampling efficiency could be improved in estimating state space models, such as those estimated here, by a two step method.
 In the first step, I marginalize over the latent states of the state space model ($y^{*}$ in this case) and use HMC-NUTS to sample the other parameters.
 In the second step, given the values of the parameters, I use the forward-filter backwards-sample algorithm  to sample the latent states.
@@ -853,7 +853,7 @@ For these models, the first question to ask is what is the average effect of a C
 The average effect of a Confederate (Union) victory, $\tilde{\beta}_{C}$ ($\tilde{\beta}_{U}$), is defined slightly differently for the models.
 For model $\Model{2}$, the average effect of a Union victory is the parameter $\beta_{U}$, and the average effect of a Confederate victory is the parameter $\beta_{C}$. 
 For models $\Model{3}$ and $\Model{4}$, the average effect is the average of the battle effects.
-For these models, the average effect of a Confederate victory is $\tilde{\beta}_{C} = \frac{1}{C}\sum_{b \in C} \omega_{b}$ and the average effect of a Union victory is $\tilde{\beta}\ = frac{1}{C}\sum_{b \in U} \omega_{b}$.
+For these models, the average effect of a Confederate victory is $\tilde{\beta}_{C} = \frac{1}{C}\sum_{b \in C} \omega_{b}$ and the average effect of a Union victory is $\tilde{\beta}_{U} = \frac{1}{U}\sum_{b \in U} \omega_{b}$.
 
 Table \ref{tab:avg_battle_effects} shows summary statistics for the average effects for the models including battle-effects.
 The estimated average effect Confederate victory on yields was positive, and the estimated average effect of Union victories was at best small.
@@ -891,12 +891,12 @@ The key feature
 The next largest effect, is the Confederate victory The Battle of Gaine's Mill was a Confederate victory in the Seven Day's battles. 
 The Seven Day's battles were a series of battles in the Peninsula Campaign, in which U.S.\ forces commanded by General McClellan moved to almost within artillery distance of Richmond, before Confederate forces commanded by General Robert E.\ Lee.
 \footnote{
-  ``[The Peninsula Campaign] campaign was certainly one of [the Civil War's] most important [campaigns], because, in spite of numerous blunders, the Army of Northern Virginia, under the guidance of Lee, aved Richmond. Had Richmond fallen into Federal hands, the whole course of the war would ahve been changed \parencite[206]{Fuller1942a}.''
+  ``[The Peninsula Campaign] campaign was certainly one of [the Civil War's] most important [campaigns], because, in spite of numerous blunders, the Army of Northern Virginia, under the guidance of Lee, saved Richmond. Had Richmond fallen into Federal hands, the whole course of the war would have been changed \parencite[206]{Fuller1942a}.''
 }
 
 The estimates of the Union battles are generally smaller and all the 95 percent central credible intervals contain zero.
 However, the results are plausible in that the battles of Gettysburg (July 1--3, 1863) and Vicksburg (July 4, 1863) are estimated as among the largest battle effects.
-This is despite these two battles occuring almost simultaneously, which makes it hard to disentangle their effects.
+This is despite these two battles occurring almost simultaneously, which makes it hard to disentangle their effects.
 
 The Battle of Second Fort Fisher:
 
@@ -938,7 +938,7 @@ If the yield movements are taken as a proxy, this is equivalent to asking: how w
 
 To answer this, I compare the models using within-sample root mean squared error (RMSE) and the WAIC, which approximates the expected log predictive density similar.
 Table \ref{tab:waic} shows the RMSE, WAIC, and expected log predictive density (elpd) of all the models.
-The Widely Appplicable Information Criterion (WAIC) \parencite{Watanabe2010} is an information criteria similar to AIC or the Deviance Information Criterion (DIC).
+The Widely Applicable Information Criterion (WAIC) \parencite{Watanabe2010} is an information criteria similar to AIC or the Deviance Information Criterion (DIC).
 Unlike either AIC or DIC is it fully Bayesian, and is calculated by integrating over the posterior distribution rather than using point estimates.
 The expected log predictive density (elpd) is the expected log probability of a new data point integrated over the distribution of new data points.
 The average log-likelihood of points within the sample will be an optimistic estimate of the elpd. 
@@ -953,8 +953,8 @@ Although models $\Model{2}$--$\Model{3}$ all improve the WAIC (lower) and elpd (
 As operationalized, battles appear to improve the predictive power of the model of bond yields, but that improvement is small.
 
 The relatively small magnitude of the effects of individual battles is seen in Table \ref{tab:blt_effects_size}.
-The average effect of a single Union victiory is much less than 1 standard deviation of the standard deviation of the system error $\eta$; Confederate victories are larger than than 1 sd of $\eta$, but less than 2 standard deviations.
-Consdering that there are only \Sexpr{nrow(major_battles)} battles, but \Sexpr{as.integer(data_m2[["END_DATE"]] - data_m2[["START_DATE"]]) + 1L} values of $\eta_{t}$, neither of those seems particularly large.
+The average effect of a single Union victory is much less than 1 standard deviation of the standard deviation of the system error $\eta$; Confederate victories are larger than than 1 sd of $\eta$, but less than 2 standard deviations.
+Considering that there are only \Sexpr{nrow(major_battles)} battles, but \Sexpr{as.integer(data_m2[["END_DATE"]] - data_m2[["START_DATE"]]) + 1L} values of $\eta_{t}$, neither of those seems particularly large.
 
 There are several interpretations for the limited explanatory power of battles in this analysis.
 First, major battles may be the key factor in war, but information diffuses slowly over time.
@@ -1009,9 +1009,9 @@ As a measure of when the market received information about battles with data I u
 As for non-battle information that would be important to the market, I had no data on this, and modeled it with robust fat-tailed distributions in the analysis.
 A means to improve on this methodology was previewed by the way in which I handled when news reached the market: I consulted newspapers to determine when information was known.
 But newspapers can also be used to determine what other events were of importance, and what features of the battles were known to contemporaries.
-A rough sketch of the analysis would be to use compuational natural language processing tools to extract topics from contemporary newspapers and regress those topics on market movements.
+A rough sketch of the analysis would be to use computational natural language processing tools to extract topics from contemporary newspapers and regress those topics on market movements.
 What information the market received about battles would correspond to battle-related topics inferred from the newspaper articles.
-When the market received information woudl be the days on which those topics appeared in newspapers.
+When the market received information would be the days on which those topics appeared in newspapers.
 The non-war events of importance would correspond to non-battles topics appearing in the newspapers.
 This would provide a set of control variables without me needing to make arbitrary decisions about which events were important.
 But this approach completely at odds with the type of analysis conducted in this work which uses expert-coded events; that additional information could be included in semi-supervised methods.
@@ -1063,6 +1063,8 @@ This sort of analysis, which combines natural language processing to understand 
 %  LocalWords:  Helmbold1995 Shirkey2009a  20's 40's 30's ACWBD won''
 %  LocalWords:  ARIMAX Gelman Donelson 'hide' lost'' frac mathcal url
 %  LocalWords:  parencite 20's 40's 30's ARIMA PetrisPetroneEtAl2009
-%  LocalWords:  diff HoffmanGelman2013 VanDykPark2008a 20's 40's 30's
+%  LocalWords:  diff VanDykPark2008a 20's 40's 30's Martin1871 elpd
 %  LocalWords:  gettysburg WarrenPearson1933a BordoRockoff1996a WAIC
-%  LocalWords:  RMSE Martin1886 GelmanCarlinSternEtAl2013a
+%  LocalWords:  RMSE Martin1886 GelmanCarlinSternEtAl2013a Gaine's sd
+%  LocalWords:  HoffmanGelman2014a Fuller1942a Watanabe2010 AIC DIC
+%  LocalWords:  GelmanHwangVehtari2014a GelmanVehtari2014a 1L
