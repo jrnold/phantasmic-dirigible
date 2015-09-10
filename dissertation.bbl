@@ -979,6 +979,27 @@
       \field{pages}{187\bibrangedash 191}
       \range{pages}{5}
     \endentry
+    \entry{Fuller1942a}{book}{}
+      \name{author}{1}{}{%
+        {{hash=225d66697dc007ae01bd8e942227995d}{Fuller}{F\bibinitperiod}{J.\bibnamedelimi F.\bibnamedelimi C.}{J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Thomas Yoseloff}%
+      }
+      \strng{namehash}{225d66697dc007ae01bd8e942227995d}
+      \strng{fullhash}{225d66697dc007ae01bd8e942227995d}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1942}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Decisive Battles of the {U.S.A.}}
+      \field{year}{1942}
+    \endentry
     \entry{Fuller1956a}{book}{}
       \name{author}{1}{}{%
         {{hash=225d66697dc007ae01bd8e942227995d}{Fuller}{F\bibinitperiod}{J.\bibnamedelimi F.\bibnamedelimi C.}{J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
@@ -1466,23 +1487,6 @@
       \verb http://handle.dtic.mil/100.2/ADB086797
       \endverb
       \keyw{*MILITARY OPERATIONS,*HISTORY,*BATTLES,*TACTICAL WARFARE,*FACTOR ANALYSIS,COMBAT EFFECTIVENESS,MILITARY REQUIREMENTS,MATERIALS,MILITARY RESEARCH,CASUALTIES,MILITARY FORCE LEVELS,TACTICAL DATA SYSTEMS.}
-    \endentry
-    \entry{HoffmanGelman2013}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a922cd4d9e8a007dcbb79cbc3dcd9a96}{Hoffman}{H\bibinitperiod}{Matthew\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{6d2817f79dd2c7ac6ea748ab4a8ac953}
-      \strng{fullhash}{6d2817f79dd2c7ac6ea748ab4a8ac953}
-      \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
-      \field{labelyear}{In press}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Machine Learning Research}
-      \field{title}{The No-{U}-Turn Sampler: Adaptively Setting Path Lengths in {H}amiltonian {M}onte {C}arlo}
-      \field{year}{In press}
     \endentry
     \entry{HomansDana1861a}{book}{}
       \name{author}{2}{}{%
@@ -3710,6 +3714,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{HoffmanGelman2013}
 \endrefsection
 \endinput
 

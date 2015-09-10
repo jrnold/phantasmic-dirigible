@@ -861,8 +861,11 @@ A Confederate victory on average is estimated to increase the yield approximatel
 A Union victory on average is estimated on average no or little effect on yields, decreasing the yield 0.7--1.5\%, although the 95\% central credible intervals all contain 0.
 There are two explanations for this asymmetry in effects of victories on the expected cost of the war.
 First, individual Union victories had a smaller effect on the overall cost and duration of the war than Confederate victories.
+This is because the strategic situation of the war was asymmetric. 
+As military historian, J.F.C. Fuller described it, ``to reestablish the Union, the North must conquer the South, and to maintain the Confederacy and all it stood for, the South must resist invasion \parencite[177]{Fuller1942a}.'' 
+Since the U.S. had to win victories and take terroritory, while the Confederacy had to delay and resist implies a differential value of Union and Confederate victories.
 Second, the market was already expecting Union victories, so they were less surprising than Confederate victories.
-That Confederate victories increased the expected cost of the war is consistent with the market expecting a Union victory in the war and discounting the possibility of Confederate victories leading to a quick peaceful resolution.
+That Confederate victories increased the expected cost of the war is consistent with the market expecting a Union victory in the war and discounting the possibility of Confederate victories leading to a quick peaceful resolution. 
 
 
 
@@ -878,7 +881,24 @@ Which battles had the largest effect?
 Figures \ref{fig:btl_effects} plots the battle effects, $\omega_{b}$, for each battle, for each model.
 Figures \ref{fig:btl_effects_ordered} plots the battle effects for model $\Model{3}$, for each battle.
 Since the battle effects in model $\Model{3}$ can be considered time-varying values of effect of Confederate and Union victories, Figures \ref{fig:btl_effects_time} plots the battle effects for Confederate and Union victories over time. 
+The first overall takeaway of the models is that it is difficult to get precise estimates; in Figures \ref{fig:btl_effects_ordered}, most battles have 95 percent credible intervals which include zero
 
+The battles with the largest effects are Confederate victories in the summer of 1864 in the Overland Campaign (Spotsylvania Courthouse, Cold Harbor) and the start of the Richmond-Petersburg Campaign (Second Petersburg).
+In Spotsylvania Courthouse () and Cold Harbor (), the U.S. forces suffered large casualties advancing towards Richmond.
+In the of Battle of Second Petersburg, the U.S. failed to take Richmond, and this began the Siege of Petersburg which would last from June 1864 until March 1865.
+The key feature 
+
+The next largest effect, is the Confederate victory The Battle of Gaine's Mill was a Confederate victory in the Seven Day's battles. 
+The Seven Day's battles were a series of battles in the Peninsula Campaign, in which U.S.\ forces commanded by General McClellan moved to almost within artillery distance of Richmond, before Confederate forces commanded by General Robert E.\ Lee.
+\footnote{
+  ``[The Peninsula Campaign] campaign was certainly one of [the Civil War's] most important [campaigns], because, in spite of numerous blunders, the Army of Northern Virginia, under the guidance of Lee, aved Richmond. Had Richmond fallen into Federal hands, the whole course of the war would ahve been changed \parencite[206]{Fuller1942a}.''
+}
+
+The estimates of the Union battles are generally smaller and all the 95 percent central credible intervals contain zero.
+However, the results are plausible in that the battles of Gettysburg (July 1--3, 1863) and Vicksburg (July 4, 1863) are estimated as among the largest battle effects.
+This is despite these two battles occuring almost simultaneously, which makes it hard to disentangle their effects.
+
+The Battle of Second Fort Fisher:
 
 \begin{figure}[!htpb]
   \centering
@@ -903,21 +923,11 @@ Since the battle effects in model $\Model{3}$ can be considered time-varying val
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects_time-1")}}  
   \caption[Battle effects for model $\Model{3}$, ordered by time]{
-    Battle effects, $\omega_{b}$ for all battles for model $\Model{3}$, by battle result, and ordered by date of the battle.
+    Battle effects, $\omega_{b}$ for all battles for model $\Model{4}$, by battle result, ordered by date of the battle.
   }
   \label{fig:btl_effects_time}
 \end{figure}
 
-
-Spotsylvania Court House, Second Petersburg, Cold Harbor
-
-Gaine's Mill
-
-Gettysburg and Vicksburg.
-
-Second Fort Fisher: 
-
-Note on Antietam.
 
 
 \subsection{Overall Effects of Battles on Yields}
