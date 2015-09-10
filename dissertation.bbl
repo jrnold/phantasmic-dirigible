@@ -1114,6 +1114,95 @@
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=164705&fulltextType=RA&fileId=S0020818301441361
       \endverb
     \endentry
+    \entry{GelmanCarlinSternEtAl2013a}{book}{}
+      \name{author}{6}{uniquelist=2}{%
+        {{hash=e68d7eadc431bf1d12612ed40d111dfc}{Gelman}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c8d24b5a277ac5a5c6e86eec576df682}{Carlin}{C\bibinitperiod}{J.B.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=71dcfbe447451cbe09fb5f68488b1be4}{Stern}{S\bibinitperiod}{H.S.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=0522db6a40bd3ab084c326176a0dfbe8}{Dunson}{D\bibinitperiod}{D.B.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d7430571d08ba8fa149a8420adb0556d}{Vehtari}{V\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e194f141e239af8d70e3a96d0d5d9daf}{Rubin}{R\bibinitperiod}{D.B.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{00bcf44b2e5b686d72797c0867f05c31}
+      \strng{fullhash}{dd4cfe0d92614370dd0ceb6cbf18808e}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{9781439840955}
+      \field{series}{Chapman \& Hall/CRC Texts in Statistical Science}
+      \field{title}{Bayesian Data Analysis}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://books.google.com/books?id=ZXL6AQAAQBAJ
+      \endverb
+    \endentry
+    \entry{GelmanHwangVehtari2014a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=57f3f25f58a60f557d446fcf3a27d81b}{Hwang}{H\bibinitperiod}{Jessica}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=5d36e97683cbc9d6ef06fc2ec40becb0}{Vehtari}{V\bibinitperiod}{Aki}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{fullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-3174}
+      \field{journaltitle}{Statistics and Computing}
+      \field{number}{6}
+      \field{title}{Understanding predictive information criteria for Bayesian models}
+      \field{volume}{24}
+      \field{year}{2014}
+      \field{pages}{997\bibrangedash 1016}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11222-013-9416-2
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s11222-013-9416-2
+      \endverb
+      \keyw{AIC; DIC; WAIC; Cross-validation; Prediction; Bayes}
+    \endentry
+    \entry{GelmanVehtari2014a}{unpublished}{}
+      \name{author}{2}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=da4a7e4af8d36b02280e182b219ea767}{Vehtari}{V\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{879b39e2c5bd66d57dcc7590e3e7a546}
+      \strng{fullhash}{879b39e2c5bd66d57dcc7590e3e7a546}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2014}
+      \field{labelmonth}{05}
+      \field{labelday}{31}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{05}
+      \field{title}{{WAIC} and Cross-validation in {STAN}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.stat.columbia.edu/~gelman/research/unpublished/waic_stan.pdf
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'GelmanVehtari2014a'}
+    \endentry
     \entry{Godfrey1976}{book}{}
       \name{author}{1}{}{%
         {{hash=5f07b46c88f90e755a40487c66f1fc77}{Godfrey}{G\bibinitperiod}{J.M.}{J\bibinitperiod}{}{}{}{}}%
@@ -3364,6 +3453,31 @@
       \field{labeltitlesource}{title}
       \field{title}{Prices}
       \field{year}{1933}
+    \endentry
+    \entry{Watanabe2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=694d8eefd6fa0a758e78712b528356d7}{Watanabe}{W\bibinitperiod}{Sumio}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{694d8eefd6fa0a758e78712b528356d7}
+      \strng{fullhash}{694d8eefd6fa0a758e78712b528356d7}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2010}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In regular statistical models, the leave-one-out cross-validation is asymptotically equivalent to the Akaike information criterion. However, since many learning machines are singular statistical models, the asymptotic behavior of the cross-validation remains unknown. In previous studies, we established the singular learning theory and proposed a widely applicable information criterion, the expectation value of which is asymptotically equal to the average Bayes generalization loss. In the present paper, we theoretically compare the Bayes cross-validation loss and the widely applicable information criterion and prove two theorems. First, the Bayes cross-validation loss is asymptotically equivalent to the widely applicable information criterion as a random variable. Therefore, model selection and hyperparameter optimization using these two values are asymptotically equivalent. Second, the sum of the Bayes generalization error and the Bayes cross-validation error is asymptotically equal to 2 λ/n, where λ is the real log canonical threshold and n is the number of training samples. Therefore the relation between the cross-validation error and the generalization error is determined by the algebraic geometrical structure of a learning machine. We also clarify that the deviance information criteria are diﬀerent from the Bayes cross-validation and the widely applicable information criterion.}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{month}{12}
+      \field{title}{Asymptotic Equivalence of Bayes Cross Validation and Widely Applicable Information Criterion in Singular Learning Theory}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{3571\bibrangedash 3594}
+      \range{pages}{24}
+      \verb{url}
+      \verb http://www.jmlr.org/papers/v11/watanabe10a.html
+      \endverb
     \endentry
     \entry{Weidenmier2002}{article}{}
       \name{author}{1}{}{%
