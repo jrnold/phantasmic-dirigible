@@ -1029,22 +1029,22 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-I conclude with some thoughts on future directions of this research.
+I conclude with some thoughts on future directions for this research.
 There are several methodological issues that this analysis had to confront.
 They are ``What information about battles did the market receive?'', ``When did the market receive that information?'', and ``What other non-battle information did the market receive?''
-In this work, I handled the the first question by assuming only a small set of battles were important enough to consider, and that the market only reacted to the results (Union or Confederate victory) of those battles.
-The assumption was that contemporaries would have also seen these as the most important battles, and that they would classify the results of the battles similarly to how it was coded in the data.
-As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers and an additional lag.
-As for the non-battle information that would be important to the market, I had no data on this, and modeled it with a fat-tailed distribution in the error term.
-A means to improve on this methodology was previewed by the way in which I handled when news reached the market: I consulted newspapers to determine when information was known.
-The way in which I used newspaper data to identify when the market received information about the battles could be extended to answer all three questions.
+In this work, I handled the the first by assuming that only a small set of battles were important to have any effect, and that the market only cared about the results (Union or Confederate victory) of those battles.
+The assumption was that contemporaries would have also seen these battles as the most important battles, and that they would classify the results of battles similarly to how they were coded in the data.
+As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers and a lag.
+For the non-battle information that would be important to the market, I had no data on this, and modeled it with a fat-tailed distribution in the error term.
+A means to improve on this methodology is suggested by the way in which I handled the problem when news reached the market: I consulted contemporary newspapers to determine when information was reported publicly.
+The way in which I used newspaper data to identify when the market received information about the battles could be extended to address all three questions.
 A rough sketch of the analysis would be to use computational natural language processing tools, \eg{}topic models, to extract events or topics from the text of contemporary newspapers and regress those topics on market movements.
 The information that the market received about battles would correspond to battle-related topics inferred from the newspaper articles.
-When the market received that information would be simply be the days on which those topics appeared in newspapers.
-The same method  would also provide non-battle events via topics that do not correspond to battles or combat.
-This approach would provide a set of control variables for non-battle events without a researcher needing to make arbitrary decisions about which events were important.
-However, this approach is not completely at odds with expert-coded events; that additional information could be included in semi-supervised methods.
-This sort of analysis, which combines natural language processing to understand market movements seems a promising approach to understanding the effects of combat on war outcomes where the events are not always either clearly identified or discrete. 
+When the market received that information would simply be the days on which those topics appeared in newspapers.
+The same method would also provide non-battle events.
+These would be the topics that do not correspond to battles or combat.
+This approach would provide a set of control variables for non-battle events, without the researcher needing to make arbitrary decisions about which events were important.
+This sort of analysis, which combines natural language processing to generate events with market movements as measures of war expectations seems a promising approach to understanding the effects of combat on war outcomes where the events are not always either clearly identified or discrete. 
 
 
 %%% Local Variables:
