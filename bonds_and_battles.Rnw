@@ -336,8 +336,9 @@ A better understanding of the the military combat process in war may have differ
 \section{Why The American Civil War?}
 \label{sec:why-american-civil}
 
-The American Civil War is a war with plentiful, and high quality battle-level data, and in which there are financial assets which proxy expected war outcomes well.
-In terms of its battle data, the American Civil War is one of the best documented wars, so quality battle-level is available.%
+The American Civil War has two features that make it particularly suited for this analysis.
+It is a war with plentiful, and high quality battle-level data, and in which there are financial assets which proxy expected war outcomes well.
+In terms of its battle data, the American Civil War is one of the best documented wars, and the battle data for it is discussed in Section \ref{sec:battle-data}.
 \footnote{%
   For example, \textit{The Official Records of the Union and  Confederate Armies} \parencites{US1901}, published between 1880 and 1901, consists of 128 books in 70 volumes totaling 139 thousand pages.
 
@@ -346,11 +347,11 @@ In Section~\ref{sec:why-prices-study}, I discuss why financial assets issued by 
 
 Like any case, its generalizability is limited by its similarity to other observations.
 But despite its age, the American Civil War has several similarities to contemporary civil wars.
-First, the American Civil War is, if not the first modern war, a wars in the transition to modern warfare.
+First, the American Civil War is, if not the first modern war, a that marked the transition to modern warfare.
 This war introduced several of the technologies which came to prominence in World War I and later wars: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89][]{Fuller1956a}[760]{Weiss1966}.
-Second, the American Civil War was primarily a conventional war.
+Second, the American Civil War is primarily a conventional war.
 This places it in the plurality of post-Cold War civil wars, which are more often conventional wars than insurgencies \parencite[423]{kalyvas2010inter}. %
-Finally, by the Civil War was U.S. was industrializing and the purchasing power parity adjusted GDP per capita of the U.S. and Confederate States in 1860 would classify them them as lower-middle income countries today.%
+Finally, by the Civil War was U.S. was wealthy enough that the power parity adjusted GDP per capita of the U.S. and Confederate States in 1860 would classify them them as lower-middle income countries today.%
 \footnote{%
   The GDP per capita of the US in 1860 was \$2,241 in 1990 GK international dollars. %
   In 2010, Cambodia had a GDP per capita of \$2,450, Pakistan \$2,494, and Ghana \$1,922 \parencite{BoltZanden2013}. %
@@ -367,7 +368,7 @@ But, given the voluminous literature on the subject, it is surprisingly understu
 First, the international relations literature has largely ignored this conflict.
 While the inter-state war literature considers it a civil war, and the civil war literature focuses on the post-1945 era \parencites[140-141]{Reiter2009}[2]{Poast2012}. %
 Exceptions to this are \textcite{Reiter2009} and \textcite{Poast2012}.
-Second, almost none of the existing work on the American Civil War conflict, including the few examples in international relations, use quantitative methodologies. %
+Second, almost none of the existing work on the American Civil War conflict, including the few examples in international relations, use quantitative methodologies.%
 \footnote{\textcite{Weiss1966} for an example from operations research.}
 In applying international relations theory and quantitative methods to the study of this war, this work contributes a droplet to the ocean that is the literature on the American Civil War.
 
@@ -382,8 +383,8 @@ In applying international relations theory and quantitative methods to the study
 \label{sec:5s-1874}
 
 I use the yields of long-run U.S. government bonds as a measure of the expected outcome of the American Civil War.
-While the yields U.S. government bonds almost certainly were primarily driven by war expectations, they were plausibly influenced by both expectations of U.S. victory and expectations of war costs.
-However, it is likely that the expectations of war costs is the more prominent of those factors.
+While the yields U.S. government bonds were almost certainly primarily driven by war expectations, they were plausibly influenced by both expectations of U.S. victory and expectations of war costs.
+However, it is likely that expectations of war costs is the more prominent of these two factors.
 In this work, I use the the yields of the Fives of 1874, a U.S. government coupon bond.
 It is the only U.S. government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only time series of a single asset that spans the war.
 
@@ -393,13 +394,17 @@ The Fives of 1874 were a coupon bond authorized by the Act of June 14, 1858 to p
 }
 As their name suggests, the Fives of 1874 were a coupon bond with a coupon rate of 5 percent per-annum paid semi-annually, and redeemable in 1874.
 Thus, during the period considered here, 1861--1865, the Fives had a maturity of 13--9 years.
-Like most U.S. government bonds in this period, the Fives of 1874 paid interest and principal in specie (gold dollars).
-They continued to pay interest in specie even after the U.S. Treasury ceased the redemption of Greenbacks, U.S. non-interest bearing notes used as currency issued during the war, in gold.\footnote{
-  U.S. currency floated against the gold dollar from January 1st, 1862 until the resumption of convertibility on January 1st, 1879 \parencites{Mitchell1908}{Dewey1918}{WillardGuinnaneEtAl1996}.
+Like most U.S. government bonds of this period, the Fives of 1874 paid interest and principal in specie (gold dollars).
+They continued to pay interest in specie even after the U.S. Treasury ceased the redemption of Greenbacks (currency) in gold.%
+\footnote{
+Greenback refers to serveral non-interest bearing notes issued by the U.S. as the currency during the war.
+Greenbacks were originally redeemable in gold dollars at par on demand. 
+However, the Treasury ceased redemption of these notes for gold on January 1st, 1862.
+U.S. currency floated against the gold dollar from January 1st, 1862 until the resumption of convertibility on January 1st, 1879 \parencites{Mitchell1908}{Dewey1918}{WillardGuinnaneEtAl1996}.
 }
 
 Data on the prices of the Fives of 1874 come from tables in the two leading monthly financial magazines of the era, the \textit{Bankers' Magazine and Statistical Register} and the \textit{The Merchants' Magazine and Commercial Chronicle} \parencites[186]{Mitchell1903}.
-In these publications, and in this era, the prices, not the yields, of bonds were quoted.
+In these publications the prices of bonds, not their yields, were quoted.
 The prices were quoted in currency, and not in gold dollars, even though they paid interest in gold dollars.
 I converted the prices to gold dollars using the current exchange rate of Greenbacks to gold dollars in New York, using the \textcite{Mitchell1908} data.%
 \footnote{
@@ -421,12 +426,12 @@ Both sources quote the bonds at irregular, but approximately weekly frequencies.
 \footnote{\textit{Bankers' Magazine}: 3--15 days, with a median of 10 days; \textit{Merchants' Magazine}: 4--23 days, with a median of 7 days.}
 For the analysis, data from these two sources are combined to form a single series.
 
-I collected and provide the raw financial data used in this work, as well as additional financial and economic from the American Civil War period in the American Civil War Era Financial Data Collection (ACWFD) \parencite{Arnold2015a}.%
+I collected and provide the financial data used in this work, as well as additional financial and economic from the American Civil War period in the American Civil War Era Financial Data Collection (ACWFD) \parencite{Arnold2015a}.%
 \footnote{Also available at The dataset is at \url{http://github.com/jrnold/civil_war_era_findata}.}
 This data collection contains bond prices and exchange rates published in the \textit{Bankers' Magazine} and \textit{Merchants' Magazine}, bid-level auction data for U.S. government bond auctions, and miscellaneous financial and economic data for this period from a variety of primary and secondary sources.
 
 Figures~\ref{fig:fives1874_price} and~\ref{fig:fives1874_yield} plot the price in gold dollars and the yield to maturity of the Fives of 1874.
-Prior to mid-1860, the yield of the Fives was low with little variation, fluctuating between \Sexpr{format_yields(fives1874_yield_pre_war[["min"]])} and \Sexpr{format_yields(fives1874_yield_pre_war[["max"]])} percent.%
+Prior to mid-1860, the yield was low with little variation, fluctuating between \Sexpr{format_yields(fives1874_yield_pre_war[["min"]])} and \Sexpr{format_yields(fives1874_yield_pre_war[["max"]])} percent.%
 \footnote{
   This is actually below was generally considered risk-free rate in the U.S. for that period, 5 percent, which \textcite[29]{Elder1863} calls the ``natural rate of interest on [government] Loans''.
   During this period British 3 percent consols had a yield of between of 3.10 and 3.28 \parencite[193]{HomerSylla2005}.
@@ -439,35 +444,35 @@ After the end of conflict in April 1865, the interest rate returned to stability
 
 The Fives of 1874 were one of several bonds issued by the U.S. government during this period, but it has several advantages over other bonds for the purpose of this analysis.
 The Fives of 1874 were the only coupon bond regularly quoted for the entire war, April 1861--May 1865, in the sources considered here.
-The reason it is the only such bond, is that while the U.S. issued much debt during the Civil War, it had little debt in the antebellum period, and thus there were few outstanding bond issues at the start of the war.
+The reason it is the only such bond, is that while the U.S. issued much debt during the Civil War, it had issued little debt in the antebellum period, and thus there were few outstanding bond issues at the start of the war.%
 \footnote{
   After paying off the debt issued during the War of 1812, the U.S. government had no outstanding debt between 1835 and 1842 \parencite[297]{HomerSylla2005}.
   The debt as a percentage of GDP rose from 1.9 percent in 1860, before the war, to 31.4 percent in 1866, its peak just after the war \parencites{CBO2012}{CBO2012a}.
 }
-The only other bond was widely traded at the start of the war, was the Sixes of 1868.
-However, \textit{Bankers' Magazine} stops quoting the Sixes of 1868 in September 1861.
-Another bond, the  Sixes of 1881 were issued under acts in February and July 1861, just prior to and just after the start of the war, but they are not regularly quoted in the \textit{Bankers' Magazine} until September 1861, five months after the start of the war.
+The Sixes of 1848--1868 was the only other bond widely traded at the start of the war, but \textit{Bankers' Magazine} stops quoting these shortly after the start of the war,  in September 1861.
+Another bond, the  Sixes of 1861--1881 were issued under acts in February and July 1861, just prior to and just after the start of the war.
+They are not regularly quoted in the \textit{Bankers' Magazine} until September 1861, five months after the start of the war.
 The U.S. issued several other bonds of various maturities and rates throughout the war, but they provide even shorter time series.
-In many cases these loans are exotic relative to government debt issues today.
-Some contained options to exchange the bond for other bond issues or were callable by the government. 
-Both of these make it difficult to calculate the yields for these bonds.
+In many cases these loans also are have exotic features realative to government bonds issed today.
+They often contained options to exchange the bond for other bond issues or were callable by the government. 
+Both of these features make it difficult to calculate yields for these bonds.%
 \footnote{
   The 5-20's and 10-40's were bonds callable by the government after 5 (10) years and redeemable in 20 (40) years.
   The 7-30's were bonds that had coupon rates of 7.30 percent (2 cents per day), were redeemable in 3 years, but included the option to be exchanged for either the Sixes of 1881 or 5-20's.
   See \textcites{Bayley1882}{DeKnight1900}[297--309]{HomerSylla2005} for overviews of U.S. debt issues during this period.
 }
-Using the Fives of 1874 instead of these other bonds does not make a substantive difference, since as Figure~\ref{fig:fives1874_union} shows, the patterns of the yield to maturity of the Fives of 1874 is similar to the yields of all the other bonds issued by the U.S. government.
+Using the Fives of 1874 instead of these other bonds does not make a substantive difference for the analysis, since as Figure~\ref{fig:fives1874_union} shows, the patterns of the yields  of the Fives of 1874 is similar to the yields of all the other U.S. government bonds.
 \textcites{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997} use the exchange rate of Greenbacks to gold dollars in their analyses.
-However, since the U.S. did not issue Greenbacks until after the start of the war, and did not suspend the redemption of that currency for gold until January 1, 1862, any analysis using only Greenback prices cannot cover the first eight months of the war, April--December 1861.
+Since the U.S. did not issue Greenbacks until after the start of the war, and did not suspend the redemption of Greenbacks for gold until January 1, 1862, any analysis using only Greenback prices cannot cover the first eight months of the war, April--December 1861.
 This is the period which should have the highest informational content in an informational theory of war, and includes battles such as the First Battle of Bull Run, and the Battle of Wilson's Creek.%
 \footnote{\textcite{Poast2012} argues that the First Battle of Bull Run was pivotal in avoiding British recognition of the Confederate States.}
 Apart from the loss of observations, using Greenbacks instead of the Fives of 1874 would not make a substantive difference, since as Figure~\ref{fig:fives1874_greenbacks} shows, the price of Fives of 1874 in gold dollars is similar in both level and trend as the the price of Greenbacks in gold dollars.
 
-The American Civil War is an ideal case in which to use prices to infer expectations of war termination for three reasons.
+The American Civil War is an ideal case for which to use prices to infer expectations of war termination for three reasons.
 First, The war was of such severity that the nearly the entire budget of the U.S. government was war-related military spending, and thus fiscal expectations corresponded to military spending expectations. %
-For the U.S., the War and Navy Departments accounted for 76 percent (in 1862) to 61 percent (in 1865) of the expenditures.
-The fraction of the budget spent directly on the military by the Union fell over the course the war as the fraction spent on paying the principal and interest on its debt, increased from 20 (1862) to 36 (1865) percent of the budget.
-The overwhelming the majority of that debt had been issued to fund the war \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}, so payments on debt serving were themselves simply delayed military spending.
+The War and Navy Departments accounted for 76 percent (in 1862) to 61 percent (in 1865) of the expenditures \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}.
+The fraction of the budget spent directly on the military by the Union fell over the course the war because the fraction spent on paying the principal and interest on its debtincreased from 20 (1862) to 36 (1865) percent of the budget.
+The overwhelming the majority of that debt had been issued to fund the war, so debt service payments can be considered delayed military spending. 
 As \textcite[][668]{McCandless1996} states, ``[d]uring the war, the single most important indicator of future government expenditures is the process of the war itself.''
 % INSERT FIGURE OF THE BUDGET
 
@@ -493,31 +498,32 @@ For example, the issue of \textit{Bankers' Magazine} after Gettysburg and Vicksb
 \subsection{U.S. Government Bond Yields are Primarily a Function of the Expected Cost of the War}
 \label{sec:u.s.-governm-inter}
 
-Since the cash flows of U.S. government bonds are not directly related to a war outcome, in order to treat those yields as an expectation of a war outcome, I need to, first, establish which war outcomes can influence future cash flows, and, second, establish that expectations about war outcomes are the primary factor influencing the yield.
-The U.S. government bond yields are plausibly related to both expectations about whether the U.S. would win the war, as well as the cost of the war to the U.S. government.
+Since the cash flows of U.S. government bonds are not directly related to a war outcome, in order to use yields as proxy for the expectation of a war outcome, war outcomes need to influence future cash flows, and war expecatations need to be the primary factor influencing the yield.
+U.S. government bond yields are plausibly related to both expectations about whether the U.S. would win the war, and as the cost of the war to the U.S. government.
 These two expectations have possibly cross-cutting implications on bond yields.
-An increasing probability of U.S.\ victory would have a would make bonds less risky, a higher price and lower yield, while a increasing expectation of war cost would make bonds more risky, a lower price and a higher yield.
+An increasing probability of U.S.\ victory would make bonds less risky (higher price; lower yield), while a increasing expectated war cost would make bonds more risky (lower price; higher yield).
 Unfortunately, it is not possible to separate these effects using only U.S. government bond yield data.
-However, it is likely that U.S.\ government bond bond yields mostly responded to expectations about war costs, and can be considered a proxy for the expected cost of the war for the U.S.
+However, it is likely that U.S.\ government bond bond yields mostly responded to and can be considered a proxy for the expected war costs to the U.S.
 
 The risk on U.S. government bonds depended on the war cost for several reasons.
-The  war was funded primarily through debt, and thus, expectations of a longer or more vigorously fought war almost directly implied an increase in government debt.
-The proportions of the U.S. government revenues for each source of funding as follows: taxes \Sexpr{round(budget_min_pct["deficit"] * 100)}--\Sexpr{round(budget_max_pct["deficit"] * 100)}\% from loans, \Sexpr{round(budget_min_pct["receipts_taxes"] * 100)}--\Sexpr{round(budget_max_pct["receipts_taxes"] * 100)}\% from taxes, and \Sexpr{round(budget_min_pct["receipts_misc"] * 100)}--\Sexpr{round(budget_max_pct["receipts_misc"] * 100)}\% from miscellaneous sources (tariffs, land sales).
-In its analysis of the future fiscal situation, the 1863 \textit{Annual Report of the Treasury} notes that taxes and other revenue sources were covering the non-war expenses and debt payments in its budget, but new debt was being issued to pay for the military expenditures needed to wage the war \parencite[10-13]{Treasury1863}.
+The  war was funded primarily through debt, and thus, expectations of a longer or more vigorously fought war directly implied an increase in government debt.
+The proportions of the U.S. government revenues for each source of funding was as follows: \Sexpr{round(budget_min_pct["deficit"] * 100)}--\Sexpr{round(budget_max_pct["deficit"] * 100)}\% from loans, \Sexpr{round(budget_min_pct["receipts_taxes"] * 100)}--\Sexpr{round(budget_max_pct["receipts_taxes"] * 100)}\% from taxes, and \Sexpr{round(budget_min_pct["receipts_misc"] * 100)}--\Sexpr{round(budget_max_pct["receipts_misc"] * 100)}\% from miscellaneous sources (tariffs, land sales).
+In its analysis of the future fiscal situation, the 1863 \textit{Annual Report of the Treasury} notes that taxes and other revenue sources covered non-war expenses and debt payments in its budget, but debt issued were needed to pay for the military expenditures needed to wage the war \parencite[10-13]{Treasury1863}.
 \footnote{See also \textcite[][14]{Godfrey1976}.}
 The budgetary effect of the war is clear from  comparing forecasts of the U.S. budget for the 1866 fiscal year made before and after the war had ended.
-In \textit{The Annual Report of the  Treasury} issued on December 6, 1864 the forecast deficit for FY 1866, assuming that the continued, was \$470 million, with \$1,168 million in expenditures \parencite[13]{Treasury1864}.
+In \textit{The Annual Report of the  Treasury} issued on December 6, 1864, the forecast deficit for FY 1866, assuming that the war continued, was \$470 million, with \$1,168 million in expenditures \parencite[13]{Treasury1864}.
 In the following year's \textit{Annual Report}, issued in December, 1865, after the conclusion of the war, the Treasury estimated a surplus of \$112 million, with expenditures of only \$396 million dollars \parencite{Treasury1865}.
 This forecast was close to what would be the actual surplus, \$132 million \parencite[2]{Treasury1866}.
-Thus, both expectations of the government military expenditures and the length of the war should have had a direct impacts on investors' expectations of the eventual debt level of the U.S. government.
+Thus, both expectations of the government military expenditures and the length of the war should have directly affected investors' expectations of the eventual debt level of the U.S. government.
 This increased debt would increase the possibility of default or the temptation of the government to repay its debt in currency rather than specie.
 
-The future resources of the U.S. to pay off that debt also depended on the result of the war, namely, whether the seceding states would be reincorporated into the U.S. and potentially help pay for the costs incurred in the war.
-The size and wealth of the seceding Southern states was much smaller than those of the Northern and Western states.
-In 1860, the states that would make up the Confederacy accounted for \Sexpr{round((9103333 / 31443316) * 100, 0)} percent of the overall U.S. population,%
+The future resources of the U.S. to pay off its debt also depended on the result of the war, namely, whether the seceding states would be reincorporated into the U.S. and increase the available resources to pay the  costs incurred in the war.
+The size and wealth of the seceding Southern states was much smaller than that of the Northern and Western states.
+In 1860, the states that would make up the Confederacy accounted for only \Sexpr{round((9103333 / 31443316) * 100, 0)} percent of the overall U.S. population,%
 \footnote{
   Southern states included VA, TN, GA, NC, AL, MS, LA, SC, TX, AR, FL \textcite[5]{Eicher2001}.
-  Wealth is used instead of GDP, since GDP was not calculated until after WWI, the total wealth of individuals, as reported in the Census is a better measure of what contemporaries knew.
+  Wealth is used instead of GDP, since GDP was not invented until later.
+  Thus the total wealth of individuals, as reported in the Census, is a better measure of what contemporaries knew, since that is how they measured it.
 }
 and 25 percent of the total wealth.%
 \footnote{
@@ -528,46 +534,46 @@ and 25 percent of the total wealth.%
 % TODO: What was the Confederacy GDP?
 
 Some statements by government officials and market participants suggest that they were more concerned with the cost and duration of the war than with the the reincorporation of the seceding states.
-William Elder, a leading economist of the era, in an 1863 analysis of the ability of the U.S. to repay its debt, stated ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need'' \parencite[19]{Elder1863}.%
+William Elder, a leading economist of the era, in an 1863 analysis of the ability of the U.S. to repay its debt, stated ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need \parencite[19]{Elder1863}.''%
 \footnote{
   However, \textcite{Elder1863} does emphasize the importance of the resources of the Western territories, which perhaps strengthens the argument of  \textcite{Weingast1998} that he U.S. was concerned that Southern states seceding could lead to Western states seceding.
 }
-The \textit{Annual Report of the Treasury Department} in 1863 highlighted this relationship between cost of the war and the interest rate it paid on its bonds:
+The 1863 \textit{Annual Report of the Treasury Department} described this relationship between war costs and the interest rate it paid on its bonds:
 \begin{quote}
 It will not escape observation that the average [interest] rate is now increasing, and it is obvious that it must continue to increase with the increase of the proportion of the interest-bearing to the non-interest-bearing debt.
 And as the amount of the latter, consisting of United States notes and fractional currency, cannot be materially augmented without evil consequences of the most serious character, the rate of interest must increase with the debt, and approach continually the highest average.
 That must be greater or less in proportion to the duration and cost of the war. \parencite[13]{Treasury1863}
 \end{quote}
 
-The striking difference in the trend of the prices of U.S. bonds and that of the Confederate currency (Graybacks) in Figure~\ref{fig:fives1874_compared} is also evidence that U.S. bond yields were less driven by expectations of U.S. victory than by the war cost.
-That figure shows that the price of the Confederate currency (Graybacks) in terms of gold dollars decreases almost monotonically over the entire course of the war.
-Although the price of Graybacks is partially determined by the money supply \parencite{BurdekinWeidenmier2001}, the price of Confederate bonds issued in Amsterdam and payable in gold followed a similar pattern, decreasing nearly monotonically from mid-1863 onward \parencite{HaberMitchenerOosterlinckEtAl2015}.
-The prices of the Confederate assets were likely primarily determined by whether the U.S. would win the war and repudiate their debt \parencite{HaberMitchenerOosterlinckEtAl2015}.
-If the U.S. bonds primarily reflected the probability of U.S. victory, then the expected trend of its prices (yields) would increase (decrease) immediately after the start of the war, and almost monotonically increase (decrease) throughout the war, or at least from mid-1863 onward.
-However, Figure~\ref{fig:fives1874_yield} shows that while the yields of U.S. government bonds fluctuate early in the war, they do not decrease over the course of the war.
-Instead, they spike in mid-1864 at a point at which U.S. victory should have been highly probable if not almost certain.
-This suggests that U.S. government bond yields do not primarily reflecting expectations of U.S. victory, and are, instead, reflecting some other factor, which is likely war costs.
+The striking difference in the trend of the prices of U.S. bonds and that of the Graybacks (Confederate currency) in Figure~\ref{fig:fives1874_compared} is also evidence that U.S. bond yields were less driven by expectations of U.S. victory than by the war cost.
+That figure shows that the price of Graybacks in gold dollars decreases over the entire course of the war.
+Although the price of Graybacks is partially determined by the money supply \parencite{BurdekinWeidenmier2001}, the price of Confederate bonds issued in Amsterdam and payable in gold followed a similar pattern, decreasing from  mid-1863 onward \parencite{HaberMitchenerOosterlinckEtAl2015}.
+The prices of Confederate assets were likely primarily determined by whether the U.S. would win the war and repudiate their debt \parencite{HaberMitchenerOosterlinckEtAl2015}.
+Thus, if the U.S. bonds primarily reflected the probability of U.S. victory, then the expected trend of its prices (yields) would increase (decrease) immediately after the start of the war, and almost monotonically increase (decrease) throughout the war, or at least from mid-1863 onward.
+However, Figure~\ref{fig:fives1874_yield} shows that while the yields of U.S. government bonds fluctuate throught in the war, they do not decrease over the entire course of the war.
+Instead, they spike in mid-1864 at a point at which U.S. victory should have been highly probable.
+This suggests that U.S. government bond yields do not primarily reflect expectations of U.S. victory, and instead reflect some other factor, which is likely war costs, by elimination.
 
-Finally, the financial benefit of victory to the U.S. and the war costs are inversely related.
-The longer and more destructive the war, the less the ability of the Southern states to provide for the repayment of the debt incurred by the U.S. in fighting the war.
-In fact, immediately after the war, the U.S. government attempted to collect direct taxes from the Southern states, but it soon suspended that collection after it became clear that the Southern states could not pay them.
+Finally, the financial benefit of victory to the U.S. and war costs are inversely related.
+The longer and more destructive the war, the less the ability of the Southern states to assist in the repayment of the debt issued by the U.S. to pay war.
+Immediately after the war, the U.S. government attempted to collect direct taxes from the Southern states, but it soon suspended that collection after it became clear that the Southern states could not pay them.
 Treasury Secretary Hugh McCullough justified this suspension by noting that the inhabitants of the Southern states ``had been subject to heavy taxation by the government which was attempted to be established in opposition to that of the United States, and had been greatly exhausted by the ravages of war.'' \parencite[29]{Treasury1865}.
-In analyses of the repayment of debt after the war by the Treasury Department and others \parencites{Elder1865}{Treasury1865}{Walker1865a}, the wealth of the Confederate states was assumed to remain constant between 1860 and 1870 due to the destruction of the war, and that they would not be able to contribute to the repayment of the debt until after 1870.
+In analyses of the repayment of debt after the war by the Treasury Department and others \parencites{Elder1865}{Treasury1865}{Walker1865a}, the wealth of the Confederate states was assumed to remain constant between 1860 and 1870 due to the destruction of the war, and it was assumed that they would not be able to contribute to the repayment of the debt until at least after 1870.
 
 % todo: longer war reduced the pie. Confederacy in worse shape to repay the debt. E.g. ability to extract a direct tax.
 
-While the precise meaning of the bond yields in terms of a war outcome is unclear, it is clear that the bond yields almost completely reflect war expectations.
+While the precise relationship between these bond yields and outcomes of the American Civil War is unclear, it is clear that these bond yields almost completely reflect war expectations.
 As noted earlier in this section, military expenses accounted for the overwhelming majority of U.S. government expenditures between 1861 and 1865, so there are no other budgetary concerns that could plausibly have been affecting investor's expectations.
 The importance of the war is also clear from comparing the level and variance of U.S. government bond yields during the war with the preceding period.
-During 1856--1860 yields on U.S. government bonds were stable at below 5 percent.
+During 1856--1860, yields on U.S. government bonds were stable at below 5 percent.
 At the height of the the Panic of 1857, the yield of U.S. government bonds (Sixes of 1868) only reached \Sexpr{format_yields(yield_panic_1857)} percent.%
-\footnote{Data from the \textit{Bankers' Magazine} and the author's calculations. Also see \textcite{HomerSylla2005}.}
+\footnote{Data from the \textit{Bankers' Magazine} and my calculations. Also see \textcite{HomerSylla2005}.}
 Since a major financial crisis had little effect on bond yields prior to the war, there are certainly no non-war omitted factors affecting the yields.
 This is not to say that the battles in the war are the only factor affecting the bond yields.
 Government policies, elections, and other events could and almost certainly did have some affect on bond yields.
-But all of these other events were affecting government bond yields through their effects on investors' expectations of the war.
+But these events were affecting government bond yields through their effects on investors' expectations of the war, and not through other channels.
 
-In summary, the U.S. government bond yields reflected some combination of expectations about the cost and the victor of the war, weighted by how each of these would affect the ability of the U.S. government to repay its debts.
+In summary, the U.S. government bond yields reflected some combination of expectations of the cost and the victor of the war, weighted by how each of these would affect the ability of the U.S. government to repay its debts.
 However, it is more likely that these yields are largely reflecting expectations about the cost and duration of the war.
 
 \begin{figure}[!htpb]
