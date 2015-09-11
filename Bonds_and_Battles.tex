@@ -609,9 +609,7 @@ During the American Civil War, the yields are variable, spiking in the middle of
 \caption{Price in gold dollars of the Fives of 1874 compared with \$100 Graybacks (Confederate currency).}
 \label{bonds:fig:fives1874_grayback}
 \end{subfigure}
-\caption[The Fives of 1874 compared with other government and states issued bonds and currency.]{The Fives of 1874 compared with other government and states issued bonds and currency.
-  The Fives of 1874 follow a similar pattern as that of other U.S. bonds and those issued by Northern states.
-  They diverge and have a different pattern than the Confederate currency and bonds issued by Southern states.
+\caption[The Fives of 1874 compared with other government and state issued bonds and currency.]{The Fives of 1874 compared with other government and state issued bonds and currency.
 }
 \label{bonds:fig:fives1874_compared}
 \end{figure}
@@ -682,7 +680,7 @@ By selecting on the most militarily significant battles, I have already effectiv
 \begin{table}
   \centering
   \input{../bonds_and_battles//paper/tex/tab_major_battles.tex}
-  \caption{List of the 43 major battles of the American Civil War included in this analysis.}
+  \caption[List of the militarily significant battles of the American Civil War]{List of the 43 militarily significant battles of the American Civil War included in this analysis.}
   \label{bonds:tab:battles}
 \end{table}
 
@@ -745,10 +743,10 @@ With a non-zero $\tau$, and supposing $\eta$ was distributed normal, this model 
 
 In this section, I estimate four models which differ in how $\delta_{t}$ is defined:
 \begin{itemize}
-\item $\Model{1}$ is benchmark model that does not include any battle effects.
-\item $\Model{2}$ includes variables for Confederate and Union victories, but no individual battle effects.
-\item $\Model{3}$ is like $\Model{2}$, but also includes random effects for each battle.
-\item $\Model{4}$ is like $\Model{2}$, but the effects of Confederate and Union victories are smoothly varying over time.
+\item Model $\Model{1}$ is benchmark model that does not include any battle effects.
+\item Model $\Model{2}$ includes variables for Confederate and Union victories, but no individual battle effects.
+\item Model $\Model{3}$ is like $\Model{2}$, but also includes random effects for each battle.
+\item Model $\Model{4}$ is like $\Model{2}$, but the effects of Confederate and Union victories are smoothly varying over time.
 \end{itemize}
 Model $\Model{1}$ includes no battle effects, $\delta_{t} = 0$ for all $t$.
 In models $\Model{2}$--$\Model{4}$, $\delta_{t}$ is non-zero and time-varying, and is a function of battle outcomes, but these models differ how the effects of the battles are modeled.
@@ -921,7 +919,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{../bonds_and_battles//paper/figure/fig_btl_effects-1}
-  \caption[Battle Effects on log-yields for all models]{Battle effects, $\omega_{b}$ for all battles for all models, ordered by end date of the battle.
+  \caption[Battle effects on log-yields for all models]{Battle effects, $\omega_{b}$ for all battles for all models, ordered by end date of the battle.
     Union victories are in dark blue. Confederate victories are in gray.
   }
   \label{bonds:fig:btl_effects}
@@ -985,8 +983,8 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_waic.tex}
-  \caption[Model comparisons for models of bond yields.]{
-    Model comparisons for each model.
+  \caption[Model comparisons (WAIC, RMSE)]{
+    Comparison of the models using WAIC and RMSE.
     RMSE is the root mean squared error of each model.
     $\text{elpd}_{\text{WAIC}}$ is the expected log predictive density implied by the Widely Applicable Information Criterion (WAIC).
     The standard errors for WAIC and $\text{elpd}_{\text{WAIC}}$ are calculated as in \textcite{GelmanVehtari2014a}.
@@ -997,7 +995,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
-  \caption{Size of average battle effect compared to the average innovation.}
+  \caption{The average battle effect compared to the average innovation is small.}
   \label{bonds:tab:blt_effects_size}
 \end{table}
 
