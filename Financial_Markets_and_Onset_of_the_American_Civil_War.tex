@@ -9,39 +9,41 @@ To what extent did financial markets anticipate the start of the American civil 
 How did the market's assessment of war risk change leading up to the war?
 Which events were associated with these changes?
 This work answers these questions using data on the prices and yields of U.S. government and state bonds between 1855 and the start of the war in April 1861.
-Three measures are used to assess the market's beliefs about the risk of war: bond yields, the spread between Northern and Southern bonds, and the implied probability of war calculated by treating war as a default event.
-The financial market assessed only a minimal probability of war prior to the election of Lincoln in 1860, and only increased its estimate of the probability of war in the months after the election.
-On the financial market largely did not anticipate the conflict; bond prices immediately prior to the start of the war imply between a 4.1 (3.3, 4.9) probability of war.%
+Three measures are used to assess the market's beliefs about the risk of war: bond yields, the spread between Northern and Southern state bonds, and the implied default probability of the bonds.
+These measure show that the financial market largely did not anticipate the conflict, even on the eve of the Battle of Fort Sumter.
+The financial market assigned a negligible probability of war prior to the election of Lincoln in 1860.
+After the election, it assigned some probability to a  war, but that probability was quite small.
+Bond prices on April 13, 1861, immediately prior to news of the Battle of Fort Sumter reaching New York City implied only a 4.1 (3.3, 4.9) percent change of war.%
 \footnote{Interpret ``4.1 (3.3, 4.9)'' as ``mean (2.5\% quantile, 97.5\% quantile)''}
 
 The results in this paper speak to two important international relations theories: the bargaining theory of war \parencite{Fearon1995} and the capitalist peace \parencites{GartzkeLiEtAl2001a}{GartzkeLi2003}.
-In rationalist theories of war, there are two fundamental explanations as to why two parties would fight a costly conflict rather than come to an agreement: private information and commitment problems.
-Although some progress has been made, it has been rather difficult to test these mechanisms \parencite{Reiter2003}.
-Financial markets may allow some progress in differentiating theories.
-Prices of certain assets whose payoffs are contingent on war outcomes, e.g. sovereign bonds, can be used as estimates of war initiation or outcome conditional on the public information available at the time; including how probable the occurrence is \textit{ex ante}.
-This is important because different theories of war have have different implications as to how uncertain wars are \textit{ex ante}; in particular, in the most basic models of private information and commitment problems, only wars of private information are uncertain \textit{ex ante}.
-In the commitment problem, if the shift in power is sufficiently large to trigger a war, then war occurs with certainty; if it is not, then war does not occur with certainty.
-Other models may imply different ex ante public information probabilities of conflict.
-However, the point is that many models of conflict imply an \textit{ex ante} probability of war, prices of some assets can be used to as a measure of this \textit{ex ante} probability, and thus financial markets may provide a way to test some theories of war.
+In rationalist theories of war, there are two fundamental explanations as to why two parties would fight a costly conflict rather than come to an agreement: private information and commitment problems \parencites{Fearon1995}{Powell2006}.
+Although some progress has been made, it is notoriously difficult to test these mechanisms \parencite{Reiter2003}.
+Financial markets may allow some progress in testing these theories.
+Prices of certain assets whose payoffs are contingent on war outcomes, e.g.\ sovereign bonds, can be used as estimates of war initiation or outcome conditional on the public information available at the time.
+From this, the researcher can calculate an implied probability of the occurrence of war.
+This is useful because different theories of war have have different implications as to how uncertain wars are \textit{ex ante}.
+In particular, in the standard models of private information and commitment problems, only wars of private information are uncertain \textit{ex ante}.
+%In the original formulation of a private information theory of war \parencite{Fearon1995}, 
+In the commitment problem, if the shift in power is sufficiently large to trigger a war, then war occurs with certainty.
+If it is not, then war does not occur with certainty.
+Other models may imply different \textit{ex ante} public information probabilities of conflict.
+The point is that many models of conflict have implications about \textit{ex ante} probability of war, and prices of some assets can be used to as a measure of this \textit{ex ante} probability.
+Thus, financial markets may provide another means to test theories of war initiation.
 
-mpilThis paper contributes to an economic history literature on the reactions of financial markets to events within the American Civil War.
+
+This paper contributes to an economic history literature on the reactions of financial markets to events within the American Civil War.
 This includes multiple papers on reactions of the financial markets on both sides and Europe to the American Civil War \parencites{Schwab1901}{Mitchell1903}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2002}.
 This paper adds to that literature by analyzing the initiation of the war and by using Northern and Southern state bond data.
 This paper also adds to the growing international relations literature \textcite{Poast2012}, and \textcite{Reiter2009} on the American Civil War, which has often been overlooked in the international relations literature as most work on civil wars focuses on civil wars after 1945.
-
 This employs methods similar to \textcite{HaberMitchenerOosterlinckEtAl2015};
 That work estimates the implied probability of victory by the Confederacy in the American Civil War and the Chinese government in the Chinese Civil War from bond prices by treating defeat of the issuing side as a default.
-The method extends their work by estimating war initiation instead of war termination, using events with non-zero recovery rates, using multiple assets to improve estimates, and explicitly tying the implications of financial market estimates to theories of war.
-
 More broadly, this paper adds to the literature analyzing the reactions of financial markets to conflict and political events.
 Other papers which have analyzed the responses of financial markets to other conflicts include:  \textcite{Bueno1990}, World War I \textcite{Hall2004} and \textcite{Ferguson2006}, World War II \textcites{WaldenstromFrey2008}{WaldenstromFrey2008}.
 \textcite{SchneiderTroeger2006} analyze the reactions of major stock market indices to events in Iraq, Israel, and the former Yugoslavia from 1990-2000.
 \textcite{GuidolinLaFerrara2010} market reactions to militarized interstate disputes.
-Several papers look at reactions of markets to the Iraq War.
-\textcite{RigobonSack2005} analyze the reaction of U.S. financial markets to war risk using a method identification by heteroskedasticity.
-\textcites{LeighWolfersEtAl2003}{WolfersZitzewitz2009} estimate the response of several financial indicators to the probability of war as indicated by prediction markets.
+Several papers look at reactions of markets to the Iraq War \parencites{RigobonSack2005}{LeighWolfersEtAl2003}{WolfersZitzewitz2009}.
 Other papers estimate response of financial markets to elections or political change \parencites{Jayachandr2006}{Herron2000}.
-
 
 
 \section{Financial Market Prices and War Initiation}
@@ -363,7 +365,7 @@ where $\dnorm{N}{a, b^{2}}$ is the normal distribution with mean $a$ and scale $
 \footnote{Note that variable and parameter names are only unique for this section; variables and parameters with the same name in different sections do not necessarily correspond to the same thing.}
 In summary, this set of priors method attempts to estimate the parameters, e.g. $\theta$, where the first differences, $\theta_{t} - \theta_{t-1}$, are sparse (mostly zero) while not imposing assumptions about the sparsity of the differences.
 The model is estimated using Bayesian methods.
-The posterior distribution is sampled with the No-U-Turn Sampler implemented in Stan \parencites{Stan2015a}{HoffmanGelman2014a}.
+The posterior distribution is sampled with the No-U-Turn Sampler implemented in Stan \parencites{Stan2014}{HoffmanGelman2014a}.
 
 Figure \ref{acw_onset:fig:north_south_spreads} plots estimates from the posterior distribution of the south-north spread ($\psi_{t}$) for all periods.
 For most of the period, the spread was positive, meaning that Southern state bonds were riskier on average than Northern state bonds.
@@ -498,6 +500,7 @@ Nevertheless, the overall pattern between the results is similar.
 \section{Conclusion}
 \label{acw_onset:sec:conclusion}
 
+This work estimates the
 Although the seeds of the American Civil War were preceded the start of the war for many years, the onset of war was unexpected by financial markets.
 Financial markets did not respond to war risk until after the election of Lincoln in November 1860, and then only after a financial crisis due to Southern banks withdrawing specie and discussion of secession became serious.
 Despite the awareness of the risk of war, yields spiked dramatically after the Battle of Fort Sumter, implying that the event was unanticipated.
@@ -542,7 +545,7 @@ In particular, if financial markets can serve as predictions given civil war, th
 %%  LocalWords:  SchneiderTroeger2006 GuidolinLaFerrara2010 Elder1865
 %%  LocalWords:  heteroskedasticity LeighWolfersEtAl2003 investors'
 %%  LocalWords:  WolfersZitzewitz2009 Jayachandr2006 Elder1863 years'
-%%  LocalWords:  Merchants' HomansDana1861a Treasury1861a Bankers'
+%%  LocalWords:  Merchants' HomansDana1861a Treasury1861a Bankers' 5s
 %%  LocalWords:  Treasury1860 Treasury1863 BankersMagazine1860 bdy
 %%  LocalWords:  BankersMagazine1862 Randolph1931 Ratchford1941 Pre
 %%  LocalWords:  DwyerHaferWeber1999 metadata HomerSylla2005 ytm pre
@@ -550,8 +553,8 @@ In particular, if financial markets can serve as predictions given civil war, th
 %%  LocalWords:  English1996 Dewey1918 BankersMagazine1857 NBER diff
 %%  LocalWords:  HuntKettellHomansEtAl1860 GoldinLewis1975 Stan2014
 %%  LocalWords:  Tibshirani1996 ParkCasella2008 TibshiraniEtAl2005
-%%  LocalWords:  CarvalhoPolsonScott2009 HoffmanGelman2013 elec
-%%  LocalWords:  preelec postelec sumter postsumter Fons1987
+%%  LocalWords:  CarvalhoPolsonScott2009 HoffmanGelman2013 elec 6's
+%%  LocalWords:  preelec postelec sumter postsumter Fons1987 5's
 %%  LocalWords:  Merrick2001 Lau2006 HullPredescuWhite2004 DATEFMT
 %%  LocalWords:  PRWAR1 FreyKucher2000 Powell2006 Gartzke1999
-%%  LocalWords:  Weingast1998
+%%  LocalWords:  Weingast1998 Poast2012 Powell2007

@@ -23,18 +23,20 @@ How do financial markets respond to war events?
 How do the events within war, such as battles, lead to the termination of war?
 This work addresses both of these questions in the context of the case of the American Civil War. 
 The strategy of this work is to answer the first question in order to understand the second.
-I estimate the effects of militarily significant battles on the yields of U.S. government bonds.
-I argue that yields, and thus riskiness, of U.S. government bonds was almost certainly primarily driven by expectations of the cost of the war.
+I estimate the effects of militarily significant battles on U.S. government bonds yields.
+The yields of U.S. government bonds were almost certainly primarily driven by expectations of the cost of the war.
 Thus, the bond yields of U.S. government can act as a proxy for expectations of the war cost given the available information at the time.
+Modeling the effects of battles on these yields estimates how Confederate and Union victory affected expectations about the cost and duration of the war.
 I estimate several models of incorporating the effects of battles on bond yields and find the following.
-First, the effect of battles on bond yields, and by extension expectations of the war cost, was asymmetric.
+First, the effect of battles on bond yields, and, by extension expectations of the war cost, was asymmetric.
 On average, Confederate victories increased yields by approximately 5\%, while, on average, Union victories had little to no effect.
-This is consistent with the asymmetric strategic environment of the American Civil War: the U.S. had to win battles to recapture the seceding states, while the Confederacy had to win to defend.
+This is consistent with the asymmetric strategic environment of the American Civil War: the U.S. had to win battles to recapture the seceding states, while the Confederacy had to win to keep its territory.
 It also suggests that U.S. victories were expected by the market, while Confederate victories were surprising.
-Second, the battles with the largest estimated effects on bond yields were those during the Overland and start of the Petersburg Campaign in May--June, 1864 in which Ulysses S. Grant's advance on the Confederate capital of Richmond was met with resistance.
-Third, although including battles in the model improves the model fit both within-sample and prediction, the improvement is surprisingly small.
+Second, the battles with the largest estimated effects on bond yields were Confederate victories in May--June, 1864.
+These battles were part of the  Overland and Richmond-Petersburg campaigns in which U.S. forces advance on the Confederate capital of Richmond was met with heavy resistance.
+Third, although including battles in model of the bond yields improves the model fit, the improvement is surprisingly small.
 This is consistent with many events within a war, not just major battles, having an influence on war expectations.
-I conclude with a suggestion of how natural language processing methods applied to newspapers may provide a better means of assessing the effects of war events, as observed by contemporaries, on war expectations.
+I conclude with a suggestion of how natural language processing methods applied to newspapers may provide a better means of generating war events, as observed by contemporaries.
 
 The approach in this work, using financial markets to better understand war termination, is a general one that can used in the study of conflict.
 Understanding theories of war initiation and termination requires an understanding of the means of war, military combat.
@@ -42,19 +44,19 @@ This is what \textcite{Gartner1998} calls ``opening up the black box of war.''
 However, the empirical study of military combat within war has lagged behind the study of war initiation that treats war as a black box \parencite{Reiter2003}.
 The approach taken in this work, using the prices of financial assets as a proxy for expectations of war termination, provides a method that helps deal with two problems in the study of military combat within war.
 First, by providing a within-case time-varying measure of the expected war termination, it allows for the quantitative analysis of small numbers of cases.
-This is useful because quality data on intra-war events is rare, making large-$n$ intra-war analysis difficult if not infeasible.
+This is useful because quality data on intra-war events is rare, it is difficult if not infeasible to conduct analysis that requires many wars.
 Due to the lack of multi-war intra-war data, the preferred approach to the empirical study of the bargaining theory of war with intra-war data has been qualitative case studies \parencites{Reiter2003}[][Chapter 9]{Reiter2009}. 
 While there are some implications of the bargaining model of war that can be tested with within-case data, such as those regarding the offers made throughout the war, the use of within-case data prohibits the use of several key dependent variables of interest in these models---the cost, duration, and outcome of a war---since there is no variation in these variables within a single war.
-Financial market data provides an alternative method with which to analyze the intra-war events using a single or small number of cases for which data is available.
-Financial asset price data, when it can be shown to be a prediction of the war result, allows the researcher to estimate the effect of events on war outcomes by employing the prices of carefully chosen financial assets as a time-varying expectation of those war outcomes.
+Financial market data provides an alternative method with which to analyze the intra-war events using the small number of cases for which data is available.
+Financial asset price data, when it can be shown to be a prediction of the war outcome, allows the researcher to estimate the effects of events on war outcomes by employing the prices of carefully chosen financial assets as a time-varying expectation of those war outcomes.
 The second application is as a measure of surprising events.
 Surprising events are particularly important in private information theories of war, but it is difficult to know what events were surprising to contemporaries \parencite{Shirkey2009a}.
 Since prices of financial assets only respond to new information, they provide a natural measure of surprising events, which are particularly important in informational theories of war \parencite{Shirkey2009a}.
 
 This work adds to an economic history literature on the effects of war events in the American Civil War on currencies and other financial assets \parencites{Mitchell1903}{Mitchell1908}{Schwab1901}{Roll1972}{Calomiris1988}{DavisPecquet1990}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2000}{Weidenmier2002}{HaberMitchenerOosterlinckEtAl2014}.
-This work contributes to that literature by using the yields of U.S. government bonds, which unlike Greenbacks, provide a time series that spans the entire war. 
+This work contributes to that literature by using the yields of U.S. government bonds, which unlike Greenbacks (U.S. currency), provide a time series that spans the entire war. 
 This work estimates the effects of both Confederate and Union victories, as well as that of individual major battles.
-Finally, it ties that literature to political science theories of war, and shows how those insights can be used not just to understand how markets work, but also to better understand how war works.
+It also connects that  literature to political science theories of war, and shows how its insights can be used not just to understand how markets work, but also to better understand how war works.
 This work builds on a large and growing literature which measures impact or identifies important political events using financial \parencites{NorthWeingast1989}{north2000introd}{FreyKucher2000}{sussman2000instit}{wells2000revol}{Herron2000}{eldor2004finan}{ChenSiems2004}{Greenstone2007} or prediction markets \parencites{WolfersZitzewitz2004}{ArrowForsytheGorhamEtAl2008}{WolfersZitzewitz2009}.
 
 
@@ -740,8 +742,8 @@ It is the most complete, machine-readable data on American Civil War battles of 
 
 In this section, I present several models of the effects of battles on U.S. government bond yields.
 In all these models, the response variable is the yields of the Fives of 1875, as discussed in Section \ref{sec:5s-1874}.
-The data on the Fives consist of \Sexpr{data_m1[["n"]]} observations between \Sexpr{data_m1[["START_DATE"]]}, the first observation after the Battle of Fort Sumter and the official start of the war, and \Sexpr{data_m2[["END_DATE"]]}, the end of the month after Robert E. Lee surrendered after the Battle of Appomattox Court House.
-These are observed at irregular frequencies, between \Sexpr{min(data_m1[["data"]][["y_diff"]][-1])} and \Sexpr{min(data_m1[["data"]][["y_diff"]][-1])} days, but the estimated models handles missing values without additional adjustments.
+The Fives data consistent of \Sexpr{data_m1[["data"]][["n"]]} observations between \Sexpr{data_m1[["START_DATE"]]}, the first observation after the Battle of Fort Sumter and the official start of the war, and \Sexpr{data_m2[["END_DATE"]]}.
+These occur at irregular frequencies, with gaps of \Sexpr{min(data_m1[["data"]][["y_diff"]][-1])}--\Sexpr{min(data_m1[["data"]][["y_diff"]][-1])} days between observations.
 In these models, I use the logarithm of the yield since Figure \ref{fig:fives1874_yield_price} suggests that the variance of yields is increasing in its level.
 
 All of these models are of the form,
@@ -756,7 +758,7 @@ Equation~\eqref{eq:6} states that the observed log-yields consist of a latent lo
 Equation~\eqref{eq:1} states that the first difference in the latent log-yields, $y^{*}_{t} - y^{*}_{t-1}$, is the sum of $\delta_{t}$ and a mean-zero innovation, $\eta_{t}$.
 The models differ in the definition of $\delta_{t}$ and this is where battle effects are included.
 The innovation $\eta_{t}$ is distributed Student's $t$ to allow for large events that are unmodeled, \ie{}any non-battle events.
-If $\tau^{2} = 0$, then Equations~(\ref{eq:6}) and~(\ref{eq:1}) would be equivalent to simply estimating the a model with the first difference of $\log y_{t}$ as the dependent variable.
+If $\tau^{2} = 0$, then Equations~(\ref{eq:6}) and~(\ref{eq:1}) would be equivalent to simply estimating a model with the first difference of $\log y_{t}$ as the dependent variable.
 With a non-zero $\tau$, and supposing $\eta$ was distributed normal, this model would be equivalent to an ARIMA(0, 1, 1) model in which the MA parameter is constrained to be negative \parencite[91]{PetrisPetroneEtAl2009}.
 
 In this section, I estimate four models which differ in how $\delta_{t}$ is defined:
@@ -767,42 +769,42 @@ In this section, I estimate four models which differ in how $\delta_{t}$ is defi
 \item Model $\Model{4}$ is like $\Model{2}$, but the effects of Confederate and Union victories are smoothly varying over time.
 \end{itemize}
 Model $\Model{1}$ includes no battle effects, $\delta_{t} = 0$ for all $t$.
-In models $\Model{2}$--$\Model{4}$, $\delta_{t}$ is non-zero and time-varying, and is a function of battle outcomes, but these models differ how the effects of the battles are modeled.
+In the other models, $\delta_{t}$ is non-zero and time-varying, and is a function of battle outcomes, but these models differ how battles are modeled.
 In model $\Model{2}$, $\delta_{t}$ includes the effects of Confederate and Union victories.
 \begin{align}
   \label{eq:2}
   \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}'  \\
-  X_{t, 1} &= \sum_{b \in B} W_{b,t} && \text{if $b$ is a Confederate victory} \\
-  X_{t, 2} &= \sum_{b \in B} W_{b,t} && \text{if $b$ is a Union victory} \\
+  X_{t, 1} &= \sum_{b \in B} W_{t,b} && \text{if $b$ is a Confederate victory} \\
+  X_{t, 2} &= \sum_{b \in B} W_{t,b} && \text{if $b$ is a Union victory} \\
   W_{b,t} &= 
             \begin{cases}
               \frac{1}{n_{b}} & \text{If news of battle $b$ reached the market on day $t$.} \\
               0 & \text{otherwise}
             \end{cases}
 \end{align}
-where $B$ is the set of all battles in the data (Table \ref{tab:battles}).
+where $B$ is the set of all battles in the data, see Table \ref{tab:battles}.
 In this model, all Confederate victories have the same effect on the yield, and all Union victories have the same effect on the yield. 
-In other words, given the result, battles are exchangeable.
+In other words, given their result, battles are exchangeable.
 The parameters $\beta_{C}$ and $\beta_{U}$ are the average effects of Confederate and Union victories.
-The matrix $W$ is is a $T \times |B|$ matrix, in which each column is a variable indicating if there was news about a battle reached on that day.
+The matrix $W$ is is a $T \times |B|$ matrix, in which each column is a variable indicating if there was news about a battle on that day.
 News of battles is assumed to reach the market on the days the first news of the battle is reported in the \textit{New York Times} and the following \Sexpr{data_m2[["LAG"]]} days.
-For a given battle, each day in which news is received is given an equal weight, and the weights for each battle sum to one.
+For a given battle, all days with news are weighted equally, and the weights for each battle sum to one.
 $n_{b}$ is the total number of days for which news of battle $b$ reached the market.
-For example, the end of Gettysburg was reported in the news on July 2nd--4th, 1863, so July 2, 1863 through July 9, 1863 have a weight of $\frac{1}{8}$, and all other days have a weight of 0.
-$X_{t}$ is an $T \times 2$ matrix containing the sum of the weighted indicators of Confederate and Union victories occurring on day $t$. 
+For example, the end of Gettysburg was reported in the news on July 2nd--4th, 1863, so July 2, 1863 through July 9, 1863 (July 2 plus 5 days) are equal to $\frac{1}{8}$ in $W_{.,\text{Gettysburg}}$, and all other days in $W_{.,\text{Gettsyburg}}$ are equal to 0.
+$X_{t}$ is an $T \times 2$ matrix containing the sum of the news weights of Confederate and Union victories occurring on day $t$. 
 Since each column of $W_{b}$ sums to one, $\beta_{C}$ is interpreted as the average effect of a single Confederate victory, and $\beta_{U}$ as the average effect of a single Union victory.
-Finally, $\alpha$ is a parameter representing a constant trend in the yields not due to the battles.
+Finally, $\alpha$ is a parameter representing a constant trend in yields not due to the battles.
 
 In model $\Model{3}$, $\delta$ also includes random effects for each battle,
 \begin{align}
   \label{eq:10}
-  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}' + W_{t} \gamma' \\
+  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}' + W_{t} \gamma \\
   \label{eq:12}
   \gamma_{b} &\sim \dt{7}{0, \zeta^{2}}
 \end{align}
-where $\alpha$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a $|B| \times 1$ row vector with random effects for each battle.
+where $\alpha$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a $|B| \times 1$ vector with random effects for each battle.
 The random effects, $\gamma$, are given a Student's $t$ distribution since it is expected that a few battles will have particularly large effects.
-The total effect of an individual battle is the average effect of its result plus its random effect,
+The effect of an individual battle is the sum of its result (Confederate or Union victory) and random effect,
 \begin{align}
   \omega_{b} =
   \begin{cases}
@@ -828,44 +830,44 @@ Where $C$ is the number of Confederate victories, $U$ is the number of Union vic
 The Confederate and Union victories are ordered by their dates.
 For Confederate victories, the first battle was First Bull Run (July 21, 1861), and the last was the Crater (July 30, 1864).
 For Union victories, the first battle was Fort Donelson (February 11--16, 1862), and the last was Appomattox Court House (April 9, 1865).
-This means that the effect of the Battle of Gettysburg, $\omega_{\Sexpr{n_battle_gettysburg}}$, would be shrunk towards the average effect of Union victories, $\beta_{U}$, and the effect of the previous battle, $\omega_{\Sexpr{n_battle_gettysburg - 1}}$ (\Sexpr{n_battle_gettysburg_previous} on May 16, 1863).%
+As an example, in this model the effect of the Battle of Gettysburg, $\omega_{\Sexpr{n_battle_gettysburg}}$, is shrunk towards both the average effect of Union victories, $\beta_{U}$, and the effect of the previous battle, $\omega_{\Sexpr{n_battle_gettysburg - 1}}$ (\Sexpr{n_battle_gettysburg_previous} on May 16, 1863).%
 
 In all these models, since $y^{*}$ represents log-yields, the parameters $\beta$, $\gamma$ and $\omega$ can be interpreted as approximately the percent change in the yield associated with the result of a battle.
 
 All models are estimated using MCMC methods to sample from the posterior distribution.
 Samples are drawn using the NUTS-HMC algorithm \parencite{HoffmanGelman2014a} as implemented in the probabilistic programming language, \Stan{} \parencites{Stan2015a}.
-I found that the sampling efficiency could be improved in estimating state space models, such as those estimated here, by a two step method.
+I found that the sampling efficiency of state space models, such as those estimated here, could be improved with a two step method.
 In the first step, I marginalize over the latent states of the state space model ($y^{*}$ in this case) and use HMC-NUTS to sample the other parameters.
-In the second step, given the values of the parameters, I use the forward-filter backwards-sample algorithm  to sample the latent states.
+In the second step, given the values of the parameters, I use the forward-filter backwards-sample algorithm \parencites{Fruehwirth-Schnatter1994}{CarterKohn1994} to sample the latent states.
 Together, these steps constitute a partially collapsed Gibbs sampler \parencite{VanDykPark2008a}.
 I describe this method and its implementation in \Stan{} in more detail in Chapter~\ref{cha:structural-breaks} of this dissertation.
 For all models, four chains were run, and convergence assessed using multiple-chain R hat statistics and the number of effective samples, as recommended in \parencites{Stan2015a} and \textcite{GelmanCarlinSternEtAl2013a}.
 
 In these models, I do not include indicators of other events in the war.
-While changes in policy, leadership, foreign policy events, negotiations and other events certainly influence war expectations, I do not have a coherent, non \textit{ad hoc} method for choosing a set of events.
-\textcite{McCandless1996} and \textcite{SmithSmith1997} both include indicator variables for lists of military, fiscal, and political events in the war.
+While changes in policy, leadership, foreign policy events, negotiations and other events certainly influence war expectations, I do not have a coherent method for choosing a set of events.
+\textcite{McCandless1996} and \textcite{SmithSmith1997} both include indicator variables for a few military, fiscal, and political events in the war.
 However, neither of these have a clear rule as to what constitutes major non-battle events in the war, and what does not.
 \textcite{SmithSmith1997} includes indicator variables selected on the dependent variable, using the events mentioned in \textcite{Mitchell1903} as corresponding to large daily movements in the gold market.%
-Excluding these non-battlefield events may not be an issue for estimating the effects of battles, because they are more likely influenced by battlefield events than vice versa.
-For example, the capture of Atlanta is given as a reason why Lincoln won the election of 1864, and the victory at Antietam encouraged Lincoln to sign the Emancipation Proclamation.
+%% Excluding these non-battle events may not be an issue for estimating the effects of battles, because they are more likely influenced by battlefield events than vice versa.
+%% For example, the capture of Atlanta is given as a reason why Lincoln won the election of 1864, and the victory at Antietam encouraged Lincoln to sign the Emancipation Proclamation .
 In Section~\ref{sec:conclusion}, I propose a more coherent method for identifying war and non-war events.
 
-The models also do not include either measures of inflation or the risk-free interest rate.
+These models do not include measures of inflation or the risk-free interest rate.
 Inflation is not included for several reasons.
-First, while inflation measured in U.S. currency (Greenbacks) rose during this period, inflation in terms of gold dollars did not \parencites{Mitchell1903}{Mitchell1908}.
-The price of gold closely tracked the price of commodities during this period, so there was little inflation when prices were measured in gold dollars.
-Since the bonds paid interest in gold dollars, and the bond yields are calculated with the cash flows converted to gold dollars, the inflation of currency is not explicitly a problem.
+First, while inflation measured in U.S. currency (Greenbacks) rose during this period, inflation calculated in gold dollars did not \parencites{Mitchell1903}{Mitchell1908}.
+The price of gold closely tracked the price of goods during this period, so there was little inflation when the prices of goods were measured in gold dollars.
+Since the bonds considered here paid interest in gold dollars, and the bond yields are calculated with the cash flows converted to gold dollars, the inflation of currency is not explicitly a problem.
 Second, the influence of the war was such that inflation is plausibly a post-treatment variable that, like bond yields, responded to war expectations.
-Third, data on inflation is only available at frequencies much longer than used in the analysis; the Warren-Pearson Wholesale Price Index, is only available at the monthly level \parencite{WarrenPearson1933a}.
-The risk free interest rate during this period is included in the models because there is not a good measure of the the risk free interest rate during this period.
-Before and after the American Civil War, the yields of U.S. government bonds could would be considered approximately risk-free assets \parencites{HomerSylla2005}.
+Third, data on inflation is only available at frequencies much longer than used in the analysis; the Warren-Pearson Wholesale Price Index is only available at the monthly level \parencite{WarrenPearson1933a}.
+The risk free interest rate during this period is not included because there is not a good measure of the the risk free interest rate during this period.
+Before and after the American Civil War, the yields of U.S. government bonds could be considered approximately risk-free assets \parencites{HomerSylla2005}.
 But this work uses the yields of U.S. government bonds precisely because those bonds are risky during the American Civil War.
 \textcites{Macaulay1938}{HomerSylla2005} consider indexes of railroad bonds and New England municipal and state bonds as risk free assets during the late nineteenth century.
 But railroad bonds were not yet safe assets at the time of the American Civil War; before the war they had much higher yields than U.S. government bonds.
 New England municipal and state bonds are the other candidate for risk-free assets, but when their yields are calculated in gold dollars, they are similar to those of U.S. government bonds for this period.
 Moreover, most New England states did not issue debt prior to the Civil War, and issued bonds during the Civil War to pay for their war expenditures \parencite[86--87]{Martin1871}.
 Thus, yields of these bonds were also plausibly linked to war expectations.
-On a practical level, the currently available comprehensive source of these interest rates, \textcite{Macaulay1938}, only provides these interest rates at monthly (railroad) or quarterly (New England state and municipal bonds) frequencies.
+On a practical level, the currently available comprehensive source of these interest rates, \textcite{Macaulay1938}, only provides them at monthly (railroad) or quarterly (New England state and municipal bonds) frequencies.
 Other work in 19th century economic history uses the interest rate of British consols as a risk free rate \parencite{BordoRockoff1996a}.
 The rate of consols is inappropriate for this analysis because that risk free interest rate corresponded to the  London market, and this analysis uses the New York market.
 
@@ -882,17 +884,17 @@ The rate of consols is inappropriate for this analysis because that risk free in
 \end{table}
 
 For these models, the first question to ask is ``what is the average effect of a Confederate or Union victory on the bond yield?''
-The average effect of a Confederate (Union) victory is defined slightly differently for the models.
-For model $\Model{2}$, the average effect of a Union victory is simply the parameter $\beta_{U}$, and the average effect of a Confederate victory is the parameter $\beta_{C}$. 
+The average effects of Confederate and Union victories are defined slightly differently for the models.
+For model $\Model{2}$, the average effect of a Confederate victory is the parameter $\beta_{C}$, and the average effect of a Union victory is the parameter $\beta_{U}$.%
+\footnote{Model $\Model{1}$ does not include battles.}
 For models $\Model{3}$ and $\Model{4}$, the average effect is the average of the battle effects.
 For these models, the average effect of a Confederate victory is the average of the effects of the individual Confederate victories, $\frac{1}{C}\sum_{b \in C} \omega_{b}$, and, similarly, the average effect of a Union victory is $\frac{1}{U}\sum_{b \in U} \omega_{b}$.
 
-Table \ref{tab:avg_battle_effects} shows the summary statistics of the posterior distribution of the average effects for the models including battle-effects.
-The average effects are in their 
-The estimated average effect of a Confederate victory on yields was positive, meaning that Confederate victories were associated with an increase in the expected cost of the war.
-A Confederate victory on average is estimated to increase the yield approximately 5--5.7 percent, with the 95\% central credible intervals inculuding a range of 1.3\% and 9.2\%
-The posterior mean of the posterior distribution of the average effect of a Union victory on was negative, meaning that Union victories were associated with an decrease in the expected cost of the war.
-However, the mean value posterior distribution was small in magnitude, -1.5\% to -1.8\%, and the central 95\% percent credible intervals of all the models contains zero.
+Table \ref{tab:avg_battle_effects} shows the summary statistics of the posterior distribution of the average effects of Confederate and Union victories for the models.
+The estimated average effect of a Confederate victory on yields is positive, meaning that Confederate victories were associated with an increase in the expected cost of the war.
+A posterior mean of the average effect of a Confederate victory is estimated to have increased the yield approximately 5--5.7 percent, with the 95\% central credible intervals including the range of 1.3\% to 9.2\%
+The posterior mean of the average effect of a Union victory is negative, meaning that Union victories were associated with an decrease in the expected cost of the war.
+However, the posterior mean is small in magnitude, -1.5\% to -1.8\%, and the central 95\% percent credible intervals of all models contain zero.
 There are two explanations for this asymmetry in effects of victories on the expected cost of the war.
 First, individual Union victories had a smaller effect on the overall cost and duration of the war than Confederate victories.
 This is because the strategic situation of the war was itself asymmetric. 
@@ -908,31 +910,32 @@ While model $\Model{2}$ assumes that all Confederate and Union victories have th
 The second set of questions to ask is about the variation in the effects of individual battles.
 How much variation was there in the effects of battles? 
 How did the  effects of Union and Confederate victories change over time?
-Which battles had the largest effect? 
+Which battles had the largest effects? 
 
-Figures \ref{fig:btl_effects} plots the battle effects, $\omega_{b}$, for each battle, for each model.
-Figures \ref{fig:btl_effects_ordered} plots the battle effects for model $\Model{3}$, for each battle.
-Since the battle effects in model $\Model{3}$ can be considered time-varying values of effect of Confederate and Union victories, Figures \ref{fig:btl_effects_time} plots the battle effects for Confederate and Union victories over time. 
-The first overall takeaway of the models is that it is difficult to get precise estimates; in Figures \ref{fig:btl_effects_ordered}, most battles have 95 percent credible intervals which include zero.
+Figure~\ref{fig:btl_effects} plots the battle effects, $\omega_{b}$, for each battle, for each model.
+Figure~\ref{fig:btl_effects_ordered} plots the battle effects for model $\Model{3}$, for each battle.
+Since the battle effects in model $\Model{4}$ can be considered time-varying values of effect of Confederate and Union victories, Figure~\ref{fig:btl_effects_time} plots the battle effects for Confederate and Union victories over time. 
+One thing to note is that the estimates of battle-level effects are highly uncertain; in all models most battles have 95 percent central credible intervals which include zero.
 
-The battles with the largest effects are Confederate victories in the summer of 1864 in the Overland Campaign (Spotsylvania Courthouse, Cold Harbor) and the start of the Richmond-Petersburg Campaign (Second Petersburg).
-In the battles of Spotsylvania Courthouse and Cold Harbor, the U.S. forces suffered large casualties advancing towards Richmond.
+The battles with the largest effects are the Confederate victories in the summer of 1864 in the Overland Campaign (Spotsylvania Courthouse, Cold Harbor) and the start of the Richmond-Petersburg Campaign (Second Petersburg).
+In the battles of Spotsylvania Courthouse and Cold Harbor, U.S. forces commanded by Ulysses S. Grant suffered large casualties while advancing towards the Confederate capital, Richmond.
 In the of Battle of Second Petersburg, the U.S. failed break the Confederate lines and decisively capture Richmond.
 This defeat began the Siege of Petersburg which would last from June 1864 until the U.S. broke the Confederate lines at the Third Battle of Petersburg on April 2, 1865.
 \textcite[151-152]{Reiter2009} cites this period as a turning point in the war, during which the U.S. ``neared exhaustion''.
 
-The next largest effect, is the Confederate victory The Battle of Gaine's Mill was the major Confederate victory in the Seven Days Battles.
-In the Peninsula Campaign, the U.S.\ Army of the Potomac, commanded by General McClellan, moved to almost within artillery distance of the Confederate capital, Richmond.
-However, in the Seven Days battles, Confederate forces commanded by Robert E. Lee fought a series of battles which pushed U.S. forces back from Richmond.
+The next largest effect is the Confederate victory at the Battle of Gaine's Mill.
+This was the major Confederate victory in the Seven Days Battles and Peninsula Campaign in June 1862.
+In the Peninsula Campaign, the U.S.\ Army of the Potomac, commanded by General George McClellan, moved to almost within artillery distance of Richmond.
+However, in the Seven Days battles, Confederate forces commanded by Robert E. Lee fought a series of battles, largely Confederate victories, which pushed U.S. forces back from Richmond.
 This was cited as a turning point of the war by \textcite{Fuller1942a}: ``[The Peninsula Campaign] campaign was certainly one of [the Civil War's] most important [campaigns], because, in spite of numerous blunders, the Army of Northern Virginia, under the guidance of Lee, saved Richmond. Had Richmond fallen into Federal hands, the whole course of the war would have been changed \parencite[206]{Fuller1942a}.''
 The Seven Day's battles are cited by \textcite[145]{Reiter2009} as one of the turning points in the war, when ``it was becoming increasingly apparent that the war would not end quickly.''
-In this campaign both sides had opportunities to bring the war to an end, the U.S.  by capturing Richmond, and the Confederacy by destroying the Army of the Potomac, but neither was able to \parencite[Chapter6]{Fuller1942a}. 
+In this campaign, both sides had opportunities to bring the war to an end, the U.S.\ by capturing Richmond, and the Confederacy by destroying the Army of the Potomac, but neither was able to \parencite[Chapter6]{Fuller1942a}. 
 
-The estimates of the Union battles are generally smaller and all the 95 percent central credible intervals contain zero.
-However, the results are plausible in that the battles of Gettysburg (July 1--3, 1863) and Vicksburg (July 4, 1863) are estimated as among the largest battle effects.
+The estimates of the effects of Union battles are smaller in magnitude and  95 percent central credible intervals of all Union victories contain zero.
+However, the results are plausible in that the battles of Gettysburg (July 1--3, 1863) and Vicksburg (July 4, 1863) are estimated as having among the largest battle effects.
 This is despite these two battles occurring almost simultaneously, which makes it hard to disentangle their effects.
-The Union victory with the largest estimated effect is the Second Battle of Fort Fisher which closed the last Confederate seaport. 
-\textcite[154]{Reiter2009} cites the capture of  Fort Fisher as final turning point of the war.
+The Union victory with the largest estimated effect is the Second Battle of Fort Fisher which blockaded the Wilmington, N.C.\ , the last unblockaded Confederate seaport. 
+\textcite[154]{Reiter2009} cites the capture of Fort Fisher as final turning point of the war.
 
 \begin{figure}[!htpb]
   \centering
@@ -970,18 +973,18 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 The third question is ``how well do battles explain the variation in bond yields during the period considered?''
 If the yield movements are taken as a proxy of war expectations, this is equivalent to asking ``How well do major battle results (as operationalized here) explain the expected cost and duration of the war?''
 
-To answer this, I compare the models using the within-sample root mean squared error (RMSE) and the WAIC, which approximates the expected log predictive density or leave-one-out cross-validation.
+To answer this, I compare the models using the root mean squared error (RMSE) and the WAIC, which approximates the expected log predictive density or leave-one-out cross-validation.
 Table \ref{tab:waic} shows the RMSE, WAIC, and expected log predictive density (elpd) of all the models.
 The Widely Applicable Information Criterion (WAIC) \parencite{Watanabe2010} is an information criteria similar to AIC or the Deviance Information Criterion (DIC).
 Unlike either AIC or DIC is it fully Bayesian, and is calculated by integrating over the posterior distribution rather than using point estimates.
-The expected log predictive density (elpd) is the expected log probability of a new data point integrated over the distribution of new data points.
-WAIC and other information criteria approximate the elpd by adjusting the within-sample log-likelihood with a penalty for the complexity of the model.
+The expected log predictive density (elpd) is the expected log probability of a new (out-of-sample) data point.
+WAIC and other information criteria approximate the elpd by adjusting the  log-likelihood with a penalty for the complexity of the model.
 See \textcites[Ch. 7]{GelmanCarlinSternEtAl2013a}{GelmanHwangVehtari2014a}{GelmanVehtari2014a} for more on Bayesian information criteria for model comparison.
 
-The within-sample RMSE of the models that include battle effects is lower than that of the benchmark model $\Model{1}$. 
-However, the decrease in within-sample RMSE is relatively small.%
+The  RMSE of the models that include battle effects is lower than that of the benchmark model $\Model{1}$. 
+However, the decrease in  RMSE is relatively small.%
 \footnote{The $R^{2}$ of model $\Model{4}$ using $\Model{2}$ as the null model is only about 0.17.}
-The WAIC values and elpd also show that the models with battles improve the predictive ability of the models, but that the improvement is small.
+The WAIC and elpd also show that the models with battles improve the predictive ability of the models, but that the improvement is small.
 Although models $\Model{2}$--$\Model{3}$ all improve the WAIC (lower values) and elpd (higher values), the improvement is less than the standard errors of these  in model $\Model{1}$.%
 \footnote{See \textcite{GelmanVehtari2014a} for method to calculate standard errors for WAIC, and the R package \textbf{loo} for an implementation.}
 As operationalized in this work, battles appear to improve the predictive and explanatory power of the model of bond yields, but that improvement is small.
@@ -991,11 +994,11 @@ The average effect of a single Union victory is less than 1 standard deviation o
 Considering that there are only \Sexpr{nrow(major_battles)} battles, but \Sexpr{as.integer(data_m2[["END_DATE"]] - data_m2[["START_DATE"]]) + 1L} values of $\eta_{t}$, neither of those magnitudes seems particularly large.
 
 There are several interpretations for the limited explanatory power of battles in this analysis.
-First, major battles may be the key factor in war, but information diffuses slowly over time.
+First, major battles may be the key factor in war, but information diffuses slowly over time, while my model assumes that all effects of a battle occur within a short time of its conclusion.
 Second, smaller battles and non-battle events may not be as influential as large battles, but cumulatively they may have a large influence on the war outcome.
 Finally, perhaps improvements in the models employed in this analysis would produce different results.
 Perhaps I could better model the time-series processes, lag structure of battles, or operationalize combat differently.
-While I could make the models in this analysis more complicated, a better approach to distinguish between these interpretations is not more better models, but better data.
+While I could make the models in this analysis more complicated, a better approach to distinguish between these interpretations is not better models, but better data.
 I conclude this work by discussing one such approach in Section \ref{sec:conclusion}.
 
 \begin{table}[!htpb]
@@ -1013,7 +1016,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_btl_effects_size.tex")}}
-  \caption{The average battle effect compared to the average innovation is small.}
+  \caption{The posterior mean of the average effect of Confederate and Union victories is small relative to the  standard deviation of the innovations, $\eta$.}
   \label{tab:blt_effects_size}
 \end{table}
 
@@ -1037,17 +1040,17 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 I conclude with some thoughts on future directions for this research.
 There are several methodological issues that this analysis had to confront.
 They are ``What information about battles did the market receive?'', ``When did the market receive that information?'', and ``What other non-battle information did the market receive?''
-In this work, I handled the the first by assuming that only a small set of battles were important to have any effect, and that the market only cared about the results (Union or Confederate victory) of those battles.
-The assumption was that contemporaries would have also seen these battles as the most important battles, and that they would classify the results of battles similarly to how they were coded in the data.
-As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers and a lag.
-For the non-battle information that would be important to the market, I had no data on this, and modeled it with a fat-tailed distribution in the error term.
-A means to improve on this methodology is suggested by the way in which I handled the problem when news reached the market: I consulted contemporary newspapers to determine when information was reported publicly.
+In this work, I handled the the first by assuming that only a small set of battles were important enough to have any effect, and that the market only cared about the results (Union or Confederate victory) of those battles.
+The assumption was that contemporaries would have also seen that same set of  battles as the most important, and that they would classify the results of battles similarly to how they were coded in the data.
+As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers.
+Since I had no data on the non-battle information that would be important to the market, I only modeled it with a fat-tailed distribution in the error term.
+A means to improve on this methodology is suggested by the way in which I handled the problem of when news reached the market; I consulted contemporary newspapers to determine when information about battles was publicly known.
 The way in which I used newspaper data to identify when the market received information about the battles could be extended to address all three questions.
 A rough sketch of the analysis would be to use computational natural language processing tools, \eg{}topic models, to extract events or topics from the text of contemporary newspapers and regress those topics on market movements.
 The information that the market received about battles would correspond to battle-related topics inferred from the newspaper articles.
 When the market received that information would simply be the days on which those topics appeared in newspapers.
-The same method would also provide non-battle events.
-These would be the topics that do not correspond to battles or combat.
+The same method would also provide measures of non-battle events.
+These would be the topics that do not correspond to 
 This approach would provide a set of control variables for non-battle events, without the researcher needing to make arbitrary decisions about which events were important.
 This sort of analysis, which combines natural language processing to generate events with market movements as measures of war expectations seems a promising approach to understanding the effects of combat on war outcomes where the events are not always either clearly identified or discrete. 
 
@@ -1104,6 +1107,7 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  GelmanHwangVehtari2014a GelmanVehtari2014a 1L von
 %  LocalWords:  Clausewitz1989 Gartner1998 NorthWeingast1989
 %  LocalWords:  sussman2000instit wells2000revol Herron2000
-%  LocalWords:  eldor2004finan Greenstone2007 Schwartz1900
+%  LocalWords:  eldor2004finan Greenstone2007 Schwartz1900 Fruehwirth
 %  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000
-%  LocalWords:  HaberMitchenerOosterlinckEtAl2014
+%  LocalWords:  HaberMitchenerOosterlinckEtAl2014 Schnatter1994
+%%  LocalWords:  CarterKohn1994

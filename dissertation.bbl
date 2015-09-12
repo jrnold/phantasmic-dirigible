@@ -386,6 +386,37 @@
       \verb http://www.jstor.org/stable/2663038
       \endverb
     \endentry
+    \entry{CarterKohn1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=916a516cbe958af18d4a219c75c186dc}{Carter}{C\bibinitperiod}{C.\bibnamedelimi K.}{C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=dacf371dca0c3bceaa55d02b154936b9}{Kohn}{K\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c61d6ec3ae5d930a2c04c3eea136aadf}
+      \strng{fullhash}{c61d6ec3ae5d930a2c04c3eea136aadf}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SUMMARY We show how to use the Gibbs sampler to carry out Bayesian inference on a linear state space model with errors that are a mixture of normals and coefficients that can switch over time. Our approach simultaneously generates the whole of the state vector given the mixture and coefficient indicator variables and simultaneously generates all the indicator variables conditional on the state vectors. The states are generated efficiently using the Kalman filter. We illustrate our approach by several examples and empirically compare its performance to another Gibbs sampler where the states are generated one at a time. The empirical results suggest that our approach is both practical to implement and dominates the Gibbs sampler that generates the states one at a time.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{3}
+      \field{title}{On Gibbs sampling for state space models}
+      \field{volume}{81}
+      \field{year}{1994}
+      \field{pages}{541\bibrangedash 553}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1093/biomet/81.3.541
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/81/3/541.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/81/3/541.abstract
+      \endverb
+    \endentry
     \entry{CarvalhoPolsonScott2009}{article}{}
       \name{author}{3}{}{%
         {{hash=cea34ae4a46351c9319e53fb22311a60}{Carvalho}{C\bibinitperiod}{Carlos\bibnamedelima M.}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
@@ -1051,6 +1082,38 @@
       \field{year}{2000}
       \field{pages}{187\bibrangedash 191}
       \range{pages}{5}
+    \endentry
+    \entry{Fruehwirth-Schnatter1994}{article}{}
+      \name{author}{1}{}{%
+        {{hash=83485dfde2678ca0bd6138144fcfe9ff}{Frühwirth-Schnatter}{F\bibinithyphendelim S\bibinitperiod}{Sylvia}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{83485dfde2678ca0bd6138144fcfe9ff}
+      \strng{fullhash}{83485dfde2678ca0bd6138144fcfe9ff}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. We define a subclass of dynamic linear models with unknown hyperpara-meter called d-inverse-gamma models. We then approximate the marginal probability density functions of the hyperparameter and the state vector by the data augmentation algorithm of Tanner and Wong. We prove that the regularity conditions for convergence hold. For practical implementation a forward-filtering-backward-sampling algorithm is suggested, and the relation to Gibbs sampling is discussed in detail.}
+      \field{issn}{1467-9892}
+      \field{journaltitle}{Journal of Time Series Analysis}
+      \field{number}{2}
+      \field{title}{Data Augmentation And Dynamic Linear Models}
+      \field{volume}{15}
+      \field{year}{1994}
+      \field{pages}{183\bibrangedash 202}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1111/j.1467-9892.1994.tb00184.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1467-9892.1994.tb00184.x
+      \endverb
+      \keyw{Approximate Bayesian analysis,data augmentation,dynamic linear models,Gibbs sampling,Kalman filtering,state space models}
     \endentry
     \entry{Fuller1942a}{book}{}
       \name{author}{1}{}{%
@@ -3033,6 +3096,24 @@
       \field{year}{1993}
       \verb{url}
       \verb http://www.nps.gov/hps/abpp/battles/tvii.htm
+      \endverb
+    \endentry
+    \entry{Stan2014}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2418ee02a26ab01ead911ec86c507892}{{Stan\bibnamedelimb Development\bibnamedelimb Team}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2418ee02a26ab01ead911ec86c507892}
+      \strng{fullhash}{2418ee02a26ab01ead911ec86c507892}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stan: A C++ Library for Probability and Sampling, Version 2.2}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://mc-stan.org/
       \endverb
     \endentry
     \entry{Stan2015a}{manual}{}
