@@ -1,6 +1,5 @@
 *~
 *.dvi
-*.pdf
 *.log
 /auto/
 *.run.xml
