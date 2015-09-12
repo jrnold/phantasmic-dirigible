@@ -13,7 +13,7 @@ date_iso <- function(x) format(x, "%Y-%m-%d")
 \newcommand{\UCa}{Union and Confederate}
 
 
-To what extent did financial markets anticipate the start of the American civil war?
+To what extent did financial markets anticipate the start of the American Civil War?
 How did the market's assessment of war risk change leading up to the war?
 Which events were associated with these changes?
 This work answers these questions using data on the prices and yields of U.S. government and state bonds between 1855 and the start of the war in April 1861.
@@ -21,7 +21,7 @@ Three measures are used to assess the market's beliefs about the risk of war: bo
 These measure show that the financial market largely did not anticipate the conflict, even on the eve of the Battle of Fort Sumter.
 The financial market assigned a negligible probability of war prior to the election of Lincoln in 1860.
 After the election, it assigned some probability to a  war, but that probability was quite small.
-Bond prices on April 13, 1861, immediately prior to news of the Battle of Fort Sumter reaching New York City implied only a \Sexpr{prwar_18610413} percent change of war.%
+Bond prices on April 13, 1861, immediately prior to news of the Battle of Fort Sumter reaching New York City implied only a \Sexpr{prwar_18610413} percent chance of war.%
 \footnote{Interpret ``\Sexpr{prwar_18610413}'' as ``mean (2.5\% quantile, 97.5\% quantile)''}
 
 The results in this paper speak to two important international relations theories: the bargaining theory of war \parencite{Fearon1995} and the capitalist peace \parencites{GartzkeLiEtAl2001a}{GartzkeLi2003}.
@@ -31,28 +31,25 @@ Financial markets may allow some progress in testing these theories.
 Prices of certain assets whose payoffs are contingent on war outcomes, e.g.\ sovereign bonds, can be used as estimates of war initiation or outcome conditional on the public information available at the time.
 From this, the researcher can calculate an implied probability of the occurrence of war.
 This is useful because different theories of war have have different implications as to how uncertain wars are \textit{ex ante}.
-In particular, in the standard models of private information and commitment problems, only wars of private information are uncertain \textit{ex ante}.
+Wars due to private information should be unanticipated \parencite{Gartzke1999}.
+Since commitment problem wars can occur with complete information nothing requires them to be unanticipated.
 %In the original formulation of a private information theory of war \parencite{Fearon1995}, 
-In the commitment problem, if the shift in power is sufficiently large to trigger a war, then war occurs with certainty.
-If it is not, then war does not occur with certainty.
-Other models may imply different \textit{ex ante} public information probabilities of conflict.
-The point is that many models of conflict have implications about \textit{ex ante} probability of war, and prices of some assets can be used to as a measure of this \textit{ex ante} probability.
-Thus, financial markets may provide another means to test theories of war initiation.
-
+%Other models may imply different \textit{ex ante} public information probabilities of conflict.
+The point is that many models of war have implications of the \textit{ex ante} probability of war, and prices of some assets can be used to as a measure of this \textit{ex ante} probability.
+Thus, financial markets may provide another means to test rationalist theories of war initiation.
+Additionally, the inability of markets to assess the \textit{ex ante} probability of war casts doubt on their ability to signal to the cost of war to potential belligerents as in the capitalist peace theory.
 
 This paper contributes to an economic history literature on the reactions of financial markets to events within the American Civil War.
 This includes multiple papers on reactions of the financial markets on both sides and Europe to the American Civil War \parencites{Schwab1901}{Mitchell1903}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2002}.
 This paper adds to that literature by analyzing the initiation of the war and by using Northern and Southern state bond data.
-This paper also adds to the growing international relations literature \textcite{Poast2012}, and \textcite{Reiter2009} on the American Civil War, which has often been overlooked in the international relations literature as most work on civil wars focuses on civil wars after 1945.
-This employs methods similar to \textcite{HaberMitchenerOosterlinckEtAl2015};
-That work estimates the implied probability of victory by the Confederacy in the American Civil War and the Chinese government in the Chinese Civil War from bond prices by treating defeat of the issuing side as a default.
-More broadly, this paper adds to the literature analyzing the reactions of financial markets to conflict and political events.
-Other papers which have analyzed the responses of financial markets to other conflicts include:  \textcite{Bueno1990}, World War I \textcite{Hall2004} and \textcite{Ferguson2006}, World War II \textcites{WaldenstromFrey2008}{WaldenstromFrey2008}.
+This paper also adds to the growing international relations literature on the American Civil War, which has often been overlooked in the international relations literature as most work on civil wars focuses on civil wars after 1945 \parencites{Poast2012}{Reiter2009}.
+This work employs methods similar to \textcite{HaberMitchenerOosterlinckEtAl2015}, which estimates the implied probability of victory by the Confederacy in the American Civil War and the Chinese government in the Chinese Civil War from bond prices by treating defeat of the issuing side as a default.
+More broadly, this paper adds to the literature that analyzes the reactions of financial markets to conflict and political events.
+Other papers which have analyzed the responses of financial markets to conflicts include: \textcite{Bueno1990}, \textcite{Hall2004} and \textcite{Ferguson2006} (World War I), and \textcites{WaldenstromFrey2008}{WaldenstromFrey2008} (World War II).
 \textcite{SchneiderTroeger2006} analyze the reactions of major stock market indices to events in Iraq, Israel, and the former Yugoslavia from 1990-2000.
-\textcite{GuidolinLaFerrara2010} market reactions to militarized interstate disputes.
+\textcite{GuidolinLaFerrara2010} analyzes market reactions to militarized interstate disputes.
 Several papers look at reactions of markets to the Iraq War \parencites{RigobonSack2005}{LeighWolfersEtAl2003}{WolfersZitzewitz2009}.
 Other papers estimate response of financial markets to elections or political change \parencites{Jayachandr2006}{Herron2000}.
-
 
 \section{Financial Market Prices and War Initiation}
 \label{sec:risky-bond-pricing}
