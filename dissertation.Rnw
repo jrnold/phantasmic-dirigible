@@ -268,7 +268,7 @@ knitr::opts_chunk[["set"]](echo = FALSE)
 \chapter{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
 \label{cha:structural-breaks}
 
-%\input{Structural_Breaks}
+\input{changepoints}
 
 % References
 \clearpage

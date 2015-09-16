@@ -270,6 +270,33 @@
       \verb http://www.jstor.org/stable/2566803
       \endverb
     \endentry
+    \entry{BrownGriffin2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9299fdec252f5cc19ffeb5a1e312b3db}{Brown}{B\bibinitperiod}{Philip\bibnamedelima J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ba5b0265e5ec6d1e5c51e49e4cf8215a}{Griffin}{G\bibinitperiod}{Jim\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{467d0a3ac4cce58b41e741f51db7e82f}
+      \strng{fullhash}{467d0a3ac4cce58b41e741f51db7e82f}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5}
+      \field{journaltitle}{Bayesian Analysis}
+      \field{number}{1}
+      \field{title}{Inference with normal-gamma prior distributions in regression problems}
+      \field{year}{2010}
+      \field{pages}{171\bibrangedash 188}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1214/10-BA507
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.ba/1340369797
+      \endverb
+    \endentry
     \entry{Bueno1990}{article}{}
       \name{author}{1}{}{%
         {{hash=8e102199bd2524d161a878becbd784dc}{{Bueno\bibnamedelimb de\bibnamedelimb Mesquita}}{B\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
@@ -386,6 +413,40 @@
       \verb http://www.jstor.org/stable/2663038
       \endverb
     \endentry
+    \entry{CaronDoucet2008}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=a52994be6c2248d1f4537b4d92dc1480}{Caron}{C\bibinitperiod}{François}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=aca5faad8b57b96b59c12fc59d0b6eb4}{Doucet}{D\bibinitperiod}{Arnaud}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Helsinki, Finland}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d68765fbf091c2befab8ba63f9948e5f}
+      \strng{fullhash}{d68765fbf091c2befab8ba63f9948e5f}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the most common problems in machine learning and statistics consists of estimating the mean response Xβ from a vector of observations y assuming y = Xβ + ε where X is known, β is a vector of parameters of interest and ε a vector of stochastic errors. We are particularly interested here in the case where the dimension K of β is much higher than the dimension of y. We propose some flexible Bayesian models which can yield sparse estimates of β. We show that as K → ∞ these models are closely related to a class of Lévy processes. Simulations demonstrate that our models outperform significantly a range of popular alternatives.}
+      \field{booktitle}{Proceedings of the 25th international conference on Machine learning}
+      \field{isbn}{978-1-60558-205-4}
+      \field{series}{ICML '08}
+      \field{title}{Sparse Bayesian nonparametric regression}
+      \field{year}{2008}
+      \field{pages}{88\bibrangedash 95}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1390156.1390168
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/1390156.1390168
+      \endverb
+    \endentry
     \entry{CarterKohn1994}{article}{}
       \name{author}{2}{}{%
         {{hash=916a516cbe958af18d4a219c75c186dc}{Carter}{C\bibinitperiod}{C.\bibnamedelimi K.}{C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -438,6 +499,38 @@
       \field{year}{2009}
       \field{pages}{73\bibrangedash 80}
       \range{pages}{8}
+    \endentry
+    \entry{CarvalhoPolsonScott2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cea34ae4a46351c9319e53fb22311a60}{Carvalho}{C\bibinitperiod}{Carlos\bibnamedelima M.}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9cdd299fd2641b26a52be6226db32423}
+      \strng{fullhash}{9cdd299fd2641b26a52be6226db32423}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a new approach to sparsity, called the horseshoe estimator, which arises from a prior based on multivariate-normal scale mixtures. We describe the estimator’s advantages over existing approaches, including its robustness, adaptivity to different sparsity patterns and analytical tractability. We prove two theorems: one that characterizes the horseshoe estimator’s tail robustness and the other that demonstrates a super-efficient rate of convergence to the correct estimate of the sampling density in sparse situations. Finally, using both real and simulated data, we show that the horseshoe estimator corresponds quite closely to the answers obtained by Bayesian model averaging under a point-mass mixture prior.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The horseshoe estimator for sparse signals}
+      \field{volume}{97}
+      \field{year}{2010}
+      \field{pages}{465\bibrangedash 480}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1093/biomet/asq017
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/97/2/465.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/97/2/465.abstract
+      \endverb
     \endentry
     \entry{Chan-Lau2006}{article}{}
       \name{author}{1}{}{%
@@ -1390,6 +1483,37 @@
       \endverb
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'GelmanVehtari2014a'}
     \endentry
+    \entry{GiordaniKohn2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=944f1440ca9ded138356f618f35810d5}{Giordani}{G\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=eb1882a0a114f6c1c7967db0eb33d20d}{Kohn}{K\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ee554c3a173bdcf6388e8ca4df920054}
+      \strng{fullhash}{ee554c3a173bdcf6388e8ca4df920054}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time series subject to parameter shifts of random magnitude and timing are commonly modeled with a change-point approach using Chib's algorithm to draw the break dates. We outline some advantages of an alternative approach in which breaks come through mixture distributions in state innovations, and for which the sampler of Gerlach, Carter, and Kohn allows reliable and efficient inference. We show how the same sampler can be used to model shifts in variance that occur independently of shifts in other parameters and how to draw the break dates efficiently when regime durations follow a Poisson process. Finally, we introduce to the time series literature the concept of adaptive Metropolis--Hastings sampling for discrete latent variable models. We develop an easily implemented adaptive algorithm that improves on the work of Gerlach et al. and promises to significantly reduce computing time in a variety of problems including mixture innovation, change-point, regime switching, and outlier detection. The efficiency gains on two models for U.S. inflation and real interest rates are 2.57\% and 3.41\%.}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Efficient Bayesian Inference for Multiple Change-Point and Mixture Innovation Models}
+      \field{volume}{26}
+      \field{year}{2008}
+      \field{pages}{66\bibrangedash 77}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1198/073500107000000241
+      \endverb
+      \verb{eprint}
+      \verb http://amstat.tandfonline.com/doi/pdf/10.1198/073500107000000241
+      \endverb
+      \verb{url}
+      \verb http://amstat.tandfonline.com/doi/abs/10.1198/073500107000000241
+      \endverb
+    \endentry
     \entry{Godfrey1976}{book}{}
       \name{author}{1}{}{%
         {{hash=5f07b46c88f90e755a40487c66f1fc77}{Godfrey}{G\bibinitperiod}{J.M.}{J\bibinitperiod}{}{}{}{}}%
@@ -1611,6 +1735,36 @@
       \verb http://www.sciencedirect.com/science/article/B6VBW-4DSB10S-2/2/3bc7658152bcc006a7df02095246d23a
       \endverb
       \keyw{Factor models}
+    \endentry
+    \entry{Hans2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8ed195f578f7aed74f44a205592a04ca}{Hans}{H\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8ed195f578f7aed74f44a205592a04ca}
+      \strng{fullhash}{8ed195f578f7aed74f44a205592a04ca}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The lasso estimate for linear regression corresponds to a posterior mode when independent, double-exponential prior distributions are placed on the regression coefficients. This paper introduces new aspects of the broader Bayesian treatment of lasso regression. A direct characterization of the regression coefficients’ posterior distribution is provided, and computation and inference under this characterization is shown to be straightforward. Emphasis is placed on point estimation using the posterior mean, which facilitates prediction of future observations via the posterior predictive distribution. It is shown that the standard lasso prediction method does not necessarily agree with model-based, Bayesian predictions. A new Gibbs sampler for Bayesian lasso regression is introduced.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{4}
+      \field{title}{Bayesian lasso regression}
+      \field{volume}{96}
+      \field{year}{2009}
+      \field{pages}{835\bibrangedash 845}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/biomet/asp047
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/96/4/835.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/96/4/835.abstract
+      \endverb
     \endentry
     \entry{Helmbold1995}{report}{}
       \name{author}{1}{}{%
@@ -2496,6 +2650,24 @@
       \field{title}{Lincoln’s Gamble: How the Southern Secession Crisis Became the American Civil War}
       \field{year}{2012}
     \endentry
+    \entry{PolsonScott2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \strng{fullhash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use Levy processes to generate joint prior distributions for a location parameter β = (β1 , . . . , βp ) as p grows large. This approach, which generalizes normal scale-mixture priors to an infinite-dimensional setting, has a number of connections with mathematical finance and Bayesian nonparametrics. We argue that it provides an intuitive framework for generating new regularization penalties and shrinkage rules; for performing asymptotic analysis on existing models; and for simplifying proofs of some classic results on normal scale mixtures.}
+      \field{journaltitle}{Bayesian Statistics}
+      \field{title}{Shrink Globally, Act Locally: Sparse Bayesian Regularization and Prediction}
+      \field{year}{2010}
+    \endentry
     \entry{Powell2004}{article}{}
       \name{author}{1}{}{%
         {{hash=cd0548d3ef88b1bbfa0243b33756e57b}{Powell}{P\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
@@ -3323,6 +3495,38 @@
       \range{pages}{18}
       \verb{url}
       \verb http://www.jstor.org/stable/3647602
+      \endverb
+    \endentry
+    \entry{Tipping2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=da28a755c865268360d92a89f5d7501f}{Tipping}{T\bibinitperiod}{Michael\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {JMLR.org}%
+      }
+      \strng{namehash}{da28a755c865268360d92a89f5d7501f}
+      \strng{fullhash}{da28a755c865268360d92a89f5d7501f}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2001}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a general Bayesian framework for obtaining sparse solutions to regression and classification tasks utilising models linear in the parameters. Although this framework is fully general, we illustrate our approach with a particular specialisation that we denote the 'relevance vector machine' (RVM), a model of identical functional form to the popular and state-of-the-art 'support vector machine' (SVM). We demonstrate that by exploiting a probabilistic Bayesian learning framework, we can derive accurate prediction models which typically utilise dramatically fewer basis functions than a comparable SVM while offering a number of additional advantages. These include the benefits of probabilistic predictions, automatic estimation of 'nuisance' parameters, and the facility to utilise arbitrary basis functions (e.g. non-'Mercer' kernels). We detail the Bayesian framework and associated learning algorithm for the RVM, and give some illustrative examples of its application along with some comparative benchmarks. We offer some explanation for the exceptional degree of sparsity obtained, and discuss and demonstrate some of the advantageous features, and potential extensions, of Bayesian relevance learning.}
+      \field{issn}{1532-4435}
+      \field{journaltitle}{J. Mach. Learn. Res.}
+      \field{month}{09}
+      \field{title}{Sparse bayesian learning and the relevance vector machine}
+      \field{volume}{1}
+      \field{year}{2001}
+      \field{pages}{211\bibrangedash 244}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1162/15324430152748236
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1162/15324430152748236
       \endverb
     \endentry
     \entry{Treasury1860}{book}{}

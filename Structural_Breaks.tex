@@ -1,7 +1,7 @@
 
 
-Political and social processes are rarely, if ever, constant over time.
-Thus, political scientists often have a need to estimate time-varying parameter (TVP) models.
+Political and social processes are rarely, if ever, constant over time,
+meaning that political scientists often have a need to estimate time-varying parameter (TVP) models.
 There exist two broad approaches to estimating time-varying parameters: structural break approaches, which include dummy variables and change point models, and smoothing approaches, which include dynamic linear models and smoothing splines.
 Both approaches estimate TVP when the number of observations is small relative to the number of time periods. 
 Smoothing approaches keep the parameter differences small in all periods, while structural break approaches restrict parameter changes to a few locations.
@@ -95,36 +95,6 @@ There are both conceptual and computational disadvantages to these methods.
 Conceptually, it may be implausible that $\theta_{i}$ is exactly equal to 0, especially for social science phenomena (CITE GELMAN).
 Computationally, spike-and-slab priors can become intractable in high dimensions since the discrete part of the prior distribution has a support of cardinality $2^{k}$ where $k$ is the number of paramters.
 
-Shrinkage approaches estimate sparsity using a continuous prior distribution centered at zero.
-Early examples of shrinkage approaches include \parencites{Tibshirani1996}{Tipping2001}.
-Shinkage priors are the Bayesian equivalent of penalized likelihood and regularized regression.
-Most proposed Bayesian shrinkage priors are in the the class of global-local mixtures of normal distributions \parencite{PolsonScott2010}:
-\begin{equation}
-  \label{dlm:eq:3}
-  \begin{aligned}[t]
-    \theta_{t} &= N(0, \tau^{2} \lambda_{i}^{2}) \\ 
-    \lambda_{t}^{2} &\sim p(\lambda_{t}^{2}) \\
-    \tau_{t}^{2} &\sim p(\tau^{2})
-  \end{aligned}
-\end{equation}
-A global-local normal distribution is a scale mixture of normal distributions in which the variance is the product of a global variance component $\tau^{2}$ and a local variance component $\lambda_{t}^{2}$.
-The $\lambda_t$ are also called mixing parameters, and their distribution is called the mixing distribution.
-Distributions in the global-local class of priors differ in the assumed distribution of the local variance component. 
-Examples of commonly used shrinkage distributions and their mixing distributions include \parencite{PolsonScott2010}:%
-\footnote{A normal prior, as used in ridge regression, is the trivial case in which $\lambda_{i} = 1$ for all $i$.}
-\begin{description}
-\item[Student's t] The mixing distribution is inverse gamma, $p(\lambda_{i}) = \dinvgamma{\xi / 2, \xi \tau^{2} / 2}$ where $\xi$ are the degrees of freedom. \parencite{Tipping2001}
-\item[Double Exponential (Lasso)] The mixing distribution is exponential \parencites{ParkCasella2008}{Hans2009},
-\begin{equation*}
-    \begin{aligned}[t]
-      p(\lambda_{i} | \tau_{i}) &= \frac{1}{2 \tau^{2}} \exp (\lambda_{i}^{2} / 2 \tau^{2}) \\
-      p(\tau^{2}) &\sim \dinvgamma{\xi / 2, \xi d^{2} / 3}
-    \end{aligned}
-  \end{equation*}
-\item[Normal-Gamma] The mixing distribution is gamma, $\lambda^{2}_{i} \sim \dgamma{a, b}$ \parencites{CaronDoucet2008}{BrownGriffin2010}.
-\item[Horseshoe] The mixing distribution is inverse-beta $\lambda^{2}_{i} \sim \dinvbeta{\frac{1}{2}, \frac{1}{2}}.$ 
-Equivalently, $\lambda_{i} \sim \dhalfcauchy{0, 1}$ \parencite{CarvalhoPolsonScott2010}.
-\end{description}
 
 The analog of $w$ in the global-local normal distributions is the shrinkage parameter $\kappa$.
 Following standard results from a normal distribution with a normal prior on the mean and known variance, the posterior distribution of $\theta_{i}$ is
