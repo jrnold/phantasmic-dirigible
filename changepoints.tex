@@ -6,13 +6,16 @@ This paper
 
 
 \begin{itemize}
-\item How changepoints are typically 
+\item How change-points are typically 
 \item Representation as a variable selection problem
 \item Discussion of shrinkage priors
 \item Dynamic linear model representation
 \end{itemize}
 
-\section{}
+Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+
+\section{Changepoints as a Variable Selection Problem}
+\label{dlm:sec:chang-as-vari}
 
 Consider the case of observations with a mean that takes on $M$ values with change-point locations, $\tau_{1}, \dots, \tau_{m}$,
 \begin{equation}
@@ -22,34 +25,36 @@ Consider the case of observations with a mean that takes on $M$ values with chan
     \mu_{t} &= \mu^{*}_{m} & \text{if $\tau_{m} \leq t \leq \tau_{m + 1}$}
   \end{aligned}
 \end{equation}
-for $t \in 1, \dots, n$, and with the convention that  $\mu_{t} = \mu^{*}_{1}$ and $\mu_{t} = \mu^{*}_{M}$.
-In the equation, $\epsilon_{t}$ are mean zero and iid random variables.
-This case is presented for convenience, and I will consider more general cases later.
+for $t = 1, \dots, n$, $\epsilon_{t}$ are mean zero, iid random variables with variance $\sigma^{2}$, and with the convention that  $\mu_{t} = \mu^{*}_{1}$ and $\mu_{t} = \mu^{*}_{M}$.
+This case is presented for simplicity, and I will consider more general cases later.
+There are a variety of change-point approaches to this problem in both classical statistics, and Bayesian.
 
-Instead of focusing on the locations of the change-points, the problem in equation (\ref{dlm:eq:1}) can be rewritten to focus on the values of the changes $\mu_{t} - \mu_{t - 1}$.
+An alternative approach is to rewrite the problem in equation (\ref{dlm:eq:1}) can be rewritten to focus on the values of the changes $\mu_{t} - \mu_{t - 1}$, rather than the locations of the change points:
 \begin{equation}
   \label{dlm:eq:2}
-  \begin{aligned}
+  \begin{aligned}[t]
     y_{t} &= \mu_{t} + \epsilon_{t} \\
     \mu_{t} &= \mu_{t - 1} + \omega_{t}
   \end{aligned}
 \end{equation}
-In the change-point situation, it is expected that $\omega_{t}$ is sparse, \ie{}most values of $\omega_{t}$ are zero, and only a few are non-zero.
-Change-points are the times at which $\omega_{t}$ are non-zero.
-In this formulation, the problem becomes one of variable selection---finding the non-zero values of $\eta_{t}$.%
+In change-points, the innovations $\omega_{t}$ are sparse, \ie{}most values of $\omega_{t}$ are zero, and only a few are non-zero.
+The change-points are the times at which $\omega_{t}$ are non-zero.
+In this formulation, the problem is one of variable selection, finding the non-zero values of $\omega_{t}$ and estimating their values.
 \footnote{In Equation (\ref{dlm:eq:2})The initial value of $\mu_{1}$, or equivalently $\mu_{0}$, needs to be given a value.
 %This will likley work better with the formulation that initilizes at t = 1, since we should assume \omega_1=0.
 }
-The natural approach to variable selection would be a two-groups model (Efron 2008, ...)
-This means that the variable has a prior distribution that is a mixture of a point mass at zero, and a diffuse distribution.
+The natural approach to this variable selection problem is to explicitly model the values of $\omega$ as a discrete mixture between a point mass at zero for the non-changepoints, and a heavy-tailed alternative \textcite{MitchellBeauchamp1988a}{Efron2008a}:
 \begin{equation}
   \label{dlm:eq:3}
-  \omega_{t} = \pi f(\omega) + (1 - \pi) \delta_{0}
+  \omega_{t} = \pi g(\omega) + (1 - \pi) \delta_{0}
 \end{equation}
-\textcite{GiordaniKohn2008} proprose this soluation, and provide an efficient implement
+where $g$ is some heavy-tailed distribution.
+Equation (\ref{dlm:eq:3}) is often called a ``spike and slab'' prior \textcite{MitchellBeauchamp1988a}.
+Since it explicitly models the two groups (zeros and non-zeros), \textcite{Efron2008a} calls this the two-group answer to the two-groups problem.
+\textcite{GiordaniKohn2008} propose using the representation in Equation (\ref{dlm:eq:2}) with the a discrete mixture distribution for $\omega$, as in Equation (\ref{dlm:eq:3}), to estimate change points.
 
-Recent advances in Bayesian computation has focused on one-group solutions to the variable selection probelm.
-This are single continuous distributions (or mixtures of continuous distributions) that approximate the mixture distribution in Equation (\ref{dlm:eq:3}) by have a spike at zero, and fat tails.
+Recent work in Bayesian computation has focused on one-group solutions to the variable selection problem.
+These approaches propose continuous distributions with a large spike at zero and    Equation (\ref{dlm:eq:3})  spike at zero, and fat tails.
 These are similar in spirit to the regularization literature of the LASSO and variations thereof, that handle shrinkage and variable selection simultaneously.
 
 In the Bayesian literature there are several proposed distributions.
@@ -61,10 +66,7 @@ See ... for an overview.
 \item Horseshoe+ 
 \end{itemize}
 
-
-Shrinkage approaches estimate sparsity using a continuous prior distribution centered at zero.
-Early examples of shrinkage approaches include \parencites{Tibshirani1996}{Tipping2001}.
-Shinkage priors are the Bayesian equivalent of penalized likelihood and regularized regression.
+Shrinkage priors are the Bayesian equivalent of penalized likelihood and regularized regression.
 Most proposed Bayesian shrinkage priors are in the the class of global-local mixtures of normal distributions \parencite{PolsonScott2010}:
 \begin{equation}
   \label{dlm:eq:3}
@@ -79,19 +81,87 @@ The $\lambda_t$ are also called mixing parameters, and their distribution is cal
 Distributions in the global-local class of priors differ in the assumed distribution of the local variance component. 
 Examples of commonly used shrinkage distributions and their mixing distributions include \parencite{PolsonScott2010}:%
 \footnote{A normal prior, as used in ridge regression, is the trivial case in which $\lambda_{i} = 1$ for all $i$.}
+
 \begin{description}
 \item[Student's t] The mixing distribution is inverse gamma, $p(\lambda_{i}) = \dinvgamma{\xi / 2, \xi \tau^{2} / 2}$ where $\xi$ are the degrees of freedom. \parencite{Tipping2001}
 \item[Double Exponential (Lasso)] The mixing distribution is exponential \parencites{ParkCasella2008}{Hans2009},
-\begin{equation*}
-    \begin{aligned}[t]
-      p(\lambda_{i} | \tau_{i}) &= \frac{1}{2 \tau^{2}} \exp (\lambda_{i}^{2} / 2 \tau^{2}) \\
-      p(\tau^{2}) &\sim \dinvgamma{\xi / 2, \xi d^{2} / 3}
-    \end{aligned}
-  \end{equation*}
+\begin{equation}
+  \begin{aligned}[t]
+    p(\lambda_{i} | \tau_{i}) &= \frac{1}{2 \tau^{2}} \exp (\lambda_{i}^{2} / 2 \tau^{2}) \\
+    p(\tau^{2}) &\sim \dinvgamma{\xi / 2, \xi d^{2} / 3}
+  \end{aligned}
+\end{equation}
 \item[Normal-Gamma] The mixing distribution is gamma, $\lambda^{2}_{i} \sim \dgamma{a, b}$ \parencites{CaronDoucet2008}{BrownGriffin2010}.
 \item[Horseshoe] The mixing distribution is inverse-beta $\lambda^{2}_{i} \sim \dinvbeta{\frac{1}{2}, \frac{1}{2}}.$ 
 Equivalently, $\lambda_{i} \sim \dhalfcauchy{0, 1}$ \parencite{CarvalhoPolsonScott2010}.
 \end{description}
+
+While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
+\begin{itemize}
+\item For many time-varying parameter processes typically modeled with a change-point model, the situation akin to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
+  In other words, the innovations $\omega$ are never zero; it is just that in most periods they are relatively small.
+  This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
+  It may be useful for the researcher to model it with a step function (change points) for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
+  I would argue that the data generating processes considered by political science papers using change points falls into this category, for example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
+\item When the goal is estimation or prediction of the parameters, rather than the locations of the change-points, then this approach is already an approximation of model averaging.
+\end{itemize}
+
+\section{Estimation}
+\label{dlm:sec:estimation}
+
+
+
+\subsection{Dynamic Linear Models}
+\label{dlm:sec:dynam-line-models}
+
+A dynamic linear model, also called Gaussian state space models, is represented by a system of equations
+\begin{equation}
+  \label{dlm:eq:4}
+  \begin{aligned}[t]
+  y_{t} &\sim \dnorm{b_{t} + F_{t} \theta_{t}, V_{t}} \\
+  \theta_{t} &\sim \dnorm{g_{t} + G_{t} \theta_{t - 1}, W_{t}} 
+  \end{aligned}
+\end{equation}
+This is covered in INSERT TEXTS.
+
+The model in Section \Stan{}, a probabilistic programming language, through the \R{} package \textbf{rstan}.
+These models could be estimated in \Stan{} directly by translating the models in 
+Although the Horseshoe and Horseshoe+ distributions are not directly implemented in \Stan{} (they do not have a closed form representation), they are easily implemented in Stan through their hierarchical implementations.%
+\footnote{See the examples in \url{http://andrewgelman.com/2015/02/17/bayesian-survival-analysis-horseshoe-priors/} and \url{http://becs.aalto.fi/en/research/bayes/diabcvd/}.}
+
+However, Gaussian state space models can be estimated more efficiently by marginalizing over the latent states while sampling other parameters, and then sampling the latent states using a FFBS type sampler.
+
+Several \R{} packages implement Kalman filtering, smoothing, and simulation for Gaussian state space models; see \textcite{Tusell2011} for an overview.
+However, these do not provide a full Bayesian sampling solution, since the user would still need to write their own sampler for any other parameters going into the state space model, or if the state space model were a component of a more complex model.
+The  probabilistic programming language, \proglang{JAGS}, does not implement a specific sampler for Gaussian linear state space models.
+
+Let $\vartheta$ refer to all parameters in the system vectors and matrices in the state space models,
+\begin{enumerate}
+\item Sample $\vartheta$ from $p(\vartheta | y)$ using HMC in \Stan{}.
+  This requires integrating out the latent states, $\theta$, and calculating $p(y | \vartheta)$.
+  The value of $p(y | \vartheta)$ is calculated using the Kalman filter.
+\item Sample $p(\theta | y, \vartheta)$ using a simulation sampler for the linear Gaussian state space model.
+\end{enumerate}
+I use this method for all models in the paper. 
+To implement this method in \Stan{}.
+I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling.
+Section XXXX provides documentation of these functions.
+
+
+
+\section{Change Point Examples}
+\label{dlm:sec:examples}
+
+
+\begin{itemize}
+\item Blocks
+\item Nile
+\item Civil War Greenbacks / Graybacks
+\end{itemize}
+
+
+
+
 
 
 \section{Efficient Estimation of DLMs in Stan}
@@ -103,3 +173,10 @@ Comparison of speed of implementations in R, focusing on mode finding: @Tusell20
 
 
 Marginalizing over latent states is necessary in discrete state space models in \Stan{} since HMC does cannot sample discrete parameters CITE.
+
+
+%  LocalWords:  iid Efron GiordaniKohn2008 Tibshirani1996 Tipping2001
+%  LocalWords:  PolsonScott2010 ParkCasella2008 Hans2009 DLMs Kalman
+%  LocalWords:  CaronDoucet2008 BrownGriffin2010 FFBS Tusell2011 HMC
+%  LocalWords:  CarvalhoPolsonScott2010 DurbinKoopmans2012
+%  LocalWords:  ReisSalazarGamerman2006

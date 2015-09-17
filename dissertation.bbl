@@ -162,6 +162,30 @@
       \endverb
       \keyw{military effectiveness; democratic effectiveness; military outcomes; HERO; human capi- tal; civil-military relations; culture; numerical preponderance; tank prevalence}
     \endentry
+    \entry{Blackwell2012}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=a9988d169687d11b617687aa619c3221}{Blackwell}{B\bibinitperiod}{Matthew}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a9988d169687d11b617687aa619c3221}
+      \strng{fullhash}{a9988d169687d11b617687aa619c3221}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2012}
+      \field{labelmonth}{10}
+      \field{labelday}{23}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I introduce a Bayesian model for detecting changepoints in a time-series of contributions to candidates over the course of a campaign. this game-changers model is ideal for campaign contributions data because it allows for overdispersion, a key feature of contributions data. Furthermore, while many extant changepoint models force researchers to choose the number of changepoint ex ante, the game-changers model incorporates a Dirichlet process prior in order to estimate the number of changepoints along with their location. I demonstrate the usefulness of the model in data from the the Republican primary and the U.S. Senate elections.}
+      \field{day}{23}
+      \field{month}{10}
+      \field{title}{Game-changers: Detecting shifts in the Flow of campaign contributions}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.mattblackwell.org/files/papers/gamechangers.pdf
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Blackwell2012'}
+    \endentry
     \entry{Bodart1908}{book}{}
       \name{author}{1}{}{%
         {{hash=3f522b5c7d864e59fe3e3d3dae6ecf93}{Bodart}{B\bibinitperiod}{Gaston}{G\bibinitperiod}{}{}{}{}}%
@@ -380,6 +404,38 @@
       \range{pages}{10}
       \verb{url}
       \verb http://www.jstor.org/stable/2677945
+      \endverb
+    \endentry
+    \entry{CalderiaZorn1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=067be52717a1406ff7cc6db6392b4c86}{Calderia}{C\bibinitperiod}{Gregory\bibnamedelima A.}{G\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=e5563f3565efb15af569e042a53a7919}{Zorn}{Z\bibinitperiod}{Christopher\bibnamedelimb J.\bibnamedelimi W.}{C\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Midwest Political Science Association}%
+      }
+      \strng{namehash}{b9cbd7e2adccee29e3047def86306fec}
+      \strng{fullhash}{b9cbd7e2adccee29e3047def86306fec}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Theory: We argue that levels of concurrence and dissent on the U.S. Supreme Court are functions of "consensual norms." These norms arise from, and are influenced by, the behaviors of the individual justices, including the actions of the chief justices. In turn, they cause concurrences and dissents to fluctuate around a common level. Hypotheses: If consensual norms are a substantial influence on the behavior of the Court, the long-run extent of concurrence and dissent on the Court will covary substantially, and will do so to varying degrees under different chief justices. Methods: To test our hypotheses, we use cointegration and error-correction analyses of the number of Supreme Court cases from 1800 to 1991 with concurring and dissenting opinions. Because of the dramatic increase in concurrences and dissents during the 1940s, we make use of recently-developed methods for detecting cointegrating relationships in the presence of structural breaks. Results: Consistent with our expectations, dissents and concurrences move together over time; thus consensual norms appear to influence substantially both concurrences and dissents on the Court. The effects of such norms vary in the long term under different Chief Justices.}
+      \field{issn}{00925853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Of Time and Consensual Norms in the Supreme Court}
+      \field{volume}{42}
+      \field{year}{1998}
+      \field{pages}{874\bibrangedash 902}
+      \range{pages}{29}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2991733
       \endverb
     \endentry
     \entry{Calomiris1988}{article}{}
@@ -853,6 +909,37 @@
       \field{year}{1908}
       \verb{url}
       \verb http://books.google.com/books?id=OBkNAQAAMAAJ
+      \endverb
+    \endentry
+    \entry{Efron2008a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5470455fc7dceb3ccf6db38cb22a113d}{Efron}{E\bibinitperiod}{Bradley}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {The Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{fullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2008}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statist. Sci.}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{Microarrays, Empirical Bayes and the Two-Groups Model}
+      \field{volume}{23}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1214/07-STS236
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1214/07-STS236
       \endverb
     \endentry
     \entry{Eicher2001}{book}{}
@@ -2369,6 +2456,37 @@
       \endverb
       \keyw{Credit crisis}
     \endentry
+    \entry{MitchellBeauchamp1988a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e51b4444eb1bf550ba6c9e9d8248c125}{Mitchell}{M\bibinitperiod}{T.\bibnamedelimi J.}{T\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d6d69f9b05c34e4c1e5ddabbbea4e982}{Beauchamp}{B\bibinitperiod}{J.\bibnamedelimi J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{09369c16a00eceebbdd81e673e8bfaa0}
+      \strng{fullhash}{09369c16a00eceebbdd81e673e8bfaa0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract This article is concerned with the selection of subsets of predictor variables in a linear regression model for the prediction of a dependent variable. It is based on a Bayesian approach, intended to be as objective as possible. A probability distribution is first assigned to the dependent variable through the specification of a family of prior distributions for the unknown parameters in the regression model. The method is not fully Bayesian, however, because the ultimate choice of prior distribution from this family is affected by the data. It is assumed that the predictors represent distinct observables; the corresponding regression coefficients are assigned independent prior distributions. For each regression coefficient subject to deletion from the model, the prior distribution is a mixture of a point mass at 0 and a diffuse uniform distribution elsewhere, that is, a âspike and slabâ distribution. The random error component is assigned a normal distribution with mean 0 and standard deviation Ï, where ln(Ï) has a locally uniform noninformative prior distribution. The appropriate posterior probabilities are derived for each submodel. If the regression coefficients have identical priors, the posterior distribution depends only on the data and the parameter Î³, which is the height of the spike divided by the height of the slab for the common prior distribution. This parameter is not assigned a probability distribution; instead, it is considered a parameter that indexes the members of a class of Bayesian methods. Graphical methods are proposed as informal guides for choosing Î³, assessing the complexity of the response function and the strength of the individual predictor variables, and assessing the degree of uncertainty about the best submodel. The following plots against Î³ are suggested: (a) posterior probability that a particular regression coefficient is 0; (b) posterior expected number of terms in the model; (c) posterior entropy of the submodel distribution; (d) posterior predictive error; and (e) posterior probability of goodness of fit. Plots (d) and (e) are suggested as ways to choose y. The predictive error is determined using a Bayesian cross-validation approach that generates a predictive density for each observation, given all of the data except that observation, that is, a type of âleave one outâ approach. The goodness-of-fit measure is the sum of the posterior probabilities of all submodels that pass a standard F test for goodness of fit relative to the full model, at a specified level of significance. The dependence of the results on the scaling of the variables is discussed, and some ways to choose the scaling constants are suggested. Examples based on a large data set arising from an energy-conservation study are given to demonstrate the application of the methods.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{404}
+      \field{title}{Bayesian Variable Selection in Linear Regression}
+      \field{volume}{83}
+      \field{year}{1988}
+      \field{pages}{1023\bibrangedash 1032}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/01621459.1988.10478694
+      \endverb
+      \verb{eprint}
+      \verb http://www.tandfonline.com/doi/pdf/10.1080/01621459.1988.10478694
+      \endverb
+      \verb{url}
+      \verb http://www.tandfonline.com/doi/abs/10.1080/01621459.1988.10478694
+      \endverb
+    \endentry
     \entry{Mitchell1903}{book}{}
       \name{author}{1}{}{%
         {{hash=72011a36f23f3bc25674a618ebb74a85}{Mitchell}{M\bibinitperiod}{Wesley\bibnamedelima Clair}{W\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
@@ -2520,6 +2638,63 @@
       \field{year}{2007}
       \verb{url}
       \verb http://www.nber.org/papers/w13567.pdf
+      \endverb
+    \endentry
+    \entry{Park2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b7395bd772d3cd5368ce5048e8211288}{Park}{P\bibinitperiod}{Jong\bibnamedelima Hee}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Inc}%
+      }
+      \strng{namehash}{b7395bd772d3cd5368ce5048e8211288}
+      \strng{fullhash}{b7395bd772d3cd5368ce5048e8211288}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Has there been a structural change in the way U.S. presidents use force abroad since the nineteenth century? In this article, I investigate historical changes in the use of force by U.S. presidents using Bayesian changepoint analysis. In doing so, I present an integrated Bayesian approach for analyzing changepoint problems in a Poisson regression model. To find the nature of the breaks, I estimate parameters of the Poisson regression changepoint model using Chib's (1998) hidden Markov model algorithm and FrÃ¼hwirth-Schnatter and Wagner's (2006) data augmentation method. Then, I utilize transdimensional Markov chain Monte Carlo methods to detect the number of breaks. Analyzing yearly use of force data from 1890 to 1995, I find that, controlling for the effects of the Great Depression and the two world wars, the relationship between domestic conditions and the frequency of the use of force abroad fundamentally shifted in the 1940s.}
+      \field{issn}{1540-5907}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Structural Change in U.S. Presidents' Use of Force}
+      \field{volume}{54}
+      \field{year}{2010}
+      \field{pages}{766\bibrangedash 782}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1540-5907.2010.00459.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1540-5907.2010.00459.x
+      \endverb
+    \endentry
+    \entry{Park2011}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b7395bd772d3cd5368ce5048e8211288}{Park}{P\bibinitperiod}{Jong\bibnamedelima Hee}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7395bd772d3cd5368ce5048e8211288}
+      \strng{fullhash}{b7395bd772d3cd5368ce5048e8211288}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I introduce changepoint models for binary and ordered time series data based on Chib's hidden Markov model. The extension of the changepoint model to a binary probit model is straightforward in a Bayesian setting. However, detecting parameter breaks from ordered regression models is difficult because ordered time series data often have clustering along the break points. To address this issue, I propose an estimation method that uses the linear regression likelihood function for the sampling of hidden states of the ordinal probit changepoint model. The marginal likelihood method is used to detect the number of hidden regimes. I evaluate the performance of the introduced methods using simulated data and apply the ordinal probit changepoint model to the study of Eichengreen, Watson, and Grossman on violations of the ârules of the gameâ of the gold standard by the Bank of England during the interwar period.}
+      \field{journaltitle}{Political Analysis}
+      \field{title}{Changepoint Analysis of Binary and Ordinal Probit Models: An Application to Bank Rate Policy Under the Interwar Gold Standard}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1093/pan/mpr007
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/early/2011/03/22/pan.mpr007.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/early/2011/03/22/pan.mpr007.abstract
       \endverb
     \endentry
     \entry{ParkCasella2008}{article}{}
@@ -3220,6 +3395,68 @@
       \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=4125280&fulltextType=RA&fileId=S0022050700019100
       \endverb
     \endentry
+    \entry{Spirling2007b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9470e342d33f39a05662cafdf539b68a}{Spirling}{S\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9470e342d33f39a05662cafdf539b68a}
+      \strng{fullhash}{9470e342d33f39a05662cafdf539b68a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{extrayear}{1}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Limited dependent variable (LDV) data are common in political science, and political methodologists have given much good advice on dealing with them. We review some methods for LDV âchange point problemsâ and demonstrate the use of Bayesian approaches for count, binary, and duration-type data. Our applications are drawn from American politics, Comparative politics, and International Political Economy. We discuss the tradeoffs both philosophically and computationally. We conclude with possibilities for multiple change point work.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{4}
+      \field{title}{Bayesian Approaches for Limited Dependent Variable Change Point Problems}
+      \field{volume}{15}
+      \field{year}{2007}
+      \field{pages}{387\bibrangedash 405}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/pan/mpm022
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/15/4/387.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/15/4/387.abstract
+      \endverb
+    \endentry
+    \entry{Spirling2007a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9470e342d33f39a05662cafdf539b68a}{Spirling}{S\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9470e342d33f39a05662cafdf539b68a}
+      \strng{fullhash}{9470e342d33f39a05662cafdf539b68a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{extrayear}{2}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider and explore structural breaks in a day-by-day time series of civilian casualties for the current Iraq conflict: an undertaking of potential interest to scholars of international relations, comparative politics, and American politics. We review Bayesian change-point techniques already used by political methodologists before advocating and briefly describing the use of reversible-jump Markov chain Monte Carlo techniques to solve the estimation problem at hand. We find evidence of four change points, all associated with increasing violence, approximately contemporaneous with some important state building events. We conclude with a discussion of avenues for future research.}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{4}
+      \field{title}{"Turning Points" in the Iraq Conflict}
+      \field{volume}{61}
+      \field{year}{2007}
+      \field{pages}{315\bibrangedash 320}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1198/000313007X247076
+      \endverb
+      \verb{eprint}
+      \verb http://pubs.amstat.org/doi/pdf/10.1198/000313007X247076
+      \endverb
+      \verb{url}
+      \verb http://pubs.amstat.org/doi/abs/10.1198/000313007X247076
+      \endverb
+    \endentry
     \entry{CWSAC1993}{report}{}
       \name{author}{1}{}{%
         {{hash=c9aa8937855526621556d94ddaf49325}{{Staff\bibnamedelimb of\bibnamedelimb the\bibnamedelimb Civil\bibnamedelimb War\bibnamedelimb Sites\bibnamedelimb Advisory\bibnamedelimb Commission}}{S\bibinitperiod}{}{}{}{}{}{}}%
@@ -3527,6 +3764,35 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1162/15324430152748236
+      \endverb
+    \endentry
+    \entry{Tusell2011}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cd34e00001b06f353ac96ae3970ca09f}{Tusell}{T\bibinitperiod}{Fernando}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cd34e00001b06f353ac96ae3970ca09f}
+      \strng{fullhash}{cd34e00001b06f353ac96ae3970ca09f}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2011}
+      \field{labelmonth}{3}
+      \field{labelday}{1}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Support in R for state space estimation via Kalman filtering was limited to one package, until fairly recently. In the last five years, the situation has changed with no less than four additional packages offering general implementations of the Kalman filter, including in some cases smoothing, simulation smoothing and other functionality. This paper reviews some of the offerings in R to help the prospective user to make an informed choice.}
+      \field{day}{1}
+      \field{issn}{1548-7660}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Kalman Filtering in R}
+      \field{volume}{39}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{url}
+      \verb http://www.jstatsoft.org/v39/i02
       \endverb
     \endentry
     \entry{Treasury1860}{book}{}
@@ -4171,6 +4437,37 @@
       \verb http://dx.doi.org/10.1017/S0022050700000206
       \endverb
     \endentry
+    \entry{WesternKleykamp2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3c96bb1dacfa68cf8306ed31f6bd64b6}{Western}{W\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=b6ed6d30a9ac6157694f4427304a6d8f}{Kleykamp}{K\bibinitperiod}{Meredith}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{45ce84d842f722d0e7c11c26a1b79c0f}
+      \strng{fullhash}{45ce84d842f722d0e7c11c26a1b79c0f}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Political relationships often vary over time, but standard models ignore temporal variation in regression relationships. We describe a Bayesian model that treats the change point in a time series as a parameter to be estimated. In this model, inference for the regression coefficients reflects prior uncertainty about the location of the change point. Inferences about regression coefficients, unconditional on the change-point location, can be obtained by simulation methods. The model is illustrated in an analysis of real wage growth in 18 OECD countries from 1965–1992.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{4}
+      \field{title}{A Bayesian Change Point Model for Historical Time Series Analysis}
+      \field{volume}{12}
+      \field{year}{2004}
+      \field{pages}{354\bibrangedash 374}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/pan/mph023
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/12/4/354.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/12/4/354.abstract
+      \endverb
+    \endentry
     \entry{WillardGuinnaneEtAl1996}{article}{}
       \name{author}{3}{}{%
         {{hash=7a60b303f352cb084ac28f7edad88935}{Willard}{W\bibinitperiod}{Kristen\bibnamedelima L.}{K\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -4294,6 +4591,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{WesternKleykamp2004. Spirling2007a}
 \endrefsection
 \endinput
 
