@@ -108,43 +108,93 @@ Recent work in Bayesian computation has focused on one-group solutions to the va
 This is analagous to the sparse regularization literature in frequentist statistics spawned by LASSO \parencite{Tibshirani1996} and its the numerous variations.
 In this approach, several papers have proposed using LASSO-type penalities in a maximum likelihood approach to estimate change-points \parencites{TibshiraniEtAl2005}{HarchaouiLevy-Leduc2010}{ChanYauZhang2014}.
 In the Bayesian literature or shrinkage in sparse situations numerous distributions have been proposed. 
-This paper will look at four of them.
+This paper will look at four of them: the Student's $t$ distribution \parencite{Tipping2001}, the Double Exponential or Laplace \parencite{ParkCasella2008}{Hans2009}, the Horseshoe \parencite{CarvalhoPolsonScott2010}, and Horseshoe+ \parencite{BhadraDattaPolsonEtAl2015a}.
 
-\begin{itemize}
-\item Double Exponential
-\item Horseshoe
-\item Horseshoe+ 
-\end{itemize}
-
-Shrinkage priors are the Bayesian equivalent of penalized likelihood and regularized regression.
-Most proposed Bayesian shrinkage priors are in the the class of global-local mixtures of normal distributions \parencite{PolsonScott2010}:
-\begin{equation}
-  \label{dlm:eq:6}
-  \begin{aligned}[t]
-    \theta_{t} &= N(0, \tau^{2} \lambda_{i}^{2}) \\ 
-    \lambda_{t}^{2} &\sim p(\lambda_{t}^{2}) \\
-    \tau_{t}^{2} &\sim p(\tau^{2})
-  \end{aligned}
-\end{equation}
-A global-local normal distribution is a scale mixture of normal distributions in which the variance is the product of a global variance component $\tau^{2}$ and a local variance component $\lambda_{t}^{2}$.
-The $\lambda_t$ are also called mixing parameters, and their distribution is called the mixing distribution.
-Distributions in the global-local class of priors differ in the assumed distribution of the local variance component. 
-Examples of commonly used shrinkage distributions and their mixing distributions include \parencite{PolsonScott2010}:%
-\footnote{A normal prior, as used in ridge regression, is the trivial case in which $\lambda_{i} = 1$ for all $i$.}
 
 \begin{description}
-\item[Student's $t$] The mixing distribution is inverse gamma, $p(\lambda_{i}) = \dinvgamma{\xi / 2, \xi \tau^{2} / 2}$ where $\xi$ are the degrees of freedom. \parencite{Tipping2001}
-\item[Double Exponential (Laplacian)] The mixing distribution is exponential \parencites{ParkCasella2008}{Hans2009},
+
+\item[Student's $t$] The Student's $t$ distribution for $x \in \R$  with scale $\tau \in \Rp$ and degrees of freedom $\nu \in \Rp$,
 \begin{equation}
+  \label{dlm:eq:6}
+  p(\omega_{t} | \tau, \nu) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left( \frac{\nu}{2} \right)} \left( 1 + \frac{\omega_{t}^{2}}{\nu} \right)
+\end{equation}
+The Student's $t$ distribution can also be expressed as a scale mixture of normals,%
+\footnote{
+  $\dinvgamma{x | \alpha, \beta}$ is an inverse-gamma distribution for $x \in \Rp$ with shape $\alpha \in \Rp$ and inverse-scale $\beta \in \Rp$,
+  \begin{equation}
+    \label{dlm:eq:9}
+    \dinvgamma{x | \alpha, \beta} = \frac{\beta^{\alpha}}{\Gamma(\alpha)} x^{-(\alpha - 1)} \exp 
+    \left(
+      \beta \frac{1}{x}
+    \right)
+  \end{equation}
+}
+\begin{equation}
+  \label{dlm:eq:5}
   \begin{aligned}[t]
-    p(\lambda_{i} | \tau_{i}) &= \frac{1}{2 \tau^{2}} \exp (\lambda_{i}^{2} / 2 \tau^{2}) \\
-    p(\tau^{2}) &\sim \dinvgamma{\xi / 2, \xi d^{2} / 3}
+  \omega_{t} | \tau, \nu, \lambda_{t} &\sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+  \lambda_{t}^{2} | \nu & \sim \dinvgamma{\frac{\nu}{2}, \frac{\nu}{2}}
   \end{aligned}
 \end{equation}
-\item[Horseshoe] The mixing distribution is inverse-beta $\lambda^{2}_{i} \sim \dinvbeta{\frac{1}{2}, \frac{1}{2}}.$ 
-Equivalently, $\lambda_{i} \sim \dhalfcauchy{0, 1}$ \parencite{CarvalhoPolsonScott2010}.
-\item[Horseshoe+] 
+\parencite{Tipping2001} uses the Student's $t$ for sparse shrinkage by letting the degrees of freedom $\nu \to 0$.
+
+\item[Double Exponential] The double exponential (Laplace) with scale $\tau$,
+\begin{equation}
+  \label{dlm:eq:14}
+  p(\omega_{t}| \tau) = \frac{1}{2 \tau} \exp 
+  \left(
+    - \frac{\abs{\omega_{t}}}{\tau}
+  \right)
+\end{equation}
+The double exponential distribution can also be expressed as a scale-mixture of normal distributions,%
+\footnote{
+  $\dexp{x | \beta}$ is the exponential distribution for $x \in \Rp$ with inverse-scale (rate) parameter $\beta \in \Rp$,
+    \begin{equation}
+      \label{dlm:eq:13}
+      \dexp{x | \beta} = \beta \exp(- \beta x)
+    \end{equation}
+}
+\begin{equation}
+  \label{dlm:eq:12}
+  \begin{aligned}[t]
+  \omega_{t} | \tau, \lambda_{t} &\sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+  \lambda_{t}^{2} & \sim \dexp{\frac{1}{2}}
+  \end{aligned}
+\end{equation}
+The double exponential distribution is the distribution that corresponds to the $\ell_{1}$ penalty used in LASSO \parencites{ParkCasella2008}{Hans2009}.
+The LASSO achieves sparsity due to the spike in the double exponential distribution at zero places also places the mode of estimates at zero. 
+However, the although the double exponential distribution has a spike at zero, it does not produce sparse posterior means since it has relatively little mass close to zero.
+Additionally, the tails of the double exponential are narrow, so it tends to excessively shrink large signals \parencites{CarvalhoPolsonScott2010}.
+
+\item[Horseshoe] The horseshoe distribution \parencite{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010} is defined hierarchically as a scale-mixture of normals
+\begin{equation}
+  \label{dlm:eq:7}
+  \begin{aligned}[t]
+    \omega_{t} | \lambda_{t}, \tau & \sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+    \lambda_{t}  & \sim \dhalfcauchy{0, 1}
+  \end{aligned}
+\end{equation}
+where $\dhalfcauchy{x | 0, s}$ denotes half-Cauchy distribution with a scale parameter $s$, and density
+\begin{equation}
+  \label{dlm:eq:8}
+  p(x | s) = \frac{2}{\pi x \left(1 + \left(\frac{x}{s}\right)^{2}\right)}
+\end{equation}
+The Horseshoe distribution has some theoretically attractive properties for shrinkage and variable selection \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{DattaGhosh2012}{PasKleijnVaart2014a}.
+
+\item[Horseshoe+] The horseshoe+ distribution \textcite{BhadraDattaPolsonEtAl2015a} is similar to the Horseshoe distribution, but with an additional term,
+\begin{equation}
+  \label{dlm:eq:15}
+  \begin{aligned}[t]
+    \omega_{t} | \lambda_{t}, \eta_{t}, \tau & \sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+    \lambda_{t}  & \sim \dhalfcauchy{0, \eta_{t}} \\
+    \eta_{t} & \sim \dhalfcauchy{0, 1} 
+  \end{aligned}
+\end{equation}
 \end{description}
+
+Many shrinkage distributions, and all of the shrinkage prior distributions considered here can be represented as scale-mixture of normal distribution.
+The Horseshoe distributions additionally are of a class of global-local mixtures in which the variance component is a combination of the a global shrinkage parameter.
+Discuss.
 
 While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
 \begin{enumerate}

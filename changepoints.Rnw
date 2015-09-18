@@ -105,53 +105,104 @@ This prior is convenient because it directly provides for each time a posterior 
 \textcite{GiordaniKohn2008} propose using the representation in Equation (\ref{eq:2}) with the a discrete mixture distribution for $\omega$, as in Equation (\ref{eq:3}), to estimate change points.
 
 Recent work in Bayesian computation has focused on one-group solutions to the variable selection problem, which combine shrinkage (regularization) and variable selection through the use of continuous distribution with a large spike at zero and wide tails \parencite{}
-This is analagous to the sparse regularization literature in frequentist statistics spawned by LASSO \parencite{Tibshirani1996} and its the numerous variations.
-In this approach, several papers have proposed using LASSO-type penalities in a maximum likelihood approach to estimate change-points \parencites{TibshiraniEtAl2005}{HarchaouiLevy-Leduc2010}{ChanYauZhang2014}.
+This is analogous to the sparse regularization literature in frequentist statistics spawned by LASSO \parencite{Tibshirani1996} and its the numerous variations.
+In this approach, several papers have proposed using LASSO-type penalties in a maximum likelihood approach to estimate change-points \parencites{TibshiraniEtAl2005}{HarchaouiLevy-Leduc2010}{ChanYauZhang2014}.
 In the Bayesian literature or shrinkage in sparse situations numerous distributions have been proposed. 
 This paper will look at four of them: the Student's $t$ distribution \parencite{Tipping2001}, the Double Exponential or Laplace \parencite{ParkCasella2008}{Hans2009}, the Horseshoe \parencite{CarvalhoPolsonScott2010}, and Horseshoe+ \parencite{BhadraDattaPolsonEtAl2015a}.
 
-Student's $t$: The mixing distribution is inverse gamma, $p(\lambda_{i}) = \dinvgamma{\xi / 2, \xi \tau^{2} / 2}$ where $\xi$ are the degrees of freedom. \parencite{Tipping2001}
-Double Exponential (Laplacian): The mixing distribution is exponential \parencites{ParkCasella2008}{Hans2009}, 
+
+\begin{description}
+
+\item[Student's $t$] The Student's $t$ distribution for $x \in \R$  with scale $\tau \in \Rp$ and degrees of freedom $\nu \in \Rp$,
 \begin{equation}
+  \label{eq:6}
+  p(\omega_{t} | \tau, \nu) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left( \frac{\nu}{2} \right)} \left( 1 + \frac{\omega_{t}^{2}}{\nu} \right)
+\end{equation}
+The Student's $t$ distribution can also be expressed as a scale mixture of normals,%
+\footnote{
+  $\dinvgamma{x | \alpha, \beta}$ is an inverse-gamma distribution for $x \in \Rp$ with shape $\alpha \in \Rp$ and inverse-scale $\beta \in \Rp$,
+  \begin{equation}
+    \label{eq:9}
+    \dinvgamma{x | \alpha, \beta} = \frac{\beta^{\alpha}}{\Gamma(\alpha)} x^{-(\alpha - 1)} \exp 
+    \left(
+      \beta \frac{1}{x}
+    \right)
+  \end{equation}
+}
+\begin{equation}
+  \label{eq:5}
   \begin{aligned}[t]
-    p(\lambda_{i} | \tau_{i}) &= \frac{1}{2 \tau^{2}} \exp (\lambda_{i}^{2} / 2 \tau^{2}) \\
-    p(\tau^{2}) &\sim \dinvgamma{\xi / 2, \xi d^{2} / 3}
+  \omega_{t} | \tau, \nu, \lambda_{t} &\sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+  \lambda_{t}^{2} | \nu & \sim \dinvgamma{\frac{\nu}{2}, \frac{\nu}{2}}
   \end{aligned}
 \end{equation}
+\parencite{Tipping2001} uses the Student's $t$ for sparse shrinkage by letting the degrees of freedom $\nu \to 0$.
 
-The horseshoe distribution \parencite{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010} is defined hierarchically as a scale-mixture of normals
+\item[Double Exponential] The double exponential (Laplace) with scale $\tau$,
+\begin{equation}
+  \label{eq:14}
+  p(\omega_{t}| \tau) = \frac{1}{2 \tau} \exp 
+  \left(
+    - \frac{\abs{\omega_{t}}}{\tau}
+  \right)
+\end{equation}
+The double exponential distribution can also be expressed as a scale-mixture of normal distributions,%
+\footnote{
+  $\dexp{x | \beta}$ is the exponential distribution for $x \in \Rp$ with inverse-scale (rate) parameter $\beta \in \Rp$,
+    \begin{equation}
+      \label{eq:13}
+      \dexp{x | \beta} = \beta \exp(- \beta x)
+    \end{equation}
+}
+\begin{equation}
+  \label{eq:12}
+  \begin{aligned}[t]
+  \omega_{t} | \tau, \lambda_{t} &\sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+  \lambda_{t}^{2} & \sim \dexp{\frac{1}{2}}
+  \end{aligned}
+\end{equation}
+The double exponential distribution is the distribution that corresponds to the $\ell_{1}$ penalty used in LASSO \parencites{ParkCasella2008}{Hans2009}.
+The LASSO achieves sparsity due to the spike in the double exponential distribution at zero places also places the mode of estimates at zero. 
+However, the although the double exponential distribution has a spike at zero, it does not produce sparse posterior means since it has relatively little mass close to zero.
+Additionally, the tails of the double exponential are narrow, so it tends to excessively shrink large signals \parencites{CarvalhoPolsonScott2010}.
+
+\item[Horseshoe] The horseshoe distribution \parencite{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010} is defined hierarchically as a scale-mixture of normals
 \begin{equation}
   \label{eq:7}
   \begin{aligned}[t]
-    \omega_{t} | \lambda_{t}, \tau & \sim \dnorm{0, \lambda_{t}^{2}} \\
-    \lambda_{t} | \tau & \sim \dhalfcauchy{0, \tau}
+    \omega_{t} | \lambda_{t}, \tau & \sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+    \lambda_{t}  & \sim \dhalfcauchy{0, 1}
   \end{aligned}
 \end{equation}
 where $\dhalfcauchy{x | 0, s}$ denotes half-Cauchy distribution with a scale parameter $s$, and density
 \begin{equation}
   \label{eq:8}
-  p(x | s) = \frac{2}{\pi x \left(1 + \left(\frac{x}{s}\right)^{2}\right)}
+  p(x | s) = \frac{2}{\pi x \left(1 + {\left(\frac{x}{s}\right)}^{2}\right)}
 \end{equation}
-The Horseshoe distribution has some theoretically attractive properties for shrinkage and variable selection \parencite{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{DattaGhosh2012}{PasKleijnVaart2014a}.
+The Horseshoe distribution has some theoretically attractive properties for shrinkage and variable selection \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{DattaGhosh2012}{PasKleijnVaart2014a}.
 
-The horseshoe+ distribution \parencite{} is similar to the Horseshoe distribution, but with an additional term,
+\item[Horseshoe+] The horseshoe+ distribution \textcite{BhadraDattaPolsonEtAl2015a} is similar to the Horseshoe distribution, but with an additional term,
 \begin{equation}
-  \label{eq:7}
+  \label{eq:15}
   \begin{aligned}[t]
-    \omega_{t} | \lambda_{t}, \eta_{t}, \tau & \sim \dnorm{0, \lambda_{t}^{2}} \\
-    \lambda_{t} | \tau & \sim \dhalfcauchy{0, \tau \eta_{t}} \\
-    \eta_{t} & \sim 
+    \omega_{t} | \lambda_{t}, \eta_{t}, \tau & \sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
+    \lambda_{t}  & \sim \dhalfcauchy{0, \eta_{t}} \\
+    \eta_{t} & \sim \dhalfcauchy{0, 1} 
   \end{aligned}
 \end{equation}
-\textcite{BhadraDattaPolsonEtAl2015a} introduce the Horseshoe+ prior distribution to deal with ``ultra-sparse'' cases or
+\end{description}
 
+The shrinkage distributions considered here also global-local scale mixtures of normals, with a global variance component $\tau$, and local variance components $\lambda_{t}$ \parencite{PolsonScott2010}.
+The global variance component $\tau$ concentrates the distribution around zero, while the local variance components allow individual values to be far from zero.
 
-Equivalently, $\lambda_{i} \sim \dhalfcauchy{0, 1}$ 
-Horseshoe+: 
-
-Many shrinkage distributions, and all of the shrinkage prior distributions considered here can be represented as scale-mixture of normal distribution.
-The Horseshoe distributions additionally are of a class of global-local mixtures in which the variance component is a combination of the a global shrinkage parameter.
-Discuss.
+To recap, the propsed model for changepoints is
+\begin{align}
+  \label{eq:16}
+  y_{t} & \sim \epsilon_{t} & \text{$\epsilon_{t}$ iid, $\E(\epsilon) = 0$, $\Var(\epsilon) = \sigma^{2}$} \\
+  \mu_{t} &= \mu_{t - 1} + \sigma \omega_{t}
+\end{align}
+where $\omega_{t}$ is given a shrinkage prior distribution that induces sparsity.
+This work will propose horseshoe and horseshoe+ distributions as those shrinkage priors, and compare them other sthrinkage priors such as the Student's $t$ and double exponential distributions.
 
 While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
 \begin{enumerate}
@@ -241,4 +292,10 @@ Marginalizing over latent states is necessary in discrete state space models in 
 %  LocalWords:  ARIMA GDLM GDLMs CalderiaZorn1998 WesternKleykamp2004
 %  LocalWords:  Spirling2007a Spirling2007b Park2010 Park2011 OECD
 %  LocalWords:  Blackwell2012 MitchellBeauchamp1988a Efron2008a rstan
-%  LocalWords:  Graybacks
+%  LocalWords:  Graybacks Page1954a Hinkley1970a BaiPerron2003a
+%  LocalWords:  OlshenVenkatramanLucitoEtAl2004 BaiPerron1998 Yao1984
+%  LocalWords:  KillickFearnheadEckley2012 BarryHartigan1993 Chib1998
+%  LocalWords:  Fearnhead2006a FearnheadLiu2007a TibshiraniEtAl2005
+%  LocalWords:  HarchaouiLevy Leduc2010 ChanYauZhang2014
+%  LocalWords:  BhadraDattaPolsonEtAl2015a CarvalhoPolsonScott2009
+%  LocalWords:  DattaGhosh2012 PasKleijnVaart2014a
