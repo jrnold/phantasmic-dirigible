@@ -111,6 +111,102 @@
       \verb http://www.sciencemag.org/content/320/5878/877.short
       \endverb
     \endentry
+    \entry{BaiPerron1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{Bai}{B\bibinitperiod}{Jushan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=59c1c7b3feccde623cd486dbd1fcc6fb}{Perron}{P\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {The Econometric Society}%
+      }
+      \strng{namehash}{f7ff9484293c40289f72b3b9f278a840}
+      \strng{fullhash}{f7ff9484293c40289f72b3b9f278a840}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper considers issues related to multiple structural changes, occurring at unknown dates, in the linear regression model estimated by least squares. The main aspects are the properties of the estimators, including the estimates of the break dates, and the construction of tests that allow inference to be made about the presence of structural change and the number of breaks. We consider the general case of a partial structural change model where not all parameters are subject to shifts. We study both fixed and shrinking magnitudes of shifts and obtain the rates of convergence for the estimated break fractions. We also propose a procedure that allows one to test the null hypothesis of, say, l changes, versus the alternative hypothesis of l + 1 changes. This is particularly useful in that it allows a specific to general modeling strategy to consistently determine the appropriate number of changes present. An estimation strategy for which the location of the breaks need not be simultaneously determined is discussed. Instead, our method successively estimates each break point.}
+      \field{issn}{00129682}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Estimating and Testing Linear Models with Multiple Structural Changes}
+      \field{volume}{66}
+      \field{year}{1998}
+      \field{pages}{47\bibrangedash 78}
+      \range{pages}{32}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2998540
+      \endverb
+    \endentry
+    \entry{BaiPerron2003a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{Bai}{B\bibinitperiod}{Jushan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=59c1c7b3feccde623cd486dbd1fcc6fb}{Perron}{P\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd.}%
+      }
+      \strng{namehash}{f7ff9484293c40289f72b3b9f278a840}
+      \strng{fullhash}{f7ff9484293c40289f72b3b9f278a840}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In a recent paper, Bai and Perron (1998) considered theoretical issues related to the limiting distribution of estimators and test statistics in the linear model with multiple structural changes. In this companion paper, we consider practical issues for the empirical applications of the procedures. We first address the problem of estimation of the break dates and present an efficient algorithm to obtain global minimizers of the sum of squared residuals. This algorithm is based on the principle of dynamic programming and requires at most least-squares operations of order O(T2) for any number of breaks. Our method can be applied to both pure and partial structural change models. Second, we consider the problem of forming confidence intervals for the break dates under various hypotheses about the structure of the data and the errors across segments. Third, we address the issue of testing for structural changes under very general conditions on the data and the errors. Fourth, we address the issue of estimating the number of breaks. Finally, a few empirical applications are presented to illustrate the usefulness of the procedures. All methods discussed are implemented in a GAUSS program. Copyright Â© 2002 John Wiley & Sons, Ltd.}
+      \field{issn}{1099-1255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{1}
+      \field{title}{Computation and analysis of multiple structural change models}
+      \field{volume}{18}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1002/jae.659
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/jae.659
+      \endverb
+    \endentry
+    \entry{BarryHartigan1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f2b90517d390d046bf2dd04b21aba70a}{Barry}{B\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=43b759b86a689894a2d9edfdb9956136}{Hartigan}{H\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{1be395a1d4cca7ed28f02ee936a3ef7c}
+      \strng{fullhash}{1be395a1d4cca7ed28f02ee936a3ef7c}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A sequence of observations undergoes sudden changes at unknown times. We model the process by supposing that there is an underlying sequence of parameters partitioned into contiguous blocks of equal parameter values; the beginning of each block is said to be a change point. Observations are then assumed to be independent in different blocks given the sequence of parameters. In a Bayesian analysis it is necessary to give probability distributions to both the change points and the parameters. We use product partition models (Barry and Hartigan 1992), which assume that the probability of any partition is proportional to a product of prior cohesions, one for each block in the partition, and that given the blocks the parameters in different blocks have independent prior distributions. Given the observations a new product partition model holds, with posterior cohesions for the blocks and new independent block posterior distributions for parameters. The product model thus provides a convenient machinery for allowing the data to weight the partitions likely to hold; inference about particular parameters may then be made by first conditioning on the partition, and then averaging over all partitions. The parameter values may be estimated exactly in O(n3) calculations, or to an adequate approximation by Markov sampling techniques that are O(n) in the number of observations. The Markov sampling computations are thus practicable for long sequences. We compare this model with a number of alternative approaches to fitting change points and parameters when the error distribution is normal, then show that the proposed method is superior to the alternatives in detecting sharp short-lived changes in the parameters.}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{421}
+      \field{title}{A Bayesian Analysis for Change Point Problems}
+      \field{volume}{88}
+      \field{year}{1993}
+      \field{pages}{309\bibrangedash 319}
+      \range{pages}{11}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2290726
+      \endverb
+    \endentry
     \entry{Biddle2004}{book}{}
       \name{author}{1}{}{%
         {{hash=31c1b9830c6e483b748a507cfdfa935e}{Biddle}{B\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
@@ -294,33 +390,6 @@
       \verb http://www.jstor.org/stable/2566803
       \endverb
     \endentry
-    \entry{BrownGriffin2010}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9299fdec252f5cc19ffeb5a1e312b3db}{Brown}{B\bibinitperiod}{Philip\bibnamedelima J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=ba5b0265e5ec6d1e5c51e49e4cf8215a}{Griffin}{G\bibinitperiod}{Jim\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{467d0a3ac4cce58b41e741f51db7e82f}
-      \strng{fullhash}{467d0a3ac4cce58b41e741f51db7e82f}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{5}
-      \field{journaltitle}{Bayesian Analysis}
-      \field{number}{1}
-      \field{title}{Inference with normal-gamma prior distributions in regression problems}
-      \field{year}{2010}
-      \field{pages}{171\bibrangedash 188}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1214/10-BA507
-      \endverb
-      \verb{url}
-      \verb http://projecteuclid.org/euclid.ba/1340369797
-      \endverb
-    \endentry
     \entry{Bueno1990}{article}{}
       \name{author}{1}{}{%
         {{hash=8e102199bd2524d161a878becbd784dc}{{Bueno\bibnamedelimb de\bibnamedelimb Mesquita}}{B\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
@@ -469,40 +538,6 @@
       \verb http://www.jstor.org/stable/2663038
       \endverb
     \endentry
-    \entry{CaronDoucet2008}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=a52994be6c2248d1f4537b4d92dc1480}{Caron}{C\bibinitperiod}{François}{F\bibinitperiod}{}{}{}{}}%
-        {{hash=aca5faad8b57b96b59c12fc59d0b6eb4}{Doucet}{D\bibinitperiod}{Arnaud}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Helsinki, Finland}%
-      }
-      \list{publisher}{1}{%
-        {ACM}%
-      }
-      \strng{namehash}{d68765fbf091c2befab8ba63f9948e5f}
-      \strng{fullhash}{d68765fbf091c2befab8ba63f9948e5f}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{2008}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{One of the most common problems in machine learning and statistics consists of estimating the mean response Xβ from a vector of observations y assuming y = Xβ + ε where X is known, β is a vector of parameters of interest and ε a vector of stochastic errors. We are particularly interested here in the case where the dimension K of β is much higher than the dimension of y. We propose some flexible Bayesian models which can yield sparse estimates of β. We show that as K → ∞ these models are closely related to a class of Lévy processes. Simulations demonstrate that our models outperform significantly a range of popular alternatives.}
-      \field{booktitle}{Proceedings of the 25th international conference on Machine learning}
-      \field{isbn}{978-1-60558-205-4}
-      \field{series}{ICML '08}
-      \field{title}{Sparse Bayesian nonparametric regression}
-      \field{year}{2008}
-      \field{pages}{88\bibrangedash 95}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1145/1390156.1390168
-      \endverb
-      \verb{url}
-      \verb http://doi.acm.org/10.1145/1390156.1390168
-      \endverb
-    \endentry
     \entry{CarterKohn1994}{article}{}
       \name{author}{2}{}{%
         {{hash=916a516cbe958af18d4a219c75c186dc}{Carter}{C\bibinitperiod}{C.\bibnamedelimi K.}{C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -588,6 +623,38 @@
       \verb http://biomet.oxfordjournals.org/content/97/2/465.abstract
       \endverb
     \endentry
+    \entry{ChanYauZhang2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d469a2e441caade576f8bf11ecbb1eb7}{Chan}{C\bibinitperiod}{Ngai\bibnamedelima Hang}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=5677aa6d8bfc1246ed251025541f2006}{Yau}{Y\bibinitperiod}{Chun\bibnamedelima Yip}{C\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+        {{hash=55088ae5102ceb670315c9a6780d5626}{Zhang}{Z\bibinitperiod}{Rong-Mao}{R\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{80d8ddbffe901eee8c9dce4776bca0e8}
+      \strng{fullhash}{80d8ddbffe901eee8c9dce4776bca0e8}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider a structural break autoregressive (SBAR) process where j = 1, â¦, m + 1, {t1, â¦, tm} are change-points, 1 = t0 < t1 < âââ < tm + 1 = n + 1, Ï( Â· ) is a measurable function on , and {Ïµt} are white noise with unit variance. In practice, the number of change-points m is usually assumed to be known and small, because a large m would involve a huge amount of computational burden for parameters estimation. By reformulating the problem in a variable selection context, the group least absolute shrinkage and selection operator (LASSO) is proposed to estimate an SBAR model when m is unknown. It is shown that both m and the locations of the change-points {t1, â¦, tm} can be consistently estimated from the data, and the computation can be efficiently performed. An improved practical version that incorporates group LASSO and the stepwise regression variable selection technique are discussed. Simulation studies are conducted to assess the finite sample performance. Supplementary materials for this article are available online.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{506}
+      \field{title}{Group LASSO for Structural Break Time Series}
+      \field{volume}{109}
+      \field{year}{2014}
+      \field{pages}{590\bibrangedash 599}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/01621459.2013.866566
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1080/01621459.2013.866566
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/01621459.2013.866566
+      \endverb
+    \endentry
     \entry{Chan-Lau2006}{article}{}
       \name{author}{1}{}{%
         {{hash=a218128db30943f4c4d480b555b354a4}{Chan-Lau}{C\bibinithyphendelim L\bibinitperiod}{Jorge\bibnamedelima A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
@@ -639,6 +706,34 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0176268003001022
       \endverb
       \keyw{Global capital markets}
+    \endentry
+    \entry{Chib1998}{article}{}
+      \name{author}{1}{}{%
+        {{hash=25628966014266922faf57d7f25b3abd}{Chib}{C\bibinitperiod}{Siddhartha}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{25628966014266922faf57d7f25b3abd}
+      \strng{fullhash}{25628966014266922faf57d7f25b3abd}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides a new Bayesian approach for models with multiple change points. The centerpiece of the approach is a formulation of the change-point model in terms of a latent discrete state variable that indicates the regime from which a particular observation has been drawn. This state variable is specified to evolve according to a discrete-time discrete-state Markov process with the transition probabilities constrained so that the state variable can either stay at the current value or jump to the next higher value. This parameterization exactly reproduces the change point model. The model is estimated by Markov chain Monte Carlo methods using an approach that is based on Chib (1996). This methodology is quite valuable since it allows for the fitting of more complex change point models than was possible before. Methods for the computation of Bayes factors are also developed. All the techniques are illustrated using simulated and real data sets.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{2}
+      \field{title}{Estimation and comparison of multiple change-point models}
+      \field{volume}{86}
+      \field{year}{1998}
+      \field{pages}{221\bibrangedash 241}
+      \range{pages}{21}
+      \verb{doi}
+      \verb DOI: 10.1016/S0304-4076(97)00115-2
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6VC0-3VM1XM5-2/2/469ee3cba827365611dee3677f0babc6
+      \endverb
     \endentry
     \entry{Clausewitz1989}{book}{}
       \name{author}{1}{}{%
@@ -1064,6 +1159,72 @@
       \verb{url}
       \verb http://www.jstor.org/stable/2118266
       \endverb
+    \endentry
+    \entry{Fearnhead2006a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b2d637bf71149fe879204a2bb21e932f}{Fearnhead}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{b2d637bf71149fe879204a2bb21e932f}
+      \strng{fullhash}{b2d637bf71149fe879204a2bb21e932f}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-3174}
+      \field{journaltitle}{Statistics and Computing}
+      \field{number}{2}
+      \field{title}{Exact and efficient Bayesian inference for multiple changepoint problems}
+      \field{volume}{16}
+      \field{year}{2006}
+      \field{pages}{203\bibrangedash 213}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s11222-006-8450-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s11222-006-8450-8
+      \endverb
+      \keyw{Bayes factor; Forward-backward algorithm; Model choice; Perfect simulation; Reversible jump MCMC; Well-log data}
+    \endentry
+    \entry{FearnheadLiu2007a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b2d637bf71149fe879204a2bb21e932f}{Fearnhead}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f9cf90b3bd6cc51f96d2dbd896ba363c}{Liu}{L\bibinitperiod}{Zhen}{Z\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{c289f3dea4cae732a2ab2a3471575e2a}
+      \strng{fullhash}{c289f3dea4cae732a2ab2a3471575e2a}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1467-9868}
+      \field{journaltitle}{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}
+      \field{number}{4}
+      \field{title}{On-line inference for multiple changepoint problems}
+      \field{volume}{69}
+      \field{year}{2007}
+      \field{pages}{589\bibrangedash 605}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1467-9868.2007.00601.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1467-9868.2007.00601.x
+      \endverb
+      \keyw{Direct simulation,Isochores,Particle filtering,Rejection control,Sequential Monte Carlo methods,Stratified sampling}
     \endentry
     \entry{Fearon1995}{article}{}
       \name{author}{1}{}{%
@@ -1853,6 +2014,37 @@
       \verb http://biomet.oxfordjournals.org/content/96/4/835.abstract
       \endverb
     \endentry
+    \entry{HarchaouiLevy-Leduc2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=46630e2fbbab377f5b1e660396005fbe}{Harchaoui}{H\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=dc48cd2f28ce4bacb6bbc0832c317a65}{Lévy-Leduc}{L\bibinithyphendelim L\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0c6af2564857ff28fcdbeeb310d078dd}
+      \strng{fullhash}{0c6af2564857ff28fcdbeeb310d078dd}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a new approach for dealing with the estimation of the location of change-points in one-dimensional piecewise constant signals observed in white noise. Our approach consists in reframing this task in a variable selection context. We use a penalized least-square criterion with a â1-type penalty for this purpose. We explain how to implement this method in practice by using the LARSâ/âLASSO algorithm. We then prove that, in an appropriate asymptotic framework, this method provides consistent estimators of the change points with an almost optimal rate. We finally provide an improved practical version of this method by combining it with a reduced version of the dynamic programming algorithm and we successfully compare it with classical methods.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{492}
+      \field{title}{Multiple Change-Point Estimation With a Total Variation Penalty}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{1480\bibrangedash 1493}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1198/jasa.2010.tm09181
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1198/jasa.2010.tm09181
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1198/jasa.2010.tm09181
+      \endverb
+    \endentry
     \entry{Helmbold1995}{report}{}
       \name{author}{1}{}{%
         {{hash=140514b13a303bb720ebc0a2dce98c1d}{Helmbold}{H\bibinitperiod}{Robert\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -1908,6 +2100,36 @@
       \range{pages}{12}
       \verb{url}
       \verb http://www.jstor.org/stable/2669314
+      \endverb
+    \endentry
+    \entry{Hinkley1970a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=794b9f022a15a3bbf23af5f7f4c61f96}{Hinkley}{H\bibinitperiod}{David\bibnamedelima V.}{D\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{794b9f022a15a3bbf23af5f7f4c61f96}
+      \strng{fullhash}{794b9f022a15a3bbf23af5f7f4c61f96}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1970}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SUMMARY Inference is considered about the point in a sequence of random variables at which the probability distribution changes. In particular, we examine a normal distribution with changing mean. The asymptotic distribution of the maximum likelihood estimate is derived and also the asymptotic distribution of the likelihood ratio statistic for testing hypotheses about the change-point. These asymptotic distributions are compared with some finite sample empirical distributions.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1}
+      \field{title}{Inference about the change-point in a sequence of random variables}
+      \field{volume}{57}
+      \field{year}{1970}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1093/biomet/57.1.1
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/57/1/1.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/57/1/1.abstract
       \endverb
     \endentry
     \entry{HistoricalResearchEtAl1984}{report}{}
@@ -2203,6 +2425,38 @@
       \field{year}{1998}
       \verb{url}
       \verb http://books.google.com/books?id=qHObJArDHZMC
+      \endverb
+    \endentry
+    \entry{KillickFearnheadEckley2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6290a750abc7723d42e8bf6f5d654cb8}{Killick}{K\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=388407c5aec9aedd00f8146e766a3188}{Fearnhead}{F\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=a811a75b7b6f47e9462356a5ae5e164e}{Eckley}{E\bibinitperiod}{I.\bibnamedelimi A.}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0a541296aca28bcc34de9bf10918072d}
+      \strng{fullhash}{0a541296aca28bcc34de9bf10918072d}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we consider the problem of detecting multiple changepoints in large datasets. Our focus is on applications where the number of changepoints will increase as we collect more data: for example, in genetics as we analyze larger regions of the genome, or in finance as we observe time series over longer periods. We consider the common approach of detecting changepoints through minimizing a cost function over possible numbers and locations of changepoints. This includes several established procedures for detecting changing points, such as penalized likelihood and minimum description length. We introduce a new method for finding the minimum of such cost functions and hence the optimal number and location of changepoints that has a computational cost, which, under mild conditions, is linear in the number of observations. This compares favorably with existing methods for the same problem whose computational cost can be quadratic or even cubic. In simulation studies, we show that our new method can be orders of magnitude faster than these alternative exact methods. We also compare with the binary segmentation algorithm for identifying changepoints, showing that the exactness of our approach can lead to substantial improvements in the accuracy of the inferred segmentation of the data. This article has supplementary materials available online.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{500}
+      \field{title}{Optimal Detection of Changepoints With a Linear Computational Cost}
+      \field{volume}{107}
+      \field{year}{2012}
+      \field{pages}{1590\bibrangedash 1598}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/01621459.2012.737745
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1080/01621459.2012.737745
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/01621459.2012.737745
       \endverb
     \endentry
     \entry{LangloisLanglois2009}{article}{}
@@ -2615,6 +2869,39 @@
       \verb http://www.measuringworth.com/interestrates/intstudy.pdf
       \endverb
     \endentry
+    \entry{OlshenVenkatramanLucitoEtAl2004}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cc2e7d0f649c372618b551bd2b3e59e7}{Olshen}{O\bibinitperiod}{Adam\bibnamedelima B.}{A\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=d6827849bcac4a18c0c3b68ea760aa7b}{Venkatraman}{V\bibinitperiod}{E.\bibnamedelimi S.}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=6f5683d8bbd9a38960acad3037ed9b71}{Lucito}{L\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=51eb5a5c4b3486dd4f30dc7d2198359c}{Wigler}{W\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5d46bd492ee08753ef9e3fd8d69a9c77}
+      \strng{fullhash}{d79d2a3999b3c05ba647e502148333e3}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DNA sequence copy number is the number of copies of DNA at a region of a genome. Cancer progression often involves alterations in DNA copy number. Newly developed microarray technologies enable simultaneous measurement of copy number at thousands of sites in a genome. We have developed a modification of binary segmentation, which we call circular binary segmentation, to translate noisy intensity measurements into regions of equal copy number. The method is evaluated by simulation and is demonstrated on cell line data with known copy number alterations and on a breast cancer cell line data set.}
+      \field{journaltitle}{Biostatistics}
+      \field{number}{4}
+      \field{title}{Circular binary segmentation for the analysis of array‐based DNA copy number data}
+      \field{volume}{5}
+      \field{year}{2004}
+      \field{pages}{557\bibrangedash 572}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1093/biostatistics/kxh008
+      \endverb
+      \verb{eprint}
+      \verb http://biostatistics.oxfordjournals.org/content/5/4/557.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biostatistics.oxfordjournals.org/content/5/4/557.abstract
+      \endverb
+    \endentry
     \entry{OosterlinckWeidenmier2007}{report}{}
       \name{author}{2}{}{%
         {{hash=a17c05cade95d3e7671ff85dc05053e3}{Oosterlinck}{O\bibinitperiod}{Kim}{K\bibinitperiod}{}{}{}{}}%
@@ -2638,6 +2925,36 @@
       \field{year}{2007}
       \verb{url}
       \verb http://www.nber.org/papers/w13567.pdf
+      \endverb
+    \endentry
+    \entry{Page1954a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e3a5f3795135833b243f8220c76abb2}{Page}{P\bibinitperiod}{E.\bibnamedelimi S.}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press on behalf of Biometrika Trust}%
+      }
+      \strng{namehash}{9e3a5f3795135833b243f8220c76abb2}
+      \strng{fullhash}{9e3a5f3795135833b243f8220c76abb2}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1954}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00063444}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1/2}
+      \field{title}{Continuous Inspection Schemes}
+      \field{volume}{41}
+      \field{year}{1954}
+      \field{pages}{100\bibrangedash 115}
+      \range{pages}{16}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2333009
       \endverb
     \endentry
     \entry{Park2010}{article}{}
@@ -4590,8 +4907,38 @@
       \verb http://jcr.sagepub.com/content/55/4/556.abstract
       \endverb
     \endentry
+    \entry{Yao1984}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ba67075377dcaa37b5e9a2bf31410bcc}{Yao}{Y\bibinitperiod}{Yi-Ching}{Y\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{ba67075377dcaa37b5e9a2bf31410bcc}
+      \strng{fullhash}{ba67075377dcaa37b5e9a2bf31410bcc}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider the problem of estimating, in a Bayesian framework and in the presence of additive Gaussian noise, a signal which is a step function. Best linear estimates and Bayes estimates are derived, evaluated and compared. A characterization of the Bayes estimates is presented. This characterization has an intuitive interpretation and also provides a way to compute the Bayes estimates with a number of operations of the order of T3 where T is the fixed time span. An approximation to the Bayes estimates is proposed which reduces the total number of operations to the order of T. The results are applied to the case where the Bayesian model fails to be satisfied using an empirical Bayes approach.}
+      \field{issn}{00905364}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{4}
+      \field{title}{Estimation of a Noisy Discrete-Time Step Function: Bayes and Empirical Bayes Approaches}
+      \field{volume}{12}
+      \field{year}{1984}
+      \field{pages}{1434\bibrangedash 1447}
+      \range{pages}{14}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2241012
+      \endverb
+    \endentry
   \endsortlist
-  \missing{WesternKleykamp2004. Spirling2007a}
 \endrefsection
 \endinput
 
