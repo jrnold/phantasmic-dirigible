@@ -973,6 +973,38 @@
       \verb http://www.jstor.org/stable/2123441
       \endverb
     \endentry
+    \entry{DeJongPenzer1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cc756fcf9a59766956c8c8b5ceac2887}{{de\bibnamedelimb Jong}}{d\bibinitperiod}{Piet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=82e25e72d5a354d1b47313f28134f0f7}{Penzer}{P\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{9f69fdd4ab397c77bfefb53dbb0ef91f}
+      \strng{fullhash}{9f69fdd4ab397c77bfefb53dbb0ef91f}
+      \field{sortinit}{d}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Efficient means of modeling aberrant behavior in times series are developed. Our methods are based on state-space forms and allow test statistics for various interventions to be computed from a single run of the Kalman filter smoother. The approach encompasses existing detection methodologies. Departures commonly observed in practice, such as outlying values, level shifts, and switches, are readily dealt with. New diagnostic statistics are proposed. Implications for structural models, autoregressive integrated moving average models, and models with explanatory variables are given.}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{442}
+      \field{title}{Diagnosing Shocks in Time Series}
+      \field{volume}{93}
+      \field{year}{1998}
+      \field{pages}{796\bibrangedash 806}
+      \range{pages}{11}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2670129
+      \endverb
+    \endentry
     \entry{Dewey1918}{book}{}
       \name{author}{1}{}{%
         {{hash=01286699cff44463b839e6baafffefe5}{Dewey}{D\bibinitperiod}{Davis\bibnamedelima Rich}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -3213,6 +3245,24 @@
       \field{month}{04}
       \field{title}{Lincoln’s Gamble: How the Southern Secession Crisis Became the American Civil War}
       \field{year}{2012}
+    \endentry
+    \entry{PolsonScott2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \strng{fullhash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use Levy processes to generate joint prior distributions for a location parameter β = (β1 , . . . , βp ) as p grows large. This approach, which generalizes normal scale-mixture priors to an infinite-dimensional setting, has a number of connections with mathematical finance and Bayesian nonparametrics. We argue that it provides an intuitive framework for generating new regularization penalties and shrinkage rules; for performing asymptotic analysis on existing models; and for simplifying proofs of some classic results on normal scale mixtures.}
+      \field{journaltitle}{Bayesian Statistics}
+      \field{title}{Shrink Globally, Act Locally: Sparse Bayesian Regularization and Prediction}
+      \field{year}{2010}
     \endentry
     \entry{Powell2004}{article}{}
       \name{author}{1}{}{%

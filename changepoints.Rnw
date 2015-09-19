@@ -40,7 +40,7 @@ This method does not require specifying the number of structural breaks ex ante.
 Structural breaks can be detected from the posterior distribution of XXX using several rules. Not only do
 the number of structural breaks need not be specifieded beforehand, this method will work reasonable
 well even if the underlying data-generating process is dense, \ie{}the parameter changes in each period.
-\item 2. This method is extensible. 
+\item This method is extensible. 
   Dynamic linear models incorporate a wide variety of models, including ARIMA
   and structural time-series, cubic splines, and regressions with time-varying coefficients. Any model in
   which the parameter of interest can be expressed as a latent state in a dynamic linear model can be
@@ -68,37 +68,42 @@ Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKl
 \label{sec:chang-as-vari}
 
 For simplicity, I start with the case of change-points in the mean, and later generalize to other cases.
-There are $n$ observations, $y_{1}, \dots, y_{n}$, with a time-varying mean, $\mu_{t}$, that takes $M$ values, $\mu^{*}_{1}, \dots, \mu^{*}_{M}$,  with change-point locations, $\tau_{1}, \dots, \tau_{m}$,
+In this case, there are $n$ ordered observations, $y_{1}, \dots, y_{n}$, with a time-varying mean, $\mu_{t}$.
+\begin{equation}
+  \label{eq:17}
+  \begin{aligned}[t]
+    y_{t} & = \mu_{t} + \epsilon_{t} && \text{$\epsilon_{t}$ are iid with $\E(\epsilon) = 0$.} \\  
+  \end{aligned}
+\end{equation}
+Suppose that there are $M$ change points, with ordered change-point locations, $\tau_{1}, \dots, \tau_{m}$, with the convention that $\tau_{0} = 0$ and $\tau_{M + 1} = n$.
+This splits the mean into $M + 1$ segments, with values of the mean $\mu^{*}_{0}, \dots, \mu^{*}_{M}$,  such that
 \begin{equation}
   \label{eq:1}
   \begin{aligned}[t]
-    y_{t} & = \mu_{t} + \epsilon_{t} && \text{$\epsilon_{t}$ are iid with $\E(\epsilon) = 0$.} \\
-    \mu_{t} &= \mu^{*}_{m} && \text{if $\tau_{m} \leq t \leq \tau_{m + 1}$, $\mu_{1} = \mu^{*}_{1}$, $\mu_{n} = \mu^{*}_{M}$.}
+    \mu_{t} &= \mu^{*}_{m} && \text{if $\tau_{m} \leq t \leq \tau_{m + 1}$}
   \end{aligned}
 \end{equation}
 There are a variety of change-point approaches to this problem in both classical \parencites{Page1954a}{Hinkley1970a}{BaiPerron2003a}{OlshenVenkatramanLucitoEtAl2004}{BaiPerron1998}{KillickFearnheadEckley2012} and Bayesian statistics \parencites{Yao1984}{BarryHartigan1993}{Chib1998}{Fearnhead2006a}{FearnheadLiu2007a}.
 
-
-An alternative approach is to rewrite the problem in equation (\ref{eq:1}) to focus on the values of the changes in the mean (innovations), $\omega_{t} = \mu_{t} - \mu_{t - 1}$, rather than the locations of the change points:
+An alternative approach to the change point problem is to rewrite the problem in Equation (\ref{eq:1}) to focus on the changes in the mean (innovations), $\omega_{t} = \Delta \mu_{t} = \mu_{t} - \mu_{t - 1}$, rather than the locations of the change points:
 \begin{equation}
   \label{eq:2}
   \begin{aligned}[t]
-    y_{t} &= \mu_{t} + \epsilon_{t} && \text{$\epsilon_{t}$ are iid with $\E(\epsilon) = 0$.} \\
     \mu_{t} &= \mu_{t - 1} + \omega_{t}
   \end{aligned}
 \end{equation}
 In a change points situation, the innovations $\omega_{t}$ are sparse, meaning that most values of $\omega_{t}$ are zero, and only a few are non-zero.
 The times of the change points are not directly estimated, but are those times at which $\omega_{t}$ are non-zero.
 This turns the problem from one of segmentation, to one of variable selection, in which the goal is to find the non-zero values of $\omega_{t}$ and estimate their values.
-\footnote{In Equation (\ref{eq:2})The initial value of $\mu_{1}$, or equivalently $\mu_{0}$, needs to be given a value.
+\footnote{In Equation (\ref{eq:2}) the initial value of $\mu_{1}$, or equivalently $\mu_{0}$, needs to be given a value.
 %This will likley work better with the formulation that initilizes at t = 1, since we should assume \omega_1=0.
 }
 The natural approach to this variable selection problem is to explicitly model the values of $\omega$ as a discrete mixture between a point mass at zero for the non-change points, and a heavy-tailed alternative \textcite{MitchellBeauchamp1988a}{Efron2008a}:
 \begin{equation}
   \label{eq:3}
-  \omega_{t} = \pi g(\omega) + (1 - \pi) \delta_{0}
+  \omega_{t} = \rho g(\omega) + (1 - \rho) \delta_{0}
 \end{equation}
-where $g$ is some heavy-tailed distribution.
+where $g$ is some heavy-tailed distribution, and $\delta_{0}$ is a Dirac delta distribution (point mass) at 0.
 Equation (\ref{eq:3}) is often called a ``spike and slab'' prior \textcite{MitchellBeauchamp1988a}.
 Since it explicitly models the two groups (zeros and non-zeros), \textcite{Efron2008a} calls this the two-group answer to the two-groups problem.
 This prior is convenient because it directly provides for each time a posterior probability that it is a change point (non-zero).
@@ -195,14 +200,14 @@ The Horseshoe distribution has some theoretically attractive properties for shri
 The shrinkage distributions considered here also global-local scale mixtures of normals, with a global variance component $\tau$, and local variance components $\lambda_{t}$ \parencite{PolsonScott2010}.
 The global variance component $\tau$ concentrates the distribution around zero, while the local variance components allow individual values to be far from zero.
 
-To recap, the propsed model for changepoints is
+To recap, the proposed model for change points is
 \begin{align}
   \label{eq:16}
   y_{t} & \sim \epsilon_{t} & \text{$\epsilon_{t}$ iid, $\E(\epsilon) = 0$, $\Var(\epsilon) = \sigma^{2}$} \\
   \mu_{t} &= \mu_{t - 1} + \sigma \omega_{t}
 \end{align}
 where $\omega_{t}$ is given a shrinkage prior distribution that induces sparsity.
-This work will propose horseshoe and horseshoe+ distributions as those shrinkage priors, and compare them other sthrinkage priors such as the Student's $t$ and double exponential distributions.
+This work will propose horseshoe and horseshoe+ distributions as those shrinkage priors, and compare them other shrinkage priors such as the Student's $t$ and double exponential distributions.
 
 While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
 \begin{enumerate}
@@ -214,6 +219,33 @@ While this one-group approach does not provide as clear an estimate of the locat
 \item When the goal is estimation or prediction of the parameters, rather than the locations of the change-points, then the changes in the parameter is continuous anyways after integrating over the posterior distribution of the change-points. 
   The one-group approach approximates this distribution.
 \end{enumerate}
+
+
+
+\section{Identifying Change Points}
+\label{sec:ident-change-points}
+
+The method proposed here is better at estimating the values of $\mu_{t}$, or rather the posterior distribution, when change-points may be present than providing probabilities of the locations of the change-points themselves.
+The time-series of the posterior distribution 
+However, there are a few ways to Given posterior estimates from a sparse disturbance dynamic linear model, there are a few methods that
+can be used to detect structural breaks.
+
+The first method uses the posterior distribution to detect structural breaks is simply a test using posterior distribution of $\omega$.
+This is the Bayesian equivalent to the auxiliary residual test of \textcite{DeJongPenzer1998}.
+In addition to the use of a credible interval rather than a confidence interval, the Bayesian method differs from the auxiliary residual test in that it integrates over the posterior distribution of the state matrices rather than fixing them at point estimates.
+
+The second method uses the local variance components $\lambda_{t}$ to identify structural breaks \parencite[179-180]{PetrisPetroneEtAl2009}.
+If $\lambda_{t}$ = 1, then the state disturbance is distributed normal with a scale equal to the global scale.
+Thus, the local shrinkage parameters $\lambda_{t}$ are relative measure of how much each $\omega_{t}$ is shrunk towards zero.
+Values of $\lambda_{t} > 1$ ($\lambda_{t} < 1$ indicate state disturbances that are dispersed (shrunk) relative to the global scale.
+A structural break can be classified as a time period in which $\E(\lambda_{t}) > 1$.
+
+% The third method uses the contribution of observations to the state. 
+% Talk about Kalman gain and smoother
+
+Finally, for many practical purposes and interpretation, an ``eyeball test'' by the researcher by plotting the mean or median of the posterior estimates of $\mu$ should suffice.As noted earlier, for many data generating processes, the hypothesis that $\omega_{t} = 0$ is implausible, so testing for change points does not make much sense.
+Rather, change point models are used to ease interpretation, so an informal method of visualizing is enough.
+If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of any practical import.
 
 \section{Estimation}
 \label{sec:estimation}
@@ -262,12 +294,14 @@ Section XXXX provides documentation of these functions.
 \label{sec:examples}
 
 
-\begin{itemize}
-\item Blocks
-\item Nile
-\item Civil War Greenbacks / Graybacks
-\end{itemize}
+\subsection{Blocks}
+\label{sec:blocks}
 
+\subsection{Nile}
+\label{sec:nile}
+
+\subsection{American Civil War Currencies and Bonds}
+\label{sec:civil-war-greenbacks}
 
 
 
@@ -298,4 +332,5 @@ Marginalizing over latent states is necessary in discrete state space models in 
 %  LocalWords:  Fearnhead2006a FearnheadLiu2007a TibshiraniEtAl2005
 %  LocalWords:  HarchaouiLevy Leduc2010 ChanYauZhang2014
 %  LocalWords:  BhadraDattaPolsonEtAl2015a CarvalhoPolsonScott2009
-%  LocalWords:  DattaGhosh2012 PasKleijnVaart2014a
+%  LocalWords:  DattaGhosh2012 PasKleijnVaart2014a DeJongPenzer1998
+%  LocalWords:  PetrisPetroneEtAl2009
