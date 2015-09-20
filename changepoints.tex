@@ -1,4 +1,3 @@
-
 \section{Introduction}
 \label{dlm:sec:introduction}
 
@@ -220,6 +219,22 @@ While this one-group approach does not provide as clear an estimate of the locat
   The one-group approach approximates this distribution.
 \end{enumerate}
 
+\begin{figure}[!htpb]
+%  \begin{subfigure}[b]{\linewidth}
+  \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_zeros-1}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{\linewidth}
+    \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_tails-1}
+%  \end{subfigure}
+  \caption{
+    Comparison of the density functions of normal, Cauchy, Laplace, horseshoe, and horseshoe+ distributions.
+    All functions have location and scale parameters of 0.
+    The Cauchy distribution is a special case of the Student's $t$ distribution with degrees of freedom equal to 1.
+  }
+  \label{dlm:fig:density}
+\end{figure}
+
+
 
 
 \section{Identifying Change Points}
@@ -297,25 +312,130 @@ Section XXXX provides documentation of these functions.
 \subsection{Blocks}
 \label{dlm:sec:blocks}
 
+
+
 \subsection{Nile}
 \label{dlm:sec:nile}
 
-\subsection{American Civil War Currencies and Bonds}
-\label{dlm:sec:civil-war-greenbacks}
+The Nile data is a series of readings of the annual flow volume of the Nile River at Aswan taken between 1871 and 1970.
+This dataset is a classic dataset that has been analyzed in many works and texts on times series and structural breaks \parencites{Cobb1978}{Balke1993}{DeJongPenzer1998}{}{DurbinKoopman2012}{CommandeurKoopmanOoms2011}.%
+\footnote{The dataset is included with \RLang{} as \texttt{Nile} in the included package \pkg{datasets}.}
+Previous analyses show a single level shift in the data, with the shift occurring near 1899.
+This level shift is attributed to construction of a dam at Aswan that started operation in 1902 or climate changes that reduced rainfall in the area \parencite[278]{Cobb1978}.
+
+\begin{figure}
+  \centering
+  \includegraphics{../dlm-shrinkage/analysis/figures/nile-nile-1}
+  \caption{Annual flow of the Nile River, 1871--1970. Previous work has found a break point in this series near 1899.}
+  \label{dlm:fig:nile}
+\end{figure}
+
+Let $y_{t}$ be the annual flow of the Nile River,%
+\footnote{Discharge at Aswan in $10^8 m^{3}$} %
+from $t \in 1871, ..., 1970, 1$ with $n = 100$ observations.
+
+I will compare several models.
+All of these models will assume that the observed data are normally distributed given the mean for that time.%
+\footnote{
+  This may not be appropriate since that data appear to contain possible outliers at 1879, 1913, and 1964.
+  However, modeling outliers is not the purpose of this analysis.
+}
+\begin{equation}
+  \label{dlm:eq:10}
+  \begin{aligned}[t]
+    y_{t} &\sim \dnorm{\mu_{t}, \sigma^{2}}
+  \end{aligned}
+\end{equation}
+The various models will differ on how they define $\mu$.
+
+\begin{description}
+\item[Constant mean] In this model, the mean is constant.
+  \begin{equation}
+    \label{dlm:eq:21}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{0} && \text{for all $t$}
+    \end{aligned}
+  \end{equation}
+\item[Manual intervention] This includes an indicator variable for all years including and after 1899.
+  This is modeling the case of an assumed ``known'' change point.
+  \begin{equation}
+    \mu_{t} = 
+    \begin{cases}
+      \mu_{0} & t < 1899 \\
+      \mu_{0} + \omega & t \geq 1899
+    \end{cases}
+  \end{equation}
+\item[Normal distribution] In this model, the innovations are distributedn normal.
+  This corresponds to the typical Dynamic Linear Model or Kalman filtering usage with time-invariant observation and system variances.
+  \begin{equation}
+    \label{dlm:eq:11}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim N(0, \tau^{2})
+    \end{aligned}
+  \end{equation}
+\item[Student $t$ distribution] In this model, the innovations are distributed Student $t$.
+  The prior distribution of the degrees of freedom parameter $\nu$ is that suggested by \textcites{JuarezSteel2010b}, a Gamma distribution with mode 10, mean 20, and variance 200, which places most of mass in the relevant region of the space.
+  \begin{equation}
+    \label{dlm:eq:18}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dt{\nu}{0, \tau}
+    \end{aligned}
+  \end{equation}
+\item[Laplace distribution] In this model, the innovations are distributed Laplace $t$.
+  \begin{equation}
+    \label{dlm:eq:22}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dlaplace{0, \tau}
+    \end{aligned}
+  \end{equation}
+\item[Horseshoe] In this model, the innovations are distributed horseshoe.
+  The half-cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+  \begin{equation}
+    \label{dlm:eq:19}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dnorm{0, \tau^{2} \lambda^{2}_{t}} \\
+      \lambda_{t} &\sim \dhalfcauchy{0, 1} \\
+      \tau &\sim \dhalfcauchy{0, \frac{1}{n}}
+    \end{aligned}
+  \end{equation}
+\item[Horseshoe+] In this model, the innovations are distributed horseshoe.
+  The half-cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+  \begin{equation}
+    \label{dlm:eq:23}
+    \begin{aligned}[t]
+      \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dnorm{0, \tau^{2} \lambda^{2}_{t}} \\
+      \lambda_{t} &\sim \dhalfcauchy{0, \eta_{t}} \\
+      \eta_{t} &\sim \dhalfcauchy{0, 1} \\
+      \tau &\sim \dhalfcauchy{0, \frac{1}{n}}
+    \end{aligned}
+  \end{equation}
+\end{description}
+
+
+\begin{figure}[htpb!]
+  \centering
+  
+  \caption{Posterior distributions of $\mu_t$ for each model. The line is the posterior mean; the ranges of ribbon are the 2.5\% and 97.5\% percentiles.}
+  \label{dlm:fig:nile_mu_posterior}
+\end{figure}
+
+
+% \subsection{American Civil War Currencies and Bonds}
+% \label{dlm:sec:civil-war-greenbacks}
 
 
 
 
 
-\section{Efficient Estimation of DLMs in Stan}
-\label{dlm:sec:effic-estim-dlms}
+% \section{Efficient Estimation of DLMs in Stan}
+% \label{dlm:sec:effic-estim-dlms}
 
-Comparison of Kalman filter FFBS implementations: @DurbinKoopmans2012
-Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
-Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
+% Comparison of Kalman filter FFBS implementations: @DurbinKoopmans2012
+% Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
+% Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
 
 
-Marginalizing over latent states is necessary in discrete state space models in \Stan{} since HMC does cannot sample discrete parameters CITE.
+% Marginalizing over latent states is necessary in discrete state space models in \Stan{} since HMC does cannot sample discrete parameters CITE.
 
 
 %  LocalWords:  iid Efron GiordaniKohn2008 Tibshirani1996 Tipping2001

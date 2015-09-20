@@ -175,6 +175,37 @@
       \verb http://dx.doi.org/10.1002/jae.659
       \endverb
     \endentry
+    \entry{Balke1993}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eec4692e1f5f84d7fc3bed2a1f6239ed}{Balke}{B\bibinitperiod}{Nathan\bibnamedelima S.}{N\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{eec4692e1f5f84d7fc3bed2a1f6239ed}
+      \strng{fullhash}{eec4692e1f5f84d7fc3bed2a1f6239ed}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article demonstrates the difficulty that traditional outlier detection methods, such as that of Tsay, have in identifying level shifts in time series. Initializing the outlier/level-shift search with an estimated autoregressive moving average model lowers the power of the level-shift detection statistics. Furthermore, the rule employed by these methods for distinguishing between level shifts and innovation outliers does not work well in the presence of level shifts. A simple modification to Tsay's procedure is proposed that improves the ability to correctly identify level shifts. This modification is relatively easy to implement and appears to be quite effective in practice.}
+      \field{issn}{07350015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Detecting Level Shifts in Time Series}
+      \field{volume}{11}
+      \field{year}{1993}
+      \field{pages}{81\bibrangedash 92}
+      \range{pages}{12}
+      \verb{url}
+      \verb http://www.jstor.org/stable/1391308
+      \endverb
+    \endentry
     \entry{BarryHartigan1993}{article}{}
       \name{author}{2}{}{%
         {{hash=f2b90517d390d046bf2dd04b21aba70a}{Barry}{B\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
@@ -791,6 +822,36 @@
       \verb http://books.google.com/books?id=ygPEQgAACAAJ
       \endverb
     \endentry
+    \entry{Cobb1978}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f419d95b92a7994e95f1bf7bbc1ae023}{Cobb}{C\bibinitperiod}{George\bibnamedelima W.}{G\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f419d95b92a7994e95f1bf7bbc1ae023}
+      \strng{fullhash}{f419d95b92a7994e95f1bf7bbc1ae023}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inference is considered for the point in a sequence of random variables at which the probability distribution changes. An approximation to the conditional distribution of the maximum likelihood estimator of the changepoint given the ancillary values of observations adjacent to the estimated changepoint is derived and shown to be numerically equal to a Bayesian posterior distribution for the changepoint. A hydrological example is given to show that inferences based on the conditional distribution of the maximum likelihood estimator can differ sharply from inferences based on the marginal distribution}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The problem of the Nile: Conditional solution to a changepoint problem}
+      \field{volume}{65}
+      \field{year}{1978}
+      \field{pages}{243\bibrangedash 251}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1093/biomet/65.2.243
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/65/2/243.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/65/2/243.abstract
+      \endverb
+    \endentry
     \entry{CochranLong2014}{unpublished}{}
       \name{author}{2}{}{%
         {{hash=f47d0aaa78217461c0a7de0bcd0a3593}{Cochran}{C\bibinitperiod}{Kathryn}{K\bibinitperiod}{}{}{}{}}%
@@ -810,6 +871,37 @@
       \field{year}{2014}
       \verb{url}
       \verb https://facultystaff.richmond.edu/~slong/CochranLong2015.pdf
+      \endverb
+    \endentry
+    \entry{CommandeurKoopmanOoms2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6ba957bed7988c2eaaa7e4208c50b835}{Commandeur}{C\bibinitperiod}{Jacques\bibnamedelimb J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=04d1f9473fab4f9f6f4637e842a50e8f}{Koopman}{K\bibinitperiod}{Siem\bibnamedelima Jan}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=0c09bc3727b5a1d1a239489d32b0c065}{Ooms}{O\bibinitperiod}{Marius}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c84ace4b9e913f292596709ae1f80967}
+      \strng{fullhash}{c84ace4b9e913f292596709ae1f80967}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2011}
+      \field{labelmonth}{5}
+      \field{labelday}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we review the state space approach to time series analysis and establish the notation that is adopted in this special volume of the Journal of Statistical Software. We first provide some background on the history of state space methods for the analysis of time series. This is followed by a concise overview of linear Gaussian state space analysis including the modelling framework and appropriate estimation methods. We discuss the important class of unobserved component models which incorporate a trend, a seasonal, a cycle, and fixed explanatory and intervention variables for the univariate and multivariate analysis of time series. We continue the discussion by presenting methods for the computation of different estimates for the unobserved state vector: filtering, prediction, and smoothing. Estimation approaches for the other parameters in the model are also considered. Next, we discuss how the estimation procedures can be used for constructing confidence intervals, detecting outlier observations and structural breaks, and testing model assumptions of residual independence, homoscedasticity, and normality. We then show how ARIMA and ARIMA components models fit in the state space framework to time series analysis. We also provide a basic introduction for non-Gaussian state space models. Finally, we present an overview of the software tools currently available for the analysis of time series with state space methods as they are discussed in the other contributions to this special volume.}
+      \field{day}{12}
+      \field{issn}{1548-7660}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Statistical Software for State Space Methods}
+      \field{volume}{41}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{url}
+      \verb http://www.jstatsoft.org/v41/i01
       \endverb
     \endentry
     \entry{CBO2012}{book}{}
@@ -933,6 +1025,7 @@
       \field{datelabelsource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we establish some optimality properties of the multiple testing rule induced by the horseshoe estimator due to Carvalho, Polson, and Scott (2010, 2009) from a Bayesian decision theoretic viewpoint. We consider the two-groups model for the data and an additive loss structure such that the total loss is equal to the number of misclassified hypotheses. We use the same asymptotic framework as Bogdan, Chakrabarti, Frommlet, and Ghosh (2011) who introduced the Bayes oracle in the context of multiple testing and provided conditions under which the Benjamini-Hochberg and Bonferroni procedures attain the risk of the Bayes oracle. We prove a similar result for the horseshoe decision rule up to O(1) with the constant in the horseshoe risk close to the constant in the oracle. We use the Full Bayes estimate of the tuning parameter τ. It is worth noting that the Full Bayes estimate cannot be replaced by the Empirical Bayes estimate, which tends to be too small.}
       \field{issue}{4}
       \field{journaltitle}{Bayesian Analysis}
       \field{title}{Asymptotic Properties of Bayes Risk for the Horseshoe Prior}
@@ -940,6 +1033,12 @@
       \field{year}{2012}
       \field{pages}{771\bibrangedash 792}
       \range{pages}{22}
+      \verb{doi}
+      \verb 10.1214/13-BA805
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.ba/1362406654
+      \endverb
     \endentry
     \entry{DavisPecquet1990}{article}{}
       \name{author}{2}{}{%
@@ -1025,6 +1124,30 @@
       \field{year}{1918}
       \verb{url}
       \verb http://books.google.com/books?id=l3oaAAAAMAAJ
+      \endverb
+    \endentry
+    \entry{DurbinKoopman2012}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1558430b13e2ee9f7e8cfb4fede454b7}{Durbin}{D\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9312e2f59eede682f5125d61f4c0f2c6}{Koopman}{K\bibinitperiod}{S.J.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {OUP Oxford}%
+      }
+      \strng{namehash}{415ea1fe572199602589d8ce91e8e0fc}
+      \strng{fullhash}{415ea1fe572199602589d8ce91e8e0fc}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780199641178}
+      \field{series}{Oxford Statistical Science Series}
+      \field{title}{Time Series Analysis by State Space Methods: Second Edition}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://books.google.com/books?id=fOq39Zh0olQC
       \endverb
     \endentry
     \entry{DwyerHaferWeber1999}{article}{}
@@ -2417,6 +2540,35 @@
       \verb http://www.jstor.org/stable/10.1086/501091
       \endverb
     \endentry
+    \entry{JuarezSteel2010b}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0eb7cc695d80f19525e3626855b6dace}{Juárez}{J\bibinitperiod}{Miguel\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b96f201731a6d80de12d8b930d360bf3}{Steel}{S\bibinitperiod}{Mark\bibnamedelimb F.\bibnamedelimi J.}{M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd.}%
+      }
+      \strng{namehash}{b7e33b73e72845c70ea2f8010a49e3ce}
+      \strng{fullhash}{b7e33b73e72845c70ea2f8010a49e3ce}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A first order autoregressive non-Gaussian model for analysing panel data is proposed. The main feature is that the model is able to accommodate fat tails and also skewness, thus allowing for outliers and asymmetries. The modelling approach is designed to gain sufficient flexibility, without sacrificing interpretability and computational ease. The model incorporates individual effects and covariates and we pay specific attention to the elicitation of the prior. As the prior structure chosen is not proper, we derive conditions for the existence of the posterior. By considering a model with individual dynamic parameters we are also able to formally test whether the dynamic behaviour is common to all units in the panel. The methodology is illustrated with two applications involving earnings data and one on growth of countries. Copyright Â© 2009 John Wiley & Sons, Ltd.}
+      \field{issn}{1099-1255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{7}
+      \field{title}{Non-Gaussian dynamic Bayesian modelling for panel data}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{pages}{1128\bibrangedash 1154}
+      \range{pages}{27}
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/jae.1113
+      \endverb
+    \endentry
     \entry{kalyvas2010inter}{article}{}
       \name{author}{2}{}{%
         {{hash=c1ad0d65a04242a700b04981be922557}{Kalyvas}{K\bibinitperiod}{Stathis\bibnamedelima N.}{S\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
@@ -3138,15 +3290,21 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We consider the horseshoe estimator due to Carvalho, Polson and Scott (2010) for the multivariate normal mean model in the situation that the mean vector is sparse in the nearly black sense. We assume the frequentist framework where the data is generated according to a fixed mean vector. We show that if the number of nonzero parameters of the mean vector is known, the horseshoe estimator attains the minimax $\ell_2$ risk, possibly up to a multiplicative constant. We provide conditions under which the horseshoe estimator combined with an empirical Bayes estimate of the number of nonzero means still yields the minimax risk. We furthermore prove an upper bound on the rate of contraction of the posterior distribution around the horseshoe estimator, and a lower bound on the posterior variance. These bounds indicate that the posterior distribution of the horseshoe prior may be more informative than that of other one-component priors, including the Lasso.}
-      \field{journaltitle}{Electron. J. Statist. Volume}
+      \field{journaltitle}{Electronic Journal of Statistics}
       \field{month}{04}
       \field{title}{The Horseshoe Estimator: Posterior Concentration around Nearly Black Vectors}
       \field{volume}{8,}
       \field{year}{2014}
       \field{pages}{Number2\bibrangessep 2585\bibrangedash 2618}
       \range{pages}{-1}
+      \verb{doi}
+      \verb doi:10.1214/14-EJS962
+      \endverb
       \verb{eprint}
       \verb 1404.0202
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.ejs/1418134265
       \endverb
     \endentry
     \entry{PetrisPetroneEtAl2009}{book}{}
