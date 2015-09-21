@@ -1,3 +1,6 @@
+
+\newcommand{\ModelII}[1]{\texttt{#1}}
+
 \section{Introduction}
 \label{dlm:sec:introduction}
 
@@ -220,12 +223,12 @@ While this one-group approach does not provide as clear an estimate of the locat
 \end{enumerate}
 
 \begin{figure}[!htpb]
-%  \begin{subfigure}[b]{\linewidth}
+ \begin{subfigure}[b]{\linewidth}
   \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_zeros-1}
-%  \end{subfigure}
-%  \begin{subfigure}[b]{\linewidth}
+ \end{subfigure}
+ \begin{subfigure}[b]{\linewidth}
     \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_tails-1}
-%  \end{subfigure}
+ \end{subfigure}
   \caption{
     Comparison of the density functions of normal, Cauchy, Laplace, horseshoe, and horseshoe+ distributions.
     All functions have location and scale parameters of 0.
@@ -308,11 +311,8 @@ Section XXXX provides documentation of these functions.
 \section{Change Point Examples}
 \label{dlm:sec:examples}
 
-
-\subsection{Blocks}
-\label{dlm:sec:blocks}
-
-
+% \subsection{Blocks}
+% \label{dlm:sec:blocks}
 
 \subsection{Nile}
 \label{dlm:sec:nile}
@@ -348,7 +348,7 @@ All of these models will assume that the observed data are normally distributed 
 \end{equation}
 The various models will differ on how they define $\mu$.
 
-\begin{description}
+\begin{description}[font = \normalfont\ModelII]
 \item[Constant mean] In this model, the mean is constant.
   \begin{equation}
     \label{dlm:eq:21}
@@ -365,7 +365,7 @@ The various models will differ on how they define $\mu$.
       \mu_{0} + \omega & t \geq 1899
     \end{cases}
   \end{equation}
-\item[Normal distribution] In this model, the innovations are distributedn normal.
+\item[Normal distribution] In this model, the innovations are distributed normal.
   This corresponds to the typical Dynamic Linear Model or Kalman filtering usage with time-invariant observation and system variances.
   \begin{equation}
     \label{dlm:eq:11}
@@ -373,7 +373,7 @@ The various models will differ on how they define $\mu$.
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim N(0, \tau^{2})
     \end{aligned}
   \end{equation}
-\item[Student $t$ distribution] In this model, the innovations are distributed Student $t$.
+\item[StudentT] In this model, the innovations are distributed Student $t$.
   The prior distribution of the degrees of freedom parameter $\nu$ is that suggested by \textcites{JuarezSteel2010b}, a Gamma distribution with mode 10, mean 20, and variance 200, which places most of mass in the relevant region of the space.
   \begin{equation}
     \label{dlm:eq:18}
@@ -381,7 +381,7 @@ The various models will differ on how they define $\mu$.
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dt{\nu}{0, \tau}
     \end{aligned}
   \end{equation}
-\item[Laplace distribution] In this model, the innovations are distributed Laplace $t$.
+\item[Laplace] In this model, the innovations are distributed Laplace (Double Exponential):
   \begin{equation}
     \label{dlm:eq:22}
     \begin{aligned}[t]
@@ -389,7 +389,7 @@ The various models will differ on how they define $\mu$.
     \end{aligned}
   \end{equation}
 \item[Horseshoe] In this model, the innovations are distributed horseshoe.
-  The half-cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+  The half-Cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
   \begin{equation}
     \label{dlm:eq:19}
     \begin{aligned}[t]
@@ -399,7 +399,7 @@ The various models will differ on how they define $\mu$.
     \end{aligned}
   \end{equation}
 \item[Horseshoe+] In this model, the innovations are distributed horseshoe.
-  The half-cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+  The half-Cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
   \begin{equation}
     \label{dlm:eq:23}
     \begin{aligned}[t]
@@ -414,10 +414,90 @@ The various models will differ on how they define $\mu$.
 
 \begin{figure}[htpb!]
   \centering
-  
-  \caption{Posterior distributions of $\mu_t$ for each model. The line is the posterior mean; the ranges of ribbon are the 2.5\% and 97.5\% percentiles.}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m0_mu-1.pdf}
+    \caption{\ModelII{Constant}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m1_mu-1.pdf}
+    \caption{\ModelII{Intervention}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m2_mu-1.pdf}    
+    \caption{\ModelII{Normal}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m3_mu-1.pdf}
+    \caption{\ModelII{StudentT}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m4_mu-1.pdf}    
+    \caption{\ModelII{Laplace}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m5_mu-1.pdf}
+    \caption{\ModelII{Horseshoe}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m6_mu-1.pdf}    
+    \caption{\ModelII{Horseshoe+}}
+  \end{subfigure}
+  \caption{Posterior distributions of $\mu_t$ for each model. The line is the posterior mean; the range of the inner ribbon are the 16--84\% percentiles, the outer ribbon the 2.5--97.5\% percentiles.}
   \label{dlm:fig:nile_mu_posterior}
 \end{figure}
+
+
+\begin{figure}[htpb!]
+  \centering
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m2_omega-1.pdf}    
+    \caption{\ModelII{Normal}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m3_omega-1.pdf}
+    \caption{\ModelII{StudentT}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m4_omega-1.pdf}    
+    \caption{\ModelII{Laplace}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m5_omega-1.pdf}
+    \caption{\ModelII{Horseshoe}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m6_omega-1.pdf}    
+    \caption{\ModelII{Horseshoe+}}
+  \end{subfigure}
+  \caption{Posterior distributions of $\omega_t$ for each model. The point is the posterior mean; the range of the line is the 2.5--97.5\% percentiles.}
+  \label{dlm:fig:nile_omega_posterior}
+\end{figure}
+
+
+
+\begin{table}[thbp]
+  \centering
+  \input{../dlm-shrinkage/analysis/tex/nile-tab_model_comp.tex}
+  \caption{
+    Root mean squared errors (RMSE) of each model, $RMSE = \frac{1}{n} \sum_{i = 1}^{n} {\left( y_{i} - \E(\mu) \right)}^{2}$.
+    $\mathrm{elpd}_{WAIC}$ and $\mathrm{elpd}_{loo}$ expected log predictive density implied by the Widely Applicable Information Criteria (WAIC) and approximate Leave One Out (LOO).
+  }
+\end{table}
+
+\begin{table}[thbp]
+  \centering
+  \input{../dlm-shrinkage/analysis/tex/nile-tab_mu_model_comp.tex}
+  \caption{
+    Root mean squared errors (RMSE) of each model to the estimate of $\mu$ from the \ModelII{Intervention}.
+    $\mathrm{RMSE}_{1}(\mu) = \sqrt{\frac{1}{n} \sum_{i = 1}^{n} \left(\E_{k}(\mu_{i}) -  \E_{\text{\ModelII{Intervention}}}(\mu_{i})\right)}^{2}$, where $\E_{k}(\mu_{i})$ is the expected value for model $k$.
+    $\mathrm{RMSE}_{2}(\mu) = \frac{1}{n} \sum_{i = 1}^{n} \sqrt{ \frac{1}{S} \sum_{s = 1}^{S} { \left( \mu_{k, s} -  \E_{\text{\ModelII{Intervention}}}(\mu_{i}) \right) }^{2}}$, where $\mu_{k, s}$ is the value of $\mu$ from iteration $j$ of model $k$, and $S$ is the total number of samples. 
+  }
+\end{table}
+
+
+\section{Discussion}
+\label{dlm:sec:discussion}
+
 
 
 % \subsection{American Civil War Currencies and Bonds}
@@ -425,17 +505,19 @@ The various models will differ on how they define $\mu$.
 
 
 
+\section{Efficient Estimation of DLMs in Stan}
+\label{dlm:sec:effic-estim-dlms}
 
+%Comparison of Kalman filter FFBS implementations: \textcite{DurbinKoopmans2012}
+%Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
+%Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
 
-% \section{Efficient Estimation of DLMs in Stan}
-% \label{dlm:sec:effic-estim-dlms}
+\section{Example Stan Program}
+\label{dlm:sec:example-stan-program}
 
-% Comparison of Kalman filter FFBS implementations: @DurbinKoopmans2012
-% Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
-% Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
+Example of the code to estimate the Horseshoe model. DLM related user-defined functions in the \texttt{functions} block are excluded.
 
-
-% Marginalizing over latent states is necessary in discrete state space models in \Stan{} since HMC does cannot sample discrete parameters CITE.
+\inputminted[firstline=5,style=bw]{stan}{../dlm-shrinkage/stan/changepoint_horseshoe.stan.mustache}  
 
 
 %  LocalWords:  iid Efron GiordaniKohn2008 Tibshirani1996 Tipping2001
@@ -446,11 +528,12 @@ The various models will differ on how they define $\mu$.
 %  LocalWords:  ARIMA GDLM GDLMs CalderiaZorn1998 WesternKleykamp2004
 %  LocalWords:  Spirling2007a Spirling2007b Park2010 Park2011 OECD
 %  LocalWords:  Blackwell2012 MitchellBeauchamp1988a Efron2008a rstan
-%  LocalWords:  Graybacks Page1954a Hinkley1970a BaiPerron2003a
+%  LocalWords:  Graybacks Page1954a Hinkley1970a BaiPerron2003a XXX
 %  LocalWords:  OlshenVenkatramanLucitoEtAl2004 BaiPerron1998 Yao1984
 %  LocalWords:  KillickFearnheadEckley2012 BarryHartigan1993 Chib1998
 %  LocalWords:  Fearnhead2006a FearnheadLiu2007a TibshiraniEtAl2005
-%  LocalWords:  HarchaouiLevy Leduc2010 ChanYauZhang2014
+%  LocalWords:  HarchaouiLevy Leduc2010 ChanYauZhang2014 Balke1993
 %  LocalWords:  BhadraDattaPolsonEtAl2015a CarvalhoPolsonScott2009
 %  LocalWords:  DattaGhosh2012 PasKleijnVaart2014a DeJongPenzer1998
-%  LocalWords:  PetrisPetroneEtAl2009
+%  LocalWords:  PetrisPetroneEtAl2009 DurbinKoopman2012 Cobb1978
+%  LocalWords:  CommandeurKoopmanOoms2011 StudentT JuarezSteel2010b
