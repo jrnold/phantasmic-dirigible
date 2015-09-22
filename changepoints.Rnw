@@ -1,22 +1,17 @@
 <<echo = FALSE, results = 'hide'>>=
+library("bsdlm")
+data("BushApproval", package = "bsdlm")
 tab_path <- file.path(PROJECT_ROOT, "analysis", "tex")
 fig_path <- file.path(PROJECT_ROOT, "analysis", "figures")
+date_format <- function(x) format(x, "%J %d, %Y")
+
 
 @ 
 \newcommand{\ModelII}[1]{\texttt{#1}}
 
+
 \section{Introduction}
 \label{sec:introduction}
-
-This paper 
-
-
-\begin{itemize}
-\item How change-points are typically 
-\item Representation as a variable selection problem
-\item Discussion of shrinkage priors
-\item Dynamic linear model representation
-\end{itemize}
 
 Political and social processes are rarely, if ever, constant over time.
 Thus, political scientists often have a need to estimate time-varying parameter (TVP) models.
@@ -69,6 +64,8 @@ dynamic linear models.
 \end{enumerate}
 
 Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+
+
 
 \section{Change points as a Variable Selection Problem}
 \label{sec:chang-as-vari}
@@ -269,13 +266,11 @@ Finally, for many practical purposes and interpretation, an ``eyeball test'' by 
 Rather, change point models are used to ease interpretation, so an informal method of visualizing is enough.
 If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of any practical import.
 
+
+
 \section{Estimation}
 \label{sec:estimation}
 
-
-
-\subsection{Dynamic Linear Models}
-\label{sec:dynam-line-models}
 
 A dynamic linear model, also called Gaussian state space models, is represented by a system of equations
 \begin{equation}
@@ -308,17 +303,9 @@ Let $\vartheta$ refer to all parameters in the system vectors and matrices in th
 I use this method for all models in the paper. 
 To implement this method in \Stan{}.
 I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling.
-Section XXXX provides documentation of these functions.
 
 
-
-\section{Change Point Examples}
-\label{sec:examples}
-
-% \subsection{Blocks}
-% \label{sec:blocks}
-
-\subsection{Nile}
+\section{Example: Nile}
 \label{sec:nile}
 
 The Nile data is a series of readings of the annual flow volume of the Nile River at Aswan taken between 1871 and 1970.
@@ -499,6 +486,121 @@ The various models will differ on how they define $\mu$.
 \end{table}
 
 
+\section{Linear Filtering}
+\label{sec:linear-filtering}
+
+
+The use of sparsity inducing priors can be extended to model change points in derivatives of a function in addition to the level.
+
+Only discuss the special case of a local trend model.
+
+These sorts of methods are called trend filtering.
+\textcite{Tibshirani2014} and \textcite{KimKohBoydEtAl2009} consider trend filtering in a maximum likelihood framework with $\ell_{1}$ regularization.
+
+
+
+\section{Example: George W. Bush Approval Ratings}
+\label{sec:george-w.-bush}
+
+\textcite{RatkovicEng2010} use the approval ratings for George W. Bush, displayed in Figure \ref{fig:bush_approval}.
+George W. Bush's approval ratings are difficult to fit with a typical smoothing methods because it was subject to two large jumps in his approval ratings: September 11th, 2001 and at the start of the Iraq War in March, 2003.
+The data used in this example consist of \Sexpr{nrow(BushApproval)} polls between \Sexpr{date_format(min(BushApproval[["start_date"]]))} and \Sexpr{date_format(min(BushApproval[["start_date"]]))} from the Roper Center Public Opinion Archives.%
+\footnote{From \url{http://webapps.ropercenter.uconn.edu/CFIDE/roper/presidential/webroot/presidential_rating_detail.cfm?allRate=True\&presidentName=Bush\#.UbeB8HUbyv8}.}
+
+\begin{equation}
+  \label{eq:20}
+  \begin{aligned}[t]
+    y_{t} &= \mu_{t} + \epsilon_{t} & \epsilon_{t} & \sim \dnorm{0, \sigma^{2}} \\
+    \mu_{t} &= \alpha_{t} +  \mu_{t - 1} + \partial \mu_{t - 1} + \omega_{1, t} \\
+    \partial \mu_{t} &= + \partial \mu_{t - 1} + \omega_{2, t} \\
+    \begin{bmatrix}
+      \omega_{1, t} \\
+      \omega_{2, t}
+    \end{bmatrix} &
+                    \sim \dnorm{0,
+                    \begin{bmatrix}
+                      \tau_{1}^{2} \lambda_{1, t}^{2} + \tau_{2} \lambda_{2, t}^{2} & \tau_{2} \lambda_{2, t} \\
+                      \tau_{2}^{2} \lambda_{2, t} & \tau_{2}^{2} \lambda_{2, t}
+                    \end{bmatrix}
+                    }
+  \end{aligned}
+\end{equation}
+
+
+\begin{description}[font = \normalfont\ModelII]
+\item[Normal]
+  System errors are distributed normal.
+  $\lambda_{i, t} = 1$  for all $i$ for all $t$, $\alpha_{t} = 0$ for all $t$.
+\item[Intervention]
+  System errors are distributed normal, $\lambda_{i, t} = 1$  for all $i$ for all $t$.
+  There are manual interventions after 9/11 and the the Iraq War. 
+  The values of $\alpha$ for those two dates are non-zero and estimated, all other $\alpha_{t}$ are zero.
+  This corresponds to a manual intervention for known change points.
+\item[Horseshoe] The system errors are distributed horseshoe. $\alpha_{t} = 0$ for all $t$, and 
+  \begin{equation}
+    \label{eq:27}
+    \lambda_{i, t} & \sim \dhalfcauchy{0, 1} & \text{for $i \in 1, 2$} \\
+    tau_{i} & \sim \dcauchy{0, \frac{1}{n}
+  \end{equation}
+\item[Horseshoe+] The system errors are distributed horseshoe+ $\alpha_{t}= 0$ for all $t$, and
+  \begin{equation}
+    \label{eq:27}
+    \lambda_{i, t} & \sim \dhalfcauchy{0, \eta_{i, t}}  \\
+    \eta_{i, t} & \sim \dhalfcauchy{0, 1} \\
+    tau_{i} & \sim \dcauchy{0, \frac{1}{n}
+  \end{equation}
+  for $i \in 1, 2$.
+\end{description}
+
+
+\begin{figure}[thbp!]
+  \centering
+  \includegraphics{\Sexpr{file.path(fig_path, "bush-approval-1")}}
+  \caption{Approval ratings of President George W. Bush}
+  \label{fig:bush_approval}
+\end{figure}
+
+\begin{figure}[thbp!]
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{\Sexpr{file.path(fig_path, "bush-m1_mu-1.pdf")}}
+    \caption{\ModelII{Normal}}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{\Sexpr{file.path(fig_path, "bush-m3_mu-1.pdf")}}
+    \caption{\ModelII{Intervention}}
+  \end{subfigure}
+  \caption{Posterior distribution of $\mu$ for \ModelII{Normal} and \ModelII{Intervention} models.}
+  \label{fig:bush_mu}
+\end{figure}
+
+\begin{figure}[thbp!]
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{\Sexpr{file.path(fig_path, "bush-m2_mu-1.pdf")}}
+    \caption{\ModelII{Horseshoe}}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{\Sexpr{file.path(fig_path, "bush-m4_mu-1.pdf")}}
+    \caption{\ModelII{Horseshoe+}}
+  \end{subfigure}
+  \caption{Posterior distribution of $\mu$ for \ModelII{Horseshoe} and \ModelII{Horseshoe+} models.}
+  \label{fig:bush_mu}
+\end{figure}
+
+
+Model comparison
+
+\begin{table}[thbp!]
+  \centering
+  \input{\Sexpr{file.path(tab_path, "bush-tab_model_comp.tex")}}
+  \caption{}
+  \label{tab:bush_model_comp}
+\end{table}
+
+
+
 \section{Discussion}
 \label{sec:discussion}
 
@@ -509,17 +611,17 @@ The various models will differ on how they define $\mu$.
 
 
 
-\section{Efficient Estimation of DLMs in Stan}
-\label{sec:effic-estim-dlms}
-
 %Comparison of Kalman filter FFBS implementations: \textcite{DurbinKoopmans2012}
 %Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
 %Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
 
+
 \section{Example Stan Program}
 \label{sec:example-stan-program}
 
-Example of the code to estimate the Horseshoe model. DLM related user-defined functions in the \texttt{functions} block are excluded.
+Example of the code to estimate the Horseshoe change point model.
+The DLM related user-defined functions in the \texttt{functions} block are excluded.
+
 
 \inputminted[firstline=5,style=bw]{stan}{\Sexpr{file.path(PROJECT_ROOT, "stan", "changepoint_horseshoe.stan.mustache")}}  
 

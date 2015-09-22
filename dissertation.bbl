@@ -3558,6 +3558,37 @@
       \verb http://books.google.com/books?id=Ym5DAAAAIAAJ
       \endverb
     \endentry
+    \entry{RatkovicEng2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dd86d250d35b1113d04154f93e033a9e}{Ratkovic}{R\bibinitperiod}{Marc\bibnamedelima T.}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=88af46b4920330d97526609030dda21d}{Eng}{E\bibinitperiod}{Kevin\bibnamedelima H.}{K\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5ba9dba4ae2fe9dd291f974dfa06e7ed}
+      \strng{fullhash}{5ba9dba4ae2fe9dd291f974dfa06e7ed}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many social processes are stable and smooth in general, with discrete jumps. We develop a sequential segmentation spline method that can identify both the location and the number of discontinuities in a series of observations with a time component, while fitting a smooth spline between jumps, using a modified Bayesian Information Criterion statistic as a stopping rule. We explore the method in a large-n, unbalanced panel setting with George W. Bush's approval data, a small-n time series with median DW-NOMINATE scores for each Congress over time, and a series of simulations. We compare the method to several extant smoothers, and the method performs favorably in terms of visual inspection, residual properties, and event detection. Finally, we discuss extensions of the method.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{1}
+      \field{title}{Finding Jumps in Otherwise Smooth Curves: Identifying Critical Events in Political Processes}
+      \field{volume}{18}
+      \field{year}{2010}
+      \field{pages}{57\bibrangedash 77}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/pan/mpp032
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/18/1/57.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/18/1/57.abstract
+      \endverb
+    \endentry
     \entry{Reiter2003}{article}{}
       \name{author}{1}{}{%
         {{hash=e570eb2ba858d4b5370b5d03311f243e}{Reiter}{R\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%

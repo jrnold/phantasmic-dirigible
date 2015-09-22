@@ -1,18 +1,14 @@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading required package: methods}}\end{kframe}
+\end{knitrout}
 \newcommand{\ModelII}[1]{\texttt{#1}}
+
 
 \section{Introduction}
 \label{dlm:sec:introduction}
-
-This paper 
-
-
-\begin{itemize}
-\item How change-points are typically 
-\item Representation as a variable selection problem
-\item Discussion of shrinkage priors
-\item Dynamic linear model representation
-\end{itemize}
 
 Political and social processes are rarely, if ever, constant over time.
 Thus, political scientists often have a need to estimate time-varying parameter (TVP) models.
@@ -65,6 +61,8 @@ dynamic linear models.
 \end{enumerate}
 
 Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+
+
 
 \section{Change points as a Variable Selection Problem}
 \label{dlm:sec:chang-as-vari}
@@ -265,13 +263,11 @@ Finally, for many practical purposes and interpretation, an ``eyeball test'' by 
 Rather, change point models are used to ease interpretation, so an informal method of visualizing is enough.
 If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of any practical import.
 
+
+
 \section{Estimation}
 \label{dlm:sec:estimation}
 
-
-
-\subsection{Dynamic Linear Models}
-\label{dlm:sec:dynam-line-models}
 
 A dynamic linear model, also called Gaussian state space models, is represented by a system of equations
 \begin{equation}
@@ -304,17 +300,9 @@ Let $\vartheta$ refer to all parameters in the system vectors and matrices in th
 I use this method for all models in the paper. 
 To implement this method in \Stan{}.
 I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling.
-Section XXXX provides documentation of these functions.
 
 
-
-\section{Change Point Examples}
-\label{dlm:sec:examples}
-
-% \subsection{Blocks}
-% \label{dlm:sec:blocks}
-
-\subsection{Nile}
+\section{Example: Nile}
 \label{dlm:sec:nile}
 
 The Nile data is a series of readings of the annual flow volume of the Nile River at Aswan taken between 1871 and 1970.
@@ -495,6 +483,83 @@ The various models will differ on how they define $\mu$.
 \end{table}
 
 
+\section{Linear Filtering}
+\label{dlm:sec:linear-filtering}
+
+
+The use of sparsity inducing priors can be extended to model change points in derivatives of a function in addition to the level.
+
+Polynomial model.
+
+\begin{equation}
+  \label{dlm:eq:24}
+  \begin{aligned}[t]
+    y_{t} & \mu_{t}
+  \end{aligned}
+\end{equation}
+
+Discuss linear filtering (Tibshirani1996)
+Breaks with otherwise smooth 
+
+
+\section{Example: George W. Bush Approval Ratings}
+\label{dlm:sec:george-w.-bush}
+
+\textcite{RatkovicEng2010} use the approval ratings for George W. Bush, displayed in Figure \ref{dlm:fig:bush_approval}.
+George W. Bush's approval ratings are difficult to fit with a typical smoothing methods because it was subject to two large jumpt in approval.
+The data are approval ratings for George W. Bush during his terms as president.
+The data consist of 270 polls between J 01, 2001 and J 01, 2001 from the Roper Center Public Opinion Archives.%
+\footnote{\url{http://webapps.ropercenter.uconn.edu/CFIDE/roper/presidential/webroot/presidential_rating_detail.cfm?allRate=True\&presidentName=Bush\#.UbeB8HUbyv8}}
+
+
+\begin{figure}[thbp!]
+  \centering
+  \includegraphics{../dlm-shrinkage/analysis/figures/bush-approval-1}
+  \caption{Approval ratings of President George W. Bush}
+  \label{dlm:fig:bush_approval}
+\end{figure}
+
+\begin{figure}[thbp!]
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m1_mu-1.pdf}
+    \caption{\ModelII{Normal}}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m3_mu-1.pdf}
+    \caption{\ModelII{Intervention}}
+  \end{subfigure}
+  \caption{Posterior distribution of $\mu$ for \ModelII{Normal} and \ModelII{Intervention} models.}
+  \label{dlm:fig:bush_mu}
+\end{figure}
+
+\begin{figure}[thbp!]
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m2_mu-1.pdf}
+    \caption{\ModelII{Horseshoe}}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{\linewidth}
+    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m4_mu-1.pdf}
+    \caption{\ModelII{Horseshoe+}}
+  \end{subfigure}
+  \caption{Posterior distribution of $\mu$ for \ModelII{Horseshoe} and \ModelII{Horseshoe+} models.}
+  \label{dlm:fig:bush_mu}
+\end{figure}
+
+
+Model comparison
+
+\begin{table}[thbp!]
+  \centering
+  \input{../dlm-shrinkage/analysis/tex/bush-tab_model_comp.tex}
+  \caption{}
+  \label{dlm:tab:bush_model_comp}
+\end{table}
+
+
+
 \section{Discussion}
 \label{dlm:sec:discussion}
 
@@ -505,17 +570,17 @@ The various models will differ on how they define $\mu$.
 
 
 
-\section{Efficient Estimation of DLMs in Stan}
-\label{dlm:sec:effic-estim-dlms}
-
 %Comparison of Kalman filter FFBS implementations: \textcite{DurbinKoopmans2012}
 %Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
 %Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
 
+
 \section{Example Stan Program}
 \label{dlm:sec:example-stan-program}
 
-Example of the code to estimate the Horseshoe model. DLM related user-defined functions in the \texttt{functions} block are excluded.
+Example of the code to estimate the Horseshoe change point model.
+The DLM related user-defined functions in the \texttt{functions} block are excluded.
+
 
 \inputminted[firstline=5,style=bw]{stan}{../dlm-shrinkage/stan/changepoint_horseshoe.stan.mustache}  
 
