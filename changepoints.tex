@@ -6,6 +6,9 @@
 \label{dlm:sec:introduction}
 
 Political and social processes are rarely, if ever, constant over time.
+
+Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+
 Thus, political scientists often have a need to estimate time-varying parameter (TVP) models.
 There exist two broad approaches to estimating time-varying parameters: structural break approaches, which include dummy variables and change point models, and smoothing approaches, which include dynamic linear models and smoothing splines. 
 Both approaches estimate TVP when the number of observations is small relative to the number of time periods. 
@@ -55,8 +58,22 @@ Bayesian software program, and R can be used to easily estimate and sample from 
 dynamic linear models.
 \end{enumerate}
 
-Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+First, if change points could be understood in a weaker sense. 
+In few political processes is there actually no change in periods.
+Instead, change is non-zero, but slow in most periods, with some periods showing rapid change.
 
+Second, even though change point models directly estimate the location of the change points, after averaging over the posterior probability of the change points, the posterior distribution of the changes in the parameter will not be sparse. 
+
+Third, using these sorts of one-group models may have some benefits in either flexibility in terms of the types of models which can be estimated, or in the computational speed.
+
+Note that these models, like many sparsity inducing models, often conflate two distinct objectives. 
+The first goal of these models is to improve in- or out-of-sample fit which the data generating process actually has a few very large signals and many zero or relatively small signals.
+The second goal of these models is interpretation for the researcher.
+It is easier to present results that ``there is a change point at time $t$'' than ``the data is slowly trending, and it seems to be trending sharply around $t$, but then it does not move as much after that.''
+In this case, sparsity is not (directly) an attempt to model the data generating process, but a means to get a more interpretable model.
+In many contexts performing statistical inference on ``how many change points?'' or ``what is the probability that $t$ is a change point?'' is non-sensical, since it is almost certain that there a no ``true'' change points, and finding the right number of change points is the researcher choosing a tradeoff between how well the model represents a complex reality, and how interpretable the model is.
+The method presented here does not produce perfectly sparse models, nor does provide probabilities that certain points are or are note change points. 
+Therefore, it is better suited to the first case, of modeling cases in which the 
 
 
 \section{Change points as a Variable Selection Problem}
@@ -187,7 +204,7 @@ The Horseshoe distribution has some theoretically attractive properties for shri
   \begin{aligned}[t]
     \omega_{t} | \lambda_{t}, \eta_{t}, \tau & \sim \dnorm{0, \tau^{2} \lambda_{t}^{2}} \\
     \lambda_{t}  & \sim \dhalfcauchy{0, \eta_{t}} \\
-    \eta_{t} & \sim \dhalfcauchy{0, 1} 
+    \eta_{t} & \sim \dhalfcauchy{0, 1} \\
   \end{aligned}
 \end{equation}
 \end{description}
@@ -204,16 +221,6 @@ To recap, the proposed model for change points is
 where $\omega_{t}$ is given a shrinkage prior distribution that induces sparsity.
 This work will propose horseshoe and horseshoe+ distributions as those shrinkage priors, and compare them other shrinkage priors such as the Student's $t$ and double exponential distributions.
 
-While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
-\begin{enumerate}
-\item For many time-varying parameter processes typically modeled with a change-point model, the situation akin to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
-  In other words, the innovations $\omega$ are never zero; it is just that in most periods they are relatively small.
-  This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
-  It may be useful for the researcher to model it with a step function (change points) for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
-  I would argue that the data generating processes considered by political science papers using change points falls into this category, for example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
-\item When the goal is estimation or prediction of the parameters, rather than the locations of the change-points, then the changes in the parameter is continuous anyways after integrating over the posterior distribution of the change-points. 
-  The one-group approach approximates this distribution.
-\end{enumerate}
 
 \begin{figure}[!htpb]
  \begin{subfigure}[b]{\linewidth}
@@ -233,23 +240,20 @@ While this one-group approach does not provide as clear an estimate of the locat
 
 
 
-\section{Identifying Change Points}
+\section{Discussion}
 \label{dlm:sec:ident-change-points}
 
 The method proposed here is better at estimating the values of $\mu_{t}$, or rather the posterior distribution, when change-points may be present than providing probabilities of the locations of the change-points themselves.
-The time-series of the posterior distribution 
-However, there are a few ways to Given posterior estimates from a sparse disturbance dynamic linear model, there are a few methods that
-can be used to detect structural breaks.
-
 The first method uses the posterior distribution to detect structural breaks is simply a test using posterior distribution of $\omega$.
 This is the Bayesian equivalent to the auxiliary residual test of \textcite{DeJongPenzer1998}.
 In addition to the use of a credible interval rather than a confidence interval, the Bayesian method differs from the auxiliary residual test in that it integrates over the posterior distribution of the state matrices rather than fixing them at point estimates.
 
-The second method uses the local variance components $\lambda_{t}$ to identify structural breaks \parencite[179-180]{PetrisPetroneEtAl2009}.
-If $\lambda_{t}$ = 1, then the state disturbance is distributed normal with a scale equal to the global scale.
-Thus, the local shrinkage parameters $\lambda_{t}$ are relative measure of how much each $\omega_{t}$ is shrunk towards zero.
-Values of $\lambda_{t} > 1$ ($\lambda_{t} < 1$ indicate state disturbances that are dispersed (shrunk) relative to the global scale.
-A structural break can be classified as a time period in which $\E(\lambda_{t}) > 1$.
+
+% The second method uses the local variance components $\lambda_{t}$ to identify structural breaks \parencite[179-180]{PetrisPetroneEtAl2009}.
+% If $\lambda_{t}$ = 1, then the state disturbance is distributed normal with a scale equal to the global scale.
+% Thus, the local shrinkage parameters $\lambda_{t}$ are relative measure of how much each $\omega_{t}$ is shrunk towards zero.
+% Values of $\lambda_{t} > 1$ ($\lambda_{t} < 1$ indicate state disturbances that are dispersed (shrunk) relative to the global scale.
+% A structural break can be classified as a time period in which $\E(\lambda_{t}) > 1$.
 
 % The third method uses the contribution of observations to the state. 
 % Talk about Kalman gain and smoother
@@ -258,6 +262,16 @@ Finally, for many practical purposes and interpretation, an ``eyeball test'' by 
 Rather, change point models are used to ease interpretation, so an informal method of visualizing is enough.
 If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of any practical import.
 
+While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
+\begin{enumerate}
+\item For many time-varying parameter processes typically modeled with a change-point model, the situation akin to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
+  In other words, the innovations $\omega$ are never zero; it is just that in most periods they are relatively small.
+  This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
+  It may be useful for the researcher to model it with a step function (change points) for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
+  I would argue that the data generating processes considered by political science papers using change points falls into this category, for example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
+\item When the goal is estimation or prediction of the parameters, rather than the locations of the change-points, then the changes in the parameter is continuous anyways after integrating over the posterior distribution of the change-points. 
+  The one-group approach approximates this distribution.
+\end{enumerate}
 
 
 \section{Estimation and Implementation in \Stan{}}
@@ -275,7 +289,7 @@ In these equations, the observed date , $y_{t}$, is a linear function of some la
 Equation (\ref{dlm:eq:4}) is the \textit{observation equation}, where $y_{t}$ (observation vector) is a $r \times 1$ vector of observed data, $\theta_{t}$ (state equation) is a $p \times 1$ vector of unobserved states, $b_{t}$ is an $r \times 1$ vector, $F_{t}$ is a $r \times p$ matrix, and $V_{t}$ (observation variance) is an $r \times r$ covariance matrix.
 Equation (\ref{dlm:eq:24}) is the \textit{state equation} equation, which relates the current state to its previous value; $g_{t}$ is an $p \times 1$ vector, $G_{t}$ is a $p \times p$ matrix, and $W_{t}$ (state variance) is an $p \times p$ covariance matrix.
 The vectors and matrices, $\Phi = \{ b_{t}, g_{t}, F_{t}, G_{t}, V_{t}, W_{t} \}_{t \in 1:n}$ are \textit{system matrices}, which in applications will often be functions of parameters.
-GDLMs are a general class of models which includes many common time series models, including SARIMA models, structural time series \parencite{Harvey1989}, dynamic factor models, seemingly unrelated regression, and linear regression with time varying coefficients, among others \parencite[Ch. 3]{DurbinKoopman2012}. 
+GDLMs are a general class of models which includes many common time series models, including SARIMA models, structural time series \parencite{Harvey1990}, dynamic factor models, seemingly unrelated regression, and linear regression with time varying coefficients, among others \parencite[Ch. 3]{DurbinKoopman2012}. 
 
 The model in Section \ref{dlm:sec:chang-as-vari}, Equations \eqref{dlm:eq:17} and \eqref{dlm:eq:2}, is a GDLM.
 In this case, $\beta_{t} = g_{t} = 0$, $F_{t} = G_{t} = 1$, and $\epsilon_{t}$ in Equation (\ref{dlm:eq:17}) are distributed $\epsilon_{t} \sim \dnorm{0, V_{t}}$, and $\omega_{t} \sim \dnorm{0, V_{t}}$.
@@ -298,7 +312,7 @@ I make use of these methods to efficiently sample both the latent states, $\thet
 \Stan{} is a probabilistic programming language, with its own BUGS-like language, and interfaces to several programming languages, including \RLang{} \parencites{Stan2015a}{CarpenterGelmanHoffmanEtAl2015a}.
 GDLMs could be estimated in \Stan{} by directly translating the models described Equations (\ref{dlm:eq:4}) and (\ref{dlm:eq:24}) into a \Stan{} model.%
 \footnote{Since these models are hierarchical, it will be more efficient to implement them using the computational tricks in Section ... of X.}
-Although the Horseshoe and Horseshoe+ distributions are not directly implemented in \Stan{} since they have not closed form, but they are easily implemented in Stan through their hierarchical representation.
+Although the horseshoe and horseshoe+ distributions are not directly implemented in \Stan{} since they have not closed form, but they are easily implemented in Stan through their hierarchical representation.
 
 However, GDLMs can be estimated more efficiently in \Stan{} by marginalizing over the latent states.
 The sampling methods implemented in \Stan{}, the primary of which is HMC-NUTS \parencites{HoffmanGelman2014a}, only require the calculation of a likelihood from the user.%
@@ -318,23 +332,23 @@ To summarize, an efficient method to sample GDLMs in \Stan{} is:
 \end{enumerate}
 I use this method to sample all the models in this work.
 This required implementing the Kalman filter and simulation smoothing methods in \Stan{}.
-I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling available in .
+I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling available at \textcite{Arnold2015c}.
 Section \ref{dlm:sec:example-stan-program} provides the code for one of the \Stan{} modules used in this paper.%
 \footnote{The full code for all models run in this work are available at \url{https://github.com/jrnold/dlm-shrinkage}.}
-This provides a complete 
-Several \RLang{} packages implement Kalman filtering, smoothing, and simulation for Gaussian state space models; see \textcite{Tusell2011} for an overview.
-However, these do not provide a full Bayesian sampling solution, since the user would still need to write their own sampler for any other parameters going into the state space model, or if the state space model were a component of a more complex model.
-The  probabilistic programming language, \proglang{JAGS}, does not implement a specific sampler for Gaussian linear state space models.
+
+% This implementation of state space models in \Stan{} is one of the few state space specific samplers in general Bayesian programming language.
+% Several \RLang{} packages implement Kalman filtering, smoothing, and simulation for Gaussian state space models; see \textcite{Tusell2011} for an overview.
+% However, these do not provide a full Bayesian sampling solution, since the user would still need to write their own sampler for any other parameters going into the state space model, or if the state space model were a component of a more complex model.
+% The  probabilistic programming language, \proglang{JAGS}, does not implement a specific sampler for Gaussian linear state space models.
 
 
 \section{Example: Nile}
 \label{dlm:sec:nile}
 
-The Nile data is a series of readings of the annual flow volume of the Nile River at Aswan taken between 1871 and 1970.
-This dataset is a classic dataset that has been analyzed in many works and texts on times series and structural breaks \parencites{Cobb1978}{Balke1993}{DeJongPenzer1998}{}{DurbinKoopman2012}{CommandeurKoopmanOoms2011}.%
+A classic dataset that has been analyzed in many works and texts on times series and structural breaks is the annual flow volume of the Nile River between 1871 and 1970. \parencites{Cobb1978}{Balke1993}{DeJongPenzer1998}{}{DurbinKoopman2012}{CommandeurKoopmanOoms2011}.%
 \footnote{The dataset is included with \RLang{} as \texttt{Nile} in the included package \pkg{datasets}.}
-Previous analyses show a single level shift in the data, with the shift occurring near 1899.
-This level shift is attributed to construction of a dam at Aswan that started operation in 1902 or climate changes that reduced rainfall in the area \parencite[278]{Cobb1978}.
+The series seems to show a single large shift in the average annual flow around 1899.
+This shift in the level is attributed to construction of a dam at Aswan that started operation in 1902 or climate changes that reduced rainfall in the area \parencite[278]{Cobb1978}.
 
 \begin{figure}
   \centering
@@ -343,12 +357,12 @@ This level shift is attributed to construction of a dam at Aswan that started op
   \label{dlm:fig:nile}
 \end{figure}
 
-Let $y_{t}$ be the annual flow of the Nile River,%
-\footnote{Discharge at Aswan in $10^8 m^{3}$} %
-from $t \in 1871, ..., 1970, 1$ with $n = 100$ observations.
 
-I will compare several models.
-All of these models will assume that the observed data are normally distributed given the mean for that time.%
+I will compare several models of the annual flow.
+In all models, $y_{t}$ be the annual flow of the Nile River,%
+\footnote{Discharge at Aswan in $10^8 m^{3}$.} %
+from $t \in 1871, ..., 1970, 1$ with $n = 100$ observations, 
+where the observations are normally distributed given the mean $\mu_{t}$,%
 \footnote{
   This may not be appropriate since that data appear to contain possible outliers at 1879, 1913, and 1964.
   However, modeling outliers is not the purpose of this analysis.
@@ -359,18 +373,18 @@ All of these models will assume that the observed data are normally distributed 
     y_{t} &\sim \dnorm{\mu_{t}, \sigma^{2}}
   \end{aligned}
 \end{equation}
-The various models will differ on how they define $\mu$.
-
+The various models differ in how they model the possibly time-varying mean, $\mu_{t}$.
+The models I consider are:
 \begin{description}[font = \normalfont\ModelII]
-\item[Constant mean] In this model, the mean is constant.
+\item[Constant] In this model, the mean is constant.
   \begin{equation}
     \label{dlm:eq:21}
     \begin{aligned}[t]
       \mu_{t} &= \mu_{0} && \text{for all $t$}
     \end{aligned}
   \end{equation}
-\item[Manual intervention] This includes an indicator variable for all years including and after 1899.
-  This is modeling the case of an assumed ``known'' change point.
+\item[Intervention] This includes an indicator variable for all years including and after 1899.
+  This models the situation in which the researcher knows, correctly, the change points.
   \begin{equation}
     \mu_{t} = 
     \begin{cases}
@@ -378,8 +392,9 @@ The various models will differ on how they define $\mu$.
       \mu_{0} + \omega & t \geq 1899
     \end{cases}
   \end{equation}
-\item[Normal distribution] In this model, the innovations are distributed normal.
-  This corresponds to the typical Dynamic Linear Model or Kalman filtering usage with time-invariant observation and system variances.
+\item[Normal] In this model, the innovations are distributed normal.
+  This corresponds to the typical local level mode \parencite[Ch. 2]{DurbinKoopman2012}[Ch. 2]{WestHarrison1997}.%
+  \footnote{For example, as implemented in the \RLang{} function \texttt{StructTS}.}
   \begin{equation}
     \label{dlm:eq:11}
     \begin{aligned}[t]
@@ -497,37 +512,47 @@ The various models will differ on how they define $\mu$.
   }
 \end{table}
 
-\begin{table}[thbp]
-  \centering
-  \input{../dlm-shrinkage/analysis/tex/nile-tab_mu_model_comp.tex}
-  \caption{
-    Root mean squared errors (RMSE) of each model to the estimate of $\mu$ from the \ModelII{Intervention}.
-    $\mathrm{RMSE}_{1}(\mu) = \sqrt{\frac{1}{n} \sum_{i = 1}^{n} \left(\E_{k}(\mu_{i}) -  \E_{\text{\ModelII{Intervention}}}(\mu_{i})\right)}^{2}$, where $\E_{k}(\mu_{i})$ is the expected value for model $k$.
-    $\mathrm{RMSE}_{2}(\mu) = \frac{1}{n} \sum_{i = 1}^{n} \sqrt{ \frac{1}{S} \sum_{s = 1}^{S} { \left( \mu_{k, s} -  \E_{\text{\ModelII{Intervention}}}(\mu_{i}) \right) }^{2}}$, where $\mu_{k, s}$ is the value of $\mu$ from iteration $j$ of model $k$, and $S$ is the total number of samples. 
-  }
-\end{table}
 
-
-\section{Linear Filtering}
+\section{Change Points in Levels and Trends}
 \label{dlm:sec:linear-filtering}
 
 
-The use of sparsity inducing priors can be extended to model change points in derivatives of a function in addition to the level.
+The use of sparsity inducing priors can be extended to model change points in trends in addition to the level.
+\textcite{KimKohBoydEtAl2009} and \textcite{Tibshirani2014} consider trend filtering in a maximum likelihood framework with $\ell_{1}$ regularization.
+This can be extended to Bayesian approaches using GDLMs and sparsity inducing shrinkage priors.
+While the change point model in the 
 
-Only discuss the special case of a local trend model.
+\begin{equation}
+  \label{dlm:eq:20}
+  \begin{aligned}[t]
+    y_{t} &= \mu_{t} + \epsilon_{t} & \epsilon_{t} & \sim \dnorm{0, \sigma^{2}} \\
+    \mu_{t} &= \mu_{t - 1} + \partial \mu_{t - 1} + \omega_{1, t} \\
+    \partial \mu_{t} &= + \partial \mu_{t - 1} + \omega_{2, t} \\
+  \end{aligned}
+\end{equation}
 
-These sorts of methods are called trend filtering.
-\textcite{Tibshirani2014} and \textcite{KimKohBoydEtAl2009} consider trend filtering in a maximum likelihood framework with $\ell_{1}$ regularization.
 
+\begin{equation}
+\label{dlm:eq:26}
+\begin{bmatrix}
+  \omega_{1, t} \\
+  \omega_{2, t}
+\end{bmatrix}
+\sim \dnorm{0,
+  \begin{bmatrix}
+    \tau_{1}^{2} \lambda_{1, t}^{2} + \tau_{2} \lambda_{2, t}^{2} & \tau_{2} \lambda_{2, t} \\
+    \tau_{2}^{2} \lambda_{2, t} & \tau_{2}^{2} \lambda_{2, t}
+  \end{bmatrix}
+}
+\end{equation}
 
 
 \section{Example: George W. Bush Approval Ratings}
 \label{dlm:sec:george-w.-bush}
 
 \textcite{RatkovicEng2010} use the approval ratings for George W. Bush, displayed in Figure \ref{dlm:fig:bush_approval}.
-George W. Bush's approval ratings are difficult to fit with a typical smoothing methods because it was subject to two large jumps in his approval ratings: September 11th, 2001 and at the start of the Iraq War in March, 2003.
-The data used in this example consist of 270 polls between J 01, 2001 and J 01, 2001 from the Roper Center Public Opinion Archives.%
-\footnote{From \url{http://webapps.ropercenter.uconn.edu/CFIDE/roper/presidential/webroot/presidential_rating_detail.cfm?allRate=True\&presidentName=Bush\#.UbeB8HUbyv8}.}
+George W. Bush's approval ratings are difficult to fit with a typical smoothing methods because it was subject to two large jumps in his approval ratings: September 11th, 2001 and at the start of the Iraq War on March 20, 2003.
+The data used in this example consist of 270 polls between February 01, 2001 and February 01, 2001 from the Roper Center Public Opinion \footnote{From \url{http://webapps.ropercenter.uconn.edu/CFIDE/roper/presidential/webroot/presidential_rating_detail.cfm?allRate=True\&presidentName=Bush\#.UbeB8HUbyv8}.}
 
 \begin{equation}
   \label{dlm:eq:20}
@@ -570,12 +595,11 @@ The data used in this example consist of 270 polls between J 01, 2001 and J 01, 
   \begin{equation}
     \label{dlm:eq:25}
     \begin{aligned}
-    \lambda_{i, t} & \sim \dhalfcauchy{0, \eta_{i, t}}  \\
+    \lambda_{i, t} & \sim \dhalfcauchy{0, \eta_{i, t}} &&\text{  for $i \in 1, 2$.} \\
     \eta_{i, t} & \sim \dhalfcauchy{0, 1} \\
     \tau_{i} & \sim \dcauchy{0, \frac{1}{n}}
     \end{aligned}
   \end{equation}
-  for $i \in 1, 2$.
 \end{description}
 
 

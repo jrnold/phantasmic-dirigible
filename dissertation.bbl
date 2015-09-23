@@ -61,6 +61,27 @@
       \verb http://dx.doi.org/10.6084/m9.figshare.1513853
       \endverb
     \endentry
+    \entry{Arnold2015c}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f37929ddb55feb1058579820a0b35c07}{Arnold}{A\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f37929ddb55feb1058579820a0b35c07}
+      \strng{fullhash}{f37929ddb55feb1058579820a0b35c07}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{extrayear}{3}
+      \field{labelyear}{2015}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{{Dynamic Linear Model Functions in Stan}}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://dx.doi.org/10.6084/m9.figshare.1553209
+      \endverb
+    \endentry
     \entry{ArrowForsytheGorhamEtAl2008}{article}{}
       \name{author}{22}{}{%
         {{hash=e8e40285e9d1f55181de138f7abba482}{Arrow}{A\bibinitperiod}{Kenneth\bibnamedelima J.}{K\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
@@ -2338,6 +2359,28 @@
       \verb http://dx.doi.org/10.1198/jasa.2010.tm09181
       \endverb
     \endentry
+    \entry{Harvey1990}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4e1805f0b9b36cd0151e3477a555bd98}{Harvey}{H\bibinitperiod}{Andrew\bibnamedelima C.}{A\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4e1805f0b9b36cd0151e3477a555bd98}
+      \strng{fullhash}{4e1805f0b9b36cd0151e3477a555bd98}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1990}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521405737}
+      \field{title}{Forecasting, Structural Time Series Models and the Kalman Filter}
+      \field{year}{1990}
+      \verb{url}
+      \verb http://books.google.com/books?id=Kc6tnRHBwLcC
+      \endverb
+    \endentry
     \entry{Helmbold1995}{report}{}
       \name{author}{1}{}{%
         {{hash=140514b13a303bb720ebc0a2dce98c1d}{Helmbold}{H\bibinitperiod}{Robert\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -4560,35 +4603,6 @@
       \verb http://dx.doi.org/10.1162/15324430152748236
       \endverb
     \endentry
-    \entry{Tusell2011}{article}{}
-      \name{author}{1}{}{%
-        {{hash=cd34e00001b06f353ac96ae3970ca09f}{Tusell}{T\bibinitperiod}{Fernando}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{cd34e00001b06f353ac96ae3970ca09f}
-      \strng{fullhash}{cd34e00001b06f353ac96ae3970ca09f}
-      \field{sortinit}{T}
-      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
-      \field{labelyear}{2011}
-      \field{labelmonth}{3}
-      \field{labelday}{1}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Support in R for state space estimation via Kalman filtering was limited to one package, until fairly recently. In the last five years, the situation has changed with no less than four additional packages offering general implementations of the Kalman filter, including in some cases smoothing, simulation smoothing and other functionality. This paper reviews some of the offerings in R to help the prospective user to make an informed choice.}
-      \field{day}{1}
-      \field{issn}{1548-7660}
-      \field{journaltitle}{Journal of Statistical Software}
-      \field{month}{3}
-      \field{number}{2}
-      \field{title}{Kalman Filtering in R}
-      \field{volume}{39}
-      \field{year}{2011}
-      \field{pages}{1\bibrangedash 27}
-      \range{pages}{27}
-      \verb{url}
-      \verb http://www.jstatsoft.org/v39/i02
-      \endverb
-    \endentry
     \entry{Treasury1860}{book}{}
       \name{author}{1}{}{%
         {{hash=d329f49a55e5566bd7253be60f4ba9e5}{{United\bibnamedelimb States.\bibnamedelimi Dept.\bibnamedelimi of\bibnamedelimb the\bibnamedelimb Treasury}}{U\bibinitperiod}{}{}{}{}{}{}}%
@@ -5440,7 +5454,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Harvey1989}
 \endrefsection
 \endinput
 
