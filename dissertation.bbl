@@ -593,6 +593,36 @@
       \verb http://www.jstor.org/stable/2663038
       \endverb
     \endentry
+    \entry{CarpenterGelmanHoffmanEtAl2015a}{article}{}
+      \name{author}{10}{}{%
+        {{hash=5321a7ac2b0407bc405fa8816fd73f09}{Carpenter}{C\bibinitperiod}{Bob}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=2eea63d267ed5f1cce621438ec43fcdf}{Hoffman}{H\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=fb04571d965766ee6d71dafbd3eb452e}{Lee}{L\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9cc812cde8c441e79dfaab4955a72c2c}{Goodrich}{G\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=53c17835486ed62e327c492f9d35e9e6}{Betancourt}{B\bibinitperiod}{Micahel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c4b056bb77c7a8fcd5e241195b29f6d0}{Brubaker}{B\bibinitperiod}{Marcus\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=ebc21d86180a6d1467322000963c2206}{Guo}{G\bibinitperiod}{Jiquiang}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=137297e0019ba55bca6f9b200782ae52}{Li}{L\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=56787895e048d6c0b29def629a7c0d0e}{Riddell}{R\bibinitperiod}{Allend}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{315a7c9e1cdeecc523de3b4d0e029d66}
+      \strng{fullhash}{f4a9b2afe42f0f23cef4896a6efdc3ed}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{?}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{title}{Stan: A Probabilistic Programming Language}
+      \field{volume}{?}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.stat.columbia.edu/~gelman/research/published/stan-paper-revision-feb2015.pdf
+      \endverb
+    \endentry
     \entry{CarterKohn1994}{article}{}
       \name{author}{2}{}{%
         {{hash=916a516cbe958af18d4a219c75c186dc}{Carter}{C\bibinitperiod}{C.\bibnamedelimi K.}{C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -1104,6 +1134,37 @@
       \verb http://www.jstor.org/stable/2670129
       \endverb
     \endentry
+    \entry{DeJongShephard1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4584a5ac082048b712fce9d633798c26}{{De\bibnamedelimb Jong}}{D\bibinitperiod}{Piet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=297d9c8d6a4dcfbed876803d5cbba67b}{Shephard}{S\bibinitperiod}{Neil}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{be4da94c639c72a397ddf8d212e9996d}
+      \strng{fullhash}{be4da94c639c72a397ddf8d212e9996d}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently suggested procedures for simulating from the posterior density of states given a Gaussian state space time series are refined and extended. We introduce and study the simulation smoother, which draws from the multivariate posterior distribution of the disturbances of the model, so avoiding the degeneracies inherent in state samplers. The technique is important in Gibbs sampling with non-Gaussian time series models, and for performing Bayesian analysis of Gaussian time series.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The simulation smoother for time series models}
+      \field{volume}{82}
+      \field{year}{1995}
+      \field{pages}{339\bibrangedash 350}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1093/biomet/82.2.339
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/82/2/339.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/82/2/339.abstract
+      \endverb
+    \endentry
     \entry{Dewey1918}{book}{}
       \name{author}{1}{}{%
         {{hash=01286699cff44463b839e6baafffefe5}{Dewey}{D\bibinitperiod}{Davis\bibnamedelima Rich}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -1124,6 +1185,38 @@
       \field{year}{1918}
       \verb{url}
       \verb http://books.google.com/books?id=l3oaAAAAMAAJ
+      \endverb
+    \endentry
+    \entry{DurbinKoopman2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1558430b13e2ee9f7e8cfb4fede454b7}{Durbin}{D\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6f7c933070eea73f8457742aa0bc0554}{Koopman}{K\bibinitperiod}{S.\bibnamedelimi J.}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Biometrika Trust}%
+      }
+      \strng{namehash}{af330b7fd543cbee2e79f2d17f7b2cb5}
+      \strng{fullhash}{af330b7fd543cbee2e79f2d17f7b2cb5}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simulation smoother in state space time series analysis is a procedure for drawing samples from the conditional distribution of state or disturbance vectors given the observations. We present a new technique for this which is both simple and computationally efficient. The treatment includes models with diffuse initial conditions and regression effects. Computational comparisons are made with the previous standard method. Two applications are provided to illustrate the use of the simulation smoother for Gibbs sampling for Bayesian inference and importance sampling for classical inference.}
+      \field{issn}{00063444}
+      \field{journaltitle}{Biometrika}
+      \field{number}{3}
+      \field{title}{A Simple and Efficient Simulation Smoother for State Space Time Series Analysis}
+      \field{volume}{89}
+      \field{year}{2002}
+      \field{pages}{603\bibrangedash 615}
+      \range{pages}{13}
+      \verb{url}
+      \verb http://www.jstor.org/stable/4140605
       \endverb
     \endentry
     \entry{DurbinKoopman2012}{book}{}
@@ -2688,6 +2781,38 @@
       \verb http://dx.doi.org/10.1080/01621459.2012.737745
       \endverb
     \endentry
+    \entry{KimKohBoydEtAl2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a0a835037a220b626bebc6e344d108a5}{Kim}{K\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4976dc9837ea6abaa03be80504cfd5a0}{Koh}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=b18cbeba4540b1e65d4f180870cb8004}{Boyd}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3717c319ff68e7ef9274161be966e895}{Gorinevsky}{G\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2b38e37bfecbb573870657184fc982a4}
+      \strng{fullhash}{fb819859141853e9cf1ff97db6421278}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Review}
+      \field{number}{2}
+      \field{title}{$\ell_1$ Trend Filtering}
+      \field{volume}{51}
+      \field{year}{2009}
+      \field{pages}{339\bibrangedash 360}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1137/070690274
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1137/070690274
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1137/070690274
+      \endverb
+    \endentry
     \entry{LangloisLanglois2009}{article}{}
       \name{author}{2}{}{%
         {{hash=12c55c17d235a79c65fb63334275adfa}{Langlois}{L\bibinitperiod}{Catherine\bibnamedelima C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
@@ -3884,6 +4009,30 @@
       \endverb
       \keyw{Intervention (International law),Intervention (International law) -- Case studies.}
     \endentry
+    \entry{ShumwayStoffer2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a96bd5032f1e2683ec252b5385779168}{Shumway}{S\bibinitperiod}{R.H.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=256e4b937c4f0d840e1e1dd5af967203}{Stoffer}{S\bibinitperiod}{D.S.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{034b1e47389caf192d64ae1dfb746f08}
+      \strng{fullhash}{034b1e47389caf192d64ae1dfb746f08}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781441978653}
+      \field{series}{Springer Texts in Statistics}
+      \field{title}{Time Series Analysis and Its Applications}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://books.google.com/books?id=NIhXa6UeF2cC
+      \endverb
+    \endentry
     \entry{Slantchev2003}{article}{}
       \name{author}{1}{}{%
         {{hash=6ab0141294e4f7ac14489ef5599852d5}{Slantchev}{S\bibinitperiod}{Branislav\bibnamedelima L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -4343,6 +4492,41 @@
       \verb{url}
       \verb http://www.jstor.org/stable/3647602
       \endverb
+    \endentry
+    \entry{Tibshirani2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=86fdf5cd4a42068e1ca61ea55b95f068}{Tibshirani}{T\bibinitperiod}{Ryan\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{86fdf5cd4a42068e1ca61ea55b95f068}
+      \strng{fullhash}{86fdf5cd4a42068e1ca61ea55b95f068}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2014}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study trend filtering, a recently proposed tool of Kim et al. [{SIAM} Rev. 51 (2009) 339-360] for nonparametric regression. The trend filtering estimate is defined as the minimizer of a penalized least squares criterion, in which the penalty term sums the absolute \$k\$th order discrete derivatives over the input points. Perhaps not surprisingly, trend filtering estimates appear to have the structure of \$k\$th degree spline functions, with adaptively chosen knot points (we say ``appear'' here as trend filtering estimates are not really functions over continuous domains, and are only defined over the discrete set of inputs). This brings to mind comparisons to other nonparametric regression tools that also produce adaptive splines; in particular, we compare trend filtering to smoothing splines, which penalize the sum of squared derivatives across input points, and to locally adaptive regression splines [Ann. Statist. 25 (1997) 387-413], which penalize the total variation of the \$k\$th derivative. Empirically, we discover that trend filtering estimates adapt to the local level of smoothness much better than smoothing splines, and further, they exhibit a remarkable similarity to locally adaptive regression splines. We also provide theoretical support for these empirical findings; most notably, we prove that (with the right choice of tuning parameter) the trend filtering estimate converges to the true underlying function at the minimax rate for functions whose \$k\$th derivative is of bounded variation. This is done via an asymptotic pairing of trend filtering and locally adaptive regression splines, which have already been shown to converge at the minimax rate [Ann. Statist. 25 (1997) 387-413]. At the core of this argument is a new result tying together the fitted values of two lasso problems that share the same outcome vector, but have different predictor matrices.}
+      \field{issn}{0090-5364}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{month}{02}
+      \field{note}{{arXiv}: 1304.2986}
+      \field{number}{1}
+      \field{title}{Adaptive piecewise polynomial estimation via trend filtering}
+      \field{urlday}{07}
+      \field{urlmonth}{07}
+      \field{urlyear}{2014}
+      \field{volume}{42}
+      \field{year}{2014}
+      \field{pages}{285\bibrangedash 323}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1214/13-AOS1189
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1304.2986
+      \endverb
+      \keyw{Mathematics - Statistics Theory,Statistics - Machine Learning,Statistics - Methodology}
     \endentry
     \entry{Tipping2001}{article}{}
       \name{author}{1}{}{%
@@ -5047,6 +5231,30 @@
       \verb http://dx.doi.org/10.1017/S0022050700000206
       \endverb
     \endentry
+    \entry{WestHarrison1997}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c6b1f518734bc0a38e6c8d89fabde946}{West}{W\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c6374a40de48e3a9b37f6ce962f9891d}{Harrison}{H\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{66cebabe9ddf35ade3986c7a7faab4d3}
+      \strng{fullhash}{66cebabe9ddf35ade3986c7a7faab4d3}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780387947259}
+      \field{series}{Springer series in statistics}
+      \field{title}{{Bayesian} forecasting and dynamic models}
+      \field{year}{1997}
+      \verb{url}
+      \verb http://books.google.com/books?id=jcl8lD75fkYC
+      \endverb
+    \endentry
     \entry{WesternKleykamp2004}{article}{}
       \name{author}{2}{}{%
         {{hash=3c96bb1dacfa68cf8306ed31f6bd64b6}{Western}{W\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
@@ -5232,6 +5440,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{Harvey1989}
 \endrefsection
 \endinput
 

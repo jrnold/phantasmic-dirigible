@@ -1,4 +1,4 @@
-<<echo = FALSE, results = 'hide'>>=
+<<echo = FALSE, results = 'hide', message = FALSE, warning = FALSE, error = FALSE>>=
 library("bsdlm")
 data("BushApproval", package = "bsdlm")
 tab_path <- file.path(PROJECT_ROOT, "analysis", "tex")
@@ -268,41 +268,71 @@ If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of a
 
 
 
-\section{Estimation}
+\section{Estimation and Implementation in \Stan{}}
 \label{sec:estimation}
 
-
-A dynamic linear model, also called Gaussian state space models, is represented by a system of equations
-\begin{equation}
+A helpful feature of the model as laid out in the previous section is that it that it can be expressed as Gaussian dynamic linear model, which has properties useful for its computation and generalization.
+A Gaussian dynamic linear model (GDLM), or linear Gaussian state space model, is a model represented by the system of equations \parencites{DurbinKoopman2012}{WestHarrison1997}{PetrisPetroneEtAl2009}[Ch 6]{ShumwayStoffer2010},
+\begin{align}
   \label{eq:4}
-  \begin{aligned}[t]
   y_{t} &\sim \dnorm{b_{t} + F_{t} \theta_{t}, V_{t}} \\
+  \label{eq:24}
   \theta_{t} &\sim \dnorm{g_{t} + G_{t} \theta_{t - 1}, W_{t}} 
-  \end{aligned}
-\end{equation}
-This is covered in INSERT TEXTS.
+\end{align}
+In these equations, the observed date , $y_{t}$, is a linear function of some latent states, $\theta_{t}$, which are a function of their previous values $\theta_{t-1}$.
+Equation (\ref{eq:4}) is the \textit{observation equation}, where $y_{t}$ (observation vector) is a $r \times 1$ vector of observed data, $\theta_{t}$ (state equation) is a $p \times 1$ vector of unobserved states, $b_{t}$ is an $r \times 1$ vector, $F_{t}$ is a $r \times p$ matrix, and $V_{t}$ (observation variance) is an $r \times r$ covariance matrix.
+Equation (\ref{eq:24}) is the \textit{state equation} equation, which relates the current state to its previous value; $g_{t}$ is an $p \times 1$ vector, $G_{t}$ is a $p \times p$ matrix, and $W_{t}$ (state variance) is an $p \times p$ covariance matrix.
+The vectors and matrices, $\Phi = \{ b_{t}, g_{t}, F_{t}, G_{t}, V_{t}, W_{t} \}_{t \in 1:n}$ are \textit{system matrices}, which in applications will often be functions of parameters.
+GDLMs are a general class of models which includes many common time series models, including SARIMA models, structural time series \parencite{Harvey1989}, dynamic factor models, seemingly unrelated regression, and linear regression with time varying coefficients, among others \parencite[Ch. 3]{DurbinKoopman2012}. 
 
-The model in Section \Stan{}, a probabilistic programming language, through the \RLang{} package \textbf{rstan}.
-These models could be estimated in \Stan{} directly by translating the models described in the previous section into a \Stan{} model.
-Although the Horseshoe and Horseshoe+ distributions are not directly implemented in \Stan{}, they are easily implemented in Stan through their hierarchical representation.%
-\footnote{See the examples in \url{http://andrewgelman.com/2015/02/17/bayesian-survival-analysis-horseshoe-priors/} and \url{http://becs.aalto.fi/en/research/bayes/diabcvd/}.}
+The model in Section \ref{sec:chang-as-vari}, Equations \eqref{eq:17} and \eqref{eq:2}, is a GDLM.
+In this case, $\beta_{t} = g_{t} = 0$, $F_{t} = G_{t} = 1$, and $\epsilon_{t}$ in Equation (\ref{eq:17}) are distributed $\epsilon_{t} \sim \dnorm{0, V_{t}}$, and $\omega_{t} \sim \dnorm{0, V_{t}}$.
+Even though the proposed distributions distributions for $\omega_{t}$ are not normal, since they are all representable as scale-mixtures of normal distributions, they are normal conditional on the values of $\lambda_{t}$.%
+These models are similar to what is often called the \textit{local level model} \parencite[Ch 2.]{DurbinKoopman2012}, except that they have time-varying state variances, $W_{t}$.
+In other words, the change point model discussed here is simply a local level model with a sparsity-inducing shrinkage prior on the state variance.
 
-However, Gaussian state space models can be estimated more efficiently by marginalizing over the latent states while sampling other parameters, and then sampling the latent states using a Forward-Filter Backwards Sampler (FFBS) type.
+That these change point models can be represented as linear Gaussian state space models is useful for two reasons.
+First, it suggests how these models can be extended beyond simple changes in means.
+Any sort of GDLM, which includes many common models, can be adjusted to account for change points in in any of its states, by using a shrinkage prior distribution for its system variance, $W$.%
+\footnote{Though the shrinkage prior distribution will need to be a scale-mixture of normals.}
 
+Second, since both the observation and system equations are multivariate normal, there are analytical solutions that allow for efficiently computing its likelihood and sampling the latent states from their posterior distribution.
+The Kalman filter calculates the values of $p(\theta_{t} | y_{1:(t-1)})$  and $(\theta_{t}| y_{1:t})$, and can be used to calculate the likelihood of $p(y | \Phi)$.
+Importantly, the Kalman filter calculate the likelihood of $y$ without needing the values of the latent states $\theta$.
+The derivations of the Kalman filter can be found in most time-series texts, including \textcite[Ch. 5--7]{DurbinKoopman2012}{WestHarrison1997}.
+Given the results of the Kalman filter there are several methods to sample $\theta$ from $p(\theta | y, \Phi)$, a process called Forward-Filtering Backwards-Smoothing (FFBS) or simulation smoothing \parencites{CarterKohn1994}{Fruehwirth-Schnatter1994}{DeJongShephard1995}{DurbinKoopman2002}[Ch 4.9]{DurbinKoopman2012}.
+I make use of these methods to efficiently sample both the latent states, $\theta$, and other parameters of the model in \Stan{}.
+
+\Stan{} is a probabilistic programming language, with its own BUGS-like language, and interfaces to several programming languages, including \RLang{} \parencites{Stan2015a}{CarpenterGelmanHoffmanEtAl2015a}.
+GDLMs could be estimated in \Stan{} by directly translating the models described Equations (\ref{eq:4}) and (\ref{eq:24}) into a \Stan{} model.%
+\footnote{Since these models are hierarchical, it will be more efficient to implement them using the computational tricks in Section ... of X.}
+Although the Horseshoe and Horseshoe+ distributions are not directly implemented in \Stan{} since they have not closed form, but they are easily implemented in Stan through their hierarchical representation.
+
+However, GDLMs can be estimated more efficiently in \Stan{} by marginalizing over the latent states.
+The sampling methods implemented in \Stan{}, the primary of which is HMC-NUTS \parencites{HoffmanGelman2014a}, only require the calculation of a likelihood from the user.%
+\footnote{Technically, it also requires derivatives of the likelihood, but these are generated automatically by \Stan{} using its automatic differentiation engine.}
+The Kalman filter can be used to calculate the likelihood $p(y | ...)$ by marginalizing over the latent states, $\theta_{t}$. 
+Marginalizing over parameters is required when estimating models with discrete parameters in \Stan{}, e.g. mixture models \parencite[104]{Stan2015a}.
+Although it is not necessary to sample from GDLMs, it helps the efficiency of sampling by reducing the correlation between the latent states and the other parameters of the model.%
+If needed, the latent states can be sampled using a simulation smoothing method discussed earlier.%
+\footnote{In \Stan{}, the calculation of $p(y| .)$ is done in the \texttt{transformed parameter} or \texttt{model} blocks, while the sampling of the latent states is done in the \texttt{generated quantities} block.}
+This two-step process is an example of partially collapsed Gibbs-sampling \parencite{VanDykPark2008a}.
+
+To summarize, an efficient method to sample GDLMs in \Stan{} is:
+\begin{enumerate}
+\item Sample $\vartheta$ from $p(\vartheta | y)$ using HMC in \Stan{}.
+  This requires integrating out the latent states, $\theta$, and calculating $p(y | \vartheta)$, which is done using a Kalman filter.
+\item Sample $p(\theta | y, \vartheta)$ using a simulation smoother for a GDLM as in  \parencites{CarterKohn1994}{Fruehwirth-Schnatter1994}{DeJongShephard1995}{DurbinKoopman2002}[Ch 4.9]{DurbinKoopman2012}.
+\end{enumerate}
+I use this method to sample all the models in this work.
+This required implementing the Kalman filter and simulation smoothing methods in \Stan{}.
+I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling available in .
+Section \ref{sec:example-stan-program} provides the code for one of the \Stan{} modules used in this paper.%
+\footnote{The full code for all models run in this work are available at \url{https://github.com/jrnold/dlm-shrinkage}.}
+This provides a complete 
 Several \RLang{} packages implement Kalman filtering, smoothing, and simulation for Gaussian state space models; see \textcite{Tusell2011} for an overview.
 However, these do not provide a full Bayesian sampling solution, since the user would still need to write their own sampler for any other parameters going into the state space model, or if the state space model were a component of a more complex model.
 The  probabilistic programming language, \proglang{JAGS}, does not implement a specific sampler for Gaussian linear state space models.
-
-Let $\vartheta$ refer to all parameters in the system vectors and matrices in the state space models,
-\begin{enumerate}
-\item Sample $\vartheta$ from $p(\vartheta | y)$ using HMC in \Stan{}.
-  This requires integrating out the latent states, $\theta$, and calculating $p(y | \vartheta)$.
-  The value of $p(y | \vartheta)$ is calculated using the Kalman filter.
-\item Sample $p(\theta | y, \vartheta)$ using a simulation sampler for the linear Gaussian state space model.
-\end{enumerate}
-I use this method for all models in the paper. 
-To implement this method in \Stan{}.
-I provide a full set of user-defined \Stan{} functions that implements Kalman filters, smoothers, and simulation sampling.
 
 
 \section{Example: Nile}
@@ -539,15 +569,19 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
 \item[Horseshoe] The system errors are distributed horseshoe. $\alpha_{t} = 0$ for all $t$, and 
   \begin{equation}
     \label{eq:27}
+    \begin{aligned}[t]
     \lambda_{i, t} & \sim \dhalfcauchy{0, 1} & \text{for $i \in 1, 2$} \\
-    tau_{i} & \sim \dcauchy{0, \frac{1}{n}
+    \tau_{i} & \sim \dcauchy{0, \frac{1}{n}}
+    \end{aligned}
   \end{equation}
 \item[Horseshoe+] The system errors are distributed horseshoe+ $\alpha_{t}= 0$ for all $t$, and
   \begin{equation}
-    \label{eq:27}
+    \label{eq:25}
+    \begin{aligned}
     \lambda_{i, t} & \sim \dhalfcauchy{0, \eta_{i, t}}  \\
     \eta_{i, t} & \sim \dhalfcauchy{0, 1} \\
-    tau_{i} & \sim \dcauchy{0, \frac{1}{n}
+    \tau_{i} & \sim \dcauchy{0, \frac{1}{n}}
+    \end{aligned}
   \end{equation}
   for $i \in 1, 2$.
 \end{description}
@@ -572,7 +606,7 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
     \caption{\ModelII{Intervention}}
   \end{subfigure}
   \caption{Posterior distribution of $\mu$ for \ModelII{Normal} and \ModelII{Intervention} models.}
-  \label{fig:bush_mu}
+  \label{fig:bush_mu1}
 \end{figure}
 
 \begin{figure}[thbp!]
@@ -586,7 +620,7 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
   \caption{Posterior distribution of $\mu$ for \ModelII{Horseshoe} and \ModelII{Horseshoe+} models.}
-  \label{fig:bush_mu}
+  \label{fig:bush_mu2}
 \end{figure}
 
 
@@ -605,15 +639,6 @@ Model comparison
 \label{sec:discussion}
 
 
-
-% \subsection{American Civil War Currencies and Bonds}
-% \label{sec:civil-war-greenbacks}
-
-
-
-%Comparison of Kalman filter FFBS implementations: \textcite{DurbinKoopmans2012}
-%Other comparisons of sampling schemes: @ReisSalazarGamerman2006.
-%Comparison of speed of implementations in R, focusing on mode finding: @Tusell2011.
 
 
 \section{Example Stan Program}
@@ -641,5 +666,11 @@ The DLM related user-defined functions in the \texttt{functions} block are exclu
 %  LocalWords:  HarchaouiLevy Leduc2010 ChanYauZhang2014 Balke1993
 %  LocalWords:  BhadraDattaPolsonEtAl2015a CarvalhoPolsonScott2009
 %  LocalWords:  DattaGhosh2012 PasKleijnVaart2014a DeJongPenzer1998
-%  LocalWords:  PetrisPetroneEtAl2009 DurbinKoopman2012 Cobb1978
+%  LocalWords:  PetrisPetroneEtAl2009 DurbinKoopman2012 Cobb1978 RMSE
 %  LocalWords:  CommandeurKoopmanOoms2011 StudentT JuarezSteel2010b
+%  LocalWords:  WestHarrison1997 ShumwayStoffer2010 SARIMA Harvey1989
+%  LocalWords:  CarterKohn1994 Fruehwirth Schnatter1994 paremeters
+%  LocalWords:  DeJongShephard1995 DurbinKoopman2002 Stan2015a WAIC
+%  LocalWords:  CarpenterGelmanHoffmanEtAl2015a HoffmanGelman2014a
+%  LocalWords:  VanDykPark2008a LOO Tibshirani2014 KimKohBoydEtAl2009
+%  LocalWords:  RatkovicEng2010 nrow BushApproval DLM stan
