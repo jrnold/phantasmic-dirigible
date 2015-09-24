@@ -297,7 +297,7 @@ And in general, it is difficult to identify the causal effects of mediators \par
 \begin{figure}[!htpb]
   \centering
   \input{war_psuedo_causal.tikz}
-  \caption{Combat and War Termination}
+  \caption{Causal Diagram of combat and war termination}
   \label{bonds:fig:combat-causal-diagram}
 \end{figure}
 
@@ -569,17 +569,17 @@ However, it is more likely that these yields are largely reflecting expectations
 
 \begin{figure}[!htpb]
   \centering
-  \begin{subfigure}[b]{\linewidth}
+  \begin{subfigure}[t]{\linewidth}
    \includegraphics{../bonds_and_battles//paper/figure/fives1874_price-1}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{bonds:fig:fives1874_price}
 \end{subfigure}
-\begin{subfigure}[b]{\linewidth}
+\begin{subfigure}[t]{\linewidth}
    \includegraphics{../bonds_and_battles//paper/figure/fives1874_yield-1}
   \caption{Yield to maturity.}
   \label{bonds:fig:fives1874_yield}
 \end{subfigure}
-\caption[Price and yield of the Fives of 1874, 1858-1865]{Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865.
+\caption[Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865]{Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865.
 The yield is steady at near 5 percent until the election of Lincoln and the secession of the Southern States in late 1860-early 1861.
 During the American Civil War, the yields are variable, spiking in the middle of 1864.
  }
@@ -587,18 +587,17 @@ During the American Civil War, the yields are variable, spiking in the middle of
 \end{figure}
 
 \begin{figure}[!htpb]
-  \begin{subfigure}[b]{0.45\linewidth}
+  \begin{subfigure}[t]{0.45\linewidth}
     \includegraphics{../bonds_and_battles//paper/figure/fives1874_greenback_price-1}
   \caption{Price in gold dollars for the Fives of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{bonds:fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[t]{0.45\linewidth}
     \includegraphics{../bonds_and_battles//paper/figure/fives1874_union-1}
-    \caption{Yield to maturity of the Fives of 1874 compared with other U.S. bonds.}
+    \caption{Yield to maturity of the Fives of 1874 compared to other U.S. bonds.}
   \label{bonds:fig:fives1874_union}
 \end{subfigure}
-
 %% \begin{subfigure}[b]{0.45\linewidth}
 %%   \centering
 %%   \includegraphics{file.path(fig_path, "fives1874_north-1")}
@@ -611,14 +610,12 @@ During the American Civil War, the yields are variable, spiking in the middle of
 %% \caption{Yield to maturity of the Fives of 1874 compared with bonds issued by Southern and border states.}
 %% \label{bonds:fig:fives1874_south}
 %% \end{subfigure}
-
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[t]{0.45\linewidth}
   \includegraphics{../bonds_and_battles//paper/figure/fives1874_graybacks-1}
-\caption{Price in gold dollars of the Fives of 1874 compared with \$100 Graybacks (Confederate currency).}
+  \caption{Price in gold dollars of the Fives of 1874 compared to \$100 in Graybacks (Confederate currency).}
 \label{bonds:fig:fives1874_grayback}
 \end{subfigure}
-\caption[The Fives of 1874 compared with other government and state issued bonds and currency.]{The Fives of 1874 compared with other government and state issued bonds and currency.
-}
+\caption{The Fives of 1874 compared with other government and state issued bonds and currency.}
 \label{bonds:fig:fives1874_compared}
 \end{figure}
 
@@ -668,7 +665,7 @@ That this set of battles is a subset of battles in the  American Civil War is la
 \begin{figure}[!htpb]
   \centering
   \includegraphics{../bonds_and_battles//paper/figure/fig_major_battles-1}
-  \caption{Major battles and their outcomes}
+  \caption{Dates of major battles of the American Civil War and their outcomes}
   \label{bonds:fig:major_battles}
 \end{figure}
 
@@ -688,8 +685,9 @@ By selecting on the most militarily significant battles, I have already effectiv
 
 \begin{table}
   \centering
+  \small
   \input{../bonds_and_battles//paper/tex/tab_major_battles.tex}
-  \caption[List of the militarily significant battles of the American Civil War]{List of the 43 militarily significant battles of the American Civil War included in this analysis.}
+  \caption{List of the 43 militarily significant battles of the American Civil War included in this analysis.}
   \label{bonds:tab:battles}
 \end{table}
 
@@ -868,7 +866,7 @@ The rate of consols is inappropriate for this analysis because that risk free in
 \begin{table}
   \centering
   \input{../bonds_and_battles//paper/tex/avg_battle_result.tex}
-  \caption[Average effects of Confederate and Union victories on log-yields.]{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
+  \caption{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
   \label{bonds:tab:avg_battle_effects}
 \end{table}
 
@@ -929,8 +927,10 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{../bonds_and_battles//paper/figure/fig_btl_effects-1}
-  \caption[Battle effects on log-yields for all models]{Battle effects, $\omega_{b}$ for all battles for all models, ordered by end date of the battle.
-    Union victories are in dark blue. Confederate victories are in gray.
+  \caption[Battle effects, $\omega_{b}$, for all battles for all models]{Battle effects, $\omega_{b}$, for all battles for all models.
+    These are ordered by end date of the battle.
+    Union victories are in dark blue.
+    Confederate victories are in gray.
   }
   \label{bonds:fig:btl_effects}
 \end{figure}
@@ -938,9 +938,11 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{../bonds_and_battles//paper/figure/fig_btl_effects_ordered-1}  
-  \caption[Battle effects for model $\Model{3}$, ordered by magnitude]{
-    Battle effects, $\omega_{b}$ for all battles for model $\Model{3}$, ordered from largest to smallest.
-    Union victories are in dark blue. Confederate victories are in gray.
+  \caption[Battle effects, $\omega_{b}$, for model $\Model{3}$.]{
+    Battle effects, $\omega_{b}$, for model $\Model{3}$.
+    These are ordered from largest to smallest.
+    Union victories are in dark blue.
+    Confederate victories are in gray.
   }
   \label{bonds:fig:btl_effects_ordered}
 \end{figure}
@@ -948,9 +950,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{../bonds_and_battles//paper/figure/fig_btl_effects_time-1}  
-  \caption[Battle effects for model $\Model{3}$, ordered by time]{
-    Battle effects, $\omega_{b}$ for all battles for model $\Model{4}$, by battle result, ordered by date of the battle.
-  }
+  \caption{Battle effects, $\omega_{b}$, for all battles for model $\Model{4}$, by battle result.}
   \label{bonds:fig:btl_effects_time}
 \end{figure}
 
@@ -993,8 +993,8 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_waic.tex}
-  \caption[Model comparisons (WAIC, RMSE)]{
-    Comparison of the models using WAIC and RMSE.
+  \caption[Comparison of models using WAIC and RMSE]{
+    Comparison of models using WAIC and RMSE.
     RMSE is the root mean squared error of each model.
     $\text{elpd}_{\text{WAIC}}$ is the expected log predictive density implied by the Widely Applicable Information Criterion (WAIC).
     The standard errors for WAIC and $\text{elpd}_{\text{WAIC}}$ are calculated as in \textcite{GelmanVehtari2014a}.
@@ -1005,7 +1005,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{../bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
-  \caption{The posterior mean of the average effect of Confederate and Union victories is small relative to the  standard deviation of the innovations, $\eta$.}
+  \caption{The posterior mean of the average effect of Confederate and Union victories relative to the standard deviation of the innovations, $\eta$.}
   \label{bonds:tab:blt_effects_size}
 \end{table}
 

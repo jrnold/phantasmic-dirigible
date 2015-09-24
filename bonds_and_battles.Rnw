@@ -308,7 +308,7 @@ And in general, it is difficult to identify the causal effects of mediators \par
 \begin{figure}[!htpb]
   \centering
   \input{war_psuedo_causal.tikz}
-  \caption{Combat and War Termination}
+  \caption{Causal Diagram of combat and war termination}
   \label{fig:combat-causal-diagram}
 \end{figure}
 
@@ -580,17 +580,17 @@ However, it is more likely that these yields are largely reflecting expectations
 
 \begin{figure}[!htpb]
   \centering
-  \begin{subfigure}[b]{\linewidth}
+  \begin{subfigure}[t]{\linewidth}
    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_price-1")}}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{fig:fives1874_price}
 \end{subfigure}
-\begin{subfigure}[b]{\linewidth}
+\begin{subfigure}[t]{\linewidth}
    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_yield-1")}}
   \caption{Yield to maturity.}
   \label{fig:fives1874_yield}
 \end{subfigure}
-\caption[Price and yield of the Fives of 1874, 1858-1865]{Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865.
+\caption[Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865]{Price and yield of the Fives of 1874 from its issue in 1858 until the end of the Civil War in 1865.
 The yield is steady at near 5 percent until the election of Lincoln and the secession of the Southern States in late 1860-early 1861.
 During the American Civil War, the yields are variable, spiking in the middle of 1864.
  }
@@ -598,18 +598,17 @@ During the American Civil War, the yields are variable, spiking in the middle of
 \end{figure}
 
 \begin{figure}[!htpb]
-  \begin{subfigure}[b]{0.45\linewidth}
+  \begin{subfigure}[t]{0.45\linewidth}
     \includegraphics{\Sexpr{file.path(fig_path, "fives1874_greenback_price-1")}}
   \caption{Price in gold dollars for the Fives of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[t]{0.45\linewidth}
     \includegraphics{\Sexpr{file.path(fig_path, "fives1874_union-1")}}
-    \caption{Yield to maturity of the Fives of 1874 compared with other U.S. bonds.}
+    \caption{Yield to maturity of the Fives of 1874 compared to other U.S. bonds.}
   \label{fig:fives1874_union}
 \end{subfigure}
-
 %% \begin{subfigure}[b]{0.45\linewidth}
 %%   \centering
 %%   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_north-1")}}
@@ -622,14 +621,12 @@ During the American Civil War, the yields are variable, spiking in the middle of
 %% \caption{Yield to maturity of the Fives of 1874 compared with bonds issued by Southern and border states.}
 %% \label{fig:fives1874_south}
 %% \end{subfigure}
-
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[t]{0.45\linewidth}
   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_graybacks-1")}}
-\caption{Price in gold dollars of the Fives of 1874 compared with \$100 Graybacks (Confederate currency).}
+  \caption{Price in gold dollars of the Fives of 1874 compared to \$100 in Graybacks (Confederate currency).}
 \label{fig:fives1874_grayback}
 \end{subfigure}
-\caption[The Fives of 1874 compared with other government and state issued bonds and currency.]{The Fives of 1874 compared with other government and state issued bonds and currency.
-}
+\caption{The Fives of 1874 compared with other government and state issued bonds and currency.}
 \label{fig:fives1874_compared}
 \end{figure}
 
@@ -679,7 +676,7 @@ That this set of battles is a subset of battles in the  American Civil War is la
 \begin{figure}[!htpb]
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "fig_major_battles-1")}}
-  \caption{Major battles and their outcomes}
+  \caption{Dates of major battles of the American Civil War and their outcomes}
   \label{fig:major_battles}
 \end{figure}
 
@@ -699,8 +696,9 @@ By selecting on the most militarily significant battles, I have already effectiv
 
 \begin{table}
   \centering
+  \small
   \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}
-  \caption[List of the militarily significant battles of the American Civil War]{List of the \Sexpr{nrow(major_battles)} militarily significant battles of the American Civil War included in this analysis.}
+  \caption{List of the \Sexpr{nrow(major_battles)} militarily significant battles of the American Civil War included in this analysis.}
   \label{tab:battles}
 \end{table}
 
@@ -879,7 +877,7 @@ The rate of consols is inappropriate for this analysis because that risk free in
 \begin{table}
   \centering
   \input{\Sexpr{file.path(tab_path, "avg_battle_result.tex")}}
-  \caption[Average effects of Confederate and Union victories on log-yields.]{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
+  \caption{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
   \label{tab:avg_battle_effects}
 \end{table}
 
@@ -940,8 +938,10 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects-1")}}
-  \caption[Battle effects on log-yields for all models]{Battle effects, $\omega_{b}$ for all battles for all models, ordered by end date of the battle.
-    Union victories are in dark blue. Confederate victories are in gray.
+  \caption[Battle effects, $\omega_{b}$, for all battles for all models]{Battle effects, $\omega_{b}$, for all battles for all models.
+    These are ordered by end date of the battle.
+    Union victories are in dark blue.
+    Confederate victories are in gray.
   }
   \label{fig:btl_effects}
 \end{figure}
@@ -949,9 +949,11 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects_ordered-1")}}  
-  \caption[Battle effects for model $\Model{3}$, ordered by magnitude]{
-    Battle effects, $\omega_{b}$ for all battles for model $\Model{3}$, ordered from largest to smallest.
-    Union victories are in dark blue. Confederate victories are in gray.
+  \caption[Battle effects, $\omega_{b}$, for model $\Model{3}$.]{
+    Battle effects, $\omega_{b}$, for model $\Model{3}$.
+    These are ordered from largest to smallest.
+    Union victories are in dark blue.
+    Confederate victories are in gray.
   }
   \label{fig:btl_effects_ordered}
 \end{figure}
@@ -959,9 +961,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 \begin{figure}[!htpb]
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects_time-1")}}  
-  \caption[Battle effects for model $\Model{3}$, ordered by time]{
-    Battle effects, $\omega_{b}$ for all battles for model $\Model{4}$, by battle result, ordered by date of the battle.
-  }
+  \caption{Battle effects, $\omega_{b}$, for all battles for model $\Model{4}$, by battle result.}
   \label{fig:btl_effects_time}
 \end{figure}
 
@@ -1004,8 +1004,8 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_waic.tex")}}
-  \caption[Model comparisons (WAIC, RMSE)]{
-    Comparison of the models using WAIC and RMSE.
+  \caption[Comparison of models using WAIC and RMSE]{
+    Comparison of models using WAIC and RMSE.
     RMSE is the root mean squared error of each model.
     $\text{elpd}_{\text{WAIC}}$ is the expected log predictive density implied by the Widely Applicable Information Criterion (WAIC).
     The standard errors for WAIC and $\text{elpd}_{\text{WAIC}}$ are calculated as in \textcite{GelmanVehtari2014a}.
@@ -1016,7 +1016,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \begin{table}[!htpb]
   \centering
   \input{\Sexpr{file.path(tab_path, "tab_btl_effects_size.tex")}}
-  \caption{The posterior mean of the average effect of Confederate and Union victories is small relative to the  standard deviation of the innovations, $\eta$.}
+  \caption{The posterior mean of the average effect of Confederate and Union victories relative to the standard deviation of the innovations, $\eta$.}
   \label{tab:blt_effects_size}
 \end{table}
 
@@ -1072,7 +1072,7 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  WolfordReiterCarrubba2011 belligerents' ESOC US1901 '
 %  LocalWords:  SarkeesWayman2010 BiddleLong2004 Clodfelter2008 Fives
 %  LocalWords:  CochranLong2014 RaleighLinkeHegreEtAl2010 Reiter2009
-%  LocalWords:  Goemans2000 WillardGuinnaneEtAl1996 north2000introd
+%  LocalWords:  Goemans2000 WillardGuinnaneEtAl1996 north2000introd '
 %  LocalWords:  FreyKucher2000 FreyKucher2000a Cornwallis1879 consols
 %  LocalWords:  Mitchell1903 investors' Ramsay2008 Weisiger2015 ACWFD
 %  LocalWords:  Keele2015a Wagner2000 Biddle2004 misperceptions OKFN
@@ -1085,15 +1085,15 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  hacker2011census Livermore1900 DeKnight1900 Dewey1918
 %  LocalWords:  Treasury1863 HomerSylla2005 fives1874 Elder1863 Sixes
 %  LocalWords:  Bankers' Merchants' Macaulay1938 Arnold2015a 20's HMC
-%  LocalWords:  40's 30's Ball1991 Treasury1861a Treasury1861b
+%  LocalWords:  40's 30's Ball1991 Treasury1861a Treasury1861b 20's
 %  LocalWords:  Treasury1862 Treasury1864 Treasury1865 graybacks nrow
 %  LocalWords:  BurdekinWeidenmier2001 Vicksburgh BankersMagazine1864
 %  LocalWords:  COFEDERACY Godfrey1976 Treasury1866 ReiterStam1998 m2
 %  LocalWords:  ReiterStam2002 PilsterBoehmelt2011a CWSAC CWSAC1993
 %  LocalWords:  GrauerHorowitz2012 CWSAC1993b Blakely Bodart1908 CWSA
 %  LocalWords:  fox1898regimental Spotsylvania Medbery1870a Glorietta
-%  LocalWords:  Arnold2015b Phisterer1883 dyer1908 cwsac2012 sui
-%  LocalWords:  KennedyConservation1998  MCMC Stan2015a generis
+%  LocalWords:  Arnold2015b Phisterer1883 dyer1908 cwsac2012 sui 40's
+%  LocalWords:  KennedyConservation1998  MCMC Stan2015a generis 30's
 %  LocalWords:  bellum CBO2012 CBO2012a Fives Sixes 20's 40's 30's bodart
 %%  LocalWords:  Eicher2001 Elder1865 Weingast1998 Walker1865a sides'
 %%  LocalWords:  livermore Powell2006 HistoricalResearchEtAl1984 Fives
@@ -1105,7 +1105,7 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  RMSE Martin1886 GelmanCarlinSternEtAl2013a Gaine's sd
 %  LocalWords:  HoffmanGelman2014a Fuller1942a Watanabe2010 AIC DIC
 %  LocalWords:  GelmanHwangVehtari2014a GelmanVehtari2014a 1L von
-%  LocalWords:  Clausewitz1989 Gartner1998 NorthWeingast1989
+%  LocalWords:  Clausewitz1989 Gartner1998 NorthWeingast1989 uring
 %  LocalWords:  sussman2000instit wells2000revol Herron2000
 %  LocalWords:  eldor2004finan Greenstone2007 Schwartz1900 Fruehwirth
 %  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000

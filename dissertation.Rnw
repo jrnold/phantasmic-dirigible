@@ -10,7 +10,7 @@
 \usepackage{titlesec}           % For keeping section/chapter titles
                                 % single-spaced
 \usepackage{blindtext}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 \usepackage{url}
 \urlstyle{sf}
 
@@ -47,7 +47,7 @@
 
 % Header formatting for regular pages
 \fancyhf{}
-\fancyhead[L]{\it\small\leftmark}
+\fancyhead[L]{}
 \fancyhead[R]{\small\thepage}
 
 % Header formatting for chapter title pages

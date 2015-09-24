@@ -259,6 +259,36 @@
       \verb http://www.jstor.org/stable/2290726
       \endverb
     \endentry
+    \entry{Beck1989}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d5148cebb18611ce1c74228c4b3f0567}{Beck}{B\bibinitperiod}{Nathaniel}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d5148cebb18611ce1c74228c4b3f0567}
+      \strng{fullhash}{d5148cebb18611ce1c74228c4b3f0567}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Kalman filter is useful to estimate dynamic models via maximum likelihood. To do this the model must be set up in state space form. This article shows how various models of interest can be set up in that form. Models considered are Auto Regressive-Moving Average (ARMA) models with measurement error and dynamic factor models.The filter is used to estimate models of presidential approval. A test of rational expectations in approval shows the hypothesis not to hold. The filter is also used to deal with missing approval data and to study whether interpolation of missing data is an adequate technique. Finally, a dynamic factor analysis of government entrepreneurial activity is performed.Appendices go through the mathematical details of the filter and show how to implement it in the computer language GAUSS.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{1}
+      \field{title}{Estimating Dynamic Models Using Kalman Filtering}
+      \field{volume}{1}
+      \field{year}{1989}
+      \field{pages}{121\bibrangedash 156}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1093/pan/1.1.121
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/1/1/121.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/1/1/121.abstract
+      \endverb
+    \endentry
     \entry{BhadraDattaPolsonEtAl2015a}{article}{}
       \name{author}{4}{}{%
         {{hash=39645fcd762d9023dd44509ce470db5b}{Bhadra}{B\bibinitperiod}{Anindya}{A\bibinitperiod}{}{}{}{}}%
@@ -549,6 +579,36 @@
       \range{pages}{10}
       \verb{url}
       \verb http://www.jstor.org/stable/2677945
+      \endverb
+    \endentry
+    \entry{Buethe2002a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d70a3ce5fd5aa53659b95c27ad792844}{Büthe}{B\bibinitperiod}{Tim}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d70a3ce5fd5aa53659b95c27ad792844}
+      \strng{fullhash}{d70a3ce5fd5aa53659b95c27ad792844}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2002}
+      \field{labelmonth}{9}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Social scientists interested in explaining historical processes can, indeed should, refuse the choice between modeling causal relationships and studying history. Identifying temporality as the defining characteristic of processes that can be meaningfully distinguished as âhistory,â I show that modeling such phenomena engenders particular difficulties but is both possible and fruitful. Narratives, as a way of presenting empirical information, have distinctive strengths that make them especially suited for historical scholarship, and structuring the narratives based on the model allows us to treat them as data on which to test the model. At the same time, this use of narratives raises methodological problems not identified in recent debates. I specify these problems, analyze their implications, and suggest ways of solving or minimizing them. There is no inherent incompatibility betweenâbut much potential gain fromâmodeling history and using historical narratives as data.}
+      \field{issn}{1537-5943}
+      \field{issue}{03}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{9}
+      \field{title}{Taking Temporality Seriously: Modeling History and the Use of Narratives as Evidence}
+      \field{volume}{null}
+      \field{year}{2002}
+      \field{pages}{481\bibrangedash 493}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1017/S0003055402000278
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0003055402000278
       \endverb
     \endentry
     \entry{CalderiaZorn1998}{article}{}
@@ -2644,6 +2704,29 @@
       \verb http://books.google.com/books?id=06YRAAAAYAAJ
       \endverb
     \endentry
+    \entry{Jackman2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c40e881d72fcfdf30c062bbd78bff4ff}{Jackman}{J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{c40e881d72fcfdf30c062bbd78bff4ff}
+      \strng{fullhash}{c40e881d72fcfdf30c062bbd78bff4ff}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470686638}
+      \field{series}{Wiley Series in Probability and Statistics}
+      \field{title}{Bayesian Analysis for the Social Sciences}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://books.google.com/books?id=QFqyrNL8yEkC
+      \endverb
+    \endentry
     \entry{Jayachandr2006}{article}{}
       \name{author}{1}{}{%
         {{hash=82446ac206a12986d955f8766e3ec844}{Jayachandran}{J\bibinitperiod}{Seema}{S\bibinitperiod}{}{}{}{}}%
@@ -2943,6 +3026,36 @@
       \range{pages}{17}
       \verb{url}
       \verb http://dx.doi.org/10.1111/j.1540-5907.2007.00279.x
+      \endverb
+    \endentry
+    \entry{Lieberman2002a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=45184cf25e5b1a65d3005e97dec7be9c}{Lieberman}{L\bibinitperiod}{Robert\bibnamedelima C.}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{45184cf25e5b1a65d3005e97dec7be9c}
+      \strng{fullhash}{45184cf25e5b1a65d3005e97dec7be9c}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2002}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Institutional approaches to explaining political phenomena suffer from three common limitations: reductionism, reliance on exogenous factors, and excessive emphasis on order and structure. Ideational approaches to political explanation, while often more sensitive to change and agency, largely exhibit the same shortcomings. In particular, both perspectives share an emphasis on discerning and explaining patterns of ordered regularity in politics, making it hard to explain important episodes of political change. Relaxing this emphasis on order and viewing politics as situated in multiple and not necessarily equilibrated order suggests a way of synthesizing institutional and ideational approaches and developing more convincing accounts of political change. In this view, change arises out of âfrictionâ among mismatched institutional and ideational patterns. An account of American civil rights policy in the 1960s and 1970s, which is not amenable to either straightforward institutional or ideational explanation, demonstrates the advantages of the approach.}
+      \field{issn}{1537-5943}
+      \field{issue}{04}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{12}
+      \field{title}{Ideas, Institutions, and Political Order: Explaining Political Change}
+      \field{volume}{null}
+      \field{year}{2002}
+      \field{pages}{697\bibrangedash 712}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1017/S0003055402000394
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0003055402000394
       \endverb
     \endentry
     \entry{Livermore1900}{book}{}
@@ -3521,6 +3634,28 @@
       \verb http://books.google.com/books?id=cVNHr_nnLlYC
       \endverb
     \endentry
+    \entry{Pierson2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87b2b30e91c9747e659fe5ad163dc6ad}{Pierson}{P\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{87b2b30e91c9747e659fe5ad163dc6ad}
+      \strng{fullhash}{87b2b30e91c9747e659fe5ad163dc6ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780691117157}
+      \field{title}{Politics in Time: History, Institutions, and Social Analysis}
+      \field{year}{2004}
+      \verb{url}
+      \verb http://books.google.com/books?id=nVtptUoWuO4C
+      \endverb
+    \endentry
     \entry{PilsterBoehmelt2011a}{article}{}
       \name{author}{2}{}{%
         {{hash=658f3f63b0ba516ac9ef22082108ebfa}{Pilster}{P\bibinitperiod}{Ulrich}{U\bibinitperiod}{}{}{}{}}%
@@ -3589,6 +3724,32 @@
       \field{journaltitle}{Bayesian Statistics}
       \field{title}{Shrink Globally, Act Locally: Sparse Bayesian Regularization and Prediction}
       \field{year}{2010}
+    \endentry
+    \entry{PolsonScott2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \strng{fullhash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper argues that the half-Cauchy distribution should replace the inverse-Gamma distribution as a default prior for a top-level scale parameter in Bayesian hierarchical models, at least for cases where a proper prior is necessary. Our arguments involve a blend of Bayesian and frequentist reasoning, and are intended to complement the case made by Gelman (2006) in support of folded-t priors. First, we generalize the half-Cauchy prior to the wider class of hypergeometric inverted-beta priors. We derive expressions for posterior moments and marginal densities when these priors are used for a top-level normal variance in a Bayesian hierarchical model. We go on to prove a proposition that, together with the results for moments and marginals, allows us to characterize the frequentist risk of the Bayes estimators under all global-shrinkage priors in the class. These results, in turn, allow us to study the frequentist properties of the half-Cauchy prior versus a wide class of alternatives. The half-Cauchy occupies a sensible middle ground within this class: it performs well near the origin, but does not lead to drastic compromises in other parts of the parameter space. This provides an alternative, classical justification for the routine use of this prior. We also consider situations where the underlying mean vector is sparse, where we argue that the usual conjugate choice of an inverse-gamma prior is particularly inappropriate, and can severely distort inference. Finally, we summarize some open issues in the specification of default priors for scale terms in hierarchical models}
+      \field{issue}{4}
+      \field{journaltitle}{Bayesian Analysis}
+      \field{title}{On the Half-Cauchy Prior for a Global Scale Parameter}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{887\bibrangedash 902}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 0.1214/12-BA730
+      \endverb
+      \keyw{hierarchical models; normal scale mixtures; shrinkage}
     \endentry
     \entry{Powell2004}{article}{}
       \name{author}{1}{}{%

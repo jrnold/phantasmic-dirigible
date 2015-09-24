@@ -13,50 +13,54 @@ date_format <- function(x) format(x, "%B %d, %Y")
 \section{Introduction}
 \label{sec:introduction}
 
-Political and social processes are rarely, if ever, constant over time.
+Political and social processes are rarely, if ever, constant over time, and as such researchers have a need to model that change \parencites{Buethe2002a}{Lieberman2002a}.
+Moreover, these political process are often marked by both periods of stability and periods of large changes \parencites{Pierson2004}.
+If the researcher has a strong prior about or wishes to test a specific location of a change, they may include indicator variables, an example in international relations being the ubiquitous Cold War dummy variable.
+Other approaches estimate locations of these change using change point or structural break models \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+This offers a different Bayesian approach to modeling change points.
+I combine a continuous latent state space approach \parencite{Beck1989}, with recent advances in Bayesian shrinkage priors \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{PolsonScott2010}.
+These sparse shrinkage priors are the Bayesian analog to the advances in sparse regularization such as the LASSO \parencites{Tibshirani1996}.
+For example, to model change points the mean, I use the following model of observations with a time-varying mean.
+\begin{equation}
+  \label{eq:31}
+  \begin{aligned}[t]
+  y_{t} &= \mu_{t} + \epsilon_{t} & \text{$\epsilon$ iid, $\E(\epsilon) = 0$} \\
+  \mu_{t} &= \mu_{t - 1} + \omega_{t}
+  \end{aligned}
+\end{equation}
+To model change points, I model the change in the mean, $\omega_{t}$, with a shrinkage prior distribution that has most of its mass at zero but has wide tails.
+This will generate estimates of $\omega$ in which most times are close to zero, but a few times, the change points, can be large.
+The estimated posterior distribution of the series of $\mu$ will resemble a step function.
+The particular shrinkage priors that will be used in this work are the the horseshoe and horseshoe+ distributions \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{BhadraDattaPolsonEtAl2015a}.
 
-Political science paper on change-points \parencites{CalderiaZorn1998}{WesternKleykamp2004}{Spirling2007a}{Spirling2007b}{Park2010}{Park2011}{Blackwell2012}.
+A complementary contribution of this work is that it provides a method to efficiently estimate Gaussian dynamic linear models (GDLMs) using a general purpose Bayesian programming language, \Stan{}.
+Gaussian dynamic linear models are a class of models than incorporates many common time series models, including ARIMA, structural time series, and linear regression with time-varying parameters.
+These had previously been difficult to sample in general purpose Bayesian programming languages \parencite[477]{Jackman2009}.
+This work provides a complete set of functions to perform Kalman filtering, smoothing, and backward sampling within \Stan{}.
+This allows for efficiently estimating DLMs in \Stan{} using a partially collapsed Gibbs sampler in which \Stan{}'s standard algorithms are used to estimate parameters after marginalizing over the latent states, and then sample the latent states of the DLM using backwards sampling.
 
-Thus, political scientists often have a need to estimate time-varying parameter (TVP) models.
-There exist two broad approaches to estimating time-varying parameters: structural break approaches, which include dummy variables and change point models, and smoothing approaches, which include dynamic linear models and smoothing splines. 
-Both approaches estimate TVP when the number of observations is small relative to the number of time periods. 
-Smoothing approaches keep the parameter differences small in all periods, while structural break approaches restrict parameter changes to a few locations. 
-These two approaches are often viewed as distinct and estimated using different methods, forcing the researcher to choose between which model to use.
-Many processes the changes in the process are characterized by many periods of stability and a few periods of possibly rapid and large, change (Ratkovic and Eng 2010).
-Historically, existing smoothing methods have had a difficulty estimating these sorts of processes, so structural break models have been used
-
-This paper presents a simple and extensible method to estimate time-varying parameters that may be subject to structural breaks. 
-Time-varying parameters with possible structural breaks can be estimated within a continuous state-space model, and in particular as a dynamic linear model, by placing a shrinkage prior on the distribution of the state disturbances.
-The intuition behind this can be illustrated with a simple model.
-Suppose there is a vector of observed data, $y_{1}, \dots, y_{n}$, drawn from a normal distribution with a time varying mean, $\mu_{1}, \dots, \mu_{n}$.
-This can be represented as a dynamic linear model,
-
-The difference between "structural breaks" and "smoothing" data-generating processes and estimation techniques is whether the XXXX vector is sparse (most XXXX = 0) or dense (most XXXX neq 0).
-A common model is to apply a normal distribution to XXXX
-A normal XXXX  estimate change over time, but it cannot produce sparse estimates of XXXX.
-The thin tails of the normal distribution will tend to over-smooth periods around structural breaks, under-smooth periods in which there were no structural breaks.
-However, estimating sparse parameter vectors is a general problem that has received considerable attention lately in large-p, small-n problems (Tibshirani1996 1996; Polson and Scott 2010). This paper applies some of the advances in sparse parameter estimation to estimating time-varying parameters with structural breaks. Structural breaks, i.e. sparse, can be estimated by placing a shrinkage prior on.
-While there are a large number of Bayesian shrinkage priors proposed, this paper will use the Horseshoe prior (HS) distribution introduced in Carvalho, Polson, and Scott (2009) and Carvalho, Polson, and Scott (2010). I will refer to a dynamic linear models with shrinkage priors on the state disturbances as a sparse disturbance dynamic linear models (SDDLM).
 
 This method does not require specifying the number of structural breaks ex ante.
-\begin{enumerate}
-\item The sparsity of XXXX will determine the number of structural breaks, and this sparsity can be estimated from the data.
+The sparsity of XXXX will determine the number of structural breaks, and this sparsity can be estimated from the data.
 Structural breaks can be detected from the posterior distribution of XXX using several rules. Not only do
 the number of structural breaks need not be specifieded beforehand, this method will work reasonable
 well even if the underlying data-generating process is dense, \ie{}the parameter changes in each period.
-\item This method is extensible. 
-  Dynamic linear models incorporate a wide variety of models, including ARIMA
-  and structural time-series, cubic splines, and regressions with time-varying coefficients. Any model in
-  which the parameter of interest can be expressed as a latent state in a dynamic linear model can be
-  altered to assign a shrinkage prior to the state disturbance in order to make it robust to or to detect
-  structural breaks for that parameter. While many structural break methods are specific to single
-  models, this paper shows how sparse-disturbance DLMs can be estimated within the general purpose
-  Bayesian software, \Stan{}.
-\item The method allows for easy estimation of structural breaks in multiple parameters which can be either
+
+This method is extensible. 
+Dynamic linear models incorporate a wide variety of models, including ARIMA
+and structural time-series, cubic splines, and regressions with time-varying coefficients. Any model in
+which the parameter of interest can be expressed as a latent state in a dynamic linear model can be
+altered to assign a shrinkage prior to the state disturbance in order to make it robust to or to detect
+structural breaks for that parameter. While many structural break methods are specific to single
+models, this paper shows how sparse-disturbance DLMs can be estimated within the general purpose
+Bayesian software, \Stan{}.
+
+The method allows for easy estimation of structural breaks in multiple parameters which can be either
 independent or correlated. Estimating independent structural breaks in a discrete state space model,
 like change-point models, results in the state-space multiplying exponentially.
 assigned a shrinkage prior.
-\item This method is efficient in both programmer and computational time, while still retaining the extensibility
+
+This method is efficient in both programmer and computational time, while still retaining the extensibility
 to estimate a wide variety of models. Since most shrinkage priors, including the HS distribution
 used in the paper, are scale-mixture of normal distributions, this state space model estimated is a
 (conditionally) Gaussian dynamic linear model (GDLM). There are can take advantage of the computationally
@@ -64,7 +68,6 @@ efficient methods of mode finding and sampling from GDLMs, such as the Kalman fi
 Forward-Filter Backwards-Sample. This paper shows how a combination of Stan, a general purpose
 Bayesian software program, and R can be used to easily estimate and sample from the posterior of
 dynamic linear models.
-\end{enumerate}
 
 First, if change points could be understood in a weaker sense. 
 In few political processes is there actually no change in periods.
@@ -84,10 +87,10 @@ The method presented here does not produce perfectly sparse models, nor does pro
 Therefore, it is better suited to the first case, of modeling cases in which the 
 
 
-\section{Change points as a Variable Selection Problem}
+\section{Change points as a Variable Selection and Shrinkage Problem}
 \label{sec:chang-as-vari}
 
-For simplicity, I start with the case of change-points in the mean, and later generalize to other cases.
+For simplicity, I start with the mode of change points in the mean, and later generalize to other cases.
 In this case, there are $n$ ordered observations, $y_{1}, \dots, y_{n}$, with a time-varying mean, $\mu_{t}$.
 \begin{equation}
   \label{eq:17}
@@ -96,45 +99,41 @@ In this case, there are $n$ ordered observations, $y_{1}, \dots, y_{n}$, with a 
   \end{aligned}
 \end{equation}
 Suppose that there are $M$ change points, with ordered change-point locations, $\tau_{1}, \dots, \tau_{m}$, with the convention that $\tau_{0} = 0$ and $\tau_{M + 1} = n$.
-This splits the mean into $M + 1$ segments, with values of the mean $\mu^{*}_{0}, \dots, \mu^{*}_{M}$,  such that
+This splits the mean into $M$ segments, with values of the mean $\mu^{*}_{1}, \dots, \mu^{*}_{M}$,  such that
 \begin{equation}
   \label{eq:1}
   \begin{aligned}[t]
     \mu_{t} &= \mu^{*}_{m} && \text{if $\tau_{m} \leq t \leq \tau_{m + 1}$}
   \end{aligned}
 \end{equation}
-There are a variety of change-point approaches to this problem in both classical \parencites{Page1954a}{Hinkley1970a}{BaiPerron2003a}{OlshenVenkatramanLucitoEtAl2004}{BaiPerron1998}{KillickFearnheadEckley2012} and Bayesian statistics \parencites{Yao1984}{BarryHartigan1993}{Chib1998}{Fearnhead2006a}{FearnheadLiu2007a}.
+There are a variety of approaches to the change point problem in both classical (frequentist) \parencites{Page1954a}{Hinkley1970a}{BaiPerron2003a}{OlshenVenkatramanLucitoEtAl2004}{BaiPerron1998}{KillickFearnheadEckley2012} and Bayesian statistics \parencites{Yao1984}{BarryHartigan1993}{Chib1998}{Fearnhead2006a}{FearnheadLiu2007a}.
 
-An alternative approach to the change point problem is to rewrite the problem in Equation (\ref{eq:1}) to focus on the changes in the mean (innovations), $\omega_{t} = \Delta \mu_{t} = \mu_{t} - \mu_{t - 1}$, rather than the locations of the change points:
+An alternative approach to the change point problem is to rewrite the problem in Equation (\ref{eq:1}) to focus on the changes in the mean (system errors), $\omega_{t} = \mu_{t} - \mu_{t - 1}$, rather than the locations of the change points:
 \begin{equation}
   \label{eq:2}
   \begin{aligned}[t]
     \mu_{t} &= \mu_{t - 1} + \omega_{t}
   \end{aligned}
 \end{equation}
-In a change points situation, the innovations $\omega_{t}$ are sparse, meaning that most values of $\omega_{t}$ are zero, and only a few are non-zero.
-The times of the change points are not directly estimated, but are those times at which $\omega_{t}$ are non-zero.
-This turns the problem from one of segmentation, to one of variable selection, in which the goal is to find the non-zero values of $\omega_{t}$ and estimate their values.
-\footnote{In Equation (\ref{eq:2}) the initial value of $\mu_{1}$, or equivalently $\mu_{0}$, needs to be given a value.
+In a change point model, the system errors, $\omega_{t}$, are sparse, meaning that most values of $\omega_{t}$ are zero, and only a few are non-zero.
+In this formulation, although times of the change points are not directly estimated, the change points are those times at which $\omega_{t}$ are non-zero.
+This formulation turns the problem from one of segmentation, to one of variable selection, in which the goal is to find the non-zero values of $\omega_{t}$ and estimate their values.%
+%\footnote{In Equation (\ref{eq:2}) the initial value of $\mu_{1}$, or equivalently $\mu_{0}$, needs to be given a value.
 %This will likley work better with the formulation that initilizes at t = 1, since we should assume \omega_1=0.
-}
-The natural approach to this variable selection problem is to explicitly model the values of $\omega$ as a discrete mixture between a point mass at zero for the non-change points, and a heavy-tailed alternative \textcite{MitchellBeauchamp1988a}{Efron2008a}:
+%}
+The natural approach to this variable selection problem is to explicitly model the values of $\omega$ as a discrete mixture between a point mass at zero for the non-change points, and an alternative distribution \parencites{MitchellBeauchamp1988a}{Efron2008a}:
 \begin{equation}
   \label{eq:3}
   \omega_{t} = \rho g(\omega) + (1 - \rho) \delta_{0}
 \end{equation}
-where $g$ is some heavy-tailed distribution, and $\delta_{0}$ is a Dirac delta distribution (point mass) at 0.
-Equation (\ref{eq:3}) is often called a ``spike and slab'' prior \textcite{MitchellBeauchamp1988a}.
+where $g$ is a distribution of the non-zero $\omega$, and $\delta_{0}$ is a Dirac delta distribution (point mass) at 0.
+Equation (\ref{eq:3}) is often called a ``spike and slab'' prior \parencite{MitchellBeauchamp1988a}.
 Since it explicitly models the two groups (zeros and non-zeros), \textcite{Efron2008a} calls this the two-group answer to the two-groups problem.
-This prior is convenient because it directly provides for each time a posterior probability that it is a change point (non-zero).
+This prior is convenient because it directly provides for each observation a posterior probability that it is a change point (non-zero).
 \textcite{GiordaniKohn2008} propose using the representation in Equation (\ref{eq:2}) with the a discrete mixture distribution for $\omega$, as in Equation (\ref{eq:3}), to estimate change points.
 
-Recent work in Bayesian computation has focused on one-group solutions to the variable selection problem, which combine shrinkage (regularization) and variable selection through the use of continuous distribution with a large spike at zero and wide tails \parencite{}
-This is analogous to the sparse regularization literature in frequentist statistics spawned by LASSO \parencite{Tibshirani1996} and its the numerous variations.
-In this approach, several papers have proposed using LASSO-type penalties in a maximum likelihood approach to estimate change-points \parencites{TibshiraniEtAl2005}{HarchaouiLevy-Leduc2010}{ChanYauZhang2014}.
-In the Bayesian literature or shrinkage in sparse situations numerous distributions have been proposed. 
-This paper will look at four of them: the Student's $t$ distribution \parencite{Tipping2001}, the Double Exponential or Laplace \parencite{ParkCasella2008}{Hans2009}, the Horseshoe \parencite{CarvalhoPolsonScott2010}, and Horseshoe+ \parencite{BhadraDattaPolsonEtAl2015a}.
-
+Recent work in Bayesian computation has focused on one-group solutions to the variable selection problem, which combine shrinkage and variable selection through the use of continuous distribution with a large spike at zero and wide tails \parencite{PolsonScott2010}.
+Numerous sparse sparse shrinkage priors have been proposed, but this paper will look at the Student's $t$  \parencite{Tipping2001}, the Laplace or double exponential \parencite{ParkCasella2008}{Hans2009}, the horseshoe \parencite{CarvalhoPolsonScott2010}, and horseshoe+ distributions \parencite{BhadraDattaPolsonEtAl2015a}.
 
 \begin{description}
 
@@ -217,8 +216,23 @@ The Horseshoe distribution has some theoretically attractive properties for shri
 \end{equation}
 \end{description}
 
-The shrinkage distributions considered here also global-local scale mixtures of normals, with a global variance component $\tau$, and local variance components $\lambda_{t}$ \parencite{PolsonScott2010}.
-The global variance component $\tau$ concentrates the distribution around zero, while the local variance components allow individual values to be far from zero.
+The shrinkage distributions considered here also global-local scale mixtures of normal, with a global variance component $\tau$, and local variance components $\lambda_{t}$ \parencite{PolsonScott2010}.
+The global variance component, $\tau$, concentrates the distribution around zero, while the local variance components, $\lambda_{t}$, allow individual values to be far from zero.
+The choice of the prior distribution for the global variance component, $\tau$, is particularly important in these shrinkage distributions as it effectively controls the sparsity of the estimates, number of change points in this example.
+As per the suggestion in \textcite{BhadraDattaPolsonEtAl2015a} and \textcite{PasKleijnVaart2014a}, throughout this work, I will use the prior distribution
+\begin{equation}
+  \tau \sim \dhalfcauchy{0, \frac{1}{n}}
+\end{equation}
+where $n$ is the number of observations.
+\footnote{
+  Other suggestions have been $\tau \sim \dhalfcauchy{0, 1}$, $\tau \sim \dunif{0, 1}$ where $\dunif{}$ is the uniform distribution, and a plug-in value of $p / n$, where $p$ is the expected number of non-zero parameters. See \textcites{PolsonScott2012}{PasKleijnVaart2014a}{BhadraDattaPolsonEtAl2015a}.
+}
+That these are distributions can all be expressed as normal distributions, conditional the values of $\lambda_{t}$ and $\tau$, is useful computationally, as is discussed in Section \ref{sec:estimation}.
+
+These Bayesian sparse shrinkage priors are analogous to the sparse regularization in frequentist statistics of which LASSO \parencite{Tibshirani1996} and its the numerous variations is the most prominent example.
+Several papers have proposed using LASSO-like penalties and maximum likelihood to estimate change-points \parencites{TibshiraniEtAl2005}{HarchaouiLevy-Leduc2010}{ChanYauZhang2014}.
+This is a Bayesian extension of that approach.
+
 
 To recap, the proposed model for change points is
 \begin{align}
@@ -232,12 +246,14 @@ This work will propose horseshoe and horseshoe+ distributions as those shrinkage
 
 \begin{figure}[!htpb]
  \begin{subfigure}[b]{\linewidth}
-  \includegraphics{\Sexpr{file.path(PROJECT_ROOT, "analysis", "figures", "dist-plot_zeros-1")}}
+   \includegraphics{\Sexpr{file.path(PROJECT_ROOT, "analysis", "figures", "dist-plot_zeros-1")}}
+   \caption{Near zero.}
  \end{subfigure}
  \begin{subfigure}[b]{\linewidth}
     \includegraphics{\Sexpr{file.path(PROJECT_ROOT, "analysis", "figures", "dist-plot_tails-1")}}
+    \caption{Tail region.}
  \end{subfigure}
-  \caption{
+  \caption[Comparison of the density functions of normal, Cauchy, Laplace, horseshoe, and horseshoe+ distributions.]{
     Comparison of the density functions of normal, Cauchy, Laplace, horseshoe, and horseshoe+ distributions.
     All functions have location and scale parameters of 0.
     The Cauchy distribution is a special case of the Student's $t$ distribution with degrees of freedom equal to 1.
@@ -273,7 +289,7 @@ If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of a
 While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
 \begin{enumerate}
 \item For many time-varying parameter processes typically modeled with a change-point model, the situation akin to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
-  In other words, the innovations $\omega$ are never zero; it is just that in most periods they are relatively small.
+  In other words, the system errors $\omega$ are never zero; it is just that in most periods they are relatively small.
   This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
   It may be useful for the researcher to model it with a step function (change points) for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
   I would argue that the data generating processes considered by political science papers using change points falls into this category, for example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
@@ -350,30 +366,31 @@ Section \ref{sec:example-stan-program} provides the code for one of the \Stan{} 
 % The  probabilistic programming language, \proglang{JAGS}, does not implement a specific sampler for Gaussian linear state space models.
 
 
-\section{Example: Nile}
+\section{Example: Annual Nile River Flows}
 \label{sec:nile}
 
-A classic dataset that has been analyzed in many works and texts on times series and structural breaks is the annual flow volume of the Nile River between 1871 and 1970. \parencites{Cobb1978}{Balke1993}{DeJongPenzer1998}{}{DurbinKoopman2012}{CommandeurKoopmanOoms2011}.%
+A classic dataset that has been analyzed in many works and texts on times series and structural breaks is the annual flow volume of the Nile River between 1871 and 1970 \parencites{Cobb1978}{Balke1993}{DeJongPenzer1998}{}{DurbinKoopman2012}{CommandeurKoopmanOoms2011}.%
 \footnote{The dataset is included with \RLang{} as \texttt{Nile} in the included package \pkg{datasets}.}
-The series seems to show a single large shift in the average annual flow around 1899.
-This shift in the level is attributed to construction of a dam at Aswan that started operation in 1902 or climate changes that reduced rainfall in the area \parencite[278]{Cobb1978}.
+Figure \ref{fig:nile} plots the annual Nile river flow data.
+This series seems to show a single large shift in the average level of the annual flow around 1899.
+This level shift is attributed to construction of a dam at Aswan that started operation in 1902 or climate changes that reduced rainfall in the area \parencite[278]{Cobb1978}.
+This example is used to see if the methods discussed earlier are able to recover this change point.
 
 \begin{figure}
   \centering
   \includegraphics{\Sexpr{file.path(PROJECT_ROOT, "analysis", "figures", "nile-nile-1")}}
-  \caption{Annual flow of the Nile River, \Sexpr{start(datasets::Nile)[1]}--\Sexpr{end(datasets::Nile)[1]}. Previous work has found a break point in this series near 1899.}
+  \caption[Annual flow of the Nile River, \Sexpr{start(datasets::Nile)[1]}--\Sexpr{end(datasets::Nile)[1]}]{Annual flow of the Nile River, \Sexpr{start(datasets::Nile)[1]}--\Sexpr{end(datasets::Nile)[1]}. Previous work has found a break point in this series near 1899.}
   \label{fig:nile}
 \end{figure}
 
-
-I will compare several models of the annual flow.
-In all models, $y_{t}$ be the annual flow of the Nile River,%
+I compare several models of this data.
+In all models, $y_{t}$ is the annual flow of the Nile River,%
 \footnote{Discharge at Aswan in $10^8 m^{3}$.} %
-from $t \in \Sexpr{start(datasets::Nile)[1]}, ..., \Sexpr{end(datasets::Nile)}$ with $n = \Sexpr{length(datasets::Nile)}$ observations, 
-where the observations are normally distributed given the mean $\mu_{t}$,%
+and consists of $n = \Sexpr{length(datasets::Nile)}$ annual observations from $\Sexpr{start(datasets::Nile)[1]}$ to $\Sexpr{end(datasets::Nile)[1]}$.
+In all models the observations are normally distributed given the mean, $\mu_{t}$.%
 \footnote{
-  This may not be appropriate since that data appear to contain possible outliers at 1879, 1913, and 1964.
-  However, modeling outliers is not the purpose of this analysis.
+  This may not be appropriate since that data contains possible outliers at 1879, 1913, and 1964.
+  However, modeling outliers is not the purpose of this analysis, so I ignore that.
 }
 \begin{equation}
   \label{eq:10}
@@ -381,8 +398,8 @@ where the observations are normally distributed given the mean $\mu_{t}$,%
     y_{t} &\sim \dnorm{\mu_{t}, \sigma^{2}}
   \end{aligned}
 \end{equation}
-The various models differ in how they model the possibly time-varying mean, $\mu_{t}$.
-The models I consider are:
+The models differ in how they model the possibly time-varying mean, $\mu_{t}$.
+I estimate the following models:
 \begin{description}[font = \normalfont\ModelII]
 \item[Constant] In this model, the mean is constant.
   \begin{equation}
@@ -391,8 +408,8 @@ The models I consider are:
       \mu_{t} &= \mu_{0} && \text{for all $t$}
     \end{aligned}
   \end{equation}
-\item[Intervention] This includes an indicator variable for all years including and after 1899.
-  This models the situation in which the researcher knows, correctly, the change points.
+\item[Intervention] This model includes an indicator variable for all years including and after 1899.
+  This models a situation in which the researcher knows the change points in a series, and is manually accounting for them.
   \begin{equation}
     \mu_{t} = 
     \begin{cases}
@@ -400,8 +417,8 @@ The models I consider are:
       \mu_{0} + \omega & t \geq 1899
     \end{cases}
   \end{equation}
-\item[Normal] In this model, the innovations are distributed normal.
-  This corresponds to the typical local level mode \parencite[Ch. 2]{DurbinKoopman2012}[Ch. 2]{WestHarrison1997}.%
+\item[Normal] In this model, the system errors are distributed normal.
+  This corresponds to the typical local level model \parencites[Ch. 2]{DurbinKoopman2012}[Ch. 2]{WestHarrison1997}.%
   \footnote{For example, as implemented in the \RLang{} function \texttt{StructTS}.}
   \begin{equation}
     \label{eq:11}
@@ -409,43 +426,73 @@ The models I consider are:
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim N(0, \tau^{2})
     \end{aligned}
   \end{equation}
-\item[StudentT] In this model, the innovations are distributed Student $t$.
-  The prior distribution of the degrees of freedom parameter $\nu$ is that suggested by \textcites{JuarezSteel2010b}, a Gamma distribution with mode 10, mean 20, and variance 200, which places most of mass in the relevant region of the space.
+\item[StudentT] In this model, the system errors are distributed Student $t$.
   \begin{equation}
     \label{eq:18}
     \begin{aligned}[t]
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dt{\nu}{0, \tau}
     \end{aligned}
   \end{equation}
-\item[Laplace] In this model, the innovations are distributed Laplace (Double Exponential):
+  The prior distribution of the degrees of freedom parameter $\nu$ is that suggested by \textcites{JuarezSteel2010b}, a Gamma distribution with shape parameter 2 and rate parameter 0.1 (mode 10, mean 20, and variance 200), which places most of mass in the relevant region of the space.
+\item[Laplace] In this model, the system errors are distributed Laplace (double exponential):
   \begin{equation}
     \label{eq:22}
     \begin{aligned}[t]
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dlaplace{0, \tau}
     \end{aligned}
   \end{equation}
-\item[Horseshoe] In this model, the innovations are distributed horseshoe.
-  The half-Cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+\item[Horseshoe] In this model, the system errors are distributed horseshoe.
   \begin{equation}
     \label{eq:19}
     \begin{aligned}[t]
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dnorm{0, \tau^{2} \lambda^{2}_{t}} \\
-      \lambda_{t} &\sim \dhalfcauchy{0, 1} \\
-      \tau &\sim \dhalfcauchy{0, \frac{1}{n}}
+      \lambda_{t} &\sim \dhalfcauchy{0, 1}
     \end{aligned}
   \end{equation}
-\item[Horseshoe+] In this model, the innovations are distributed horseshoe.
-  The half-Cauchy parameter for the global scale parameter $\tau$ is suggested for the horseshoe and horseshoe+ parameters in \textcite{BhadraDattaPolsonEtAl2015a}.
+\item[Horseshoe+] In this model, the system errors are distributed horseshoe.
   \begin{equation}
     \label{eq:23}
     \begin{aligned}[t]
       \mu_{t} &= \mu_{t - 1} + \omega_{t} & \omega_{t} & \sim \dnorm{0, \tau^{2} \lambda^{2}_{t}} \\
       \lambda_{t} &\sim \dhalfcauchy{0, \eta_{t}} \\
-      \eta_{t} &\sim \dhalfcauchy{0, 1} \\
-      \tau &\sim \dhalfcauchy{0, \frac{1}{n}}
+      \eta_{t} &\sim \dhalfcauchy{0, 1}
     \end{aligned}
   \end{equation}
 \end{description}
+For the global scale parameter, $\tau$, in \ModelII{Laplace}, \ModelII{StudentT}, \ModelII{Horseshoe}, and \ModelII{Horseshoe+}, I use the half-Cauchy prior $\tau \sim \dhalfcauchy{0, \frac{1}{n}}$.
+In \ModelII{Normal} and \ModelII{Intervention}, $\tau$ is given a semi-informative half-Cauchy prior with a scale equal to a scalar multiple of the standard deviation of the data.
+
+Figure \ref{fig:nile_mu_posterior} plots the posterior distribution of $\mu$ for each model.
+The \ModelII{Normal} model does not show a clean break at 1899, instead it estimates a change occurring over several years. 
+The \ModelII{Laplace} model looks similar to the \ModelII{Normal} model. 
+While the Laplace distribution achieves sparsity in maximum likelihood estimates because because it places the posterior mode of parameters at zero, when the posterior mean is used as an estimate it does not. 
+Since does not concentrate much mass near zero, it is not surprising that it does not perform much differently than the normal distribution \parencites{ParkCasella2008}.
+Both the \ModelII{Horseshoe} and \ModelII{Horseshoe+} models produce a posterior distribution of $\mu$ that appears similar to the step function in the \ModelII{Intervention} model.
+Additionally, the \ModelII{StudentT} also produces estimates similar to the \ModelII{Intervention}, but with slightly wider posterior distributions than the horseshoe models.
+Figure \ref{fig:nile_mu_posterior} plots the posterior distribution of the system errors, $\omega$, for each model.
+The \ModelII{Horseshoe}, \ModelII{Horseshoe+}, and \ModelII{StudentT} models all estimate $\E(\omega_{t} | y)$ near zero for all years but 1899.
+
+Table \ref{tab:nile-model_comp} includes several model comparison statistics.
+First, I compare the models on their fit to the observed data using the root mean squared error (RMSE) ($\mathrm{RMSE}(y)$), and the expected log predictive density calculated using the Widely Applicable Information Criterion (WAIC) ($\mathrm{elpd}_{WAIC}$) and importance sampled leave-one-out (LOO) cross-validation ($\mathrm{elpd}_{loo}$).
+The RMSE is defined as $\sqrt{\frac{1}{n} \sum_{i} {(y_{i} - \E(\mu_{i} | y))}^{2}}$.
+The expected log probability density statistics are measures of the model's fit to an new out-of-sample observation.
+The log probability density of a new observation is the expected value of the posterior density of a future observation, $\log p(\tilde{y} | \theta, y)$, where $\tilde{y}$ is the value of a future observation, and $\theta$ includes all parameters in the model.
+Since the value of the future observation, $\tilde{y}$, is unknown, the expected log probability density averages over the predictive distribution of $\tilde{y}$, $\mathrm{elpd} = \E_{f}(\log p(\tilde{y} | \theta, y_{i}))$. 
+However, the distribution of future values is in general also unknown, which is where the two approximations come it. 
+$\mathrm{elpd}_{WAIC}$ approximates elpd using an information criteria similar to AIC, BIC or DIC, taking the in-sample log-likelihood and penalizing it for model complexity.
+$\mathrm{elpd}_{loo}$ approximates elpd using leave-one-out cross validation.
+See \textcite{GelmanCarlinSternEtAl2013a}, \textcites{GelmanVehtari2014a}, or \textcites{GelmanHwangVehtari2014a} for more thorough discussion of elpd and predictive measures for Bayesian model comparison.%
+\footnote{
+  The way these are calculated does not fully account for the time-series nature of this data.
+  The measures presented here should be seen as approximating the fit of the model to a previously missing value within the time-series.
+  To calculate $\mathtt{elpd}_{WAIC}$ and $\mathtt{elpd}_{loo}$, I use the \textbf{loo} \RLang{} package, which implements the methods described in \textcite{GelmanVehtari2014a}.
+}
+In the RMSE, a lower value indicates a better fit, for elpd, a higher value indicates is a better fit.
+Second, I compare the fits of the model to the ``true'' values of $\mu_{t}$. 
+But, since this is real data, I do not know the true values of $\mu_{t}$.
+Instead, I will will compare the other models to posterior mean estimate of \ModelII{Intervention} model. 
+The column $\textrm{RMSE}(\mu)$ of Table \ref{tab:nile-model_comp} is the root mean squared error of the models compared to the posterior mean of $\mu$ as estimated by the \ModelII{Intervention} model, defined as $\sqrt{\frac{1}{n} \sum (\E(\mu_{t}| y) - \bar{\mu}_{t})^{2}}$, where $\bar{\mu}_{t}$ is the posterior mean of $\mu_{t}$ in the \ModelII{Intervention} model.
+As with comparisons of fit to the observed data, the \ModelII{Horseshoe} and \ModelII{Horseshoe+} models have the lowest RMSE, although the \ModelII{StudentT} model is close.
 
 
 \begin{figure}[htpb!]
@@ -478,7 +525,7 @@ The models I consider are:
     \includegraphics[]{\Sexpr{file.path(fig_path, "nile-m6_mu-1.pdf")}}    
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
-  \caption{Posterior distributions of $\mu_t$ for each model. The line is the posterior mean; the range of the inner ribbon are the 16--84\% percentiles, the outer ribbon the 2.5--97.5\% percentiles.}
+  \caption[Posterior distributions of $\mu_t$ for models of the Nile River annual flow data.]{Posterior distributions of $\mu_t$ for models of the Nile River annual flow data. The line is the posterior mean; the range of the ribbon the 2.5--97.5\% percentiles of the posterior distribution.}
   \label{fig:nile_mu_posterior}
 \end{figure}
 
@@ -505,7 +552,7 @@ The models I consider are:
     \includegraphics[]{\Sexpr{file.path(fig_path, "nile-m6_omega-1.pdf")}}    
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
-  \caption{Posterior distributions of $\omega_t$ for each model. The point is the posterior mean; the range of the line is the 2.5--97.5\% percentiles.}
+  \caption[Posterior distributions of $\omega_t$ for models of the Nile River annual flow data]{Posterior distributions of $\omega_t$ for models of the Nile River annual flow data. The point is the posterior mean; the range of the line is the 2.5--97.5\% percentiles of the posterior distribution.}
   \label{fig:nile_omega_posterior}
 \end{figure}
 
@@ -514,10 +561,8 @@ The models I consider are:
 \begin{table}[thbp]
   \centering
   \input{\Sexpr{file.path(tab_path, "nile-tab_model_comp.tex")}}
-  \caption{
-    Root mean squared errors (RMSE) of each model, $RMSE = \frac{1}{n} \sum_{i = 1}^{n} {\left( y_{i} - \E(\mu) \right)}^{2}$.
-    $\mathrm{elpd}_{WAIC}$ and $\mathrm{elpd}_{loo}$ expected log predictive density implied by the Widely Applicable Information Criteria (WAIC) and approximate Leave One Out (LOO).
-  }
+  \caption{Model comparison statistics for models of the Nile Rive annual flow data.}
+  \label{tab:nile-model_comp}
 \end{table}
 
 
@@ -525,21 +570,40 @@ The models I consider are:
 \label{sec:linear-filtering}
 
 
-The use of sparsity inducing priors can be extended to model change points in trends in addition to the level.
-\textcite{KimKohBoydEtAl2009} and \textcite{Tibshirani2014} consider trend filtering in a maximum likelihood framework with $\ell_{1}$ regularization.
-This can be extended to Bayesian approaches using GDLMs and sparsity inducing shrinkage priors.
-While the change point model in the 
-
+The use of sparsity inducing priors can be extended to model change points in trends in addition to the level.%
+\footnote{\textcite{KimKohBoydEtAl2009} and \textcite{Tibshirani2014} consider similar problems in a maximum likelihood framework with $\ell_{1}$ regularization.}
+The local level model considered in section \ref{sec:chang-as-vari} can be extended to a local trend model \parencites[Ch 3.2]{DurbinKoopman2012}[Ch 7]{WestHarrison1997},
 \begin{equation}
   \label{eq:20}
   \begin{aligned}[t]
     y_{t} &= \mu_{t} + \epsilon_{t} & \epsilon_{t} & \sim \dnorm{0, \sigma^{2}} \\
-    \mu_{t} &= \mu_{t - 1} + \partial \mu_{t - 1} + \omega_{1, t} \\
-    \partial \mu_{t} &= + \partial \mu_{t - 1} + \omega_{2, t} \\
+    \mu_{t} &= \mu_{t - 1} + \alpha_{t - 1} + \omega_{1, t} \\
+    \alpha_{t} &= \alpha_{t - 1} + \omega_{2, t} 
   \end{aligned}
 \end{equation}
-
-
+In Equation (\ref{eq:20}), there are two states: $\mu_{t}$ is the current level, and $\alpha_{t}$ is the current trend (change in the level).
+The level is changing over time both due to the current value of the trend, $\alpha_{t}$, and errors, $\omega_{1,t}$.
+While the trend is changing over time due to error, $\omega_{2,t}$.
+This model will allow for change points in both the level and trend if sparsity inducing shrinkage priors are used for $\omega_{1}$ and $\omega_{2}$.
+The system errors in a local trend model could be modeled with an arbitrary covariance structure, but in this work, I follow the suggestion of \parencite[Ch 7.]{WestHarrison1997},
+\begin{equation}
+  \label{eq:29}
+  \begin{aligned}[t]
+  \begin{bmatrix}
+    \omega_{1, t} \\
+    \omega_{2, t}
+  \end{bmatrix} 
+  & '\sim \dnorm{0,
+    L \diag(W_{1}^{2}, W_{2}^{2}) L'
+  } ; &
+  L &= 
+  \begin{bmatrix}
+    1 & 1 \\
+    0 & 1 
+  \end{bmatrix}
+  \end{aligned}
+\end{equation}
+Since the sparsity inducing shrinkage priors discussed can be represented as scale-mixtures of normals, $\omega$, is distributed as:
 \begin{equation}
 \label{eq:26}
 \begin{bmatrix}
@@ -555,6 +619,7 @@ While the change point model in the
 \end{equation}
 
 
+
 \section{Example: George W. Bush Approval Ratings}
 \label{sec:george-w.-bush}
 
@@ -563,7 +628,7 @@ George W. Bush's approval ratings are difficult to fit with a typical smoothing 
 The data used in this example consist of \Sexpr{nrow(BushApproval)} polls between \Sexpr{date_format(min(BushApproval[["start_date"]]))} and \Sexpr{date_format(min(BushApproval[["start_date"]]))} from the Roper Center Public Opinion \footnote{From \url{http://webapps.ropercenter.uconn.edu/CFIDE/roper/presidential/webroot/presidential_rating_detail.cfm?allRate=True\&presidentName=Bush\#.UbeB8HUbyv8}.}
 
 \begin{equation}
-  \label{eq:20}
+  \label{eq:30}
   \begin{aligned}[t]
     y_{t} &= \mu_{t} + \epsilon_{t} & \epsilon_{t} & \sim \dnorm{0, \sigma^{2}} \\
     \mu_{t} &= \alpha_{t} +  \mu_{t - 1} + \partial \mu_{t - 1} + \omega_{1, t} \\
@@ -611,6 +676,13 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
 \end{description}
 
 
+Figures \ref{fig:bush_mu1} and \ref{fig:bush_mu2} plot the posterior distribution of $\mu_{t}$ for the models.
+The \ModelII{Normal} model shows Bush's approval rating rising before 9/11 and shows a lot of small variation.
+The \ModelII{Horseshoe} and \ModelII{Horseshoe+} models more closely resemble the \ModelII{Intervention} model:
+Bush's approval rating are loping downward or steady until 9/11, and the approval ranting is mostly smooth apart from those sharp jumps.
+Table \ref{tab:bush_model_comp} shows the RMSE and expected log predictive densities of the these models. 
+The horseshoe models fit the the data better than a normal distribution, but less well than the \ModelII{Intervention} model.
+
 \begin{figure}[thbp!]
   \centering
   \includegraphics{\Sexpr{file.path(fig_path, "bush-approval-1")}}
@@ -648,8 +720,6 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
 \end{figure}
 
 
-Model comparison
-
 \begin{table}[thbp!]
   \centering
   \input{\Sexpr{file.path(tab_path, "bush-tab_model_comp.tex")}}
@@ -681,7 +751,7 @@ The DLM related user-defined functions in the \texttt{functions} block are exclu
 %  LocalWords:  CarvalhoPolsonScott2010 DurbinKoopmans2012 TVP Polson
 %  LocalWords:  ReisSalazarGamerman2006 Ratkovic Carvalho SDDLM XXXX
 %  LocalWords:  ARIMA GDLM GDLMs CalderiaZorn1998 WesternKleykamp2004
-%  LocalWords:  Spirling2007a Spirling2007b Park2010 Park2011 OECD
+%  LocalWords:  Spirling2007a Spirling2007b Park2010 Park2011 OECD 's
 %  LocalWords:  Blackwell2012 MitchellBeauchamp1988a Efron2008a rstan
 %  LocalWords:  Graybacks Page1954a Hinkley1970a BaiPerron2003a XXX
 %  LocalWords:  OlshenVenkatramanLucitoEtAl2004 BaiPerron1998 Yao1984
@@ -697,4 +767,8 @@ The DLM related user-defined functions in the \texttt{functions} block are exclu
 %  LocalWords:  DeJongShephard1995 DurbinKoopman2002 Stan2015a WAIC
 %  LocalWords:  CarpenterGelmanHoffmanEtAl2015a HoffmanGelman2014a
 %  LocalWords:  VanDykPark2008a LOO Tibshirani2014 KimKohBoydEtAl2009
-%  LocalWords:  RatkovicEng2010 nrow BushApproval DLM stan
+%  LocalWords:  RatkovicEng2010 nrow BushApproval DLM stan StructTS
+%  LocalWords:  elpd Buethe2002a Lieberman2002a Pierson2004 Beck1989
+%  LocalWords:  Jackman2009 PolsonScott2012 Harvey1990 Arnold2015c
+%  LocalWords:  AIC BIC GelmanCarlinSternEtAl2013a GelmanVehtari2014a
+%  LocalWords:  GelmanHwangVehtari2014a loo
