@@ -386,7 +386,6 @@
       \verb{url}
       \verb http://www.mattblackwell.org/files/papers/gamechangers.pdf
       \endverb
-      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Blackwell2012'}
     \endentry
     \entry{Bodart1908}{book}{}
       \name{author}{1}{}{%
@@ -2103,7 +2102,6 @@
       \verb{url}
       \verb http://www.stat.columbia.edu/~gelman/research/unpublished/waic_stan.pdf
       \endverb
-      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'GelmanVehtari2014a'}
     \endentry
     \entry{GiordaniKohn2008}{article}{}
       \name{author}{2}{}{%
@@ -4810,7 +4808,6 @@
       \verb{url}
       \verb http://fraser.stlouisfed.org/publication/?pid=194
       \endverb
-      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Treasury1861b'}
     \endentry
     \entry{Treasury1861a}{book}{}
       \name{author}{1}{}{%

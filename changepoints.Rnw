@@ -33,13 +33,6 @@ This will generate estimates of $\omega$ in which most times are close to zero, 
 The estimated posterior distribution of the series of $\mu$ will resemble a step function.
 The particular shrinkage priors that will be used in this work are the the horseshoe and horseshoe+ distributions \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{BhadraDattaPolsonEtAl2015a}.
 
-A complementary contribution of this work is that it provides a method to efficiently estimate Gaussian dynamic linear models (GDLMs) using a general purpose Bayesian programming language, \Stan{}.
-Gaussian dynamic linear models are a class of models than incorporates many common time series models, including ARIMA, structural time series, and linear regression with time-varying parameters.
-These had previously been difficult to sample in general purpose Bayesian programming languages \parencite[477]{Jackman2009}.
-This work provides a complete set of functions to perform Kalman filtering, smoothing, and backward sampling within \Stan{}.
-This allows for efficiently estimating DLMs in \Stan{} using a partially collapsed Gibbs sampler in which \Stan{}'s standard algorithms are used to estimate parameters after marginalizing over the latent states, and then sample the latent states of the DLM using backwards sampling.
-
-
 This method does not require specifying the number of structural breaks ex ante.
 The sparsity of XXXX will determine the number of structural breaks, and this sparsity can be estimated from the data.
 Structural breaks can be detected from the posterior distribution of XXX using several rules. Not only do
@@ -60,8 +53,7 @@ independent or correlated. Estimating independent structural breaks in a discret
 like change-point models, results in the state-space multiplying exponentially.
 assigned a shrinkage prior.
 
-This method is efficient in both programmer and computational time, while still retaining the extensibility
-to estimate a wide variety of models. Since most shrinkage priors, including the HS distribution
+This method is efficient in both programmer and computational time, while still retaining the extensibility to estimate a wide variety of models. Since most shrinkage priors, including the HS distribution
 used in the paper, are scale-mixture of normal distributions, this state space model estimated is a
 (conditionally) Gaussian dynamic linear model (GDLM). There are can take advantage of the computationally
 efficient methods of mode finding and sampling from GDLMs, such as the Kalman filter and
@@ -69,22 +61,24 @@ Forward-Filter Backwards-Sample. This paper shows how a combination of Stan, a g
 Bayesian software program, and R can be used to easily estimate and sample from the posterior of
 dynamic linear models.
 
-First, if change points could be understood in a weaker sense. 
-In few political processes is there actually no change in periods.
-Instead, change is non-zero, but slow in most periods, with some periods showing rapid change.
+A complementary contribution of this work is that it provides a method to efficiently estimate Gaussian dynamic linear models (GDLMs) using a general purpose Bayesian programming language, \Stan{}.
+Gaussian dynamic linear models are a class of models than incorporates many common time series models, including ARIMA, structural time series, and linear regression with time-varying parameters.
+These had previously been difficult to sample in general purpose Bayesian programming languages \parencite[477]{Jackman2009}.
+This work provides a complete set of functions to perform Kalman filtering, smoothing, and backward sampling within \Stan{}.
+This allows for efficiently estimating DLMs in \Stan{} using a partially collapsed Gibbs sampler in which \Stan{}'s standard algorithms are used to estimate parameters after marginalizing over the latent states, and then sample the latent states of the DLM using backwards sampling.
 
-Second, even though change point models directly estimate the location of the change points, after averaging over the posterior probability of the change points, the posterior distribution of the changes in the parameter will not be sparse. 
+This work presents two implementations and and examples of this approach to change points.
+The first is calculating change points in the level (mean) of a time series, using the example of the annual flow of the Nile River, 1870-1970.
+The second is calculating change points in both the level and trend of a time series, using the example of approval ratings for George W. Bush.
 
-Third, using these sorts of one-group models may have some benefits in either flexibility in terms of the types of models which can be estimated, or in the computational speed.
-
-Note that these models, like many sparsity inducing models, often conflate two distinct objectives. 
-The first goal of these models is to improve in- or out-of-sample fit which the data generating process actually has a few very large signals and many zero or relatively small signals.
-The second goal of these models is interpretation for the researcher.
-It is easier to present results that ``there is a change point at time $t$'' than ``the data is slowly trending, and it seems to be trending sharply around $t$, but then it does not move as much after that.''
-In this case, sparsity is not (directly) an attempt to model the data generating process, but a means to get a more interpretable model.
-In many contexts performing statistical inference on ``how many change points?'' or ``what is the probability that $t$ is a change point?'' is non-sensical, since it is almost certain that there a no ``true'' change points, and finding the right number of change points is the researcher choosing a tradeoff between how well the model represents a complex reality, and how interpretable the model is.
-The method presented here does not produce perfectly sparse models, nor does provide probabilities that certain points are or are note change points. 
-Therefore, it is better suited to the first case, of modeling cases in which the 
+% Note that these models, like many sparsity inducing models, often conflate two distinct objectives. 
+% The first goal of these models is to improve in- or out-of-sample fit which the data generating process actually has a few very large signals and many zero or relatively small signals.
+% The second goal of these models is interpretation for the researcher.
+% It is easier to present results that ``there is a change point at time $t$'' than ``the data is slowly trending, and it seems to be trending sharply around $t$, but then it does not move as much after that.''
+% In this case, sparsity is not (directly) an attempt to model the data generating process, but a means to get a more interpretable model.
+% In many contexts performing statistical inference on ``how many change points?'' or ``what is the probability that $t$ is a change point?'' is non-sensical, since it is almost certain that there a no ``true'' change points, and finding the right number of change points is the researcher choosing a tradeoff between how well the model represents a complex reality, and how interpretable the model is.
+% The method presented here does not produce perfectly sparse models, nor does provide probabilities that certain points are or are note change points. 
+% Therefore, it is better suited to the first case, of modeling cases in which the 
 
 
 \section{Change points as a Variable Selection and Shrinkage Problem}
@@ -262,40 +256,25 @@ This work will propose horseshoe and horseshoe+ distributions as those shrinkage
 \end{figure}
 
 
-
-
-\section{Discussion}
-\label{sec:ident-change-points}
-
-The method proposed here is better at estimating the values of $\mu_{t}$, or rather the posterior distribution, when change-points may be present than providing probabilities of the locations of the change-points themselves.
-The first method uses the posterior distribution to detect structural breaks is simply a test using posterior distribution of $\omega$.
-This is the Bayesian equivalent to the auxiliary residual test of \textcite{DeJongPenzer1998}.
-In addition to the use of a credible interval rather than a confidence interval, the Bayesian method differs from the auxiliary residual test in that it integrates over the posterior distribution of the state matrices rather than fixing them at point estimates.
-
-
-% The second method uses the local variance components $\lambda_{t}$ to identify structural breaks \parencite[179-180]{PetrisPetroneEtAl2009}.
-% If $\lambda_{t}$ = 1, then the state disturbance is distributed normal with a scale equal to the global scale.
-% Thus, the local shrinkage parameters $\lambda_{t}$ are relative measure of how much each $\omega_{t}$ is shrunk towards zero.
-% Values of $\lambda_{t} > 1$ ($\lambda_{t} < 1$ indicate state disturbances that are dispersed (shrunk) relative to the global scale.
-% A structural break can be classified as a time period in which $\E(\lambda_{t}) > 1$.
-
-% The third method uses the contribution of observations to the state. 
-% Talk about Kalman gain and smoother
-
-Finally, for many practical purposes and interpretation, an ``eyeball test'' by the researcher by plotting the mean or median of the posterior estimates of $\mu$ should suffice.As noted earlier, for many data generating processes, the hypothesis that $\omega_{t} = 0$ is implausible, so testing for change points does not make much sense.
+The method proposed here is able to estimate the values of $\mu$ even when it is subject to large jumps or follows a step-function. 
+However, unlike methods using discrete state space mdoels, it does not directly provide probabilities that any given location is a change-points.
+The researcher can identify change points from the posterior distribution of $\omega$.
+This is similar to the auxiliary residual test of \textcite{DeJongPenzer1998}.
+But for many practical purposes, visual inspection by the researcher of a plot of the posterior estimates of $\mu$ should be sufficient.
+As noted earlier, for many data generating processes, the hypothesis that $\omega_{t} = 0$ is implausible, so testing for change points is non-sensical.
 Rather, change point models are used to ease interpretation, so an informal method of visualizing is enough.
-If $\Delta \mu$ is not distinguishable in a plot, then it is unlikely to be of any practical import.
+If the change in $\mu$ is not distinguishable in a plot, then it is unlikely to be of much substantive importance.
 
-While this one-group approach does not provide as clear an estimate of the locations or existence of change points, it is useful for several reasons.
-\begin{enumerate}
-\item For many time-varying parameter processes typically modeled with a change-point model, the situation akin to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
-  In other words, the system errors $\omega$ are never zero; it is just that in most periods they are relatively small.
-  This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
-  It may be useful for the researcher to model it with a step function (change points) for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
-  I would argue that the data generating processes considered by political science papers using change points falls into this category, for example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
-\item When the goal is estimation or prediction of the parameters, rather than the locations of the change-points, then the changes in the parameter is continuous anyways after integrating over the posterior distribution of the change-points. 
-  The one-group approach approximates this distribution.
-\end{enumerate}
+While this one-group approach does not provide clear posterior probabilities that locations are change points, it is a reasonable model of change point processes for several reasons.%
+\footnote{These points are analagous to those made by \textcite[2-3]{PolsonScott2012} with regard to the use of shrinage priors in variable selection.}
+First, for many time-varying parameter processes typically modeled with a change-point model, the data-generating process is probably more similar to a situation in which the parameter is changing in all periods, but most of these changes are small relative to that of a few periods.
+In other words, the system errors $\omega$ are never zero; it is just that in most periods they are relatively small.
+This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are discrete states, apart from perhaps institutional changes.
+It may be useful for the researcher to model that parameter with change points for parsimony and interpretation, but the data-generating process is likely closer to one in which things are usually changing a little, but in some periods they change a lot. 
+Most of the data generating processes considered by political science papers using change points fall into this category: example Supreme court dissent and consensus \parencite{CalderiaZorn1998}, wage growth in OECD states \parencite{WesternKleykamp2004}, casualties in the Iraq War \parencite{Spirling2007a}, presidential use of force \parencite{Park2010}, and campaign contributions \parencite{Blackwell2012}.
+Second, even in change point models with discrete locations of change points, after marginalizing over the posterior distribution of the change points, the posterior distribuiton of the change in $\mu$ will never be exactly zero.
+The shrinkage prior effectively estimates this distribution of $\mu$.
+
 
 
 \section{Estimation and Implementation in \Stan{}}
@@ -617,6 +596,7 @@ Since the sparsity inducing shrinkage priors discussed can be represented as sca
   \end{bmatrix}
 }
 \end{equation}
+This means that this model is a GDLM as in Section \ref{sec:estimation}, and can be sampled with the method described in that setction.
 
 
 
@@ -656,23 +636,8 @@ The data used in this example consist of \Sexpr{nrow(BushApproval)} polls betwee
   There are manual interventions after 9/11 and the the Iraq War. 
   The values of $\alpha$ for those two dates are non-zero and estimated, all other $\alpha_{t}$ are zero.
   This corresponds to a manual intervention for known change points.
-\item[Horseshoe] The system errors are distributed horseshoe. $\alpha_{t} = 0$ for all $t$, and 
-  \begin{equation}
-    \label{eq:27}
-    \begin{aligned}[t]
-    \lambda_{i, t} & \sim \dhalfcauchy{0, 1} & \text{for $i \in 1, 2$} \\
-    \tau_{i} & \sim \dcauchy{0, \frac{1}{n}}
-    \end{aligned}
-  \end{equation}
-\item[Horseshoe+] The system errors are distributed horseshoe+ $\alpha_{t}= 0$ for all $t$, and
-  \begin{equation}
-    \label{eq:25}
-    \begin{aligned}
-    \lambda_{i, t} & \sim \dhalfcauchy{0, \eta_{i, t}} &&\text{  for $i \in 1, 2$.} \\
-    \eta_{i, t} & \sim \dhalfcauchy{0, 1} \\
-    \tau_{i} & \sim \dcauchy{0, \frac{1}{n}}
-    \end{aligned}
-  \end{equation}
+\item[Horseshoe] The system errors, $\omega_{i,t}$, are distributed horseshoe, with $\alpha_{t} = 0$ for all $t$.
+\item[Horseshoe+] The system errors, $\omega_{i,t}$, are distributed horseshoe+, with  $\alpha_{t}= 0$ for all $t$.
 \end{description}
 
 
@@ -723,14 +688,29 @@ The horseshoe models fit the the data better than a normal distribution, but les
 \begin{table}[thbp!]
   \centering
   \input{\Sexpr{file.path(tab_path, "bush-tab_model_comp.tex")}}
-  \caption{}
+  \caption{Model comparison statistics for models of President George W. Bush's approval rating.}
   \label{tab:bush_model_comp}
 \end{table}
 
 
 
-\section{Discussion}
-\label{sec:discussion}
+\section{Conclusion}
+\label{sec:conclusion}
+
+
+Proposes a method
+
+Does not require choosing a set number of 
+
+Although it does not directly estimate the probability of change points, it is closer to the DGP of political processes.
+
+Flexible.
+This paper provided proofs of concept for two examples. 
+However, this method can be extended to many other examples, both GDLMs and not.
+Within GDLMs this could be applied to cycles, seasonal affects, and time varying regressions.
+
+
+Provides a 
 
 
 
