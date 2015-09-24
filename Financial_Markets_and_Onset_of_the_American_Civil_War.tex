@@ -122,8 +122,8 @@ The financial market data used in this work are the prices and yields of U.S. go
   The data used here is available at \url{https://github.com/jrnold/civil_war_era_findata}.
   The particular dataset used in this section is \href{https://github.com/jrnold/civil_war_era_findata/blob/master/data/bankers_magazine_govt_state_loans_yields_2.csv}{bankers\_magazine\_govt\_state\_loans\_yields\_2.csv}.
 }
-The data consist of bonds issued by nine states (Georgia, Indiana, Kentucky, Louisiana, Missouri, North Carolina, Ohio, Pennsylvania and Virginia) and two bonds issued by the U.S. government (6's of 1868, 5's of 1874).%
-\footnote{In the financial jargon of that era, 5's or ``Fives'' refers to coupon bonds paying 5 percent interest, and 6's or ``Sixes'' to bonds paying 6 percent interest.}
+The data consist of bonds issued by nine states (Georgia, Indiana, Kentucky, Louisiana, Missouri, North Carolina, Ohio, Pennsylvania and Virginia) and two bonds issued by the U.S. government (Sixes of 1868, Fives of 1874).%
+\footnote{In the financial jargon of that era, Fives or 5's refers to coupon bonds paying 5 percent interest, and Sixes or 6's to bonds paying 6 percent interest.}
 The set of bonds included here are those that were regularly quoted in \textit{The Bankers' Magazine and Statistical Register}, a monthly business magazine.
 \footnote{After constructing this data I became aware that \textcite{DwyerHaferWeber1999} constructed a dataset of state bonds from the source.
   The data used here expands upon the price data presented in the original source, by matching each quoted price in the source with metadata about the bond(s) it represents.
@@ -135,7 +135,7 @@ All of these bonds are coupon bonds paying 5--6 percent per annum semi-annually 
 The U.S. government bonds matured in 1868 and 1874, while the state bonds variously matured between 1869 and 1892.%
 The data only include two U.S. government bonds because these were the only two large debt issues of the U.S. government outstanding at the start of the the civil war.%
 Between the War of 1812 and the Civil War, the U.S. government only infrequently issued debt.
-The two government bonds  in the data were only issued in extraordinary circumstances: the 6's of 1868 were issued in 1847 and 1848 to pay for the Mexican-American War, while 5's of 1874 were issued in 1858 due to a funding shortfall as a result of a financial crisis, the Panic of 1857  \parencites[297-302]{HomerSylla2005}[72-73,76]{DeKnight1900}
+The two government bonds  in the data were only issued in extraordinary circumstances: the Sixes of 1868 were issued in 1847 and 1848 to pay for the Mexican-American War, while Fives of 1874 were issued in 1858 due to a funding shortfall as a result of a financial crisis, the Panic of 1857  \parencites[297-302]{HomerSylla2005}[72-73,76]{DeKnight1900}
 The state bonds in the data were issued by Midwest and Southern states which issued debt to fund infrastructure projects such as railroads and canals.
 During this period, almost no New England states issued debt, with the notable exception of Massachusetts, whose bonds were the essentially the risk-free asset of the period, but they were not regularly quoted in the \textit{Bankers' Magazine} \parencites[86]{Martin1871}{HomerSylla2005}{Macaulay1938}[80-85]{Officer2003}.
 %% \footnote{
@@ -150,7 +150,7 @@ Yields to maturity are calculated for each bond using the quoted prices and the 
   Thus the yield to maturity for a bond with price $p$, cash flows $\{c_{i}\}_{i = 1}^{n}$ at times $\{t_{i}\}_{i=1}^{n}$ is $y$ such that $p = \sum_{i=1}^{n} c_{i} e^{- y t_{i}}$.
 }
 One difficulty in calculating yields to maturity for these bonds is that for most state bonds, the \textit{Bankers' Magazine} would quote a price for bonds of a state without reference to specific issue or redemption date for state which had multiple issues of bonds with various redemption dates.
-For example, a price is given for ``Virginia 6's'', but Virginia issued multiple coupon bonds paying 6 percent semi-annually with redemption dates between 1885 and 1890.
+For example, a price is given for ``Virginia Sixes'', but Virginia issued multiple coupon bonds paying 6 percent semi-annually with redemption dates between 1885 and 1890.
 Using several sources, the prices are matched to a set of plausible bond issues.%
 \footnote{See the data for details.}
 Yields to maturity are calculated for all issues, and the yield to maturity corresponding to the bond price series is calculated by averaging over the yields for the issues.
@@ -166,7 +166,7 @@ Yields to maturity are calculated for all issues, and the yield to maturity corr
 \caption[Yields to maturity of U.S. government and state bonds in the week before and after news of the surrender of Fort Sumter.]{
   Yields to maturity of U.S. government and state bonds in the week before and after news of the surrender of Fort Sumter.
   For most bonds the before and after columns correspond to April 13 and April 20, 1861, the last price before and the first price after news of the surrender of Fort Sumter reached the market.
-  Prices for Georgia 6's and Louisiana 6's had missing data around Fort Sumter, so the closest available prices are used.
+  Prices for Georgia Sixes and Louisiana Sixes had missing data around Fort Sumter, so the closest available prices are used.
   The response of the prices of U.S. 5s of 1874 was lagged, so the after column is the price on April 27.}
 \label{acw_onset:tab:sumter}
 
@@ -213,7 +213,7 @@ and after the start of the war with Fort Sumter (April 14, 1861).
 
 
 From July 1855 through October 1857, yields were low and stable.
-The yields of the U.S. 6's of 1868 were between NA and NA percent.
+The yields of the U.S. Sixes of 1868 were between NA and NA percent.
 These were the lowest yields on U.S. government bonds up to that point \parencite[282-283]{HomerSylla2005}.
 The yields were even lower than the traditionally safe Massachusetts and Boston city bonds, and less than one percentage point higher than the yield on 3\% British consols, which were considered the safest global asset during that period.%
 \footnote{The average annual yields on British consols 1855-1857 were between 3.27 and 3.31 \parencite[193]{HomerSylla2005}.}
@@ -279,7 +279,7 @@ Comparing the individual series of the Southern state bonds, the market appeared
 Although Louisiana did not secede until January 26, its yield had already peaked near 9 percent at the start of January.
 Virginia, Tennessee and North Carolina did not secede until after the start of the war, yet the yields on all of these states rose between November and January.%
 \footnote{Georgia is an exception; its yields noticeably increase after the election until January 1861 near is declaration of secession (January 19, 1861).
-This may be because the Georgia 6's were illiquid; in the data, there are long sequences in which the price of the Georgia bonds does not change, and it is often traded in multiples of 5 or 10.
+This may be because the Georgia Sixes were illiquid; in the data, there are long sequences in which the price of the Georgia bonds does not change, and it is often traded in multiples of 5 or 10.
 }
 
 Although bond yields had risen after the election of Lincoln as the risk of civil war increased, the formal start of the war with the Battle of Fort Sumter was followed by a jump in yield much larger than had been observed after the election or during the Panic of 1857.
@@ -290,7 +290,7 @@ Table~\ref{acw_onset:fig:yields_sumter} tabulates yields in the week immediately
 Southern state yields rose between 6.1 (Tennessee) and 7.7 (Virginia) percentage points (41 and 45 percent) between April 13th and 20th.
 The yields of U.S. sixes also rose, but only by 2.5 percentage points,
 while Northern state bond yields were almost unchanged.%
-\footnote{The price of the U.S. 5's of 1874 did not change noticeably until the following week, April 27, 1861}
+\footnote{The price of the U.S. Fives of 1874 did not change noticeably until the following week, April 27, 1861}
 Since the yield of the bond incorporates expectations about future payoffs and war would certainly affect those payoffs, the extreme rise in yields after Fort Sumter imply that the probability the market assigned to war was low.
 It is likely that even on the eve of the war, the market anticipated some sort of peaceful settlement to the crisis.
 In April 1860, \textit{The Bankers' Magazine} wrote, ``The general condition of commercial and financial affairs still turns upon the uncertain political future. The fears of civil war, that at one time were entertained in certain quarters, have subsided, if not altogether disappeared, under the influence of passing events.'' \parencite[413]{HomansDana1861a}
@@ -470,7 +470,7 @@ However, even immediately before the war, the probability of war was estimated t
 The results differ in that although both measures show little risk of war prior to the election of Lincoln, the estimates south-north yield spread show an increasing risk of war over time, while the implied probability of war from this section show that risk constant at 0.
 This difference likely arises from the use of a constant war-risk free rate in equation~\eqref{acw_onset:eq:1}.%
 \footnote{This could be avoided if a good time-varying estimate of the war-risk free interest rate were available.
-  Currently available data of the risk free interest rate of the era are only available at low frequencies: prior to 1857, the yields of Massachusetts 5's and Boston City bonds are only available at a yearly frequency prior; after 1857, an index of New England state and municipal bonds is available at a quarterly frequency \parencite{Officer2003}.
+  Currently available data of the risk free interest rate of the era are only available at low frequencies: prior to 1857, the yields of Massachusetts Fives and Boston City bonds are only available at a yearly frequency prior; after 1857, an index of New England state and municipal bonds is available at a quarterly frequency \parencite{Officer2003}.
   Using the average of Northern state bonds, as in section~\ref{acw_onset:sec:south-north-yield}, is likely inappropriate because they also include some risk of war.
 }
 Nevertheless, the overall pattern between the results is similar.
@@ -542,13 +542,13 @@ In particular, if financial markets can serve as predictions given civil war, th
 %%  LocalWords:  prwar Fearon1995 GartzkeLiEtAl2001a GartzkeLi2003 
 %%  LocalWords:  Reiter2003 Reiter2009 Schwab1901 Mitchell1903 MIDs
 %%  LocalWords:  HaberMitchenerOosterlinckEtAl2015 McCandless1996 csv
-%%  LocalWords:  WillardGuinnaneEtAl1996 SmithSmith1997 Bueno1990 6's
+%%  LocalWords:  WillardGuinnaneEtAl1996 SmithSmith1997 Bueno1990 Sixes
 %%  LocalWords:  BrownBurdekin2000 Weidenmier2002 Hall2004 Herron2000
-%%  LocalWords:  Ferguson2006 WaldenstromFrey2008 RigobonSack2005 5's
+%%  LocalWords:  Ferguson2006 WaldenstromFrey2008 RigobonSack2005 Fives
 %%  LocalWords:  SchneiderTroeger2006 GuidolinLaFerrara2010 Elder1865
 %%  LocalWords:  heteroskedasticity LeighWolfersEtAl2003 investors'
 %%  LocalWords:  WolfersZitzewitz2009 Jayachandr2006 Elder1863 years'
-%%  LocalWords:  Merchants' HomansDana1861a Treasury1861a Bankers' 5s
+%%  LocalWords:  Merchants' HomansDana1861a Treasury1861a Bankers'
 %%  LocalWords:  Treasury1860 Treasury1863 BankersMagazine1860 bdy
 %%  LocalWords:  BankersMagazine1862 Randolph1931 Ratchford1941 Pre
 %%  LocalWords:  DwyerHaferWeber1999 metadata HomerSylla2005 ytm pre
@@ -556,8 +556,8 @@ In particular, if financial markets can serve as predictions given civil war, th
 %%  LocalWords:  English1996 Dewey1918 BankersMagazine1857 NBER diff
 %%  LocalWords:  HuntKettellHomansEtAl1860 GoldinLewis1975 Stan2014
 %%  LocalWords:  Tibshirani1996 ParkCasella2008 TibshiraniEtAl2005
-%%  LocalWords:  CarvalhoPolsonScott2009 HoffmanGelman2013 elec 6's
-%%  LocalWords:  preelec postelec sumter postsumter Fons1987 5's
+%%  LocalWords:  CarvalhoPolsonScott2009 HoffmanGelman2013 elec Sixes
+%%  LocalWords:  preelec postelec sumter postsumter Fons1987 Fives
 %%  LocalWords:  Merrick2001 Lau2006 HullPredescuWhite2004 DATEFMT
-%%  LocalWords:  PRWAR1 FreyKucher2000 Powell2006 Gartzke1999
-%%  LocalWords:  Weingast1998 Poast2012 Powell2007
+%%  LocalWords:  PRWAR1 FreyKucher2000 Powell2006 Gartzke1999 Fives
+%%  LocalWords:  Weingast1998 Poast2012 Powell2007 HoffmanGelman2014a
