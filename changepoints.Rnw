@@ -33,37 +33,31 @@ This will generate estimates of $\omega$ in which most times are close to zero, 
 The estimated posterior distribution of the series of $\mu$ will resemble a step function.
 The particular shrinkage priors that will be used in this work are the the horseshoe and horseshoe+ distributions \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2010}{BhadraDattaPolsonEtAl2015a}.
 
-This method does not require specifying the number of structural breaks ex ante.
-The sparsity of XXXX will determine the number of structural breaks, and this sparsity can be estimated from the data.
-Structural breaks can be detected from the posterior distribution of XXX using several rules. Not only do
-the number of structural breaks need not be specifieded beforehand, this method will work reasonable
-well even if the underlying data-generating process is dense, \ie{}the parameter changes in each period.
+Modeling change points using sparse shrinkage prior distributions has several advantageous features.
+First, it does not require specifying the number of change points \textit{ex ante}.
+The change point method of \textcite{Chib1998} requires choosing a number of features, and methods that estimate the 
+The sparsity of the changes in the parameter, $\omega$, can be estimated from the data. 
 
-This method is extensible. 
-Dynamic linear models incorporate a wide variety of models, including ARIMA
-and structural time-series, cubic splines, and regressions with time-varying coefficients. Any model in
-which the parameter of interest can be expressed as a latent state in a dynamic linear model can be
-altered to assign a shrinkage prior to the state disturbance in order to make it robust to or to detect
-structural breaks for that parameter. While many structural break methods are specific to single
-models, this paper shows how sparse-disturbance DLMs can be estimated within the general purpose
-Bayesian software, \Stan{}.
+Second, although this method will not produce exact values of change points, it is likely more representative of the data generating processes in the social science domain.
+The prior distribution that will be applied to $\omega_{t}$ are continuous, meaning that it will not produce exact zeros.
+However, many social science processes are likely better thought of as always changing, but having many periods of small changes with a few periods of large changes.
 
-The method allows for easy estimation of structural breaks in multiple parameters which can be either
-independent or correlated. Estimating independent structural breaks in a discrete state space model,
-like change-point models, results in the state-space multiplying exponentially.
-assigned a shrinkage prior.
+Third, this method is flexible and extensible in that it can be adapted to a variety of models.
+This work considers the cases of change points in the level and in both the level and trend of a single parameter. 
+But it can be applied to linear regression with time varying parameters, changes in seasonality, variance, and a variety of other models.
 
-This method is efficient in both programmer and computational time, while still retaining the extensibility to estimate a wide variety of models. Since most shrinkage priors, including the HS distribution
-used in the paper, are scale-mixture of normal distributions, this state space model estimated is a
-(conditionally) Gaussian dynamic linear model (GDLM). There are can take advantage of the computationally
-efficient methods of mode finding and sampling from GDLMs, such as the Kalman filter and
-Forward-Filter Backwards-Sample. This paper shows how a combination of Stan, a general purpose
-Bayesian software program, and R can be used to easily estimate and sample from the posterior of
-dynamic linear models.
+Fourth, this method is compututationally efficient.
+The shrinkage prior distributions considered here are representable as scale-mixtures of normal distributions, which allows them to be expressed as a Gaussian dynamic linear models (GDLMs).
+This means that they can be sampled using specialized methods for GDLMs, e.g. forward-filter backwards-sampling algorithm.
+
+Fifth, this method is implementable and implemented efficiently in a popular Bayesian probabilistic programming language, \Stan{}.
+\Stan{} does not directly sample discrete variables, meaning that implementing standard Bayesian change point methods are either difficult, requiring marginalizing over the discrete latent states, or impossible.
+Since in this approach all parameters are continuous, it can be directly implemented in \Stan{}.
+However, computational improvements can be gained if the change point problem can be represented as a GDLM, and a methods and an implementation is provided to take advantage of that.
 
 A complementary contribution of this work is that it provides a method to efficiently estimate Gaussian dynamic linear models (GDLMs) using a general purpose Bayesian programming language, \Stan{}.
 Gaussian dynamic linear models are a class of models than incorporates many common time series models, including ARIMA, structural time series, and linear regression with time-varying parameters.
-These had previously been difficult to sample in general purpose Bayesian programming languages \parencite[477]{Jackman2009}.
+These had previously been difficult to sample in general purpose Bayesian programming languages, such as JAGS \parencite[477]{Jackman2009}.
 This work provides a complete set of functions to perform Kalman filtering, smoothing, and backward sampling within \Stan{}.
 This allows for efficiently estimating DLMs in \Stan{} using a partially collapsed Gibbs sampler in which \Stan{}'s standard algorithms are used to estimate parameters after marginalizing over the latent states, and then sample the latent states of the DLM using backwards sampling.
 
@@ -464,7 +458,7 @@ See \textcite{GelmanCarlinSternEtAl2013a}, \textcites{GelmanVehtari2014a}, or \t
 \footnote{
   The way these are calculated does not fully account for the time-series nature of this data.
   The measures presented here should be seen as approximating the fit of the model to a previously missing value within the time-series.
-  To calculate $\mathtt{elpd}_{WAIC}$ and $\mathtt{elpd}_{loo}$, I use the \textbf{loo} \RLang{} package, which implements the methods described in \textcite{GelmanVehtari2014a}.
+  To calculate $\mathrm{elpd}_{WAIC}$ and $\mathrm{elpd}_{loo}$, I use the \textbf{loo} \RLang{} package, which implements the methods described in \textcite{GelmanVehtari2014a}.
 }
 In the RMSE, a lower value indicates a better fit, for elpd, a higher value indicates is a better fit.
 Second, I compare the fits of the model to the ``true'' values of $\mu_{t}$. 
@@ -698,29 +692,36 @@ The horseshoe models fit the the data better than a normal distribution, but les
 \label{sec:conclusion}
 
 
-Proposes a method
+This work proposes modeling change points using sparse shrinkage priors, such as the horseshoe, over the chanage in a parameter.
+This approach has several useful features. 
+It does not require choosing a specific number of change points, and the sparsity of the changes can be estimated from the data.
+Although it does not directly estimate the probability of change points, it is closer to the DGP of many political processes in which there is never no change, but are characterized by many periods of small changes, and a few periods of large changes.
+Many models are represented as Gaussian dynamic linear models, and thus can be sampled using efficient algorithms for that class of model.
+This work provides a partially collapsed Gibbs sampler method to estimate GDLMs in \Stan{}, as well \Stan{} code that implements Kalman filtering and smoothing in \Stan{}.
 
-Does not require choosing a set number of 
+The most promising feature of this approach is that it is flexible and can be applied to a variety of models.
+For example, to model a linear regression with independent change points, and $K$ variables,
+\begin{equation}
+  \label{eq:32}
+  \begin{aligned}[t]
+  y & \sim \dnorm{\alpha_{t} + \beta X, \sigma^{2}} \\
+  \alpha_{t} & \sim \dnorm{\alpha_{t-1}, \sigma^{2} \tau_{\alpha}^{2} \lambda_{\alpha,t}^{2}} \\
+  \beta_{t,k} & \sim \dnorm{\beta_{t-1,k}, \sigma^{2} \tau_{\beta, k}^{2} \lambda_{\beta,t}^{2}} &&\text{for $k \in 1, \dots, K$}
+  \end{aligned}
+\end{equation}
+where the local variance components, $\lambda_{\alpha}$ and $\lambda_{\beta}$ are given prior distributions corresponding to a sparse shrinkage distribution such as the horseshoe or horseshoe+.
+This model corresponds to a GDLM with latent states $\alpha$ and $\beta$, and thus the partially collapsed Gibbs sampling method in Section \ref{sec:estimation} can be used to efficiently estimate it.
+As written, this would correspond to independent change points in the parameters, $\alpha$ and $\beta$. 
+If the researcher wanted to impose a restriction that large changes occurred at the same time for all distributions, they could set $\tau_{\alpha} = \tau_{\beta,1} = \cdots = \tau_{\beta, K}$ and $\lambda_{\alpha} = \alpha_{\beta,1} = \cdots = \alpha_{\beta, K}$.
 
-Although it does not directly estimate the probability of change points, it is closer to the DGP of political processes.
-
-Flexible.
-This paper provided proofs of concept for two examples. 
-However, this method can be extended to many other examples, both GDLMs and not.
-Within GDLMs this could be applied to cycles, seasonal affects, and time varying regressions.
 
 
-Provides a 
-
-
-
-
-\section{Example Stan Program}
+\section*{Example Stan Program}
 \label{sec:example-stan-program}
 
-Example of the code to estimate the Horseshoe change point model.
+An example of a change point model.
+See the replication data for this work to see the code for all the \Stan{} models estimated.
 The DLM related user-defined functions in the \texttt{functions} block are excluded.
-
 
 \inputminted[firstline=5,style=bw]{stan}{\Sexpr{file.path(PROJECT_ROOT, "stan", "changepoint_horseshoe.stan.mustache")}}  
 
