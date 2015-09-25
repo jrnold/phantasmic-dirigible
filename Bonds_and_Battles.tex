@@ -7,30 +7,22 @@
 \section{Introduction}
 \label{sec:introduction}
 
+Understanding what leads to the termination of war can help to understand the causes of war \parencite[x]{Blainey1988}.
+But undestanding  \textcite{Gartner1998} calls ``opening up the black box of war.''
+Carl von Clausewitz famously described war as ``simply a continuation of political inter-course, with the addition of other means \parencite[605]{Clausewitz 1989}.''
+This statement has traditionally been used to remind the reader that war is not an in itself, but a means to a political end. However, that insight is well integrated into current international relations theories of war. War is thought to consist of both bargaining and fighting, and the theoretical puzzle is why, given that war is costly, then why do states use this ex post inefficient method to come to an agreement. 
+How do the events within war, such as battles, lead to the termination of war?
+
+Opening the ``black box of war'' has been difficult for quantitative analysis since the relevant data on intra-war is sparse \parencite{Reiter2003}{Reiter2009}.
+Data on battles is not readily available for large numbers of wars.
+While there are some implications of the bargaining model of war that can be tested with within-case data, such as those regarding the offers made throughout the war, the use of within-case data prohibits the use of several key dependent variables of interest in these models---the cost, duration, and outcome of a war---since there is no variation in these variables within a single war.
+
+The approach of using financial markets to better understand war termination is a general one that can used in the study of conflict.
+Understanding theories of war initiation and termination requires an understanding of the means of war, military combat.
+
+However, the empirical study of military combat within war has lagged behind the study of war initiation that treats war as a black box 
 
 How do financial markets respond to war events?
-How do the events within war, such as battles, lead to the termination of war?
-This work addresses both of these questions in the context of the case of the American Civil War. 
-The strategy of this work is to answer the first question in order to understand the second.
-I estimate the effects of militarily significant battles on U.S. government bonds yields.
-The yields of U.S. government bonds were almost certainly primarily driven by expectations of the cost of the war.
-Thus, the bond yields of U.S. government can act as a proxy for expectations of the war cost given the available information at the time.
-Modeling the effects of battles on these yields estimates how Confederate and Union victory affected expectations about the cost and duration of the war.
-I estimate several models of incorporating the effects of battles on bond yields and find the following.
-First, the effect of battles on bond yields, and, by extension expectations of the war cost, was asymmetric.
-On average, Confederate victories increased yields by approximately 5\%, while, on average, Union victories had little to no effect.
-This is consistent with the asymmetric strategic environment of the American Civil War: the U.S. had to win battles to recapture the seceding states, while the Confederacy had to win to keep its territory.
-It also suggests that U.S. victories were expected by the market, while Confederate victories were surprising.
-Second, the battles with the largest estimated effects on bond yields were Confederate victories in May--June, 1864.
-These battles were part of the  Overland and Richmond-Petersburg campaigns in which U.S. forces advance on the Confederate capital of Richmond was met with heavy resistance.
-Third, although including battles in model of the bond yields improves the model fit, the improvement is surprisingly small.
-This is consistent with many events within a war, not just major battles, having an influence on war expectations.
-I conclude with a suggestion of how natural language processing methods applied to newspapers may provide a better means of generating war events, as observed by contemporaries.
-
-The approach in this work, using financial markets to better understand war termination, is a general one that can used in the study of conflict.
-Understanding theories of war initiation and termination requires an understanding of the means of war, military combat.
-This is what \textcite{Gartner1998} calls ``opening up the black box of war.''
-However, the empirical study of military combat within war has lagged behind the study of war initiation that treats war as a black box \parencite{Reiter2003}.
 The approach taken in this work, using the prices of financial assets as a proxy for expectations of war termination, provides a method that helps deal with two problems in the study of military combat within war.
 First, by providing a within-case time-varying measure of the expected war termination, it allows for the quantitative analysis of small numbers of cases.
 This is useful because quality data on intra-war events is rare, it is difficult if not infeasible to conduct analysis that requires many wars.
@@ -42,12 +34,28 @@ The second application is as a measure of surprising events.
 Surprising events are particularly important in private information theories of war, but it is difficult to know what events were surprising to contemporaries \parencite{Shirkey2009a}.
 Since prices of financial assets only respond to new information, they provide a natural measure of surprising events, which are particularly important in informational theories of war \parencite{Shirkey2009a}.
 
+I estimate the effects of militarily significant battles on U.S. government bonds yields.
+The yields of U.S. government bonds were almost certainly primarily driven by expectations of the cost of the war.
+Thus, the bond yields of U.S. government can act as a proxy for expectations of the war cost given the available information at the time.
+Modeling the effects of battles on these yields estimates how Confederate and Union victory affected expectations about the cost and duration of the war.
+
+I estimate several models of incorporating the effects of battles on bond yields and find the following.
+First, the effect of battles on bond yields, and, by extension expectations of the war cost, was asymmetric.
+On average, Confederate victories increased yields by approximately 5\%, while, on average, Union victories had little to no effect.
+This is consistent with the asymmetric strategic environment of the American Civil War: the U.S. had to win battles to recapture the seceding states, while the Confederacy had to win to keep its territory.
+It also suggests that U.S. victories were expected, while Confederate victories were surprising.
+
+Second, the battles with the largest estimated effects on bond yields were Confederate victories in May--June, 1864.
+These battles were part of the  Overland and Richmond-Petersburg campaigns in which U.S. forces advance on the Confederate capital of Richmond was met with heavy resistance.
+
+Third, although including battles in model of the bond yields improves the model fit, the improvement is surprisingly small.
+This is consistent with many events within a war, not just major battles, having an influence on war expectations.
+
 This work adds to an economic history literature on the effects of war events in the American Civil War on currencies and other financial assets \parencites{Mitchell1903}{Mitchell1908}{Schwab1901}{Roll1972}{Calomiris1988}{DavisPecquet1990}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2000}{Weidenmier2002}{HaberMitchenerOosterlinckEtAl2014}.
 This work contributes to that literature by using the yields of U.S. government bonds, which unlike Greenbacks (U.S. currency), provide a time series that spans the entire war. 
 This work estimates the effects of both Confederate and Union victories, as well as that of individual major battles.
 It also connects that  literature to political science theories of war, and shows how its insights can be used not just to understand how markets work, but also to better understand how war works.
 This work builds on a large and growing literature which measures impact or identifies important political events using financial \parencites{NorthWeingast1989}{north2000introd}{FreyKucher2000}{sussman2000instit}{wells2000revol}{Herron2000}{eldor2004finan}{ChenSiems2004}{Greenstone2007} or prediction markets \parencites{WolfersZitzewitz2004}{ArrowForsytheGorhamEtAl2008}{WolfersZitzewitz2009}.
-
 
 
 
@@ -523,6 +531,16 @@ and 25 percent of the total wealth.%
   The closest contemporaries had to GDP was an approximation that the value of yearly production was about 25-27 percent of total wealth \parencites[7]{Elder1865}[24]{Treasury1865}.
 }
 % TODO: What was the Confederacy GDP?
+
+The default on U.S. government bonds could have taken several forms.
+The government could stop paying interest payments, as the Southern states did at the start of the war \parencite[159]{BankersMagazine1862}[810,947]{BankersMagazine1860}.
+After the U.S. started issuing greenbacks which were not redeemable on demand in gold, it could have paid off the 
+There was a minor controversy among investors regarding a different bond issue, the 5-20's which were explicit on repaying the interest in specie but were ambiguous in how the interest would be repaid \parencite{Roll1972}.
+Another example is that the Act of March 3, 1863 (12 Stat 710) declared that the interest on certificates of indebtedness issued under the Act of March 1, 1862 (12 Stat 352) was payable in currency \parencite[81]{Bayley1882}.
+Since these were issued after the suspension of convertability of Greenbacks to gold this may have not been a surprise to investors, but it suggests that this was a possibility. 
+That the yields on U.S. government bonds when calculated in gold rose during the war, while those calculated in currency remained low and steady near 5 percent \parencite[305]{HomerSylla20015}, suggests that to the extent that investors viewed U.S. government bonds as risky it was that they would be repaid in depreciated currency rather than specie.%
+If investors feared a complete default, then the yields calculated in currency should have also risen.
+This is also an important reason for using yields calculated in gold, which did respond to war risk, rather than yield calculated in currency as in \textcite{HomerSylla2005}, which were much less sensitive to that risk.
 
 Some statements by government officials and market participants suggest that they were more concerned with the cost and duration of the war than with the the reincorporation of the seceding states.
 William Elder, a leading economist of the era, in an 1863 analysis of the ability of the U.S. to repay its debt, stated ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need \parencite[19]{Elder1863}.''%
@@ -1025,6 +1043,10 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
+
+This work has contributed 
+On its own, its results are limited mainly to questions of this particular war. 
+Combined with similar anlyses across multiple wars, it may make clear patterns and 
 
 I conclude with some thoughts on future directions for this research.
 There are several methodological issues that this analysis had to confront.

@@ -387,6 +387,30 @@
       \verb http://www.mattblackwell.org/files/papers/gamechangers.pdf
       \endverb
     \endentry
+    \entry{Blainey1988}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3a9f6110be06b361fe2adf12817db3f0}{Blainey}{B\bibinitperiod}{Geoffrey}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{3a9f6110be06b361fe2adf12817db3f0}
+      \strng{fullhash}{3a9f6110be06b361fe2adf12817db3f0}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3, reprint}
+      \field{isbn}{9780029035917}
+      \field{title}{The Causes of War}
+      \field{year}{1988}
+      \verb{url}
+      \verb http://books.google.com/books?id=Mcknp3tt0LMC
+      \endverb
+    \endentry
     \entry{Bodart1908}{book}{}
       \name{author}{1}{}{%
         {{hash=3f522b5c7d864e59fe3e3d3dae6ecf93}{Bodart}{B\bibinitperiod}{Gaston}{G\bibinitperiod}{}{}{}{}}%
@@ -4579,8 +4603,8 @@
       \field{datelabelsource}{}
       \field{labeltitlesource}{title}
       \field{issn}{0005-545X}
-      \field{number}{v. 16}
       \field{title}{The Bankers Magazine}
+      \field{volume}{16}
       \field{year}{1862}
       \verb{url}
       \verb https://books.google.com/books?id=B10mAQAAIAAJ
@@ -5612,6 +5636,8 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{Clausewitz 1989}
+  \missing{HomerSylla20015}
 \endrefsection
 \endinput
 
