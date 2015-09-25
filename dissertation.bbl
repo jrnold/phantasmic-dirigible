@@ -3124,6 +3124,37 @@
       \verb http://papers.nber.org/books/maca38-1
       \endverb
     \endentry
+    \entry{MartinQuinn2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6c8fc8a25699b2d0b81703662d566243}{Martin}{M\bibinitperiod}{Andrew\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=155c5c648eb2b9f7026d7ebbdb309886}{Quinn}{Q\bibinitperiod}{Kevin\bibnamedelima M.}{K\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{846cc4bd91aae8387534f7f0c907666e}
+      \strng{fullhash}{846cc4bd91aae8387534f7f0c907666e}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At the heart of attitudinal and strategic explanations of judicial behavior is the assumption that justices have policy preferences. In this paper we employ Markov chain Monte Carlo methods to fit a Bayesian measurement model of ideal points for all justices serving on the U.S. Supreme Court from 1953 through 1999. We are particularly interested in determining to what extent ideal points of justices change throughout their tenure on the Court. This is important because judicial politics scholars oftentimes invoke preference measures that are time invariant. To investigate preference change, we posit a dynamic item response model that allows ideal points to change systematically over time. Additionally, we introduce Bayesian methods for fitting multivariate dynamic linear models to political scientists. Our results suggest that many justices do not have temporally constant ideal points. Moreover, our ideal point estimates outperform existing measures and explain judicial behavior quite well across civil rights, civil liberties, economics, and federalism cases.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{2}
+      \field{title}{Dynamic Ideal Point Estimation via Markov Chain Monte Carlo for the U.S. Supreme Court, 1953-1999}
+      \field{volume}{10}
+      \field{year}{2002}
+      \field{pages}{134\bibrangedash 153}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1093/pan/10.2.134
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/cgi/reprint/10/2/134.pdf
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/cgi/content/abstract/10/2/134
+      \endverb
+    \endentry
     \entry{Martin1871}{book}{}
       \name{author}{1}{}{%
         {{hash=5bd329d272faa58e45000442bfa0a75c}{Martin}{M\bibinitperiod}{Joseph\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
@@ -4586,8 +4617,8 @@
       \field{datelabelsource}{}
       \field{labeltitlesource}{title}
       \field{issn}{0005-545X}
-      \field{number}{v. 15}
       \field{title}{The Bankers Magazine}
+      \field{volume}{15}
       \field{year}{1860}
       \verb{url}
       \verb https://books.google.com/books?id=KVwmAQAAIAAJ
@@ -5098,6 +5129,27 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1198/016214508000000409
+      \endverb
+    \endentry
+    \entry{VehtariGelmanGabry2015a}{manual}{}
+      \name{author}{3}{}{%
+        {{hash=5d36e97683cbc9d6ef06fc2ec40becb0}{Vehtari}{V\bibinitperiod}{Aki}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d22d0f2897624075bcba3f2195a96094}{Gabry}{G\bibinitperiod}{Jonah}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{50464be0ad78423df85deab0154eddcd}
+      \strng{fullhash}{50464be0ad78423df85deab0154eddcd}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1}
+      \field{title}{loo: Efficient leave-one-out cross-validation and WAIC for Bayesian models}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://github.com/jgabry/loo
       \endverb
     \endentry
     \entry{Wagner2000}{article}{}
