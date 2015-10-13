@@ -1,0 +1,26 @@
+\documentclass[]{beamer}
+\usepackage{amsmath}
+
+% Font part
+\usepackage{fontspec}
+%\usepackage{mathspec}
+% \setromanfont{Gill Sans}
+% \setsansfont{Gill Sans}
+\setromanfont{Helvetica Neue}
+\setsansfont{Helvetica Neue}
+opt
+\setmonofont{Source Sans Pro}
+%\setmathfont(Digits,Latin,Greek)[Scale=MatchLowercase]{Gill Sans}
+\usepackage{unicode-math}
+\setmathfont{XITS}
+
+\begin{document}
+
+
+\begin{frame}
+\frametitle{Hello, World!}  
+
+\end{frame}
+
+
+\end{document}

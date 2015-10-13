@@ -18,3 +18,6 @@
 .Rproj.user
 _minted-dissertation
 mintedcmd
+*.nav
+*.snm
+auto/
