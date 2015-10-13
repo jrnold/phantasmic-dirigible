@@ -19,9 +19,9 @@ ls()
 \label{sec:introduction}
 
 Understanding what leads to the the start of war is inextricably linked to what leads to the end of war \parencite[x]{Blainey1988}.
-Understand how wars ends requires understanding how military combat leads to a resolution of the conflict between the belligerents, which is the ``means'' that war uniquely adds to the political bargaining process, 
+Understanding how wars ends requires understanding how military combat leads to a resolution of the conflict between the belligerents which was not reached without war, for military combat is the the ``means'' that war uniquely adds to the political bargaining process.
 This is what  \textcite{Gartner1998} calls ``opening up the black box of war.'' 
-But opening the ``black box of war'' has been difficult for quantitative analysis because the relevant data on intra-war is rare \parencites{Reiter2003}{Reiter2009}.
+But opening the ``black box of war'' has been difficult for quantitative analysis because the relevant intra-war data is rare \parencites{Reiter2003}{Reiter2009}.
 Even data on battles is not readily available for large numbers of wars.
 Due to the lack of multi-war intra-war data, the preferred approach to the empirical study of the bargaining theory of war with intra-war data has been qualitative case studies \parencites{Reiter2003}[][Chapter 9]{Reiter2009}. 
 There are some implications of the bargaining model of war that can be tested with within-case data, such as those regarding the offers made throughout the war.
@@ -29,25 +29,27 @@ But the use of within-case data prohibits the use of several key dependent varia
 
 This work proposes a quantitative case study method to understand the effects of battles on war outcomes using the prices or yields of financial assets.
 Some financial assets, in particular many sovereign bonds, can be used as a measure of expectations about war termination when the payoffs of these assets are largely contingent on the war outcome.
-This allows for quantitative analysis of battles or other war events on war outcomes, by using prices as a proxy for time-varying expected or predicted war outcome instead of the observed war outcome.
-This means that financial an alternative method with which to analyze the intra-war events using the small number of cases for which high quality data is available.
+This allows for quantitative analysis of battles or other war events on war outcomes, by using prices as a proxy for the time-varying expected or predicted war outcome in place of the observed war outcome.
+This provides an alternative method with which to analyze the intra-war events using the small number of cases for which high quality data is available.
 Additionally, since prices incorporate expectations about the future, they provide a particularly good measure of surprising events. 
-Surprising events are crucial in private information theories of war, but it is difficult to know what events were surprising to contemporaries \parencite{Shirkey2009a}.
+Surprising events are crucial in private information theories of war, but it is difficult to know what events were surprising to contemporaries.
 Since prices of financial assets only respond to new information, they provide a natural measure of surprising events, which are particularly important in informational theories of war \parencite{Shirkey2009a}.
 This can also used to identify which events were seen as most important in the war, with the price itself already controlling for all previous events in the war because they are incorporated into the prior expectation of that event.
 
-In this work I focus on the case of the American Civil War due to the quality of its battle data and the appropriateness of its financial assets for this purpose.
-I estimate the effects of militarily significant battles on U.S. government bonds yields.
-The yields of U.S. government bonds were almost certainly primarily driven by expectations of the cost of the war.
-Thus, the bond yields of U.S. government can act as a proxy for expectations of the war cost given the available information at the time.
+In this work, I focus on the case of the American Civil War due to the quality of its battle data, and the appropriateness of its financial assets for this purpose.
+I estimate the effects of militarily significant battles on U.S. government bond yields.
+The yields of U.S. government bonds were almost certainly primarily driven by expectations of the cost of the war in this case.
+Thus, the bond yields of U.S. government can act as a proxy for expectations of the war cost, given the available information at the time.
 Modeling the effects of battles on these yields estimates how Confederate and Union victory affected expectations about the cost and duration of the war.
 I find the following.
-First, the effect of battles on bond yields, and, by extension expectations of the war cost, was asymmetric.
+First, the effect of battles on bond yields, and, by extension, expectations of the war cost, was asymmetric.
 On average, Confederate victories increased yields by approximately 5\%, while, on average, Union victories had little to no effect.
-This is consistent with the asymmetric strategic environment of the American Civil War: the U.S. had to win battles to recapture the seceding states, while the Confederacy had to win to keep its territory.
-It also suggests that U.S. victories were expected, at least by New York investors, while Confederate victories were surprising, or that there was little probability placed on the probability that the U.S. would not win the war, so any Confederate victory only served to extend the expected duration of the war.
+This is consistent with the asymmetric strategic environment of the American Civil War.
+The U.S. had to win battles to recapture the seceding states, while the Confederacy had only to keep the Union from capturing its territory.
+It also suggests that U.S. victories were expected, at least by New York investors, while Confederate victories were surprising.
+This may have meant that there was little belief that the U.S. would lose the war, so any Confederate victory only served to extend the expected duration of the war.
 Second, the battles with the largest estimated effects on bond yields were Confederate victories in May--June, 1864.
-These battles were part of the  Overland and Richmond-Petersburg campaigns in which U.S. forces advance on the Confederate capital of Richmond was met with heavy resistance.
+These battles were part of the Overland and Richmond-Petersburg campaigns in which U.S. forces advanced Richmond, the Confederate capital, and were met with heavy resistance.
 Third, although including battles in model of the bond yields improves the model fit, the improvement is surprisingly small.
 This is consistent with many events within a war, not just major battles, having an influence on war expectations.
 
@@ -1046,15 +1048,15 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 \section{Discussion}
 \label{sec:conclusion}
 
-I conclude by discussing a few surpising results and how they relate to bargaining theory of war, and some thoughts on future directions for this research and research combining war data and financial market data.
+I conclude by discussing a few surpising results, how those results relate to the bargaining theory of war, and some thoughts on future directions for this research and research combining war data and financial market data.
 First, the largest estimated effects of battles occur over three years into the war, in May and June of 1864, when U.S. forces were advancing towards Richmond but suffering extremely heavy casualties.
 That the largest effects would occur so late in the war seems to fit better with commitment theories of war than informational theories of war.
 This pattern not fit well with the naive learning models of war, in which early battles should be the most informative.
 Nor does it seem to fit well with the case in which heavier fighting revealed the resolve of the U.S. to continue fighting and the Confederates to fight to end if need be.
 If that were the case, then each side would have updated its expectations, an agreement would be reached and the expected the cost (duration) of the war would decline.
 This pattern could fit with a commitment theory of war in which this marked the point at which expectations moved from there being some expectation of a settlement to one in which to it being nearly certain that the war would have to extend to total victory.
-What this is not consistent with the idea that because the Union was incurring heavy costs, it was near exhaustion, and would quit the war.
-Instead the U.S. incurred heavier costs, the market expectated the U.S. to incur even heavier costs in the future.
+What this is not consistent with, is the idea that because the Union was incurring heavy costs, it was near exhaustion, and would quit the war.
+Instead, as the U.S. incurred heavier costs, the market expected the U.S. to incur even heavier costs in the future.
 If the market it expected the Union to quit due to exhaustion, it would have expected lower future costs, and the yield on U.S. bonds would have decreased.
 Second, the major battles explain little of the variation in bond yields.
 To the extent that these yields were driven by war cost expectations, this means that many features of the war influence expectations of the war cost apart from major battles.
@@ -1065,7 +1067,7 @@ However, this method may allow for analyses of more wars, which together may unc
 
 There are several methodological issues that this analysis had to confront.
 They are ``What information about battles did the market receive?'', ``When did the market receive that information?'', and ``What other non-battle information did the market receive?''
-In this work, I handled the the first by assuming that only a small set of battles were important enough to have any effect, and that the market only cared about the results (Union or Confederate victory) of those battles.
+In this work, I handled the the first by assuming that only a small set of battles were important enough to have any effect, and that the market only cared about the results, Union or Confederate victory, of those battles.
 The assumption was that contemporaries would have also seen that same set of  battles as the most important, and that they would classify the results of battles similarly to how they were coded in the data.
 As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers.
 Since I had no data on the non-battle information that would be important to the market, I only modeled it with a fat-tailed distribution in the error term.
