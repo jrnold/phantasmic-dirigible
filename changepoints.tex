@@ -227,11 +227,11 @@ I propose using the horseshoe and horseshoe+ distributions as those shrinkage pr
 
 \begin{figure}[!htpb]
  \begin{subfigure}[b]{\linewidth}
-   \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_zeros-1}
+   \includegraphics{./dlm-shrinkage/analysis/figures/dist-plot_zeros-1}
    \caption{Near zero.}
  \end{subfigure}
  \begin{subfigure}[b]{\linewidth}
-    \includegraphics{../dlm-shrinkage/analysis/figures/dist-plot_tails-1}
+    \includegraphics{./dlm-shrinkage/analysis/figures/dist-plot_tails-1}
     \caption{Tail region.}
  \end{subfigure}
   \caption[Comparison of the density functions of normal, Cauchy, Laplace, horseshoe, and horseshoe+ distributions.]{
@@ -255,7 +255,7 @@ If the change in $\mu$ is not distinguishable in a plot, then it is unlikely to 
 
 While this one-group approach does not provide clear posterior probabilities of the locations of change points, it is a reasonable model of change point processes for several reasons.%
 \footnote{These points are similar to those made by \textcite[2-3]{PolsonScott2012} with regard to the use of shrinkage priors in variable selection.}
-First, for many time-varying parameter processes typically modeled with a change-point model in the social sciences, the data-generating process is probably more similar to one in which the parameter is changing in all periods, but most of those periods the changes are small relative to the magnitudes of changes in a few periods.
+First, for many time-varying parameter processes typically modeled with a change-point model in the social sciences, the data generating process is probably more similar to one in which the parameter is changing in all periods, but most of those periods the changes are small relative to the magnitudes of changes in a few periods.
 In other words, the system errors, $\omega$, are never zero, but they are relatively small in most periods.
 This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are actually discrete states.
 Thus the researcher is modeling the parameter to take on a few values for parsimony and interpretation, and not primarily because it matches the data generating process.
@@ -345,7 +345,7 @@ This level shift is attributed to construction of a dam at Aswan that started op
 
 \begin{figure}
   \centering
-  \includegraphics{../dlm-shrinkage/analysis/figures/nile-nile-1}
+  \includegraphics{./dlm-shrinkage/analysis/figures/nile-nile-1}
   \caption[Annual flow of the Nile River, 1871--1970]{Annual flow of the Nile River, 1871--1970. Previous work has found a break point in this series near 1899.}
   \label{dlm:fig:nile}
 \end{figure}
@@ -469,31 +469,31 @@ As with comparisons of fit to the observed data, the \ModelII{Horseshoe} and \Mo
 \begin{figure}[htpb!]
   \centering
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m0_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m0_mu-1.pdf}
     \caption{\ModelII{Constant}}
   \end{subfigure}%
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m1_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m1_mu-1.pdf}
     \caption{\ModelII{Intervention}}
   \end{subfigure}
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m2_mu-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m2_mu-1.pdf}    
     \caption{\ModelII{Normal}}
   \end{subfigure}%
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m3_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m3_mu-1.pdf}
     \caption{\ModelII{StudentT}}
   \end{subfigure}
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m4_mu-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m4_mu-1.pdf}    
     \caption{\ModelII{Laplace}}
   \end{subfigure}%
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m5_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m5_mu-1.pdf}
     \caption{\ModelII{Horseshoe}}
   \end{subfigure}
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m6_mu-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m6_mu-1.pdf}    
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
   \caption[Posterior distributions of $\mu_t$ for models of the Nile River annual flow data.]{Posterior distributions of $\mu_t$ for models of the Nile River annual flow data. The line is the posterior mean; the range of the ribbon the 2.5--97.5\% percentiles of the posterior distribution.}
@@ -504,23 +504,23 @@ As with comparisons of fit to the observed data, the \ModelII{Horseshoe} and \Mo
 \begin{figure}[htpb!]
   \centering
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m2_omega-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m2_omega-1.pdf}    
     \caption{\ModelII{Normal}}
   \end{subfigure}%
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m3_omega-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m3_omega-1.pdf}
     \caption{\ModelII{StudentT}}
   \end{subfigure}
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m4_omega-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m4_omega-1.pdf}    
     \caption{\ModelII{Laplace}}
   \end{subfigure}%
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m5_omega-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m5_omega-1.pdf}
     \caption{\ModelII{Horseshoe}}
   \end{subfigure}
   \begin{subfigure}[b]{0.5\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/nile-m6_omega-1.pdf}    
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/nile-m6_omega-1.pdf}    
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
   \caption[Posterior distributions of $\omega_t$ for models of the Nile River annual flow data]{Posterior distributions of $\omega_t$ for models of the Nile River annual flow data. The point is the posterior mean; the range of the line is the 2.5--97.5\% percentiles of the posterior distribution.}
@@ -531,7 +531,7 @@ As with comparisons of fit to the observed data, the \ModelII{Horseshoe} and \Mo
 
 \begin{table}[thbp]
   \centering
-  \input{../dlm-shrinkage/analysis/tex/nile-tab_model_comp.tex}
+  \input{./dlm-shrinkage/analysis/tex/nile-tab_model_comp.tex}
   \caption{Model comparison statistics for models of the Nile Rive annual flow data.}
   \label{dlm:tab:nile-model_comp}
 \end{table}
@@ -642,7 +642,7 @@ The horseshoe models fit the the data better than a normal distribution, but les
 
 \begin{figure}[thbp!]
   \centering
-  \includegraphics{../dlm-shrinkage/analysis/figures/bush-approval-1}
+  \includegraphics{./dlm-shrinkage/analysis/figures/bush-approval-1}
   \caption{Approval ratings of President George W. Bush}
   \label{dlm:fig:bush_approval}
 \end{figure}
@@ -650,12 +650,12 @@ The horseshoe models fit the the data better than a normal distribution, but les
 \begin{figure}[thbp!]
   \centering
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m1_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/bush-m1_mu-1.pdf}
     \caption{\ModelII{Normal}}
   \end{subfigure}
 
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m3_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/bush-m3_mu-1.pdf}
     \caption{\ModelII{Intervention}}
   \end{subfigure}
   \caption{Posterior distribution of $\mu$ for \ModelII{Normal} and \ModelII{Intervention} models.}
@@ -664,12 +664,12 @@ The horseshoe models fit the the data better than a normal distribution, but les
 
 \begin{figure}[thbp!]
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m2_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/bush-m2_mu-1.pdf}
     \caption{\ModelII{Horseshoe}}
   \end{subfigure}
 
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[]{../dlm-shrinkage/analysis/figures/bush-m4_mu-1.pdf}
+    \includegraphics[]{./dlm-shrinkage/analysis/figures/bush-m4_mu-1.pdf}
     \caption{\ModelII{Horseshoe+}}
   \end{subfigure}
   \caption{Posterior distribution of $\mu$ for \ModelII{Horseshoe} and \ModelII{Horseshoe+} models.}
@@ -679,7 +679,7 @@ The horseshoe models fit the the data better than a normal distribution, but les
 
 \begin{table}[thbp!]
   \centering
-  \input{../dlm-shrinkage/analysis/tex/bush-tab_model_comp.tex}
+  \input{./dlm-shrinkage/analysis/tex/bush-tab_model_comp.tex}
   \caption{Model comparison statistics for models of President George W. Bush's approval rating.}
   \label{dlm:tab:bush_model_comp}
 \end{table}
@@ -725,7 +725,7 @@ See the replication data for this work to see the code for all the \Stan{} model
 The DLM related user-defined functions in the \texttt{functions} block are excluded.
 The code for them can be found in \textcite{Arnold2015c} or \url{https://raw.githubusercontent.com/jrnold/dlm-shrinkage/master/stan/includes/dlm.stan}.
 
-\inputminted[firstline=5,style=bw]{stan}{../dlm-shrinkage/stan/changepoint_horseshoe.stan.mustache}  
+\inputminted[firstline=5,style=bw]{stan}{./dlm-shrinkage/stan/changepoint_horseshoe.stan.mustache}  
 
 let\thesection\oldthesection
 

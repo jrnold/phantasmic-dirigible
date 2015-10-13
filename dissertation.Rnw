@@ -95,7 +95,7 @@
 % biblatex
 \usepackage[style=authoryear,backend=biber,%
             backref=true,maxbibnames=10,hyperref=true,%
-            dateabbrev=false,uniquename=false]{biblatex}
+            dateabbrev=false,uniquename=false,backend=biber]{biblatex}
 \AtEveryBibitem{\clearlist{language}}
 \AtEveryBibitem{\clearlist{eprint}}
 %% \DeclareFieldFormat{linked}{%
