@@ -263,7 +263,7 @@ If the change in $\mu$ is not distinguishable in a plot, then it is unlikely to 
 
 While this one-group approach does not provide clear posterior probabilities of the locations of change points, it is a reasonable model of change point processes for several reasons.%
 \footnote{These points are similar to those made by \textcite[2-3]{PolsonScott2012} with regard to the use of shrinkage priors in variable selection.}
-First, for many time-varying parameter processes typically modeled with a change-point model in the social sciences, the data-generating process is probably more similar to one in which the parameter is changing in all periods, but most of those periods the changes are small relative to the magnitudes of changes in a few periods.
+First, for many time-varying parameter processes typically modeled with a change-point model in the social sciences, the data generating process is probably more similar to one in which the parameter is changing in all periods, but most of those periods the changes are small relative to the magnitudes of changes in a few periods.
 In other words, the system errors, $\omega$, are never zero, but they are relatively small in most periods.
 This seems plausible for many processes modeled by political scientists in which there is no physical reason to think there are actually discrete states.
 Thus the researcher is modeling the parameter to take on a few values for parsimony and interpretation, and not primarily because it matches the data generating process.

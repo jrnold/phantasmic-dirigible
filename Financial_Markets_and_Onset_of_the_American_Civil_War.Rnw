@@ -68,9 +68,9 @@ It is certainly case that war would influence expectations about the cash-flows 
 A war would influence the credit of the issuers by increasing debt, decreasing revenue and possibly leading to default, and contemporary investors were aware of these risks.
 
 For investors holding U.S. government bonds, secession and war would reduce the ability of the U.S. government to pay its debts both by reducing potential revenue due to the loss of the Southern states and increasing debt to pay war expenditures.
-The revenue of the U.S. would be reduced by the secession of Southern states due to the loss of tax revenue. In 1860, the Southern states accounted for 25 percent of the non-slave wealth of the United States \parencite[11]{Elder1865}.%
+The revenue of the United States would be reduced by the secession of Southern states due to the loss of tax revenue. In 1860, the Southern states accounted for 25 percent of the non-slave wealth of the United States \parencite[11]{Elder1865}.%
 \footnote{GDP was not invented until WWII.
-  During the civil war era, the census estimates of personal and property wealth were used as a measure of the total economic activity and also explicitly used to assess the ability of the U.S. to repay the debt \parencites{Elder1863}{Elder1865}.
+  During the civil war era, the census estimates of personal and property wealth were used as a measure of the total economic activity and also explicitly used to assess the ability of the United States to repay the debt \parencites{Elder1863}{Elder1865}.
 }
 The \textit{Merchants' Magazine} wrote in January 1861,
 \begin{quote}
@@ -79,7 +79,7 @@ The \textit{Merchants' Magazine} wrote in January 1861,
 A war would also increase the debt of the United States as military expenses would greatly increase government expenditures, and those additional expenditures would almost certainly be mostly funded by debt.
 While the U.S. government only infrequently issued debt during the 19th century, the exception was to fund wars.
 The U.S. government issued debt to fund the War of 1812 and the Mexican-American War of 1846-1848.
-%% Later assessments of the ability of the U.S. to pay its debts often compared the current resources and debt levels of the U.S. to those of the U.S. in 1791 and 1816, and Great Britain during the Napoleonic Wars \parencites{Elder1863}[8 pp.]{BankersMagazine1862},
+%% Later assessments of the ability of the United States to pay its debts often compared the current resources and debt levels of the United States to those of the United States in 1791 and 1816, and Great Britain during the Napoleonic Wars \parencites{Elder1863}[8 pp.]{BankersMagazine1862},
 %% \footnote{
 %%   The \textit{Annual Report Dec 1861} makes one of these comparisons,
 %%   \begin{quote}
@@ -106,7 +106,7 @@ After the war, most Southern states repaid the debt issued before the war, but d
 How the Southern state governments would have handled the repayment of debt if the Confederacy had won the war is unclear.
 At best, the Southern states would resume paying interest and principal soon after the end of the war, possibly with compensation for missed payments.
 At worst, they would completely default on their obligations to Northern creditors.
-That the prices of Southern state bonds never came close to zero, suggests that investors' beliefs put positive probability on those states being reincorporated into the Union or that they would resume payments on their debt after the war even in the event of a Confederate victory.
+That the prices of Southern state bonds never came close to zero, suggests that investors' beliefs put positive probability on those states being reincorporated into the United States or that they would resume payments on their debt after the war even in the event of a Confederate victory.
 An additional means by which the war could affect the creditworthiness of Southern states is, although, at first the ability of the states to pay their debts if they so choose was not much in doubt, an extended war would result in both more debt issued by Southern states and wealth destroyed, both of which would affect the ability of the states to eventually pay the debt they had issued.
 Thus, holders of Southern state bonds were particularly exposed to war risk, and almost certain to suffer losses immediately at the onset of a conflict.
 
@@ -234,7 +234,7 @@ Overall, the relatively low and stable yields suggest that the market did not as
 
 From October 1857 to January 1858, yields spiked during the Panic of 1857.
 The Panic of 1857 was a recession and financial crisis that included the failure of a major insurance company, the failures of banks and railroads, and the suspension of specie payments by banks in New York City.
-The causes of the panic were not directly related to political risks of secession or war, but were likely a decline in European demand for U.S. trade or insufficient specie supply to meet demand due to a decline in gold production \parencites[263-265]{Dewey1918}[277,299]{HomerSylla2005}[337]{BankersMagazine1857}.
+The causes of the panic were not directly related to political risks of secession or war, but were likely a decline in European demand for U.S. imports or insufficient specie supply to meet demand due to a decline in gold production \parencites[263-265]{Dewey1918}[277,299]{HomerSylla2005}[337]{BankersMagazine1857}.
 The \textit{Bankers' Magazine} ``Notes on the Money Market'' sections of the time do not mention domestic political issues during the Panic of 1857, attributing it to a decline in foreign trade and bad banking \parencite[337]{BankersMagazine1857}.
 Thus, while yields reached high levels the panic, these high yields are almost certainly not attributable to an increase in war risk.
 
@@ -247,7 +247,7 @@ Lincoln's victory in the presidential election on November 6, 1860 precipitated 
 The yields of bonds before and after the election are plotted in Figure~\ref{fig:yields_election}.
 The market partially anticipated the political issues that would arise with Lincoln's election, as there was a slight increase in yields in October 1860.
 This rise was partially due to a monetary contraction as the economy went into recession \parencite[413]{BankersMagazine1860}, but also the anticipation of a Republican victory in the election.%
-\footnote{The U.S. was in a slight recession prior to the start of the American Civil War, from October 1860 to June 1861, according to the  \href{http://www.nber.org/cycles/cyclesmain.html}{NBER}.}
+\footnote{The United States was in a slight recession prior to the start of the American Civil War, from October 1860 to June 1861, according to the  \href{http://www.nber.org/cycles/cyclesmain.html}{NBER}.}
 The \textit{Bankers' Magazine} described the market,
 \begin{quote}
    The market for Government and State loans during the month has been dull.
@@ -348,7 +348,7 @@ An advantage of using the spread rather than the yields of each bond, is that it
 There can still be regional differences in the risk of Southern and Northern state bonds due to factors other than war risk.
 However, focusing on changes in the spread rather than the level of the spread controls for any of these regional factors which are constant over the time period considered.
 
-The data used to calculate the south-north yield spread consists of the yields of Northern (Indiana, Ohio and Pennsylvania) and Southern (Georgia, Louisiana, North Carolina, Tennessee and Virginia).
+The data used to calculate the south-north yield spread consist of the yields of Northern (Indiana, Ohio and Pennsylvania) and Southern (Georgia, Louisiana, North Carolina, Tennessee and Virginia).
 \footnote{The border states of Kentucky and Missouri are not included in these calculations.}
 Let $y_{j,t}$ be the yield for bond $j$ at time $t$.
 The yield for each bond is modeled as,
@@ -359,7 +359,7 @@ where $\dt{a}{b, c^{2}}$ is the Student's $t$-distribution with degrees of freed
 $\mathtt{south_{j}}$ is a binary variable indicating whether the bond was issued by a Southern state.
 
 Since the number of bonds in each period is relatively small, the parameters $\theta$ and $\psi$ are smoothed over time with random walk priors.
-However, the method used to pool rates over time cannot overly smooth the data since, otherwise the method would obscure the effect of important events on the spread.
+However, the method used to pool rates over time cannot overly smooth the data since the method would obscure the effect of important events on the spread.
 In order to achieve behavior similar to a change-point model, this paper uses a shrinkage prior for the first difference of $\psi$ and $\eta$.
 Shrinkage priors are the Bayesian equivalent to penalized estimate like lasso \parencites{Tibshirani1996}{ParkCasella2008}.
 The particular shrinkage prior employed horseshoe prior distribution is used \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2009}.
