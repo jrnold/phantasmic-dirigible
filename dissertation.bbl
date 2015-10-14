@@ -519,6 +519,31 @@
       \verb http://www.jstor.org/stable/2566803
       \endverb
     \endentry
+    \entry{Bueno1990}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8e102199bd2524d161a878becbd784dc}{{Bueno\bibnamedelimb de\bibnamedelimb Mesquita}}{B\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e102199bd2524d161a878becbd784dc}
+      \strng{fullhash}{8e102199bd2524d161a878becbd784dc}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1990}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Politics}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Pride of Place: The Origins of Germany Hegemony}
+      \field{volume}{43}
+      \field{year}{1990}
+      \field{pages}{28\bibrangedash 52}
+      \range{pages}{25}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2010550
+      \endverb
+    \endentry
     \entry{BurdekinLangdana1993}{article}{}
       \name{author}{2}{}{%
         {{hash=2d8f1af3292a01173fb5c7abb6098de8}{Burdekin}{B\bibinitperiod}{Richard\bibnamedelimb C.\bibnamedelimi K.}{R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -1322,6 +1347,40 @@
       \verb http://books.google.com/books?id=fOq39Zh0olQC
       \endverb
     \endentry
+    \entry{DwyerHaferWeber1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b5d5fe471afb784750811947e8e4f357}{Dwyer}{D\bibinitperiod}{Jr}{J\bibinitperiod}{}{}{Gerald\bibnamedelima P}{G\bibinitperiod\bibinitdelim P\bibinitperiod}}%
+        {{hash=ce67daf26865e04ac685046d748bf9a2}{Hafer}{H\bibinitperiod}{R\bibnamedelima W}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=207a690f60789c68a72c41978940cedb}{Weber}{W\bibinitperiod}{Warren\bibnamedelima E}{W\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Washington}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis Inc.}%
+      }
+      \strng{namehash}{107b276cc2673cc5dea47dd4fb556403}
+      \strng{fullhash}{107b276cc2673cc5dea47dd4fb556403}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A data set consisting of weekly observations of prices for US and state bonds is presented. The period of Jan 1855 through Nov 1865 is covered.}
+      \field{issn}{01615440}
+      \field{journaltitle}{Historical Methods}
+      \field{number}{1}
+      \field{title}{{U.S.} Historical Statistics: Weekly {U.S.} and state bond prices, 1855-1865}
+      \field{volume}{32}
+      \field{year}{1999}
+      \field{pages}{37\bibrangedash 42}
+      \range{pages}{6}
+      \verb{url}
+      \verb http://search.proquest.com/docview/231964059?accountid=13567
+      \endverb
+      \keyw{Social Sciences: Comprehensive Works,Prices,Bonds,History,Statistics}
+    \endentry
     \entry{dyer1908_war_rebel}{book}{}
       \name{author}{1}{}{%
         {{hash=65c483cf239bce15eecee1c86b2b8ca7}{Dyer}{D\bibinitperiod}{F.H.}{F\bibinitperiod}{}{}{}{}}%
@@ -1467,6 +1526,37 @@
       \verb www.idc.ac.il/publications/files/111.pdf
       \endverb
     \endentry
+    \entry{English1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1ec441eecc5ecddb4b32d4b1e44a1271}{English}{E\bibinitperiod}{William\bibnamedelima B.}{W\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{1ec441eecc5ecddb4b32d4b1e44a1271}
+      \strng{fullhash}{1ec441eecc5ecddb4b32d4b1e44a1271}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The defaults of U.S. States in the 1840's provide a powerful test of competing models of sovereign debt. The Eleventh Amendment to the United States Constitution prevented foreign creditors from obtaining payment in the federal courts. Moreover, because the defaulting states were part of a large and economically integrated nation, creditors could not enforce payment by imposing military or trade sanctions. In spite of the lack of sanctions, however, most states eventually repaid in full. It appears that the states repaid in order to maintain access to capital markets, much as in reputational models of sovereign debt.}
+      \field{issn}{00028282}
+      \field{journaltitle}{The American Economic Review}
+      \field{number}{1}
+      \field{title}{Understanding the Costs of Sovereign Default: American State Debts in the 1840's}
+      \field{volume}{86}
+      \field{year}{1996}
+      \field{pages}{259\bibrangedash 275}
+      \range{pages}{17}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2118266
+      \endverb
+    \endentry
     \entry{Fearnhead2006a}{article}{}
       \name{author}{1}{}{%
         {{hash=b2d637bf71149fe879204a2bb21e932f}{Fearnhead}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
@@ -1561,6 +1651,37 @@
       \endverb
       \keyw{bargaining,psc572,war}
     \endentry
+    \entry{Ferguson2006}{article}{}
+      \name{author}{1}{}{%
+        {{hash=effe5628455be0fc0bcb3a11f249416d}{Ferguson}{F\bibinitperiod}{Niall}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{effe5628455be0fc0bcb3a11f249416d}
+      \strng{fullhash}{effe5628455be0fc0bcb3a11f249416d}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2006}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article uses price data and editorial commentaries from the contemporary financial press to measure the impact of political events on investorsÃâ expectations from the middle of the nineteenth century until the First World War. The main question addressed is why political events appeared to affect the world's biggest financial market, the London bond market, much less between 1881 and 1914 than they had between 1843 and 1880. In particular, I ask why the outbreak of the First World War, an event traditionally seen as having been heralded by a series of international crises, was not apparently anticipated by investors. The article considers how far the declining sensitivity of the bond market to political events was a result of the spread of the gold standard, increased international financial integration, or changes in the fiscal policies of the great powers. I suggest that the increasing national separation of bond markets offers a better explanation. However, even this structura}
+      \field{issn}{00130117}
+      \field{journaltitle}{Economic History Review}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{Political risk and the international bond market between the 1848 revolution and the outbreak of the First World War.}
+      \field{volume}{59}
+      \field{year}{2006}
+      \field{pages}{70\bibrangedash 112}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1111/j.1468-0289.2005.00335.x
+      \endverb
+      \verb{url}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=buh&AN=19448599&loginpage=Login.asp&site=ehost-live
+      \endverb
+      \keyw{ECONOMIC history,ECONOMICS,INVESTMENTS,1750-1918,WORLD politics,POLITICAL systems}
+    \endentry
     \entry{FilsonWerner2002}{article}{}
       \name{author}{2}{}{%
         {{hash=614dd3b5ea2aff6940de8aef47dda5cf}{Filson}{F\bibinitperiod}{Darren}{D\bibinitperiod}{}{}{}{}}%
@@ -1591,6 +1712,37 @@
       \range{pages}{19}
       \verb{url}
       \verb http://www.jstor.org/stable/3088436
+      \endverb
+    \endentry
+    \entry{Fons1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9aaba567598e9d7643294d9983fadf42}{Fons}{F\bibinitperiod}{Jerome\bibnamedelima S.}{J\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{9aaba567598e9d7643294d9983fadf42}
+      \strng{fullhash}{9aaba567598e9d7643294d9983fadf42}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1987}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The development of organized markets for speculative-grade corporate debt has provided financial researchers with an opportunity to examine the pricing of default risk. By incorporating previous work on the default experience of low-rated corporate debt, this paper presents an introduction to risk-neutral models of risky-bond pricing and uses these to examine the relationship between the default premium embodied in bond yields and actual default rates. The contribution of macroeconomic information to the default premium is also examined. The author finds that holders of low-grade bonds have, on average, been compensated for losses due to default.}
+      \field{issn}{1540-6261}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{1}
+      \field{title}{The Default Premium and Corporate Bond Experience}
+      \field{volume}{42}
+      \field{year}{1987}
+      \field{pages}{81\bibrangedash 97}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1987.tb02551.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1540-6261.1987.tb02551.x
       \endverb
     \endentry
     \entry{fox1898regimental}{book}{}
@@ -1775,6 +1927,37 @@
       \verb http://www.jstor.org/stable/174513
       \endverb
     \endentry
+    \entry{Gartzke1999}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{6daa92a78fce568a80227a48f72ced00}
+      \strng{fullhash}{6daa92a78fce568a80227a48f72ced00}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deductively consistent, rationalist explanations for war generally imply that the onset of war is unpredictable and that theories of war are indeterminate. James Fearon shows that a rationalist explanation for war most often suggests that states resort to force because of factors that cannot be observed by the states involved. For states, it follows, war must appear as a random event. By implication, factors that cannot be observed by states typically cannot be observed by analysts. If analysts can distinguish states that are willing and able to fight from those that are not, even ex post, then states will be able to distinguish among such states as well, ex post, and will internalize this information in their decisions. To observers, then, the causes of war must always be in the "error term." I discuss the argument, its relationship to the literature, and implications for applied and theoretical research.}
+      \field{issn}{00208183}
+      \field{journaltitle}{International Organization}
+      \field{number}{3}
+      \field{title}{War Is in the Error Term}
+      \field{volume}{53}
+      \field{year}{1999}
+      \field{pages}{567\bibrangedash 587}
+      \range{pages}{21}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2601290
+      \endverb
+    \endentry
     \entry{Gartzke2007}{article}{}
       \name{author}{1}{}{%
         {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
@@ -1797,6 +1980,63 @@
       \range{pages}{26}
       \verb{url}
       \verb http://dx.doi.org/10.1111/j.1540-5907.2007.00244.x
+      \endverb
+    \endentry
+    \entry{GartzkeLi2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=67048cdfca3bdc2a38d4ba40e8cb56c0}{Li}{L\bibinitperiod}{Quan}{Q\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{28dbce0e56662d3aaebfddc0e702ad8e}
+      \strng{fullhash}{28dbce0e56662d3aaebfddc0e702ad8e}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Studies of signaling in international relations reveal how punishing bluffing ex post through domestic audience costs or opposition groups facilitates credible ex ante communication among states and reduces the impetus toward war. Global integration of economic markets may also reduce uncertainty by making talk costly ex ante. Autonomous global capital can respond dramatically to political crises. To the degree that globalization forces leaders to choose between pursuing competitive political goals and maintaining economic stability, it reveals the intensity of leaders' preferences, reducing the need for military contests as a method of identifying mutually acceptable bargains. Asymmetric integration can dampen the pacific effects of globalization, but asymmetry does not in itself exacerbate dispute behavior. We present the theory and offer preliminary corroborative tests of implications of the argument on postwar militarized disputes.}
+      \field{journaltitle}{International Studies Quarterly}
+      \field{number}{4}
+      \field{title}{War, Peace, and the Invisible Hand: Positive Political Externalities of Economic Globalization}
+      \field{volume}{47}
+      \field{year}{2003}
+      \field{pages}{561\bibrangedash 586}
+      \range{pages}{26}
+      \verb{url}
+      \verb http://dx.doi.org/10.1046/j.0020-8833.2003.00279.x
+      \endverb
+    \endentry
+    \entry{GartzkeLiEtAl2001a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6daa92a78fce568a80227a48f72ced00}{Gartzke}{G\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=67048cdfca3bdc2a38d4ba40e8cb56c0}{Li}{L\bibinitperiod}{Quan}{Q\bibinitperiod}{}{}{}{}}%
+        {{hash=d92684149da937d15ce3ce20604b2aa1}{Boehmer}{B\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{880b276912f94e84c9ee8ea34b671ed0}
+      \strng{fullhash}{880b276912f94e84c9ee8ea34b671ed0}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Research appears to substantiate the liberal conviction that tradefosters global peace. Still, existing understanding of linkages betweenconflict and international economics is limited in at least two ways.First, cross-border economic relationships are far broader than justtrade. Global capital markets dwarf the exchange of goods and services,and states engage in varying degrees of monetary policy coordination.Second, the manner in which economics is said to inhibit conflictbehavior is implausible in light of new analytical insights about thecauses of war. We discuss, and then demonstrate formally, howinterdependence can influence states&apos; recourse to military violence. Therisk of disrupting economic linkages&mdash;particularly access tocapital&mdash;mayoccasionally deter minor contests between interdependent states, butsuch opportunity costs will typically fail to preclude militarizeddisputes. Instead, interdependence offers nonmilitarized avenues forcommunicating resolve through costly signaling. Our quantitative resultsshow that capital interdependence contributes to peace independent ofthe effects of trade, democracy, interest, and other variables.}
+      \field{journaltitle}{International Organization}
+      \field{number}{02}
+      \field{title}{Investing in the Peace: Economic Interdependence and International Conflict}
+      \field{volume}{55}
+      \field{year}{2001}
+      \field{pages}{391\bibrangedash 438}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1162/00208180151140612
+      \endverb
+      \verb{eprint}
+      \verb http://journals.cambridge.org/article_S0020818301441361
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=164705&fulltextType=RA&fileId=S0020818301441361
       \endverb
     \endentry
     \entry{GelmanCarlinSternEtAl2013a}{book}{}
@@ -2380,6 +2620,30 @@
       \endverb
       \keyw{Bayesian inference,Hamiltonian Monte Carlo,Markov chain Monte Carlo,adaptive Monte Carlo,dual averaging}
     \endentry
+    \entry{HomansDana1861a}{book}{}
+      \name{author}{2}{}{%
+        {{hash=414cd5c0236ac1e58515e2f0332be051}{Homans}{H\bibinitperiod}{I.S.}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=d47f77e10bb3dcf8fe5c85f038f88ff1}{Dana}{D\bibinitperiod}{W.B.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {F. Hunt}%
+      }
+      \strng{namehash}{d3e206d22d7515bdff46e2d4ebd64516}
+      \strng{fullhash}{d3e206d22d7515bdff46e2d4ebd64516}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1861}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{American periodical series, 1800-1850}
+      \field{title}{The Merchants' magazine and commercial review}
+      \field{volume}{44}
+      \field{year}{1861}
+      \verb{url}
+      \verb http://books.google.com/books?id=QKcRAAAAYAAJ
+      \endverb
+    \endentry
     \entry{HomerSylla2005}{book}{}
       \name{author}{2}{}{%
         {{hash=7d6b5035380d9ab1b8d9de0ab9f33916}{Homer}{H\bibinitperiod}{Sidney}{S\bibinitperiod}{}{}{}{}}%
@@ -2404,6 +2668,64 @@
       \verb http://books.google.com/books?id=OOQKf4asZ9EC
       \endverb
     \endentry
+    \entry{HullPredescuWhite2004}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8eb46e2417b472d17c974e4c3bc21987}{Hull}{H\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0edb0d2e7510e1bcc05f850e4220f72b}{Predescu}{P\bibinitperiod}{Mirela}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=46972b2421a0750ab7f87316d6355570}{White}{W\bibinitperiod}{Alan}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{11137ef36634038329106da1e1439dc2}
+      \strng{fullhash}{11137ef36634038329106da1e1439dc2}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A companyâs credit default swap spread is the cost per annum for protection against a default by the company. In this paper we analyze data on credit default swap spreads collected by a credit derivatives broker. We first examine the relationship between credit default spreads and bond yields and reach conclusions on the benchmark risk-free rate used by participants in the credit derivatives market. We then carry out a series of tests to explore the extent to which credit rating announcements by Moodyâs are anticipated by participants in the credit default swap market.}
+      \field{issn}{0378-4266}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{note}{Recent Research on Credit Ratings}
+      \field{number}{11}
+      \field{title}{The relationship between credit default swap spreads, bond yields, and credit rating announcements}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{2789\bibrangedash 2811}
+      \range{pages}{23}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.jbankfin.2004.06.010
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378426604001098
+      \endverb
+      \keyw{Credit default swaps}
+    \endentry
+    \entry{HuntKettellHomansEtAl1860}{book}{}
+      \name{author}{4}{}{%
+        {{hash=d3d403bdb4ef859558503de4c33e96a3}{Hunt}{H\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=ebe6bba64f2f49a9b1b142fd33ed3cbc}{Kettell}{K\bibinitperiod}{T.P.}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=414cd5c0236ac1e58515e2f0332be051}{Homans}{H\bibinitperiod}{I.S.}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=d47f77e10bb3dcf8fe5c85f038f88ff1}{Dana}{D\bibinitperiod}{W.B.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Freeman Hunt}%
+      }
+      \strng{namehash}{1ced9de7f327f97ca20572bd7a44d230}
+      \strng{fullhash}{042894ce45b3db78ffa9421830bd1702}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1860}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{American periodical series, 1800-1850}
+      \field{title}{Hunt's Merchants' Magazine and Commercial Review}
+      \field{volume}{43}
+      \field{year}{1860}
+      \verb{url}
+      \verb http://books.google.com/books?id=06YRAAAAYAAJ
+      \endverb
+    \endentry
     \entry{Jackman2009}{book}{}
       \name{author}{1}{}{%
         {{hash=c40e881d72fcfdf30c062bbd78bff4ff}{Jackman}{J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
@@ -2425,6 +2747,38 @@
       \field{year}{2009}
       \verb{url}
       \verb http://books.google.com/books?id=QFqyrNL8yEkC
+      \endverb
+    \endentry
+    \entry{Jayachandr2006}{article}{}
+      \name{author}{1}{}{%
+        {{hash=82446ac206a12986d955f8766e3ec844}{Jayachandran}{J\bibinitperiod}{Seema}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{2}{%
+        {The University of Chicago Press for The Booth School of Business of the University of Chicago}%
+        {The University of Chicago Law School}%
+      }
+      \strng{namehash}{82446ac206a12986d955f8766e3ec844}
+      \strng{fullhash}{82446ac206a12986d955f8766e3ec844}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract In May 2001, Senator James Jeffords left the Republican Party and tipped control of the U.S. Senate to the Democrats. This paper uses the surprise event to demonstrate what I term the “Jeffords effect”: changes in the political landscape have large effects on the market value of firms. I use a firm’s soft‐money donations to the national parties as the measure of how the firm aligns itself politically. In this event study, a firm lost .8 percent of market capitalization the week of Jeffords’s switch for every \$250,000 it gave to the Republicans in the previous election cycle. On the basis of the point estimates, the stock price gain associated with Democratic donations is smaller than the loss associated with Republican donations, but the estimates are consistent with the effects being equal and opposite. The results withstand several robustness checks, and the effects appear to persist over time.}
+      \field{issn}{00222186}
+      \field{journaltitle}{Journal of Law and Economics}
+      \field{number}{2}
+      \field{title}{The Jeffords Effect}
+      \field{volume}{49}
+      \field{year}{2006}
+      \field{pages}{397\bibrangedash 425}
+      \range{pages}{29}
+      \verb{url}
+      \verb http://www.jstor.org/stable/10.1086/501091
       \endverb
     \endentry
     \entry{JuarezSteel2010b}{article}{}
@@ -2890,6 +3244,35 @@
       \verb http://books.google.com/books?id=mKtAHoe3UfwC
       \endverb
     \endentry
+    \entry{Merrick2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c0b5c947638a6f7c789047579c8d8f13}{Merrick}{M\bibinitperiod}{Jr}{J\bibinitperiod}{}{}{John\bibnamedelima J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}}%
+      }
+      \strng{namehash}{c0b5c947638a6f7c789047579c8d8f13}
+      \strng{fullhash}{c0b5c947638a6f7c789047579c8d8f13}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper extracts both the implied default recovery ratio and the risk-neutral default probability term structure for Russian Federation and Republic of Argentina US dollar Eurobonds during the 1998 Russian default crisis. This crisis provides a unique window into the impact of changing default probabilities and recovery ratio assumptions on credit-sensitive sovereign bond prices. For the Russian Eurobonds, the sample paths suggest a two-phase crisis revaluation. Shifts in default probabilities account for most of the initial price collapse. Marked decreases in the implied default recovery ratio dominate the second phase. Investors never cut their recovery value assumptions for Argentine debt.}
+      \field{issn}{0378-4266}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{number}{10}
+      \field{title}{Crisis dynamics of implied default recovery ratios: Evidence from Russia and Argentina}
+      \field{volume}{25}
+      \field{year}{2001}
+      \field{pages}{1921\bibrangedash 1939}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/S0378-4266(00)00165-5
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378426600001655
+      \endverb
+      \keyw{Credit crisis}
+    \endentry
     \entry{MitchellBeauchamp1988a}{article}{}
       \name{author}{2}{}{%
         {{hash=e51b4444eb1bf550ba6c9e9d8248c125}{Mitchell}{M\bibinitperiod}{T.\bibnamedelimi J.}{T\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
@@ -3028,6 +3411,25 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1017/S002205070000019X
+      \endverb
+    \endentry
+    \entry{Officer2003}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=ce88e8401c9e0ff272897159d5e8d127}{Officer}{O\bibinitperiod}{Lawrence\bibnamedelima H.}{L\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ce88e8401c9e0ff272897159d5e8d127}
+      \strng{fullhash}{ce88e8401c9e0ff272897159d5e8d127}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{unpublished}
+      \field{title}{What was the Interest Rate Then? A Data Study}
+      \field{year}{2003}
+      \verb{url}
+      \verb http://www.measuringworth.com/interestrates/intstudy.pdf
       \endverb
     \endentry
     \entry{OlshenVenkatramanLucitoEtAl2004}{article}{}
@@ -3486,6 +3888,58 @@
       \verb http://jcr.sagepub.com/content/52/6/850.abstract
       \endverb
     \endentry
+    \entry{Randolph1931}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6cb8149d62304c08df2c59f5dc1c033}{Randolph}{R\bibinitperiod}{Bessie\bibnamedelima C.}{B\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Society of International Law}%
+      }
+      \strng{namehash}{c6cb8149d62304c08df2c59f5dc1c033}
+      \strng{fullhash}{c6cb8149d62304c08df2c59f5dc1c033}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{1931}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00029300}
+      \field{journaltitle}{The American Journal of International Law}
+      \field{number}{1}
+      \field{title}{Foreign Bondholders and the Repudiated Debts of the Southern States}
+      \field{volume}{25}
+      \field{year}{1931}
+      \field{pages}{63\bibrangedash 82}
+      \range{pages}{20}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2189626
+      \endverb
+    \endentry
+    \entry{Ratchford1941}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a0377fa2f45a1df1c1265d6d66cbd94b}{Ratchford}{R\bibinitperiod}{B.\bibnamedelimi U.}{B\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{a0377fa2f45a1df1c1265d6d66cbd94b}
+      \strng{fullhash}{a0377fa2f45a1df1c1265d6d66cbd94b}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{1941}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Duke University publications}
+      \field{title}{American State Debts}
+      \field{year}{1941}
+      \verb{url}
+      \verb http://books.google.com/books?id=Ym5DAAAAIAAJ
+      \endverb
+    \endentry
     \entry{RatkovicEng2010}{article}{}
       \name{author}{2}{}{%
         {{hash=dd86d250d35b1113d04154f93e033a9e}{Ratkovic}{R\bibinitperiod}{Marc\bibnamedelima T.}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
@@ -3651,6 +4105,36 @@
       \verb{url}
       \verb http://www.jstor.org/stable/3216894
       \endverb
+    \endentry
+    \entry{RigobonSack2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5b740473a6551bdcef519ff2919ec27f}{Rigobon}{R\bibinitperiod}{Roberto}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=64124771701456c561859eb4c2d71826}{Sack}{S\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{01fb2efcc556332e62ff6eb8695a0774}
+      \strng{fullhash}{01fb2efcc556332e62ff6eb8695a0774}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper measures the effects of the risks associated with the war in Iraq on various US financial variables using a heteroskedasticity-based estimation technique. The results indicate that increases in war risk caused declines in Treasury yields and equity prices, a widening of lower-grade corporate spreads, a fall in the dollar, and a rise in oil prices. This war risk factor accounted for a considerable portion of the variances of these financial variables over the three months leading up to the arrival of coalition forces in central Baghdad.}
+      \field{issn}{0378-4266}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{number}{7}
+      \field{title}{The effects of war risk on US financial markets}
+      \field{volume}{29}
+      \field{year}{2005}
+      \field{pages}{1769\bibrangedash 1789}
+      \range{pages}{21}
+      \verb{doi}
+      \verb DOI: 10.1016/j.jbankfin.2004.06.040
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6VCY-4FFN4XK-1/2/61cd1b6a92cd48d8b9d89f339fbd1ad4
+      \endverb
+      \keyw{War}
     \endentry
     \entry{Roll1972}{article}{}
       \name{author}{1}{}{%
@@ -4039,6 +4523,24 @@
       \verb http://www.nps.gov/hps/abpp/battles/tvii.htm
       \endverb
     \endentry
+    \entry{Stan2014}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2418ee02a26ab01ead911ec86c507892}{{Stan\bibnamedelimb Development\bibnamedelimb Team}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2418ee02a26ab01ead911ec86c507892}
+      \strng{fullhash}{2418ee02a26ab01ead911ec86c507892}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stan: A C++ Library for Probability and Sampling, Version 2.2}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://mc-stan.org/
+      \endverb
+    \endentry
     \entry{Stan2015a}{manual}{}
       \name{author}{1}{}{%
         {{hash=2418ee02a26ab01ead911ec86c507892}{{Stan\bibnamedelimb Development\bibnamedelimb Team}}{S\bibinitperiod}{}{}{}{}{}{}}%
@@ -4088,6 +4590,40 @@
       \verb http://dx.doi.org/10.1017/S0022050700000218
       \endverb
     \endentry
+    \entry{BankersMagazine1857}{book}{}
+      \list{publisher}{1}{%
+        {Warren, Gorham \& Lamont, Incorporated}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1857}
+      \field{datelabelsource}{}
+      \field{labeltitlesource}{title}
+      \field{issn}{0005-545X}
+      \field{number}{v. 12}
+      \field{title}{The Bankers Magazine}
+      \field{year}{1857}
+      \verb{url}
+      \verb https://books.google.com/books?id=g2QmAQAAIAAJ
+      \endverb
+    \endentry
+    \entry{BankersMagazine1860}{book}{}
+      \list{publisher}{1}{%
+        {Warren, Gorham \& Lamont, Incorporated}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1860}
+      \field{datelabelsource}{}
+      \field{labeltitlesource}{title}
+      \field{issn}{0005-545X}
+      \field{title}{The Bankers Magazine}
+      \field{volume}{15}
+      \field{year}{1860}
+      \verb{url}
+      \verb https://books.google.com/books?id=KVwmAQAAIAAJ
+      \endverb
+    \endentry
     \entry{BankersMagazine1862}{book}{}
       \list{publisher}{1}{%
         {Warren, Gorham \& Lamont, Incorporated}%
@@ -4121,6 +4657,32 @@
       \verb{url}
       \verb http://books.google.com/books?id=D14mAQAAIAAJ
       \endverb
+    \endentry
+    \entry{NYT1860}{article}{}
+      \list{language}{1}{%
+        {English}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1860}
+      \field{labelmonth}{11}
+      \field{labelday}{07}
+      \field{datelabelsource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is too early to speak confidently of detailed results of yesterday's election. But there can be no reasonable doubt that the Republicans have elected their President. It has been universally conceded that the issue lay with New-York, and New-York casts her vote for LINCOLN. What the majority will be cannot yet be known. We believe, however,...}
+      \field{day}{07}
+      \field{isbn}{03624331}
+      \field{journaltitle}{New York Times}
+      \field{month}{11}
+      \field{note}{Copyright - Copyright New York Times Company Nov 7, 1860; Last updated - 2010-05-20}
+      \field{title}{The Election Lincoln Triumphant}
+      \field{year}{1860}
+      \field{pages}{4}
+      \range{pages}{1}
+      \verb{url}
+      \verb http://search.proquest.com/docview/91556330?accountid=10747
+      \endverb
+      \keyw{General Interest Periodicals--United States}
     \endentry
     \entry{Tibshirani1996}{article}{}
       \name{author}{1}{}{%
@@ -4253,6 +4815,27 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1162/15324430152748236
+      \endverb
+    \endentry
+    \entry{Treasury1860}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d329f49a55e5566bd7253be60f4ba9e5}{{United\bibnamedelimb States.\bibnamedelimi Dept.\bibnamedelimi of\bibnamedelimb the\bibnamedelimb Treasury}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=21dd740c63b82ec202d421497a676fe6}{{U.S.\bibnamedelimi Treasury}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{21dd740c63b82ec202d421497a676fe6}
+      \strng{fullhash}{d329f49a55e5566bd7253be60f4ba9e5}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{1860}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{Annual Report of the Secretary of the Treasury on the State of the Finances, Fiscal Year Ending June 30, 1860}
+      \field{year}{1860}
+      \verb{url}
+      \verb http://fraser.stlouisfed.org/publication/?pid=194
       \endverb
     \endentry
     \entry{Treasury1861b}{book}{}
@@ -4599,6 +5182,36 @@
       \verb{url}
       \verb http://www.jstor.org/stable/2669259
       \endverb
+    \endentry
+    \entry{WaldenstromFrey2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8379be9e35c882e5eebdeef5dc7c4cb8}{Waldenström}{W\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=989d03f7c9481aadc9383916ce0dc9ab}{Frey}{F\bibinitperiod}{Bruno\bibnamedelima S.}{B\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7b96eecf898be0b1f767e748f1f98e8c}
+      \strng{fullhash}{7b96eecf898be0b1f767e748f1f98e8c}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper analyzes and compares different ways of assessing how people perceived impending threats of war in the past. Conventional Nordic historiography of World War II claims there were few, if any, people in the Nordic countries who perceived a significantly increased threat of war between 1938 and early 1940. At the same time, historical methods face problems when it comes to capturing the often tacitly held beliefs of a large number of people in the past. In this paper, we analyze these assessments by looking at sudden shifts in sovereign debt yields and spreads in the Nordic bond markets at that time. Our results suggest that Nordic contemporaries indeed perceived significant war risk increases around the time of major war-related geopolitical events. While these findings question some--but not all--of standard Nordic World War II historiography, they also demonstrate the value of analyzing historical market prices to reassess the often tacitly held views and opinions of large groups of people in the past.}
+      \field{issn}{0014-4983}
+      \field{journaltitle}{Explorations in Economic History}
+      \field{number}{2}
+      \field{title}{Did nordic countries recognize the gathering storm of World War II? Evidence from the bond markets}
+      \field{volume}{45}
+      \field{year}{2008}
+      \field{pages}{107\bibrangedash 126}
+      \range{pages}{20}
+      \verb{doi}
+      \verb DOI: 10.1016/j.eeh.2007.09.004
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6WFJ-4PT1SF6-1/2/e05dbbdbe9c9bde3d879652ac9344188
+      \endverb
+      \keyw{Structural breaks}
     \endentry
     \entry{Walker1865a}{book}{}
       \name{author}{1}{}{%

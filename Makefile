@@ -6,7 +6,8 @@ PDF_FILE = $(TEX_FILE:%.tex=%.pdf)
 ## Chapters
 CHAP_ACW_ONSET_RNW = Financial_Markets_and_Onset_of_the_American_Civil_War.Rnw
 CHAP_ACW_ONSET_TEX = $(CHAP_ACW_ONSET_RNW:%.Rnw=%.tex)
-PATH_ACW_ONSET = ./acw_onset_and_markets/doc
+#PATH_ACW_ONSET = ./acw_onset_and_markets/doc/
+PATH_ACW_ONSET = ../acw_onset_and_markets/doc/
 
 CHAP_BONDS_BTL_RNW = Bonds_and_Battles.Rnw
 CHAP_BONDS_BTL_TEX = $(CHAP_BONDS_BTL_RNW:%.Rnw=%.tex)
