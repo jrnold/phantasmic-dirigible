@@ -49,58 +49,243 @@
 
 \usepackage{alltt}
 \usepackage{amsmath}
-\usefonttheme{professionalfonts}
+%\usefonttheme{professionalfonts}
+\usetheme{Jrnold}
+
+
 
 % Font part
-\usepackage{fontspec}
-%\usepackage{mathspec}
+\usepackage{mathspec}
 % \setromanfont{Gill Sans}
 % \setsansfont{Gill Sans}
 \setmainfont[Mapping=tex=text]{Helvetica Neue}
-\setsansfont[Mapping=tex-text]{Helvetica Neue Light}
+\setsansfont[Mapping=tex-text]{Helvetica Neue}
 \setmonofont[Mapping=tex-text,Scale=MatchLowercase]{Source Sans Pro}
-%\setromanfont[Mapping=tex-text, Numbers=OldStyle, BoldFont={* Semibold}]{Minion Pro}
-\setsansfont{Helvetica Neue}
-\setmathrm{Helvetica Neue}
+\setmathfont(Digits,Latin,Greek)[Scale=MatchLowercase]{Open Sans}
 
-%\setmathfont(Digits,Latin,Greek)[Scale=MatchLowercase]{Gill Sans}
-\usepackage{unicode-math}
-\setmathfont{XITS}
 
 \title{Three Papers on International Relations and Political Methodology}
 \author{Jeffrey B. Arnold}
 \date{October 15, 2015}
 %\institute{University of Washington}
+
+\AtBeginSection[]
+{
+   \begin{frame}
+        \frametitle{Sections}
+        \tableofcontents[currentsection]
+   \end{frame}
+}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
 \begin{frame}
+  \titlepage{}
+\end{frame}
+
+\begin{frame}
   \frametitle{Overview}
   \begin{enumerate}
-  \item How did financial markets respond to the American Civil War, and 
-    what does that tell us about war termination?
-  \item How did financial markets respond to the American Civil War, and 
-    what does that tell us about war termination?
-  \item An alternative method for changepoints and an implementation in Stan
+  \item How did financial markets respond to battles in the American Civil War, and 
+    what does that tell us about the effect of military combat on war termination?
+  \item How did financial markets respond to the initiation American Civil War, and 
+    what does that tell us about war initiation?
+  \item  Alternative method for change points and an implementation in Stan
   \end{enumerate}
 
 \end{frame}
 
-\section{Financial Markets, Battles, and the Termination of the American Civil War}
+\section{Bonds and Battles: Financial Market Reactions to Battlefield Events in the American Civil war}
 
 \begin{frame}
-  
+  \frametitle{Data Problems in the Study of Intra-war Events}
+
+  \begin{itemize}
+  \item Problem: 
+    \begin{itemize}
+    \item Poor data in limited cases
+    \item Hard to compare fighting across wars
+    \end{itemize}
+  \item Previous recommendation: qualitative case studies  (Reiter 2003,2009)
+  \item This paper: financial markets
+    \begin{itemize}
+    \item Financial asset prices are expected/predicted values of war termination
+    \item Determine important (surprising) events
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{}
+  \frametitle{Why the American Civil War}
+
+  \begin{itemize}
+  \item Extensive data on battles
+  \item U.S. government bonds primarily driven by expectations of the war's cost
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Fives of 1874}
+
+  \includegraphics[width=\textwidth]{../bonds_and_battles/paper/figure/fives1874_yield-1.pdf}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{The effect of battles on U.S. govt bond yields}
+
+  \begin{description}
+  \item[Outcome Variable:] Yields of U.S. govt bond
+  \item[Explanatory Variables:] 42 major battles and their outcomes
+  \item[Results:] \quad
+    \begin{itemize}
+    \item Avg. Confederate battle: 5\%  
+    \item Avg. Union battle: 0\% to -1\%
+    \item All Confederate battles largest magnitude of their point estimates
+    \item Substantive effects not large
+    \end{itemize}
+  \end{description}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{What does this mean?}
+
+  \begin{itemize}
+  \item Method to estimate the effects of battles on war~termination within a single war or identify surprising events
+  \item Larger effects late in the war not consistent with a naive information theory of war
+  \item Major battles had little effect on war expectations
+  \end{itemize}
+    
 \end{frame}
 
 
 \section{Financial Markets and the Onset of the American Civil War}
 
+\begin{frame}
+  \frametitle{Are markets surprised by war initiation?}
+
+  \begin{itemize}
+  \item Market prices incorporate present information
+  \item Big jump at start of a war = market surprised
+  \item Why should you care?
+    \begin{itemize}
+    \item Rationalist theories of war
+      \begin{itemize}
+      \item Private information theories of war: war surprising (Gartzke 1999)
+      \item Commitment theories: not necessarily
+      \end{itemize}
+    \item Capitalist peace
+    \item Effectiveness of prediction
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{State and Government Bond Yields Jump at Fort Sumter}
+
+  \includegraphics[width=\textwidth]{../../acw_onset_and_markets//doc/figures/fig_yields_all_color-1.pdf}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Market Implied Probability of War}
+
+  \includegraphics[width=\textwidth]{../../acw_onset_and_markets//doc/figures/fig_prwar2-1.pdf}
+
+\end{frame}
+
+\begin{frame}
+  \begin{quote}
+    The general condition of commercial and financial affairs still turns upon the uncertain political future. The fears of civil war, that at one time were entertained in certain quarters, have subsided, if not altogether disappeared, under the influence of passing events.
+
+    --- \textit{The Bankers' Magazine}, April 1861
+  \end{quote}
+
+\end{frame}
 
 
+\section{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
+
+\begin{frame}
+  \frametitle{Change point Models}
+
+  \begin{block}{Example}
+    Normally distributed $y_{1}, \dots, y_{n}$ with $M$ change points ($\tau{1}, \dots{}, \tau_{M}$) in the mean:
+  \begin{align*}
+  y_1, \dots{}, y_{\tau_{1} - 1} &\sim \mathcal{N}(\mu_{1}, \sigma^{2}) ,  \\
+  y_2, \dots{}, y_{\tau_{2} - 1} &\sim \mathcal{N}(\mu_{2}, \sigma^{2}) , \\
+  \dots{},  \\
+  y_{\tau_{M}}, \dots{}, y_{n} &\sim \mathcal{N}(\mu_{M}, \sigma^{2}) .
+  \end{align*}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Change point Models as a Variable Selection Problem}
+
+  Treat $\mu_{t}$ as a time-varying parameter:
+  \begin{align*}
+    y_{t} &\sim \mathcal{N}(\mu_{t}, \sigma^{2}), \\
+    \mu_{t} &= \mu_{t - 1} + \omega_{t}.
+  \end{align*}
+
+  \begin{itemize}
+  \item If change points, then most $\omega_{t}$ are zero (sparse)
+  \item Give $\omega_{t}$ a sparse shrinkage prior, e.g. Horseshoe (Polson, Carvalho et al. 2010)
+  \item Dynamic linear model
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example: Nile}
+  \includegraphics[width=\textwidth]{../dlm-shrinkage//analysis/figures/nile-m5_mu-1.pdf}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example: Bush}
+    \includegraphics[width=\textwidth]{../dlm-shrinkage//analysis/figures/bush-m4_mu-1.pdf}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Implementation in Stan}
+
+  \begin{itemize}
+  \item Kalman filter / smoother / simulation smoothing in Stan
+  \item Stan is a probabilistic programming language
+  \item Partially collapsed Gibbs sampler
+    \begin{enumerate}
+    \item Sample parameters with HMC-NUTS while marginalizing over latent states
+    \item Sample latent states using simulation smoother
+    \end{enumerate}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Implementation and advantages}
+
+  \begin{itemize}
+  \item Continuous changes most likely more common social science DGPs
+  \item Posterior of the parameter with change points rather than the change points themselves
+  \item Multiple change points, multiple parameters
+  \item Flexible models
+  \item Implemented in Stan
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Questions?}
+\end{frame}
 
 
 \end{document}
+
+%  LocalWords:  Bankers' Polson Carvalho al Kalman HMC DGPs Reiter
+%  LocalWords:  Gartzke
