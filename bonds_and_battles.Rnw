@@ -34,7 +34,7 @@ This provides an alternative method with which to analyze the intra-war events u
 Additionally, since prices incorporate expectations about the future, they provide a particularly good measure of surprising events. 
 Surprising events are crucial in private information theories of war, but it is difficult to know what events were surprising to contemporaries.
 Since prices of financial assets only respond to new information, they provide a natural measure of surprising events, which are particularly important in informational theories of war \parencite{Shirkey2009a}.
-This can also used to identify which events were seen as most important in the war, with the price itself already controlling for all previous events in the war because they are incorporated into the prior expectation of that event.
+This can also be used to identify which events were seen as most important in the war, with the price itself already controlling for all previous events in the war because they are incorporated into the prior expectation of that event.
 
 In this work, I focus on the case of the American Civil War due to the quality of its battle data, and the appropriateness of its financial assets for this purpose.
 I estimate the effects of militarily significant battles on U.S. government bond yields.
@@ -49,15 +49,15 @@ The United States had to win battles to recapture the seceding states, while the
 It also suggests that U.S. victories were expected, at least by New York investors, while Confederate victories were surprising.
 This may have meant that there was little belief that the United States would lose the war, so any Confederate victory only served to extend the expected duration of the war.
 Second, the battles with the largest estimated effects on bond yields were Confederate victories in May--June, 1864.
-These battles were part of the Overland and Richmond-Petersburg campaigns in which U.S. forces advanced Richmond, the Confederate capital, and were met with heavy resistance.
+These battles were part of the Overland and Richmond-Petersburg campaigns in which U.S. forces advanced on Richmond, the Confederate capital, and were met with heavy resistance.
 Third, although including battles in model of the bond yields improves the model fit, the improvement is surprisingly small.
-This is consistent with many events within a war, not just major battles, having an influence on war expectations.
+This is consistent with many arguments that events within a war, not just major battles, have an influence on war expectations.
 
 This work adds to an economic history literature on the effects of war events in the American Civil War on currencies and other financial assets \parencites{Mitchell1903}{Mitchell1908}{Schwab1901}{Roll1972}{Calomiris1988}{DavisPecquet1990}{WillardGuinnaneEtAl1996}{McCandless1996}{SmithSmith1997}{BrownBurdekin2000}{Weidenmier2000}{Weidenmier2002}{HaberMitchenerOosterlinckEtAl2014}.
 This work contributes to that literature by using the yields of U.S. government bonds, which unlike Greenbacks (U.S. currency), provide a time series that spans the entire war. 
 This work estimates the effects of both Confederate and Union victories, as well as that of individual major battles.
 It also connects that  literature to political science theories of war, and shows how its insights can be used not just to understand how markets work, but also to better understand how war works.
-This work builds on a large and growing literature which measures impact or identifies important political events using financial \parencites{NorthWeingast1989}{north2000introd}{FreyKucher2000}{sussman2000instit}{wells2000revol}{Herron2000}{eldor2004finan}{ChenSiems2004}{Greenstone2007} or prediction markets \parencites{WolfersZitzewitz2004}{ArrowForsytheGorhamEtAl2008}{WolfersZitzewitz2009}.
+This work builds on a large and growing literature which measures impact or identifies important political events using financial markets \parencites{NorthWeingast1989}{north2000introd}{FreyKucher2000}{sussman2000instit}{wells2000revol}{Herron2000}{eldor2004finan}{ChenSiems2004}{Greenstone2007} or prediction markets \parencites{WolfersZitzewitz2004}{ArrowForsytheGorhamEtAl2008}{WolfersZitzewitz2009}.
 
 
 
@@ -65,9 +65,9 @@ This work builds on a large and growing literature which measures impact or iden
 \label{sec:barg-theory-war}
 
 Financial markets relate to the study of war in several ways.
-First, they provide a measure of the the costs of war \parencites{SchneiderTroeger2006}{GuidolinLaFerrara2010}.
+First, they provide a measure of the costs of war \parencites{SchneiderTroeger2006}{GuidolinLaFerrara2010}.
 Second, financial markets are themselves a key actor or mechanism in several theories of war.
-This includes the ``Capitalist Peace'' \parencites{Gartzke2007}{DafoeKelsey2014a}, in which markets can provides signals of the costs of war to actors, and \textcite{Slantchev2012a}, in which debt financing creates a commitment problem.
+This includes the ``Capitalist Peace'' \parencites{Gartzke2007}{DafoeKelsey2014a}, in which markets can provide signals of the costs of war to actors, and \textcite{Slantchev2012a}, in which debt financing creates a commitment problem.
 Third, in some cases, the prices of financial assets act similarly to a prediction market for the expected onset or outcome of war.
 The implied expectations of war outcomes  derived from the prices of these financial assets can be used to assess theories of war initiation and termination.%
 \footnote{See Chapter~\ref{cha:financ-mark-onset} for an analysis of how financial markets assessed the probability of the onset of the American Civil War.}
@@ -146,7 +146,7 @@ But it may not be possible to disentangle expectations about the cost and outcom
 However, there is some advantage to the way in which financial assets weight these war outcomes.
 By putting all war outcomes on the same scale, namely, their fiscal effect on that belligerent, the prices of sovereign bonds are able to provide a single, if incomplete, measure of the war outcome for each belligerent that incorporates both the costs and benefits of the war to that belligerent.
 Additionally, because interest rates are expectations and are generally available at a high frequency, they provide a real-time measure war expectations.
-Sovereign bonds are not the only financial asset which could be used as a proxy for war outcomes, stocks \textcites{ChenSiems2004}{SchneiderTroeger2006}{WolfersZitzewitz2009}, exchange rates \textcites{Hall2004}, and commodities \textcites{WolfersZitzewitz2009}, may respond to conflict in some cases and may be able to be used as proxies for expectations about war outcomes.
+Sovereign bonds are not the only financial asset which could be used as a proxy for war outcomes, stocks \parencites{ChenSiems2004}{SchneiderTroeger2006}{WolfersZitzewitz2009}, exchange rates \parencites{Hall2004}, and commodities \parencites{WolfersZitzewitz2009}, may respond to conflict in some cases and may be able to be used as proxies for expectations about war outcomes.
 However, while there are commonalities, the specifics of how a financial asset relates to war outcomes are not universal, and in each case the researcher should carefully consider how the financial asset relates to the war outcome of interest.
 When using a financial asset price fas a proxy for an expected war outcome, it is also necessary that its price is primarily influenced by that war outcome and not other factors.
 For example, when studying the Iraq War, it would be implausible to use the interest rates of U.S. Treasury bonds or the S\&P 500 index since the effect of the war one way or another is likely a small influence relative to other economic factors.%
@@ -154,7 +154,7 @@ For example, when studying the Iraq War, it would be implausible to use the inte
   It is still possible to ask questions such as how much influence did events related to the Iraq War have on the stock market, as in \textcite{WolfersZitzewitz2009}.
   It would just be difficult to ask the inverse question which may be of more interest to political science research; given that the stock market is proxying expectations of the Iraq War, what events had the largest influence on it.
  }
-It would be plausible to use bonds issued by Iraq, if they had issued in 2003, because the outcome or initiation of a war with the U.S. would plausibly be the most important factor influencing them.
+It would be plausible to use bonds issued by Iraq, if they had been issued in 2003, because the outcome or initiation of a war with the U.S. would plausibly be the most important factor influencing them.
 This is not out of concern of confounding, but a need for the the signal (war outcome) to noise (other factors that cannot be controlled for) ratio of the price needs to be large for it to be plausible to use the price as a proxy for a war outcome.
 Using sovereign bonds, or most financial assets, to proxy for war expectations only works for war outcomes so long as those outcomes has some influence on either cash flows or risk premia.
 Some policy objectives of a war, \eg{}national pride or the abolition of slavery in the American Civil War, may be important to the belligerents and of interest to the researcher, but if they do not affect future cash flows or risk premia, then they will have little effect on the prices of financial assets.
@@ -196,7 +196,7 @@ So why was that agreement not reached prior to the war and without incurring the
 But this leads to a second puzzle: given that these frictions can lead to conflict instead of a peaceful bargain, how does the actual fighting in the conflict resolve that friction so that the sides can come to an agreement and return to peace.
 \textcite[757]{LeventogluSlantchev2007} describe theories which answer this question as \textit{complete} and \textit{coherent} theories of war: ``[A theory of war] must be complete, which means it must account for war’s outbreak and termination; and it must be coherent, which means that its account of termination must explain how fighting has resolved the cause.''
 While some evidence for the bargaining theory of war can come from studying war onset, testing the ``core of the theory'' requires intra-war data: estimates of capabilities, estimates of resolve, exchange of offers, and combat data \parencite{Reiter2003}.
-Since these data are difficult to acquire, there have been few empirical studies that attempt this \parencites{Reiter2003}{Ramsay2008}{Reiter2009}{Weisiger2015}.
+Since these data are difficult to acquire, there have been few empirical studies that attempt this \parencites{Goemans2000}{Reiter2003}{Ramsay2008}{Reiter2009}.
 
 Financial asset price data is useful to this research agenda in two ways: it provides a method for quantitative analysis of a single war, and it provides a measure of surprising events.
 First, financial asset price data allows for within-case quantitative analysis of war termination.
@@ -299,7 +299,7 @@ In other models, battles are important because they impose costs on the sides \p
 }
 These means of war must lead to war termination by resolving the private information or commitment problems.
 But there may exist multiple immediate means of combat and multiple channels by which each of those means influence war termination.
-Figure~\ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms ans war outcomes.
+Figure~\ref{fig:combat-causal-diagram} illustrates the relationship between means, mechanisms and war outcomes.
 In one view, resolution of private information or the commitment problem are causes of war termination.
 In another view, military combat is a cause of war termination and resolution of private information and commitment problems are mediators.
 And in general, it is difficult to identify the causal effects of mediators \parencite{Keele2015a}.
@@ -311,22 +311,22 @@ And in general, it is difficult to identify the causal effects of mediators \par
   \label{fig:combat-causal-diagram}
 \end{figure}
 
-With regard to war, identifying the channels through which combat influences the war termination is empirically quite difficult.
+With regard to war, identifying the mechanisms through which combat influences the war termination is empirically quite difficult.
 Almost any observable feature of military combat alters the actual state of the war, and potentially resolves a commitment problem, and also alters the beliefs of the participants about the combat process in which they are involved, and potentially resolves a private information problem.
-There are a couple ways in which this effects might be identified. %
+There are a couple ways in which these effects might be identified. %
 First, if the beliefs of the participants were observed, then the effects of war events on the beliefs of the participants could be measured. %
-A problem with this approach is that it requires data on the beliefs of the participants, which is difficult to acquire.
+A problem with this approach is that it requires data on the beliefs of the participants, which is difficult to acquire \parencite{Goemans2000}.
 Even if first-hand accounts are available, it is not clear whether these are accurate indicators of those beliefs. %
 Another problem is that it is insufficient to simply observe changes in the beliefs of one participant over time, as in \textcite{Reiter2009}. %
 The causal mechanism in informational theories of war is the convergence of beliefs of the belligerents to a common distribution, which requires knowing the beliefs of both sides.
-Second, it could be identified if commitment problem that started the war were known and changes it were observable. 
-Third, it could be identified through a structural model of how military combat influences war outcomes.
+Second, the mechanisms could be identified if commitment problem that started the war were known and changes it were observable. 
+Third, the mechanisms could be identified through a structural model of how military combat influences war outcomes.
 Then it may be possible to back out how belligerents would update their beliefs and how combat could result in military victory or resolve commitment problems.
-However, this would require more work which focus on generating models of military combat, even if these models are not related tied to political variables.
+However, this would require more work which focuses on generating models of military combat, even if these models are not related tied to political variables.
 To understand how fighting resolves the frictions in bargaining, either changes in those frictions must be observed, or it is necessary to understand the process that underlies the fighting. %
 One  difficulty in the later is that  military combat may be extremely heterogeneous, both across time and space \parencite{Reiter2003}.
 But that is not a reason to ignore the study of military combat, but a call to describe and explain those patterns.
-A better understanding of the the military combat process in war may have different implications for these models, and improve the ability to distinguish between these causal mechanisms.%
+A better understanding of the military combat process in war may have different implications for these models, and improve the ability to distinguish between these causal mechanisms.%
 \footnote{%
   For example, \textcite{Walter2009} conjectures that insurgency is slower to reveal information than other forms of war. %
   Rigorously evaluating theories in this manner would require better theories of the actual military rationale between insurgency versus conventional war, the characteristics of each, and when belligerents choose to use each.
@@ -348,8 +348,8 @@ In Section~\ref{sec:why-prices-study}, I discuss why financial assets issued by 
 
 Like any case, its generalizability is limited by its similarity to other observations.
 But despite its age, the American Civil War has several similarities to contemporary civil wars.
-First, the American Civil War is, if not the first modern war, a that marked the transition to modern warfare.
-This war introduced several of the technologies which came to prominence in World War I and later wars: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89][]{Fuller1956a}[760]{Weiss1966}.
+First, the American Civil War is, if not the first modern war, a war that marked the transition to modern warfare.
+This war introduced several of the technologies which came to prominence in World War I and later wars: rifled artillery, telegraph, machine guns, barbed wire, ironclad warships, and submarines \parencites[89]{Fuller1956a}[760]{Weiss1966}.
 Second, the American Civil War is primarily a conventional war.
 This places it in the plurality of post-Cold War civil wars, which are more often conventional wars than insurgencies \parencite[423]{kalyvas2010inter}. %
 Finally, by the Civil War, the United States was wealthy enough that the power parity adjusted GDP per capita of the United States and Confederate States in 1860 would classify them them as lower-middle income countries today.%
@@ -386,7 +386,7 @@ In applying international relations theory and quantitative methods to the study
 I use the yields of long-run U.S. government bonds as a measure of the expected outcome of the American Civil War.
 While the yields U.S. government bonds were almost certainly primarily driven by war expectations, they were plausibly influenced by both expectations of U.S. victory and expectations of war costs.
 However, it is likely that expectations of war costs is the more prominent of these two factors.
-In this work, I use the the yields of the Fives of 1874, a U.S. government coupon bond.
+In this work, I use the yields of the Fives of 1874, a U.S. government coupon bond.
 It is the only U.S. government bond that was both issued prior to the war and quoted throughout the war, meaning that it is the only time series of a single asset that spans the war.
 
 The Fives of 1874 were a coupon bond authorized by the Act of June 14, 1858 to pay for a budget deficit due to the Panic of 1857, a financial panic and recession.%
@@ -404,7 +404,7 @@ However, the Treasury ceased redemption of these notes for gold on January 1st, 
 U.S. currency floated against the gold dollar from January 1st, 1862 until the resumption of convertibility on January 1st, 1879 \parencites{Mitchell1908}{Dewey1918}{WillardGuinnaneEtAl1996}.
 }
 
-Data on the prices of the Fives of 1874 come from tables in the two leading monthly financial magazines of the era, the \textit{Bankers' Magazine and Statistical Register} and the \textit{The Merchants' Magazine and Commercial Chronicle} \parencites[186]{Mitchell1903}.
+Data on the prices of the Fives of 1874 come from tables in the two leading monthly financial magazines of the era, the \textit{Bankers' Magazine and Statistical Register} and \textit{The Merchants' Magazine and Commercial Chronicle} \parencites[186]{Mitchell1903}.
 In these publications the prices of bonds, not their yields, were quoted.
 The prices were quoted in currency, and not in gold dollars, even though they paid interest in gold dollars.
 I converted the prices to gold dollars using the current exchange rate of Greenbacks to gold dollars in New York, using the \textcite{Mitchell1908} data.%
@@ -467,13 +467,13 @@ Using the Fives of 1874 instead of these other bonds does not make a substantive
 Since the United States did not issue Greenbacks until after the start of the war, and did not suspend the redemption of Greenbacks for gold until January 1, 1862, any analysis using only Greenback prices cannot cover the first eight months of the war, April--December 1861.
 This is the period which should have the highest informational content in an informational theory of war, and includes battles such as the First Battle of Bull Run, and the Battle of Wilson's Creek.%
 \footnote{\textcite{Poast2012} argues that the First Battle of Bull Run was pivotal in avoiding British recognition of the Confederate States.}
-Apart from the loss of observations, using Greenbacks instead of the Fives of 1874 would not make a substantive difference, since as Figure~\ref{fig:fives1874_greenbacks} shows, the price of Fives of 1874 in gold dollars is similar in both level and trend as the the price of Greenbacks in gold dollars.
+Apart from the loss of observations, using Greenbacks instead of the Fives of 1874 would not make a substantive difference, since as Figure~\ref{fig:fives1874_greenbacks} shows, the price of Fives of 1874 in gold dollars is similar in both level and trend as the price of Greenbacks in gold dollars.
 
 The American Civil War is an ideal case for which to use prices to infer expectations of war termination for three reasons.
 First, The war was of such severity that the nearly the entire budget of the U.S. government was war-related military spending, and thus fiscal expectations corresponded to military spending expectations. %
 The War and Navy Departments accounted for 76 percent (in 1862) to 61 percent (in 1865) of the expenditures \parencites{Treasury1861a}{Treasury1861b}{Treasury1862}{Treasury1863}{Treasury1864}{Treasury1865}.
 The fraction of the budget spent directly on the military by the Union fell over the course the war because the fraction spent on paying the principal and interest on its debt increased from 20 (1862) to 36 (1865) percent of the budget.
-The overwhelming the majority of that debt had been issued to fund the war, so debt service payments can be considered delayed military spending. 
+The overwhelming majority of that debt had been issued to fund the war, so debt service payments can be considered delayed military spending. 
 As \textcite[][668]{McCandless1996} states, ``[d]uring the war, the single most important indicator of future government expenditures is the process of the war itself.''
 % INSERT FIGURE OF THE BUDGET
 
@@ -522,7 +522,7 @@ The future resources of the United States to pay off its debt also depended on t
 The size and wealth of the seceding Southern states was much smaller than that of the Northern and Western states.
 In 1860, the states that would make up the Confederacy accounted for only \Sexpr{round((9103333 / 31443316) * 100, 0)} percent of the overall U.S. population,%
 \footnote{
-  Southern states included VA, TN, GA, NC, AL, MS, LA, SC, TX, AR, FL \textcite[5]{Eicher2001}.
+  Southern states included VA, TN, GA, NC, AL, MS, LA, SC, TX, AR, FL \parencite[5]{Eicher2001}.
   Wealth is used instead of GDP, since GDP was not invented until later.
   Thus the total wealth of individuals, as reported in the Census, is a better measure of what contemporaries knew, since that is how they measured it.
 }
@@ -535,7 +535,7 @@ and 25 percent of the total wealth.%
 % TODO: What was the Confederacy GDP?
 
 The manner in which U.S. government could have defaulted on its debt obligations takes several plausible forms in addition to simply completely defaulting.
-The government could have simply stopped paying interest, as the Southern states did at the start of the war \parencite[159]{BankersMagazine1862}[810,947]{BankersMagazine1860}, for the remainder of the war.
+The government could have simply stopped paying interest, as the Southern states did at the start of the war \parencites[159]{BankersMagazine1862}[810,947]{BankersMagazine1860}, for the remainder of the war.
 After the United States started issuing Greenbacks which were not redeemable on demand in gold, it could have paid either the interest or principal of bonds in currency instead of specie.
 Since the Greenback traded at a discount to a gold dollar, this would 
 This as a plausible concern, as there was a controversy among investors regarding a different bond issue, the 5-20's, which were explicit on repaying the interest in specie but were ambiguous as to whether the principal would be repaid in specie or currency \parencite{Roll1972}.
@@ -543,9 +543,9 @@ Another example is that the Act of March 3, 1863 (12 Stat 710) declared that the
 Since these were issued after the suspension of convertibility of Greenbacks to gold this may have not been a surprise to investors, but it suggests that repayment in currency was a possibility. 
 That the yields on U.S. government bonds when calculated in gold rose during the war, while those calculated in currency remained low and steady near 5 percent \parencite[305]{HomerSylla2005}, implies that to the extent that investors viewed U.S. government bonds as risky, it was that they would be repaid in depreciated currency rather than specie.%
 If investors feared a complete default, then yields calculated in currency should have also risen during the war.
-This is why it is important to use yields and prices calculated in gold, which did respond to war risk, rather than yield and prices in in currency as in \textcite{HomerSylla2005}, which are much less sensitive to that risk, since they ignore the risk due to repayment in deprciated currency.
+This is why it is important to use yields and prices calculated in gold, which did respond to war risk, rather than yield and prices in currency as in \textcite{HomerSylla2005}, which are much less sensitive to that risk, since they ignore the risk due to repayment in depreciated currency.
 
-Some statements by government officials and market participants suggest that they were more concerned with the cost and duration of the war than with the the reincorporation of the seceding states.
+Some statements by government officials and market participants suggest that they were more concerned with the cost and duration of the war than with the reincorporation of the seceding states.
 William Elder, a leading economist of the era, in an 1863 analysis of the ability of the United States to repay its debt, stated ``The Rebellion leaves our capital in real and personal property just where it was before the secession. \dots{} So far now this is only a loss of that which we have not had, and at best or worst, a very small one in any time of need \parencite[19]{Elder1863}.''%
 \footnote{
   However, \textcite{Elder1863} does emphasize the importance of the resources of the Western territories, which perhaps strengthens the argument of  \textcite{Weingast1998} that the United States was concerned that the secession of Southern states could lead to the secession of Western states.
@@ -578,7 +578,7 @@ While the precise relationship between these bond yields and outcomes of the Ame
 As noted earlier in this section, military expenses accounted for the overwhelming majority of U.S. government expenditures between 1861 and 1865, so there are no other budgetary concerns that could plausibly have been affecting investor's expectations.
 The importance of the war is also clear from comparing the level and variance of U.S. government bond yields during the war with the preceding period.
 During 1856--1860, yields on U.S. government bonds were stable at below 5 percent.
-At the height of the the Panic of 1857, the yield of U.S. government bonds (Sixes of 1868) only reached \Sexpr{format_yields(yield_panic_1857)} percent.%
+At the height of the Panic of 1857, the yield of U.S. government bonds (Sixes of 1868) only reached \Sexpr{format_yields(yield_panic_1857)} percent.%
 \footnote{Data from the \textit{Bankers' Magazine} and my calculations. Also see \textcite{HomerSylla2005}.}
 Since a major financial crisis had little effect on bond yields prior to the war, there are certainly no non-war omitted factors affecting the yields.
 This is not to say that the battles in the war are the only factor affecting the bond yields.
@@ -721,7 +721,7 @@ The daily registry of the Gold Room was a quicker messenger of successes or defe
 \end{quote}
 However, there was still a lag between the occurrence of a battle, and when news of it reached the market.
 More importantly for the analysis, this lag varied with the distance of the battle from New York and Washington, as well as idiosyncratic reasons.
-For example, the market knew nothing of Sherman's army after he moved north from Savannah until he arrived in  \textcite[204]{Mitchell1903}.
+For example, the market knew nothing of Sherman's army after he moved north from Savannah until he arrived in North Carolina \parencite[204]{Mitchell1903}.
 As a measure of when information of the battle reaches the New York market, I coded when news about a battle was first reported in the \textit{New York Times}.
 While battles in the Eastern theater were often reported the next day (Antietam, Gettysburg), news on battles in other theaters may not reach the market for days.
 The battle with the longest lag in news was the Battle of Glorietta Pass in New Mexico; it ended on March 28, 1862, but news of the battle did not reach New York city until April 15.
@@ -751,7 +751,7 @@ It is the most complete, machine-readable data on American Civil War battles of 
 In this section, I present several models of the effects of battles on U.S. government bond yields.
 In all these models, the response variable is the yields of the Fives of 1875, as discussed in Section \ref{sec:5s-1874}.
 The Fives data consistent of \Sexpr{data_m1[["data"]][["n"]]} observations between \Sexpr{data_m1[["START_DATE"]]}, the first observation after the Battle of Fort Sumter and the official start of the war, and \Sexpr{data_m2[["END_DATE"]]}.
-These occur at irregular frequencies, with gaps of \Sexpr{min(data_m1[["data"]][["y_diff"]][-1])}--\Sexpr{min(data_m1[["data"]][["y_diff"]][-1])} days between observations.
+These occur at irregular frequencies, with gaps of \Sexpr{min(data_m1[["data"]][["y_diff"]][-1])}--\Sexpr{max(data_m1[["data"]][["y_diff"]][-1])} days between observations.
 In these models, I use the logarithm of the yield since Figure \ref{fig:fives1874_yield_price} suggests that the variance of yields is increasing in its level.
 
 All of these models are of the form,
@@ -855,7 +855,7 @@ In these models, I do not include indicators of other events in the war.
 While changes in policy, leadership, foreign policy events, negotiations and other events certainly influence war expectations, I do not have a coherent method for choosing a set of events.
 \textcite{McCandless1996} and \textcite{SmithSmith1997} both include indicator variables for a few military, fiscal, and political events in the war.
 However, neither of these have a clear rule as to what constitutes major non-battle events in the war, and what does not.
-\textcite{SmithSmith1997} includes indicator variables selected on the dependent variable, using the events mentioned in \textcite{Mitchell1903} as corresponding to large daily movements in the gold market.%
+\textcite{SmithSmith1997} includes indicator variables selected on the dependent variable, using the events mentioned in \textcite{Mitchell1903} as corresponding to large daily movements in the gold market.
 %% Excluding these non-battle events may not be an issue for estimating the effects of battles, because they are more likely influenced by battlefield events than vice versa.
 %% For example, the capture of Atlanta is given as a reason why Lincoln won the election of 1864, and the victory at Antietam encouraged Lincoln to sign the Emancipation Proclamation .
 In Section~\ref{sec:conclusion}, I propose a more coherent method for identifying war and non-war events.
@@ -867,7 +867,7 @@ The price of gold closely tracked the price of goods during this period, so ther
 Since the bonds considered here paid interest in gold dollars, and the bond yields are calculated with the cash flows converted to gold dollars, the inflation of currency is not explicitly a problem.
 Second, the influence of the war was such that inflation is plausibly a post-treatment variable that, like bond yields, responded to war expectations.
 Third, data on inflation is only available at frequencies much longer than used in the analysis; the Warren-Pearson Wholesale Price Index is only available at the monthly level \parencite{WarrenPearson1933a}.
-The risk free interest rate during this period is not included because there is not a good measure of the the risk free interest rate during this period.
+The risk free interest rate during this period is not included because there is not a good measure of the risk free interest rate during this period.
 Before and after the American Civil War, the yields of U.S. government bonds could be considered approximately risk-free assets \parencites{HomerSylla2005}.
 But this work uses the yields of U.S. government bonds precisely because those bonds are risky during the American Civil War.
 \textcites{Macaulay1938}{HomerSylla2005} consider indexes of railroad bonds and New England municipal and state bonds as risk free assets during the late nineteenth century.
@@ -928,7 +928,7 @@ One thing to note is that the estimates of battle-level effects are highly uncer
 
 The battles with the largest effects are the Confederate victories in the summer of 1864 in the Overland Campaign (Spotsylvania Courthouse, Cold Harbor) and the start of the Richmond-Petersburg Campaign (Second Petersburg).
 In the battles of Spotsylvania Courthouse and Cold Harbor, U.S. forces commanded by Ulysses S. Grant suffered large casualties while advancing towards the Confederate capital, Richmond.
-In the of Battle of Second Petersburg, the United States failed break the Confederate lines and decisively capture Richmond.
+In the of Battle of Second Petersburg, the United States failed to break through Confederate defensive lines and decisively capture Richmond.
 This defeat began the Siege of Petersburg which would last from June 1864 until the United States broke through the Confederate lines at the Third Battle of Petersburg on April 2, 1865.
 \textcite[151-152]{Reiter2009} cites this period as a turning point in the war, during which the United States ``neared exhaustion''.
 
@@ -1001,7 +1001,7 @@ Although models $\Model{2}$--$\Model{3}$ all improve the WAIC (lower values) and
 As operationalized in this work, battles appear to improve the predictive and explanatory power of the model of bond yields, but that improvement is small.
 
 The relatively small magnitude of the effects of individual battles is seen in Table \ref{tab:blt_effects_size}.
-The average effect of a single Union victory is less than 1 standard deviation of the standard deviation of the system error $\eta$; Confederate victories are larger than than 1 sd of $\eta$, but less than 2 standard deviations.
+The average effect of a single Union victory is less than one standard deviation of the system error $\eta$; Confederate victories are larger than than one standard deviation of $\eta$, but less than two standard deviations.
 Considering that there are only \Sexpr{nrow(major_battles)} battles, but \Sexpr{as.integer(data_m2[["END_DATE"]] - data_m2[["START_DATE"]]) + 1L} values of $\eta_{t}$, neither of those magnitudes seems particularly large.
 
 There are several interpretations for the limited explanatory power of battles in this analysis.
@@ -1051,9 +1051,9 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 I conclude by discussing a few surpising results, how those results relate to the bargaining theory of war, and some thoughts on future directions for this research and research combining war data and financial market data.
 First, the largest estimated effects of battles occur over three years into the war, in May and June of 1864, when U.S. forces were advancing towards Richmond but suffering extremely heavy casualties.
 That the largest effects would occur so late in the war seems to fit better with commitment theories of war than informational theories of war.
-This pattern not fit well with the naive learning models of war, in which early battles should be the most informative.
+This pattern does not fit well with the naive learning models of war, in which early battles should be the most informative.
 Nor does it seem to fit well with the case in which heavier fighting revealed the resolve of the United States to continue fighting and the Confederates to fight to end if need be.
-If that were the case, then each side would have updated its expectations, an agreement would be reached and the expected the cost (duration) of the war would decline.
+If that were the case, then each side would have updated its expectations, an agreement would be reached and the expected cost (duration) of the war would decline.
 This pattern could fit with a commitment theory of war in which this marked the point at which expectations moved from there being some expectation of a settlement to one in which to it being nearly certain that the war would have to extend to total victory.
 What this is not consistent with, is the idea that because the Union was incurring heavy costs, it was near exhaustion, and would quit the war.
 Instead, as the United States incurred heavier costs, the market expected the United States to incur even heavier costs in the future.
@@ -1067,7 +1067,7 @@ However, this method may allow for analyses of more wars, which together may unc
 
 There are several methodological issues that this analysis had to confront.
 They are ``What information about battles did the market receive?'', ``When did the market receive that information?'', and ``What other non-battle information did the market receive?''
-In this work, I handled the the first by assuming that only a small set of battles were important enough to have any effect, and that the market only cared about the results, Union or Confederate victory, of those battles.
+In this work, I handled the first by assuming that only a small set of battles were important enough to have any effect, and that the market only cared about the results, Union or Confederate victory, of those battles.
 The assumption was that contemporaries would have also seen that same set of  battles as the most important, and that they would classify the results of battles similarly to how they were coded in the data.
 As a measure of when the market received information about battles, I used the day on which the battle was first reported in newspapers.
 Since I had no data on the non-battle information that would be important to the market, I only modeled it with a fat-tailed distribution in the error term.

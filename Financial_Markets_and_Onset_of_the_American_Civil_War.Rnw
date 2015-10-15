@@ -266,7 +266,7 @@ While the market believed it was likely that Lincoln would win the election and 
 It was not until after Lincoln's election that yields increased dramatically.
 However, this increase did not occur immediately after Lincoln's election victory, as would occur with Fort Sumter, but yields rose over the course of the following month, with some variation between bonds in the timing of the rise.
 However, by the end of January 1861, Southern and border state yields had increased 1--3 percentage points, and the yields on U.S. government bonds had increased 1--1.5 percentage points.
-The initial increase in yields was due a small financial crisis that started when Southern banks started denying credit to Northern clients and withdrew specie from Northern banks \parencite[76]{HomansDana1861a}.
+The initial increase in yields was due to a small financial crisis that started when Southern banks started denying credit to Northern clients and withdrew specie from Northern banks \parencite[76]{HomansDana1861a}.
 However, the response of banks mitigated the severity and duration of the crisis, and it was largely resolved by November \parencite[539-542]{BankersMagazine1860}.
 However, political risk remained a concern:
 \begin{quote}
@@ -364,7 +364,7 @@ In order to achieve behavior similar to a change-point model, this paper uses a 
 Shrinkage priors are the Bayesian equivalent to penalized estimate like lasso \parencites{Tibshirani1996}{ParkCasella2008}.
 The particular shrinkage prior employed horseshoe prior distribution is used \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2009}.
 The horseshoe prior has properties similar to a spike-and-slab prior while being continuous.
-This is similar to estimating change points in the parameter, while estimating the number of change points from the data.
+This is similar to estimating change points in the parameter, while estimating the number of change points from the data.%
 \footnote{This approach is similar to a Bayesian version of the fused lasso \textcite{TibshiraniEtAl2005} using the horseshoe prior distribution rather than a Laplace distribution for the reasons discussed in \parencites{CarvalhoPolsonScott2009}{CarvalhoPolsonScott2009}.}
 \begin{align}
   \theta_{t} & \sim \dnorm{\theta_{t-1}, \sigma^{2} \tau_{\theta}^{2} \lambda_{\theta,t}^{2}}
@@ -511,8 +511,7 @@ Nevertheless, the overall pattern between the results is similar.
 \section{Conclusion}
 \label{sec:conclusion}
 
-This work estimates the
-Although the seeds of the American Civil War were preceded the start of the war for many years, the onset of war was unexpected by financial markets.
+Although the seeds of the American Civil War preceded the start of the war for many years, the onset of war was unexpected by financial markets.
 Financial markets did not respond to war risk until after the election of Lincoln in November 1860, and then only after a financial crisis due to Southern banks withdrawing specie and discussion of secession became serious.
 Despite the awareness of the risk of war, yields spiked dramatically after the Battle of Fort Sumter, implying that the event was unanticipated.
 The implied probability of war based off the Southern state bonds was only about 5 percent.
