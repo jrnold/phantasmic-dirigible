@@ -591,12 +591,12 @@ However, it is more likely that these yields are largely reflecting expectations
 \begin{figure}[!htpb]
   \centering
   \begin{subfigure}[t]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_price-1")}}
+   \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fives1874_price-1")}}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{fig:fives1874_price}
 \end{subfigure}
 \begin{subfigure}[t]{\linewidth}
-   \includegraphics{\Sexpr{file.path(fig_path, "fives1874_yield-1")}}
+   \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fives1874_yield-1")}}
   \caption{Yield to maturity.}
   \label{fig:fives1874_yield}
 \end{subfigure}
@@ -609,13 +609,13 @@ During the American Civil War, the yields are variable, spiking in the middle of
 
 \begin{figure}[!htpb]
   \begin{subfigure}[t]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_greenback_price-1")}}
+    \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fives1874_greenback_price-1")}}
   \caption{Price in gold dollars for the Fives of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[t]{0.45\linewidth}
-    \includegraphics{\Sexpr{file.path(fig_path, "fives1874_union-1")}}
+    \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fives1874_union-1")}}
     \caption{Yield to maturity of the Fives of 1874 compared to other U.S. bonds.}
   \label{fig:fives1874_union}
 \end{subfigure}
@@ -632,7 +632,7 @@ During the American Civil War, the yields are variable, spiking in the middle of
 %% \label{fig:fives1874_south}
 %% \end{subfigure}
 \begin{subfigure}[t]{0.45\linewidth}
-  \includegraphics{\Sexpr{file.path(fig_path, "fives1874_graybacks-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fives1874_graybacks-1")}}
   \caption{Price in gold dollars of the Fives of 1874 compared to \$100 in Graybacks (Confederate currency).}
 \label{fig:fives1874_grayback}
 \end{subfigure}
@@ -685,7 +685,7 @@ That this set of battles is a subset of battles in the  American Civil War is la
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_major_battles-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fig_major_battles-1")}}
   \caption{Dates of major battles of the American Civil War and their outcomes}
   \label{fig:major_battles}
 \end{figure}
@@ -704,13 +704,9 @@ Figure~\ref{fig:major_battles} plots the date and outcomes of these battles over
 In the analysis, I will not explicitly include casualty or force size data.
 By selecting on the most militarily significant battles, I have already effectively selected those battles with the highest casualties and force sizes.
 
-\begin{table}
-  \centering
-  \small
-  \input{\Sexpr{file.path(tab_path, "tab_major_battles.tex")}}
-  \caption{List of the \Sexpr{nrow(major_battles)} militarily significant battles of the American Civil War included in this analysis.}
-  \label{tab:battles}
-\end{table}
+\input{\Sexpr{file.path(tab_path, "tab_major_battles_union.tex")}}
+
+\input{\Sexpr{file.path(tab_path, "tab_major_battles_confed.tex")}}
 
 In order to estimate the effects of these battles on bond yields, I need the days on which the New York market received news about these battles.
 These are not the same as the dates of the battle, because news reaches the market with a lag.
@@ -743,7 +739,7 @@ For this project, I created a public data collection of American Civil War battl
 The ACWBD combines, cleans, cross-references battle data from multiple primary and secondary sources, including \textcites{Phisterer1883}{Livermore1900}{Bodart1908}{dyer1908_war_rebel}{KennedyConservation1998}{CWSAC1993}{cwsac2012}.
 It is the most complete, machine-readable data on American Civil War battles of which I am aware.
 
-
+\clearpage
 
 \section{Statistical Models of the Effects of Battles on Bond Yields}
 \label{sec:model-war-events}
@@ -886,6 +882,7 @@ The rate of consols is inappropriate for this analysis because that risk free in
 
 \begin{table}
   \centering
+  \small
   \input{\Sexpr{file.path(tab_path, "avg_battle_result.tex")}}
   \caption{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
   \label{tab:avg_battle_effects}
@@ -948,7 +945,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fig_btl_effects-1")}}
   \caption[Battle effects, $\omega_{b}$, for all battles for all models]{Battle effects, $\omega_{b}$, for all battles for all models.
     These are ordered by end date of the battle.
     Union victories are in dark blue.
@@ -959,7 +956,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects_ordered-1")}}  
+  \includegraphics[scale=0.9]{\Sexpr{file.path(fig_path, "fig_btl_effects_ordered-1")}}  
   \caption[Battle effects, $\omega_{b}$, for model $\Model{3}$.]{
     Battle effects, $\omega_{b}$, for model $\Model{3}$.
     These are ordered from largest to smallest.
@@ -971,7 +968,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics{\Sexpr{file.path(fig_path, "fig_btl_effects_time-1")}}  
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(fig_path, "fig_btl_effects_time-1")}}  
   \caption{Battle effects, $\omega_{b}$, for all battles for model $\Model{4}$, by battle result.}
   \label{fig:btl_effects_time}
 \end{figure}

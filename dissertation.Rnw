@@ -77,6 +77,7 @@
 {0.25in}%
 {}
 
+\setcounter{tocdepth}{1}
 
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}

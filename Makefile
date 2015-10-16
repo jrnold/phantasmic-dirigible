@@ -11,7 +11,7 @@ PATH_ACW_ONSET = ../acw_onset_and_markets/doc/
 
 CHAP_BONDS_BTL_RNW = Bonds_and_Battles.Rnw
 CHAP_BONDS_BTL_TEX = $(CHAP_BONDS_BTL_RNW:%.Rnw=%.tex)
-PATH_BONDS_BTL = ./bonds_and_battles/
+PATH_BONDS_BTL = ../bonds_and_battles/
 
 CHAP_DLM_RNW = changepoints.Rnw
 CHAP_DLM_TEX = $(CHAP_DLM_RNW:%.Rnw=%.tex)

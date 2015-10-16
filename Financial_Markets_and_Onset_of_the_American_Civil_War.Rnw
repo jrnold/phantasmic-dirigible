@@ -182,7 +182,7 @@ Yields to maturity are calculated for all issues, and the yield to maturity corr
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_all-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_all-1")}}
 \caption{Yields on U.S. government and state bonds, \Sexpr{date_bdy(DATE_PRICES_START)}--\Sexpr{date_bdy(DATE_WAR_START_END)}}
 \label{fig:yields_all}
 \end{figure}
@@ -190,7 +190,7 @@ Yields to maturity are calculated for all issues, and the yield to maturity corr
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_election-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_election-1")}}
 \caption[Yields on U.S. government and state bonds around the Presidential Election of 1860]{
   Yields on U.S. government and state bonds around the Presidential Election of 1860.
   The vertical lines indicate the date of the election, November 6, 1860.
@@ -200,7 +200,7 @@ Yields to maturity are calculated for all issues, and the yield to maturity corr
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_sumter-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_sumter-1")}}
 \caption[Yields to maturity of U.S. government and state bonds before and after the Battle of Fort Sumter.]{
   Yields to maturity of U.S. government and state bonds before and after the Battle of Fort Sumter.
   The vertical lines indicate the date when news of the surrender of Fort Sumter reaches New York, April 15, 1861.
@@ -316,14 +316,14 @@ The reaction of the market to the Battle of Fort Sumter also implies that the ma
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_regions-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_yields_regions-1")}}
 \caption{Yields of U.S. government and state bonds, by region, \Sexpr{date_bdy(DATE_PRICES_START)} to \Sexpr{date_bdy(DATE_WAR_START_END)}.}
 \label{fig:yields_regions}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_north_south_spreads-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_north_south_spreads-1")}}
 \caption[Yield spread between Southern and Northern state bonds]{
   Yield spread between Southern and Northern state bonds.
   The line is the posterior mean, the dark ribbon is the 50\% credible interval, the light ribbon is the 95\% credible interval.
@@ -485,14 +485,14 @@ Nevertheless, the overall pattern between the results is similar.
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_prwar1-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_prwar1-1")}}
   \caption{Implied probabilities of the initiation of war calculated from each Southern and Border state bond, \Sexpr{DATEFMT_RANGE_START} to \Sexpr{DATEFMT_RANGE_END}.}
   \label{fig:prwar1}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics{\Sexpr{file.path(PROJECT_DIR, "figures/fig_prwar2-1")}}
+  \includegraphics[width=\textwidth]{\Sexpr{file.path(PROJECT_DIR, "figures/fig_prwar2-1")}}
   \caption[Implied probabilities of the initiation of war calculated from a latent variable model of the prices U.S. government and Southern and border state bonds, \Sexpr{DATEFMT_RANGE_START} to \Sexpr{DATEFMT_RANGE_END}, using the model described in section \ref{sec:probability-war}]{
     Implied probabilities of the initiation of war calculated from a latent variable model of the prices U.S. government and Southern and border state bonds, \Sexpr{DATEFMT_RANGE_START} to \Sexpr{DATEFMT_RANGE_END}, using the model described in section \ref{sec:probability-war}.
     The line is the posterior mean, the dark ribbon is the 50\% credible interval, the light ribbon is the 95\% credible interval.
