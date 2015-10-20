@@ -580,12 +580,12 @@ However, it is more likely that these yields are largely reflecting expectations
 \begin{figure}[!htpb]
   \centering
   \begin{subfigure}[t]{\linewidth}
-   \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fives1874_price-1}
+   \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fives1874_price-1}
   \caption{Price in gold dollars. Par value is \$100.}
   \label{bonds:fig:fives1874_price}
 \end{subfigure}
 \begin{subfigure}[t]{\linewidth}
-   \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fives1874_yield-1}
+   \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fives1874_yield-1}
   \caption{Yield to maturity.}
   \label{bonds:fig:fives1874_yield}
 \end{subfigure}
@@ -598,13 +598,13 @@ During the American Civil War, the yields are variable, spiking in the middle of
 
 \begin{figure}[!htpb]
   \begin{subfigure}[t]{0.45\linewidth}
-    \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fives1874_greenback_price-1}
+    \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fives1874_greenback_price-1}
   \caption{Price in gold dollars for the Fives of 1874 compared to the price of Greenbacks, 1862-1865.}
   \label{bonds:fig:fives1874_greenbacks}
 \end{subfigure}%
 \hspace{0.1\linewidth}%
 \begin{subfigure}[t]{0.45\linewidth}
-    \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fives1874_union-1}
+    \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fives1874_union-1}
     \caption{Yield to maturity of the Fives of 1874 compared to other U.S. bonds.}
   \label{bonds:fig:fives1874_union}
 \end{subfigure}
@@ -621,7 +621,7 @@ During the American Civil War, the yields are variable, spiking in the middle of
 %% \label{bonds:fig:fives1874_south}
 %% \end{subfigure}
 \begin{subfigure}[t]{0.45\linewidth}
-  \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fives1874_graybacks-1}
+  \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fives1874_graybacks-1}
   \caption{Price in gold dollars of the Fives of 1874 compared to \$100 in Graybacks (Confederate currency).}
 \label{bonds:fig:fives1874_grayback}
 \end{subfigure}
@@ -647,7 +647,7 @@ Some work uses victory or defeat in battle \parencites{ReiterStam1998}{ReiterSta
 In this work, I quantify military combat in the American Civil War by focusing my analysis on a set of important battles, and define success in combat by the battle result: Union or Confederate victory.
 An advantage of this method is that it allows for the estimation of individual battle effects with fewer assumptions on which features of those battles relate to war outcomes.
 
-The battles used in this analysis are listed in Table~\ref{bonds:tab:battles}.
+The battles used in this analysis are listed in Tables~\ref{bonds:tab:battles_union} and \ref{bonds:tab:battles_confed}.
 This set of battles consists of those which the National Park Service's Civil War Sites Advisory Commission (CWSAC) classified as the most important of the war \parencite{CWSAC1993}.
 These data come from the 1993 CWSAC report, \textit{Civil War Sites Advisory Commission Report on the Nation's Civil War Battlefields} \parencites{CWSAC1993}{CWSAC1993b}.
 The CWSAC was a commission established in accordance with a 1990 law to preserve Civil War battlefields and was ``asked to identify the nation's historically significant Civil War sites; determine their relative importance; determine their condition; assess threats to their integrity; and recommend alternatives for preserving and interpreting them \parencite{CWSAC1993b}.''
@@ -674,7 +674,7 @@ That this set of battles is a subset of battles in the  American Civil War is la
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fig_major_battles-1}
+  \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fig_major_battles-1}
   \caption{Dates of major battles of the American Civil War and their outcomes}
   \label{bonds:fig:major_battles}
 \end{figure}
@@ -693,9 +693,9 @@ Figure~\ref{bonds:fig:major_battles} plots the date and outcomes of these battle
 In the analysis, I will not explicitly include casualty or force size data.
 By selecting on the most militarily significant battles, I have already effectively selected those battles with the highest casualties and force sizes.
 
-\input{../bonds_and_battles//paper/tex/tab_major_battles_union.tex}
+\input{./bonds_and_battles//paper/tex/tab_major_battles_union.tex}
 
-\input{../bonds_and_battles//paper/tex/tab_major_battles_confed.tex}
+\input{./bonds_and_battles//paper/tex/tab_major_battles_confed.tex}
 
 In order to estimate the effects of these battles on bond yields, I need the days on which the New York market received news about these battles.
 These are not the same as the dates of the battle, because news reaches the market with a lag.
@@ -775,7 +775,7 @@ In model $\Model{2}$, $\delta_{t}$ includes the effects of Confederate and Union
               0 & \text{otherwise}
             \end{cases}
 \end{align}
-where $B$ is the set of all battles in the data, see Table \ref{bonds:tab:battles}.
+where $B$ is the set of all battles in the data, see Tables~\ref{bonds:tab:battles_union} and \ref{bonds:tab:battles_confed}.
 In this model, all Confederate victories have the same effect on the yield, and all Union victories have the same effect on the yield. 
 In other words, given their result, battles are exchangeable.
 The parameters $\beta_{C}$ and $\beta_{U}$ are the average effects of Confederate and Union victories.
@@ -872,7 +872,7 @@ The rate of consols is inappropriate for this analysis because that risk free in
 \begin{table}
   \centering
   \small
-  \input{../bonds_and_battles//paper/tex/avg_battle_result.tex}
+  \input{./bonds_and_battles//paper/tex/avg_battle_result.tex}
   \caption{Summary statistics of the posterior distribution of the average effects of Confederate and Union victories on log-yields.}
   \label{bonds:tab:avg_battle_effects}
 \end{table}
@@ -934,7 +934,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fig_btl_effects-1}
+  \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fig_btl_effects-1}
   \caption[Battle effects, $\omega_{b}$, for all battles for all models]{Battle effects, $\omega_{b}$, for all battles for all models.
     These are ordered by end date of the battle.
     Union victories are in dark blue.
@@ -945,7 +945,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics[scale=0.9]{../bonds_and_battles//paper/figure/fig_btl_effects_ordered-1}  
+  \includegraphics[scale=0.9]{./bonds_and_battles//paper/figure/fig_btl_effects_ordered-1}  
   \caption[Battle effects, $\omega_{b}$, for model $\Model{3}$.]{
     Battle effects, $\omega_{b}$, for model $\Model{3}$.
     These are ordered from largest to smallest.
@@ -957,7 +957,7 @@ The Union victory with the largest estimated effect is the Second Battle of Fort
 
 \begin{figure}[!htpb]
   \centering
-  \includegraphics[width=\textwidth]{../bonds_and_battles//paper/figure/fig_btl_effects_time-1}  
+  \includegraphics[width=\textwidth]{./bonds_and_battles//paper/figure/fig_btl_effects_time-1}  
   \caption{Battle effects, $\omega_{b}$, for all battles for model $\Model{4}$, by battle result.}
   \label{bonds:fig:btl_effects_time}
 \end{figure}
@@ -1000,7 +1000,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 
 \begin{table}[!htpb]
   \centering
-  \input{../bonds_and_battles//paper/tex/tab_waic.tex}
+  \input{./bonds_and_battles//paper/tex/tab_waic.tex}
   \caption[Comparison of models using WAIC and RMSE]{
     Comparison of models using WAIC and RMSE.
     RMSE is the root mean squared error of each model.
@@ -1012,7 +1012,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 
 \begin{table}[!htpb]
   \centering
-  \input{../bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
+  \input{./bonds_and_battles//paper/tex/tab_btl_effects_size.tex}
   \caption{The posterior mean of the average effect of Confederate and Union victories relative to the standard deviation of the innovations, $\eta$.}
   \label{bonds:tab:blt_effects_size}
 \end{table}
@@ -1093,7 +1093,7 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  Schwab1901 Weidenmier2002 BurdekinLangdana1993 sumter
 %  LocalWords:  DavisPecquet1990 BrownBurdekin2000 Roll1972 Weiss1966
 %  LocalWords:  OosterlinckWeidenmier2007 generalizability Poast2012
-%  LocalWords:  Fuller1956a multimanned kalyvas2010inter Bayley1882
+%  LocalWords:  Fuller1956a multimanned kalyvas2010inter Bayley1882 '
 %  LocalWords:  BoltZanden2013 GoldinLewis1975 McPherson2003 maxdate
 %  LocalWords:  hacker2011census Livermore1900 DeKnight1900 Dewey1918
 %  LocalWords:  Treasury1863 HomerSylla2005 fives1874 Elder1863 Sixes
@@ -1119,9 +1119,9 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  HoffmanGelman2014a Fuller1942a Watanabe2010 AIC DIC
 %  LocalWords:  GelmanHwangVehtari2014a GelmanVehtari2014a 1L von
 %  LocalWords:  Clausewitz1989 Gartner1998 NorthWeingast1989 uring
-%  LocalWords:  sussman2000instit wells2000revol Herron2000
+%  LocalWords:  sussman2000instit wells2000revol Herron2000 20's 40's
 %  LocalWords:  eldor2004finan Greenstone2007 Schwartz1900 Fruehwirth
-%  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000
+%  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000 30's
 %  LocalWords:  HaberMitchenerOosterlinckEtAl2014 Schnatter1994
 %%  LocalWords:  CarterKohn1994 Blainey1988 BankersMagazine1862
 %  LocalWords:  BankersMagazine1860

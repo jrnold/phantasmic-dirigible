@@ -658,7 +658,7 @@ Some work uses victory or defeat in battle \parencites{ReiterStam1998}{ReiterSta
 In this work, I quantify military combat in the American Civil War by focusing my analysis on a set of important battles, and define success in combat by the battle result: Union or Confederate victory.
 An advantage of this method is that it allows for the estimation of individual battle effects with fewer assumptions on which features of those battles relate to war outcomes.
 
-The battles used in this analysis are listed in Table~\ref{tab:battles}.
+The battles used in this analysis are listed in Tables~\ref{tab:battles_union} and \ref{tab:battles_confed}.
 This set of battles consists of those which the National Park Service's Civil War Sites Advisory Commission (CWSAC) classified as the most important of the war \parencite{CWSAC1993}.
 These data come from the 1993 CWSAC report, \textit{Civil War Sites Advisory Commission Report on the Nation's Civil War Battlefields} \parencites{CWSAC1993}{CWSAC1993b}.
 The CWSAC was a commission established in accordance with a 1990 law to preserve Civil War battlefields and was ``asked to identify the nation's historically significant Civil War sites; determine their relative importance; determine their condition; assess threats to their integrity; and recommend alternatives for preserving and interpreting them \parencite{CWSAC1993b}.''
@@ -786,7 +786,7 @@ In model $\Model{2}$, $\delta_{t}$ includes the effects of Confederate and Union
               0 & \text{otherwise}
             \end{cases}
 \end{align}
-where $B$ is the set of all battles in the data, see Table \ref{tab:battles}.
+where $B$ is the set of all battles in the data, see Tables~\ref{tab:battles_union} and \ref{tab:battles_confed}.
 In this model, all Confederate victories have the same effect on the yield, and all Union victories have the same effect on the yield. 
 In other words, given their result, battles are exchangeable.
 The parameters $\beta_{C}$ and $\beta_{U}$ are the average effects of Confederate and Union victories.
@@ -1104,7 +1104,7 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  Schwab1901 Weidenmier2002 BurdekinLangdana1993 sumter
 %  LocalWords:  DavisPecquet1990 BrownBurdekin2000 Roll1972 Weiss1966
 %  LocalWords:  OosterlinckWeidenmier2007 generalizability Poast2012
-%  LocalWords:  Fuller1956a multimanned kalyvas2010inter Bayley1882
+%  LocalWords:  Fuller1956a multimanned kalyvas2010inter Bayley1882 '
 %  LocalWords:  BoltZanden2013 GoldinLewis1975 McPherson2003 maxdate
 %  LocalWords:  hacker2011census Livermore1900 DeKnight1900 Dewey1918
 %  LocalWords:  Treasury1863 HomerSylla2005 fives1874 Elder1863 Sixes
@@ -1130,9 +1130,9 @@ This sort of analysis, which combines natural language processing to generate ev
 %  LocalWords:  HoffmanGelman2014a Fuller1942a Watanabe2010 AIC DIC
 %  LocalWords:  GelmanHwangVehtari2014a GelmanVehtari2014a 1L von
 %  LocalWords:  Clausewitz1989 Gartner1998 NorthWeingast1989 uring
-%  LocalWords:  sussman2000instit wells2000revol Herron2000
+%  LocalWords:  sussman2000instit wells2000revol Herron2000 20's 40's
 %  LocalWords:  eldor2004finan Greenstone2007 Schwartz1900 Fruehwirth
-%  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000
+%  LocalWords:  ArrowForsytheGorhamEtAl2008 Weidenmier2000 30's
 %  LocalWords:  HaberMitchenerOosterlinckEtAl2014 Schnatter1994
 %%  LocalWords:  CarterKohn1994 Blainey1988 BankersMagazine1862
 %  LocalWords:  BankersMagazine1860
