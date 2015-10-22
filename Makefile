@@ -29,9 +29,14 @@ RSCRIPT = Rscript
 
 ## Rules
 
-default : doc
+default : doc 
 
-doc: $(PDF_FILE)
+doc: $(PDF_FILE) abstract
+
+abstract: abstract.txt
+
+abstract.txt: abstract.tex
+	pandoc -f latex -t plain -o $@ $^
 
 $(TEX_FILE): $(RNW_FILE)
 	$(RSCRIPT) -e 'knitr::knit("$<", output = "$@")'
