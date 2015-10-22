@@ -23,6 +23,8 @@
 
 \usepackage{tikz}
 
+\usepackage[all]{nowidow}
+
 \usepackage[]{xcolor}
 \definecolor{light-gray}{gray}{0.66}
 \definecolor{dkred}{rgb}{0.5,0,0}
@@ -123,7 +125,9 @@
 \newcommand{\mylocation}{Rochester, New York}
 \newcommand{\mytitle}{Three Essays on Conflict and Financial Markets, and Political Methodology}
 \newcommand{\myadvisor}{Randall Stone}
-\newcommand{\myyear}{2016}
+\newcommand{\myyear}{2015}
+
+\renewcommand*\contentsname{Table of Contents}
 
 \addbibresource{../bib/jrnold.bib}
 

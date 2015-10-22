@@ -742,9 +742,9 @@ In these models, I use the logarithm of the yield since Figure \ref{bonds:fig:fi
 All of these models are of the form,
 \begin{align}
   \label{bonds:eq:6}
-  \log y_{t} &= y^{*}_{t} + \epsilon_{t} & \epsilon_{t} &\sim \dnorm{0, \tau^{2}} & \text{if $y_t$ not missing} \\
+  \log y_{t} &= y^{*}_{t} + \epsilon_{t} , & \epsilon_{t} &\sim \dnorm{0, \tau^{2}} & \text{if $y_t$ not missing,} \\
   \label{bonds:eq:1}
-  y^{*}_{t} &= y^{*}_{t - 1} + \delta_{t} + \eta_{t} & \eta_{t} &\sim \dt{5}{0, \sigma}
+  y^{*}_{t} &= y^{*}_{t - 1} + \delta_{t} + \eta_{t}, & \eta_{t} &\sim \dt{5}{0, \sigma} ,
 \end{align}
 for days $t = 1, \dots, T$.
 Equation~\eqref{bonds:eq:6} states that the observed log-yields consist of a latent log-yield ($y^{*}_{t})$ and measurement error ($\epsilon_{t}$).
@@ -763,16 +763,16 @@ In this section, I estimate four models which differ in how $\delta_{t}$ is defi
 \end{itemize}
 Model $\Model{1}$ includes no battle effects, $\delta_{t} = 0$ for all $t$.
 In the other models, $\delta_{t}$ is non-zero and time-varying, and is a function of battle outcomes, but these models differ how battles are modeled.
-In model $\Model{2}$, $\delta_{t}$ includes the effects of Confederate and Union victories.
+In model $\Model{2}$, $\delta_{t}$ includes the effects of Confederate and Union victories:
 \begin{align}
   \label{bonds:eq:2}
-  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}'  \\
-  X_{t, 1} &= \sum_{b \in B} W_{t,b} && \text{if $b$ is a Confederate victory} \\
-  X_{t, 2} &= \sum_{b \in B} W_{t,b} && \text{if $b$ is a Union victory} \\
+  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}' ,  \\
+  X_{t, 1} &= \sum_{b \in B} W_{t,b} \qquad  \text{if $b$ is a Confederate victory,} \\
+  X_{t, 2} &= \sum_{b \in B} W_{t,b} \qquad  \text{if $b$ is a Union victory,} \\
   W_{b,t} &= 
             \begin{cases}
-              \frac{1}{n_{b}} & \text{If news of battle $b$ reached the market on day $t$.} \\
-              0 & \text{otherwise}
+              \frac{1}{n_{b}} & \text{if news of battle $b$ reached the market on day $t$,} \\
+              0 & \text{otherwise.}
             \end{cases}
 \end{align}
 where $B$ is the set of all battles in the data, see Tables~\ref{bonds:tab:battles_union} and \ref{bonds:tab:battles_confed}.
@@ -791,9 +791,9 @@ Finally, $\alpha$ is a parameter representing a constant trend in yields not due
 In model $\Model{3}$, $\delta$ also includes random effects for each battle,
 \begin{align}
   \label{bonds:eq:10}
-  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}' + W_{t} \gamma \\
+  \delta_{t} &= \alpha + X_{t} \begin{bmatrix}\beta_{C} & \beta_{U}\end{bmatrix}' + W_{t} \gamma , \\
   \label{bonds:eq:12}
-  \gamma_{b} &\sim \dt{7}{0, \zeta^{2}}
+  \gamma_{b} &\sim \dt{7}{0, \zeta^{2}} ,
 \end{align}
 where $\alpha$ and $\beta$ have the same meaning as in $\Model{2}$, and $\gamma$ is a $|B| \times 1$ vector with random effects for each battle.
 The random effects, $\gamma$, are given a Student's $t$ distribution since it is expected that a few battles will have particularly large effects.
@@ -801,25 +801,25 @@ The effect of an individual battle is the sum of its result (Confederate or Unio
 \begin{align}
   \omega_{b} =
   \begin{cases}
-    \beta_{C} + \gamma_{b} & \text{if $b$ is a Confederate victory} \\
-    \beta_{U} + \gamma_{b} & \text{if $b$ is a Union victory}
+    \beta_{C} + \gamma_{b} & \text{if $b$ is a Confederate victory,} \\
+    \beta_{U} + \gamma_{b} & \text{if $b$ is a Union victory.}
   \end{cases}
 \end{align}
 
 In model $\Model{4}$, the effect of each battle, $\omega_{b}$, is shrunk towards both the average effect of its result and and the effect of the previous previous battle of the same result.
-This is equivalent to a model in which the effects of Confederate and Union victories are smoothly time-varying with an $AR(1)$ process.%
+This is equivalent to a model in which the effects of Confederate and Union victories are varying with an $AR(1)$ process,%
 \footnote{
    $\omega_{C,t} \sim N(\beta_{t,C}, \zeta^{2}) N(\omega_{C,t-1}, \xi^{2}) = N((1 - \rho) \beta_{C} + \rho \omega_{C,t-1}, \rho \zeta^{2})$, where $\rho = \frac{\xi^{2}}{\xi^{2} + \zeta^{2}}$.
 }
 \begin{align}
   \label{bonds:eq:11}
-  \delta_{t} &= \alpha + W_{C,t} \omega_{C} + W_{U,t} \omega_{U} \\
-  \omega_{C,b} & \sim \dnorm{(1 - \rho) \beta_{C} + \rho \omega_{C,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, C\}$} \\
-  \omega_{C,1} & \sim \dnorm{ \beta_{C}, \zeta^{2}} \\
-  \omega_{U,b} & \sim \dnorm{(1 - \rho) \beta_{U} + \rho \omega_{U,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, U \}$} \\
-  \omega_{U,1} & \sim \dnorm{ \beta_{U}, \zeta^{2}}
+  \delta_{t} &= \alpha + W_{C,t} \omega_{C} + W_{U,t} \omega_{U} , \\
+  \omega_{C,b} & \sim \dnorm{(1 - \rho) \beta_{C} + \rho \omega_{C,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, C\}$} , \\
+  \omega_{C,1} & \sim \dnorm{ \beta_{C}, \zeta^{2}} , \\
+  \omega_{U,b} & \sim \dnorm{(1 - \rho) \beta_{U} + \rho \omega_{U,b-1}, \rho \zeta^{2}} & \text{for $b \in \{2, \dots, U \}$} , \\
+  \omega_{U,1} & \sim \dnorm{ \beta_{U}, \zeta^{2}} ,
 \end{align}
-Where $C$ is the number of Confederate victories, $U$ is the number of Union victories.
+where $C$ is the number of Confederate victories, $U$ is the number of Union victories.
 The Confederate and Union victories are ordered by their dates.
 For Confederate victories, the first battle was First Bull Run (July 21, 1861), and the last was the Crater (July 30, 1864).
 For Union victories, the first battle was Fort Donelson (February 11--16, 1862), and the last was Appomattox Court House (April 9, 1865).
@@ -1031,7 +1031,7 @@ I conclude this work by discussing one such approach in Section \ref{sec:conclus
 % \end{figure}
 
 
-\section{Discussion}
+\section{Conclusion}
 \label{sec:conclusion}
 
 I conclude by discussing a few surpising results, how those results relate to the bargaining theory of war, and some thoughts on future directions for this research and research combining war data and financial market data.
