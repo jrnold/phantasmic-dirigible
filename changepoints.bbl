@@ -1,0 +1,1975 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Arnold2015c}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f37929ddb55feb1058579820a0b35c07}{Arnold}{A\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f37929ddb55feb1058579820a0b35c07}
+      \strng{fullhash}{f37929ddb55feb1058579820a0b35c07}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2015}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{{Dynamic Linear Model Functions in Stan}}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://dx.doi.org/10.6084/m9.figshare.1553209
+      \endverb
+    \endentry
+    \entry{BaiPerron1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{Bai}{B\bibinitperiod}{Jushan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=59c1c7b3feccde623cd486dbd1fcc6fb}{Perron}{P\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {The Econometric Society}%
+      }
+      \strng{namehash}{f7ff9484293c40289f72b3b9f278a840}
+      \strng{fullhash}{f7ff9484293c40289f72b3b9f278a840}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper considers issues related to multiple structural changes, occurring at unknown dates, in the linear regression model estimated by least squares. The main aspects are the properties of the estimators, including the estimates of the break dates, and the construction of tests that allow inference to be made about the presence of structural change and the number of breaks. We consider the general case of a partial structural change model where not all parameters are subject to shifts. We study both fixed and shrinking magnitudes of shifts and obtain the rates of convergence for the estimated break fractions. We also propose a procedure that allows one to test the null hypothesis of, say, l changes, versus the alternative hypothesis of l + 1 changes. This is particularly useful in that it allows a specific to general modeling strategy to consistently determine the appropriate number of changes present. An estimation strategy for which the location of the breaks need not be simultaneously determined is discussed. Instead, our method successively estimates each break point.}
+      \field{issn}{00129682}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Estimating and Testing Linear Models with Multiple Structural Changes}
+      \field{volume}{66}
+      \field{year}{1998}
+      \field{pages}{47\bibrangedash 78}
+      \range{pages}{32}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2998540
+      \endverb
+    \endentry
+    \entry{BaiPerron2003a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0dc94d98f7e1729d400a45f4d532e4a4}{Bai}{B\bibinitperiod}{Jushan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=59c1c7b3feccde623cd486dbd1fcc6fb}{Perron}{P\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd.}%
+      }
+      \strng{namehash}{f7ff9484293c40289f72b3b9f278a840}
+      \strng{fullhash}{f7ff9484293c40289f72b3b9f278a840}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In a recent paper, Bai and Perron (1998) considered theoretical issues related to the limiting distribution of estimators and test statistics in the linear model with multiple structural changes. In this companion paper, we consider practical issues for the empirical applications of the procedures. We first address the problem of estimation of the break dates and present an efficient algorithm to obtain global minimizers of the sum of squared residuals. This algorithm is based on the principle of dynamic programming and requires at most least-squares operations of order O(T2) for any number of breaks. Our method can be applied to both pure and partial structural change models. Second, we consider the problem of forming confidence intervals for the break dates under various hypotheses about the structure of the data and the errors across segments. Third, we address the issue of testing for structural changes under very general conditions on the data and the errors. Fourth, we address the issue of estimating the number of breaks. Finally, a few empirical applications are presented to illustrate the usefulness of the procedures. All methods discussed are implemented in a GAUSS program. Copyright Â© 2002 John Wiley & Sons, Ltd.}
+      \field{issn}{1099-1255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{1}
+      \field{title}{Computation and analysis of multiple structural change models}
+      \field{volume}{18}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1002/jae.659
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/jae.659
+      \endverb
+    \endentry
+    \entry{Balke1993}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eec4692e1f5f84d7fc3bed2a1f6239ed}{Balke}{B\bibinitperiod}{Nathan\bibnamedelima S.}{N\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{eec4692e1f5f84d7fc3bed2a1f6239ed}
+      \strng{fullhash}{eec4692e1f5f84d7fc3bed2a1f6239ed}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article demonstrates the difficulty that traditional outlier detection methods, such as that of Tsay, have in identifying level shifts in time series. Initializing the outlier/level-shift search with an estimated autoregressive moving average model lowers the power of the level-shift detection statistics. Furthermore, the rule employed by these methods for distinguishing between level shifts and innovation outliers does not work well in the presence of level shifts. A simple modification to Tsay's procedure is proposed that improves the ability to correctly identify level shifts. This modification is relatively easy to implement and appears to be quite effective in practice.}
+      \field{issn}{07350015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Detecting Level Shifts in Time Series}
+      \field{volume}{11}
+      \field{year}{1993}
+      \field{pages}{81\bibrangedash 92}
+      \range{pages}{12}
+      \verb{url}
+      \verb http://www.jstor.org/stable/1391308
+      \endverb
+    \endentry
+    \entry{BarryHartigan1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f2b90517d390d046bf2dd04b21aba70a}{Barry}{B\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=43b759b86a689894a2d9edfdb9956136}{Hartigan}{H\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{1be395a1d4cca7ed28f02ee936a3ef7c}
+      \strng{fullhash}{1be395a1d4cca7ed28f02ee936a3ef7c}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A sequence of observations undergoes sudden changes at unknown times. We model the process by supposing that there is an underlying sequence of parameters partitioned into contiguous blocks of equal parameter values; the beginning of each block is said to be a change point. Observations are then assumed to be independent in different blocks given the sequence of parameters. In a Bayesian analysis it is necessary to give probability distributions to both the change points and the parameters. We use product partition models (Barry and Hartigan 1992), which assume that the probability of any partition is proportional to a product of prior cohesions, one for each block in the partition, and that given the blocks the parameters in different blocks have independent prior distributions. Given the observations a new product partition model holds, with posterior cohesions for the blocks and new independent block posterior distributions for parameters. The product model thus provides a convenient machinery for allowing the data to weight the partitions likely to hold; inference about particular parameters may then be made by first conditioning on the partition, and then averaging over all partitions. The parameter values may be estimated exactly in O(n3) calculations, or to an adequate approximation by Markov sampling techniques that are O(n) in the number of observations. The Markov sampling computations are thus practicable for long sequences. We compare this model with a number of alternative approaches to fitting change points and parameters when the error distribution is normal, then show that the proposed method is superior to the alternatives in detecting sharp short-lived changes in the parameters.}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{421}
+      \field{title}{A Bayesian Analysis for Change Point Problems}
+      \field{volume}{88}
+      \field{year}{1993}
+      \field{pages}{309\bibrangedash 319}
+      \range{pages}{11}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2290726
+      \endverb
+    \endentry
+    \entry{Beck1989}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d5148cebb18611ce1c74228c4b3f0567}{Beck}{B\bibinitperiod}{Nathaniel}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d5148cebb18611ce1c74228c4b3f0567}
+      \strng{fullhash}{d5148cebb18611ce1c74228c4b3f0567}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Kalman filter is useful to estimate dynamic models via maximum likelihood. To do this the model must be set up in state space form. This article shows how various models of interest can be set up in that form. Models considered are Auto Regressive-Moving Average (ARMA) models with measurement error and dynamic factor models.The filter is used to estimate models of presidential approval. A test of rational expectations in approval shows the hypothesis not to hold. The filter is also used to deal with missing approval data and to study whether interpolation of missing data is an adequate technique. Finally, a dynamic factor analysis of government entrepreneurial activity is performed.Appendices go through the mathematical details of the filter and show how to implement it in the computer language GAUSS.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{1}
+      \field{title}{Estimating Dynamic Models Using Kalman Filtering}
+      \field{volume}{1}
+      \field{year}{1989}
+      \field{pages}{121\bibrangedash 156}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1093/pan/1.1.121
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/1/1/121.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/1/1/121.abstract
+      \endverb
+    \endentry
+    \entry{BhadraDattaPolsonEtAl2015a}{article}{}
+      \name{author}{4}{}{%
+        {{hash=39645fcd762d9023dd44509ce470db5b}{Bhadra}{B\bibinitperiod}{Anindya}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c7ee133e4144e23e130ce234247c0b64}{Datta}{D\bibinitperiod}{Jyotishka}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=e6d816090e0a890988688fddb59370ee}{Willard}{W\bibinitperiod}{Brandon}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{11fdf2dc630358c42ce8241a2908fee6}
+      \strng{fullhash}{db83dfa14cef469b4d8eafb5e71a5e4e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2015}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a new prior for ultra-sparse signal detection that we term the "horseshoe+ prior." The horseshoe+ prior is a natural extension of the horseshoe prior that has achieved success in the estimation and detection of sparse signals and has been shown to possess a number of desirable theoretical properties while enjoying computational feasibility in high dimensions. The horseshoe+ prior builds upon these advantages. Our work proves that the horseshoe+ posterior concentrates at a rate faster than that of the horseshoe in the Kullback-Leibler (K-L) sense. We also establish theoretically that the proposed estimator has lower posterior mean squared error in estimating signals compared to the horseshoe and achieves the optimal Bayes risk in testing up to a constant. For global-local scale mixture priors, we develop a new technique for analyzing the marginal sparse prior densities using the class of Meijer-G functions. In simulations, the horseshoe+ estimator demonstrates superior performance in a standard design setting against competing methods, including the horseshoe and Dirichlet-Laplace estimators. We conclude with an illustration on a prostate cancer data set and by pointing out some directions for future research.}
+      \field{month}{02}
+      \field{title}{The Horseshoe+ Estimator of Ultra-Sparse Signals}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1502.00560
+      \endverb
+    \endentry
+    \entry{Blackwell2012}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=a9988d169687d11b617687aa619c3221}{Blackwell}{B\bibinitperiod}{Matthew}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a9988d169687d11b617687aa619c3221}
+      \strng{fullhash}{a9988d169687d11b617687aa619c3221}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2012}
+      \field{labelmonth}{10}
+      \field{labelday}{23}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I introduce a Bayesian model for detecting changepoints in a time-series of contributions to candidates over the course of a campaign. this game-changers model is ideal for campaign contributions data because it allows for overdispersion, a key feature of contributions data. Furthermore, while many extant changepoint models force researchers to choose the number of changepoint ex ante, the game-changers model incorporates a Dirichlet process prior in order to estimate the number of changepoints along with their location. I demonstrate the usefulness of the model in data from the the Republican primary and the U.S. Senate elections.}
+      \field{day}{23}
+      \field{month}{10}
+      \field{title}{Game-changers: Detecting shifts in the Flow of campaign contributions}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.mattblackwell.org/files/papers/gamechangers.pdf
+      \endverb
+    \endentry
+    \entry{Buethe2002a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d70a3ce5fd5aa53659b95c27ad792844}{Büthe}{B\bibinitperiod}{Tim}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d70a3ce5fd5aa53659b95c27ad792844}
+      \strng{fullhash}{d70a3ce5fd5aa53659b95c27ad792844}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2002}
+      \field{labelmonth}{9}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Social scientists interested in explaining historical processes can, indeed should, refuse the choice between modeling causal relationships and studying history. Identifying temporality as the defining characteristic of processes that can be meaningfully distinguished as âhistory,â I show that modeling such phenomena engenders particular difficulties but is both possible and fruitful. Narratives, as a way of presenting empirical information, have distinctive strengths that make them especially suited for historical scholarship, and structuring the narratives based on the model allows us to treat them as data on which to test the model. At the same time, this use of narratives raises methodological problems not identified in recent debates. I specify these problems, analyze their implications, and suggest ways of solving or minimizing them. There is no inherent incompatibility betweenâbut much potential gain fromâmodeling history and using historical narratives as data.}
+      \field{issn}{1537-5943}
+      \field{issue}{03}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{9}
+      \field{title}{Taking Temporality Seriously: Modeling History and the Use of Narratives as Evidence}
+      \field{volume}{null}
+      \field{year}{2002}
+      \field{pages}{481\bibrangedash 493}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1017/S0003055402000278
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0003055402000278
+      \endverb
+    \endentry
+    \entry{CalderiaZorn1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=067be52717a1406ff7cc6db6392b4c86}{Calderia}{C\bibinitperiod}{Gregory\bibnamedelima A.}{G\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=e5563f3565efb15af569e042a53a7919}{Zorn}{Z\bibinitperiod}{Christopher\bibnamedelimb J.\bibnamedelimi W.}{C\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Midwest Political Science Association}%
+      }
+      \strng{namehash}{b9cbd7e2adccee29e3047def86306fec}
+      \strng{fullhash}{b9cbd7e2adccee29e3047def86306fec}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Theory: We argue that levels of concurrence and dissent on the U.S. Supreme Court are functions of "consensual norms." These norms arise from, and are influenced by, the behaviors of the individual justices, including the actions of the chief justices. In turn, they cause concurrences and dissents to fluctuate around a common level. Hypotheses: If consensual norms are a substantial influence on the behavior of the Court, the long-run extent of concurrence and dissent on the Court will covary substantially, and will do so to varying degrees under different chief justices. Methods: To test our hypotheses, we use cointegration and error-correction analyses of the number of Supreme Court cases from 1800 to 1991 with concurring and dissenting opinions. Because of the dramatic increase in concurrences and dissents during the 1940s, we make use of recently-developed methods for detecting cointegrating relationships in the presence of structural breaks. Results: Consistent with our expectations, dissents and concurrences move together over time; thus consensual norms appear to influence substantially both concurrences and dissents on the Court. The effects of such norms vary in the long term under different Chief Justices.}
+      \field{issn}{00925853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Of Time and Consensual Norms in the Supreme Court}
+      \field{volume}{42}
+      \field{year}{1998}
+      \field{pages}{874\bibrangedash 902}
+      \range{pages}{29}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2991733
+      \endverb
+    \endentry
+    \entry{CarpenterGelmanHoffmanEtAl2015a}{article}{}
+      \name{author}{10}{}{%
+        {{hash=5321a7ac2b0407bc405fa8816fd73f09}{Carpenter}{C\bibinitperiod}{Bob}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=2eea63d267ed5f1cce621438ec43fcdf}{Hoffman}{H\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=fb04571d965766ee6d71dafbd3eb452e}{Lee}{L\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9cc812cde8c441e79dfaab4955a72c2c}{Goodrich}{G\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=53c17835486ed62e327c492f9d35e9e6}{Betancourt}{B\bibinitperiod}{Micahel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c4b056bb77c7a8fcd5e241195b29f6d0}{Brubaker}{B\bibinitperiod}{Marcus\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=ebc21d86180a6d1467322000963c2206}{Guo}{G\bibinitperiod}{Jiquiang}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=137297e0019ba55bca6f9b200782ae52}{Li}{L\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=56787895e048d6c0b29def629a7c0d0e}{Riddell}{R\bibinitperiod}{Allend}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{315a7c9e1cdeecc523de3b4d0e029d66}
+      \strng{fullhash}{f4a9b2afe42f0f23cef4896a6efdc3ed}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{?}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{title}{Stan: A Probabilistic Programming Language}
+      \field{volume}{?}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.stat.columbia.edu/~gelman/research/published/stan-paper-revision-feb2015.pdf
+      \endverb
+    \endentry
+    \entry{CarterKohn1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=916a516cbe958af18d4a219c75c186dc}{Carter}{C\bibinitperiod}{C.\bibnamedelimi K.}{C\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=dacf371dca0c3bceaa55d02b154936b9}{Kohn}{K\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c61d6ec3ae5d930a2c04c3eea136aadf}
+      \strng{fullhash}{c61d6ec3ae5d930a2c04c3eea136aadf}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SUMMARY We show how to use the Gibbs sampler to carry out Bayesian inference on a linear state space model with errors that are a mixture of normals and coefficients that can switch over time. Our approach simultaneously generates the whole of the state vector given the mixture and coefficient indicator variables and simultaneously generates all the indicator variables conditional on the state vectors. The states are generated efficiently using the Kalman filter. We illustrate our approach by several examples and empirically compare its performance to another Gibbs sampler where the states are generated one at a time. The empirical results suggest that our approach is both practical to implement and dominates the Gibbs sampler that generates the states one at a time.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{3}
+      \field{title}{On Gibbs sampling for state space models}
+      \field{volume}{81}
+      \field{year}{1994}
+      \field{pages}{541\bibrangedash 553}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1093/biomet/81.3.541
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/81/3/541.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/81/3/541.abstract
+      \endverb
+    \endentry
+    \entry{CarvalhoPolsonScott2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cea34ae4a46351c9319e53fb22311a60}{Carvalho}{C\bibinitperiod}{Carlos\bibnamedelima M.}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9cdd299fd2641b26a52be6226db32423}
+      \strng{fullhash}{9cdd299fd2641b26a52be6226db32423}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a general, fully Bayesian framework for sparse supervised-learning problems based on the horseshoe prior. The horseshoe prior is a member of the family of multivariate scale mixtures of normals, and is therefore closely related to widely used approaches for sparse Bayesian learning, including, among others, Laplacian priors (e.g. the LASSO) and Student-t priors (e.g. the relevance vector machine). The advantages of the horseshoe are its robustness at handling unknown sparsity and large outlying signals. These properties are justifed theoretically via a representation theorem and accompanied by comprehensive empirical experiments that compare its performance to benchmark alternatives.}
+      \field{journaltitle}{Journal of Machine Learning and Research: Workshop and Conference Proceedings}
+      \field{title}{Handling Sparsity via the Horseshoe}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{73\bibrangedash 80}
+      \range{pages}{8}
+    \endentry
+    \entry{CarvalhoPolsonScott2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cea34ae4a46351c9319e53fb22311a60}{Carvalho}{C\bibinitperiod}{Carlos\bibnamedelima M.}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9cdd299fd2641b26a52be6226db32423}
+      \strng{fullhash}{9cdd299fd2641b26a52be6226db32423}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a new approach to sparsity, called the horseshoe estimator, which arises from a prior based on multivariate-normal scale mixtures. We describe the estimator’s advantages over existing approaches, including its robustness, adaptivity to different sparsity patterns and analytical tractability. We prove two theorems: one that characterizes the horseshoe estimator’s tail robustness and the other that demonstrates a super-efficient rate of convergence to the correct estimate of the sampling density in sparse situations. Finally, using both real and simulated data, we show that the horseshoe estimator corresponds quite closely to the answers obtained by Bayesian model averaging under a point-mass mixture prior.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The horseshoe estimator for sparse signals}
+      \field{volume}{97}
+      \field{year}{2010}
+      \field{pages}{465\bibrangedash 480}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1093/biomet/asq017
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/97/2/465.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/97/2/465.abstract
+      \endverb
+    \endentry
+    \entry{ChanYauZhang2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d469a2e441caade576f8bf11ecbb1eb7}{Chan}{C\bibinitperiod}{Ngai\bibnamedelima Hang}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=5677aa6d8bfc1246ed251025541f2006}{Yau}{Y\bibinitperiod}{Chun\bibnamedelima Yip}{C\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+        {{hash=55088ae5102ceb670315c9a6780d5626}{Zhang}{Z\bibinitperiod}{Rong-Mao}{R\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{80d8ddbffe901eee8c9dce4776bca0e8}
+      \strng{fullhash}{80d8ddbffe901eee8c9dce4776bca0e8}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider a structural break autoregressive (SBAR) process where j = 1, â¦, m + 1, {t1, â¦, tm} are change-points, 1 = t0 < t1 < âââ < tm + 1 = n + 1, Ï( Â· ) is a measurable function on , and {Ïµt} are white noise with unit variance. In practice, the number of change-points m is usually assumed to be known and small, because a large m would involve a huge amount of computational burden for parameters estimation. By reformulating the problem in a variable selection context, the group least absolute shrinkage and selection operator (LASSO) is proposed to estimate an SBAR model when m is unknown. It is shown that both m and the locations of the change-points {t1, â¦, tm} can be consistently estimated from the data, and the computation can be efficiently performed. An improved practical version that incorporates group LASSO and the stepwise regression variable selection technique are discussed. Simulation studies are conducted to assess the finite sample performance. Supplementary materials for this article are available online.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{506}
+      \field{title}{Group LASSO for Structural Break Time Series}
+      \field{volume}{109}
+      \field{year}{2014}
+      \field{pages}{590\bibrangedash 599}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/01621459.2013.866566
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1080/01621459.2013.866566
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/01621459.2013.866566
+      \endverb
+    \endentry
+    \entry{Chib1998}{article}{}
+      \name{author}{1}{}{%
+        {{hash=25628966014266922faf57d7f25b3abd}{Chib}{C\bibinitperiod}{Siddhartha}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{25628966014266922faf57d7f25b3abd}
+      \strng{fullhash}{25628966014266922faf57d7f25b3abd}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides a new Bayesian approach for models with multiple change points. The centerpiece of the approach is a formulation of the change-point model in terms of a latent discrete state variable that indicates the regime from which a particular observation has been drawn. This state variable is specified to evolve according to a discrete-time discrete-state Markov process with the transition probabilities constrained so that the state variable can either stay at the current value or jump to the next higher value. This parameterization exactly reproduces the change point model. The model is estimated by Markov chain Monte Carlo methods using an approach that is based on Chib (1996). This methodology is quite valuable since it allows for the fitting of more complex change point models than was possible before. Methods for the computation of Bayes factors are also developed. All the techniques are illustrated using simulated and real data sets.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{2}
+      \field{title}{Estimation and comparison of multiple change-point models}
+      \field{volume}{86}
+      \field{year}{1998}
+      \field{pages}{221\bibrangedash 241}
+      \range{pages}{21}
+      \verb{doi}
+      \verb DOI: 10.1016/S0304-4076(97)00115-2
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6VC0-3VM1XM5-2/2/469ee3cba827365611dee3677f0babc6
+      \endverb
+    \endentry
+    \entry{Cobb1978}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f419d95b92a7994e95f1bf7bbc1ae023}{Cobb}{C\bibinitperiod}{George\bibnamedelima W.}{G\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f419d95b92a7994e95f1bf7bbc1ae023}
+      \strng{fullhash}{f419d95b92a7994e95f1bf7bbc1ae023}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inference is considered for the point in a sequence of random variables at which the probability distribution changes. An approximation to the conditional distribution of the maximum likelihood estimator of the changepoint given the ancillary values of observations adjacent to the estimated changepoint is derived and shown to be numerically equal to a Bayesian posterior distribution for the changepoint. A hydrological example is given to show that inferences based on the conditional distribution of the maximum likelihood estimator can differ sharply from inferences based on the marginal distribution}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The problem of the Nile: Conditional solution to a changepoint problem}
+      \field{volume}{65}
+      \field{year}{1978}
+      \field{pages}{243\bibrangedash 251}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1093/biomet/65.2.243
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/65/2/243.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/65/2/243.abstract
+      \endverb
+    \endentry
+    \entry{CommandeurKoopmanOoms2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6ba957bed7988c2eaaa7e4208c50b835}{Commandeur}{C\bibinitperiod}{Jacques\bibnamedelimb J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=04d1f9473fab4f9f6f4637e842a50e8f}{Koopman}{K\bibinitperiod}{Siem\bibnamedelima Jan}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=0c09bc3727b5a1d1a239489d32b0c065}{Ooms}{O\bibinitperiod}{Marius}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c84ace4b9e913f292596709ae1f80967}
+      \strng{fullhash}{c84ace4b9e913f292596709ae1f80967}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2011}
+      \field{labelmonth}{5}
+      \field{labelday}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we review the state space approach to time series analysis and establish the notation that is adopted in this special volume of the Journal of Statistical Software. We first provide some background on the history of state space methods for the analysis of time series. This is followed by a concise overview of linear Gaussian state space analysis including the modelling framework and appropriate estimation methods. We discuss the important class of unobserved component models which incorporate a trend, a seasonal, a cycle, and fixed explanatory and intervention variables for the univariate and multivariate analysis of time series. We continue the discussion by presenting methods for the computation of different estimates for the unobserved state vector: filtering, prediction, and smoothing. Estimation approaches for the other parameters in the model are also considered. Next, we discuss how the estimation procedures can be used for constructing confidence intervals, detecting outlier observations and structural breaks, and testing model assumptions of residual independence, homoscedasticity, and normality. We then show how ARIMA and ARIMA components models fit in the state space framework to time series analysis. We also provide a basic introduction for non-Gaussian state space models. Finally, we present an overview of the software tools currently available for the analysis of time series with state space methods as they are discussed in the other contributions to this special volume.}
+      \field{day}{12}
+      \field{issn}{1548-7660}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Statistical Software for State Space Methods}
+      \field{volume}{41}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{url}
+      \verb http://www.jstatsoft.org/v41/i01
+      \endverb
+    \endentry
+    \entry{DattaGhosh2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c7ee133e4144e23e130ce234247c0b64}{Datta}{D\bibinitperiod}{Jyotishka}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=45afce21371622cb4bbf75695f7666a0}{Ghosh}{G\bibinitperiod}{Jayanta.\bibnamedelimi K.}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4c24c32d13bc9f9be8f023ecb81acc3c}
+      \strng{fullhash}{4c24c32d13bc9f9be8f023ecb81acc3c}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we establish some optimality properties of the multiple testing rule induced by the horseshoe estimator due to Carvalho, Polson, and Scott (2010, 2009) from a Bayesian decision theoretic viewpoint. We consider the two-groups model for the data and an additive loss structure such that the total loss is equal to the number of misclassified hypotheses. We use the same asymptotic framework as Bogdan, Chakrabarti, Frommlet, and Ghosh (2011) who introduced the Bayes oracle in the context of multiple testing and provided conditions under which the Benjamini-Hochberg and Bonferroni procedures attain the risk of the Bayes oracle. We prove a similar result for the horseshoe decision rule up to O(1) with the constant in the horseshoe risk close to the constant in the oracle. We use the Full Bayes estimate of the tuning parameter τ. It is worth noting that the Full Bayes estimate cannot be replaced by the Empirical Bayes estimate, which tends to be too small.}
+      \field{issue}{4}
+      \field{journaltitle}{Bayesian Analysis}
+      \field{title}{Asymptotic Properties of Bayes Risk for the Horseshoe Prior}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{771\bibrangedash 792}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1214/13-BA805
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.ba/1362406654
+      \endverb
+    \endentry
+    \entry{DeJongPenzer1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cc756fcf9a59766956c8c8b5ceac2887}{{de\bibnamedelimb Jong}}{d\bibinitperiod}{Piet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=82e25e72d5a354d1b47313f28134f0f7}{Penzer}{P\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{9f69fdd4ab397c77bfefb53dbb0ef91f}
+      \strng{fullhash}{9f69fdd4ab397c77bfefb53dbb0ef91f}
+      \field{sortinit}{d}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Efficient means of modeling aberrant behavior in times series are developed. Our methods are based on state-space forms and allow test statistics for various interventions to be computed from a single run of the Kalman filter smoother. The approach encompasses existing detection methodologies. Departures commonly observed in practice, such as outlying values, level shifts, and switches, are readily dealt with. New diagnostic statistics are proposed. Implications for structural models, autoregressive integrated moving average models, and models with explanatory variables are given.}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{442}
+      \field{title}{Diagnosing Shocks in Time Series}
+      \field{volume}{93}
+      \field{year}{1998}
+      \field{pages}{796\bibrangedash 806}
+      \range{pages}{11}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2670129
+      \endverb
+    \endentry
+    \entry{DeJongShephard1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4584a5ac082048b712fce9d633798c26}{{De\bibnamedelimb Jong}}{D\bibinitperiod}{Piet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=297d9c8d6a4dcfbed876803d5cbba67b}{Shephard}{S\bibinitperiod}{Neil}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{be4da94c639c72a397ddf8d212e9996d}
+      \strng{fullhash}{be4da94c639c72a397ddf8d212e9996d}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently suggested procedures for simulating from the posterior density of states given a Gaussian state space time series are refined and extended. We introduce and study the simulation smoother, which draws from the multivariate posterior distribution of the disturbances of the model, so avoiding the degeneracies inherent in state samplers. The technique is important in Gibbs sampling with non-Gaussian time series models, and for performing Bayesian analysis of Gaussian time series.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{The simulation smoother for time series models}
+      \field{volume}{82}
+      \field{year}{1995}
+      \field{pages}{339\bibrangedash 350}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1093/biomet/82.2.339
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/82/2/339.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/82/2/339.abstract
+      \endverb
+    \endentry
+    \entry{DurbinKoopman2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1558430b13e2ee9f7e8cfb4fede454b7}{Durbin}{D\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6f7c933070eea73f8457742aa0bc0554}{Koopman}{K\bibinitperiod}{S.\bibnamedelimi J.}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Biometrika Trust}%
+      }
+      \strng{namehash}{af330b7fd543cbee2e79f2d17f7b2cb5}
+      \strng{fullhash}{af330b7fd543cbee2e79f2d17f7b2cb5}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simulation smoother in state space time series analysis is a procedure for drawing samples from the conditional distribution of state or disturbance vectors given the observations. We present a new technique for this which is both simple and computationally efficient. The treatment includes models with diffuse initial conditions and regression effects. Computational comparisons are made with the previous standard method. Two applications are provided to illustrate the use of the simulation smoother for Gibbs sampling for Bayesian inference and importance sampling for classical inference.}
+      \field{issn}{00063444}
+      \field{journaltitle}{Biometrika}
+      \field{number}{3}
+      \field{title}{A Simple and Efficient Simulation Smoother for State Space Time Series Analysis}
+      \field{volume}{89}
+      \field{year}{2002}
+      \field{pages}{603\bibrangedash 615}
+      \range{pages}{13}
+      \verb{url}
+      \verb http://www.jstor.org/stable/4140605
+      \endverb
+    \endentry
+    \entry{DurbinKoopman2012}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1558430b13e2ee9f7e8cfb4fede454b7}{Durbin}{D\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9312e2f59eede682f5125d61f4c0f2c6}{Koopman}{K\bibinitperiod}{S.J.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {OUP Oxford}%
+      }
+      \strng{namehash}{415ea1fe572199602589d8ce91e8e0fc}
+      \strng{fullhash}{415ea1fe572199602589d8ce91e8e0fc}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780199641178}
+      \field{series}{Oxford Statistical Science Series}
+      \field{title}{Time Series Analysis by State Space Methods: Second Edition}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://books.google.com/books?id=fOq39Zh0olQC
+      \endverb
+    \endentry
+    \entry{Efron2008a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5470455fc7dceb3ccf6db38cb22a113d}{Efron}{E\bibinitperiod}{Bradley}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {The Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{fullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2008}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statist. Sci.}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{Microarrays, Empirical Bayes and the Two-Groups Model}
+      \field{volume}{23}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1214/07-STS236
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1214/07-STS236
+      \endverb
+    \endentry
+    \entry{Fearnhead2006a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b2d637bf71149fe879204a2bb21e932f}{Fearnhead}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{b2d637bf71149fe879204a2bb21e932f}
+      \strng{fullhash}{b2d637bf71149fe879204a2bb21e932f}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-3174}
+      \field{journaltitle}{Statistics and Computing}
+      \field{number}{2}
+      \field{title}{Exact and efficient Bayesian inference for multiple changepoint problems}
+      \field{volume}{16}
+      \field{year}{2006}
+      \field{pages}{203\bibrangedash 213}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s11222-006-8450-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s11222-006-8450-8
+      \endverb
+      \keyw{Bayes factor; Forward-backward algorithm; Model choice; Perfect simulation; Reversible jump MCMC; Well-log data}
+    \endentry
+    \entry{FearnheadLiu2007a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b2d637bf71149fe879204a2bb21e932f}{Fearnhead}{F\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f9cf90b3bd6cc51f96d2dbd896ba363c}{Liu}{L\bibinitperiod}{Zhen}{Z\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{c289f3dea4cae732a2ab2a3471575e2a}
+      \strng{fullhash}{c289f3dea4cae732a2ab2a3471575e2a}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1467-9868}
+      \field{journaltitle}{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}
+      \field{number}{4}
+      \field{title}{On-line inference for multiple changepoint problems}
+      \field{volume}{69}
+      \field{year}{2007}
+      \field{pages}{589\bibrangedash 605}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1467-9868.2007.00601.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1467-9868.2007.00601.x
+      \endverb
+      \keyw{Direct simulation,Isochores,Particle filtering,Rejection control,Sequential Monte Carlo methods,Stratified sampling}
+    \endentry
+    \entry{Fruehwirth-Schnatter1994}{article}{}
+      \name{author}{1}{}{%
+        {{hash=83485dfde2678ca0bd6138144fcfe9ff}{Frühwirth-Schnatter}{F\bibinithyphendelim S\bibinitperiod}{Sylvia}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{83485dfde2678ca0bd6138144fcfe9ff}
+      \strng{fullhash}{83485dfde2678ca0bd6138144fcfe9ff}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. We define a subclass of dynamic linear models with unknown hyperpara-meter called d-inverse-gamma models. We then approximate the marginal probability density functions of the hyperparameter and the state vector by the data augmentation algorithm of Tanner and Wong. We prove that the regularity conditions for convergence hold. For practical implementation a forward-filtering-backward-sampling algorithm is suggested, and the relation to Gibbs sampling is discussed in detail.}
+      \field{issn}{1467-9892}
+      \field{journaltitle}{Journal of Time Series Analysis}
+      \field{number}{2}
+      \field{title}{Data Augmentation And Dynamic Linear Models}
+      \field{volume}{15}
+      \field{year}{1994}
+      \field{pages}{183\bibrangedash 202}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1111/j.1467-9892.1994.tb00184.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1467-9892.1994.tb00184.x
+      \endverb
+      \keyw{Approximate Bayesian analysis,data augmentation,dynamic linear models,Gibbs sampling,Kalman filtering,state space models}
+    \endentry
+    \entry{GelmanCarlinSternEtAl2013a}{book}{}
+      \name{author}{6}{uniquelist=2}{%
+        {{hash=e68d7eadc431bf1d12612ed40d111dfc}{Gelman}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=c8d24b5a277ac5a5c6e86eec576df682}{Carlin}{C\bibinitperiod}{J.B.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=71dcfbe447451cbe09fb5f68488b1be4}{Stern}{S\bibinitperiod}{H.S.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=0522db6a40bd3ab084c326176a0dfbe8}{Dunson}{D\bibinitperiod}{D.B.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d7430571d08ba8fa149a8420adb0556d}{Vehtari}{V\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e194f141e239af8d70e3a96d0d5d9daf}{Rubin}{R\bibinitperiod}{D.B.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{00bcf44b2e5b686d72797c0867f05c31}
+      \strng{fullhash}{dd4cfe0d92614370dd0ceb6cbf18808e}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{9781439840955}
+      \field{series}{Chapman \& Hall/CRC Texts in Statistical Science}
+      \field{title}{Bayesian Data Analysis}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://books.google.com/books?id=ZXL6AQAAQBAJ
+      \endverb
+    \endentry
+    \entry{GelmanHwangVehtari2014a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=57f3f25f58a60f557d446fcf3a27d81b}{Hwang}{H\bibinitperiod}{Jessica}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=5d36e97683cbc9d6ef06fc2ec40becb0}{Vehtari}{V\bibinitperiod}{Aki}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{fullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-3174}
+      \field{journaltitle}{Statistics and Computing}
+      \field{number}{6}
+      \field{title}{Understanding predictive information criteria for Bayesian models}
+      \field{volume}{24}
+      \field{year}{2014}
+      \field{pages}{997\bibrangedash 1016}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11222-013-9416-2
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s11222-013-9416-2
+      \endverb
+      \keyw{AIC; DIC; WAIC; Cross-validation; Prediction; Bayes}
+    \endentry
+    \entry{GelmanVehtari2014a}{unpublished}{}
+      \name{author}{2}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=da4a7e4af8d36b02280e182b219ea767}{Vehtari}{V\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{879b39e2c5bd66d57dcc7590e3e7a546}
+      \strng{fullhash}{879b39e2c5bd66d57dcc7590e3e7a546}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2014}
+      \field{labelmonth}{05}
+      \field{labelday}{31}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{05}
+      \field{title}{{WAIC} and Cross-validation in {STAN}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.stat.columbia.edu/~gelman/research/unpublished/waic_stan.pdf
+      \endverb
+    \endentry
+    \entry{GiordaniKohn2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=944f1440ca9ded138356f618f35810d5}{Giordani}{G\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=eb1882a0a114f6c1c7967db0eb33d20d}{Kohn}{K\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ee554c3a173bdcf6388e8ca4df920054}
+      \strng{fullhash}{ee554c3a173bdcf6388e8ca4df920054}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time series subject to parameter shifts of random magnitude and timing are commonly modeled with a change-point approach using Chib's algorithm to draw the break dates. We outline some advantages of an alternative approach in which breaks come through mixture distributions in state innovations, and for which the sampler of Gerlach, Carter, and Kohn allows reliable and efficient inference. We show how the same sampler can be used to model shifts in variance that occur independently of shifts in other parameters and how to draw the break dates efficiently when regime durations follow a Poisson process. Finally, we introduce to the time series literature the concept of adaptive Metropolis--Hastings sampling for discrete latent variable models. We develop an easily implemented adaptive algorithm that improves on the work of Gerlach et al. and promises to significantly reduce computing time in a variety of problems including mixture innovation, change-point, regime switching, and outlier detection. The efficiency gains on two models for U.S. inflation and real interest rates are 2.57\% and 3.41\%.}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Efficient Bayesian Inference for Multiple Change-Point and Mixture Innovation Models}
+      \field{volume}{26}
+      \field{year}{2008}
+      \field{pages}{66\bibrangedash 77}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1198/073500107000000241
+      \endverb
+      \verb{eprint}
+      \verb http://amstat.tandfonline.com/doi/pdf/10.1198/073500107000000241
+      \endverb
+      \verb{url}
+      \verb http://amstat.tandfonline.com/doi/abs/10.1198/073500107000000241
+      \endverb
+    \endentry
+    \entry{Hans2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8ed195f578f7aed74f44a205592a04ca}{Hans}{H\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8ed195f578f7aed74f44a205592a04ca}
+      \strng{fullhash}{8ed195f578f7aed74f44a205592a04ca}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The lasso estimate for linear regression corresponds to a posterior mode when independent, double-exponential prior distributions are placed on the regression coefficients. This paper introduces new aspects of the broader Bayesian treatment of lasso regression. A direct characterization of the regression coefficients’ posterior distribution is provided, and computation and inference under this characterization is shown to be straightforward. Emphasis is placed on point estimation using the posterior mean, which facilitates prediction of future observations via the posterior predictive distribution. It is shown that the standard lasso prediction method does not necessarily agree with model-based, Bayesian predictions. A new Gibbs sampler for Bayesian lasso regression is introduced.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{4}
+      \field{title}{Bayesian lasso regression}
+      \field{volume}{96}
+      \field{year}{2009}
+      \field{pages}{835\bibrangedash 845}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/biomet/asp047
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/96/4/835.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/96/4/835.abstract
+      \endverb
+    \endentry
+    \entry{HarchaouiLevy-Leduc2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=46630e2fbbab377f5b1e660396005fbe}{Harchaoui}{H\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=dc48cd2f28ce4bacb6bbc0832c317a65}{Lévy-Leduc}{L\bibinithyphendelim L\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0c6af2564857ff28fcdbeeb310d078dd}
+      \strng{fullhash}{0c6af2564857ff28fcdbeeb310d078dd}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a new approach for dealing with the estimation of the location of change-points in one-dimensional piecewise constant signals observed in white noise. Our approach consists in reframing this task in a variable selection context. We use a penalized least-square criterion with a â1-type penalty for this purpose. We explain how to implement this method in practice by using the LARSâ/âLASSO algorithm. We then prove that, in an appropriate asymptotic framework, this method provides consistent estimators of the change points with an almost optimal rate. We finally provide an improved practical version of this method by combining it with a reduced version of the dynamic programming algorithm and we successfully compare it with classical methods.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{492}
+      \field{title}{Multiple Change-Point Estimation With a Total Variation Penalty}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{1480\bibrangedash 1493}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1198/jasa.2010.tm09181
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1198/jasa.2010.tm09181
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1198/jasa.2010.tm09181
+      \endverb
+    \endentry
+    \entry{Harvey1990}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4e1805f0b9b36cd0151e3477a555bd98}{Harvey}{H\bibinitperiod}{Andrew\bibnamedelima C.}{A\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4e1805f0b9b36cd0151e3477a555bd98}
+      \strng{fullhash}{4e1805f0b9b36cd0151e3477a555bd98}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1990}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521405737}
+      \field{title}{Forecasting, Structural Time Series Models and the Kalman Filter}
+      \field{year}{1990}
+      \verb{url}
+      \verb http://books.google.com/books?id=Kc6tnRHBwLcC
+      \endverb
+    \endentry
+    \entry{Hinkley1970a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=794b9f022a15a3bbf23af5f7f4c61f96}{Hinkley}{H\bibinitperiod}{David\bibnamedelima V.}{D\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{794b9f022a15a3bbf23af5f7f4c61f96}
+      \strng{fullhash}{794b9f022a15a3bbf23af5f7f4c61f96}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1970}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SUMMARY Inference is considered about the point in a sequence of random variables at which the probability distribution changes. In particular, we examine a normal distribution with changing mean. The asymptotic distribution of the maximum likelihood estimate is derived and also the asymptotic distribution of the likelihood ratio statistic for testing hypotheses about the change-point. These asymptotic distributions are compared with some finite sample empirical distributions.}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1}
+      \field{title}{Inference about the change-point in a sequence of random variables}
+      \field{volume}{57}
+      \field{year}{1970}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1093/biomet/57.1.1
+      \endverb
+      \verb{eprint}
+      \verb http://biomet.oxfordjournals.org/content/57/1/1.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biomet.oxfordjournals.org/content/57/1/1.abstract
+      \endverb
+    \endentry
+    \entry{HoffmanGelman2014a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a922cd4d9e8a007dcbb79cbc3dcd9a96}{Hoffman}{H\bibinitperiod}{Matthew\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {JMLR.org}%
+      }
+      \strng{namehash}{6d2817f79dd2c7ac6ea748ab4a8ac953}
+      \strng{fullhash}{6d2817f79dd2c7ac6ea748ab4a8ac953}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2014}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1532-4435}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{The No-U-turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo}
+      \field{volume}{15}
+      \field{year}{2014}
+      \field{pages}{1593\bibrangedash 1623}
+      \range{pages}{31}
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=2627435.2638586
+      \endverb
+      \keyw{Bayesian inference,Hamiltonian Monte Carlo,Markov chain Monte Carlo,adaptive Monte Carlo,dual averaging}
+    \endentry
+    \entry{Jackman2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c40e881d72fcfdf30c062bbd78bff4ff}{Jackman}{J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{c40e881d72fcfdf30c062bbd78bff4ff}
+      \strng{fullhash}{c40e881d72fcfdf30c062bbd78bff4ff}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470686638}
+      \field{series}{Wiley Series in Probability and Statistics}
+      \field{title}{Bayesian Analysis for the Social Sciences}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://books.google.com/books?id=QFqyrNL8yEkC
+      \endverb
+    \endentry
+    \entry{JuarezSteel2010b}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0eb7cc695d80f19525e3626855b6dace}{Juárez}{J\bibinitperiod}{Miguel\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b96f201731a6d80de12d8b930d360bf3}{Steel}{S\bibinitperiod}{Mark\bibnamedelimb F.\bibnamedelimi J.}{M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd.}%
+      }
+      \strng{namehash}{b7e33b73e72845c70ea2f8010a49e3ce}
+      \strng{fullhash}{b7e33b73e72845c70ea2f8010a49e3ce}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A first order autoregressive non-Gaussian model for analysing panel data is proposed. The main feature is that the model is able to accommodate fat tails and also skewness, thus allowing for outliers and asymmetries. The modelling approach is designed to gain sufficient flexibility, without sacrificing interpretability and computational ease. The model incorporates individual effects and covariates and we pay specific attention to the elicitation of the prior. As the prior structure chosen is not proper, we derive conditions for the existence of the posterior. By considering a model with individual dynamic parameters we are also able to formally test whether the dynamic behaviour is common to all units in the panel. The methodology is illustrated with two applications involving earnings data and one on growth of countries. Copyright Â© 2009 John Wiley & Sons, Ltd.}
+      \field{issn}{1099-1255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{7}
+      \field{title}{Non-Gaussian dynamic Bayesian modelling for panel data}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{pages}{1128\bibrangedash 1154}
+      \range{pages}{27}
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/jae.1113
+      \endverb
+    \endentry
+    \entry{KillickFearnheadEckley2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6290a750abc7723d42e8bf6f5d654cb8}{Killick}{K\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=388407c5aec9aedd00f8146e766a3188}{Fearnhead}{F\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=a811a75b7b6f47e9462356a5ae5e164e}{Eckley}{E\bibinitperiod}{I.\bibnamedelimi A.}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0a541296aca28bcc34de9bf10918072d}
+      \strng{fullhash}{0a541296aca28bcc34de9bf10918072d}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we consider the problem of detecting multiple changepoints in large datasets. Our focus is on applications where the number of changepoints will increase as we collect more data: for example, in genetics as we analyze larger regions of the genome, or in finance as we observe time series over longer periods. We consider the common approach of detecting changepoints through minimizing a cost function over possible numbers and locations of changepoints. This includes several established procedures for detecting changing points, such as penalized likelihood and minimum description length. We introduce a new method for finding the minimum of such cost functions and hence the optimal number and location of changepoints that has a computational cost, which, under mild conditions, is linear in the number of observations. This compares favorably with existing methods for the same problem whose computational cost can be quadratic or even cubic. In simulation studies, we show that our new method can be orders of magnitude faster than these alternative exact methods. We also compare with the binary segmentation algorithm for identifying changepoints, showing that the exactness of our approach can lead to substantial improvements in the accuracy of the inferred segmentation of the data. This article has supplementary materials available online.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{500}
+      \field{title}{Optimal Detection of Changepoints With a Linear Computational Cost}
+      \field{volume}{107}
+      \field{year}{2012}
+      \field{pages}{1590\bibrangedash 1598}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/01621459.2012.737745
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1080/01621459.2012.737745
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/01621459.2012.737745
+      \endverb
+    \endentry
+    \entry{KimKohBoydEtAl2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a0a835037a220b626bebc6e344d108a5}{Kim}{K\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4976dc9837ea6abaa03be80504cfd5a0}{Koh}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=b18cbeba4540b1e65d4f180870cb8004}{Boyd}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3717c319ff68e7ef9274161be966e895}{Gorinevsky}{G\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2b38e37bfecbb573870657184fc982a4}
+      \strng{fullhash}{fb819859141853e9cf1ff97db6421278}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Review}
+      \field{number}{2}
+      \field{title}{$\ell_1$ Trend Filtering}
+      \field{volume}{51}
+      \field{year}{2009}
+      \field{pages}{339\bibrangedash 360}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1137/070690274
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1137/070690274
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1137/070690274
+      \endverb
+    \endentry
+    \entry{Lieberman2002a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=45184cf25e5b1a65d3005e97dec7be9c}{Lieberman}{L\bibinitperiod}{Robert\bibnamedelima C.}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{45184cf25e5b1a65d3005e97dec7be9c}
+      \strng{fullhash}{45184cf25e5b1a65d3005e97dec7be9c}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2002}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT Institutional approaches to explaining political phenomena suffer from three common limitations: reductionism, reliance on exogenous factors, and excessive emphasis on order and structure. Ideational approaches to political explanation, while often more sensitive to change and agency, largely exhibit the same shortcomings. In particular, both perspectives share an emphasis on discerning and explaining patterns of ordered regularity in politics, making it hard to explain important episodes of political change. Relaxing this emphasis on order and viewing politics as situated in multiple and not necessarily equilibrated order suggests a way of synthesizing institutional and ideational approaches and developing more convincing accounts of political change. In this view, change arises out of âfrictionâ among mismatched institutional and ideational patterns. An account of American civil rights policy in the 1960s and 1970s, which is not amenable to either straightforward institutional or ideational explanation, demonstrates the advantages of the approach.}
+      \field{issn}{1537-5943}
+      \field{issue}{04}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{12}
+      \field{title}{Ideas, Institutions, and Political Order: Explaining Political Change}
+      \field{volume}{null}
+      \field{year}{2002}
+      \field{pages}{697\bibrangedash 712}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1017/S0003055402000394
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0003055402000394
+      \endverb
+    \endentry
+    \entry{MartinQuinn2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6c8fc8a25699b2d0b81703662d566243}{Martin}{M\bibinitperiod}{Andrew\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=155c5c648eb2b9f7026d7ebbdb309886}{Quinn}{Q\bibinitperiod}{Kevin\bibnamedelima M.}{K\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{846cc4bd91aae8387534f7f0c907666e}
+      \strng{fullhash}{846cc4bd91aae8387534f7f0c907666e}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At the heart of attitudinal and strategic explanations of judicial behavior is the assumption that justices have policy preferences. In this paper we employ Markov chain Monte Carlo methods to fit a Bayesian measurement model of ideal points for all justices serving on the U.S. Supreme Court from 1953 through 1999. We are particularly interested in determining to what extent ideal points of justices change throughout their tenure on the Court. This is important because judicial politics scholars oftentimes invoke preference measures that are time invariant. To investigate preference change, we posit a dynamic item response model that allows ideal points to change systematically over time. Additionally, we introduce Bayesian methods for fitting multivariate dynamic linear models to political scientists. Our results suggest that many justices do not have temporally constant ideal points. Moreover, our ideal point estimates outperform existing measures and explain judicial behavior quite well across civil rights, civil liberties, economics, and federalism cases.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{2}
+      \field{title}{Dynamic Ideal Point Estimation via Markov Chain Monte Carlo for the U.S. Supreme Court, 1953-1999}
+      \field{volume}{10}
+      \field{year}{2002}
+      \field{pages}{134\bibrangedash 153}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1093/pan/10.2.134
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/cgi/reprint/10/2/134.pdf
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/cgi/content/abstract/10/2/134
+      \endverb
+    \endentry
+    \entry{MitchellBeauchamp1988a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e51b4444eb1bf550ba6c9e9d8248c125}{Mitchell}{M\bibinitperiod}{T.\bibnamedelimi J.}{T\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d6d69f9b05c34e4c1e5ddabbbea4e982}{Beauchamp}{B\bibinitperiod}{J.\bibnamedelimi J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{09369c16a00eceebbdd81e673e8bfaa0}
+      \strng{fullhash}{09369c16a00eceebbdd81e673e8bfaa0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract This article is concerned with the selection of subsets of predictor variables in a linear regression model for the prediction of a dependent variable. It is based on a Bayesian approach, intended to be as objective as possible. A probability distribution is first assigned to the dependent variable through the specification of a family of prior distributions for the unknown parameters in the regression model. The method is not fully Bayesian, however, because the ultimate choice of prior distribution from this family is affected by the data. It is assumed that the predictors represent distinct observables; the corresponding regression coefficients are assigned independent prior distributions. For each regression coefficient subject to deletion from the model, the prior distribution is a mixture of a point mass at 0 and a diffuse uniform distribution elsewhere, that is, a âspike and slabâ distribution. The random error component is assigned a normal distribution with mean 0 and standard deviation Ï, where ln(Ï) has a locally uniform noninformative prior distribution. The appropriate posterior probabilities are derived for each submodel. If the regression coefficients have identical priors, the posterior distribution depends only on the data and the parameter Î³, which is the height of the spike divided by the height of the slab for the common prior distribution. This parameter is not assigned a probability distribution; instead, it is considered a parameter that indexes the members of a class of Bayesian methods. Graphical methods are proposed as informal guides for choosing Î³, assessing the complexity of the response function and the strength of the individual predictor variables, and assessing the degree of uncertainty about the best submodel. The following plots against Î³ are suggested: (a) posterior probability that a particular regression coefficient is 0; (b) posterior expected number of terms in the model; (c) posterior entropy of the submodel distribution; (d) posterior predictive error; and (e) posterior probability of goodness of fit. Plots (d) and (e) are suggested as ways to choose y. The predictive error is determined using a Bayesian cross-validation approach that generates a predictive density for each observation, given all of the data except that observation, that is, a type of âleave one outâ approach. The goodness-of-fit measure is the sum of the posterior probabilities of all submodels that pass a standard F test for goodness of fit relative to the full model, at a specified level of significance. The dependence of the results on the scaling of the variables is discussed, and some ways to choose the scaling constants are suggested. Examples based on a large data set arising from an energy-conservation study are given to demonstrate the application of the methods.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{404}
+      \field{title}{Bayesian Variable Selection in Linear Regression}
+      \field{volume}{83}
+      \field{year}{1988}
+      \field{pages}{1023\bibrangedash 1032}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/01621459.1988.10478694
+      \endverb
+      \verb{eprint}
+      \verb http://www.tandfonline.com/doi/pdf/10.1080/01621459.1988.10478694
+      \endverb
+      \verb{url}
+      \verb http://www.tandfonline.com/doi/abs/10.1080/01621459.1988.10478694
+      \endverb
+    \endentry
+    \entry{OlshenVenkatramanLucitoEtAl2004}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cc2e7d0f649c372618b551bd2b3e59e7}{Olshen}{O\bibinitperiod}{Adam\bibnamedelima B.}{A\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=d6827849bcac4a18c0c3b68ea760aa7b}{Venkatraman}{V\bibinitperiod}{E.\bibnamedelimi S.}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=6f5683d8bbd9a38960acad3037ed9b71}{Lucito}{L\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=51eb5a5c4b3486dd4f30dc7d2198359c}{Wigler}{W\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5d46bd492ee08753ef9e3fd8d69a9c77}
+      \strng{fullhash}{d79d2a3999b3c05ba647e502148333e3}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DNA sequence copy number is the number of copies of DNA at a region of a genome. Cancer progression often involves alterations in DNA copy number. Newly developed microarray technologies enable simultaneous measurement of copy number at thousands of sites in a genome. We have developed a modification of binary segmentation, which we call circular binary segmentation, to translate noisy intensity measurements into regions of equal copy number. The method is evaluated by simulation and is demonstrated on cell line data with known copy number alterations and on a breast cancer cell line data set.}
+      \field{journaltitle}{Biostatistics}
+      \field{number}{4}
+      \field{title}{Circular binary segmentation for the analysis of array‐based DNA copy number data}
+      \field{volume}{5}
+      \field{year}{2004}
+      \field{pages}{557\bibrangedash 572}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1093/biostatistics/kxh008
+      \endverb
+      \verb{eprint}
+      \verb http://biostatistics.oxfordjournals.org/content/5/4/557.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://biostatistics.oxfordjournals.org/content/5/4/557.abstract
+      \endverb
+    \endentry
+    \entry{Page1954a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e3a5f3795135833b243f8220c76abb2}{Page}{P\bibinitperiod}{E.\bibnamedelimi S.}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press on behalf of Biometrika Trust}%
+      }
+      \strng{namehash}{9e3a5f3795135833b243f8220c76abb2}
+      \strng{fullhash}{9e3a5f3795135833b243f8220c76abb2}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1954}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00063444}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1/2}
+      \field{title}{Continuous Inspection Schemes}
+      \field{volume}{41}
+      \field{year}{1954}
+      \field{pages}{100\bibrangedash 115}
+      \range{pages}{16}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2333009
+      \endverb
+    \endentry
+    \entry{Park2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b7395bd772d3cd5368ce5048e8211288}{Park}{P\bibinitperiod}{Jong\bibnamedelima Hee}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Inc}%
+      }
+      \strng{namehash}{b7395bd772d3cd5368ce5048e8211288}
+      \strng{fullhash}{b7395bd772d3cd5368ce5048e8211288}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Has there been a structural change in the way U.S. presidents use force abroad since the nineteenth century? In this article, I investigate historical changes in the use of force by U.S. presidents using Bayesian changepoint analysis. In doing so, I present an integrated Bayesian approach for analyzing changepoint problems in a Poisson regression model. To find the nature of the breaks, I estimate parameters of the Poisson regression changepoint model using Chib's (1998) hidden Markov model algorithm and FrÃ¼hwirth-Schnatter and Wagner's (2006) data augmentation method. Then, I utilize transdimensional Markov chain Monte Carlo methods to detect the number of breaks. Analyzing yearly use of force data from 1890 to 1995, I find that, controlling for the effects of the Great Depression and the two world wars, the relationship between domestic conditions and the frequency of the use of force abroad fundamentally shifted in the 1940s.}
+      \field{issn}{1540-5907}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Structural Change in U.S. Presidents' Use of Force}
+      \field{volume}{54}
+      \field{year}{2010}
+      \field{pages}{766\bibrangedash 782}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1540-5907.2010.00459.x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1111/j.1540-5907.2010.00459.x
+      \endverb
+    \endentry
+    \entry{Park2011}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b7395bd772d3cd5368ce5048e8211288}{Park}{P\bibinitperiod}{Jong\bibnamedelima Hee}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7395bd772d3cd5368ce5048e8211288}
+      \strng{fullhash}{b7395bd772d3cd5368ce5048e8211288}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I introduce changepoint models for binary and ordered time series data based on Chib's hidden Markov model. The extension of the changepoint model to a binary probit model is straightforward in a Bayesian setting. However, detecting parameter breaks from ordered regression models is difficult because ordered time series data often have clustering along the break points. To address this issue, I propose an estimation method that uses the linear regression likelihood function for the sampling of hidden states of the ordinal probit changepoint model. The marginal likelihood method is used to detect the number of hidden regimes. I evaluate the performance of the introduced methods using simulated data and apply the ordinal probit changepoint model to the study of Eichengreen, Watson, and Grossman on violations of the ârules of the gameâ of the gold standard by the Bank of England during the interwar period.}
+      \field{journaltitle}{Political Analysis}
+      \field{title}{Changepoint Analysis of Binary and Ordinal Probit Models: An Application to Bank Rate Policy Under the Interwar Gold Standard}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1093/pan/mpr007
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/early/2011/03/22/pan.mpr007.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/early/2011/03/22/pan.mpr007.abstract
+      \endverb
+    \endentry
+    \entry{ParkCasella2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7021e260da7b0909f774600604ad5f50}{Park}{P\bibinitperiod}{Trevor}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=c7abc90e14f2761d9325ee092fda0de7}{Casella}{C\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{be85c22a432f82b682948eeb13fe0e23}
+      \strng{fullhash}{be85c22a432f82b682948eeb13fe0e23}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Lasso estimate for linear regression parameters can be interpreted as a Bayesian posterior mode estimate when the regression parameters have independent Laplace (i.e., double-exponential) priors. Gibbs sampling from this posterior is possible using an expanded hierarchy with conjugate normal priors for the regression parameters and independent exponential priors on their variances. A connection with the inverse-Gaussian distribution provides tractable full conditional distributions. The Bayesian Lasso provides interval estimates (Bayesian credible intervals) that can guide variable selection. Moreover, the structure of the hierarchical model provides both Bayesian and likelihood methods for selecting the Lasso parameter. Slight modifications lead to Bayesian versions of other Lasso-related estimation methods, including bridge regression and a robust variant.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{482}
+      \field{title}{The Bayesian Lasso}
+      \field{volume}{103}
+      \field{year}{2008}
+      \field{pages}{681\bibrangedash 686}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1198/016214508000000337
+      \endverb
+      \verb{eprint}
+      \verb http://amstat.tandfonline.com/doi/pdf/10.1198/016214508000000337
+      \endverb
+      \verb{url}
+      \verb http://amstat.tandfonline.com/doi/abs/10.1198/016214508000000337
+      \endverb
+    \endentry
+    \entry{PasKleijnVaart2014a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3cea20bdb68153a776a2a3145467817a}{Pas}{P\bibinitperiod}{S.\bibnamedelimi L.}{S\bibinitperiod\bibinitdelim L\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+        {{hash=a71ef02c457c070c64fa74a5db5a1201}{Kleijn}{K\bibinitperiod}{B.\bibnamedelimi J.\bibnamedelimi K.}{B\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=838d49d15311ce2ec290b2ed5e7da01b}{Vaart}{V\bibinitperiod}{A.\bibnamedelimi W.}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f3c8b0bc981ed14eb636210b000991c8}
+      \strng{fullhash}{f3c8b0bc981ed14eb636210b000991c8}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2014}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the horseshoe estimator due to Carvalho, Polson and Scott (2010) for the multivariate normal mean model in the situation that the mean vector is sparse in the nearly black sense. We assume the frequentist framework where the data is generated according to a fixed mean vector. We show that if the number of nonzero parameters of the mean vector is known, the horseshoe estimator attains the minimax $\ell_2$ risk, possibly up to a multiplicative constant. We provide conditions under which the horseshoe estimator combined with an empirical Bayes estimate of the number of nonzero means still yields the minimax risk. We furthermore prove an upper bound on the rate of contraction of the posterior distribution around the horseshoe estimator, and a lower bound on the posterior variance. These bounds indicate that the posterior distribution of the horseshoe prior may be more informative than that of other one-component priors, including the Lasso.}
+      \field{journaltitle}{Electronic Journal of Statistics}
+      \field{month}{04}
+      \field{title}{The Horseshoe Estimator: Posterior Concentration around Nearly Black Vectors}
+      \field{volume}{8,}
+      \field{year}{2014}
+      \field{pages}{Number2\bibrangessep 2585\bibrangedash 2618}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb doi:10.1214/14-EJS962
+      \endverb
+      \verb{eprint}
+      \verb 1404.0202
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.ejs/1418134265
+      \endverb
+    \endentry
+    \entry{PetrisPetroneEtAl2009}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ede0286b2a8d3529781aee6c1987f523}{Petris}{P\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=7db2fe1edf71b75324f7c171cb590d84}{Petrone}{P\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=5545e91f16024a24785fa2f9df0fb354}{Campagnoli}{C\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9ce036ca958071cc3e3142a58a7a6be8}
+      \strng{fullhash}{9ce036ca958071cc3e3142a58a7a6be8}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780387772370}
+      \field{series}{Use R!}
+      \field{title}{Dynamic Linear Models with {R}}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://books.google.com/books?id=VCt3zVq8TO8C
+      \endverb
+    \endentry
+    \entry{Pierson2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87b2b30e91c9747e659fe5ad163dc6ad}{Pierson}{P\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{87b2b30e91c9747e659fe5ad163dc6ad}
+      \strng{fullhash}{87b2b30e91c9747e659fe5ad163dc6ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780691117157}
+      \field{title}{Politics in Time: History, Institutions, and Social Analysis}
+      \field{year}{2004}
+      \verb{url}
+      \verb http://books.google.com/books?id=nVtptUoWuO4C
+      \endverb
+    \endentry
+    \entry{PolsonScott2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \strng{fullhash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use Levy processes to generate joint prior distributions for a location parameter β = (β1 , . . . , βp ) as p grows large. This approach, which generalizes normal scale-mixture priors to an infinite-dimensional setting, has a number of connections with mathematical finance and Bayesian nonparametrics. We argue that it provides an intuitive framework for generating new regularization penalties and shrinkage rules; for performing asymptotic analysis on existing models; and for simplifying proofs of some classic results on normal scale mixtures.}
+      \field{journaltitle}{Bayesian Statistics}
+      \field{title}{Shrink Globally, Act Locally: Sparse Bayesian Regularization and Prediction}
+      \field{year}{2010}
+    \endentry
+    \entry{PolsonScott2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a18db8ee3dd32b50d8d2125bafdee7e3}{Polson}{P\bibinitperiod}{Nicholas\bibnamedelima G.}{N\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=f44ab67f18ce9e413bec6411ed70ff13}{Scott}{S\bibinitperiod}{James\bibnamedelima G.}{J\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \strng{fullhash}{120cf28f75f6ce26c7f9f6587948a3fa}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper argues that the half-Cauchy distribution should replace the inverse-Gamma distribution as a default prior for a top-level scale parameter in Bayesian hierarchical models, at least for cases where a proper prior is necessary. Our arguments involve a blend of Bayesian and frequentist reasoning, and are intended to complement the case made by Gelman (2006) in support of folded-t priors. First, we generalize the half-Cauchy prior to the wider class of hypergeometric inverted-beta priors. We derive expressions for posterior moments and marginal densities when these priors are used for a top-level normal variance in a Bayesian hierarchical model. We go on to prove a proposition that, together with the results for moments and marginals, allows us to characterize the frequentist risk of the Bayes estimators under all global-shrinkage priors in the class. These results, in turn, allow us to study the frequentist properties of the half-Cauchy prior versus a wide class of alternatives. The half-Cauchy occupies a sensible middle ground within this class: it performs well near the origin, but does not lead to drastic compromises in other parts of the parameter space. This provides an alternative, classical justification for the routine use of this prior. We also consider situations where the underlying mean vector is sparse, where we argue that the usual conjugate choice of an inverse-gamma prior is particularly inappropriate, and can severely distort inference. Finally, we summarize some open issues in the specification of default priors for scale terms in hierarchical models}
+      \field{issue}{4}
+      \field{journaltitle}{Bayesian Analysis}
+      \field{title}{On the Half-Cauchy Prior for a Global Scale Parameter}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{887\bibrangedash 902}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 0.1214/12-BA730
+      \endverb
+      \keyw{hierarchical models; normal scale mixtures; shrinkage}
+    \endentry
+    \entry{RatkovicEng2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dd86d250d35b1113d04154f93e033a9e}{Ratkovic}{R\bibinitperiod}{Marc\bibnamedelima T.}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=88af46b4920330d97526609030dda21d}{Eng}{E\bibinitperiod}{Kevin\bibnamedelima H.}{K\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5ba9dba4ae2fe9dd291f974dfa06e7ed}
+      \strng{fullhash}{5ba9dba4ae2fe9dd291f974dfa06e7ed}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many social processes are stable and smooth in general, with discrete jumps. We develop a sequential segmentation spline method that can identify both the location and the number of discontinuities in a series of observations with a time component, while fitting a smooth spline between jumps, using a modified Bayesian Information Criterion statistic as a stopping rule. We explore the method in a large-n, unbalanced panel setting with George W. Bush's approval data, a small-n time series with median DW-NOMINATE scores for each Congress over time, and a series of simulations. We compare the method to several extant smoothers, and the method performs favorably in terms of visual inspection, residual properties, and event detection. Finally, we discuss extensions of the method.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{1}
+      \field{title}{Finding Jumps in Otherwise Smooth Curves: Identifying Critical Events in Political Processes}
+      \field{volume}{18}
+      \field{year}{2010}
+      \field{pages}{57\bibrangedash 77}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/pan/mpp032
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/18/1/57.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/18/1/57.abstract
+      \endverb
+    \endentry
+    \entry{ShumwayStoffer2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a96bd5032f1e2683ec252b5385779168}{Shumway}{S\bibinitperiod}{R.H.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=256e4b937c4f0d840e1e1dd5af967203}{Stoffer}{S\bibinitperiod}{D.S.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{034b1e47389caf192d64ae1dfb746f08}
+      \strng{fullhash}{034b1e47389caf192d64ae1dfb746f08}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781441978653}
+      \field{series}{Springer Texts in Statistics}
+      \field{title}{Time Series Analysis and Its Applications}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://books.google.com/books?id=NIhXa6UeF2cC
+      \endverb
+    \endentry
+    \entry{Spirling2007b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9470e342d33f39a05662cafdf539b68a}{Spirling}{S\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9470e342d33f39a05662cafdf539b68a}
+      \strng{fullhash}{9470e342d33f39a05662cafdf539b68a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{extrayear}{1}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Limited dependent variable (LDV) data are common in political science, and political methodologists have given much good advice on dealing with them. We review some methods for LDV âchange point problemsâ and demonstrate the use of Bayesian approaches for count, binary, and duration-type data. Our applications are drawn from American politics, Comparative politics, and International Political Economy. We discuss the tradeoffs both philosophically and computationally. We conclude with possibilities for multiple change point work.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{4}
+      \field{title}{Bayesian Approaches for Limited Dependent Variable Change Point Problems}
+      \field{volume}{15}
+      \field{year}{2007}
+      \field{pages}{387\bibrangedash 405}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/pan/mpm022
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/15/4/387.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/15/4/387.abstract
+      \endverb
+    \endentry
+    \entry{Spirling2007a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9470e342d33f39a05662cafdf539b68a}{Spirling}{S\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9470e342d33f39a05662cafdf539b68a}
+      \strng{fullhash}{9470e342d33f39a05662cafdf539b68a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{extrayear}{2}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider and explore structural breaks in a day-by-day time series of civilian casualties for the current Iraq conflict: an undertaking of potential interest to scholars of international relations, comparative politics, and American politics. We review Bayesian change-point techniques already used by political methodologists before advocating and briefly describing the use of reversible-jump Markov chain Monte Carlo techniques to solve the estimation problem at hand. We find evidence of four change points, all associated with increasing violence, approximately contemporaneous with some important state building events. We conclude with a discussion of avenues for future research.}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{4}
+      \field{title}{"Turning Points" in the Iraq Conflict}
+      \field{volume}{61}
+      \field{year}{2007}
+      \field{pages}{315\bibrangedash 320}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1198/000313007X247076
+      \endverb
+      \verb{eprint}
+      \verb http://pubs.amstat.org/doi/pdf/10.1198/000313007X247076
+      \endverb
+      \verb{url}
+      \verb http://pubs.amstat.org/doi/abs/10.1198/000313007X247076
+      \endverb
+    \endentry
+    \entry{Stan2015a}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2418ee02a26ab01ead911ec86c507892}{{Stan\bibnamedelimb Development\bibnamedelimb Team}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2418ee02a26ab01ead911ec86c507892}
+      \strng{fullhash}{2418ee02a26ab01ead911ec86c507892}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stan Modeling Language Users Guide and Reference Manual, Version 2.7.0}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://mc-stan.org/
+      \endverb
+    \endentry
+    \entry{Tibshirani1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{Tibshirani}{T\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Wiley for the Royal Statistical Society}%
+      }
+      \strng{namehash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{fullhash}{88eea600247d798f8b2ce0b2dc614492}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a new method for estimation in linear models. The `lasso' minimizes the residual sum of squares subject to the sum of the absolute value of the coefficients being less than a constant. Because of the nature of this constraint it tends to produce some coefficients that are exactly 0 and hence gives interpretable models. Our simulation studies suggest that the lasso enjoys some of the favourable properties of both subset selection and ridge regression. It produces interpretable models like subset selection and exhibits the stability of ridge regression. There is also an interesting relationship with recent work in adaptive function estimation by Donoho and Johnstone. The lasso idea is quite general and can be applied in a variety of statistical models: extensions to generalized regression models and tree-based models are briefly described.}
+      \field{issn}{00359246}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series B (Methodological)}
+      \field{number}{1}
+      \field{title}{Regression Shrinkage and Selection via the Lasso}
+      \field{volume}{58}
+      \field{year}{1996}
+      \field{pages}{267\bibrangedash 288}
+      \range{pages}{22}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2346178
+      \endverb
+    \endentry
+    \entry{TibshiraniEtAl2005}{article}{}
+      \name{author}{5}{uniquelist=1}{%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{Tibshirani}{T\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b1dbb08212b4300504f7e92db10cc7f2}{Saunders}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=419317fdd051d6322062748170149516}{Rosset}{R\bibinitperiod}{Saharon}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=885c2d20b53bf31151fa702f9fadcfe5}{Zhu}{Z\bibinitperiod}{Ji}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=cc08d5a121b6cfdf2832b00dc7e8f4c9}{Knight}{K\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Wiley for the Royal Statistical Society}%
+      }
+      \strng{namehash}{68e88ae6f3dba7e3a64834f75879bfe0}
+      \strng{fullhash}{05ad56b03ab8d45ed42293f25e30f078}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The lasso penalizes a least squares regression by the sum of the absolute values (<tex-math>$L_1-norm$</tex-math>) of the coefficients. The form of this penalty encourages sparse solutions (with many coefficients equal to 0). We propose the 'fused lasso', a generalization that is designed for problems with features that can be ordered in some meaningful way. The fused lasso penalizes the <tex-math>$L_1-norm$</tex-math> of both the coefficients and their successive differences. Thus it encourages sparsity of the coefficients and also sparsity of their differences-i.e. local constancy of the coefficient profile. The fused lasso is especially useful when the number of features p is much greater than N, the sample size. The technique is also extended to the 'hinge' loss function that underlies the support vector classifier. We illustrate the methods on examples from protein mass spectroscopy and gene expression data.}
+      \field{issn}{13697412}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series B (Statistical Methodology)}
+      \field{number}{1}
+      \field{title}{Sparsity and Smoothness via the Fused Lasso}
+      \field{volume}{67}
+      \field{year}{2005}
+      \field{pages}{91\bibrangedash 108}
+      \range{pages}{18}
+      \verb{url}
+      \verb http://www.jstor.org/stable/3647602
+      \endverb
+    \endentry
+    \entry{Tibshirani2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=86fdf5cd4a42068e1ca61ea55b95f068}{Tibshirani}{T\bibinitperiod}{Ryan\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{86fdf5cd4a42068e1ca61ea55b95f068}
+      \strng{fullhash}{86fdf5cd4a42068e1ca61ea55b95f068}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2014}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study trend filtering, a recently proposed tool of Kim et al. [{SIAM} Rev. 51 (2009) 339-360] for nonparametric regression. The trend filtering estimate is defined as the minimizer of a penalized least squares criterion, in which the penalty term sums the absolute \$k\$th order discrete derivatives over the input points. Perhaps not surprisingly, trend filtering estimates appear to have the structure of \$k\$th degree spline functions, with adaptively chosen knot points (we say ``appear'' here as trend filtering estimates are not really functions over continuous domains, and are only defined over the discrete set of inputs). This brings to mind comparisons to other nonparametric regression tools that also produce adaptive splines; in particular, we compare trend filtering to smoothing splines, which penalize the sum of squared derivatives across input points, and to locally adaptive regression splines [Ann. Statist. 25 (1997) 387-413], which penalize the total variation of the \$k\$th derivative. Empirically, we discover that trend filtering estimates adapt to the local level of smoothness much better than smoothing splines, and further, they exhibit a remarkable similarity to locally adaptive regression splines. We also provide theoretical support for these empirical findings; most notably, we prove that (with the right choice of tuning parameter) the trend filtering estimate converges to the true underlying function at the minimax rate for functions whose \$k\$th derivative is of bounded variation. This is done via an asymptotic pairing of trend filtering and locally adaptive regression splines, which have already been shown to converge at the minimax rate [Ann. Statist. 25 (1997) 387-413]. At the core of this argument is a new result tying together the fitted values of two lasso problems that share the same outcome vector, but have different predictor matrices.}
+      \field{issn}{0090-5364}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{month}{02}
+      \field{note}{{arXiv}: 1304.2986}
+      \field{number}{1}
+      \field{title}{Adaptive piecewise polynomial estimation via trend filtering}
+      \field{urlday}{07}
+      \field{urlmonth}{07}
+      \field{urlyear}{2014}
+      \field{volume}{42}
+      \field{year}{2014}
+      \field{pages}{285\bibrangedash 323}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1214/13-AOS1189
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1304.2986
+      \endverb
+      \keyw{Mathematics - Statistics Theory,Statistics - Machine Learning,Statistics - Methodology}
+    \endentry
+    \entry{Tipping2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=da28a755c865268360d92a89f5d7501f}{Tipping}{T\bibinitperiod}{Michael\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {JMLR.org}%
+      }
+      \strng{namehash}{da28a755c865268360d92a89f5d7501f}
+      \strng{fullhash}{da28a755c865268360d92a89f5d7501f}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2001}
+      \field{labelmonth}{09}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a general Bayesian framework for obtaining sparse solutions to regression and classification tasks utilising models linear in the parameters. Although this framework is fully general, we illustrate our approach with a particular specialisation that we denote the 'relevance vector machine' (RVM), a model of identical functional form to the popular and state-of-the-art 'support vector machine' (SVM). We demonstrate that by exploiting a probabilistic Bayesian learning framework, we can derive accurate prediction models which typically utilise dramatically fewer basis functions than a comparable SVM while offering a number of additional advantages. These include the benefits of probabilistic predictions, automatic estimation of 'nuisance' parameters, and the facility to utilise arbitrary basis functions (e.g. non-'Mercer' kernels). We detail the Bayesian framework and associated learning algorithm for the RVM, and give some illustrative examples of its application along with some comparative benchmarks. We offer some explanation for the exceptional degree of sparsity obtained, and discuss and demonstrate some of the advantageous features, and potential extensions, of Bayesian relevance learning.}
+      \field{issn}{1532-4435}
+      \field{journaltitle}{J. Mach. Learn. Res.}
+      \field{month}{09}
+      \field{title}{Sparse bayesian learning and the relevance vector machine}
+      \field{volume}{1}
+      \field{year}{2001}
+      \field{pages}{211\bibrangedash 244}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1162/15324430152748236
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1162/15324430152748236
+      \endverb
+    \endentry
+    \entry{VanDykPark2008a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=03f837745128cf7ed80c1d7cf0eebee7}{{van\bibnamedelimb Dyk}}{v\bibinitperiod}{David\bibnamedelima A}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=5275f6230605af5a852a630d2083a376}{Park}{P\bibinitperiod}{Taeyoung}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bfdfc98c375a1bf828d336390bd9c4e0}
+      \strng{fullhash}{bfdfc98c375a1bf828d336390bd9c4e0}
+      \field{sortinit}{v}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ever-increasing computational power, along with everâmore sophisticated statistical computing techniques, is making it possible to fit everâmore complex statistical models. Among the more computationally intensive methods, the Gibbs sampler is popular because of its simplicity and power to effectively generate samples from a high-dimensional probability distribution. Despite its simple implementation and description, however, the Gibbs sampler is criticized for its sometimes slow convergence, especially when it is used to fit highly structured complex models. Here we present partially collapsed Gibbs sampling strategies that improve the convergence by capitalizing on a set of functionally incompatible conditional distributions. Such incompatibility generally is avoided in the construction of a Gibbs sampler, because the resulting convergence properties are not well understood. We introduce three basic tools (marginalization, permutation, and trimming) that allow us to transform a Gibbs sampler into a partially collapsed Gibbs sampler with known stationary distribution and faster convergence.}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{482}
+      \field{title}{Partially Collapsed {Gibbs} Samplers}
+      \field{volume}{103}
+      \field{year}{2008}
+      \field{pages}{790\bibrangedash 796}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1198/016214508000000409
+      \endverb
+      \verb{eprint}
+      \verb http://dx.doi.org/10.1198/016214508000000409
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1198/016214508000000409
+      \endverb
+    \endentry
+    \entry{VehtariGelmanGabry2015a}{manual}{}
+      \name{author}{3}{}{%
+        {{hash=5d36e97683cbc9d6ef06fc2ec40becb0}{Vehtari}{V\bibinitperiod}{Aki}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{Gelman}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d22d0f2897624075bcba3f2195a96094}{Gabry}{G\bibinitperiod}{Jonah}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{50464be0ad78423df85deab0154eddcd}
+      \strng{fullhash}{50464be0ad78423df85deab0154eddcd}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1}
+      \field{title}{loo: Efficient leave-one-out cross-validation and WAIC for Bayesian models}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://github.com/jgabry/loo
+      \endverb
+    \endentry
+    \entry{WestHarrison1997}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c6b1f518734bc0a38e6c8d89fabde946}{West}{W\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c6374a40de48e3a9b37f6ce962f9891d}{Harrison}{H\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{66cebabe9ddf35ade3986c7a7faab4d3}
+      \strng{fullhash}{66cebabe9ddf35ade3986c7a7faab4d3}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780387947259}
+      \field{series}{Springer series in statistics}
+      \field{title}{{Bayesian} forecasting and dynamic models}
+      \field{year}{1997}
+      \verb{url}
+      \verb http://books.google.com/books?id=jcl8lD75fkYC
+      \endverb
+    \endentry
+    \entry{WesternKleykamp2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3c96bb1dacfa68cf8306ed31f6bd64b6}{Western}{W\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=b6ed6d30a9ac6157694f4427304a6d8f}{Kleykamp}{K\bibinitperiod}{Meredith}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{45ce84d842f722d0e7c11c26a1b79c0f}
+      \strng{fullhash}{45ce84d842f722d0e7c11c26a1b79c0f}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Political relationships often vary over time, but standard models ignore temporal variation in regression relationships. We describe a Bayesian model that treats the change point in a time series as a parameter to be estimated. In this model, inference for the regression coefficients reflects prior uncertainty about the location of the change point. Inferences about regression coefficients, unconditional on the change-point location, can be obtained by simulation methods. The model is illustrated in an analysis of real wage growth in 18 OECD countries from 1965–1992.}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{4}
+      \field{title}{A Bayesian Change Point Model for Historical Time Series Analysis}
+      \field{volume}{12}
+      \field{year}{2004}
+      \field{pages}{354\bibrangedash 374}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/pan/mph023
+      \endverb
+      \verb{eprint}
+      \verb http://pan.oxfordjournals.org/content/12/4/354.full.pdf+html
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/content/12/4/354.abstract
+      \endverb
+    \endentry
+    \entry{Yao1984}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ba67075377dcaa37b5e9a2bf31410bcc}{Yao}{Y\bibinitperiod}{Yi-Ching}{Y\bibinithyphendelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{ba67075377dcaa37b5e9a2bf31410bcc}
+      \strng{fullhash}{ba67075377dcaa37b5e9a2bf31410bcc}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider the problem of estimating, in a Bayesian framework and in the presence of additive Gaussian noise, a signal which is a step function. Best linear estimates and Bayes estimates are derived, evaluated and compared. A characterization of the Bayes estimates is presented. This characterization has an intuitive interpretation and also provides a way to compute the Bayes estimates with a number of operations of the order of T3 where T is the fixed time span. An approximation to the Bayes estimates is proposed which reduces the total number of operations to the order of T. The results are applied to the case where the Bayesian model fails to be satisfied using an empirical Bayes approach.}
+      \field{issn}{00905364}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{4}
+      \field{title}{Estimation of a Noisy Discrete-Time Step Function: Bayes and Empirical Bayes Approaches}
+      \field{volume}{12}
+      \field{year}{1984}
+      \field{pages}{1434\bibrangedash 1447}
+      \range{pages}{14}
+      \verb{url}
+      \verb http://www.jstor.org/stable/2241012
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

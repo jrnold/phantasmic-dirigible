@@ -1,3 +1,133 @@
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}           % For page number in the upper right
+                                % (required) and other running headers
+                                % (optional)
+\usepackage{setspace}           % For double-spacing (required)
+\usepackage{titlesec}           % For keeping section/chapter titles
+                                % single-spaced
+\usepackage{blindtext}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{url}
+\urlstyle{sf}
+
+\usepackage{jrnoldStats}
+
+\usepackage[newfloat]{minted}
+
+\usepackage{subcaption}
+\usepackage{enumitem}
+
+\usepackage{tikz}
+
+\usepackage[all]{nowidow}
+
+\usepackage[]{xcolor}
+\definecolor{light-gray}{gray}{0.66}
+\definecolor{dkred}{rgb}{0.5,0,0}
+\definecolor{dkblue}{rgb}{0,0,0.5}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
+  pdfauthor={Jeffrey B. Arnold},
+  pdfkeywords={},
+  %% Colors from jss.cls (Journal of statistical software)
+  colorlinks = true,
+  linkcolor=dkblue,          % color of internal links
+  citecolor=dkblue,        % color of links to bibliography
+  filecolor=dkred,      % color of file links
+  urlcolor=dkred,           % color of external links
+}
+
+
+% Header height (to avoid fancyhdr error)
+\setlength{\headheight}{13.6pt}
+
+% Header formatting for regular pages
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[R]{\small\thepage}
+
+% Header formatting for chapter title pages
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[R]{\small\thepage}
+  %\renewcommand{\headrulewidth}{0pt}
+}
+
+% Formatting of chapter and section titles: keep them single-spaced in the
+% midst of double-spaced text
+\titleformat{\chapter}[display]%
+{\bfseries\singlespacing\Large}%
+{Chapter~\thechapter}%
+{1em}%
+{\LARGE}
+
+\titleformat{\section}[hang]%
+{\bfseries\singlespacing\Large}%
+{\thesection}%
+{0.25in}%
+{}
+
+\titleformat{\subsection}[hang]%
+{\bfseries\singlespacing\large}%
+{\thesubsection}%
+{0.25in}%
+{}
+
+\setcounter{tocdepth}{1}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+\setsansfont[Ligatures=TeX, Scale=MatchLowercase]{Source Sans Pro}
+\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\usepackage[math-style=TeX]{unicode-math}
+\setmathfont{xits-math.otf}
+
+
+% Misc
+\newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
+\newcommand{\eg}{\textit{e.g.}\ }
+\newcommand{\ie}{\textit{i.e.}\ }
+
+% biblatex
+\usepackage[style=authoryear,
+            backref=true,maxbibnames=10,hyperref=true,%
+            dateabbrev=false,uniquename=false,backend=biber]{biblatex}
+\AtEveryBibitem{\clearlist{language}}
+\AtEveryBibitem{\clearlist{eprint}}
+%% \DeclareFieldFormat{linked}{%
+%%   \ifboolexpr{ test {\ifhyperref} and not test {\ifentrytype{online}} }
+%%     {\iffieldundef{doi}
+%%        {\iffieldundef{url}
+%%           {\iffieldundef{isbn}
+%%              {\iffieldundef{issn}
+%%                 {#1}
+%%                 {\href{\worldcatsearch\thefield{issn}}{#1}}}
+%%              {\href{\worldcatsearch\thefield{isbn}}{#1}}}
+%%           {\href{\thefieldfirstword{url}}{#1}}}
+%%        {\href{http://dx.doi.org/\thefield{doi}}{#1}}}
+%%     {#1}}
+%% \newbibmacro{string+url}[1]{%
+%%  \iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+
+
+%%%% Local Variables
+\author{Jeffrey B. Arnold}
+\title{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
+
+\addbibresource{jrnold.bib}
+
+\usepackage{placeins}
+
+\frenchspacing
+
+\begin{document}
+
 <<echo = FALSE, results = 'hide', message = FALSE, warning = FALSE, error = FALSE>>=
 library("bsdlm")
 data("BushApproval", package = "bsdlm")
@@ -9,9 +139,7 @@ date_format <- function(x) gsub("\\b0+\\(\\d\\)", "\\1", format(x, "%B %d, %Y"),
 @ 
 \newcommand{\ModelII}[1]{\texttt{#1}}
 
-
-\section{Introduction}
-\label{sec:introduction}
+\maketitle{}
 
 Political and social processes are rarely, if ever, constant over time, and, as such, social scientists have a need to model that change \parencites{Buethe2002a}{Lieberman2002a}.
 Moreover, these political process are often marked by both periods of stability and periods of large changes \parencites{Pierson2004}.
@@ -722,9 +850,6 @@ If the researcher wanted to impose a restriction that large changes occurred at 
 This is one example, but these sparse shrinkage parameters can be applied to any model with a time-varying parameter with support $\R$.
 If that model is of the class of GDLMs, then there are efficient methods to sample it, if not, the model can still be estimated in \Stan{} using its usual algorithms.
 
-\setcounter{section}{0}
-\let\oldthesection\thesection
-\renewcommand{\thesection}{\thechapter.\Alph{section}}
 \section{Example Stan Program}
 \label{sec:example-stan-program}
 
@@ -735,7 +860,14 @@ The code for them can be found in \textcite{Arnold2015c} or \url{https://raw.git
 
 \inputminted[firstline=5,style=bw]{stan}{\Sexpr{file.path(PROJECT_ROOT, "stan", "changepoint_horseshoe.stan.mustache")}}  
 
-let\thesection\oldthesection
+% References
+\clearpage
+\singlespacing
+
+% Bibtex commands go here
+\printbibliography{}
+
+\end{document}
 
 %  LocalWords:  iid Efron GiordaniKohn2008 Tibshirani1996 Tipping2001
 %  LocalWords:  PolsonScott2010 ParkCasella2008 Hans2009 DLMs Kalman
@@ -765,3 +897,4 @@ let\thesection\oldthesection
 %  LocalWords:  AIC BIC GelmanCarlinSternEtAl2013a GelmanVehtari2014a
 %  LocalWords:  GelmanHwangVehtari2014a loo DIC
 %  LocalWords:  VehtariGelmanGabry2015a
+

@@ -142,7 +142,7 @@
 \newcommand{\ie}{\textit{i.e.}\ }
 
 % biblatex
-\usepackage[style=authoryear,
+\usepackage[style=authoryear,backend=biber,%
             backref=true,maxbibnames=10,hyperref=true,%
             dateabbrev=false,uniquename=false,backend=biber]{biblatex}
 \AtEveryBibitem{\clearlist{language}}
@@ -166,16 +166,20 @@
 
 
 %%%% Local Variables
-\author{Jeffrey B. Arnold}
-\title{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
+\newcommand{\myauthor}{Jeffrey B. Arnold}
+\newcommand{\mytitle}{Bayesian Change Points and Linear Filtering in Dynamic Linear Models using Shrinkage Priors}
 
-\addbibresource{jrnold.bib}
+\renewcommand*\contentsname{Table of Contents}
+
+\addbibresource{../bib/jrnold.bib}
 
 \usepackage{placeins}
 
 \frenchspacing
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
+
+\end{document}
 
 
 \newcommand{\ModelII}[1]{\texttt{#1}}
@@ -891,6 +895,9 @@ If the researcher wanted to impose a restriction that large changes occurred at 
 This is one example, but these sparse shrinkage parameters can be applied to any model with a time-varying parameter with support $\R$.
 If that model is of the class of GDLMs, then there are efficient methods to sample it, if not, the model can still be estimated in \Stan{} using its usual algorithms.
 
+\setcounter{section}{0}
+\let\oldthesection\thesection
+\renewcommand{\thesection}{\thechapter.\Alph{section}}
 \section{Example Stan Program}
 \label{sec:example-stan-program}
 
@@ -900,6 +907,8 @@ The DLM related user-defined functions in the \texttt{functions} block are exclu
 The code for them can be found in \textcite{Arnold2015c} or \url{https://raw.githubusercontent.com/jrnold/dlm-shrinkage/master/stan/includes/dlm.stan}.
 
 \inputminted[firstline=5,style=bw]{stan}{./dlm-shrinkage/stan/changepoint_horseshoe.stan.mustache}  
+
+let\thesection\oldthesection
 
 % References
 \clearpage

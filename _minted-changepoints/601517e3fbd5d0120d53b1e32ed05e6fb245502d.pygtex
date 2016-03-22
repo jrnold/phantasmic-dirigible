@@ -1,0 +1,63 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGbw{c+c1}{// \PYGbwZhy{}*\PYGbwZhy{} mode: stan \PYGbwZhy{}*\PYGbwZhy{}}
+\PYGbw{k+kn}{functions} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{p}{\PYGbwZob{}\PYGbwZob{}}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{dlm}\PYGbw{p}{\PYGbwZcb{}\PYGbwZcb{}}
+\PYGbw{p}{\PYGbwZcb{}}
+\PYGbw{k+kn}{data} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{k+kt}{int}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mi}{1}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{n}\PYGbw{p}{;}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{]} \PYGbw{n}{y}\PYGbw{p}{;}
+  \PYGbw{k+kt}{int} \PYGbw{n}{miss}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{];}
+  \PYGbw{k+kt}{real} \PYGbw{n}{m0}\PYGbw{p}{;}
+  \PYGbw{k+kt}{real}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{C0}\PYGbw{p}{;}
+  \PYGbw{k+kt}{real}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{s}\PYGbw{p}{;}
+  \PYGbw{k+kt}{real}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{w}\PYGbw{p}{;}
+\PYGbw{p}{\PYGbwZcb{}}
+\PYGbw{k+kn}{parameters} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{k+kt}{real}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{sigma}\PYGbw{p}{;}
+  \PYGbw{k+kt}{real}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}} \PYGbw{n}{tau}\PYGbw{p}{;}
+  \PYGbw{k+kt}{vector}\PYGbw{o}{\PYGbwZlt{}}\PYGbw{n}{lower} \PYGbw{o}{=} \PYGbw{l+m+mf}{0.0}\PYGbw{o}{\PYGbwZgt{}}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{]} \PYGbw{n}{lambda}\PYGbw{p}{;}
+\PYGbw{p}{\PYGbwZcb{}}
+\PYGbw{k+kn}{transformed parameters} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{]} \PYGbw{n}{log\PYGbwZus{}lik}\PYGbw{p}{;}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{l+m+mi}{6}\PYGbw{p}{]} \PYGbw{n}{dlm}\PYGbw{p}{[}\PYGbw{n}{n} \PYGbw{o}{+} \PYGbw{l+m+mi}{1}\PYGbw{p}{];}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{]} \PYGbw{n}{W}\PYGbw{p}{;}
+
+  \PYGbw{k}{for} \PYGbw{p}{(}\PYGbw{n}{i} \PYGbw{k}{in} \PYGbw{l+m+mi}{1}\PYGbw{p}{:}\PYGbw{n}{n}\PYGbw{p}{)} \PYGbw{p}{\PYGbwZob{}}
+    \PYGbw{n}{W}\PYGbw{p}{[}\PYGbw{n}{i}\PYGbw{p}{]} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n+nb}{pow}\PYGbw{p}{(}\PYGbw{n}{sigma} \PYGbw{o}{*} \PYGbw{n}{tau} \PYGbw{o}{*} \PYGbw{n}{lambda}\PYGbw{p}{[}\PYGbw{n}{i}\PYGbw{p}{],} \PYGbw{l+m+mi}{2}\PYGbw{p}{);}
+  \PYGbw{p}{\PYGbwZcb{}}
+  \PYGbw{p}{\PYGbwZob{}}
+    \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{]} \PYGbw{n}{V}\PYGbw{p}{;}
+    \PYGbw{n}{V} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n+nb}{rep\PYGbwZus{}vector}\PYGbw{p}{(}\PYGbw{n+nb}{pow}\PYGbw{p}{(}\PYGbw{n}{sigma}\PYGbw{p}{,} \PYGbw{l+m+mi}{2}\PYGbw{p}{),} \PYGbw{n}{n}\PYGbw{p}{);}
+    \PYGbw{n}{dlm} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n}{dlm\PYGbwZus{}local\PYGbwZus{}level\PYGbwZus{}filter}\PYGbw{p}{(}\PYGbw{n}{n}\PYGbw{p}{,} \PYGbw{n}{y}\PYGbw{p}{,} \PYGbw{n}{miss}\PYGbw{p}{,} \PYGbw{n}{V}\PYGbw{p}{,} \PYGbw{n}{W}\PYGbw{p}{,} \PYGbw{n}{m0}\PYGbw{p}{,} \PYGbw{n}{C0}\PYGbw{p}{);}
+    \PYGbw{n}{log\PYGbwZus{}lik} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n}{dlm\PYGbwZus{}local\PYGbwZus{}level\PYGbwZus{}filter\PYGbwZus{}loglik}\PYGbw{p}{(}\PYGbw{n}{n}\PYGbw{p}{,} \PYGbw{n}{dlm}\PYGbw{p}{,} \PYGbw{n}{miss}\PYGbw{p}{);}
+  \PYGbw{p}{\PYGbwZcb{}}
+
+\PYGbw{p}{\PYGbwZcb{}}
+\PYGbw{k+kn}{model} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{k+kt}{real} \PYGbw{n}{ll}\PYGbw{p}{;}
+
+  \PYGbw{n}{sigma} \PYGbw{o}{\PYGbwZti{}} \PYGbw{n+nb}{cauchy}\PYGbw{p}{(}\PYGbw{l+m+mf}{0.0}\PYGbw{p}{,} \PYGbw{n}{s}\PYGbw{p}{);}
+  \PYGbw{n}{tau} \PYGbw{o}{\PYGbwZti{}} \PYGbw{n+nb}{cauchy}\PYGbw{p}{(}\PYGbw{l+m+mf}{0.0}\PYGbw{p}{,} \PYGbw{n}{w}\PYGbw{p}{);}
+  \PYGbw{n}{lambda} \PYGbw{o}{\PYGbwZti{}} \PYGbw{n+nb}{cauchy}\PYGbw{p}{(}\PYGbw{l+m+mf}{0.0}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{);}
+  \PYGbw{k}{increment\PYGbwZus{}log\PYGbwZus{}prob}\PYGbw{p}{(}\PYGbw{n+nb}{sum}\PYGbw{p}{(}\PYGbw{n}{log\PYGbwZus{}lik}\PYGbw{p}{));}
+\PYGbw{p}{\PYGbwZcb{}}
+\PYGbw{k+kn}{generated quantities} \PYGbw{p}{\PYGbwZob{}}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{l+m+mi}{1}\PYGbw{p}{]} \PYGbw{n}{mu}\PYGbw{p}{[}\PYGbw{n}{n} \PYGbw{o}{+} \PYGbw{l+m+mi}{1}\PYGbw{p}{];}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{l+m+mi}{1}\PYGbw{p}{]} \PYGbw{n}{omega}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{];}
+  \PYGbw{k+kt}{vector}\PYGbw{p}{[}\PYGbw{l+m+mi}{1}\PYGbw{p}{]} \PYGbw{n}{kalman}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{];}
+
+  \PYGbw{p}{\PYGbwZob{}}
+    \PYGbw{k+kt}{matrix}\PYGbw{p}{[}\PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{]} \PYGbw{n}{G\PYGbwZus{}tv}\PYGbw{p}{[}\PYGbw{n}{n}\PYGbw{p}{];}
+
+    \PYGbw{n}{G\PYGbwZus{}tv} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n+nb}{rep\PYGbwZus{}array}\PYGbw{p}{(}\PYGbw{n+nb}{rep\PYGbwZus{}matrix}\PYGbw{p}{(}\PYGbw{l+m+mf}{1.0}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{),} \PYGbw{n}{n}\PYGbw{p}{);}
+    \PYGbw{n}{mu} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n}{dlm\PYGbwZus{}filter\PYGbwZus{}bsample\PYGbwZus{}rng}\PYGbw{p}{(}\PYGbw{n}{n}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{n}{G\PYGbwZus{}tv}\PYGbw{p}{,} \PYGbw{n}{dlm}\PYGbw{p}{);}
+  \PYGbw{p}{\PYGbwZcb{}}
+  \PYGbw{k}{for} \PYGbw{p}{(}\PYGbw{n}{i} \PYGbw{k}{in} \PYGbw{l+m+mi}{1}\PYGbw{p}{:}\PYGbw{n}{n}\PYGbw{p}{)} \PYGbw{p}{\PYGbwZob{}}
+    \PYGbw{n}{omega}\PYGbw{p}{[}\PYGbw{n}{i}\PYGbw{p}{]} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n}{mu}\PYGbw{p}{[}\PYGbw{n}{i} \PYGbw{o}{+} \PYGbw{l+m+mi}{1}\PYGbw{p}{]} \PYGbw{o}{\PYGbwZhy{}} \PYGbw{n}{mu}\PYGbw{p}{[}\PYGbw{n}{i}\PYGbw{p}{];}
+  \PYGbw{p}{\PYGbwZcb{}}
+  \PYGbw{k}{for} \PYGbw{p}{(}\PYGbw{n}{i} \PYGbw{k}{in} \PYGbw{l+m+mi}{1}\PYGbw{p}{:}\PYGbw{n}{n}\PYGbw{p}{)} \PYGbw{p}{\PYGbwZob{}}
+    \PYGbw{n}{kalman}\PYGbw{p}{[}\PYGbw{n}{i}\PYGbw{p}{]} \PYGbw{o}{\PYGbwZlt{}\PYGbwZhy{}} \PYGbw{n}{dlm\PYGbwZus{}get\PYGbwZus{}C}\PYGbw{p}{(}\PYGbw{n}{i}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{n}{dlm}\PYGbw{p}{)} \PYGbw{o}{*} \PYGbw{n}{dlm\PYGbwZus{}get\PYGbwZus{}Q\PYGbwZus{}inv}\PYGbw{p}{(}\PYGbw{n}{i}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{l+m+mi}{1}\PYGbw{p}{,} \PYGbw{n}{dlm}\PYGbw{p}{);}
+  \PYGbw{p}{\PYGbwZcb{}}
+
+\PYGbw{p}{\PYGbwZcb{}}
+\end{Verbatim}
