@@ -29,7 +29,7 @@ RSCRIPT = Rscript
 
 ## Rules
 
-default : doc 
+default : doc
 
 doc: $(PDF_FILE) abstract
 
@@ -77,3 +77,7 @@ fullclean :
 	latexmk -C
 
 .PRECIOUS: %.tex
+
+
+dlm-shrinkage-full.pdf: dlm-shrinkage-full.tex changepoints.tex
+	latexmk -pdf -pdflatex='xelatex -interaction=nonstopmode -file-line-error -synctex=1 -shell-escape %O %S' $<
